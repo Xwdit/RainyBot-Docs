@@ -32,7 +32,7 @@ _global_script_class_icons={
 
 [application]
 
-config/name="RainyBot-SDK"
+config/name="RainyBot-API"
 run/main_scene="res://main.tscn"
 run/low_processor_mode=true
 boot_splash/image="res://logo.png"
