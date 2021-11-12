@@ -124,3 +124,19 @@ func get_plugin_data(key):
 #设置插件数据库中对应键的值，save_file表示是否在设置时立刻保存到文件	
 func set_plugin_data(key,value,save_file:bool=true):
 	pass
+
+#在控制台中打印常规文本(白色)
+func console_print_text(text):
+	pass
+
+#在控制台中打印错误文本(红色)
+func console_print_error(text):
+	pass	
+
+#在控制台中打印警告文本(黄色)
+func console_print_warning(text):
+	pass	
+
+#在控制台中打印成功文本(绿色)
+func console_print_success(text):
+	pass

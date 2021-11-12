@@ -11,14 +11,14 @@ func _on_init():
 		"version":"1.0", #插件的版本号
 		"description":"A example plugin" #插件的描述
 	})
-	
-	#在指令数据库中注册一个指令，用户可调用该指令执行操作
-	#参数从左到右分别为指令名称(需唯一)，指令是否必需参数，指令用法介绍(数组的每个元素显示为一行)，指令来源(如插件名)
-	register_command("print",true,["print <文本> - 打印指定的文本"],get_plugin_info()["id"])
 
 
 #将在此插件被完全加载后执行的操作
 func _on_load():
+	
+	#在指令数据库中注册一个指令，用户可调用该指令执行操作
+	#参数从左到右分别为指令名称(需唯一)，指令是否必需参数，指令用法介绍(数组的每个元素显示为一行)，指令来源(如插件名)
+	register_command("print",true,["print <文本> - 打印指定的文本"],get_plugin_info()["id"])
 	receive_commands(true) #开始接收用户指令输入
 	receive_message_events(true) #开始接收聊天消息事件
 	receive_bot_events(true) #开始接收Mirai各类事件(如加群/退群等)
