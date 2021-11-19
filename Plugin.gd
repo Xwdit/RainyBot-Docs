@@ -12,6 +12,10 @@ func _on_load():
 	pass
 
 
+func _on_process():
+	pass
+
+
 func _on_unload():
 	pass
 
@@ -24,12 +28,20 @@ func get_plugin_info()->Dictionary:
 	return {}
 
 
-func get_plugin_file()->String:
+func get_plugin_filename()->String:
 	return ""
 
 
 func get_plugin_path()->String:
 	return ""
+
+
+func set_plugin_runtime(time_sec:int):
+	return
+	
+
+func get_plugin_runtime()->int:
+	return 0
 
 
 func get_other_plugin_instance(plugin_id)->Plugin:
@@ -44,14 +56,14 @@ func unregister_message_event(msg_event:int):
 	return
 
 
-func register_command(command:String,need_arguments:bool,usages:Array,source:String):
+func register_console_command(command:String,func_name:String,need_arguments:bool=false,usages:Array=[]):
 	return
 
 
-func unregister_command(command:String):
+func unregister_console_command(command:String):
 	return
 	
-	
+
 func init_plugin_config(default_config:Dictionary,config_description:Dictionary={}):
 	return
 
@@ -68,6 +80,14 @@ func set_plugin_config(key,value,save_file:bool=true):
 	return
 
 
+func get_plugin_config_metadata()->Dictionary:
+	return {}
+
+
+func set_plugin_config_metadata(dic:Dictionary):
+	return
+	
+
 func init_plugin_data():
 	return
 			
@@ -78,7 +98,19 @@ func save_plugin_data():
 		
 func get_plugin_data(key):
 	return
-		
-		
+
+
 func set_plugin_data(key,value,save_file:bool=true):
+	return
+
+
+func get_plugin_data_metadata()->Dictionary:
+	return {}
+
+
+func set_plugin_data_metadata(dic:Dictionary):
+	return
+
+
+func unload_plugin():
 	return

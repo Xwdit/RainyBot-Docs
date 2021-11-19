@@ -24,8 +24,8 @@ func set_metadata(arr:Array):
 	return
 
 
-func append(msg:Message):
-	return
+func append(msg:Message)->MessageChain:
+	return null
 
 
 func get_message(index:int)->Message:
