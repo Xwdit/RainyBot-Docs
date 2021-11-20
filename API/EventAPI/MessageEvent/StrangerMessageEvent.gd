@@ -1,22 +1,14 @@
 extends MessageEvent
 
 
-class_name TempMessageEvent
+class_name StrangerMessageEvent
 
 
-static func init_meta(dic:Dictionary)->TempMessageEvent:
+static func init_meta(dic:Dictionary)->StrangerMessageEvent:
 	return null
 
 
-func get_sender()->GroupMember:
-	return null
-
-
-func get_group()->Group:
-	return null
-
-	
-func get_message_chain()->MessageChain:
+func get_sender()->Member:
 	return null
 	
 	

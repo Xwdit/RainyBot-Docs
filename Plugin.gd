@@ -48,11 +48,11 @@ func get_other_plugin_instance(plugin_id)->Plugin:
 	return null
 
 
-func register_message_event(msg_event:int,func_name:String):
+func register_event(category:int,event_type:int,func_name:String):
 	return
 
 
-func unregister_message_event(msg_event:int):
+func unregister_event(category:int,event_type:int):
 	return
 
 

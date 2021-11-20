@@ -1,14 +1,14 @@
 extends Message
 
 
-class_name RainyCodeMessage
+class_name BotCodeMessage
 
 
-static func init(text:String)->RainyCodeMessage:
+static func init(text:String)->BotCodeMessage:
 	return null
 
 
-static func init_meta(dic:Dictionary)->RainyCodeMessage:
+static func init_meta(dic:Dictionary)->BotCodeMessage:
 	return null
 
 	

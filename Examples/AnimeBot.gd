@@ -9,14 +9,14 @@ func _on_init():
 
 #将在此插件被完全加载后执行的操作
 func _on_load():
-	register_message_event(MessageEvent.Type.GROUP,"_chat")
-	register_message_event(MessageEvent.Type.FRIEND,"_chat")
+	register_event(Event.Category.MESSAGE,MessageEvent.Type.GROUP,"_chat")
+	register_event(Event.Category.MESSAGE,MessageEvent.Type.FRIEND,"_chat")
 
 
 #将在此插件即将被卸载时执行的操作
 func _on_unload():
-	unregister_message_event(MessageEvent.Type.GROUP)
-	unregister_message_event(MessageEvent.Type.FRIEND)
+	unregister_event(Event.Category.MESSAGE,MessageEvent.Type.GROUP)
+	unregister_event(Event.Category.MESSAGE,MessageEvent.Type.FRIEND)
 
 
 #接收到群消息事件
