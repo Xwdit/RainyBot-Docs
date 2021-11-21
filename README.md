@@ -37,7 +37,7 @@
 
 ## 插件示例
 
-本储存库中随附了一些插件示例与插件模板，您可以在`Examples`目录与`Templates目录中找到它们`
+本储存库中随附了一些插件示例与插件模板，您可以在`Examples`目录与`Templates`目录中找到它们
 
 <p align="right">(<a href="#top">返回顶部</a>)</p>
 
