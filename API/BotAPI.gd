@@ -5,7 +5,7 @@ extends RefCounted #继承RefCounted类，用于RainyBot内部处理与加载，
 ##
 ## @desc:
 ##     这是RainyBot的API类，所有的API将直接或间接继承此类
-##     此类同时可用于在文档将Godot提供的API与RainyBot相关API进行区分
+##     此类同时可用于在编辑器文档中将Godot提供的API与RainyBot相关API进行区分
 ##
 
 

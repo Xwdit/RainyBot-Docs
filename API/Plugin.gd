@@ -32,12 +32,12 @@ func _on_process():
 
 
 ## 在插件中覆盖此虚函数，以便定义插件在即将被卸载时执行的操作
-## 通常情况下，插件的数据保存等操作都可以在这里进行
+## 通常情况下，命令的取消注册，插件的数据保存等操作都可以在这里进行
 func _on_unload():
 	pass
 
 
-## 用于设定插件的相关信息，需要在_init()虚函数中执行以便RainyBot正确加载您的插件
+## 用于设定插件的相关信息，需要在_on_init()虚函数中执行以便RainyBot正确加载您的插件
 ## 需要的参数从左到右分别为插件ID(不可与其它已加载插件重复),插件名,插件作者,插件版本,插件描述
 func set_plugin_info(p_id:String,p_name:String,p_author:String,p_version:String,p_description:String):
 	return
