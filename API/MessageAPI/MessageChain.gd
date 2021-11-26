@@ -28,6 +28,10 @@ func append(msg:Message)->MessageChain:
 	return null
 
 
+func get_size()->int:
+	return 0
+
+
 func get_message(index:int)->Message:
 	return null
 

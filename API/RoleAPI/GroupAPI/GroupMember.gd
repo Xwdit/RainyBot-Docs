@@ -74,12 +74,12 @@ func toggle_admin(enabled:bool)->BotRequestResult:
 	return null
 
 
-func kick(message:String)->BotRequestResult:
+func kick(message:String="")->BotRequestResult:
 	await self.script_changed #用于触发编辑器的错误检查，防止调用此函数时遗漏await关键字
 	return null
 
 
-func mute(time_sec:int)->BotRequestResult:
+func mute(time:int=1800)->BotRequestResult:
 	await self.script_changed #用于触发编辑器的错误检查，防止调用此函数时遗漏await关键字
 	return null
 	

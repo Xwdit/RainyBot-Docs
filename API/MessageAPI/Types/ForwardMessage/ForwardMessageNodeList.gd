@@ -28,5 +28,13 @@ func get_size()->int:
 	return 0
 	
 	
-func append(msg_node:ForwardMessageNode):
+func append(msg_node:ForwardMessageNode)->ForwardMessageNodeList:
 	return
+
+
+func get_from_message_id(message_id:int)->ForwardMessageNode:
+	return null
+	
+	
+func get_from_sender_id(sender_id:int)->ForwardMessageNode:
+	return null

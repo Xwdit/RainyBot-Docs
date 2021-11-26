@@ -18,7 +18,15 @@ func set_metadata(arr:Array):
 
 func get_from_index(index:int)->GroupMember:
 	return null
-		
+
+
+func get_from_id(member_id:int)->GroupMember:
+	return null
+
+
+func has_member(member_id:int)->bool:
+	return false
+	
 		
 func get_size()->int:
 	return 0
