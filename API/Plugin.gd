@@ -39,7 +39,8 @@ func _on_unload():
 
 ## 用于设定插件的相关信息，需要在_on_init()虚函数中执行以便RainyBot正确加载您的插件
 ## 需要的参数从左到右分别为插件ID(不可与其它已加载插件重复),插件名,插件作者,插件版本,插件描述
-func set_plugin_info(p_id:String,p_name:String,p_author:String,p_version:String,p_description:String):
+## 最后一项可选参数为此插件的依赖插件列表(数组)，需要以所依赖的插件的ID作为列表中的元素，如:["example","example_1"]
+func set_plugin_info(p_id:String,p_name:String,p_author:String,p_version:String,p_description:String,p_dependency:Array=[]):
 	return
 
 
@@ -77,16 +78,17 @@ func get_other_plugin_instance(plugin_id)->Plugin:
 
 ## 用于注册一个事件并将其绑定到指定函数，事件发生时将触发此函数并传入事件实例
 ## 需要的参数从左到右分别为:
-## 事件的分类(为Event类中Category枚举的值，如Event.Category.MESSAGE代表消息类事件)
-## 事件的具体类型(为Event类的对应子类中Type枚举的值，如MessageEvent.Type.GROUP代表群消息事件)
+## 事件的类型 (需要直接或间接继承Event类，如GroupMessageEvent群消息事件)
 ## 事件触发的函数名(当对应事件发生时将触发的函数名称，此函数需要定义一个参数用于接收事件实例)
-func register_event(category:int,event_type:int,func_name:String):
+## [可选,默认为false]事件是否注册为优先事件(注册为优先的事件触发顺序将较为靠前)
+## Tips:若以false作为被事件触发的函数的返回值，可阻止事件被传播到较低优先级的插件中(异步函数无效)
+func register_event(event:GDScript,func_name:String,priority:bool=false):
 	return
 
 
 ## 用于取消注册一个事件，取消注册后插件将不再对此事件做出响应
-## 需要的参数与注册事件时基本相同，但最后无需传入事件对应的函数名
-func unregister_event(category:int,event_type:int):
+## 只需传入事件的类型作为参数即可
+func unregister_event(event:GDScript):
 	return
 
 
@@ -181,4 +183,22 @@ func set_plugin_data_metadata(dic:Dictionary,save_file:bool=true):
 
 ## 用于令插件卸载自身，可用于需要中止运行的场景，如当某些条件验证不通过时可使用此函数来避免出现问题
 func unload_plugin():
+	return
+
+
+## 用于等待一个指定ID的上下文，并在收到响应后返回相应的内容
+## 需要的参数从左到右分别为:
+## 上下文的ID(任意字符串即可，若已存在对应ID的上下文则将等待此上下文的响应)
+## [可选,默认为20秒]等待的超时时间(若数值小于等于0, 或上下文已存在, 则不启用超时)
+## 注意:超时后函数将返回null，请不要忘记在使用时进行判断
+func wait_context(context_id:String,timeout:float=20.0):
+	await self.script_changed #用于触发编辑器的错误检查，防止调用此函数时遗漏await关键字
+	return null
+
+
+## 用于响应一个指定ID的上下文，并自定义响应的内容
+## 需要的参数从左到右分别为:
+## 上下文的ID(需要为已存在的，等待响应中的上下文)
+## 响应的内容(可以是任意类型，将由等待中的上下文的函数返回)
+func respond_context(context_id:String,response):
 	return

@@ -9,19 +9,14 @@ func _on_init():
 
 #将在此插件被完全加载后执行的操作
 func _on_load():
-	register_event(Event.Category.MESSAGE,MessageEvent.Type.GROUP,"_command")
-
-
-#将在此插件即将被卸载时执行的操作
-func _on_unload():
-	unregister_event(Event.Category.MESSAGE,MessageEvent.Type.GROUP)
+	register_event(GroupMessageEvent,"_command")
 
 
 #接收到群消息事件
 func _command(event:GroupMessageEvent):
 	var msg_chain:MessageChain = event.get_message_chain()
-	var text:String = msg_chain.get_message_text([Message.Type.TEXT])
-	var at_msg:Array = msg_chain.get_message_array([Message.Type.AT])
+	var text:String = msg_chain.get_message_text([TextMessage])
+	var at_msg:Array = msg_chain.get_message_array([AtMessage])
 	var g_id:int = event.get_group().get_id()
 	
 	if text.begins_with("禁言"): #判断聊天前缀

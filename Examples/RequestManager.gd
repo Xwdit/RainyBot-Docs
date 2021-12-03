@@ -10,24 +10,15 @@ var receive_qq:int = 993105366 #收到请求时询问的好友qq
 #将在此插件的文件被读取时执行的操作
 func _on_init():
 	#设定插件相关信息(全部必填)
-	set_plugin_info("request_manager","请求管理", "Xwdit","1.0","用于管理各类请求" )
+	set_plugin_info("request_manager","请求管理", "Xwdit","1.0","用于管理各类请求")
 
 
 #将在此插件被完全加载后执行的操作
 func _on_load():
 	#开始监听各类事件
-	register_event(Event.Category.REQUEST,RequestEvent.Type.GROUP_INVITE,"_request_group_invite")
-	register_event(Event.Category.REQUEST,RequestEvent.Type.NEW_FRIEND,"_request_new_friend")
-	register_event(Event.Category.MESSAGE,MessageEvent.Type.FRIEND,"_receive_message")
-
-
-
-#将在此插件即将被卸载时执行的操作
-func _on_unload():
-	#停止监听各类事件
-	unregister_event(Event.Category.REQUEST,RequestEvent.Type.GROUP_INVITE)
-	unregister_event(Event.Category.REQUEST,RequestEvent.Type.NEW_FRIEND)
-	unregister_event(Event.Category.MESSAGE,MessageEvent.Type.FRIEND)
+	register_event(GroupInviteRequestEvent,"_request_group_invite")
+	register_event(NewFriendRequestEvent,"_request_new_friend")
+	register_event(FriendMessageEvent,"_receive_message")
 
 
 #收到群邀请事件
@@ -55,7 +46,7 @@ func _request_new_friend(event:NewFriendRequestEvent):
 #收到好友消息
 func _receive_message(event:FriendMessageEvent):
 	if event.get_sender().get_id() == receive_qq:
-		var text = event.get_message_chain().get_message_text([Message.Type.TEXT])
+		var text = event.get_message_chain().get_message_text([TextMessage])
 		if text.begins_with("同意请求"):
 			var id = text.to_int()
 			if request_dic.has(id):
