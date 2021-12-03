@@ -63,7 +63,7 @@ func get_member_list()->GroupMemberList:
 	return null
 
 
-## 获取群聊实例中指定成员ID的MemberProfile实例，需要配合await关键字使用
+## 获取群聊实例中指定成员ID相关资料的MemberProfile实例，需要配合await关键字使用
 func get_member_profile(member_id:int)->MemberProfile:
 	await self.script_changed #用于触发编辑器的错误检查，防止调用此函数时遗漏await关键字
 	return null
