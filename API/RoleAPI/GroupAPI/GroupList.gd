@@ -29,16 +29,18 @@ func set_metadata(arr:Array):
 
 
 ## 根据指定的序号来从群列表实例中获取对应的Group实例
+## 若序号不存在则返回null
 func get_from_index(index:int)->Group:
 	return null
 
 
 ## 根据指定的群ID(群号)来从群列表实例中获取对应的Group实例
+## 若群ID不存在则返回null
 func get_from_id(group_id:int)->Group:
 	return null
 
 
-## 获取群列表实例中的项目的总数		
+## 获取群列表实例中的群实例的总数
 func get_size()->int:
 	return 0
 

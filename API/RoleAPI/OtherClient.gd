@@ -13,7 +13,7 @@ extends RoleAPI #继承RoleAPI类，用于RainyBot内部处理与加载，请勿
 class_name OtherClient #定义类名为OtherClient，请勿进行改动
 
 
-## 构造一个OtherClient类的实例，用于主动进行与其他客户端的交互时使用
+## 手动构造一个OtherClient类的实例，用于主动进行与其他客户端的交互时使用
 static func init()->OtherClient:
 	return null
 	
