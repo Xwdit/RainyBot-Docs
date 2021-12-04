@@ -6,14 +6,14 @@ extends Message #继承Message类，用于RainyBot内部处理与加载，请勿
 ##
 ## @desc:
 ##     这是RainyBot的At全体成员消息类，通常代表一个对应实例，此类消息仅适用于群聊
-##     此类实例代表消息对应的群聊中的At全体成员事件，你也可以主动构建此类实例以便进行此操作
+##     此类实例代表在消息中At了全体成员，你也可以主动构建此类实例以便进行此操作
 ##
 
 
 class_name AtAllMessage #定义类名为AtAllMessage，请勿进行改动
 
 
-## 手动构造一个AtAllMessage类的实例，以便进行At全体成员操作
+## 手动构造一个AtAllMessage类的实例，以便在消息中At全体成员
 static func init()->AtAllMessage:
 	return null
 
