@@ -9,13 +9,13 @@ func _on_init():
 
 #将在此插件被完全加载后执行的操作
 func _on_load():
-	register_event(GroupMessageEvent,"_chat")
-	register_event(FriendMessageEvent,"_chat")
+	register_event(GroupMessageEvent,_chat)
+	register_event(FriendMessageEvent,_chat)
 
 
 #接收到群消息事件
 func _chat(event:MessageEvent):
-	var text = event.get_message_chain().get_message_text([TextMessage])
+	var text = event.get_message_text(TextMessage)
 	if text.begins_with("二次元图片"):
 		var result = await Utils.send_http_get_request("https://www.dmoe.cc/random.php?return=json")
 		if result is Dictionary: #判断回调是否成功
