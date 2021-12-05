@@ -33,7 +33,7 @@ func _command(event:GroupMessageEvent):
 		
 
 func check_perm(event):
-	if event.get_sender().has_permission(GroupMember.Permission.MEMBER):
+	if event.get_sender().is_permission(GroupMember.Permission.MEMBER):
 		event.reply("您不是管理员或群主，无法执行此操作!",true)
 		return false
 	else:
