@@ -26,3 +26,7 @@ func set_metadata(dic:Dictionary):
 ## 将此消息类实例获取为字符串，具体行为请参见继承此类的每个子类
 func get_as_text()->String:
 	return ""
+
+
+func append(msg)->MessageChain:
+	return null
