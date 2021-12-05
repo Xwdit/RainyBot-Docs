@@ -9,30 +9,31 @@ func _on_init():
 
 #将在此插件被完全加载后执行的操作
 func _on_load():
-	register_event(GroupMessageEvent,_chat)
-	register_event(FriendMessageEvent,_chat)
+	register_keyword("二次元图片",anime_img)
+	register_keyword("二次元音乐",anime_music)
+	register_event(GroupMessageEvent,"trigger_keyword")
+	register_event(FriendMessageEvent,"trigger_keyword")
 
 
-#接收到群消息事件
-func _chat(event:MessageEvent):
-	var text = event.get_message_text(TextMessage)
-	if text.begins_with("二次元图片"):
-		var result = await Utils.send_http_get_request("https://www.dmoe.cc/random.php?return=json")
-		if result is Dictionary: #判断回调是否成功
-			if result.has("imgurl"):
-				var reply:String = result["imgurl"]
-				var msg = ImageMessage.init_url(reply)
-				event.reply(msg,true)
-	elif text.begins_with("二次元音乐"):
-		var result = await Utils.send_http_get_request("https://api.paugram.com/acgm/")
-		if result is Dictionary: #判断回调是否成功
-			var msg = MusicShareMessage.init(
-				"NeteaseCloudMusic",
-				result["title"],
-				result["artist"],
-				"https://y.music.163.com/m/song?id="+str(result["id"]),
-				result["cover"],
-				result["link"],
-				result["album"]
-			)
-			event.reply(msg,true)
+func anime_img(keyword,arg,event):
+	var result = await Utils.send_http_get_request("https://www.dmoe.cc/random.php?return=json")
+	if result is Dictionary: #判断回调是否成功
+		if result.has("imgurl"):
+			var reply:String = result["imgurl"]
+			var msg = ImageMessage.init_url(reply)
+			event.reply(msg,true,true)
+			
+			
+func anime_music(keyword,arg,event):
+	var result = await Utils.send_http_get_request("https://api.paugram.com/acgm/")
+	if result is Dictionary: #判断回调是否成功
+		var msg = MusicShareMessage.init(
+			"NeteaseCloudMusic",
+			result["title"],
+			result["artist"],
+			"https://y.music.163.com/m/song?id="+str(result["id"]),
+			result["cover"],
+			result["link"],
+			result["album"]
+		)
+		event.reply(msg)

@@ -17,7 +17,7 @@ func _on_load():
 
 
 func _receive_group_event(event:GroupMessageEvent):
-	var g_id = event.get_group().get_id()
+	var g_id = event.get_group_id()
 	var text = event.get_message_text(TextMessage)
 	if group_info.has(g_id):
 		if group_info[g_id].msg == text:
@@ -26,10 +26,12 @@ func _receive_group_event(event:GroupMessageEvent):
 				event.reply(text)
 				group_info.erase(g_id)
 		else:
-			group_info[g_id] = {"msg":null,"count":0}
-			group_info[g_id].msg = text
-			group_info[g_id].count = 1
+			_reset_info(g_id,text)
 	else:
-		group_info[g_id] = {"msg":null,"count":0}
-		group_info[g_id].msg = text
-		group_info[g_id].count = 1
+		_reset_info(g_id,text)
+
+
+func _reset_info(g_id,text):
+	group_info[g_id] = {"msg":null,"count":0}
+	group_info[g_id].msg = text
+	group_info[g_id].count = 1

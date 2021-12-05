@@ -18,7 +18,9 @@ func _on_load():
 	#开始监听各类事件
 	register_event(GroupInviteRequestEvent,_request_group_invite)
 	register_event(NewFriendRequestEvent,_request_new_friend)
-	register_event(FriendMessageEvent,_receive_message)
+	register_event(FriendMessageEvent,"trigger_keyword")
+	register_keyword("同意请求",_accept,_check_perm)
+	register_keyword("拒绝请求",_refuse,_check_perm)
 
 
 #收到群邀请事件
@@ -43,33 +45,35 @@ func _request_new_friend(event:NewFriendRequestEvent):
 	Member.init(receive_qq).send_message(text)
 	
 
-#收到好友消息
-func _receive_message(event:FriendMessageEvent):
-	if event.get_sender_id() == receive_qq:
-		var text = event.get_message_text(TextMessage)
-		if text.begins_with("同意请求"):
-			var id = text.to_int()
-			if request_dic.has(id):
-				var request = request_dic[id]
-				request_dic.erase(id)
-				if request is GroupInviteRequestEvent:
-					request.respond(GroupInviteRequestEvent.RespondType.ACCEPT)
-					event.reply("已同意入群邀请",true)
-				elif request is NewFriendRequestEvent:
-					request.respond(NewFriendRequestEvent.RespondType.ACCEPT)
-					event.reply("已同意好友申请",true)
-			else:
-				event.reply("未找到对应的请求",true)
-		elif text.begins_with("拒绝请求"):
-			var id = text.to_int()
-			if request_dic.has(id):
-				var request = request_dic[id]
-				request_dic.erase(id)
-				if request is GroupInviteRequestEvent:
-					request.respond(GroupInviteRequestEvent.RespondType.REFUSE)
-					event.reply("已拒绝入群邀请",true)
-				elif request is NewFriendRequestEvent:
-					request.respond(NewFriendRequestEvent.RespondType.REFUSE)
-					event.reply("已拒绝好友申请",true)
-			else:
-				event.reply("未找到对应的请求",true)
+func _check_perm(event):
+	return event.get_sender_id() == receive_qq
+	
+	
+func _accept(keyword,arg,event):
+	var id = arg.to_int()
+	if request_dic.has(id):
+		var request = request_dic[id]
+		request_dic.erase(id)
+		if request is GroupInviteRequestEvent:
+			request.respond(GroupInviteRequestEvent.RespondType.ACCEPT)
+			event.reply("已同意入群邀请",true)
+		elif request is NewFriendRequestEvent:
+			request.respond(NewFriendRequestEvent.RespondType.ACCEPT)
+			event.reply("已同意好友申请",true)
+	else:
+		event.reply("未找到对应的请求",true)
+
+
+func _refuse(keyword,arg,event):
+	var id = arg.to_int()
+	if request_dic.has(id):
+		var request = request_dic[id]
+		request_dic.erase(id)
+		if request is GroupInviteRequestEvent:
+			request.respond(GroupInviteRequestEvent.RespondType.REFUSE)
+			event.reply("已拒绝入群邀请",true)
+		elif request is NewFriendRequestEvent:
+			request.respond(NewFriendRequestEvent.RespondType.REFUSE)
+			event.reply("已拒绝好友申请",true)
+	else:
+		event.reply("未找到对应的请求",true)
