@@ -13,7 +13,7 @@ func _on_init():
 #将在此插件被完全加载后执行的操作
 func _on_load():
 	#开始监听群消息事件，并将群消息事件绑定到_receive_group_event函数
-	register_event(GroupMessageEvent,_receive_group_event)
+	register_event(GroupMessageEvent,_receive_group_event,10)
 
 
 func _receive_group_event(event:GroupMessageEvent):
