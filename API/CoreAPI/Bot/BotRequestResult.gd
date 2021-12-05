@@ -41,3 +41,16 @@ func get_status_msg()->String:
 	
 func get_message_id()->int:
 	return 0
+
+
+func is_success()->bool:
+	return false
+	
+	
+func is_status(code:int)->bool:
+	return false
+	
+	
+func recall()->BotRequestResult:
+	await self.script_changed #用于触发编辑器的错误检查，防止调用此函数时遗漏await关键字
+	return null

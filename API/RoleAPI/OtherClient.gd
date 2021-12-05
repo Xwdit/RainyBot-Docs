@@ -45,14 +45,7 @@ func get_platform()->String:
 
 ## 向其它客户端发送单条Message类实例的消息,第二个参数为需要引用回复的消息id(可选)
 ## 配合await关键字可返回一个BotRequestResult类的实例，便于判断执行状态
-func send_message(msg:Message,quote_msgid:int=-1)->BotRequestResult:
-	await self.script_changed #用于触发编辑器的错误检查，防止调用此函数时遗漏await关键字
-	return null
-
-
-## 向其它客户端发送消息链MessageChain类实例的消息,第二个参数为需要引用回复的消息id(可选)
-## 配合await关键字可返回一个BotRequestResult类的实例，便于判断执行状态
-func send_message_chain(msg_chain:MessageChain,quote_msgid:int=-1)->BotRequestResult:
+func send_message(msg,quote_msgid:int=-1)->BotRequestResult:
 	await self.script_changed #用于触发编辑器的错误检查，防止调用此函数时遗漏await关键字
 	return null
 

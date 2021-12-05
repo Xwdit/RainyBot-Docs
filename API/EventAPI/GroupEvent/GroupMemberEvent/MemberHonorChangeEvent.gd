@@ -28,3 +28,7 @@ func get_honor_name()->String:
 	
 func get_action_type()->int:
 	return 0
+
+
+func is_action_type(action:int)->bool:
+	return false

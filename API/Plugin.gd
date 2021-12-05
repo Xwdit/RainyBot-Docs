@@ -25,6 +25,10 @@ func _on_load():
 	pass
 
 
+func _on_ready():
+	pass
+
+
 ## 在插件中覆盖此虚函数，以便定义插件运行中的每一秒将执行的操作
 ## 通常情况下，各类与计时相关的操作都可以在这里进行
 func _on_process():
@@ -72,7 +76,7 @@ func get_plugin_runtime()->int:
 
 ## 用于获取其他插件的实例，可用于插件之间的联动与数据互通等
 ## 需要传入其他插件的ID作为参数来获取其实例
-func get_other_plugin_instance(plugin_id)->Plugin:
+func get_other_plugin_instance(plugin_id:String)->Plugin:
 	return null
 
 
@@ -82,7 +86,7 @@ func get_other_plugin_instance(plugin_id)->Plugin:
 ## 事件触发的函数名(当对应事件发生时将触发的函数名称，此函数需要定义一个参数用于接收事件实例)
 ## [可选,默认为false]事件是否注册为优先事件(注册为优先的事件触发顺序将较为靠前)
 ## Tips:若以false作为被事件触发的函数的返回值，可阻止事件被传播到较低优先级的插件中(异步函数无效)
-func register_event(event:GDScript,func_name:String,priority:bool=false):
+func register_event(event:GDScript,function,priority:int=0):
 	return
 
 
@@ -100,7 +104,7 @@ func unregister_event(event:GDScript):
 ## 命令触发的函数名(当命令被执行时将触发的函数，此函数需要定义两个参数，分别用于接收命令名与传入的参数数组)
 ## [可选,默认为false]命令是否要求传入参数(若为true则在执行命令时必须传入参数，否则判定为用法错误)
 ## [可选,默认为空数组]命令的用法介绍(将在使用help指令或命令用法错误时显示。数组中的每项需为字符串，代表着一个子命令的用法)
-func register_console_command(command:String,func_name:String,need_arguments:bool=false,usages:Array=[]):
+func register_console_command(command:String,function,need_arguments:bool=false,usages:Array=[]):
 	return
 
 
@@ -108,6 +112,18 @@ func register_console_command(command:String,func_name:String,need_arguments:boo
 ## 需要传入对应的命令名来将其取消注册，无法取消注册不属于此插件的命令
 func unregister_console_command(command:String):
 	return
+
+
+func register_keyword(keyword:String,function,perm_filter="",no_perm_reply:String=""):
+	return
+	
+	
+func unregister_keyword(keyword:String):
+	return
+
+
+func trigger_keyword(event:MessageEvent)->bool:
+	return false
 	
 
 ## 用于初始化插件的配置文件，并将其加载到内存中，以便在后续对其内容进行操作

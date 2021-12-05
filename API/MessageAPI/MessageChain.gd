@@ -16,7 +16,7 @@ class_name MessageChain #定义类名为MessageChain，请勿进行改动
 
 ## 手动构造一个MessageChain类的实例，以便将多个消息类实例作为单条消息发送
 ## 所需的参数为所构造的消息链中将包含的的第一个消息类实例
-static func init(msg:Message)->MessageChain:
+static func init(msg)->MessageChain:
 	return null
 
 
@@ -42,7 +42,7 @@ func set_metadata(arr:Array):
 
 ## 在此消息链实例中添加一个Message子类实例，并返回此消息链实例自身，以便于进行连续操作
 ## 可以进行如"MessageChain.init(TextMessage.init("你好")).append(AtMessage.init(12345)).append(AtMessage.init(45678))"一类的操作
-func append(msg:Message)->MessageChain:
+func append(msg)->MessageChain:
 	return null
 
 
@@ -62,7 +62,7 @@ func get_message(index:int)->Message:
 ## 所需的Message子类的列表(例如需要从消息链中获取所有的At类消息与Text类消息，则为[AtMessage,TextMessage]，为空将获取所有消息)
 ## 是否为排除模式(若为true，则将获取除上个参数的列表以外的所有消息类实例)
 ## 获取的消息数量的上限(若不为-1，则获取到的消息实例总数到达上限后将直接返回对应数组)
-func get_message_array(types:Array=[],exclude:bool=false,max_size:int=-1)->Array:
+func get_message_array(types=[],exclude:bool=false,max_size:int=-1)->Array:
 	return []
 
 
@@ -71,7 +71,7 @@ func get_message_array(types:Array=[],exclude:bool=false,max_size:int=-1)->Array
 ## 可以传入的参数从左到右分别为:
 ## 所需的Message子类的列表(例如需要从消息链中获取所有的At类消息与Text类消息，则为[AtMessage,TextMessage]，为空将获取所有消息)
 ## 是否为排除模式(若为true，则将获取除上个参数的列表以外的所有消息类实例)
-func get_message_text(types:Array=[],exclude:bool=false)->String:
+func get_message_text(types=[],exclude:bool=false)->String:
 	return ""
 
 

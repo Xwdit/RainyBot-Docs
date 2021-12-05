@@ -63,6 +63,10 @@ func get_special_title()->String:
 func get_permission()->int:
 	return 0
 	
+	
+func is_permission(perm:int)->bool:
+	return false
+	
 
 ## 获取群成员实例加入其所在群聊的时间戳，若为手动构造的实例，将始终返回0
 func get_join_timestamp()->int:
@@ -132,15 +136,7 @@ func unmute()->BotRequestResult:
 ## 通过群临时会话，向群成员实例私聊发送单条继承于Message类的消息的实例
 ## 同时可指定一个需要引用回复的消息ID
 ## 配合await关键字可返回一个BotRequestResult类的实例，便于判断执行状态
-func send_message(msg:Message,quote_msgid:int=-1)->BotRequestResult:
-	await self.script_changed #用于触发编辑器的错误检查，防止调用此函数时遗漏await关键字
-	return null
-
-
-## 通过群临时会话，向群成员实例私聊发送一个MessageChain消息链的实例
-## 同时可指定一个需要引用回复的消息ID
-## 配合await关键字可返回一个BotRequestResult类的实例，便于判断执行状态
-func send_message_chain(msg_chain:MessageChain,quote_msgid:int=-1)->BotRequestResult:
+func send_message(msg,quote_msgid:int=-1)->BotRequestResult:
 	await self.script_changed #用于触发编辑器的错误检查，防止调用此函数时遗漏await关键字
 	return null
 

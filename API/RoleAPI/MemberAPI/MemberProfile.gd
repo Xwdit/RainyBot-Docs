@@ -66,3 +66,7 @@ func get_sign()->String:
 ## 获取实例中储存的性别信息，将返回一个对应Sex枚举的整数值
 func get_sex()->int:
 	return Sex.UNKNOWN
+	
+	
+func is_sex(sex:int)->bool:
+	return false

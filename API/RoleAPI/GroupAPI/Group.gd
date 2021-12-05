@@ -91,14 +91,7 @@ func set_group_config(config:GroupConfig)->BotRequestResult:
 
 ## 用于向群聊实例发送单条继承于Message类的消息的实例，同时可指定一个需要引用回复的消息ID
 ## 配合await关键字可返回一个BotRequestResult类的实例，便于判断执行状态
-func send_message(msg:Message,quote_msgid:int=-1)->BotRequestResult:
-	await self.script_changed #用于触发编辑器的错误检查，防止调用此函数时遗漏await关键字
-	return null
-
-
-## 用于向群聊实例发送一个MessageChain消息链的实例，同时可指定一个需要引用回复的消息ID
-## 配合await关键字可返回一个BotRequestResult类的实例，便于判断执行状态
-func send_message_chain(msg_chain:MessageChain,quote_msgid:int=-1)->BotRequestResult:
+func send_message(msg,quote_msgid:int=-1)->BotRequestResult:
 	await self.script_changed #用于触发编辑器的错误检查，防止调用此函数时遗漏await关键字
 	return null
 	

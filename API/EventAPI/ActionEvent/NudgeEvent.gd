@@ -30,6 +30,10 @@ func get_subject_type()->int:
 	return 0
 
 
+func is_subject_type(type:int)->bool:
+	return false
+
+
 func get_action_text()->String:
 	return ""
 	

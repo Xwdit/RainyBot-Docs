@@ -30,5 +30,9 @@ func set_poke_type(type:int):
 	return
 	
 	
+func is_poke_type(type:int)->bool:
+	return false
+	
+	
 func get_as_text()->String:
 	return "[戳一戳:"+PokeType.keys()[get_poke_type]+"]"

@@ -28,3 +28,7 @@ func get_group()->Group:
 	
 func get_reason_type()->int:
 	return 0
+
+
+func is_reason_type(reason:int)->bool:
+	return false

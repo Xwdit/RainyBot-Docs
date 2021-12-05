@@ -4,7 +4,7 @@ extends MessageAPI
 class_name ForwardMessageNodeList
 
 
-static func init(msg_node:ForwardMessageNode)->ForwardMessageNodeList:
+static func init(msg_node)->ForwardMessageNodeList:
 	return null
 
 
@@ -28,7 +28,7 @@ func get_size()->int:
 	return 0
 	
 	
-func append(msg_node:ForwardMessageNode)->ForwardMessageNodeList:
+func append(msg_node)->ForwardMessageNodeList:
 	return
 
 
