@@ -19,6 +19,10 @@ func _on_init():
 	pass
 
 
+func _on_connect():
+	pass
+
+
 ## 在插件中覆盖此虚函数，以便定义插件在被加载完毕后执行的操作
 ## 通常情况下，各类事件的注册与函数绑定都可以在这里进行
 func _on_load():
@@ -32,6 +36,10 @@ func _on_ready():
 ## 在插件中覆盖此虚函数，以便定义插件运行中的每一秒将执行的操作
 ## 通常情况下，各类与计时相关的操作都可以在这里进行
 func _on_process():
+	pass
+
+
+func _on_disconnect():
 	pass
 
 
@@ -104,7 +112,7 @@ func unregister_event(event:GDScript):
 ## 命令触发的函数名(当命令被执行时将触发的函数，此函数需要定义两个参数，分别用于接收命令名与传入的参数数组)
 ## [可选,默认为false]命令是否要求传入参数(若为true则在执行命令时必须传入参数，否则判定为用法错误)
 ## [可选,默认为空数组]命令的用法介绍(将在使用help指令或命令用法错误时显示。数组中的每项需为字符串，代表着一个子命令的用法)
-func register_console_command(command:String,function,need_arguments:bool=false,usages:Array=[]):
+func register_console_command(command:String,function,need_arguments:bool=false,usages:Array=[],need_connect:bool=false):
 	return
 
 
