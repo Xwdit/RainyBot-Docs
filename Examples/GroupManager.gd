@@ -47,7 +47,7 @@ func group_manage(keyword,arg,event):
 		
 		match keyword: #匹配触发此函数的关键词文本
 			"禁言":
-				var sec:int = cmd_arg.to_int() #从关键词参数中获取整数(用于获取要禁言的时长)
+				var sec:int = arg.to_int() #从关键词参数中获取整数(用于获取要禁言的时长)
 				
 				#调用刚才构造的群成员对象中的"mute"函数，将此成员禁言sec秒，并等待一个执行结果
 				var result:BotRequestResult = await _member.mute(sec)
