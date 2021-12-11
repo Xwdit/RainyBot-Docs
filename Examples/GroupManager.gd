@@ -14,29 +14,26 @@ func _on_init():
 
 #将在此插件被完全加载后执行的操作
 func _on_load():
-	var _rep = "您不是管理员或群主，无法执行此操作!" #定义过滤函数未通过时将回复的文本
-	
 	#注册群消息事件，绑定到内置的"trigger_keyword"函数用于触发关键词
 	#注意：若要直接绑定到内置函数，则必须附带双引号；仅消息事件可用于触发关键词
 	register_event(GroupMessageEvent,"trigger_keyword")
 	
-	#注册多个关键词并绑定到"group_manage"函数，使用"check_perm"作为过滤函数，变量_rep中的文本作为失败消息，采用默认的位于开头模式进行匹配
-	#过滤函数是一个自定义的，用于判断是否可触发关键词的函数，将在触发关键词前被执行，如果其返回false则不会触发对应关键词
-	#如果失败消息不为空，则将在过滤函数返回false后，发送失败消息至触发关键词的位置
-	register_keyword(["禁言","解除禁言","更改名片","更改头衔","踢人"],group_manage,check_perm,_rep)
+	#注册多个关键词并绑定到"group_manage"函数
+	register_keyword(["禁言","解除禁言","更改名片","更改头衔","踢人"],group_manage)
 		
 
-#将于关键词触发前用于检查是否可触发关键词，需要接收的参数与关键词将触发的函数一致，分别为:
-#关键词文本，关键词参数(通常为原消息去掉关键词后的文本)，触发关键词的事件实例
-func check_perm(keyword,arg,event):
+#将于关键词触发前用于检查是否可触发关键词,需要接收触发关键词的事件实例
+func check_perm(event):
 	#如果触发关键词的消息发送者的权限是普通成员，则返回false，否则返回true
 	return !event.get_sender().is_permission(GroupMember.Permission.MEMBER)
 
 
 #上方注册的关键词将触发此函数，关键词所绑定的函数需要接收的参数从左到右分别为：
-#关键词文本，关键词参数(通常为原消息去掉关键词后的文本)，触发关键词的事件实例
-func group_manage(keyword,arg,event):
-
+#关键词文本，解析后的关键词文本，关键词参数(通常为原消息去掉关键词后的文本)，触发关键词的事件实例
+func group_manage(keyword,parsed,arg,event):
+	if !check_perm(event):
+		event.reply("您不是管理员或群主，无法执行此操作!")
+		return
 	var at_msg:Array = event.get_message_array(AtMessage) #获取包含消息事件中的所有AT消息的数组
 	var g_id:int = event.get_group_id() #获取消息事件发生的群号(仅限群消息事件)
 	

@@ -14,11 +14,11 @@ func _on_init():
 
 #将在此插件被完全加载后执行的操作
 func _on_load():
-	#注册关键词 "二次元图片"，绑定到"anime_img"函数，不使用过滤函数且不指定失败消息，采用包含模式进行匹配
-	register_keyword("二次元图片",anime_img,"","",MatchMode.INCLUDE)
+	#注册关键词 "二次元图片"，绑定到"anime_img"函数，不使用动态变量字典，采用包含模式进行匹配
+	register_keyword("二次元图片",anime_img,{},MatchMode.INCLUDE)
 	
-	#注册关键词 "二次元音乐"，绑定到"anime_music"函数，不使用过滤函数且不指定失败消息，采用包含模式进行匹配
-	register_keyword("二次元音乐",anime_music,"","",MatchMode.INCLUDE)
+	#注册关键词 "二次元音乐"，绑定到"anime_music"函数，不使用动态变量字典，采用包含模式进行匹配
+	register_keyword("二次元音乐",anime_music,{},MatchMode.INCLUDE)
 	
 	#注册群消息事件与好友消息事件，绑定到内置的"trigger_keyword"函数用于触发关键词
 	#注意：若要直接绑定到内置函数，则必须附带双引号；仅消息事件可用于触发关键词
@@ -26,8 +26,8 @@ func _on_load():
 
 
 #关键词 "二次元图片" 将触发此函数，关键词所绑定的函数需要接收的参数从左到右分别为：
-#关键词文本，关键词参数(通常为原消息去掉关键词后的文本)，触发关键词的事件实例
-func anime_img(keyword,arg,event):
+#关键词文本，解析后的关键词文本，关键词参数(通常为原消息去掉关键词后的文本)，触发关键词的事件实例
+func anime_img(keyword,parsed,arg,event):
 	#发送Http Get请求到特定的随机二次元图片API，并等待返回结果(返回结果为一个HttpRequestResult类的实例)
 	var _result:HttpRequestResult = await Utils.send_http_get_request("https://www.dmoe.cc/random.php?return=json")
 	
@@ -40,8 +40,8 @@ func anime_img(keyword,arg,event):
 			
 
 #关键词 "二次元音乐" 将触发此函数，关键词所绑定的函数需要接收的参数从左到右分别为：
-#关键词文本，关键词参数(通常为原消息去掉关键词后的文本)，触发关键词的事件实例		
-func anime_music(keyword,arg,event):
+#关键词文本，解析后的关键词文本，关键词参数(通常为原消息去掉关键词后的文本)，触发关键词的事件实例	
+func anime_music(keyword,parsed,arg,event):
 	#发送Http Get请求到特定的随机二次元音乐API，并等待返回结果(返回结果为一个HttpRequestResult类的实例)
 	var _result:HttpRequestResult = await Utils.send_http_get_request("https://api.paugram.com/acgm/")
 	

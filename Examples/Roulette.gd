@@ -21,13 +21,13 @@ func _on_load():
 	#注意：若要直接绑定到内置函数，则必须附带双引号；仅消息事件可用于触发关键词
 	register_event(GroupMessageEvent,"trigger_keyword")
 	
-	#注册关键词 "赌轮盘"，绑定到"_game"函数，不使用过滤函数且不指定失败消息，采用包含模式进行匹配
-	register_keyword("赌轮盘",_game,"","",MatchMode.INCLUDE)
+	#注册关键词 "赌轮盘"，绑定到"_game"函数，不使用动态变量字典，采用包含模式进行匹配
+	register_keyword("赌轮盘",_game,{},MatchMode.INCLUDE)
 
 
 #关键词 "赌轮盘" 将触发此函数，关键词所绑定的函数需要接收的参数从左到右分别为：
-#关键词文本，关键词参数(通常为原消息去掉关键词后的文本)，触发关键词的事件实例
-func _game(keyword,arg,event):
+#关键词文本，解析后的关键词文本，关键词参数(通常为原消息去掉关键词后的文本)，触发关键词的事件实例
+func _game(keyword,parsed,arg,event):
 	var g_id:int = event.get_group_id() #获取消息事件发生的群号(仅限群消息事件)
 	var die:String = "你死了，珍爱生命远离赌博，新的一轮开始" #定义挑战失败时发送的文本
 	var live:String = "你活了,子弹还剩%s发" #定义挑战成功时发送的文本，%s为占位符

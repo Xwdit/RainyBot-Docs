@@ -28,9 +28,8 @@ func _on_load():
 	#注意：若要直接绑定到内置函数，则必须附带双引号；仅消息事件可用于触发关键词
 	register_event(FriendMessageEvent,"trigger_keyword")
 	
-	#注册所需关键词并绑定到"_respond"函数，使用"_check_perm"作为过滤函数，不指定失败消息，采用默认的位于开头模式进行匹配
-	#过滤函数是一个自定义的，用于判断是否可触发关键词的函数，将在触发关键词前被执行，如果其返回false则不会触发对应关键词
-	register_keyword(["同意请求","拒绝请求"],_respond,_check_perm)
+	#注册所需关键词并绑定到"_respond"函数
+	register_keyword(["同意请求","拒绝请求"],_respond)
 
 
 #上方注册的邀请入群请求事件将触发此函数，事件所绑定的函数需要接收一个对应事件实例的参数
@@ -67,16 +66,18 @@ func _request_new_friend(event:NewFriendRequestEvent):
 	Member.init(receive_qq).send_message(text)
 	
 
-#将于关键词触发前用于检查是否可触发关键词，需要接收的参数与关键词将触发的函数一致，分别为:
-#关键词文本，关键词参数(通常为原消息去掉关键词后的文本)，触发关键词的事件实例
-func _check_perm(keyword,arg,event):
+#将于关键词触发前用于检查是否可触发关键词
+func _check_perm(event):
 	#检查触发关键词的消息发送者的号码，如果为上方设定的号码则返回true；否则返回false
 	return event.get_sender_id() == receive_qq
 	
 
 #上方注册的关键词将触发此函数，关键词所绑定的函数需要接收的参数从左到右分别为：
-#关键词文本，关键词参数(通常为原消息去掉关键词后的文本)，触发关键词的事件实例
-func _respond(keyword,arg,event):
+#关键词文本，解析后的关键词文本，关键词参数(通常为原消息去掉关键词后的文本)，触发关键词的事件实例
+func _respond(keyword,parsed,arg,event):
+	if !_check_perm(event):
+		return
+
 	var id = arg.to_int() #从关键词参数中获取整数，用于获得要响应的号码
 	
 	if request_dic.has(id): #检查是否存在匹配此号码的请求
