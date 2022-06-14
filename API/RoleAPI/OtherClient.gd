@@ -43,8 +43,13 @@ func get_platform()->String:
 	return ""
 
 
-## 向其它客户端发送单条Message类实例的消息,第二个参数为需要引用回复的消息id(可选)
+## 向其它客户端发送消息,第二个参数为需要引用回复的消息id(可选)
 ## 配合await关键字可返回一个BotRequestResult类的实例，便于判断执行状态
+## 传入的第一个参数可以是以下类型:
+## - 字符串(将自动构造为文本消息实例，解析其中的BotCode，并将其作为消息链中的唯一消息实例发送)
+## - 单个消息实例(将其作为消息链中的唯一消息实例发送)
+## - 消息链实例(将其内容复制并发送)
+## - 包含以上三种类型实例的数组(将按照上方规则将数组中的实例依次合并添加至一个消息链并发送)
 func send_message(msg,quote_msgid:int=-1)->BotRequestResult:
 	await self.script_changed #用于触发编辑器的错误检查，防止调用此函数时遗漏await关键字
 	return null
