@@ -368,7 +368,7 @@ func wait_context(event:MessageEvent,match_sender:bool=true,match_group:bool=tru
 ## 需要的参数从左到右分别为：
 ## 要等待响应的自定义ID
 ## 等待的超时时间(可选，默认为20秒; 若数值小于等于0, 或已存在相同的等待, 则不启用超时)
-func wait_context_id(context_id:String,timeout:float=20.0,block:bool=true):
+func wait_context_id(context_id:String,timeout:float=20.0):
 	return
 
 
