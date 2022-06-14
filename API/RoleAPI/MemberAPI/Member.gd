@@ -48,6 +48,12 @@ func get_role()->int:
 	return 0
 
 
+## 设置个体成员实例的类型
+func set_role(role:int):
+	return
+
+
+## 判断个体成员实例是否为某类型
 func is_role(role:int)->bool:
 	return false
 

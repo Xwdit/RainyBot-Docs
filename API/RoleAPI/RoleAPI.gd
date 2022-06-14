@@ -1,4 +1,4 @@
-extends BotAPI #继承BotAPI类，用于RainyBot内部处理与加载，请勿进行改动
+extends RainyBotAPI #继承RainyBotAPI类，用于RainyBot内部处理与加载，请勿进行改动
 
 
 ##

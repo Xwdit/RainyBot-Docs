@@ -1,20 +1,27 @@
-extends CoreAPI
+extends CoreAPI #继承自CoreAPI
 
 
+## RainyBot的实用工具类，其中提供了各种类型的便捷功能
 class_name Utils
 
 
-#返回格式为xx:xx:xx的时间字符串
+## 获取以HH:mm:ss为格式的当前时间文本
 static func get_formated_time()->String:
 	return ""
 
 
-#在小于10的数字前加上0，并返回为字符串
+## 返回传入数字的字符串，并在传入的数字小于10时在字符串前方加入一个"0"
 static func get_beautifuler_num(num)->String:
 	return ""
 
 
-#发送Http Get请求并获取回调字典
-static func send_http_get_request(url:String,timeout:float = 20.0)->Dictionary:
-	await self.script_changed #用于触发编辑器的错误检查，防止调用此函数时遗漏await关键字
-	return {}
+## 通过await调用时，将发送一个Http Get请求到指定的URL，并在收到结果或超时后返回一个HttpRequestResult
+## 需要的参数从左到右分别为 请求URL,超时时间(可选，默认为20秒)
+static func send_http_get_request(url:String,timeout:int=20)->HttpRequestResult:
+	return null
+
+
+## 通过await调用时，将发送一个Http Post请求到指定的URL，并在收到结果或超时后返回一个HttpRequestResult
+## 需要的参数从左到右分别为 请求URL,请求内容，请求headers(可选，默认为空数组)，超时时间(可选，默认为20秒)
+static func send_http_post_request(url:String,request_data="",headers:PackedStringArray=PackedStringArray([]),timeout:int=20)->HttpRequestResult:
+	return null

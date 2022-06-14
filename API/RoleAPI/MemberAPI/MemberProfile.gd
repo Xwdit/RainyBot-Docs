@@ -17,9 +17,9 @@ class_name MemberProfile #定义类名为MemberProfile，请勿进行改动
 ## 这是代表了资料中性别的枚举，在进行性别判断相关操作时可在转为整数后用于对比
 ## 如"get_sex() == int(MemberProfile.Sex.MALE)"可判断资料性别是否为男性
 enum Sex {
-	UNKNOWN,
-	MALE,
-	FEMALE
+	UNKNOWN, ## 未知
+	MALE, ## 男性
+	FEMALE ## 女性
 }
 
 
@@ -67,6 +67,7 @@ func get_sign()->String:
 func get_sex()->int:
 	return Sex.UNKNOWN
 	
-	
+
+## 判断资料中的性别是不是指定类型的性别
 func is_sex(sex:int)->bool:
 	return false

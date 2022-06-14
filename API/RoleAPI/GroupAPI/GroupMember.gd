@@ -63,7 +63,8 @@ func get_special_title()->String:
 func get_permission()->int:
 	return 0
 	
-	
+
+## 判断群成员实例的类型是否为指定的类型	
 func is_permission(perm:int)->bool:
 	return false
 	

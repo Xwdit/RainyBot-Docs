@@ -14,14 +14,14 @@ extends MessageAPI #继承MessageAPI类，用于RainyBot内部处理与加载，
 class_name MessageChain #定义类名为MessageChain，请勿进行改动
 
 
-## 手动构造一个MessageChain类的实例，以便将多个消息类实例作为单条消息发送
-## 所需的参数为所构造的消息链中将包含的的第一个消息类实例
+## 手动构造一个MessageChain类的实例，以便将多种消息合并为单条消息发送
+## 传入的参数可以是以下类型:
+## - 字符串(将自动构造为文本消息实例，解析其中的BotCode，并将其作为消息链中的第一个消息实例)
+## - 单个消息实例(将其作为消息链中的第一个消息实例)
+## - 消息链实例(将其内容复制并添加到此消息链)
+## - 包含以上三种类型实例的数组(将按照上方规则将数组中的实例依次添加至此消息链)
+## - 已知的消息ID(以便对此ID关联的消息进行如撤回一类的操作)
 static func init(msg)->MessageChain:
-	return null
-
-
-## 基于已知的消息ID手动构造一个MessageChain类的实例，以便对此ID关联的消息进行如撤回一类的操作
-static func init_id(msg_id:int)->MessageChain:
 	return null
 
 
@@ -35,13 +35,18 @@ func get_metadata()->Array:
 	return []
 
 
-## 使用指定字典覆盖实例中的元数据字典，仅当你知道自己在做什么时才使用
+## 使用指定数组覆盖实例中的元数据数组，仅当你知道自己在做什么时才使用
 func set_metadata(arr:Array):
 	return
 
 
-## 在此消息链实例中添加一个Message子类实例，并返回此消息链实例自身，以便于进行连续操作
-## 可以进行如"MessageChain.init(TextMessage.init("你好")).append(AtMessage.init(12345)).append(AtMessage.init(45678))"一类的操作
+## 将参数中的内容添加到此消息链实例中，并返回此消息链实例自身，以便于进行连续操作
+## 可以进行如"MessageChain.init(TextMessage.init("你好")).append(AtMessage.init(12345)).append("啦啦啦")"一类的操作
+## 传入的参数可以是以下类型:
+## - 字符串(将自动构造为文本消息实例，解析其中的BotCode，并将其作为消息链中的第一个消息实例)
+## - 单个消息实例(将其作为消息链中的第一个消息实例)
+## - 消息链实例(将其内容复制并添加到此消息链)
+## - 包含以上三种类型实例的数组(将按照上方规则将数组中的实例依次添加至此消息链)
 func append(msg)->MessageChain:
 	return null
 
@@ -59,7 +64,7 @@ func get_message(index:int)->Message:
 
 ## 根据指定的条件，来从消息链实例中获取由符合条件的消息类实例组成的数组
 ## 可以传入的参数从左到右分别为:
-## 所需的Message子类的列表(例如需要从消息链中获取所有的At类消息与Text类消息，则为[AtMessage,TextMessage]，为空将获取所有消息)
+## 所需的单个Message子类或包含多种Message子类的数组(例如需要从消息链中获取所有的At类消息与Text类消息，则为[AtMessage,TextMessage]，为空将获取所有消息)
 ## 是否为排除模式(若为true，则将获取除上个参数的列表以外的所有消息类实例)
 ## 获取的消息数量的上限(若不为-1，则获取到的消息实例总数到达上限后将直接返回对应数组)
 func get_message_array(types=[],exclude:bool=false,max_size:int=-1)->Array:
@@ -69,7 +74,7 @@ func get_message_array(types=[],exclude:bool=false,max_size:int=-1)->Array:
 ## 根据指定的条件，来从消息链实例中获取由符合条件的消息类实例转换并拼接而成的单个字符串
 ## 转换为字符串的具体行为请参见不同Message子类中的get_as_text()方法
 ## 可以传入的参数从左到右分别为:
-## 所需的Message子类的列表(例如需要从消息链中获取所有的At类消息与Text类消息，则为[AtMessage,TextMessage]，为空将获取所有消息)
+## 所需的单个Message子类或包含多种Message子类的数组(例如需要从消息链中获取所有的At类消息与Text类消息，则为[AtMessage,TextMessage]，为空将获取所有消息)
 ## 是否为排除模式(若为true，则将获取除上个参数的列表以外的所有消息类实例)
 func get_message_text(types=[],exclude:bool=false)->String:
 	return ""
@@ -86,7 +91,9 @@ func get_message_timestamp()->int:
 
 
 ## 判断消息链实例中是否存在指定类型的消息类实例
-func has_message_type(type:GDScript)->bool:
+## 传入的参数可以是单个消息类型，也可以是包含了多种消息类型的数组，如[AtMessage,TextMessage]
+## 若传入参数为数组，则仅当消息链中拥有数组中所有类型时才返回true
+func has_message_type(type)->bool:
 	return false
 
 
