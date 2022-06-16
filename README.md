@@ -14,11 +14,15 @@
     <a href="https://github.com/Xwdit/RainyBot-Core/releases"><strong>立即下载</strong></a>
     <br />
     <br />
-    <a href="https://github.com/Xwdit/RainyBot-API">API文档</a>
+    <a href="https://github.com/Xwdit/RainyBot-Core">项目源码</a>
+     ·
+    <a href="https://godoter.cn/t/rainybot">官方社区</a>
+     ·
+    <a href="https://godoter.cn/t/rainybot-plugins">插件市场</a>
+     ·
+    <a href="https://godoter.cn/t/rainybot-tutorials">教程分享</a>
     ·
-    <a href="https://github.com/Xwdit/RainyBot-Core/issues">问题报告</a>
-    ·
-    <a href="https://github.com/Xwdit/RainyBot-Core/issues">功能请求</a>
+    <a href="https://godoter.cn/t/rainybot-qa">问与答</a>
   </p>
 </div>
 
