@@ -79,7 +79,7 @@ func _on_unload():
 
 
 ## 用于设定插件的相关信息，需要在_on_init()虚函数中执行以便RainyBot正确加载您的插件
-## 需要的参数从左到右分别为插件ID(不可与其它已加载插件重复),插件名,插件作者,插件版本,插件描述,插件依赖(可选)
+## 需要的参数从左到右分别为插件ID(将强制转为小写，不可与其它已加载插件重复),插件名,插件作者,插件版本,插件描述,插件依赖(可选)
 ## 最后一项可选参数为此插件的依赖插件列表(数组)，需要以所依赖的插件的ID作为列表中的元素，如:["example","example_1"]
 ## 设置了插件依赖后，可以保证所依赖的插件一定在此插件之前被加载
 func set_plugin_info(p_id:String,p_name:String,p_author:String,p_version:String,p_description:String,p_dependency=[]):
