@@ -334,6 +334,21 @@ func unload_plugin()->void:
 	return
 
 
+## 创建一个可用于生成图像的SubViewport节点，并添加为插件的子节点
+func create_viewport(size:Vector2i)->SubViewport:
+	return null
+
+
+## 加载一个场景文件并添加为插件自身或指定节点的子节点
+## [br][br]注意：场景加载的路径必须与场景在原项目时所在的相对路径相同，并尽可能将其使用的所有资源唯一化，否则可能会出现未知问题
+## [br]例如，原项目中位于"[code]res://plugins[/code]"的场景在加载时必须位于"[code]RainyBot根目录/plugins[/code]"路径下
+## [br][br]需要的参数从左到右分别为: 
+## [br]- 场景文件路径
+## [br]- [可选, 默认为插件自身] 附加到的父节点
+func load_scene(path:String,parent:Node=null)->Node:
+	return null
+
+
 ## 通过await调用后，将等待一个满足指定发送者id，指定群组id的指定类型的消息事件
 ## [br][br]消息事件不会自动进行上下文匹配，而是需要手动调用或者在注册消息事件时将需要匹配上下文的消息事件手动绑定到"[method respond_context]"函数即可
 ## [br][br]接收到满足条件的事件后，该函数将返回该事件的引用，否则在达到指定的超时秒数后，将返回null
