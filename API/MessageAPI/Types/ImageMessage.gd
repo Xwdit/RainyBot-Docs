@@ -4,6 +4,10 @@ extends Message
 class_name ImageMessage
 
 
+static func init(image:Image)->ImageMessage:
+	return null
+
+
 static func init_id(image_id:String)->ImageMessage:
 	return null
 
