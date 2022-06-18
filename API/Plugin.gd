@@ -346,7 +346,7 @@ func update_viewport(viewport:SubViewport)->void:
 
 ## 获取指定的SubViewport中渲染的内容的Image类图像
 ## [br][br]如果将第二个参数设置为true(默认为false)，则将在获取前对该SubViewport进行更新(需要配合await关键字使用)
-func get_viewport_image(viewport:SubViewport, update:bool=false)->Image:
+func get_viewport_image(viewport:SubViewport,update:bool=false)->Image:
 	return null
 
 
