@@ -4,9 +4,8 @@ extends MessageAPI #继承MessageAPI类，用于RainyBot内部处理与加载，
 ##
 ## RainyBot的消息类，不具备任何功能，仅作为所有消息类型的直接或间接父类
 ##
-## @desc:
-##     这是RainyBot的消息类，不具备任何功能，仅作为所有消息类型的直接或间接父类
-##     多数消息相关操作都密切依赖于此类及其子类(构造/发送/获取消息或消息链等)
+## 这是RainyBot的消息类，不具备任何功能，仅作为所有消息类型的直接或间接父类
+## [br]多数消息相关操作都密切依赖于此类及其子类(构造/发送/获取消息或消息链等)
 ##
 
 
@@ -19,7 +18,7 @@ func get_metadata()->Dictionary:
 
 
 ## 使用指定字典覆盖实例中的元数据字典，仅当你知道自己在做什么时才使用
-func set_metadata(dic:Dictionary):
+func set_metadata(dic:Dictionary)->void:
 	return
 
 

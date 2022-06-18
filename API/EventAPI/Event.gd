@@ -19,5 +19,5 @@ func get_metadata()->Dictionary:
 	return {}
 
 
-func set_metadata(dic:Dictionary):
+func set_metadata(dic:Dictionary)->void:
 	return

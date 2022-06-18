@@ -16,7 +16,7 @@ func get_face_id()->int:
 	return 0
 
 
-func set_face_id(face_id:int):
+func set_face_id(face_id:int)->void:
 	return
 
 	
@@ -24,7 +24,7 @@ func get_face_name()->String:
 	return ""
 	
 	
-func set_face_name(face_name:String):
+func set_face_name(face_name:String)->void:
 	return
 
 

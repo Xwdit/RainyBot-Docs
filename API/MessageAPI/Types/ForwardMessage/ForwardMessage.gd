@@ -16,6 +16,6 @@ func get_node_list()->ForwardMessageNodeList:
 	return null
 	
 	
-func set_node_list(node_list:ForwardMessageNodeList):
+func set_node_list(node_list:ForwardMessageNodeList)->void:
 	return
 	

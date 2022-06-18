@@ -16,7 +16,7 @@ func get_metadata()->Array:
 	return []
 
 
-func set_metadata(arr:Array):
+func set_metadata(arr:Array)->void:
 	return
 
 

@@ -4,9 +4,8 @@ extends Message #继承Message类，用于RainyBot内部处理与加载，请勿
 ##
 ## RainyBot的BotCode消息类，通常代表一个对应实例，可用于快捷发送一段包含多种类型的消息
 ##
-## @desc:
-##     这是RainyBot的BotCode消息类，通常代表一个对应实例，可用于快捷发送一段包含多种类型的消息
-##     此类实例通常不会出现在消息链中，而是用于主动构建此类实例以便快捷发送消息
+## 这是RainyBot的BotCode消息类，通常代表一个对应实例，可用于快捷发送一段包含多种类型的消息
+## [br]此类实例通常不会出现在消息链中，而是用于主动构建此类实例以便快捷发送消息
 ##
 
 
@@ -29,7 +28,7 @@ func get_code_text()->String:
 	
 
 ## 更改实例中储存的BotCode文本	
-func set_code_text(text:String):
+func set_code_text(text:String)->void:
 	return
 
 

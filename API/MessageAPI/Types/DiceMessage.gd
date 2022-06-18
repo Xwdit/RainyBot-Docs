@@ -16,7 +16,7 @@ func get_dice_value()->int:
 	return 0
 	
 	
-func set_dice_value(value:int):
+func set_dice_value(value:int)->void:
 	return
 
 

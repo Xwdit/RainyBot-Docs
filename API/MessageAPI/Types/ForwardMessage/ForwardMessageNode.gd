@@ -16,7 +16,7 @@ func get_metadata()->Dictionary:
 	return {}
 
 
-func set_metadata(dic:Dictionary):
+func set_metadata(dic:Dictionary)->void:
 	return
 
 
@@ -24,7 +24,7 @@ func get_sender_id()->int:
 	return 0
 	
 	
-func set_sender_id(id:int):
+func set_sender_id(id:int)->void:
 	return
 	
 
@@ -32,7 +32,7 @@ func get_time()->int:
 	return 0
 	
 	
-func set_time(time:int):
+func set_time(time:int)->void:
 	return
 	
 	
@@ -40,7 +40,7 @@ func get_sender_name()->String:
 	return ""
 	
 	
-func set_sender_name(name:int):
+func set_sender_name(name:int)->void:
 	return
 	
 	
@@ -48,7 +48,7 @@ func get_message_chain()->MessageChain:
 	return null
 	
 	
-func set_message_chain(msg_chain:MessageChain):
+func set_message_chain(msg_chain:MessageChain)->void:
 	return
 
 
@@ -56,5 +56,5 @@ func get_message_id()->int:
 	return 0
 	
 	
-func set_message_id(id:int):
+func set_message_id(id:int)->void:
 	return

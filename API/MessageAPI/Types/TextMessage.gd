@@ -16,7 +16,7 @@ func get_message_text()->String:
 	return ""
 	
 	
-func set_message_text(text:String):
+func set_message_text(text:String)->void:
 	return
 
 

@@ -28,7 +28,7 @@ func get_image_id()->String:
 	return ""
 	
 	
-func set_image_id(image_id:String):
+func set_image_id(image_id:String)->void:
 	return
 	
 	
@@ -36,7 +36,7 @@ func get_image_url()->String:
 	return ""
 	
 	
-func set_image_url(image_url:String):
+func set_image_url(image_url:String)->void:
 	return
 	
 	
@@ -44,7 +44,7 @@ func get_image_path()->String:
 	return ""
 	
 	
-func set_image_path(image_path:String):
+func set_image_path(image_path:String)->void:
 	return
 	
 	
@@ -52,7 +52,7 @@ func get_image_base64()->String:
 	return ""
 	
 	
-func set_image_base64(image_base64:String):
+func set_image_base64(image_base64:String)->void:
 	return
 
 

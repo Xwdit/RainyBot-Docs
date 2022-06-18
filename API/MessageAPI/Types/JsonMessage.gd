@@ -16,7 +16,7 @@ func get_json_text()->String:
 	return ""
 	
 	
-func set_json_text(text:String):
+func set_json_text(text:String)->void:
 	return
 
 

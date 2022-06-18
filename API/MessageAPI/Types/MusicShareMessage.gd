@@ -16,7 +16,7 @@ func get_share_kind()->String:
 	return ""
 	
 	
-func set_share_kind(text:String):
+func set_share_kind(text:String)->void:
 	return
 	
 	
@@ -24,7 +24,7 @@ func get_share_title()->String:
 	return ""
 	
 	
-func set_share_title(text:String):
+func set_share_title(text:String)->void:
 	return
 	
 	
@@ -32,7 +32,7 @@ func get_share_summary()->String:
 	return ""
 	
 	
-func set_share_summary(text:String):
+func set_share_summary(text:String)->void:
 	return
 	
 	
@@ -40,7 +40,7 @@ func get_share_jump_url()->String:
 	return ""
 	
 	
-func set_share_jump_url(text:String):
+func set_share_jump_url(text:String)->void:
 	return
 	
 	
@@ -48,7 +48,7 @@ func get_share_picture_url()->String:
 	return ""
 	
 	
-func set_share_picture_url(text:String):
+func set_share_picture_url(text:String)->void:
 	return
 	
 	
@@ -56,7 +56,7 @@ func get_share_music_url()->String:
 	return ""
 	
 	
-func set_share_music_url(text:String):
+func set_share_music_url(text:String)->void:
 	return
 	
 	
@@ -64,7 +64,7 @@ func get_share_brief()->String:
 	return ""
 	
 	
-func set_share_brief(text:String):
+func set_share_brief(text:String)->void:
 	return
 
 

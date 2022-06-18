@@ -22,7 +22,7 @@ func get_request_data_dic()->Dictionary:
 
 ## 获取此请求的headers数组
 func get_request_headers()->PackedStringArray:
-	return []
+	return PackedStringArray()
 	
 
 ## 获取此请求的结果状态	
@@ -37,7 +37,7 @@ func get_response_code()->int:
 
 ## 获取此请求的结果的headers
 func get_headers()->PackedStringArray:
-	return []
+	return PackedStringArray()
 
 
 ## 尝试将此请求的结果解析为字符串并返回
@@ -52,4 +52,4 @@ func get_as_dic()->Dictionary:
 
 ## 直接返回此请求的结果的元二进制数据数组
 func get_as_byte()->PackedByteArray:
-	return []
+	return PackedByteArray()

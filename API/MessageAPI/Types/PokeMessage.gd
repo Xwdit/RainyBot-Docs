@@ -26,7 +26,7 @@ func get_poke_type()->int:
 	return 0
 	
 	
-func set_poke_type(type:int):
+func set_poke_type(type:int)->void:
 	return
 	
 	

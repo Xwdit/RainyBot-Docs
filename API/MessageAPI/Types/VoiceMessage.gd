@@ -28,7 +28,7 @@ func get_voice_id()->String:
 	return ""
 	
 	
-func set_voice_id(voice_id:String):
+func set_voice_id(voice_id:String)->void:
 	return
 	
 	
@@ -36,7 +36,7 @@ func get_voice_url()->String:
 	return ""
 	
 	
-func set_voice_url(voice_url:String):
+func set_voice_url(voice_url:String)->void:
 	return
 	
 	
@@ -44,7 +44,7 @@ func get_voice_path()->String:
 	return ""
 	
 	
-func set_voice_path(voice_path:String):
+func set_voice_path(voice_path:String)->void:
 	return
 	
 	
@@ -52,7 +52,7 @@ func get_voice_base64()->String:
 	return ""
 	
 	
-func set_voice_base64(voice_base64:String):
+func set_voice_base64(voice_base64:String)->void:
 	return
 	
 	

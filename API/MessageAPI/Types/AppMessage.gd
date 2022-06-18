@@ -4,9 +4,8 @@ extends Message #继承Message类，用于RainyBot内部处理与加载，请勿
 ##
 ## RainyBot的App消息类，通常代表一个对应实例，此类消息常见于某些特殊App调用聊天软件进行分享的场景
 ##
-## @desc:
-##     这是RainyBot的App消息类，通常代表一个对应实例，此类消息常见于某些特殊App调用聊天软件进行分享的场景
-##     此类实例中储存了App消息的代码原文本，你也可以基于指定APP消息代码文本来构建一个此类实例
+## 这是RainyBot的App消息类，通常代表一个对应实例，此类消息常见于某些特殊App调用聊天软件进行分享的场景
+## [br]此类实例中储存了App消息的代码原文本，你也可以基于指定APP消息代码文本来构建一个此类实例
 ##
 
 
@@ -29,7 +28,7 @@ func get_app_text()->String:
 	
 
 ## 更改实例中储存的App消息代码文本
-func set_app_text(text:String):
+func set_app_text(text:String)->void:
 	return
 
 

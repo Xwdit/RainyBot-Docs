@@ -16,7 +16,7 @@ func get_xml_text()->String:
 	return ""
 	
 	
-func set_xml_text(text:String):
+func set_xml_text(text:String)->void:
 	return
 
 

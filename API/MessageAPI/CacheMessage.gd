@@ -4,9 +4,8 @@ extends MessageAPI #继承MessageAPI类，用于RainyBot内部处理与加载，
 ##
 ## RainyBot的缓存消息类，通常代表一个对应实例，用于储存从机器人后端缓存中读取的消息的相关信息
 ##
-## @desc:
-##     这是RainyBot的缓存消息类，通常代表一个对应实例，用于储存从机器人后端缓存中读取的消息的相关信息
-##     此类实例中通常储存了消息对应的消息链，以及消息对应的发送者实例等信息
+## 这是RainyBot的缓存消息类，通常代表一个对应实例，用于储存从机器人后端缓存中读取的消息的相关信息
+## [br]此类实例中通常储存了消息对应的消息链，以及消息对应的发送者实例等信息
 ##
 
 
@@ -24,7 +23,7 @@ func get_metadata()->Dictionary:
 
 
 ## 使用指定字典覆盖实例中的元数据字典，仅当你知道自己在做什么时才使用
-func set_metadata(dic:Dictionary):
+func set_metadata(dic:Dictionary)->void:
 	return
 
 
@@ -34,6 +33,6 @@ func get_message_chain()->MessageChain:
 	
 
 ## 获取缓存消息实例中储存的消息对应的发送者实例
-## 返回的类型不定，可能返回Member,GroupMember或OtherClient类的实例
-func get_sender():
+## [br][br]返回的类型不定，可能返回Member,GroupMember或OtherClient类的实例
+func get_sender()->RoleAPI:
 	return null
