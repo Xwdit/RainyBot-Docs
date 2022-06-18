@@ -339,6 +339,17 @@ func create_viewport(size:Vector2i)->SubViewport:
 	return null
 
 
+## 更新指定的SubViewport中渲染的内容，以便对其进行获取(配合await关键字可等待其更新完毕)
+func update_viewport(viewport:SubViewport)->void:
+	return
+
+
+## 获取指定的SubViewport中渲染的内容的Image类图像
+## [br][br]如果将第二个参数设置为true(默认为false)，则将在获取前对该SubViewport进行更新(需要配合await关键字使用)
+func get_viewport_image(viewport:SubViewport, update:bool=false)->Image:
+	return null
+
+
 ## 加载一个场景文件并添加为插件自身或指定节点的子节点
 ## [br][br]注意：场景加载的路径必须与场景在原项目时所在的相对路径相同，并尽可能将其使用的所有资源唯一化，否则可能会出现未知问题
 ## [br]例如，原项目中位于"[code]res://plugins[/code]"的场景在加载时必须位于"[code]RainyBot根目录/plugins[/code]"路径下
