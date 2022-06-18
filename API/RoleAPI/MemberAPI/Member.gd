@@ -13,7 +13,7 @@ class_name Member #定义类名为Member，请勿进行改动
 
 
 ## 这是代表了个体成员类型的枚举，在进行类型判断相关操作时可在转为整数后用于对比
-## [br][br]如"get_role() == int(Member.Role.FRIEND)"可判断个体成员是否为好友
+## [br][br]如"get_role() == Member.Role.FRIEND"可判断个体成员是否为好友
 enum Role{
 	FRIEND, ## 代表个体成员的类型为好友
 	STRANGER ## 代表个体成员的类型为单向好友(陌生人)

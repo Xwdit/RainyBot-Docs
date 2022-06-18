@@ -578,3 +578,7 @@ config/custom_user_dir_name="rainybot-api"
 config/features=PackedStringArray("4.0")
 config/icon="res://logo.png"
 config/windows_native_icon="res://logo.ico"
+
+[editor]
+
+script/templates_search_path="res://Templates"

@@ -3,8 +3,8 @@ extends Node #继承Node类，用于RainyBot内部处理与加载，请勿进行
 ##
 ## RainyBot的插件类，代表一个实例，用于在插件中实现各类相关功能
 ##
-## 这是RainyBot的插件类，代表一个插件实例，用于在插件中实现各类相关功能。
-## [br]所有插件应当继承此类，以便在RainyBot中正确加载与运行。
+## 这是RainyBot的插件类，代表一个插件实例，用于在插件中实现各类相关功能。所有插件应当继承此类，以便在RainyBot中正确加载与运行。
+## [br][br]您可以点击此链接来查看可供插件使用的所有API文档: [RainyBotAPI]
 ##
 
 class_name Plugin #定义类名为Plugin，请勿进行改动
@@ -31,9 +31,9 @@ enum BlockMode{
 }
 
 
-## 在插件中覆盖此虚函数，以便定义将在此插件的文件被读取时执行的操作
-## [br][br]必须在此处使用set_plugin_info函数来设置插件信息，插件才能被正常加载
-## [br][br]例如：set_plugin_info("example","示例插件","author","1.0","这是插件的介绍")
+## 在插件中覆盖此虚函数，以便定义将在此插件的文件每次被读取时执行的操作
+## [br][br]必须在此处使用[method set_plugin_info]函数来设置插件信息，插件才能被正常识别与读取
+## [br][br]例如：[code]set_plugin_info("example","示例插件","author","1.0","这是插件的介绍")[/code]
 ## [br][br]可以在此处初始化和使用一些基本变量，但不建议执行其它代码，可能会导致出现未知问题
 func _on_init()->void:
 	return
@@ -77,31 +77,31 @@ func _on_unload()->void:
 	return
 
 
-## 用于设定插件的相关信息，需要在_on_init()虚函数中执行以便RainyBot正确加载您的插件
+## 用于设定插件的相关信息，需要在[method _on_init]虚函数中执行以便RainyBot正确加载您的插件
 ## [br][br]需要的参数从左到右分别为插件ID(将强制转为小写，不可与其它已加载插件重复),插件名,插件作者,插件版本,插件描述,插件依赖(可选)
-## [br][br]最后一项可选参数为此插件的依赖插件列表(数组)，需要以所依赖的插件的ID作为列表中的元素，如:["example","example_1"]
+## [br][br]最后一项可选参数为此插件的依赖插件列表(数组)，需要以所依赖的插件的ID作为列表中的元素，如:[code]["example","example_1"][/code]
 ## [br][br]设置了插件依赖后，可以保证所依赖的插件一定在此插件之前被加载
 func set_plugin_info(p_id:String,p_name:String,p_author:String,p_version:String,p_description:String,p_dependency=[])->void:
 	return
 
 
 ## 用于获取插件的相关信息，将返回一个包含插件信息的字典
-## [br][br]使用id,name,author,version,description,dependency作为key即可从字典中获取对应信息
+## [br][br]使用[code]id, name, author, version, description, dependency[/code]作为key即可从字典中获取对应信息
 func get_plugin_info()->Dictionary:
 	return {}
 
 
-## 用于获取插件对应的文件名，将返回插件文件的名称 (如ChatBot.gd)
+## 用于获取插件对应的文件名，将返回插件文件的名称 (如[code]ChatBot.gd[/code])
 func get_plugin_filename()->String:
 	return ""
 
 
-## 用于获取插件对应的文件路径，将返回插件文件的绝对路径 (如 D://RainyBot/plugins/ChatBot.gd)
+## 用于获取插件对应的文件路径，将返回插件文件的绝对路径 (如 [code]D://RainyBot/plugins/ChatBot.gd[/code])
 func get_plugin_filepath()->String:
 	return ""
 
 
-## 用于获取RainyBot的插件文件夹的路径，将返回插件文件夹的绝对路径 (如 D://RainyBot/plugins/)
+## 用于获取RainyBot的插件文件夹的路径，将返回插件文件夹的绝对路径 (如 [code]D://RainyBot/plugins/[/code])
 func get_plugin_path()->String:
 	return ""
 
@@ -117,7 +117,7 @@ func get_plugin_instance(plugin_id:String)->Plugin:
 	return null
 
 
-## 用于获取RainyBot的数据文件夹的路径，将返回数据文件夹的绝对路径 (如 D://RainyBot/data/)
+## 用于获取RainyBot的数据文件夹的路径，将返回数据文件夹的绝对路径 (如 [code]D://RainyBot/data/[/code])
 func get_data_path()->String:
 	return ""
 	
@@ -127,7 +127,7 @@ func get_data_filepath()->String:
 	return ""
 	
 
-## 用于获取RainyBot的配置文件夹的路径，将返回配置文件夹的绝对路径 (如 D://RainyBot/config/)	
+## 用于获取RainyBot的配置文件夹的路径，将返回配置文件夹的绝对路径 (如 [code]D://RainyBot/config/[/code])	
 func get_config_path()->String:
 	return ""
 	
@@ -151,7 +151,7 @@ func is_data_loaded()->bool:
 ## [br][br]需要的参数从左到右分别为:
 ## [br][br]事件的类型:
 ## [br]- 此处可传入单个事件类型名，或一个包含了任意数量事件类型名的数组以批量注册事件
-## [br]- 传入的事件需要直接或间接继承Event类，如GroupMessageEvent(群消息事件)
+## [br]- 传入的事件需要直接或间接继承[Event]类，如[GroupMessageEvent](群消息事件)
 ##
 ## [br][br]事件绑定的函数名:
 ## [br]- 此处可传入单个函数名，或一个包含了任意数量函数名的数组以批量绑定函数
@@ -176,7 +176,7 @@ func unregister_event(event)->void:
 
 ## 用于注册一个控制台命令并将其绑定到指定函数，命令被执行时将触发此函数，并传入对应的命令名与参数数组
 ## [br][br]命令被注册后将会在帮助菜单中自动显示，无法注册已经存在的命令
-## [br][br]绑定函数接收的参数数组中包含了以空格分隔的命令参数的列表，如命令 plugins load xxx.gd ，传入的数组中将包含["load","xxx.gd"]
+## [br][br]绑定函数接收的参数数组中包含了以空格分隔的命令参数的列表，如命令 [code]plugins load xxx.gd[/code] ，传入的数组中将包含[code]["load","xxx.gd"][/code]
 ## [br][br]注册命令需要的参数从左到右分别为:
 ## [br]- 命令的名称 (即为在控制台触发此命令需要输入的内容，请勿包含空格，不可与已存在的命令重复；此处可传入单个命令名，或一个包含了任意数量命令名的数组以批量注册某个命令及其别称)
 ## [br]- 命令触发的函数名(当命令被执行时将触发的函数，此函数需要定义两个参数，分别用于接收命令名与传入的参数数组)
@@ -194,11 +194,11 @@ func unregister_console_command(command)->void:
 	
 
 ## 用于注册一个或多个关键词并将其绑定到某个函数，关键词匹配时将触发绑定的函数并传入相关数据
-## [br][br]注册的关键词不会自动进行匹配，而是需要手动调用或者在注册事件时将需要检测关键词的消息事件手动绑定到"trigger_keyword"函数即可
+## [br][br]注册的关键词不会自动进行匹配，而是需要手动调用或者在注册事件时将需要检测关键词的消息事件手动绑定到"[method trigger_keyword]"函数即可
 ## [br][br]注册需要的参数从左到右分别为:
 ## [br][br]关键词的内容:
 ## [br]- 此处可传入单个关键词字符串，或一个包含了任意数量关键词字符串的数组以批量注册关键词
-## [br]- 若关键词包含{@}，则满足匹配条件的同时还需要At机器人才视为匹配成功
+## [br]- 若关键词包含[code]{@}[/code]，则满足匹配条件的同时还需要At机器人才视为匹配成功
 ## [br]- 若匹配模式为正则表达式模式，则关键词需要为一个正则表达式
 ##
 ## [br][br]关键词绑定的函数名:
@@ -212,12 +212,12 @@ func unregister_console_command(command)->void:
 ## [br]- 后续您只需更改该字典中的"name"键对应的值，即可实时变更唤醒机器人的关键词
 ##
 ## [br][br]关键词的匹配模式
-## [br]- 在某个消息事件触发"trigger_keyword"函数后，将提取消息事件的文本并根据匹配模式进行匹配
-## [br]- 只有满足匹配模式对应的条件的关键词才会触发绑定的函数，匹配模式的具体行为请参见上方的MatchMode枚举
+## [br]- 在某个消息事件触发"[method trigger_keyword]"函数后，将提取消息事件的文本并根据匹配模式进行匹配
+## [br]- 只有满足匹配模式对应的条件的关键词才会触发绑定的函数，匹配模式的具体行为请参见上方的[member MatchMode]枚举
 ##
 ## [br][br]关键词匹配成功后阻断对应事件的传递 (可选,默认为true):
-## [br]- 若此项为true,则在成功匹配关键词后，被对应事件调用的"trigger_keyword"函数将返回true以尝试阻断事件的传递
-## [br]- 若此项为false,但是关键词所触发的函数返回了true,那么被对应事件调用的"trigger_keyword"函数也将返回true以尝试阻断事件的传递
+## [br]- 若此项为true,则在成功匹配关键词后，被对应事件调用的"[method trigger_keyword]"函数将返回true以尝试阻断事件的传递
+## [br]- 若此项为false,但是关键词所触发的函数返回了true,那么被对应事件调用的"[method trigger_keyword]"函数也将返回true以尝试阻断事件的传递
 ## [br]- 阻断的具体行为将由相关事件注册时设置的阻断模式决定
 func register_keyword(keyword,function,var_dic:Dictionary={},match_mode:int=MatchMode.BEGIN,block:bool=true)->void:
 	return
@@ -335,7 +335,7 @@ func unload_plugin()->void:
 
 
 ## 通过await调用后，将等待一个满足指定发送者id，指定群组id的指定类型的消息事件
-## [br][br]消息事件不会自动进行上下文匹配，而是需要手动调用或者在注册消息事件时将需要匹配上下文的消息事件手动绑定到"respond_context"函数即可
+## [br][br]消息事件不会自动进行上下文匹配，而是需要手动调用或者在注册消息事件时将需要匹配上下文的消息事件手动绑定到"[method respond_context]"函数即可
 ## [br][br]接收到满足条件的事件后，该函数将返回该事件的引用，否则在达到指定的超时秒数后，将返回null
 ## [br][br]需要的参数从左到右分别为：
 ## [br]- 要等待的消息事件的类型
@@ -348,7 +348,7 @@ func wait_context_custom(event_type:GDScript,sender_id:int=-1,group_id:int=-1,ti
 
 
 ## 通过await调用后，将等待另外一个与指定消息事件相匹配的消息事件
-## [br][br]消息事件不会自动进行上下文匹配，而是需要手动调用或者在注册消息事件时将需要进行匹配的消息事件手动绑定到"respond_context"函数即可
+## [br][br]消息事件不会自动进行上下文匹配，而是需要手动调用或者在注册消息事件时将需要进行匹配的消息事件手动绑定到"[method respond_context]"函数即可
 ## [br][br]接收到满足条件的事件后，该函数将返回该事件的引用，否则在达到指定的超时秒数后，将返回null
 ## [br][br]需要的参数从左到右分别为：
 ## [br]- 要匹配的消息事件的实例引用
@@ -361,7 +361,7 @@ func wait_context(event:MessageEvent,match_sender:bool=true,match_group:bool=tru
 	
 
 ## 通过await调用后，将等待指定id的响应，并在收到响应后返回响应的内容
-## [br][br]要进行响应，需要在某处手动调用"respond_context"函数并传入相同的ID
+## [br][br]要进行响应，需要在某处手动调用"[method respond_context]"函数并传入相同的ID
 ## [br][br]若未进行响应且在达到指定的超时秒数后，将返回null
 ## [br][br]需要的参数从左到右分别为：
 ## [br]- 要等待响应的自定义ID

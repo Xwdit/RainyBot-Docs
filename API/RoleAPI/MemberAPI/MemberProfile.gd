@@ -14,7 +14,7 @@ class_name MemberProfile #定义类名为MemberProfile，请勿进行改动
 
 
 ## 这是代表了资料中性别的枚举，在进行性别判断相关操作时可在转为整数后用于对比
-## [br][br]如"get_sex() == int(MemberProfile.Sex.MALE)"可判断资料性别是否为男性
+## [br][br]如"get_sex() == MemberProfile.Sex.MALE"可判断资料性别是否为男性
 enum Sex {
 	UNKNOWN, ## 未知
 	MALE, ## 男性

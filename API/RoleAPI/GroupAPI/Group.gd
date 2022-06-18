@@ -45,7 +45,6 @@ func get_id()->int:
 
 ## 获取机器人在群聊实例中的权限，若为手动构造的实例，将始终返回0
 ## [br][br]权限列表请参见GroupMember类中的Permission枚举
-## [br][br]与返回结果对比时，需要通过int()函数将需要对比的权限枚举转为整数值(如:int(GroupMember.Permission.MEMBER))
 func get_bot_permission()->int:
 	return 0
 
