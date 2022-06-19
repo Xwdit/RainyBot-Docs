@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://dt6whnxd15e6e"]
 
-[ext_resource type="Script" path="res://examples/scene_example/example_scene.gd" id="1_iesyf"]
+[ext_resource type="Script" path="res://plugins/scene_example/example_scene.gd" id="1_iesyf"]
 
 [node name="ExampleScene" type="Control"]
 anchor_right = 1.0
@@ -10,3 +10,6 @@ script = ExtResource( "1_iesyf" )
 [node name="Label" type="Label" parent="."]
 anchor_right = 1.0
 anchor_bottom = 1.0
+theme_override_font_sizes/font_size = 30
+horizontal_alignment = 1
+vertical_alignment = 1
