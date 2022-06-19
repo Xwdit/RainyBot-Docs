@@ -111,6 +111,11 @@ func get_plugin_runtime()->int:
 	return -1
 	
 
+## 用于获取RainyBot全局的已运行时间，默认情况下为RainyBot成功启动以来经过的秒数
+func get_global_runtime()->int:
+	return -1
+
+
 ## 用于获取其他插件的实例引用，可用于插件之间的联动与数据互通等
 ## [br][br]需要传入其他插件的ID作为参数来获取其实例，若未找到插件则返回null
 func get_plugin_instance(plugin_id:String)->Plugin:
@@ -136,6 +141,16 @@ func get_config_path()->String:
 func get_config_filepath()->String:
 	return ""
 	
+	
+## 用于获取RainyBot的缓存文件夹的路径，将返回缓存文件夹的绝对路径 (如 D://RainyBot/cache)
+func get_cache_path()->String:
+	return ""
+
+
+## 用于获取该插件对应的缓存数据库文件的路径，即插件对应的.rca格式文件的绝对路径
+func get_cache_filepath()->String:
+	return ""
+
 
 ## 用于检查插件对应的配置文件内容是否已被加载
 func is_config_loaded()->bool:
@@ -144,6 +159,11 @@ func is_config_loaded()->bool:
 
 ## 用于检查插件对应的数据库文件内容是否已被加载
 func is_data_loaded()->bool:
+	return false
+
+
+## 用于检查插件对应的缓存数据库文件内容是否已被加载
+func is_cache_loaded()->bool:
 	return false
 
 
@@ -286,6 +306,17 @@ func get_plugin_data_metadata()->Dictionary:
 ## [br][br]最后一项可选参数用于指定是否在设定的同时立即将更改保存到数据库文件中
 func set_plugin_data_metadata(dic:Dictionary,save_file:bool=true)->int:
 	return OK
+	
+	
+## 用于直接获取已加载的缓存数据库的字典，便于以字典的形式对其进行操作，需要先初始化缓存数据库文件才能使用此函数
+func get_plugin_cache_metadata()->Dictionary:
+	return {}
+	
+	
+## 用于直接替换已加载的缓存数据库的字典为指定的字典，便于以字典的形式对其进行操作，需要先初始化缓存数据库文件才能使用此函数
+## [br][br]最后一项可选参数用于指定是否在设定的同时立即将更改保存到缓存数据库文件中
+func set_plugin_cache_metadata(dic:Dictionary,save_file:bool=true)->int:
+	return OK
 
 
 ## 用于初始化插件的数据库文件，并将其加载到内存中，以便在后续对其内容进行操作
@@ -325,6 +356,46 @@ func remove_plugin_data(key,save_file:bool=true)->int:
 ## 用于在已加载的数据库中清空所有内容，需要先初始化数据库文件才能使用此函数
 ## [br][br]最后一项可选参数用于指定是否在清空的同时将更改立即保存到数据库文件中
 func clear_plugin_data(save_file:bool=true)->int:
+	return OK
+
+
+## 用于初始化插件的缓存数据库文件，并将其加载到内存中，以便在后续对其内容进行操作
+## [br][br]缓存数据库中的所有内容及文件本身会在插件卸载/重载时保留，但是会在RainyBot关闭时永久删除
+## [br][br]执行此函数时，将会检测是否已存在此插件对应的缓存数据库文件，否则将会新建一个空白的缓存数据库文件(.rca格式)
+func init_plugin_cache()->int:
+	return OK
+			
+
+## 用于将内存中的数据保存到缓存数据库文件中，需要先初始化缓存数据库文件才能使用此函数		
+func save_plugin_cache()->int:
+	return OK
+		
+
+## 用于从已加载的缓存数据库中获取指定key对应的内容，需要先初始化缓存数据库文件才能使用此函数	
+func get_plugin_cache(key)->Variant:
+	return
+		
+
+## 用于从已加载的缓存数据库中检查指定key是否存在，需要先初始化缓存数据库文件才能使用此函数			
+func has_plugin_cache(key)->bool:
+	return false
+		
+
+## 用于在已加载的缓存数据库中设定指定key的对应内容，需要先初始化缓存数据库文件才能使用此函数
+## [br][br]最后一项可选参数用于指定是否在设定的同时将更改立即保存到缓存数据库文件中
+func set_plugin_cache(key,value,save_file:bool=true)->int:
+	return OK
+
+
+## 用于在已加载的缓存数据库中删除指定key及其对应内容，需要先初始化缓存数据库文件才能使用此函数
+## [br][br]最后一项可选参数用于指定是否在删除的同时将更改立即保存到缓存数据库文件中
+func remove_plugin_cache(key,save_file:bool=true)->int:
+	return OK
+		
+
+## 用于在已加载的缓存数据库中清空所有内容，需要先初始化缓存数据库文件才能使用此函数
+## [br][br]最后一项可选参数用于指定是否在清空的同时将更改立即保存到缓存数据库文件中
+func clear_plugin_cache(save_file:bool=true)->int:
 	return OK
 
 

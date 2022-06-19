@@ -10,6 +10,26 @@ static func get_id()->int:
 	return -1
 	
 
+## 判断与机器人后端是否已建立连接
+static func is_bot_connected()->bool:
+	return false
+	
+
+## 获取已通过机器人后端发送的消息的数量
+static func get_sent_message_count()->int:
+	return 0
+
+
+## 获取已通过机器人后端接收到的群聊消息的数量
+static func get_group_message_count()->int:
+	return 0
+	
+
+## 获取已通过机器人后端接收到的私聊消息的数量	
+static func get_private_message_count()->int:
+	return 0
+
+
 ## 获取当前机器人账号的好友列表，需要与await关键词配合使用
 static func get_friend_list()->MemberList:
 	return null
