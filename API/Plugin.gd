@@ -344,6 +344,12 @@ func update_viewport(viewport:SubViewport)->void:
 	return
 
 
+## 更新指定的SubViewport的渲染大小，还可以指定基于该渲染大小拉伸后的大小
+## [br][br]如果设置了第三个参数(默认为[code]Vector2i(0,0)[/code])，则指定的SubViewport将基于第二个参数的大小渲染内容，并将渲染后的内容拉伸为第三个参数的大小
+func set_viewport_size(viewport:SubViewport,size:Vector2i,stretch_size:Vector2i=Vector2i.ZERO)->void:
+	return
+
+
 ## 获取指定的SubViewport中渲染的内容的Image类图像
 ## [br][br]如果将第二个参数设置为true(默认为false)，则将在获取前对该SubViewport进行更新(需要配合await关键字使用)
 func get_viewport_image(viewport:SubViewport,update:bool=false)->Image:
