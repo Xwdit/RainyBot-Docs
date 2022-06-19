@@ -407,7 +407,8 @@ func unload_plugin()->void:
 
 ## 创建一个可用于生成图像的SubViewport节点，设置为指定大小，并添加为插件的子节点
 ## [br][br]如果设置了第二个参数(默认为[code]Vector2i(0,0)[/code])，则创建的SubViewport将基于第一个参数的大小渲染内容，并将渲染后的内容拉伸为第二个参数的大小
-func create_viewport(size:Vector2i,stretch_size:Vector2i=Vector2i.ZERO)->SubViewport:
+## [br][br]如果设置了第三个参数(默认为[code]false[/code])，则创建的SubViewport将使用透明背景，且基于此 SubViewport生成的图像也将拥有透明背景
+func create_viewport(size:Vector2i,stretch_size:Vector2i=Vector2i.ZERO,transparent:bool=false)->SubViewport:
 	return null
 
 
@@ -419,6 +420,11 @@ func update_viewport(viewport:SubViewport)->void:
 ## 更新指定的SubViewport的渲染大小，还可以指定基于该渲染大小拉伸后的大小
 ## [br][br]如果设置了第三个参数(默认为[code]Vector2i(0,0)[/code])，则指定的SubViewport将基于第二个参数的大小渲染内容，并将渲染后的内容拉伸为第三个参数的大小
 func set_viewport_size(viewport:SubViewport,size:Vector2i,stretch_size:Vector2i=Vector2i.ZERO)->void:
+	return
+
+
+## 设置指定的SubViewport是否启用透明背景。若启用透明背景，基于此 SubViewport生成的图像也将拥有透明的背景
+func set_viewport_transparent(viewport:SubViewport,transparent:bool)->void:
 	return
 
 
