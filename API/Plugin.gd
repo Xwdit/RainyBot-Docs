@@ -334,8 +334,9 @@ func unload_plugin()->void:
 	return
 
 
-## 创建一个可用于生成图像的SubViewport节点，并添加为插件的子节点
-func create_viewport(size:Vector2i)->SubViewport:
+## 创建一个可用于生成图像的SubViewport节点，设置为指定大小，并添加为插件的子节点
+## [br][br]如果设置了第二个参数(默认为[code]Vector2i(0,0)[/code])，则创建的SubViewport将基于第一个参数的大小渲染内容，并将渲染后的内容拉伸为第二个参数的大小
+func create_viewport(size:Vector2i,stretch_size:Vector2i=Vector2i.ZERO)->SubViewport:
 	return null
 
 
