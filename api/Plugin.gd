@@ -167,6 +167,13 @@ func is_cache_loaded()->bool:
 	return false
 
 
+## 用于获取最近一次检测到的所有RainyBot运行时错误，将返回一个包含了这些错误的字符串数组
+## [br][br]如果自RainyBot启动至今还没有检测到任何运行时错误，将返回一个空数组
+## [br][br]当前版本中仅支持自动检测脚本运行时错误，若要获取其他类型的错误，请通过主菜单来访问内部日志进行查看
+func get_last_errors()->PackedStringArray:
+	return PackedStringArray()
+
+
 ## 用于注册一个或多个事件并将其绑定到一个或多个函数，事件发生时将触发绑定的函数并传入事件实例
 ## [br][br]需要的参数从左到右分别为:
 ## [br][br]事件的类型:
