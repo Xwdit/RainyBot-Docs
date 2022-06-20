@@ -42,6 +42,12 @@ func _on_load():
 #关键词 "生成图片" 将触发此函数，关键词所绑定的函数需要接收的参数从左到右分别为：
 #关键词文本，解析后的关键词文本，关键词参数(通常为原消息去掉关键词后的文本)，触发关键词的事件实例
 func _generate(keyword,parsed,arg,event):
+	#不建议在与关键词/事件/命令直接绑定的函数中包含await关键字，否则会提示运行时错误(但不影响运行)，因此调用另一个函数进行处理
+	gen_img(arg,event)
+
+
+#用于生成图片并发送到触发关键词的事件
+func gen_img(arg,event):
 	scene.set_text(arg) #将加载的场景中的文本设置为接收的参数
 	
 	#等待场景所在的SubViewport更新并截取其渲染的Image类图像，储存至img变量

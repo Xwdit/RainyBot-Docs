@@ -28,6 +28,19 @@ func _on_load():
 #关键词 "二次元图片" 将触发此函数，关键词所绑定的函数需要接收的参数从左到右分别为：
 #关键词文本，解析后的关键词文本，关键词参数(通常为原消息去掉关键词后的文本)，触发关键词的事件实例
 func anime_img(keyword,parsed,arg,event):
+	#不建议在与关键词/事件/命令直接绑定的函数中包含await关键字，否则会提示运行时错误(但不影响运行)，因此调用另一个函数进行处理
+	send_anime_img(event)
+
+
+#关键词 "二次元音乐" 将触发此函数，关键词所绑定的函数需要接收的参数从左到右分别为：
+#关键词文本，解析后的关键词文本，关键词参数(通常为原消息去掉关键词后的文本)，触发关键词的事件实例	
+func anime_music(keyword,parsed,arg,event):
+	#不建议在与关键词/事件/命令直接绑定的函数中包含await关键字，否则会提示错误(但不影响运行)，因此调用另一个函数进行处理
+	send_anime_music(event)
+
+
+#用于获取并发送随机的动漫图片
+func send_anime_img(event):
 	#发送Http Get请求到特定的随机二次元图片API，并等待返回结果(返回结果为一个HttpRequestResult类的实例)
 	var _result:HttpRequestResult = await Utils.send_http_get_request("https://www.dmoe.cc/random.php?return=json")
 	
@@ -37,11 +50,10 @@ func anime_img(keyword,parsed,arg,event):
 		var msg = ImageMessage.init_url(reply) #根据图片链接构建一个图片消息ImageMessage类实例
 		#将图片消息发送回触发此关键词的位置，并引用原消息(第二个参数)；且如果来自群聊，则AT原消息发送者(第三个参数)
 		event.reply(msg,true,true)
-			
 
-#关键词 "二次元音乐" 将触发此函数，关键词所绑定的函数需要接收的参数从左到右分别为：
-#关键词文本，解析后的关键词文本，关键词参数(通常为原消息去掉关键词后的文本)，触发关键词的事件实例	
-func anime_music(keyword,parsed,arg,event):
+
+#用于获取并发送随机的动漫音乐
+func send_anime_music(event):
 	#发送Http Get请求到特定的随机二次元音乐API，并等待返回结果(返回结果为一个HttpRequestResult类的实例)
 	var _result:HttpRequestResult = await Utils.send_http_get_request("https://api.paugram.com/acgm/")
 	
