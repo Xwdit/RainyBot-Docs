@@ -64,6 +64,13 @@ func _on_process()->void:
 	return
 
 
+## 在插件中覆盖此虚函数，以便定义在RainyBot检测到运行时错误后将执行的操作
+## [br][br]可在此处进行一些与错误处理相关的操作，例如向指定QQ发送通知等
+## [br][br]您可以使用[method get_last_errors]函数来获取错误的详细内容
+func _on_error()->void:
+	pass
+
+
 ## 在插件中覆盖此虚函数，以便定义RainyBot在与协议后端断开建立连接后插件将执行的操作
 ## [br][br]可以在此处进行一些与连接状态相关的操作，例如断开连接后暂停某些任务的运行等
 func _on_disconnect()->void:
