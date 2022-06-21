@@ -468,8 +468,9 @@ func get_viewport_image(viewport:SubViewport,update:bool=false)->Image:
 ## [br]例如，原项目中位于"[code]res://plugins[/code]"的场景在加载时必须位于"[code]RainyBot根目录/plugins[/code]"路径下
 ## [br][br]需要的参数从左到右分别为: 
 ## [br]- 场景文件路径
-## [br]- [可选, 默认为插件自身] 附加到的父节点
-func load_scene(path:String,parent:Node=null)->Node:
+## [br]- 附加到的父节点 (可选, 默认为插件自身)
+## [br]- 在单独的线程中异步加载 (可选，默认为false，若启用则可在加载复杂场景时避免阻塞主线程运行，但可能会增加加载时间，使场景无法热重载，且将需要配合await关键字来使用此函数)
+func load_scene(path:String,parent:Node=null,threaded:bool=false)->Node:
 	return null
 
 

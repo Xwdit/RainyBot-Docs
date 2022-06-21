@@ -50,6 +50,36 @@ func get_as_dic()->Dictionary:
 	return {}
 
 
-## 直接返回此请求的结果的元二进制数据数组
+## 直接返回此请求的结果的二进制数据数组
 func get_as_byte()->PackedByteArray:
 	return PackedByteArray()
+	
+
+## 尝试将此请求的结果作为png格式解析并返回其图像实例
+func get_as_png_image()->Image:
+	return null
+	
+
+## 尝试将此请求的结果作为jpg格式解析并返回其图像实例
+func get_as_jpg_image()->Image:
+	return null
+	
+
+## 尝试将此请求的结果作为bmp格式解析并返回其图像实例
+func get_as_bmp_image()->Image:
+	return null
+	
+
+## 尝试将此请求的结果作为tga格式解析并返回其图像实例
+func get_as_tga_image()->Image:
+	return null
+
+
+## 尝试将此请求的结果作为webp格式解析并返回其图像实例
+func get_as_webp_image()->Image:
+	return null
+
+
+## 尝试将此请求的结果的二进制数据保存到指定路径的文件
+func save_to_file(path:String)->int:
+	return -1
