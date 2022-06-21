@@ -441,7 +441,7 @@ func create_viewport(size:Vector2i,stretch_size:Vector2i=Vector2i.ZERO,transpare
 	return null
 
 
-## 更新指定的SubViewport中渲染的内容，以便对其进行获取(配合await关键字可等待其更新完毕)
+## 更新指定的SubViewport中渲染的内容，以便对其进行获取(配合await关键字使用可等待指定的SubViewport更新完毕)
 func update_viewport(viewport:SubViewport)->void:
 	return
 
@@ -463,13 +463,13 @@ func get_viewport_image(viewport:SubViewport,update:bool=false)->Image:
 	return null
 
 
-## 加载一个场景文件并添加为插件自身或指定节点的子节点
+## 加载一个场景文件并添加为插件自身或指定节点的子节点，需要配合await关键字来使用此函数
 ## [br][br]注意：场景加载的路径必须与场景在原项目时所在的相对路径相同，并尽可能将其使用的所有资源唯一化，否则可能会出现未知问题
 ## [br]例如，原项目中位于"[code]res://plugins[/code]"的场景在加载时必须位于"[code]RainyBot根目录/plugins[/code]"路径下
 ## [br][br]需要的参数从左到右分别为: 
 ## [br]- 场景文件路径
 ## [br]- 附加到的父节点 (可选, 默认为插件自身)
-## [br]- 在单独的线程中异步加载 (可选，默认为false，若启用则可在加载复杂场景时避免阻塞主线程运行，但可能会增加加载时间，使场景无法热重载，且将需要配合await关键字来使用此函数)
+## [br]- 在单独的线程中异步加载 (可选，默认为false，若启用则可在加载场景时避免阻塞主线程运行，但可能会增加加载时间，使场景无法被热重载，且场景可能在加载完毕前被其它函数访问从而导致错误)
 func load_scene(path:String,parent:Node=null,threaded:bool=false)->Node:
 	return null
 

@@ -22,7 +22,7 @@ func _on_load():
 	
 	#加载所需的场景文件，附加至刚才创建的SubViewport以便截取图像，并储存至scene变量
 	#需要保证场景文件与根目录的相对路径和原工程中的相同，否则可能会出现异常
-	scene = load_scene(get_plugin_path()+"scene_example/example_scene.tscn",viewport)
+	scene = await load_scene(get_plugin_path()+"scene_example/example_scene.tscn",viewport)
 	
 	#注册关键词 "生成图片"，绑定到"_generate"函数
 	register_keyword("生成图片","_generate")
