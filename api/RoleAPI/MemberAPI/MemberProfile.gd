@@ -22,6 +22,12 @@ enum Sex {
 }
 
 
+## 获取指定ID用户的资料数据并将其构造为一个MemberProfile类的实例，需要配合await关键字使用
+## [br][br]可以通过指定timeout参数来自定义获取请求结果的超时时间，若不指定则默认将使用配置文件中设置的超时时间
+static func init_user(user_id:int,timeout:float=-INF)->MemberProfile:
+	return null
+
+
 ## 通过机器人协议后端的元数据字典构造一个MemberProfile类的实例，仅当你知道自己在做什么时才使用
 static func init_meta(dic:Dictionary)->MemberProfile:
 	return null
