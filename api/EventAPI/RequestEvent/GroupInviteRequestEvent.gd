@@ -18,5 +18,5 @@ func get_group_name()->String:
 	return ""
 	
 	
-func respond(respond_type:int,msg:String="")->BotRequestResult:
+func respond(respond_type:int,msg:String="",timeout:float=-INF)->BotRequestResult:
 	return null

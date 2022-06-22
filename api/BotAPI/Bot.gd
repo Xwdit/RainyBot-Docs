@@ -30,21 +30,30 @@ static func get_private_message_count()->int:
 	return 0
 
 
+## 获取机器人后端账号的头像的图像链接
+static func get_avatar_url()->String:
+	return ""
+
+
 ## 获取当前机器人账号的好友列表，需要与await关键词配合使用
-static func get_friend_list()->MemberList:
+## [br][br]可以通过指定timeout参数来自定义获取请求结果的超时时间，若不指定则默认将使用配置文件中设置的超时时间
+static func get_friend_list(timeout:float=-INF)->MemberList:
 	return null
 	
 
 ## 获取当前机器人账号的群组列表，需要与await关键词配合使用
-static func get_group_list()->GroupList:
+## [br][br]可以通过指定timeout参数来自定义获取请求结果的超时时间，若不指定则默认将使用配置文件中设置的超时时间
+static func get_group_list(timeout:float=-INF)->GroupList:
 	return null
 
 
 ## 获取当前机器人账号的资料卡，需要与await关键词配合使用
-static func get_profile()->MemberProfile:
+## [br][br]可以通过指定timeout参数来自定义获取请求结果的超时时间，若不指定则默认将使用配置文件中设置的超时时间
+static func get_profile(timeout:float=-INF)->MemberProfile:
 	return null
 
 
 ## 从当前机器人账号的历史消息缓存中获取指定id的缓存消息，需要与await关键词配合使用
-static func get_cache_message(msg_id:int)->CacheMessage:
+## [br][br]可以通过指定timeout参数来自定义获取请求结果的超时时间，若不指定则默认将使用配置文件中设置的超时时间
+static func get_cache_message(msg_id:int,timeout:float=-INF)->CacheMessage:
 	return null

@@ -62,5 +62,6 @@ func is_status(code:int)->bool:
 
 
 ## 撤回请求结果中消息ID对应的消息
-func recall()->BotRequestResult:
+## [br][br]可以通过指定timeout参数来自定义获取请求结果的超时时间，若不指定则默认将使用配置文件中设置的超时时间
+func recall(timeout:float=-INF)->BotRequestResult:
 	return null

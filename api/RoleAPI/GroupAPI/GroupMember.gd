@@ -63,6 +63,11 @@ func get_permission()->int:
 	return 0
 	
 
+## 获取群成员实例对应账号的头像的图像链接
+func get_avatar_url()->String:
+	return ""
+
+
 ## 判断群成员实例的类型是否为指定的类型	
 func is_permission(perm:int)->bool:
 	return false
@@ -89,23 +94,32 @@ func get_group()->Group:
 	return null
 
 
+## 获取记录了群成员实例相关资料的MemberProfile实例，需要配合await关键字使用
+## [br][br]可以通过指定timeout参数来自定义获取请求结果的超时时间，若不指定则默认将使用配置文件中设置的超时时间
+func get_profile(timeout:float=-INF)->MemberProfile:
+	return null
+
+
 ## 更改群成员实例在其对应群聊中的名称(群昵称)
 ## [br][br]配合await关键字可返回一个BotRequestResult类的实例，便于判断执行状态
-func change_name(new_name:String)->BotRequestResult:
+## [br][br]可以通过指定timeout参数来自定义获取请求结果的超时时间，若不指定则默认将使用配置文件中设置的超时时间
+func change_name(new_name:String,timeout:float=-INF)->BotRequestResult:
 	await self.script_changed #用于触发编辑器的错误检查，防止调用此函数时遗漏await关键字
 	return null
 	
 
 ## 更改群成员实例在其对应群聊中的特别称号(群荣誉)
 ## [br][br]配合await关键字可返回一个BotRequestResult类的实例，便于判断执行状态
-func change_special_title(new_title:String)->BotRequestResult:
+## [br][br]可以通过指定timeout参数来自定义获取请求结果的超时时间，若不指定则默认将使用配置文件中设置的超时时间
+func change_special_title(new_title:String,timeout:float=-INF)->BotRequestResult:
 	await self.script_changed #用于触发编辑器的错误检查，防止调用此函数时遗漏await关键字
 	return null
 	
 
 ## 开关群成员实例在其对应群聊中的管理员权限，机器人需要为群主才可执行
-## [br][br]配合await关键字可返回一个BotRequestResult类的实例，便于判断执行状态	
-func toggle_admin(enabled:bool)->BotRequestResult:
+## [br][br]配合await关键字可返回一个BotRequestResult类的实例，便于判断执行状态
+## [br][br]可以通过指定timeout参数来自定义获取请求结果的超时时间，若不指定则默认将使用配置文件中设置的超时时间
+func toggle_admin(enabled:bool,timeout:float=-INF)->BotRequestResult:
 	await self.script_changed #用于触发编辑器的错误检查，防止调用此函数时遗漏await关键字
 	return null
 
@@ -113,7 +127,8 @@ func toggle_admin(enabled:bool)->BotRequestResult:
 ## 将群成员实例移出其所在的对应群聊，机器人需要为管理员或群主才可执行
 ## [br][br]可传入一个消息参数作为移出群聊的理由，但可能不会被显示
 ## [br][br]配合await关键字可返回一个BotRequestResult类的实例，便于判断执行状态
-func kick(message:String="")->BotRequestResult:
+## [br][br]可以通过指定timeout参数来自定义获取请求结果的超时时间，若不指定则默认将使用配置文件中设置的超时时间
+func kick(message:String="",timeout:float=-INF)->BotRequestResult:
 	await self.script_changed #用于触发编辑器的错误检查，防止调用此函数时遗漏await关键字
 	return null
 
@@ -121,14 +136,16 @@ func kick(message:String="")->BotRequestResult:
 ## 将群成员实例在其所在的群聊中禁言指定的秒数，机器人需要为管理员或群主才可执行
 ## [br][br]若不传入秒数则默认为禁言1800秒
 ## [br][br]配合await关键字可返回一个BotRequestResult类的实例，便于判断执行状态
-func mute(time:int=1800)->BotRequestResult:
+## [br][br]可以通过指定timeout参数来自定义获取请求结果的超时时间，若不指定则默认将使用配置文件中设置的超时时间
+func mute(time:int=1800,timeout:float=-INF)->BotRequestResult:
 	await self.script_changed #用于触发编辑器的错误检查，防止调用此函数时遗漏await关键字
 	return null
 	
 
 ## 将群成员实例在其所在的群聊中解除禁言，机器人需要为管理员或群主才可执行
 ## [br][br]配合await关键字可返回一个BotRequestResult类的实例，便于判断执行状态	
-func unmute()->BotRequestResult:
+## [br][br]可以通过指定timeout参数来自定义获取请求结果的超时时间，若不指定则默认将使用配置文件中设置的超时时间
+func unmute(timeout:float=-INF)->BotRequestResult:
 	await self.script_changed #用于触发编辑器的错误检查，防止调用此函数时遗漏await关键字
 	return null
 	
@@ -140,13 +157,15 @@ func unmute()->BotRequestResult:
 ## [br]- 单个消息实例(将其作为消息链中的唯一消息实例发送)
 ## [br]- 消息链实例(将其内容复制并发送)
 ## [br]- 包含以上三种类型实例的数组(将按照上方规则将数组中的实例依次合并添加至一个消息链并发送)
-func send_message(msg,quote_msgid:int=-1)->BotRequestResult:
+## [br][br]可以通过指定timeout参数来自定义获取请求结果的超时时间，若不指定则默认将使用配置文件中设置的超时时间
+func send_message(msg,quote_msgid:int=-1,timeout:float=-INF)->BotRequestResult:
 	await self.script_changed #用于触发编辑器的错误检查，防止调用此函数时遗漏await关键字
 	return null
 
 
 ## 通过群临时会话，向群成员实例私聊发送一个戳一戳消息
 ## [br][br]配合await关键字可返回一个BotRequestResult类的实例，便于判断执行状态
-func send_nudge()->BotRequestResult:
+## [br][br]可以通过指定timeout参数来自定义获取请求结果的超时时间，若不指定则默认将使用配置文件中设置的超时时间
+func send_nudge(timeout:float=-INF)->BotRequestResult:
 	await self.script_changed #用于触发编辑器的错误检查，防止调用此函数时遗漏await关键字
 	return null

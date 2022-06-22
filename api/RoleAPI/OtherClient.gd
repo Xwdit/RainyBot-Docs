@@ -49,13 +49,15 @@ func get_platform()->String:
 ## [br]- 单个消息实例(将其作为消息链中的唯一消息实例发送)
 ## [br]- 消息链实例(将其内容复制并发送)
 ## [br]- 包含以上三种类型实例的数组(将按照上方规则将数组中的实例依次合并添加至一个消息链并发送)
-func send_message(msg,quote_msgid:int=-1)->BotRequestResult:
+## [br][br]可以通过指定timeout参数来自定义获取请求结果的超时时间，若不指定则默认将使用配置文件中设置的超时时间
+func send_message(msg,quote_msgid:int=-1,timeout:float=-INF)->BotRequestResult:
 	await self.script_changed #用于触发编辑器的错误检查，防止调用此函数时遗漏await关键字
 	return null
 
 
 ## 向其它客户端发送一个戳一戳消息，
 ## [br][br]配合await关键字可返回一个BotRequestResult类的实例，便于判断执行状态
-func send_nudge()->BotRequestResult:
+## [br][br]可以通过指定timeout参数来自定义获取请求结果的超时时间，若不指定则默认将使用配置文件中设置的超时时间
+func send_nudge(timeout:float=-INF)->BotRequestResult:
 	await self.script_changed #用于触发编辑器的错误检查，防止调用此函数时遗漏await关键字
 	return null

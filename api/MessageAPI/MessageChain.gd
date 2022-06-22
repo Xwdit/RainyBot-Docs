@@ -99,7 +99,8 @@ func has_message_type(type)->bool:
 ## 将消息链实例对应的消息设为群精华消息，机器人需要为消息对应群聊的管理员或群主
 ## [br][br]若为手动且不基于ID构造的消息链实例，或对应的消息不是群聊消息，则此操作无效
 ## [br][br]配合await关键字可返回一个BotRequestResult类的实例，便于判断执行状态
-func set_essence()->BotRequestResult:
+## [br][br]可以通过指定timeout参数来自定义获取请求结果的超时时间，若不指定则默认将使用配置文件中设置的超时时间
+func set_essence(timeout:float=-INF)->BotRequestResult:
 	await self.script_changed #用于触发编辑器的错误检查，防止调用此函数时遗漏await关键字
 	return null
 
@@ -108,7 +109,8 @@ func set_essence()->BotRequestResult:
 ## [br][br]若为群聊消息，则机器人需要为消息对应群聊的管理员或群主
 ## [br][br]若为手动且不基于ID构造的消息链实例，或对应的消息不是发自机器人的消息或群聊消息，则此操作无效
 ## [br][br]配合await关键字可返回一个BotRequestResult类的实例，便于判断执行状态
-func recall()->BotRequestResult:
+## [br][br]可以通过指定timeout参数来自定义获取请求结果的超时时间，若不指定则默认将使用配置文件中设置的超时时间
+func recall(timeout:float=-INF)->BotRequestResult:
 	await self.script_changed #用于触发编辑器的错误检查，防止调用此函数时遗漏await关键字
 	return null
 
