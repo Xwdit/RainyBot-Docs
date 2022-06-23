@@ -63,7 +63,7 @@ func get_permission()->int:
 	return 0
 	
 
-## 获取群成员实例对应账号的头像的图像链接
+## 获取群成员实例对应账号的头像的图像链接，通常为jpg格式
 func get_avatar_url()->String:
 	return ""
 

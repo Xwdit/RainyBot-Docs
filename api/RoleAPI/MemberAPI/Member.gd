@@ -72,7 +72,7 @@ func get_remark()->String:
 	return ""
 	
 
-## 获取个体成员实例对应账号的头像的图像链接
+## 获取个体成员实例对应账号的头像的图像链接，通常为jpg格式
 func get_avatar_url()->String:
 	return ""
 

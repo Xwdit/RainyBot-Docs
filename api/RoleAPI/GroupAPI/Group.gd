@@ -49,7 +49,7 @@ func get_bot_permission()->int:
 	return 0
 
 
-## 获取群聊实例对应的群头像的图像链接
+## 获取群聊实例对应的群头像的图像链接，通常为jpg格式
 func get_avatar_url()->String:
 	return ""
 

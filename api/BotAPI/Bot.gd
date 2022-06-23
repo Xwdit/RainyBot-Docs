@@ -30,7 +30,7 @@ static func get_private_message_count()->int:
 	return 0
 
 
-## 获取机器人后端账号的头像的图像链接
+## 获取机器人后端账号的头像的图像链接，通常为jpg格式
 static func get_avatar_url()->String:
 	return ""
 
