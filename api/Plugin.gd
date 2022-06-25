@@ -434,43 +434,25 @@ func unload_plugin()->void:
 	return
 
 
-## 创建一个可用于生成图像的SubViewport节点，设置为指定大小，并添加为插件的子节点
-## [br][br]如果设置了第二个参数(默认为[code]Vector2i(0,0)[/code])，则创建的SubViewport将基于第一个参数的大小渲染内容，并将渲染后的内容拉伸为第二个参数的大小
-## [br][br]如果设置了第三个参数(默认为[code]false[/code])，则创建的SubViewport将使用透明背景，且基于此 SubViewport生成的图像也将拥有透明背景
-func create_viewport(size:Vector2i,stretch_size:Vector2i=Vector2i.ZERO,transparent:bool=false)->SubViewport:
-	return null
-
-
-## 更新指定的SubViewport中渲染的内容，以便对其进行获取(配合await关键字使用可等待指定的SubViewport更新完毕)
-func update_viewport(viewport:SubViewport)->void:
-	return
-
-
-## 更新指定的SubViewport的渲染大小，还可以指定基于该渲染大小拉伸后的大小
-## [br][br]如果设置了第三个参数(默认为[code]Vector2i(0,0)[/code])，则指定的SubViewport将基于第二个参数的大小渲染内容，并将渲染后的内容拉伸为第三个参数的大小
-func set_viewport_size(viewport:SubViewport,size:Vector2i,stretch_size:Vector2i=Vector2i.ZERO)->void:
-	return
-
-
-## 设置指定的SubViewport是否启用透明背景。若启用透明背景，基于此 SubViewport生成的图像也将拥有透明的背景
-func set_viewport_transparent(viewport:SubViewport,transparent:bool)->void:
-	return
-
-
-## 获取指定的SubViewport中渲染的内容的Image类图像
-## [br][br]如果将第二个参数设置为true(默认为false)，则将在获取前对该SubViewport进行更新(需要配合await关键字使用)
-func get_viewport_image(viewport:SubViewport,update:bool=false)->Image:
-	return null
-
-
-## 加载一个场景文件并添加为插件自身或指定节点的子节点，需要配合await关键字来使用此函数
-## [br][br]注意：场景加载的路径必须与场景在原项目时所在的相对路径相同，并尽可能将其使用的所有资源唯一化，否则可能会出现未知问题
+## 加载一个场景文件，并根据第二个参数将其准备为用于图像捕捉或用于其他用途(如自定义GUI)，需要配合await关键字来使用此函数
+## [br][br]注意：加载场景与根目录的相对路径必须与场景在原项目时所在的相对路径相同，且加载前请确保已重新导入所有资源(位于插件菜单中)，否则可能会加载失败或出现未知问题
 ## [br]例如，原项目中位于"[code]res://plugins[/code]"的场景在加载时必须位于"[code]RainyBot根目录/plugins[/code]"路径下
 ## [br][br]需要的参数从左到右分别为: 
-## [br]- 场景文件路径
-## [br]- 附加到的父节点 (可选, 默认为插件自身)
-## [br]- 在单独的线程中异步加载 (可选，默认为false，若启用则可在加载场景时避免阻塞主线程运行，但可能会增加加载时间，使场景无法被热重载，且场景可能在加载完毕前被其它函数访问从而导致错误)
-func load_scene(path:String,parent:Node=null,threaded:bool=false)->Node:
+## [br]- 场景文件的路径，可以是相对路径(以[code]res://[/code]开头)，也可以是绝对路径(如D:/RaintBot/plugins，可通过[method get_plugin_path]函数来获取插件目录的绝对路径)
+## [br]- 是否将加载的场景准备为用于图像捕捉 (可选，默认为false，必须启用才可使用[method get_scene_image]函数来获取其中内容的图像，否则会直接将其添加为插件的子项以便用于其他用途(如自定义GUI))
+## [br][br]小贴士：出于性能原因，对已加载的场景或其附加脚本所做的的任何修改均无法通过重载插件来实时更新，因此在修改场景或其脚本后，请通过主菜单中的重新启动选项来快速重启RainyBot以便应用您所做的任何更改
+func load_scene(path:String,for_capture:bool=false)->Node:
+	return null
+
+
+## 将指定场景实例中的当前内容获取为[Image]类图像的实例，需要配合await关键字来使用此函数
+## [br][br]请确保指定的场景是通过load_scene()函数加载的，且加载时在函数中启用了for_capture参数，否则将无法正确获取其中的内容
+## [br][br]需要的参数从左到右分别为: 
+## [br]- 需要从其中获取图像的场景实例，场景实例需要满足上述条件才能被正确获取为图像
+## [br]- 要生成的图像的原始大小，这决定了场景的内容将会以何种分辨率渲染为图像
+## [br]- 图像生成后要拉伸到的大小(可选，默认为[code]Vector2i(0,0)[/code])，若设置为大于0的值，则将基于第二个参数的大小渲染图像，并将渲染后的图像拉伸为此参数指定的大小
+## [br]- 设置生成的图像是否启用透明背景(可选，默认为[code]false[/code])。若启用透明背景，则场景中任何拥有透明度的位置在获取的图像中将拥有同样的透明度，空白的位置在获取的图像中将完全透明
+func get_scene_image(scene:Node,size:Vector2i,stretch_size:Vector2i=Vector2i.ZERO,transparent:bool=false)->Image:
 	return null
 
 
