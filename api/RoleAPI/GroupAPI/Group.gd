@@ -119,6 +119,27 @@ func send_nudge(member_id:int,timeout:float=-INF)->BotRequestResult:
 	return null
 
 
+## 用于在群聊实例中发布一个指定的群公告实例，群公告实例的相关用法请参见[GroupAnnounce]类文档
+## [br][br]配合await关键字可返回一个包含了已发布的群公告的[GroupAnnounceInfoList]类实例，以便于进行后续操作
+## [br][br]可以通过指定timeout参数来自定义获取请求结果的超时时间，若不指定则默认将使用配置文件中设置的超时时间
+func publish_announce(announce:GroupAnnounce,timeout:float=-INF)->GroupAnnounceInfoList:
+	return null
+
+
+## 用于在群聊实例中删除一个指定ID的群公告
+## [br][br]配合await关键字可返回一个BotRequestResult类的实例，便于判断执行状态
+## [br][br]可以通过指定timeout参数来自定义获取请求结果的超时时间，若不指定则默认将使用配置文件中设置的超时时间
+func delete_announce(announce_id:int,timeout:float=-INF)->BotRequestResult:
+	return null
+
+
+## 用于获取在群聊实例中的群公告的列表，可指定页码，以及每页将包含的群公告的数量，将返回一个[GroupAnnounceInfoList]类的实例
+## [br][br]此函数必须配合await关键字进行使用，否则将会发生错误，且无法获取相关的信息
+## [br][br]可以通过指定timeout参数来自定义获取请求结果的超时时间，若不指定则默认将使用配置文件中设置的超时时间
+func get_announce_list(page_num:int=0,per_page_size:int=10,timeout:float=-INF)->GroupAnnounceInfoList:
+	return null
+
+
 ## 用于让机器人主动退出群聊实例所对应的群聊
 ## [br][br]配合await关键字可返回一个BotRequestResult类的实例，便于判断执行状态
 ## [br][br]可以通过指定timeout参数来自定义获取请求结果的超时时间，若不指定则默认将使用配置文件中设置的超时时间
