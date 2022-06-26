@@ -6,5 +6,5 @@ class_name BotEvent
 
 
 ## 获取发生事件的机器人ID,通常为当前使用的机器人ID
-func get_qq()->int:
+func get_id()->int:
 	return 0
