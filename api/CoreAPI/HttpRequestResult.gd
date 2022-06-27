@@ -55,6 +55,12 @@ func get_as_byte()->PackedByteArray:
 	return PackedByteArray()
 	
 
+## 尝试自动判断此请求的结果的图像格式，解析并返回其图像实例，支持的图像格式为: [code]png,jpg,bmp,tga,webp[/code]
+## [br][br]若图像的格式已知，建议使用[code]get_as_[格式]_image()[/code]系列函数以获得更好的性能 (如[method get_as_png_image]函数)
+func get_as_image()->Image:
+	return null
+
+
 ## 尝试将此请求的结果作为png格式解析并返回其图像实例
 func get_as_png_image()->Image:
 	return null
