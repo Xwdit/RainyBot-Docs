@@ -5,6 +5,10 @@ extends CoreAPI #继承自CoreAPI
 class_name GifImage
 
 
+## 在此Gif图像类实例的属性或数据发生变更时，将会触发此信号
+signal changed()
+
+
 ## 基于指定的图像大小来构造一个GifImage类图像的实例
 static func init(img_size:Vector2)->GifImage:
 	return null
