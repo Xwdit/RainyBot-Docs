@@ -2,18 +2,18 @@
 
 [ext_resource type="Script" path="res://plugins/scene_example/example_scene.gd" id="1_iesyf"]
 
-[node name="ExampleScene" type="Control"]
-anchor_right = 1.0
-anchor_bottom = 1.0
-script = ExtResource( "1_iesyf" )
-
-[node name="Label" type="Label" parent="."]
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-pivot_offset = Vector2(512, 300)
+[node name="ExampleScene" type="Label"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -256.0
+offset_top = -256.0
+offset_right = 256.0
+offset_bottom = 256.0
+pivot_offset = Vector2(256, 256)
 theme_override_font_sizes/font_size = 30
+text = "text"
 horizontal_alignment = 1
 vertical_alignment = 1
-metadata/_edit_layout_mode = 1
+script = ExtResource( "1_iesyf" )

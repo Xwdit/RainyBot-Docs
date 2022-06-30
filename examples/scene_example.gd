@@ -72,21 +72,23 @@ func gen_anim_img(arg:String,event:MessageEvent):
 	scene.set_text(arg) #将加载的场景中的文本设置为接收的参数
 	
 	for i in range(20): #循环20次，以便往动态图实例中添加20帧
-		scene.rotate_text(360.0/20.0) #每次循环将文字顺时针旋转18度，循环20次后文字应正好旋转一圈(360度)
 		
-		#将当前状态的场景内容获取为Image图像实例，获取的图像的原始大小设置为512x512，获取后的图像的缩放大小设置为128x128，等待其获取完成并储存至img变量
-		var img:Image = await get_scene_image(scene,Vector2i(512,512),Vector2i(128,128))
-		
+		#将当前状态的场景内容获取为Image图像实例，获取的图像的原始大小设置为128x128，等待其获取完成并储存至img变量
+		var img:Image = await get_scene_image(scene,Vector2i(128,128))
+
 		#将获取的场景图像添加为新的Gif图像帧，并将这一帧的持续时间设置为0.05秒，播放20帧应正好需要1秒 (即20fps)
 		anim_img.add_frame(img,0.05)
 		
+		#每次循环将文字顺时针旋转18度，循环20次后文字应正好旋转一圈(360度)
+		scene.rotate_text(360.0/20.0)
+		
 	scene.queue_free() #已从场景中获取了所需的所有图像，因此将场景释放以节省资源
 	
-	#计算并获取将当前动态图像实例生成为Gif文件的预计所需时长，等待其计算完毕并储存至gen_time变量
+	#计算并获取将当前动态图像实例生成为Gif文件的预计所需时长 (以秒为单位)，等待其计算完毕并储存至gen_time变量
 	var gen_time:float = await anim_img.get_generate_time()
 	
 	#将提示消息发送回触发此关键词的位置
-	event.reply("正在生成动态图片，请稍候...(预计时间: %s秒)"% gen_time)
+	event.reply("正在生成动态图片，请稍候...(预计生成时长: %s秒)"% gen_time)
 	
 	#开始将Gif图像实例生成为Gif图像文件，等待其生成完毕并构造为ImageMessage图片消息实例，储存在img_msg变量中
 	var img_msg:ImageMessage = await ImageMessage.init_gif(anim_img)
