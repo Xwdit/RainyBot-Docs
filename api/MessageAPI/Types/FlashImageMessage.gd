@@ -8,6 +8,10 @@ static func init(image:Image)->FlashImageMessage:
 	return null
 
 
+static func init_gif(gif_image:GifImage)->FlashImageMessage:
+	return null
+
+
 static func init_id(image_id:String)->FlashImageMessage:
 	return null
 

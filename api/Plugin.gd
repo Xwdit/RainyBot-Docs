@@ -109,7 +109,7 @@ func get_plugin_filepath()->String:
 
 
 ## 用于获取RainyBot的插件文件夹的路径，将返回插件文件夹的绝对路径 (如 [code]D://RainyBot/plugins/[/code])
-func get_plugin_path()->String:
+static func get_plugin_path()->String:
 	return ""
 
 
@@ -119,18 +119,18 @@ func get_plugin_runtime()->int:
 	
 
 ## 用于获取RainyBot全局的已运行时间，默认情况下为RainyBot成功启动以来经过的秒数
-func get_global_runtime()->int:
+static func get_global_runtime()->int:
 	return -1
 
 
 ## 用于获取其他插件的实例引用，可用于插件之间的联动与数据互通等
 ## [br][br]需要传入其他插件的ID作为参数来获取其实例，若未找到插件则返回null
-func get_plugin_instance(plugin_id:String)->Plugin:
+static func get_plugin_instance(plugin_id:String)->Plugin:
 	return null
 
 
 ## 用于获取RainyBot的数据文件夹的路径，将返回数据文件夹的绝对路径 (如 [code]D://RainyBot/data/[/code])
-func get_data_path()->String:
+static func get_data_path()->String:
 	return ""
 	
 
@@ -140,7 +140,7 @@ func get_data_filepath()->String:
 	
 
 ## 用于获取RainyBot的配置文件夹的路径，将返回配置文件夹的绝对路径 (如 [code]D://RainyBot/config/[/code])	
-func get_config_path()->String:
+static func get_config_path()->String:
 	return ""
 	
 
@@ -150,7 +150,7 @@ func get_config_filepath()->String:
 	
 	
 ## 用于获取RainyBot的缓存文件夹的路径，将返回缓存文件夹的绝对路径 (如 D://RainyBot/cache)
-func get_cache_path()->String:
+static func get_cache_path()->String:
 	return ""
 
 
@@ -177,7 +177,7 @@ func is_cache_loaded()->bool:
 ## 用于获取最近一次检测到的所有RainyBot运行时错误，将返回一个包含了这些错误的字符串数组
 ## [br][br]如果自RainyBot启动至今还没有检测到任何运行时错误，将返回一个空数组
 ## [br][br]当前版本中仅支持自动检测脚本运行时错误，若要获取其他类型的错误，请通过主菜单来访问内部日志进行查看
-func get_last_errors()->PackedStringArray:
+static func get_last_errors()->PackedStringArray:
 	return PackedStringArray()
 
 
