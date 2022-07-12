@@ -60,3 +60,12 @@ RainyBot精心设计了一系列的便于使用的抽象API，并在底层将各
 * [Godot Engine](https://github.com/godotengine/godot)
 * [Mirai-Api-HTTP](https://github.com/project-mirai/mirai-api-http)
 * [Mirai](https://github.com/mamoe/mirai)
+
+### 相关链接
+
+此处提供了一些可能与本项目有关，或对您有帮助的链接
+
+* [Godot使用文档](https://docs.godotengine.org/en/latest/)
+* [GDScript语言教程](https://docs.godotengine.org/en/latest/tutorials/scripting/gdscript/)
+* [Godot类参考API](https://docs.godotengine.org/en/latest/classes/index.html)
+* [Mirai-Api-Http文档](https://github.com/project-mirai/mirai-api-http/blob/master/docs/api/API.md)
