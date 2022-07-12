@@ -6,14 +6,14 @@ RainyBot的Bot自身退出群组事件类，记录了Bot退出某个群组相关
   
 ## 枚举  
   
-**ReasonType**  
+enum **ReasonType**  
   
 Bot退出群组的原因类型枚举  
   
-- **ACTIVE**  
+- **ACTIVE** = 0  
 Bot主动退出群组  
   
-- **KICK**  
+- **KICK** = 1  
 Bot被踢出群组  
   
 ---  

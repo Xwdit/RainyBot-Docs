@@ -6,41 +6,41 @@ RainyBot的协议后端请求结果类，记录了向协议后端发送的某次
   
 ## 枚举  
   
-**StatusCode**  
+enum **StatusCode**  
   
 请求结果的状态码，可用于对比判断请求结果的当前状态  
   
-- **SUCCESS**  
+- **SUCCESS** = 0  
 请求成功  
   
-- **WRONG_VERIFY_KEY**  
+- **WRONG_VERIFY_KEY** = 1  
 验证密钥错误  
   
-- **BOT_NOT_EXIST**  
+- **BOT_NOT_EXIST** = 2  
 请求的Bot不存在  
   
-- **SESSION_INVALID**  
+- **SESSION_INVALID** = 3  
 会话无效  
   
-- **SESSION_NOT_ACTIVE**  
+- **SESSION_NOT_ACTIVE** = 4  
 会话未活跃  
   
-- **TARGET_NOT_EXIST**  
+- **TARGET_NOT_EXIST** = 5  
 目标不存在  
   
-- **FILE_NOT_EXIST**  
+- **FILE_NOT_EXIST** = 6  
 文件不存在  
   
-- **NO_PERMISSION**  
+- **NO_PERMISSION** = 10  
 没有权限  
   
-- **BOT_MUTED**  
+- **BOT_MUTED** = 20  
 机器人被禁言  
   
-- **MESSAGE_TOO_LONG**  
+- **MESSAGE_TOO_LONG** = 30  
 消息长度超限  
   
-- **WRONG_USAGE**  
+- **WRONG_USAGE** = 400  
 命令用法有误  
   
 ---  

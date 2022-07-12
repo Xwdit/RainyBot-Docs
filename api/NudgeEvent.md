@@ -6,14 +6,14 @@ RainyBot的戳一戳事件类，记录了聊天中的一个戳一戳事件的相
   
 ## 枚举  
   
-**SubjectType**  
+enum **SubjectType**  
   
 戳一戳事件发生的上下文位置类型，可以是好友聊天或群聊  
   
-- **FRIEND**  
+- **FRIEND** = 0  
 事件发生在好友聊天中  
   
-- **GROUP**  
+- **GROUP** = 1  
 事件发生在群组聊天中  
   
 ---  

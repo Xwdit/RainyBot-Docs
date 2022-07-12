@@ -12,19 +12,19 @@ RainyBot的个体成员资料类，通常代表一个对应实例，储存了某
   
 ## 枚举  
   
-**Sex**  
+enum **Sex**  
   
 这是代表了资料中性别的枚举，在进行性别判断相关操作时可在转为整数后用于对比   
   
 如"get_sex() == MemberProfile.Sex.MALE"可判断资料性别是否为男性  
   
-- **UNKNOWN**  
+- **UNKNOWN** = 0  
 未知  
   
-- **MALE**  
+- **MALE** = 1  
 男性  
   
-- **FEMALE**  
+- **FEMALE** = 2  
 女性  
   
 ---  

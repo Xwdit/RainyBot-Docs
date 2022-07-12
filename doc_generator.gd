@@ -149,14 +149,14 @@ func _save_doc_markdown(path:String,doc_dic:Dictionary,dics:Dictionary):
 		md_text += "## 枚举  \n"
 		md_text += "  \n"
 		for e in doc_dic.enums:
-			md_text += "**%s**  \n" % [e.name]
+			md_text += "enum **%s**  \n" % [e.name]
 			md_text += "  \n"
 			if e.description != "":
 				md_text += "%s  \n" % e.description
 				md_text += "  \n"
 			for c in doc_dic.constants:
 				if c.enumeration == e.name:
-					md_text += "- **%s**  \n" % [c.name]
+					md_text += "- **%s** = %s  \n" % [c.name,c.value]
 					if c.description != "":
 						md_text += "%s  \n" % c.description
 						md_text += "  \n"

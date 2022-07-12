@@ -11,19 +11,19 @@ RainyBot的群成员类，通常代表一个对应实例，实现了用于与群
   
 ## 枚举  
   
-**Permission**  
+enum **Permission**  
   
 这是代表了群成员权限的枚举，在进行权限相关操作时可在转为整数后用于对比   
   
 如"get_permission() == GroupMember.Permission.ADMINISTRATOR"可判断群成员是否为管理员  
   
-- **MEMBER**  
+- **MEMBER** = 0  
 代表权限为群聊中的普通成员  
   
-- **ADMINISTRATOR**  
+- **ADMINISTRATOR** = 1  
 代表权限为群聊中的管理员  
   
-- **OWNER**  
+- **OWNER** = 2  
 代表权限为群聊中的群主  
   
 ---  
