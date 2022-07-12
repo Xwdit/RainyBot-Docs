@@ -1,4 +1,4 @@
-# 类: GroupEvent  
+# 类: GroupEvent ###[(返回目录)](README.md)  
   
 **继承自:** [Event](Event.md)  
   

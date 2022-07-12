@@ -1,4 +1,4 @@
-# 类: GroupAnnounce  
+# 类: GroupAnnounce ###[(返回目录)](README.md)  
   
 **继承自:** [GroupAPI](GroupAPI.md)  
   

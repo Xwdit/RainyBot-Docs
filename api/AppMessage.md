@@ -1,4 +1,4 @@
-# 类: AppMessage  
+# 类: AppMessage ###[(返回目录)](README.md)  
   
 **继承自:** [Message](Message.md)  
   

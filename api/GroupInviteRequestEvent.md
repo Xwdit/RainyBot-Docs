@@ -1,4 +1,4 @@
-# 类: GroupInviteRequestEvent  
+# 类: GroupInviteRequestEvent ###[(返回目录)](README.md)  
   
 **继承自:** [RequestEvent](RequestEvent.md)  
   

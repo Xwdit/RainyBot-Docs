@@ -1,4 +1,4 @@
-# 类: ForwardMessageNodeList  
+# 类: ForwardMessageNodeList ###[(返回目录)](README.md)  
   
 **继承自:** [MessageAPI](MessageAPI.md)  
   

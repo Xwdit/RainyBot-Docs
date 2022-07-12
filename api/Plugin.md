@@ -1,4 +1,4 @@
-# 类: Plugin  
+# 类: Plugin ###[(返回目录)](README.md)  
   
 **继承自:** [Node](https://docs.godotengine.org/en/latest/classes/class_node.html)  
   

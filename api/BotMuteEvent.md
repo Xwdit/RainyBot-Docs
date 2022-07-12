@@ -1,4 +1,4 @@
-# 类: BotMuteEvent  
+# 类: BotMuteEvent ###[(返回目录)](README.md)  
   
 **继承自:** [GroupBotEvent](GroupBotEvent.md)  
   

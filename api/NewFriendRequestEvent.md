@@ -1,4 +1,4 @@
-# 类: NewFriendRequestEvent  
+# 类: NewFriendRequestEvent ###[(返回目录)](README.md)  
   
 **继承自:** [RequestEvent](RequestEvent.md)  
   

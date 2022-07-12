@@ -1,4 +1,4 @@
-# 类: FriendEvent  
+# 类: FriendEvent ###[(返回目录)](README.md)  
   
 **继承自:** [Event](Event.md)  
   

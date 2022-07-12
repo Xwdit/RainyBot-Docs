@@ -1,4 +1,4 @@
-# 类: GifImage  
+# 类: GifImage ###[(返回目录)](README.md)  
   
 **继承自:** [CoreAPI](CoreAPI.md)  
   

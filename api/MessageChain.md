@@ -1,4 +1,4 @@
-# 类: MessageChain  
+# 类: MessageChain ###[(返回目录)](README.md)  
   
 **继承自:** [MessageAPI](MessageAPI.md)  
   

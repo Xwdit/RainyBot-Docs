@@ -1,4 +1,4 @@
-# 类: MemberJoinEvent  
+# 类: MemberJoinEvent ###[(返回目录)](README.md)  
   
 **继承自:** [GroupMemberEvent](GroupMemberEvent.md)  
   

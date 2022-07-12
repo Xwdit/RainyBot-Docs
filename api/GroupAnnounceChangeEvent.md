@@ -1,4 +1,4 @@
-# 类: GroupAnnounceChangeEvent  
+# 类: GroupAnnounceChangeEvent ###[(返回目录)](README.md)  
   
 **继承自:** [GroupEvent](GroupEvent.md)  
   

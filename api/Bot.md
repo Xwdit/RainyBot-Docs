@@ -1,4 +1,4 @@
-# 类: Bot  
+# 类: Bot ###[(返回目录)](README.md)  
   
 **继承自:** [BotAPI](BotAPI.md)  
   

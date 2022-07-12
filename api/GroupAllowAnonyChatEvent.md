@@ -1,4 +1,4 @@
-# 类: GroupAllowAnonyChatEvent  
+# 类: GroupAllowAnonyChatEvent ###[(返回目录)](README.md)  
   
 **继承自:** [GroupEvent](GroupEvent.md)  
   

@@ -1,4 +1,4 @@
-# 类: GroupConfig  
+# 类: GroupConfig ###[(返回目录)](README.md)  
   
 **继承自:** [GroupAPI](GroupAPI.md)  
   

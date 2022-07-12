@@ -1,4 +1,4 @@
-# 类: RoleAPI  
+# 类: RoleAPI ###[(返回目录)](README.md)  
   
 **继承自:** [RainyBotAPI](RainyBotAPI.md)  
   

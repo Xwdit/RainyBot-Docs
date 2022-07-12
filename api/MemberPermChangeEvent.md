@@ -1,4 +1,4 @@
-# 类: MemberPermChangeEvent  
+# 类: MemberPermChangeEvent ###[(返回目录)](README.md)  
   
 **继承自:** [GroupMemberEvent](GroupMemberEvent.md)  
   

@@ -1,4 +1,4 @@
-# 类: ForwardMessage  
+# 类: ForwardMessage ###[(返回目录)](README.md)  
   
 **继承自:** [Message](Message.md)  
   

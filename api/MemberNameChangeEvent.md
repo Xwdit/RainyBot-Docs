@@ -1,4 +1,4 @@
-# 类: MemberNameChangeEvent  
+# 类: MemberNameChangeEvent ###[(返回目录)](README.md)  
   
 **继承自:** [GroupMemberEvent](GroupMemberEvent.md)  
   

@@ -1,4 +1,4 @@
-# 类: BotJoinGroupEvent  
+# 类: BotJoinGroupEvent ###[(返回目录)](README.md)  
   
 **继承自:** [GroupBotEvent](GroupBotEvent.md)  
   
