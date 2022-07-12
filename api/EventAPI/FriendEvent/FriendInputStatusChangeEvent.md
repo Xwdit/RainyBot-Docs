@@ -4,8 +4,6 @@
   
 RainyBot的好友输入状态变更事件类，记录了某次好友输入状态变更事件的相关数据  
   
----  
-  
 # 方法 
   
 - **init_meta(Dictionary dic)**  

@@ -4,8 +4,6 @@
   
 RainyBot的Http请求结果类，可从其中快速获取某次Http请求的结果数据  
   
----  
-  
 # 方法 
   
 - **get_request_url()**  

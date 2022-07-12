@@ -4,8 +4,6 @@
   
 RainyBot的Bot自身在群组中被更改权限事件类，其实例记录了与一次Bot自身在群组中被更改权限事件相关的数据  
   
----  
-  
 # 方法 
   
 - **init_meta(Dictionary dic)**  

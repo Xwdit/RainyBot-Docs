@@ -96,14 +96,10 @@ func _save_doc_markdown(path:String,doc_dic:Dictionary):
 	if doc_dic.brief_description != "":
 		md_text += "%s  \n" % doc_dic.brief_description
 		md_text += "  \n"
-		md_text += "---  \n"
-		md_text += "  \n"
 	if doc_dic.description != "":
 		md_text += "# 描述  \n"
 		md_text += "  \n"
 		md_text += "%s  \n" % doc_dic.description
-		md_text += "  \n"
-		md_text += "---  \n"
 		md_text += "  \n"
 	if !doc_dic.tutorials.is_empty():
 		md_text += "# 教程  \n"
@@ -111,8 +107,6 @@ func _save_doc_markdown(path:String,doc_dic:Dictionary):
 		for t in doc_dic.tutorials:
 			md_text += "- [%s](%s)  \n" % [t.title,t.link]
 			md_text += "  \n"
-		md_text += "---  \n"
-		md_text += "  \n"
 	if !doc_dic.signals.is_empty():
 		md_text += "# 信号 \n"
 		md_text += "  \n"

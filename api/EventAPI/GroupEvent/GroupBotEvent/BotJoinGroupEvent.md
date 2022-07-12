@@ -4,8 +4,6 @@
   
 RainyBot的Bot自身加入群组事件，记录了Bot加入某个群组的事件的相关数据  
   
----  
-  
 # 方法 
   
 - **init_meta(Dictionary dic)**  

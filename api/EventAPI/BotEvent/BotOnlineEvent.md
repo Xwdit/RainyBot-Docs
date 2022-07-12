@@ -4,8 +4,6 @@
   
 RainyBot的机器人账号登录成功事件类，其实例记录了一次机器人账号登录成功事件的相关数据  
   
----  
-  
 # 方法 
   
 - **init_meta(Dictionary dic)**  
