@@ -52,3 +52,11 @@ RainyBot精心设计了一系列的便于使用的抽象API，并在底层将各
 首次连接成功后，适配器的工作将暂时告一段落。接下来，RainyBot核心将开始扫描并加载各类插件。各类事件/命令/关键词的注册通常也将在此时进行。所有插件加载完毕后，RainyBot将开始监听来自协议后端的各项数据，并按如上所述的方式进行处理。
 
 在RainyBot正常关闭时，RainyBot核心将卸载所有插件，取消注册插件对应的各类事件/命令/关键词，保存插件的数据/配置文件，并在清理所有运行过程中产生的缓存后结束进程
+
+### 基于的项目
+
+以下列表列出了本项目所基于的项目，使用本项目时请同时参考它们的许可信息。
+
+* [Godot Engine](https://github.com/godotengine/godot)
+* [Mirai-Api-HTTP](https://github.com/project-mirai/mirai-api-http)
+* [Mirai](https://github.com/mamoe/mirai)
