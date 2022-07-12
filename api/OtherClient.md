@@ -1,4 +1,5 @@
-# 类: OtherClient ###[(返回目录)](README.md)  
+# 类: OtherClient  
+[(返回目录)](README.md)  
   
 **继承自:** [RoleAPI](RoleAPI.md)  
   

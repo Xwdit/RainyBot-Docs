@@ -1,4 +1,5 @@
-# 类: HttpRequestResult ###[(返回目录)](README.md)  
+# 类: HttpRequestResult  
+[(返回目录)](README.md)  
   
 **继承自:** [CoreAPI](CoreAPI.md)  
   

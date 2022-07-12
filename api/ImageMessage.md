@@ -1,4 +1,5 @@
-# 类: ImageMessage ###[(返回目录)](README.md)  
+# 类: ImageMessage  
+[(返回目录)](README.md)  
   
 **继承自:** [Message](Message.md)  
   

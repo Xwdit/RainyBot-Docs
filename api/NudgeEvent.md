@@ -1,4 +1,5 @@
-# 类: NudgeEvent ###[(返回目录)](README.md)  
+# 类: NudgeEvent  
+[(返回目录)](README.md)  
   
 **继承自:** [ActionEvent](ActionEvent.md)  
   

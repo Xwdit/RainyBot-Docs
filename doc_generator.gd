@@ -92,7 +92,8 @@ func _save_doc_json(path:String,doc_dic:Dictionary):
 func _save_doc_markdown(path:String,doc_dic:Dictionary,dics:Dictionary):
 	var file:File = File.new()
 	var md_text:String
-	md_text += "# 类: %s ###[(返回目录)](README.md)  \n" % doc_dic.name
+	md_text += "# 类: %s  \n" % doc_dic.name
+	md_text += "[(返回目录)](README.md)  \n"
 	md_text += "  \n"
 	var i_link:String = DOC_LINK % doc_dic.inherits.to_lower()
 	if dics.has(doc_dic.inherits) and dics[doc_dic.inherits].has("name"):

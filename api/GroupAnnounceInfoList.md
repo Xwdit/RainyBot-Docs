@@ -1,4 +1,5 @@
-# 类: GroupAnnounceInfoList ###[(返回目录)](README.md)  
+# 类: GroupAnnounceInfoList  
+[(返回目录)](README.md)  
   
 **继承自:** [GroupAPI](GroupAPI.md)  
   

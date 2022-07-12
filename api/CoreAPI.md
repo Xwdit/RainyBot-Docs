@@ -1,4 +1,5 @@
-# 类: CoreAPI ###[(返回目录)](README.md)  
+# 类: CoreAPI  
+[(返回目录)](README.md)  
   
 **继承自:** [RainyBotAPI](RainyBotAPI.md)  
   

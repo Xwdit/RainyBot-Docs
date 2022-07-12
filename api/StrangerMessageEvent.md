@@ -1,4 +1,5 @@
-# 类: StrangerMessageEvent ###[(返回目录)](README.md)  
+# 类: StrangerMessageEvent  
+[(返回目录)](README.md)  
   
 **继承自:** [MessageEvent](MessageEvent.md)  
   

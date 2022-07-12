@@ -1,4 +1,5 @@
-# 类: MemberHonorChangeEvent ###[(返回目录)](README.md)  
+# 类: MemberHonorChangeEvent  
+[(返回目录)](README.md)  
   
 **继承自:** [GroupMemberEvent](GroupMemberEvent.md)  
   

@@ -1,4 +1,5 @@
-# 类: Event ###[(返回目录)](README.md)  
+# 类: Event  
+[(返回目录)](README.md)  
   
 **继承自:** [EventAPI](EventAPI.md)  
   

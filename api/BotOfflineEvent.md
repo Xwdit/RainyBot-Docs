@@ -1,4 +1,5 @@
-# 类: BotOfflineEvent ###[(返回目录)](README.md)  
+# 类: BotOfflineEvent  
+[(返回目录)](README.md)  
   
 **继承自:** [BotEvent](BotEvent.md)  
   

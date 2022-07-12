@@ -1,4 +1,5 @@
-# 类: Message ###[(返回目录)](README.md)  
+# 类: Message  
+[(返回目录)](README.md)  
   
 **继承自:** [MessageAPI](MessageAPI.md)  
   

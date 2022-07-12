@@ -1,4 +1,5 @@
-# 类: RainyBotAPI ###[(返回目录)](README.md)  
+# 类: RainyBotAPI  
+[(返回目录)](README.md)  
   
 **继承自:** [RefCounted](https://docs.godotengine.org/en/latest/classes/class_refcounted.html)  
   

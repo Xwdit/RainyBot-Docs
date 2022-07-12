@@ -1,4 +1,5 @@
-# 类: Member ###[(返回目录)](README.md)  
+# 类: Member  
+[(返回目录)](README.md)  
   
 **继承自:** [MemberAPI](MemberAPI.md)  
   

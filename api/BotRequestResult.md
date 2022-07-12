@@ -1,4 +1,5 @@
-# 类: BotRequestResult ###[(返回目录)](README.md)  
+# 类: BotRequestResult  
+[(返回目录)](README.md)  
   
 **继承自:** [BotAPI](BotAPI.md)  
   

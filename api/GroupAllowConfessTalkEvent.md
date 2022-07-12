@@ -1,4 +1,5 @@
-# 类: GroupAllowConfessTalkEvent ###[(返回目录)](README.md)  
+# 类: GroupAllowConfessTalkEvent  
+[(返回目录)](README.md)  
   
 **继承自:** [GroupEvent](GroupEvent.md)  
   

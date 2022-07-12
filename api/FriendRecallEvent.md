@@ -1,4 +1,5 @@
-# 类: FriendRecallEvent ###[(返回目录)](README.md)  
+# 类: FriendRecallEvent  
+[(返回目录)](README.md)  
   
 **继承自:** [FriendEvent](FriendEvent.md)  
   

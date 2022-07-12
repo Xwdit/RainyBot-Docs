@@ -1,4 +1,5 @@
-# 类: MusicShareMessage ###[(返回目录)](README.md)  
+# 类: MusicShareMessage  
+[(返回目录)](README.md)  
   
 **继承自:** [Message](Message.md)  
   
