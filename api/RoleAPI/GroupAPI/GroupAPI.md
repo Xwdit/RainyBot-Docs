@@ -2,7 +2,7 @@
   
 **继承自:** RoleAPI  
   
-**子类:** ["Group", "GroupAnnounce", "GroupAnnounceInfo", "GroupAnnounceInfoList", "GroupConfig", "GroupList", "GroupMember", "GroupMemberList"]  
+**子类:** Group, GroupAnnounce, GroupAnnounceInfo, GroupAnnounceInfoList, GroupConfig, GroupList, GroupMember, GroupMemberList  
   
 RainyBot的群组API类，所有的群组相关API将直接或间接继承此类  
   

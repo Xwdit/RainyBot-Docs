@@ -2,7 +2,7 @@
   
 **继承自:** RainyBotAPI  
   
-**子类:** ["GroupAPI", "MemberAPI", "OtherClient"]  
+**子类:** GroupAPI, MemberAPI, OtherClient  
   
 RainyBot的角色API类，所有的角色相关API将直接或间接继承此类  
   

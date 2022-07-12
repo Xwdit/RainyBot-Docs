@@ -2,7 +2,7 @@
   
 **继承自:** Event  
   
-**子类:** ["OtherClientOfflineEvent", "OtherClientOnlineEvent"]  
+**子类:** OtherClientOfflineEvent, OtherClientOnlineEvent  
   
 ## 常量/枚举  
   

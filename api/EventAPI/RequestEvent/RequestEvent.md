@@ -2,7 +2,7 @@
   
 **继承自:** Event  
   
-**子类:** ["GroupInviteRequestEvent", "MemberJoinRequestEvent", "NewFriendRequestEvent"]  
+**子类:** GroupInviteRequestEvent, MemberJoinRequestEvent, NewFriendRequestEvent  
   
 ## 常量/枚举  
   

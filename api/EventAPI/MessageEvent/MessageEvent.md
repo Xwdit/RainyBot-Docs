@@ -2,7 +2,7 @@
   
 **继承自:** Event  
   
-**子类:** ["FriendMessageEvent", "GroupMessageEvent", "OtherClientMessageEvent", "StrangerMessageEvent", "TempMessageEvent"]  
+**子类:** FriendMessageEvent, GroupMessageEvent, OtherClientMessageEvent, StrangerMessageEvent, TempMessageEvent  
   
 ## 常量/枚举  
   

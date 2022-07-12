@@ -2,7 +2,7 @@
   
 **继承自:** RoleAPI  
   
-**子类:** ["Member", "MemberList", "MemberProfile"]  
+**子类:** Member, MemberList, MemberProfile  
   
 RainyBot的个体成员API类，所有的个体成员相关API将直接或间接继承此类  
   

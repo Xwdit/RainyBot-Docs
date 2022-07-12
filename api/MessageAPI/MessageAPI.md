@@ -2,7 +2,7 @@
   
 **继承自:** RainyBotAPI  
   
-**子类:** ["CacheMessage", "Message", "MessageChain", "ForwardMessageNode", "ForwardMessageNodeList"]  
+**子类:** CacheMessage, Message, MessageChain, ForwardMessageNode, ForwardMessageNodeList  
   
 RainyBot的消息API类，所有的消息相关API将直接或间接继承此类  
   

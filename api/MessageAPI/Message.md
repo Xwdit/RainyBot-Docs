@@ -2,7 +2,7 @@
   
 **继承自:** MessageAPI  
   
-**子类:** ["AppMessage", "AtAllMessage", "AtMessage", "BotCodeMessage", "DiceMessage", "FaceMessage", "FileMessage", "FlashImageMessage", "ForwardMessage", "ImageMessage", "JsonMessage", "MarketFaceMessage", "MusicShareMessage", "PokeMessage", "QuoteMessage", "SourceMessage", "TextMessage", "VoiceMessage", "XmlMessage"]  
+**子类:** AppMessage, AtAllMessage, AtMessage, BotCodeMessage, DiceMessage, FaceMessage, FileMessage, FlashImageMessage, ForwardMessage, ImageMessage, JsonMessage, MarketFaceMessage, MusicShareMessage, PokeMessage, QuoteMessage, SourceMessage, TextMessage, VoiceMessage, XmlMessage  
   
 RainyBot的消息类，不具备任何功能，仅作为所有消息类型的直接或间接父类  
   

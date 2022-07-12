@@ -2,7 +2,7 @@
   
 **继承自:** Event  
   
-**子类:** ["BotOfflineEvent", "BotOnlineEvent", "BotReloginEvent"]  
+**子类:** BotOfflineEvent, BotOnlineEvent, BotReloginEvent  
   
 RainyBot的Bot自身事件类，协议后端机器人账号自身发生的各类事件通常直接或间接继承此类  
   

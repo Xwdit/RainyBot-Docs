@@ -2,6 +2,6 @@
   
 **继承自:** RainyBotAPI  
   
-**子类:** ["Event"]  
+**子类:** Event  
   
 

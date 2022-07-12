@@ -91,7 +91,12 @@ func _save_doc_markdown(path:String,doc_dic:Dictionary):
 	md_text += "**继承自:** %s  \n" % doc_dic.inherits
 	md_text += "  \n"
 	if !doc_dic.childs.is_empty():
-		md_text += "**子类:** %s  \n" % str(doc_dic.childs)
+		var c_text:String = ""
+		for i in range(doc_dic.childs.size()):
+			c_text += doc_dic.childs[i]
+			if i < doc_dic.childs.size()-1:
+				c_text += ", "
+		md_text += "**子类:** %s  \n" % c_text
 		md_text += "  \n"
 	if doc_dic.brief_description != "":
 		md_text += "%s  \n" % doc_dic.brief_description

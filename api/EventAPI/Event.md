@@ -2,7 +2,7 @@
   
 **继承自:** EventAPI  
   
-**子类:** ["ActionEvent", "BotEvent", "FriendEvent", "GroupEvent", "MessageEvent", "OtherClientEvent", "RequestEvent"]  
+**子类:** ActionEvent, BotEvent, FriendEvent, GroupEvent, MessageEvent, OtherClientEvent, RequestEvent  
   
 ## 常量/枚举  
   
