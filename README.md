@@ -5,7 +5,7 @@
 {% hint style="info" %}
 提示
 
-此处的概览不包含与使用RainyBot相关的内容，且可能较为枯燥，您可以简单浏览后直接跳转到[安装与运行](an-zhuang-yu-yun-hang.md)部分来了解如何开始使用
+此处的概览不包含与使用RainyBot相关的内容，且可能较为枯燥，您可以简单浏览后直接跳转到[安装与运行](docs/an-zhuang-yu-yun-hang.md)部分来了解如何开始使用
 {% endhint %}
 
 RainyBot是一个跨平台的机器人开发框架，基于 [Godot Engine 4.0](https://godotengine.org/) 进行开发。 本项目成立的目的，是为了建立一个低门槛，简单易用的机器人开发框架。 通过提供大量精心设计，智能且极简的交互API与预置功能，结合[GDScript脚本语言](https://docs.godotengine.org/en/latest/tutorials/scripting/gdscript/gdscript\_basics.html)的简便语法， 来尽可能地提升开发效率且降低开发难度，且让更多开发经验不足，乃至无经验的用户也能够轻松开发属于自己的各类社交平台机器人应用。例如，RainyBot为开发过程中常见的，诸如上下文的连续交互，命令/事件/关键词的注册，消息的构建等操作均提供了大量高度封装且人性化的API接口，可以通过极少的代码来实现复杂的功能。
