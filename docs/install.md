@@ -6,6 +6,8 @@ description: 此页面将介绍如何配置与使用RainyBot
 
 ### 运行需求
 
+_**注意：请不要将RainyBot放置在中文路径中，否则可能会出现各类问题！**_
+
 支持的操作系统：64位 Windows 7 或以上版本 (Mac OS/Linux支持将在后续版本中添加)
 
 [Java 版本 >= 11](https://www.oracle.com/java/technologies/downloads/) (此需求来源于RainyBot默认集成的Mirai协议后端，核心无需任何运行环境)

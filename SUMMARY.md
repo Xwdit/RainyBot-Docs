@@ -3,6 +3,7 @@
 * [主页](README.md)
   * [安装与运行](docs/install.md)
   * [开始使用](docs/start.md)
+  * [插件开发](readme/cha-jian-kai-fa.md)
   * [RainyBot API](docs/api/README.md)
     * [类: ActionEvent](docs/api/ActionEvent.md)
     * [类: AppMessage](docs/api/AppMessage.md)
