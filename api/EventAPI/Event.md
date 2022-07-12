@@ -36,11 +36,11 @@
   
 ## 方法 
   
-- **get_metadata()**  
+- Dictionary **get_metadata()**  
   
 ---  
   
-- **set_metadata(Dictionary dic)**  
+- void **set_metadata(Dictionary dic)**  
   
 ---  
   

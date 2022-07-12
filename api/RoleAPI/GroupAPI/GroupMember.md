@@ -31,7 +31,7 @@ RainyBot的群成员类，通常代表一个对应实例，实现了用于与群
   
 ## 方法 
   
-- **init(int group_id, int member_id)**  
+- GroupMember **init(int group_id, int member_id)**  
   
 手动构造一个GroupMember类的实例，用于主动进行与群成员的交互时使用   
   
@@ -39,43 +39,43 @@ RainyBot的群成员类，通常代表一个对应实例，实现了用于与群
   
 ---  
   
-- **init_meta(Dictionary dic)**  
+- GroupMember **init_meta(Dictionary dic)**  
   
 通过机器人协议后端的元数据字典构造一个GroupMember类的实例，仅当你知道自己在做什么时才使用  
   
 ---  
   
-- **get_metadata()**  
+- Dictionary **get_metadata()**  
   
 获取实例中的元数据字典，仅当你知道自己在做什么时才使用  
   
 ---  
   
-- **set_metadata(Dictionary dic)**  
+- void **set_metadata(Dictionary dic)**  
   
 使用指定字典覆盖实例中的元数据字典，仅当你知道自己在做什么时才使用  
   
 ---  
   
-- **get_id()**  
+- int **get_id()**  
   
 获取群成员实例的ID  
   
 ---  
   
-- **get_name()**  
+- String **get_name()**  
   
 获取群成员实例在群聊中的名称(群昵称)，若为手动构造的实例，将始终返回空字符串  
   
 ---  
   
-- **get_special_title()**  
+- String **get_special_title()**  
   
 获取群成员实例在群聊中的特别称号(群荣誉)，若为手动构造的实例，将始终返回空字符串  
   
 ---  
   
-- **get_permission()**  
+- int **get_permission()**  
   
 获取群成员实例在群聊中的权限，将返回一个对应Permission枚举的整数值   
   
@@ -83,37 +83,37 @@ RainyBot的群成员类，通常代表一个对应实例，实现了用于与群
   
 ---  
   
-- **get_avatar_url()**  
+- String **get_avatar_url()**  
   
 获取群成员实例对应账号的头像的图像链接，通常为jpg格式  
   
 ---  
   
-- **is_permission(int perm)**  
+- bool **is_permission(int perm)**  
   
 判断群成员实例的类型是否为指定的类型  
   
 ---  
   
-- **get_join_timestamp()**  
+- int **get_join_timestamp()**  
   
 获取群成员实例加入其所在群聊的时间戳，若为手动构造的实例，将始终返回0  
   
 ---  
   
-- **get_last_speak_timestamp()**  
+- int **get_last_speak_timestamp()**  
   
 获取群成员实例在对应群聊中上次发言的时间戳，若为手动构造的实例，将始终返回0  
   
 ---  
   
-- **get_mute_time_remaining()**  
+- int **get_mute_time_remaining()**  
   
 获取群成员实例在对应群聊中剩余的禁言时间(秒)，若为手动构造的实例，将始终返回0  
   
 ---  
   
-- **get_group()**  
+- Group **get_group()**  
   
 获取群成员实例所在群聊的Group实例，   
   
@@ -121,7 +121,7 @@ RainyBot的群成员类，通常代表一个对应实例，实现了用于与群
   
 ---  
   
-- **get_profile(float timeout=-INF)**  
+- MemberProfile **get_profile(float timeout=-INF)**  
   
 获取记录了群成员实例相关资料的MemberProfile实例，需要配合await关键字使用   
   
@@ -129,7 +129,7 @@ RainyBot的群成员类，通常代表一个对应实例，实现了用于与群
   
 ---  
   
-- **change_name(String new_name, float timeout=-INF)**  
+- BotRequestResult **change_name(String new_name, float timeout=-INF)**  
   
 更改群成员实例在其对应群聊中的名称(群昵称)   
   
@@ -139,7 +139,7 @@ RainyBot的群成员类，通常代表一个对应实例，实现了用于与群
   
 ---  
   
-- **change_special_title(String new_title, float timeout=-INF)**  
+- BotRequestResult **change_special_title(String new_title, float timeout=-INF)**  
   
 更改群成员实例在其对应群聊中的特别称号(群荣誉)   
   
@@ -149,7 +149,7 @@ RainyBot的群成员类，通常代表一个对应实例，实现了用于与群
   
 ---  
   
-- **toggle_admin(bool enabled, float timeout=-INF)**  
+- BotRequestResult **toggle_admin(bool enabled, float timeout=-INF)**  
   
 开关群成员实例在其对应群聊中的管理员权限，机器人需要为群主才可执行   
   
@@ -159,7 +159,7 @@ RainyBot的群成员类，通常代表一个对应实例，实现了用于与群
   
 ---  
   
-- **kick(String message="", float timeout=-INF)**  
+- BotRequestResult **kick(String message="", float timeout=-INF)**  
   
 将群成员实例移出其所在的对应群聊，机器人需要为管理员或群主才可执行   
   
@@ -171,7 +171,7 @@ RainyBot的群成员类，通常代表一个对应实例，实现了用于与群
   
 ---  
   
-- **mute(int time=1800, float timeout=-INF)**  
+- BotRequestResult **mute(int time=1800, float timeout=-INF)**  
   
 将群成员实例在其所在的群聊中禁言指定的秒数，机器人需要为管理员或群主才可执行   
   
@@ -183,7 +183,7 @@ RainyBot的群成员类，通常代表一个对应实例，实现了用于与群
   
 ---  
   
-- **unmute(float timeout=-INF)**  
+- BotRequestResult **unmute(float timeout=-INF)**  
   
 将群成员实例在其所在的群聊中解除禁言，机器人需要为管理员或群主才可执行   
   
@@ -193,7 +193,7 @@ RainyBot的群成员类，通常代表一个对应实例，实现了用于与群
   
 ---  
   
-- **send_message(Variant msg, int quote_msgid=-1, float timeout=-INF)**  
+- BotRequestResult **send_message(Variant msg, int quote_msgid=-1, float timeout=-INF)**  
   
 通过群临时会话，向群成员实例私聊发送消息，同时可指定一个需要引用回复的消息ID   
   
@@ -209,7 +209,7 @@ RainyBot的群成员类，通常代表一个对应实例，实现了用于与群
   
 ---  
   
-- **send_nudge(float timeout=-INF)**  
+- BotRequestResult **send_nudge(float timeout=-INF)**  
   
 通过群临时会话，向群成员实例私聊发送一个戳一戳消息   
   

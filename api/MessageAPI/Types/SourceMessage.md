@@ -4,19 +4,19 @@
   
 ## 方法 
   
-- **init_meta(Dictionary dic)**  
+- SourceMessage **init_meta(Dictionary dic)**  
   
 ---  
   
-- **get_message_id()**  
+- int **get_message_id()**  
   
 ---  
   
-- **get_timestamp()**  
+- int **get_timestamp()**  
   
 ---  
   
-- **get_as_text()**  
+- String **get_as_text()**  
   
 ---  
   

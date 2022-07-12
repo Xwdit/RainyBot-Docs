@@ -4,19 +4,19 @@
   
 ## 方法 
   
-- **init(ForwardMessageNodeList node_list)**  
+- ForwardMessage **init(ForwardMessageNodeList node_list)**  
   
 ---  
   
-- **init_meta(Dictionary dic)**  
+- ForwardMessage **init_meta(Dictionary dic)**  
   
 ---  
   
-- **get_node_list()**  
+- ForwardMessageNodeList **get_node_list()**  
   
 ---  
   
-- **set_node_list(ForwardMessageNodeList node_list)**  
+- void **set_node_list(ForwardMessageNodeList node_list)**  
   
 ---  
   

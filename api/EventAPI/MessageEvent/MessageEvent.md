@@ -28,31 +28,31 @@
   
 ## 方法 
   
-- **get_message_chain()**  
+- MessageChain **get_message_chain()**  
   
 ---  
   
-- **get_message_array(Variant types, bool exclude=false, int max_size=-1)**  
+- Array **get_message_array(Variant types, bool exclude=false, int max_size=-1)**  
   
 ---  
   
-- **get_message_text(Variant types, bool exclude=false)**  
+- String **get_message_text(Variant types, bool exclude=false)**  
   
 ---  
   
-- **get_message_id()**  
+- int **get_message_id()**  
   
 ---  
   
-- **get_message_timestamp()**  
+- int **get_message_timestamp()**  
   
 ---  
   
-- **get_sender_id()**  
+- int **get_sender_id()**  
   
 ---  
   
-- **reply(Variant msg, bool quote=false, bool at=false)**  
+- BotRequestResult **reply(Variant msg, bool quote=false, bool at=false)**  
   
 ---  
   

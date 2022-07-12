@@ -20,23 +20,23 @@
   
 ## 方法 
   
-- **get_event_id()**  
+- int **get_event_id()**  
   
 ---  
   
-- **get_sender_id()**  
+- int **get_sender_id()**  
   
 ---  
   
-- **get_sender_name()**  
+- String **get_sender_name()**  
   
 ---  
   
-- **get_group_id()**  
+- int **get_group_id()**  
   
 ---  
   
-- **get_request_message()**  
+- String **get_request_message()**  
   
 ---  
   

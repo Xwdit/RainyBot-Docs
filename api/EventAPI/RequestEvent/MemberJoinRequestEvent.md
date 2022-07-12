@@ -26,15 +26,15 @@
   
 ## 方法 
   
-- **init_meta(Dictionary dic)**  
+- MemberJoinRequestEvent **init_meta(Dictionary dic)**  
   
 ---  
   
-- **get_group_name()**  
+- String **get_group_name()**  
   
 ---  
   
-- **respond(int respond_type, String msg="", float timeout=-INF)**  
+- BotRequestResult **respond(int respond_type, String msg="", float timeout=-INF)**  
   
 ---  
   

@@ -11,19 +11,19 @@ RainyBot的At全体成员消息类，通常代表一个对应实例，此类消�
   
 ## 方法 
   
-- **init()**  
+- AtAllMessage **init()**  
   
 手动构造一个AtAllMessage类的实例，以便在消息中At全体成员  
   
 ---  
   
-- **init_meta(Dictionary dic)**  
+- AtAllMessage **init_meta(Dictionary dic)**  
   
 通过机器人协议后端的元数据字典构造一个AtAllMessage类的实例，仅当你知道自己在做什么时才使用  
   
 ---  
   
-- **get_as_text()**  
+- String **get_as_text()**  
   
 将此实例获取为字符串的形式  
   

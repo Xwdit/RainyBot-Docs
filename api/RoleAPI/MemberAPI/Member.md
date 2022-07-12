@@ -25,7 +25,7 @@ RainyBot的个体成员类，通常代表一个对应实例，实现了用于与
   
 ## 方法 
   
-- **init(int member_id, int role=0)**  
+- Member **init(int member_id, int role=0)**  
   
 手动构造一个Member类的实例，用于主动进行与个体成员的交互时使用   
   
@@ -33,25 +33,25 @@ RainyBot的个体成员类，通常代表一个对应实例，实现了用于与
   
 ---  
   
-- **init_meta(Dictionary dic, int role=0)**  
+- Member **init_meta(Dictionary dic, int role=0)**  
   
 通过机器人协议后端的元数据字典构造一个Member类的实例，仅当你知道自己在做什么时才使用  
   
 ---  
   
-- **get_metadata()**  
+- Dictionary **get_metadata()**  
   
 获取实例中的元数据字典，仅当你知道自己在做什么时才使用  
   
 ---  
   
-- **set_metadata(Dictionary dic)**  
+- void **set_metadata(Dictionary dic)**  
   
 使用指定字典覆盖实例中的元数据字典，仅当你知道自己在做什么时才使用  
   
 ---  
   
-- **get_role()**  
+- int **get_role()**  
   
 获取个体成员实例的类型，将返回一个对应Role枚举的整数值   
   
@@ -59,43 +59,43 @@ RainyBot的个体成员类，通常代表一个对应实例，实现了用于与
   
 ---  
   
-- **set_role(int role)**  
+- void **set_role(int role)**  
   
 设置个体成员实例的类型  
   
 ---  
   
-- **is_role(int role)**  
+- bool **is_role(int role)**  
   
 判断个体成员实例是否为某类型  
   
 ---  
   
-- **get_id()**  
+- int **get_id()**  
   
 获取个体成员实例的ID  
   
 ---  
   
-- **get_name()**  
+- String **get_name()**  
   
 获取个体成员实例的名称(昵称)，若为手动构造的实例，将始终返回空字符串  
   
 ---  
   
-- **get_remark()**  
+- String **get_remark()**  
   
 获取Bot对个体成员实例的备注，若为手动构造的实例，将始终返回空字符串  
   
 ---  
   
-- **get_avatar_url()**  
+- String **get_avatar_url()**  
   
 获取个体成员实例对应账号的头像的图像链接，通常为jpg格式  
   
 ---  
   
-- **get_profile(float timeout=-INF)**  
+- MemberProfile **get_profile(float timeout=-INF)**  
   
 获取个体成员实例相关资料的MemberProfile实例，需要配合await关键字使用   
   
@@ -103,7 +103,7 @@ RainyBot的个体成员类，通常代表一个对应实例，实现了用于与
   
 ---  
   
-- **send_message(Variant msg, int quote_msgid=-1, float timeout=-INF)**  
+- BotRequestResult **send_message(Variant msg, int quote_msgid=-1, float timeout=-INF)**  
   
 向个体成员实例发送消息，同时可指定一个需要引用回复的消息ID   
   
@@ -119,7 +119,7 @@ RainyBot的个体成员类，通常代表一个对应实例，实现了用于与
   
 ---  
   
-- **send_nudge(float timeout=-INF)**  
+- BotRequestResult **send_nudge(float timeout=-INF)**  
   
 向个体成员实例发送一个戳一戳消息   
   
@@ -129,7 +129,7 @@ RainyBot的个体成员类，通常代表一个对应实例，实现了用于与
   
 ---  
   
-- **delete_friend(float timeout=-INF)**  
+- BotRequestResult **delete_friend(float timeout=-INF)**  
   
 解除与个体成员实例的好友/单向好友关系   
   

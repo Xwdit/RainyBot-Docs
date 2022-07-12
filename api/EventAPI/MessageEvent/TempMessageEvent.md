@@ -4,19 +4,19 @@
   
 ## 方法 
   
-- **init_meta(Dictionary dic)**  
+- TempMessageEvent **init_meta(Dictionary dic)**  
   
 ---  
   
-- **get_sender()**  
+- GroupMember **get_sender()**  
   
 ---  
   
-- **get_group()**  
+- Group **get_group()**  
   
 ---  
   
-- **reply(Variant msg, bool quote=false, bool at=false, float timeout=-INF)**  
+- BotRequestResult **reply(Variant msg, bool quote=false, bool at=false, float timeout=-INF)**  
   
 ---  
   

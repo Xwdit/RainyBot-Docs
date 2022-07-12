@@ -4,23 +4,23 @@
   
 ## 方法 
   
-- **init_meta(Dictionary dic)**  
+- MemberPermChangeEvent **init_meta(Dictionary dic)**  
   
 ---  
   
-- **get_member()**  
+- GroupMember **get_member()**  
   
 ---  
   
-- **get_group()**  
+- Group **get_group()**  
   
 ---  
   
-- **get_origin_perm()**  
+- int **get_origin_perm()**  
   
 ---  
   
-- **get_current_perm()**  
+- int **get_current_perm()**  
   
 ---  
   

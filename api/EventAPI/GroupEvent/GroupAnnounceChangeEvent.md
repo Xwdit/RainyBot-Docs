@@ -4,23 +4,23 @@
   
 ## 方法 
   
-- **init_meta(Dictionary dic)**  
+- GroupAnnounceChangeEvent **init_meta(Dictionary dic)**  
   
 ---  
   
-- **get_origin_announce()**  
+- String **get_origin_announce()**  
   
 ---  
   
-- **get_current_announce()**  
+- String **get_current_announce()**  
   
 ---  
   
-- **get_operator()**  
+- GroupMember **get_operator()**  
   
 ---  
   
-- **get_group()**  
+- Group **get_group()**  
   
 ---  
   

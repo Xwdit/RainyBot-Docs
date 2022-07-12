@@ -18,11 +18,11 @@
   
 ## 方法 
   
-- **init_meta(Dictionary dic)**  
+- NewFriendRequestEvent **init_meta(Dictionary dic)**  
   
 ---  
   
-- **respond(int respond_type, String msg="", float timeout=-INF)**  
+- BotRequestResult **respond(int respond_type, String msg="", float timeout=-INF)**  
   
 ---  
   

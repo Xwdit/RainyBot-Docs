@@ -4,31 +4,31 @@
   
 ## 方法 
   
-- **init_meta(Dictionary dic)**  
+- QuoteMessage **init_meta(Dictionary dic)**  
   
 ---  
   
-- **get_message_id()**  
+- int **get_message_id()**  
   
 ---  
   
-- **get_group_id()**  
+- int **get_group_id()**  
   
 ---  
   
-- **get_sender_id()**  
+- int **get_sender_id()**  
   
 ---  
   
-- **get_target_id()**  
+- int **get_target_id()**  
   
 ---  
   
-- **get_message_chain()**  
+- MessageChain **get_message_chain()**  
   
 ---  
   
-- **get_as_text()**  
+- String **get_as_text()**  
   
 ---  
   

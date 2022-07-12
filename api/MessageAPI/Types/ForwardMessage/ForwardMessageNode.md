@@ -4,59 +4,59 @@
   
 ## 方法 
   
-- **init(int message_id, int sender_id=-1, int time=0, String sender_name="", MessageChain message_chain=null)**  
+- ForwardMessageNode **init(int message_id, int sender_id=-1, int time=0, String sender_name="", MessageChain message_chain=null)**  
   
 ---  
   
-- **init_meta(Dictionary dic)**  
+- ForwardMessageNode **init_meta(Dictionary dic)**  
   
 ---  
   
-- **get_metadata()**  
+- Dictionary **get_metadata()**  
   
 ---  
   
-- **set_metadata(Dictionary dic)**  
+- void **set_metadata(Dictionary dic)**  
   
 ---  
   
-- **get_sender_id()**  
+- int **get_sender_id()**  
   
 ---  
   
-- **set_sender_id(int id)**  
+- void **set_sender_id(int id)**  
   
 ---  
   
-- **get_time()**  
+- int **get_time()**  
   
 ---  
   
-- **set_time(int time)**  
+- void **set_time(int time)**  
   
 ---  
   
-- **get_sender_name()**  
+- String **get_sender_name()**  
   
 ---  
   
-- **set_sender_name(int name)**  
+- void **set_sender_name(int name)**  
   
 ---  
   
-- **get_message_chain()**  
+- MessageChain **get_message_chain()**  
   
 ---  
   
-- **set_message_chain(MessageChain msg_chain)**  
+- void **set_message_chain(MessageChain msg_chain)**  
   
 ---  
   
-- **get_message_id()**  
+- int **get_message_id()**  
   
 ---  
   
-- **set_message_id(int id)**  
+- void **set_message_id(int id)**  
   
 ---  
   

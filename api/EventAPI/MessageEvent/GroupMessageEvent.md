@@ -4,35 +4,35 @@
   
 ## 方法 
   
-- **init_meta(Dictionary dic)**  
+- GroupMessageEvent **init_meta(Dictionary dic)**  
   
 ---  
   
-- **get_sender()**  
+- GroupMember **get_sender()**  
   
 ---  
   
-- **get_group()**  
+- Group **get_group()**  
   
 ---  
   
-- **get_group_id()**  
+- int **get_group_id()**  
   
 ---  
   
-- **reply(Variant msg, bool quote=false, bool at=false, float timeout=-INF)**  
+- BotRequestResult **reply(Variant msg, bool quote=false, bool at=false, float timeout=-INF)**  
   
 ---  
   
-- **recall()**  
+- BotRequestResult **recall()**  
   
 ---  
   
-- **set_essence()**  
+- BotRequestResult **set_essence()**  
   
 ---  
   
-- **is_at_bot()**  
+- bool **is_at_bot()**  
   
 ---  
   

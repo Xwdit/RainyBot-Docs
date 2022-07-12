@@ -26,19 +26,19 @@ RainyBot的机器人账号离线事件类，其实例记录了一次机器人账
   
 ## 方法 
   
-- **init_meta(Dictionary dic, int reason_type)**  
+- BotOfflineEvent **init_meta(Dictionary dic, int reason_type)**  
   
 通过机器人协议后端的元数据字典构造一个此类的实例，仅当你知道自己在做什么时才使用  
   
 ---  
   
-- **get_reason_type()**  
+- int **get_reason_type()**  
   
 获取机器人离线事件的原因类型，可用类型请参见此类的ReasonType枚举  
   
 ---  
   
-- **is_reason_type(int reason)**  
+- bool **is_reason_type(int reason)**  
   
 判定机器人离线事件是否是指定类型的原因，可用类型请参见此类的ReasonType枚举  
   

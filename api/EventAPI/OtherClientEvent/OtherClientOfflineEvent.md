@@ -4,7 +4,7 @@
   
 ## 方法 
   
-- **init_meta(Dictionary dic)**  
+- OtherClientOfflineEvent **init_meta(Dictionary dic)**  
   
 ---  
   

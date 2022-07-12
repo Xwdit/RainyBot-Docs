@@ -11,25 +11,25 @@ RainyBot的个体成员列表类，通常代表一个对应实例，储存了机
   
 ## 方法 
   
-- **init_meta(Array arr)**  
+- MemberList **init_meta(Array arr)**  
   
 通过机器人协议后端的元数据数组构造一个MemberList类的实例，仅当你知道自己在做什么时才使用  
   
 ---  
   
-- **get_metadata()**  
+- Array **get_metadata()**  
   
 获取实例中的元数据数组，仅当你知道自己在做什么时才使用  
   
 ---  
   
-- **set_metadata(Array arr)**  
+- void **set_metadata(Array arr)**  
   
 使用指定数组覆盖实例中的元数据数组，仅当你知道自己在做什么时才使用  
   
 ---  
   
-- **get_from_index(int index)**  
+- Member **get_from_index(int index)**  
   
 根据指定的序号来从个体成员列表实例中获取对应的Member实例   
   
@@ -37,7 +37,7 @@ RainyBot的个体成员列表类，通常代表一个对应实例，储存了机
   
 ---  
   
-- **get_from_id(int member_id)**  
+- Member **get_from_id(int member_id)**  
   
 根据指定的个体成员ID来从个体成员列表实例中获取对应的Member实例   
   
@@ -45,13 +45,13 @@ RainyBot的个体成员列表类，通常代表一个对应实例，储存了机
   
 ---  
   
-- **get_size()**  
+- int **get_size()**  
   
 获取个体成员列表实例中的个体成员实例的总数  
   
 ---  
   
-- **has_member(int member_id)**  
+- bool **has_member(int member_id)**  
   
 判断个体成员列表实例中是否存在指定ID的个体成员实例  
   

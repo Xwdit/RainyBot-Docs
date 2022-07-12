@@ -74,55 +74,55 @@ RainyBot的协议后端请求结果类，记录了向协议后端发送的某次
   
 ## 方法 
   
-- **init_meta(Dictionary dic)**  
+- BotRequestResult **init_meta(Dictionary dic)**  
   
 通过机器人协议后端的元数据数组构造一个BotRequestResult类的实例，仅当你知道自己在做什么时才使用  
   
 ---  
   
-- **get_metadata()**  
+- Dictionary **get_metadata()**  
   
 获取实例中的元数据字典，仅当你知道自己在做什么时才使用  
   
 ---  
   
-- **set_metadata(Dictionary dic)**  
+- void **set_metadata(Dictionary dic)**  
   
 使用指定字典覆盖实例中的元数据字典，仅当你知道自己在做什么时才使用  
   
 ---  
   
-- **get_status_code()**  
+- int **get_status_code()**  
   
 返回请求结果的状态码  
   
 ---  
   
-- **get_status_msg()**  
+- String **get_status_msg()**  
   
 返回请求结果的状态信息文本  
   
 ---  
   
-- **get_message_id()**  
+- int **get_message_id()**  
   
 返回请求结果对应的消息ID  
   
 ---  
   
-- **is_success()**  
+- bool **is_success()**  
   
 返回请求结果是否为成功  
   
 ---  
   
-- **is_status(int code)**  
+- bool **is_status(int code)**  
   
 判断请求结果是否为指定的结果  
   
 ---  
   
-- **recall(float timeout=-INF)**  
+- BotRequestResult **recall(float timeout=-INF)**  
   
 撤回请求结果中消息ID对应的消息   
   

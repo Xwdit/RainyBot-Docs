@@ -11,31 +11,31 @@ RainyBot的缓存消息类，通常代表一个对应实例，用于储存从机
   
 ## 方法 
   
-- **init_meta(Dictionary dic)**  
+- CacheMessage **init_meta(Dictionary dic)**  
   
 通过机器人协议后端的元数据字典构造一个CacheMessage类的实例，仅当你知道自己在做什么时才使用  
   
 ---  
   
-- **get_metadata()**  
+- Dictionary **get_metadata()**  
   
 获取实例中的元数据字典，仅当你知道自己在做什么时才使用  
   
 ---  
   
-- **set_metadata(Dictionary dic)**  
+- void **set_metadata(Dictionary dic)**  
   
 使用指定字典覆盖实例中的元数据字典，仅当你知道自己在做什么时才使用  
   
 ---  
   
-- **get_message_chain()**  
+- MessageChain **get_message_chain()**  
   
 获取缓存消息实例中储存的消息对应的消息链  
   
 ---  
   
-- **get_sender()**  
+- RoleAPI **get_sender()**  
   
 获取缓存消息实例中储存的消息对应的发送者实例   
   

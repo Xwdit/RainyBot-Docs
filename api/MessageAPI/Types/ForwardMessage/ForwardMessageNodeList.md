@@ -4,39 +4,39 @@
   
 ## 方法 
   
-- **init(Variant msg_node)**  
+- ForwardMessageNodeList **init(Variant msg_node)**  
   
 ---  
   
-- **init_meta(Array arr)**  
+- ForwardMessageNodeList **init_meta(Array arr)**  
   
 ---  
   
-- **get_metadata()**  
+- Array **get_metadata()**  
   
 ---  
   
-- **set_metadata(Array arr)**  
+- void **set_metadata(Array arr)**  
   
 ---  
   
-- **get_from_index(int index)**  
+- ForwardMessageNode **get_from_index(int index)**  
   
 ---  
   
-- **get_size()**  
+- int **get_size()**  
   
 ---  
   
-- **append(Variant msg_node)**  
+- ForwardMessageNodeList **append(Variant msg_node)**  
   
 ---  
   
-- **get_from_message_id(int message_id)**  
+- ForwardMessageNode **get_from_message_id(int message_id)**  
   
 ---  
   
-- **get_from_sender_id(int sender_id)**  
+- ForwardMessageNode **get_from_sender_id(int sender_id)**  
   
 ---  
   

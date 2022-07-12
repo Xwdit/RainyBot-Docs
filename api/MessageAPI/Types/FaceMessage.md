@@ -4,31 +4,31 @@
   
 ## 方法 
   
-- **init(Variant face)**  
+- FaceMessage **init(Variant face)**  
   
 ---  
   
-- **init_meta(Dictionary dic)**  
+- FaceMessage **init_meta(Dictionary dic)**  
   
 ---  
   
-- **get_face_id()**  
+- int **get_face_id()**  
   
 ---  
   
-- **set_face_id(int face_id)**  
+- void **set_face_id(int face_id)**  
   
 ---  
   
-- **get_face_name()**  
+- String **get_face_name()**  
   
 ---  
   
-- **set_face_name(String face_name)**  
+- void **set_face_name(String face_name)**  
   
 ---  
   
-- **get_as_text()**  
+- String **get_as_text()**  
   
 ---  
   

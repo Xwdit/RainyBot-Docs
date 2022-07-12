@@ -80,7 +80,7 @@ RainyBot的插件类，代表一个实例，用于在插件中实现各类相关
   
 ## 方法 
   
-- **_on_init()**  
+- void **_on_init()**  
   
 在插件中覆盖此虚函数，以便定义将在此插件的文件每次被读取时执行的操作   
   
@@ -92,7 +92,7 @@ RainyBot的插件类，代表一个实例，用于在插件中实现各类相关
   
 ---  
   
-- **_on_connect()**  
+- void **_on_connect()**  
   
 在插件中覆盖此虚函数，以便定义RainyBot在与协议后端建立连接后插件将执行的操作   
   
@@ -100,7 +100,7 @@ RainyBot的插件类，代表一个实例，用于在插件中实现各类相关
   
 ---  
   
-- **_on_load()**  
+- void **_on_load()**  
   
 在插件中覆盖此虚函数，以便定义插件在被加载完毕后执行的操作   
   
@@ -108,7 +108,7 @@ RainyBot的插件类，代表一个实例，用于在插件中实现各类相关
   
 ---  
   
-- **_on_ready()**  
+- void **_on_ready()**  
   
 在插件中覆盖此虚函数，以便定义插件在所有其他插件加载完毕后执行的操作   
   
@@ -118,7 +118,7 @@ RainyBot的插件类，代表一个实例，用于在插件中实现各类相关
   
 ---  
   
-- **_on_process()**  
+- void **_on_process()**  
   
 在插件中覆盖此虚函数，以便定义插件运行中的每一秒将执行的操作   
   
@@ -126,7 +126,7 @@ RainyBot的插件类，代表一个实例，用于在插件中实现各类相关
   
 ---  
   
-- **_on_error()**  
+- void **_on_error()**  
   
 在插件中覆盖此虚函数，以便定义在RainyBot检测到运行时错误后将执行的操作   
   
@@ -136,7 +136,7 @@ RainyBot的插件类，代表一个实例，用于在插件中实现各类相关
   
 ---  
   
-- **_on_disconnect()**  
+- void **_on_disconnect()**  
   
 在插件中覆盖此虚函数，以便定义RainyBot在与协议后端断开建立连接后插件将执行的操作   
   
@@ -144,7 +144,7 @@ RainyBot的插件类，代表一个实例，用于在插件中实现各类相关
   
 ---  
   
-- **_on_unload()**  
+- void **_on_unload()**  
   
 在插件中覆盖此虚函数，以便定义插件在即将被卸载时执行的操作   
   
@@ -154,7 +154,7 @@ RainyBot的插件类，代表一个实例，用于在插件中实现各类相关
   
 ---  
   
-- **set_plugin_info(String p_id, String p_name, String p_author, String p_version, String p_description, Variant p_dependency)**  
+- void **set_plugin_info(String p_id, String p_name, String p_author, String p_version, String p_description, Variant p_dependency)**  
   
 用于设定插件的相关信息，需要在[method _on_init]虚函数中执行以便RainyBot正确加载您的插件   
   
@@ -166,7 +166,7 @@ RainyBot的插件类，代表一个实例，用于在插件中实现各类相关
   
 ---  
   
-- **get_plugin_info()**  
+- Dictionary **get_plugin_info()**  
   
 用于获取插件的相关信息，将返回一个包含插件信息的字典   
   
@@ -174,37 +174,37 @@ RainyBot的插件类，代表一个实例，用于在插件中实现各类相关
   
 ---  
   
-- **get_plugin_filename()**  
+- String **get_plugin_filename()**  
   
 用于获取插件对应的文件名，将返回插件文件的名称 (如`ChatBot.gd`)  
   
 ---  
   
-- **get_plugin_filepath()**  
+- String **get_plugin_filepath()**  
   
 用于获取插件对应的文件路径，将返回插件文件的绝对路径 (如 `D://RainyBot/plugins/ChatBot.gd`)  
   
 ---  
   
-- **get_plugin_path()**  
+- String **get_plugin_path()**  
   
 用于获取RainyBot的插件文件夹的路径，将返回插件文件夹的绝对路径 (如 `D://RainyBot/plugins/`)  
   
 ---  
   
-- **get_plugin_runtime()**  
+- int **get_plugin_runtime()**  
   
 用于获取插件的已运行时间，默认情况下为插件成功加载以来经过的秒数  
   
 ---  
   
-- **get_global_runtime()**  
+- int **get_global_runtime()**  
   
 用于获取RainyBot全局的已运行时间，默认情况下为RainyBot成功启动以来经过的秒数  
   
 ---  
   
-- **get_plugin_instance(String plugin_id)**  
+- Plugin **get_plugin_instance(String plugin_id)**  
   
 用于获取其他插件的实例引用，可用于插件之间的联动与数据互通等   
   
@@ -212,61 +212,61 @@ RainyBot的插件类，代表一个实例，用于在插件中实现各类相关
   
 ---  
   
-- **get_data_path()**  
+- String **get_data_path()**  
   
 用于获取RainyBot的数据文件夹的路径，将返回数据文件夹的绝对路径 (如 `D://RainyBot/data/`)  
   
 ---  
   
-- **get_data_filepath()**  
+- String **get_data_filepath()**  
   
 用于获取该插件对应的数据库文件的路径，即插件对应的.rdb格式文件的绝对路径  
   
 ---  
   
-- **get_config_path()**  
+- String **get_config_path()**  
   
 用于获取RainyBot的配置文件夹的路径，将返回配置文件夹的绝对路径 (如 `D://RainyBot/config/`)  
   
 ---  
   
-- **get_config_filepath()**  
+- String **get_config_filepath()**  
   
 用于获取该插件对应的配置文件的路径，即插件对应的.json格式文件的绝对路径  
   
 ---  
   
-- **get_cache_path()**  
+- String **get_cache_path()**  
   
 用于获取RainyBot的缓存文件夹的路径，将返回缓存文件夹的绝对路径 (如 D://RainyBot/cache)  
   
 ---  
   
-- **get_cache_filepath()**  
+- String **get_cache_filepath()**  
   
 用于获取该插件对应的缓存数据库文件的路径，即插件对应的.rca格式文件的绝对路径  
   
 ---  
   
-- **is_config_loaded()**  
+- bool **is_config_loaded()**  
   
 用于检查插件对应的配置文件内容是否已被加载  
   
 ---  
   
-- **is_data_loaded()**  
+- bool **is_data_loaded()**  
   
 用于检查插件对应的数据库文件内容是否已被加载  
   
 ---  
   
-- **is_cache_loaded()**  
+- bool **is_cache_loaded()**  
   
 用于检查插件对应的缓存数据库文件内容是否已被加载  
   
 ---  
   
-- **get_last_errors()**  
+- PackedStringArray **get_last_errors()**  
   
 用于获取最近一次检测到的所有RainyBot运行时错误，将返回一个包含了这些错误的字符串数组   
   
@@ -276,7 +276,7 @@ RainyBot的插件类，代表一个实例，用于在插件中实现各类相关
   
 ---  
   
-- **register_event(Variant event, Variant function, int priority=0, int block_mode=3)**  
+- void **register_event(Variant event, Variant function, int priority=0, int block_mode=3)**  
   
 用于注册一个或多个事件并将其绑定到一个或多个函数，事件发生时将触发绑定的函数并传入事件实例   
   
@@ -302,7 +302,7 @@ RainyBot的插件类，代表一个实例，用于在插件中实现各类相关
   
 ---  
   
-- **unregister_event(Variant event)**  
+- void **unregister_event(Variant event)**  
   
 用于取消注册一个或多个事件，取消注册后插件将不再对此事件做出响应   
   
@@ -310,7 +310,7 @@ RainyBot的插件类，代表一个实例，用于在插件中实现各类相关
   
 ---  
   
-- **register_console_command(Variant command, Variant function, bool need_arguments, Array usages=false, bool need_connect=false)**  
+- void **register_console_command(Variant command, Variant function, bool need_arguments, Array usages=false, bool need_connect=false)**  
   
 用于注册一个控制台命令并将其绑定到指定函数，命令被执行时将触发此函数，并传入对应的命令名与参数数组   
   
@@ -339,7 +339,7 @@ RainyBot的插件类，代表一个实例，用于在插件中实现各类相关
   
 ---  
   
-- **unregister_console_command(Variant command)**  
+- void **unregister_console_command(Variant command)**  
   
 用于取消注册一个控制台命令，命令被取消注册后将无法在控制台被执行，且不会在帮助菜单中显示   
   
@@ -347,7 +347,7 @@ RainyBot的插件类，代表一个实例，用于在插件中实现各类相关
   
 ---  
   
-- **register_keyword(Variant keyword, Variant function, Dictionary var_dic, int match_mode=0, bool block=true)**  
+- void **register_keyword(Variant keyword, Variant function, Dictionary var_dic, int match_mode=0, bool block=true)**  
   
 用于注册一个或多个关键词并将其绑定到某个函数，关键词匹配时将触发绑定的函数并传入相关数据   
   
@@ -383,7 +383,7 @@ RainyBot的插件类，代表一个实例，用于在插件中实现各类相关
   
 ---  
   
-- **unregister_keyword(Variant keyword)**  
+- void **unregister_keyword(Variant keyword)**  
   
 用于取消注册一个关键词，关键词被取消注册后将不会被用于匹配   
   
@@ -391,7 +391,7 @@ RainyBot的插件类，代表一个实例，用于在插件中实现各类相关
   
 ---  
   
-- **trigger_keyword(Event event)**  
+- bool **trigger_keyword(Event event)**  
   
 根据传入的消息事件来提取文本并从中匹配关键词   
   
@@ -399,7 +399,7 @@ RainyBot的插件类，代表一个实例，用于在插件中实现各类相关
   
 ---  
   
-- **init_plugin_config(Dictionary default_config, Dictionary config_description)**  
+- int **init_plugin_config(Dictionary default_config, Dictionary config_description)**  
   
 用于初始化插件的配置文件，并将其加载到内存中，以便在后续对其内容进行操作   
   
@@ -415,25 +415,25 @@ RainyBot的插件类，代表一个实例，用于在插件中实现各类相关
   
 ---  
   
-- **save_plugin_config()**  
+- int **save_plugin_config()**  
   
 用于将内存中的配置保存到配置文件中，需要先初始化配置文件才能使用此函数  
   
 ---  
   
-- **get_plugin_config(Variant key)**  
+- Variant **get_plugin_config(Variant key)**  
   
 用于从已加载的配置中获取指定key对应的内容，需要先初始化配置文件才能使用此函数  
   
 ---  
   
-- **has_plugin_config(Variant key)**  
+- bool **has_plugin_config(Variant key)**  
   
 用于从已加载的配置中检查指定key是否存在，需要先初始化配置文件才能使用此函数  
   
 ---  
   
-- **set_plugin_config(Variant key, Variant value, bool save_file=true)**  
+- int **set_plugin_config(Variant key, Variant value, bool save_file=true)**  
   
 用于在已加载的配置中设定指定key的对应内容，需要先初始化配置文件才能使用此函数   
   
@@ -441,13 +441,13 @@ RainyBot的插件类，代表一个实例，用于在插件中实现各类相关
   
 ---  
   
-- **get_plugin_config_metadata()**  
+- Dictionary **get_plugin_config_metadata()**  
   
 用于直接获取已加载的配置的字典，便于以字典的形式对其进行操作，需要先初始化配置文件才能使用此函数  
   
 ---  
   
-- **set_plugin_config_metadata(Dictionary dic, bool save_file=true)**  
+- int **set_plugin_config_metadata(Dictionary dic, bool save_file=true)**  
   
 用于直接替换已加载的配置的字典为指定的字典，便于以字典的形式对其进行操作，需要先初始化配置文件才能使用此函数   
   
@@ -455,13 +455,13 @@ RainyBot的插件类，代表一个实例，用于在插件中实现各类相关
   
 ---  
   
-- **get_plugin_data_metadata()**  
+- Dictionary **get_plugin_data_metadata()**  
   
 用于直接获取已加载的数据库的字典，便于以字典的形式对其进行操作，需要先初始化数据库文件才能使用此函数  
   
 ---  
   
-- **set_plugin_data_metadata(Dictionary dic, bool save_file=true)**  
+- int **set_plugin_data_metadata(Dictionary dic, bool save_file=true)**  
   
 用于直接替换已加载的数据库的字典为指定的字典，便于以字典的形式对其进行操作，需要先初始化数据库文件才能使用此函数   
   
@@ -469,13 +469,13 @@ RainyBot的插件类，代表一个实例，用于在插件中实现各类相关
   
 ---  
   
-- **get_plugin_cache_metadata()**  
+- Dictionary **get_plugin_cache_metadata()**  
   
 用于直接获取已加载的缓存数据库的字典，便于以字典的形式对其进行操作，需要先初始化缓存数据库文件才能使用此函数  
   
 ---  
   
-- **set_plugin_cache_metadata(Dictionary dic, bool save_file=true)**  
+- int **set_plugin_cache_metadata(Dictionary dic, bool save_file=true)**  
   
 用于直接替换已加载的缓存数据库的字典为指定的字典，便于以字典的形式对其进行操作，需要先初始化缓存数据库文件才能使用此函数   
   
@@ -483,7 +483,7 @@ RainyBot的插件类，代表一个实例，用于在插件中实现各类相关
   
 ---  
   
-- **init_plugin_data()**  
+- int **init_plugin_data()**  
   
 用于初始化插件的数据库文件，并将其加载到内存中，以便在后续对其内容进行操作   
   
@@ -493,25 +493,25 @@ RainyBot的插件类，代表一个实例，用于在插件中实现各类相关
   
 ---  
   
-- **save_plugin_data()**  
+- int **save_plugin_data()**  
   
 用于将内存中的数据保存到数据库文件中，需要先初始化数据库文件才能使用此函数  
   
 ---  
   
-- **get_plugin_data(Variant key)**  
+- Variant **get_plugin_data(Variant key)**  
   
 用于从已加载的数据库中获取指定key对应的内容，需要先初始化数据库文件才能使用此函数  
   
 ---  
   
-- **has_plugin_data(Variant key)**  
+- bool **has_plugin_data(Variant key)**  
   
 用于从已加载的数据库中检查指定key是否存在，需要先初始化数据库文件才能使用此函数  
   
 ---  
   
-- **set_plugin_data(Variant key, Variant value, bool save_file=true)**  
+- int **set_plugin_data(Variant key, Variant value, bool save_file=true)**  
   
 用于在已加载的数据库中设定指定key的对应内容，需要先初始化数据库文件才能使用此函数   
   
@@ -519,7 +519,7 @@ RainyBot的插件类，代表一个实例，用于在插件中实现各类相关
   
 ---  
   
-- **remove_plugin_data(Variant key, bool save_file=true)**  
+- int **remove_plugin_data(Variant key, bool save_file=true)**  
   
 用于在已加载的数据库中删除指定key及其对应内容，需要先初始化数据库文件才能使用此函数   
   
@@ -527,7 +527,7 @@ RainyBot的插件类，代表一个实例，用于在插件中实现各类相关
   
 ---  
   
-- **clear_plugin_data(bool save_file=true)**  
+- int **clear_plugin_data(bool save_file=true)**  
   
 用于在已加载的数据库中清空所有内容，需要先初始化数据库文件才能使用此函数   
   
@@ -535,7 +535,7 @@ RainyBot的插件类，代表一个实例，用于在插件中实现各类相关
   
 ---  
   
-- **init_plugin_cache()**  
+- int **init_plugin_cache()**  
   
 用于初始化插件的缓存数据库文件，并将其加载到内存中，以便在后续对其内容进行操作   
   
@@ -545,25 +545,25 @@ RainyBot的插件类，代表一个实例，用于在插件中实现各类相关
   
 ---  
   
-- **save_plugin_cache()**  
+- int **save_plugin_cache()**  
   
 用于将内存中的数据保存到缓存数据库文件中，需要先初始化缓存数据库文件才能使用此函数  
   
 ---  
   
-- **get_plugin_cache(Variant key)**  
+- Variant **get_plugin_cache(Variant key)**  
   
 用于从已加载的缓存数据库中获取指定key对应的内容，需要先初始化缓存数据库文件才能使用此函数  
   
 ---  
   
-- **has_plugin_cache(Variant key)**  
+- bool **has_plugin_cache(Variant key)**  
   
 用于从已加载的缓存数据库中检查指定key是否存在，需要先初始化缓存数据库文件才能使用此函数  
   
 ---  
   
-- **set_plugin_cache(Variant key, Variant value, bool save_file=true)**  
+- int **set_plugin_cache(Variant key, Variant value, bool save_file=true)**  
   
 用于在已加载的缓存数据库中设定指定key的对应内容，需要先初始化缓存数据库文件才能使用此函数   
   
@@ -571,7 +571,7 @@ RainyBot的插件类，代表一个实例，用于在插件中实现各类相关
   
 ---  
   
-- **remove_plugin_cache(Variant key, bool save_file=true)**  
+- int **remove_plugin_cache(Variant key, bool save_file=true)**  
   
 用于在已加载的缓存数据库中删除指定key及其对应内容，需要先初始化缓存数据库文件才能使用此函数   
   
@@ -579,7 +579,7 @@ RainyBot的插件类，代表一个实例，用于在插件中实现各类相关
   
 ---  
   
-- **clear_plugin_cache(bool save_file=true)**  
+- int **clear_plugin_cache(bool save_file=true)**  
   
 用于在已加载的缓存数据库中清空所有内容，需要先初始化缓存数据库文件才能使用此函数   
   
@@ -587,7 +587,7 @@ RainyBot的插件类，代表一个实例，用于在插件中实现各类相关
   
 ---  
   
-- **unload_plugin()**  
+- void **unload_plugin()**  
   
 调用此函数后，插件将会尝试卸载自身   
   
@@ -595,7 +595,7 @@ RainyBot的插件类，代表一个实例，用于在插件中实现各类相关
   
 ---  
   
-- **load_scene(String path, bool for_capture=false)**  
+- Node **load_scene(String path, bool for_capture=false)**  
   
 加载一个场景文件，并根据第二个参数将其准备为用于图像捕捉或用于其他用途(如自定义GUI)，需要配合await关键字来使用此函数   
   
@@ -610,7 +610,7 @@ RainyBot的插件类，代表一个实例，用于在插件中实现各类相关
   
 ---  
   
-- **get_scene_image(Node scene, Vector2i size, Vector2i stretch_size=Vector2i(0, 0), bool transparent=false)**  
+- Image **get_scene_image(Node scene, Vector2i size, Vector2i stretch_size=Vector2i(0, 0), bool transparent=false)**  
   
 将指定场景实例中的当前内容获取为[Image]类图像的实例，需要配合await关键字来使用此函数   
   
@@ -624,7 +624,7 @@ RainyBot的插件类，代表一个实例，用于在插件中实现各类相关
   
 ---  
   
-- **wait_context_custom(GDScript event_type, int sender_id=-1, int group_id=-1, float timeout=20.0, bool block=true)**  
+- Variant **wait_context_custom(GDScript event_type, int sender_id=-1, int group_id=-1, float timeout=20.0, bool block=true)**  
   
 通过await调用后，将等待一个满足指定发送者id，指定群组id的指定类型的消息事件   
   
@@ -641,7 +641,7 @@ RainyBot的插件类，代表一个实例，用于在插件中实现各类相关
   
 ---  
   
-- **wait_context(MessageEvent event, bool match_sender=true, bool match_group=true, float timeout=20.0, bool block=true)**  
+- Variant **wait_context(MessageEvent event, bool match_sender=true, bool match_group=true, float timeout=20.0, bool block=true)**  
   
 通过await调用后，将等待另外一个与指定消息事件相匹配的消息事件   
   
@@ -658,7 +658,7 @@ RainyBot的插件类，代表一个实例，用于在插件中实现各类相关
   
 ---  
   
-- **wait_context_id(String context_id, float timeout=20.0)**  
+- Variant **wait_context_id(String context_id, float timeout=20.0)**  
   
 通过await调用后，将等待指定id的响应，并在收到响应后返回响应的内容   
   
@@ -672,7 +672,7 @@ RainyBot的插件类，代表一个实例，用于在插件中实现各类相关
   
 ---  
   
-- **respond_context(Variant context, Variant response=true)**  
+- bool **respond_context(Variant context, Variant response=true)**  
   
 用于响应正在进行中的上下文等待   
   

@@ -4,19 +4,19 @@
   
 ## 方法 
   
-- **init_meta(Dictionary dic)**  
+- MemberJoinEvent **init_meta(Dictionary dic)**  
   
 ---  
   
-- **get_member()**  
+- GroupMember **get_member()**  
   
 ---  
   
-- **get_invitor()**  
+- GroupMember **get_invitor()**  
   
 ---  
   
-- **get_group()**  
+- Group **get_group()**  
   
 ---  
   

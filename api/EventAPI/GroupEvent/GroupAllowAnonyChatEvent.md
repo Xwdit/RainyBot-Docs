@@ -4,23 +4,23 @@
   
 ## 方法 
   
-- **init_meta(Dictionary dic)**  
+- GroupAllowAnonyChatEvent **init_meta(Dictionary dic)**  
   
 ---  
   
-- **get_origin_state()**  
+- bool **get_origin_state()**  
   
 ---  
   
-- **get_current_state()**  
+- bool **get_current_state()**  
   
 ---  
   
-- **get_operator()**  
+- GroupMember **get_operator()**  
   
 ---  
   
-- **get_group()**  
+- Group **get_group()**  
   
 ---  
   

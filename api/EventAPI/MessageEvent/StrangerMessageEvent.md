@@ -4,15 +4,15 @@
   
 ## 方法 
   
-- **init_meta(Dictionary dic)**  
+- StrangerMessageEvent **init_meta(Dictionary dic)**  
   
 ---  
   
-- **get_sender()**  
+- Member **get_sender()**  
   
 ---  
   
-- **reply(Variant msg, bool quote=false, bool at=false, float timeout=-INF)**  
+- BotRequestResult **reply(Variant msg, bool quote=false, bool at=false, float timeout=-INF)**  
   
 ---  
   

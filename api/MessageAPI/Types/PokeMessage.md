@@ -30,27 +30,27 @@
   
 ## 方法 
   
-- **init(int type)**  
+- PokeMessage **init(int type)**  
   
 ---  
   
-- **init_meta(Dictionary dic)**  
+- PokeMessage **init_meta(Dictionary dic)**  
   
 ---  
   
-- **get_poke_type()**  
+- int **get_poke_type()**  
   
 ---  
   
-- **set_poke_type(int type)**  
+- void **set_poke_type(int type)**  
   
 ---  
   
-- **is_poke_type(int type)**  
+- bool **is_poke_type(int type)**  
   
 ---  
   
-- **get_as_text()**  
+- String **get_as_text()**  
   
 ---  
   

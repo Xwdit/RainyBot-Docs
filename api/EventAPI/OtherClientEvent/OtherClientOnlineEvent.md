@@ -4,11 +4,11 @@
   
 ## 方法 
   
-- **init_meta(Dictionary dic)**  
+- OtherClientOnlineEvent **init_meta(Dictionary dic)**  
   
 ---  
   
-- **get_kind_id()**  
+- int **get_kind_id()**  
   
 ---  
   

@@ -4,23 +4,23 @@
   
 ## 方法 
   
-- **init_meta(Dictionary dic)**  
+- MemberTitleChangeEvent **init_meta(Dictionary dic)**  
   
 ---  
   
-- **get_member()**  
+- GroupMember **get_member()**  
   
 ---  
   
-- **get_group()**  
+- Group **get_group()**  
   
 ---  
   
-- **get_origin_title()**  
+- String **get_origin_title()**  
   
 ---  
   
-- **get_current_title()**  
+- String **get_current_title()**  
   
 ---  
   

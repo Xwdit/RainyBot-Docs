@@ -4,15 +4,15 @@
   
 ## 方法 
   
-- **init_meta(Dictionary dic)**  
+- BotUnmuteEvent **init_meta(Dictionary dic)**  
   
 ---  
   
-- **get_operator()**  
+- GroupMember **get_operator()**  
   
 ---  
   
-- **get_group()**  
+- Group **get_group()**  
   
 ---  
   

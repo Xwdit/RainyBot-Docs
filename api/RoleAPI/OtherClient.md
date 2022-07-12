@@ -11,43 +11,43 @@ RainyBot的其它客户端类，通常代表一个对应实例，实现了用于
   
 ## 方法 
   
-- **init()**  
+- OtherClient **init()**  
   
 手动构造一个OtherClient类的实例，用于主动进行与其他客户端的交互时使用  
   
 ---  
   
-- **init_meta(Dictionary dic)**  
+- OtherClient **init_meta(Dictionary dic)**  
   
 通过机器人协议后端的元数据字典构造一个OtherClient类的实例，仅当你知道自己在做什么时才使用  
   
 ---  
   
-- **get_metadata()**  
+- Dictionary **get_metadata()**  
   
 获取实例中的元数据字典，仅当你知道自己在做什么时才使用  
   
 ---  
   
-- **set_metadata(Dictionary dic)**  
+- void **set_metadata(Dictionary dic)**  
   
 使用指定字典覆盖实例中的元数据字典，仅当你知道自己在做什么时才使用  
   
 ---  
   
-- **get_id()**  
+- int **get_id()**  
   
 获取实例中其他客户端的客户端id  
   
 ---  
   
-- **get_platform()**  
+- String **get_platform()**  
   
 获取实例中其他客户端的平台名(如"Windows")  
   
 ---  
   
-- **send_message(Variant msg, int quote_msgid=-1, float timeout=-INF)**  
+- BotRequestResult **send_message(Variant msg, int quote_msgid=-1, float timeout=-INF)**  
   
 向其它客户端发送消息,第二个参数为需要引用回复的消息id(可选)   
   
@@ -63,7 +63,7 @@ RainyBot的其它客户端类，通常代表一个对应实例，实现了用于
   
 ---  
   
-- **send_nudge(float timeout=-INF)**  
+- BotRequestResult **send_nudge(float timeout=-INF)**  
   
 向其它客户端发送一个戳一戳消息，   
   

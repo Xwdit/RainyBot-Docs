@@ -14,27 +14,27 @@
   
 ## 方法 
   
-- **init_meta(Dictionary dic)**  
+- MemberHonorChangeEvent **init_meta(Dictionary dic)**  
   
 ---  
   
-- **get_member()**  
+- GroupMember **get_member()**  
   
 ---  
   
-- **get_group()**  
+- Group **get_group()**  
   
 ---  
   
-- **get_honor_name()**  
+- String **get_honor_name()**  
   
 ---  
   
-- **get_action_type()**  
+- int **get_action_type()**  
   
 ---  
   
-- **is_action_type(int action)**  
+- bool **is_action_type(int action)**  
   
 ---  
   

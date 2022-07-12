@@ -4,23 +4,23 @@
   
 ## 方法 
   
-- **init(String text)**  
+- TextMessage **init(String text)**  
   
 ---  
   
-- **init_meta(Dictionary dic)**  
+- TextMessage **init_meta(Dictionary dic)**  
   
 ---  
   
-- **get_message_text()**  
+- String **get_message_text()**  
   
 ---  
   
-- **set_message_text(String text)**  
+- void **set_message_text(String text)**  
   
 ---  
   
-- **get_as_text()**  
+- String **get_as_text()**  
   
 ---  
   

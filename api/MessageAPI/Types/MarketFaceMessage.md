@@ -4,19 +4,19 @@
   
 ## 方法 
   
-- **init_meta(Dictionary dic)**  
+- MarketFaceMessage **init_meta(Dictionary dic)**  
   
 ---  
   
-- **get_face_id()**  
+- int **get_face_id()**  
   
 ---  
   
-- **get_face_name()**  
+- String **get_face_name()**  
   
 ---  
   
-- **get_as_text()**  
+- String **get_as_text()**  
   
 ---  
   

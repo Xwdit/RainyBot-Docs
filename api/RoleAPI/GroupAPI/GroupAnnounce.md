@@ -11,133 +11,133 @@ RainyBot的群公告类，其实例记录了一个将被用于发送的群公告
   
 ## 方法 
   
-- **init(String content)**  
+- GroupAnnounce **init(String content)**  
   
 基于指定的内容文本构造一个群公告实例，您可以稍后通过实例中的其它函数来设置此公告的更多属性  
   
 ---  
   
-- **init_meta(Dictionary dic)**  
+- GroupAnnounce **init_meta(Dictionary dic)**  
   
 通过机器人协议后端的元数据字典构造一个此类的实例，仅当你知道自己在做什么时才使用  
   
 ---  
   
-- **get_metadata()**  
+- Dictionary **get_metadata()**  
   
 获取实例中的元数据字典，仅当你知道自己在做什么时才使用  
   
 ---  
   
-- **set_metadata(Dictionary dic)**  
+- void **set_metadata(Dictionary dic)**  
   
 使用指定字典覆盖实例中的元数据字典，仅当你知道自己在做什么时才使用  
   
 ---  
   
-- **set_content(String text)**  
+- void **set_content(String text)**  
   
 设置公告实例中的公告内容文本，此项为此实例可被正常发送的必要条件，因此不可为空  
   
 ---  
   
-- **get_content()**  
+- String **get_content()**  
   
 获取公告实例中的公告内容文本  
   
 ---  
   
-- **set_send_to_new_member(bool enabled)**  
+- void **set_send_to_new_member(bool enabled)**  
   
 设置此公告实例是否向新成员展示  
   
 ---  
   
-- **is_send_to_new_member()**  
+- bool **is_send_to_new_member()**  
   
 获取此公告实例是否向新成员展示  
   
 ---  
   
-- **set_pinned(bool enabled)**  
+- void **set_pinned(bool enabled)**  
   
 设置此公告实例是否在公告列表中置顶  
   
 ---  
   
-- **is_pinned()**  
+- bool **is_pinned()**  
   
 获取此公告实例是否在公告列表中置顶  
   
 ---  
   
-- **set_show_edit_card(bool enabled)**  
+- void **set_show_edit_card(bool enabled)**  
   
 设置此公告实例是否显示引导群员修改名片的选项  
   
 ---  
   
-- **is_show_edit_card()**  
+- bool **is_show_edit_card()**  
   
 获取此公告实例是否显示引导群员修改名片的选项  
   
 ---  
   
-- **set_show_popup(bool enabled)**  
+- void **set_show_popup(bool enabled)**  
   
 设置此公告实例是否使用弹窗来展示  
   
 ---  
   
-- **is_show_popup()**  
+- bool **is_show_popup()**  
   
 获取此公告实例是否使用弹窗来展示  
   
 ---  
   
-- **set_require_confirm(bool enabled)**  
+- void **set_require_confirm(bool enabled)**  
   
 设置此公告实例是否需要群成员进行确认  
   
 ---  
   
-- **is_require_confirm()**  
+- bool **is_require_confirm()**  
   
 获取此公告实例是否需要群成员进行确认  
   
 ---  
   
-- **set_image_url(String img_url)**  
+- void **set_image_url(String img_url)**  
   
 设置此公告实例将包含的图像的url链接  
   
 ---  
   
-- **get_image_url()**  
+- String **get_image_url()**  
   
 获取此公告实例将包含的图像的url链接  
   
 ---  
   
-- **set_image_path(String img_path)**  
+- void **set_image_path(String img_path)**  
   
 设置此公告实例将包含的图像的本地绝对路径  
   
 ---  
   
-- **get_image_path()**  
+- String **get_image_path()**  
   
 获取此公告实例将包含的图像的本地绝对路径  
   
 ---  
   
-- **set_image_base64(String img_base64)**  
+- void **set_image_base64(String img_base64)**  
   
 设置此公告实例将包含的图像的Base64编码  
   
 ---  
   
-- **get_image_base64()**  
+- String **get_image_base64()**  
   
 获取此公告实例将包含的图像的Base64编码  
   

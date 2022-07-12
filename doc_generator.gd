@@ -166,7 +166,7 @@ func _save_doc_markdown(path:String,doc_dic:Dictionary):
 		md_text += "## 方法 \n"
 		md_text += "  \n"
 		for m in doc_dic.methods:
-			md_text += "- **%s(" % [m.name]
+			md_text += "- %s **%s(" % [m.return_type,m.name]
 			if !m.arguments.is_empty():
 				for a in m.arguments:
 					if a.has("default_value"):

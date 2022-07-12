@@ -16,11 +16,11 @@
   
 ## 方法 
   
-- **get_client_id()**  
+- int **get_client_id()**  
   
 ---  
   
-- **get_client_platform()**  
+- String **get_client_platform()**  
   
 ---  
   

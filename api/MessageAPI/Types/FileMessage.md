@@ -4,23 +4,23 @@
   
 ## 方法 
   
-- **init_meta(Dictionary dic)**  
+- FileMessage **init_meta(Dictionary dic)**  
   
 ---  
   
-- **get_file_id()**  
+- String **get_file_id()**  
   
 ---  
   
-- **get_file_name()**  
+- String **get_file_name()**  
   
 ---  
   
-- **get_file_size()**  
+- int **get_file_size()**  
   
 ---  
   
-- **get_as_text()**  
+- String **get_as_text()**  
   
 ---  
   

@@ -4,63 +4,63 @@
   
 ## 方法 
   
-- **init_id(String voice_id)**  
+- VoiceMessage **init_id(String voice_id)**  
   
 ---  
   
-- **init_url(String voice_url)**  
+- VoiceMessage **init_url(String voice_url)**  
   
 ---  
   
-- **init_path(String voice_path)**  
+- VoiceMessage **init_path(String voice_path)**  
   
 ---  
   
-- **init_base64(String voice_base64)**  
+- VoiceMessage **init_base64(String voice_base64)**  
   
 ---  
   
-- **init_meta(Dictionary dic)**  
+- VoiceMessage **init_meta(Dictionary dic)**  
   
 ---  
   
-- **get_voice_id()**  
+- String **get_voice_id()**  
   
 ---  
   
-- **set_voice_id(String voice_id)**  
+- void **set_voice_id(String voice_id)**  
   
 ---  
   
-- **get_voice_url()**  
+- String **get_voice_url()**  
   
 ---  
   
-- **set_voice_url(String voice_url)**  
+- void **set_voice_url(String voice_url)**  
   
 ---  
   
-- **get_voice_path()**  
+- String **get_voice_path()**  
   
 ---  
   
-- **set_voice_path(String voice_path)**  
+- void **set_voice_path(String voice_path)**  
   
 ---  
   
-- **get_voice_base64()**  
+- String **get_voice_base64()**  
   
 ---  
   
-- **set_voice_base64(String voice_base64)**  
+- void **set_voice_base64(String voice_base64)**  
   
 ---  
   
-- **get_voice_length()**  
+- int **get_voice_length()**  
   
 ---  
   
-- **get_as_text()**  
+- String **get_as_text()**  
   
 ---  
   

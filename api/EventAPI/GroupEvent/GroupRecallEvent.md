@@ -4,27 +4,27 @@
   
 ## 方法 
   
-- **init_meta(Dictionary dic)**  
+- GroupRecallEvent **init_meta(Dictionary dic)**  
   
 ---  
   
-- **get_sender_id()**  
+- int **get_sender_id()**  
   
 ---  
   
-- **get_message_id()**  
+- int **get_message_id()**  
   
 ---  
   
-- **get_message_time()**  
+- int **get_message_time()**  
   
 ---  
   
-- **get_operator()**  
+- GroupMember **get_operator()**  
   
 ---  
   
-- **get_group()**  
+- Group **get_group()**  
   
 ---  
   

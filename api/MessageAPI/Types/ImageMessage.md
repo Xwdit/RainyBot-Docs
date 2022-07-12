@@ -4,67 +4,67 @@
   
 ## 方法 
   
-- **init(Image image)**  
+- ImageMessage **init(Image image)**  
   
 ---  
   
-- **init_gif(GifImage gif_image)**  
+- ImageMessage **init_gif(GifImage gif_image)**  
   
 ---  
   
-- **init_id(String image_id)**  
+- ImageMessage **init_id(String image_id)**  
   
 ---  
   
-- **init_url(String image_url)**  
+- ImageMessage **init_url(String image_url)**  
   
 ---  
   
-- **init_path(String image_path)**  
+- ImageMessage **init_path(String image_path)**  
   
 ---  
   
-- **init_base64(String image_base64)**  
+- ImageMessage **init_base64(String image_base64)**  
   
 ---  
   
-- **init_meta(Dictionary dic)**  
+- ImageMessage **init_meta(Dictionary dic)**  
   
 ---  
   
-- **get_image_id()**  
+- String **get_image_id()**  
   
 ---  
   
-- **set_image_id(String image_id)**  
+- void **set_image_id(String image_id)**  
   
 ---  
   
-- **get_image_url()**  
+- String **get_image_url()**  
   
 ---  
   
-- **set_image_url(String image_url)**  
+- void **set_image_url(String image_url)**  
   
 ---  
   
-- **get_image_path()**  
+- String **get_image_path()**  
   
 ---  
   
-- **set_image_path(String image_path)**  
+- void **set_image_path(String image_path)**  
   
 ---  
   
-- **get_image_base64()**  
+- String **get_image_base64()**  
   
 ---  
   
-- **set_image_base64(String image_base64)**  
+- void **set_image_base64(String image_base64)**  
   
 ---  
   
-- **get_as_text()**  
+- String **get_as_text()**  
   
 ---  
   

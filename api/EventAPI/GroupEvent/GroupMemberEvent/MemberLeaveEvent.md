@@ -14,27 +14,27 @@
   
 ## 方法 
   
-- **init_meta(Dictionary dic, int reason_type)**  
+- MemberLeaveEvent **init_meta(Dictionary dic, int reason_type)**  
   
 ---  
   
-- **get_member()**  
+- GroupMember **get_member()**  
   
 ---  
   
-- **get_operator()**  
+- GroupMember **get_operator()**  
   
 ---  
   
-- **get_group()**  
+- Group **get_group()**  
   
 ---  
   
-- **get_reason_type()**  
+- int **get_reason_type()**  
   
 ---  
   
-- **is_reason_type(int reason)**  
+- bool **is_reason_type(int reason)**  
   
 ---  
   

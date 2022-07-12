@@ -11,61 +11,61 @@ RainyBot的群公告信息类，其实例记录了一个已发送的群公告的
   
 ## 方法 
   
-- **init_meta(Dictionary dic)**  
+- GroupAnnounceInfo **init_meta(Dictionary dic)**  
   
 通过机器人协议后端的元数据字典构造一个此类的实例，仅当你知道自己在做什么时才使用  
   
 ---  
   
-- **get_metadata()**  
+- Dictionary **get_metadata()**  
   
 获取实例中的元数据字典，仅当你知道自己在做什么时才使用  
   
 ---  
   
-- **set_metadata(Dictionary dic)**  
+- void **set_metadata(Dictionary dic)**  
   
 使用指定字典覆盖实例中的元数据字典，仅当你知道自己在做什么时才使用  
   
 ---  
   
-- **get_id()**  
+- String **get_id()**  
   
 获取此群公告的唯一ID，可用于后续删除等操作  
   
 ---  
   
-- **get_group()**  
+- Group **get_group()**  
   
 获取此群公告相关的群的实例  
   
 ---  
   
-- **get_content()**  
+- String **get_content()**  
   
 获取此群公告中包含的内容文本  
   
 ---  
   
-- **get_sender_id()**  
+- int **get_sender_id()**  
   
 获取此群公告的发送者的ID  
   
 ---  
   
-- **is_all_confirmed()**  
+- bool **is_all_confirmed()**  
   
 获取此群公告是否已被全体群成员确认  
   
 ---  
   
-- **get_confirmed_count()**  
+- int **get_confirmed_count()**  
   
 获取已确认此群公告的群成员人数  
   
 ---  
   
-- **get_public_timestamp()**  
+- int **get_public_timestamp()**  
   
 获取此群公告发布时间的时间戳  
   

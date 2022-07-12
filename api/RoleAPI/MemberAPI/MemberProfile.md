@@ -32,7 +32,7 @@ RainyBot的个体成员资料类，通常代表一个对应实例，储存了某
   
 ## 方法 
   
-- **init_user(int user_id, float timeout=-INF)**  
+- MemberProfile **init_user(int user_id, float timeout=-INF)**  
   
 获取指定ID用户的资料数据并将其构造为一个MemberProfile类的实例，需要配合await关键字使用   
   
@@ -40,61 +40,61 @@ RainyBot的个体成员资料类，通常代表一个对应实例，储存了某
   
 ---  
   
-- **init_meta(Dictionary dic)**  
+- MemberProfile **init_meta(Dictionary dic)**  
   
 通过机器人协议后端的元数据字典构造一个MemberProfile类的实例，仅当你知道自己在做什么时才使用  
   
 ---  
   
-- **get_metadata()**  
+- Dictionary **get_metadata()**  
   
 获取实例中的元数据字典，仅当你知道自己在做什么时才使用  
   
 ---  
   
-- **set_metadata(Dictionary dic)**  
+- void **set_metadata(Dictionary dic)**  
   
 使用指定字典覆盖实例中的元数据字典，仅当你知道自己在做什么时才使用  
   
 ---  
   
-- **get_nickname()**  
+- String **get_nickname()**  
   
 获取实例中储存的昵称信息  
   
 ---  
   
-- **get_email()**  
+- String **get_email()**  
   
 获取实例中储存的邮箱信息  
   
 ---  
   
-- **get_age()**  
+- int **get_age()**  
   
 获取实例中储存的年龄信息  
   
 ---  
   
-- **get_level()**  
+- int **get_level()**  
   
 获取实例中储存的等级信息  
   
 ---  
   
-- **get_sign()**  
+- String **get_sign()**  
   
 获取实例中储存的个性签名信息  
   
 ---  
   
-- **get_sex()**  
+- int **get_sex()**  
   
 获取实例中储存的性别信息，将返回一个对应Sex枚举的整数值  
   
 ---  
   
-- **is_sex(int sex)**  
+- bool **is_sex(int sex)**  
   
 判断资料中的性别是不是指定类型的性别  
   

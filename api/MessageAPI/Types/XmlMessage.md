@@ -4,23 +4,23 @@
   
 ## 方法 
   
-- **init(String text)**  
+- XmlMessage **init(String text)**  
   
 ---  
   
-- **init_meta(Dictionary dic)**  
+- XmlMessage **init_meta(Dictionary dic)**  
   
 ---  
   
-- **get_xml_text()**  
+- String **get_xml_text()**  
   
 ---  
   
-- **set_xml_text(String text)**  
+- void **set_xml_text(String text)**  
   
 ---  
   
-- **get_as_text()**  
+- String **get_as_text()**  
   
 ---  
   

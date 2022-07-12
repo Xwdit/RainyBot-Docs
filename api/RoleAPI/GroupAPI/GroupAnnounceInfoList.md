@@ -11,25 +11,25 @@ RainyBot的群公告信息列表类，储存了从某个群组中获取的群公
   
 ## 方法 
   
-- **init_meta(Array arr)**  
+- GroupAnnounceInfoList **init_meta(Array arr)**  
   
 通过机器人协议后端的元数据数组构造一个此类的实例，仅当你知道自己在做什么时才使用  
   
 ---  
   
-- **get_metadata()**  
+- Array **get_metadata()**  
   
 获取实例中的元数据数组，仅当你知道自己在做什么时才使用  
   
 ---  
   
-- **set_metadata(Array arr)**  
+- void **set_metadata(Array arr)**  
   
 使用指定字典覆盖实例中的元数据数组，仅当你知道自己在做什么时才使用  
   
 ---  
   
-- **get_from_index(int index)**  
+- GroupAnnounceInfo **get_from_index(int index)**  
   
 根据指定的序号来从群公告信息列表实例中获取对应的[GroupAnnounceInfo]实例   
   
@@ -37,7 +37,7 @@ RainyBot的群公告信息列表类，储存了从某个群组中获取的群公
   
 ---  
   
-- **get_from_id(int announce_id)**  
+- GroupAnnounceInfo **get_from_id(int announce_id)**  
   
 根据指定的群公告ID来从群公告信息列表实例中获取对应的[GroupAnnounceInfo]实例   
   
@@ -45,13 +45,13 @@ RainyBot的群公告信息列表类，储存了从某个群组中获取的群公
   
 ---  
   
-- **has_announce(int announce_id)**  
+- bool **has_announce(int announce_id)**  
   
 判断群公告信息列表实例中是否存在指定ID的群公告信息实例  
   
 ---  
   
-- **get_size()**  
+- int **get_size()**  
   
 获取群公告信息列表实例中的群公告信息实例的总数  
   

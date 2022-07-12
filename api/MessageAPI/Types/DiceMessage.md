@@ -4,23 +4,23 @@
   
 ## 方法 
   
-- **init(int value)**  
+- DiceMessage **init(int value)**  
   
 ---  
   
-- **init_meta(Dictionary dic)**  
+- DiceMessage **init_meta(Dictionary dic)**  
   
 ---  
   
-- **get_dice_value()**  
+- int **get_dice_value()**  
   
 ---  
   
-- **set_dice_value(int value)**  
+- void **set_dice_value(int value)**  
   
 ---  
   
-- **get_as_text()**  
+- String **get_as_text()**  
   
 ---  
   
