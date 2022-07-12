@@ -4,27 +4,27 @@
   
 ## 方法 
   
-- GroupRecallEvent **init_meta([Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html) dic)**  
+- [GroupRecallEvent](GroupRecallEvent.md) **init_meta([Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html) dic)**  
   
 ---  
   
-- int **get_sender_id()**  
+- [int](https://docs.godotengine.org/en/latest/classes/class_int.html) **get_sender_id()**  
   
 ---  
   
-- int **get_message_id()**  
+- [int](https://docs.godotengine.org/en/latest/classes/class_int.html) **get_message_id()**  
   
 ---  
   
-- int **get_message_time()**  
+- [int](https://docs.godotengine.org/en/latest/classes/class_int.html) **get_message_time()**  
   
 ---  
   
-- GroupMember **get_operator()**  
+- [GroupMember](GroupMember.md) **get_operator()**  
   
 ---  
   
-- Group **get_group()**  
+- [Group](Group.md) **get_group()**  
   
 ---  
   

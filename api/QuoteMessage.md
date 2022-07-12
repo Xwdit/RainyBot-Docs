@@ -4,31 +4,31 @@
   
 ## 方法 
   
-- QuoteMessage **init_meta([Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html) dic)**  
+- [QuoteMessage](QuoteMessage.md) **init_meta([Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html) dic)**  
   
 ---  
   
-- int **get_message_id()**  
+- [int](https://docs.godotengine.org/en/latest/classes/class_int.html) **get_message_id()**  
   
 ---  
   
-- int **get_group_id()**  
+- [int](https://docs.godotengine.org/en/latest/classes/class_int.html) **get_group_id()**  
   
 ---  
   
-- int **get_sender_id()**  
+- [int](https://docs.godotengine.org/en/latest/classes/class_int.html) **get_sender_id()**  
   
 ---  
   
-- int **get_target_id()**  
+- [int](https://docs.godotengine.org/en/latest/classes/class_int.html) **get_target_id()**  
   
 ---  
   
-- MessageChain **get_message_chain()**  
+- [MessageChain](MessageChain.md) **get_message_chain()**  
   
 ---  
   
-- String **get_as_text()**  
+- [String](https://docs.godotengine.org/en/latest/classes/class_string.html) **get_as_text()**  
   
 ---  
   

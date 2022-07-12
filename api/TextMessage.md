@@ -4,23 +4,23 @@
   
 ## 方法 
   
-- TextMessage **init([String](https://docs.godotengine.org/en/latest/classes/class_string.html) text)**  
+- [TextMessage](TextMessage.md) **init([String](https://docs.godotengine.org/en/latest/classes/class_string.html) text)**  
   
 ---  
   
-- TextMessage **init_meta([Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html) dic)**  
+- [TextMessage](TextMessage.md) **init_meta([Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html) dic)**  
   
 ---  
   
-- String **get_message_text()**  
+- [String](https://docs.godotengine.org/en/latest/classes/class_string.html) **get_message_text()**  
   
 ---  
   
-- void **set_message_text([String](https://docs.godotengine.org/en/latest/classes/class_string.html) text)**  
+- [void](https://docs.godotengine.org/en/latest/classes/class_void.html) **set_message_text([String](https://docs.godotengine.org/en/latest/classes/class_string.html) text)**  
   
 ---  
   
-- String **get_as_text()**  
+- [String](https://docs.godotengine.org/en/latest/classes/class_string.html) **get_as_text()**  
   
 ---  
   

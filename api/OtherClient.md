@@ -11,43 +11,43 @@ RainyBot的其它客户端类，通常代表一个对应实例，实现了用于
   
 ## 方法 
   
-- OtherClient **init()**  
+- [OtherClient](OtherClient.md) **init()**  
   
 手动构造一个OtherClient类的实例，用于主动进行与其他客户端的交互时使用  
   
 ---  
   
-- OtherClient **init_meta([Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html) dic)**  
+- [OtherClient](OtherClient.md) **init_meta([Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html) dic)**  
   
 通过机器人协议后端的元数据字典构造一个OtherClient类的实例，仅当你知道自己在做什么时才使用  
   
 ---  
   
-- Dictionary **get_metadata()**  
+- [Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html) **get_metadata()**  
   
 获取实例中的元数据字典，仅当你知道自己在做什么时才使用  
   
 ---  
   
-- void **set_metadata([Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html) dic)**  
+- [void](https://docs.godotengine.org/en/latest/classes/class_void.html) **set_metadata([Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html) dic)**  
   
 使用指定字典覆盖实例中的元数据字典，仅当你知道自己在做什么时才使用  
   
 ---  
   
-- int **get_id()**  
+- [int](https://docs.godotengine.org/en/latest/classes/class_int.html) **get_id()**  
   
 获取实例中其他客户端的客户端id  
   
 ---  
   
-- String **get_platform()**  
+- [String](https://docs.godotengine.org/en/latest/classes/class_string.html) **get_platform()**  
   
 获取实例中其他客户端的平台名(如"Windows")  
   
 ---  
   
-- BotRequestResult **send_message([Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html) msg, [int](https://docs.godotengine.org/en/latest/classes/class_int.html) quote_msgid, [float](https://docs.godotengine.org/en/latest/classes/class_float.html) timeout)**  
+- [BotRequestResult](BotRequestResult.md) **send_message([Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html) msg, [int](https://docs.godotengine.org/en/latest/classes/class_int.html) quote_msgid, [float](https://docs.godotengine.org/en/latest/classes/class_float.html) timeout)**  
   
 向其它客户端发送消息,第二个参数为需要引用回复的消息id(可选)   
   
@@ -63,7 +63,7 @@ RainyBot的其它客户端类，通常代表一个对应实例，实现了用于
   
 ---  
   
-- BotRequestResult **send_nudge([float](https://docs.godotengine.org/en/latest/classes/class_float.html) timeout)**  
+- [BotRequestResult](BotRequestResult.md) **send_nudge([float](https://docs.godotengine.org/en/latest/classes/class_float.html) timeout)**  
   
 向其它客户端发送一个戳一戳消息，   
   

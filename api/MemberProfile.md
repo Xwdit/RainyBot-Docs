@@ -31,7 +31,7 @@ enum **Sex**
   
 ## 方法 
   
-- MemberProfile **init_user([int](https://docs.godotengine.org/en/latest/classes/class_int.html) user_id, [float](https://docs.godotengine.org/en/latest/classes/class_float.html) timeout)**  
+- [MemberProfile](MemberProfile.md) **init_user([int](https://docs.godotengine.org/en/latest/classes/class_int.html) user_id, [float](https://docs.godotengine.org/en/latest/classes/class_float.html) timeout)**  
   
 获取指定ID用户的资料数据并将其构造为一个MemberProfile类的实例，需要配合await关键字使用   
   
@@ -39,61 +39,61 @@ enum **Sex**
   
 ---  
   
-- MemberProfile **init_meta([Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html) dic)**  
+- [MemberProfile](MemberProfile.md) **init_meta([Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html) dic)**  
   
 通过机器人协议后端的元数据字典构造一个MemberProfile类的实例，仅当你知道自己在做什么时才使用  
   
 ---  
   
-- Dictionary **get_metadata()**  
+- [Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html) **get_metadata()**  
   
 获取实例中的元数据字典，仅当你知道自己在做什么时才使用  
   
 ---  
   
-- void **set_metadata([Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html) dic)**  
+- [void](https://docs.godotengine.org/en/latest/classes/class_void.html) **set_metadata([Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html) dic)**  
   
 使用指定字典覆盖实例中的元数据字典，仅当你知道自己在做什么时才使用  
   
 ---  
   
-- String **get_nickname()**  
+- [String](https://docs.godotengine.org/en/latest/classes/class_string.html) **get_nickname()**  
   
 获取实例中储存的昵称信息  
   
 ---  
   
-- String **get_email()**  
+- [String](https://docs.godotengine.org/en/latest/classes/class_string.html) **get_email()**  
   
 获取实例中储存的邮箱信息  
   
 ---  
   
-- int **get_age()**  
+- [int](https://docs.godotengine.org/en/latest/classes/class_int.html) **get_age()**  
   
 获取实例中储存的年龄信息  
   
 ---  
   
-- int **get_level()**  
+- [int](https://docs.godotengine.org/en/latest/classes/class_int.html) **get_level()**  
   
 获取实例中储存的等级信息  
   
 ---  
   
-- String **get_sign()**  
+- [String](https://docs.godotengine.org/en/latest/classes/class_string.html) **get_sign()**  
   
 获取实例中储存的个性签名信息  
   
 ---  
   
-- int **get_sex()**  
+- [int](https://docs.godotengine.org/en/latest/classes/class_int.html) **get_sex()**  
   
 获取实例中储存的性别信息，将返回一个对应Sex枚举的整数值  
   
 ---  
   
-- bool **is_sex([int](https://docs.godotengine.org/en/latest/classes/class_int.html) sex)**  
+- [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html) **is_sex([int](https://docs.godotengine.org/en/latest/classes/class_int.html) sex)**  
   
 判断资料中的性别是不是指定类型的性别  
   

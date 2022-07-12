@@ -4,67 +4,67 @@
   
 ## 方法 
   
-- ImageMessage **init([Image](https://docs.godotengine.org/en/latest/classes/class_image.html) image)**  
+- [ImageMessage](ImageMessage.md) **init([Image](https://docs.godotengine.org/en/latest/classes/class_image.html) image)**  
   
 ---  
   
-- ImageMessage **init_gif([GifImage](GifImage.md) gif_image)**  
+- [ImageMessage](ImageMessage.md) **init_gif([GifImage](GifImage.md) gif_image)**  
   
 ---  
   
-- ImageMessage **init_id([String](https://docs.godotengine.org/en/latest/classes/class_string.html) image_id)**  
+- [ImageMessage](ImageMessage.md) **init_id([String](https://docs.godotengine.org/en/latest/classes/class_string.html) image_id)**  
   
 ---  
   
-- ImageMessage **init_url([String](https://docs.godotengine.org/en/latest/classes/class_string.html) image_url)**  
+- [ImageMessage](ImageMessage.md) **init_url([String](https://docs.godotengine.org/en/latest/classes/class_string.html) image_url)**  
   
 ---  
   
-- ImageMessage **init_path([String](https://docs.godotengine.org/en/latest/classes/class_string.html) image_path)**  
+- [ImageMessage](ImageMessage.md) **init_path([String](https://docs.godotengine.org/en/latest/classes/class_string.html) image_path)**  
   
 ---  
   
-- ImageMessage **init_base64([String](https://docs.godotengine.org/en/latest/classes/class_string.html) image_base64)**  
+- [ImageMessage](ImageMessage.md) **init_base64([String](https://docs.godotengine.org/en/latest/classes/class_string.html) image_base64)**  
   
 ---  
   
-- ImageMessage **init_meta([Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html) dic)**  
+- [ImageMessage](ImageMessage.md) **init_meta([Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html) dic)**  
   
 ---  
   
-- String **get_image_id()**  
+- [String](https://docs.godotengine.org/en/latest/classes/class_string.html) **get_image_id()**  
   
 ---  
   
-- void **set_image_id([String](https://docs.godotengine.org/en/latest/classes/class_string.html) image_id)**  
+- [void](https://docs.godotengine.org/en/latest/classes/class_void.html) **set_image_id([String](https://docs.godotengine.org/en/latest/classes/class_string.html) image_id)**  
   
 ---  
   
-- String **get_image_url()**  
+- [String](https://docs.godotengine.org/en/latest/classes/class_string.html) **get_image_url()**  
   
 ---  
   
-- void **set_image_url([String](https://docs.godotengine.org/en/latest/classes/class_string.html) image_url)**  
+- [void](https://docs.godotengine.org/en/latest/classes/class_void.html) **set_image_url([String](https://docs.godotengine.org/en/latest/classes/class_string.html) image_url)**  
   
 ---  
   
-- String **get_image_path()**  
+- [String](https://docs.godotengine.org/en/latest/classes/class_string.html) **get_image_path()**  
   
 ---  
   
-- void **set_image_path([String](https://docs.godotengine.org/en/latest/classes/class_string.html) image_path)**  
+- [void](https://docs.godotengine.org/en/latest/classes/class_void.html) **set_image_path([String](https://docs.godotengine.org/en/latest/classes/class_string.html) image_path)**  
   
 ---  
   
-- String **get_image_base64()**  
+- [String](https://docs.godotengine.org/en/latest/classes/class_string.html) **get_image_base64()**  
   
 ---  
   
-- void **set_image_base64([String](https://docs.godotengine.org/en/latest/classes/class_string.html) image_base64)**  
+- [void](https://docs.godotengine.org/en/latest/classes/class_void.html) **set_image_base64([String](https://docs.godotengine.org/en/latest/classes/class_string.html) image_base64)**  
   
 ---  
   
-- String **get_as_text()**  
+- [String](https://docs.godotengine.org/en/latest/classes/class_string.html) **get_as_text()**  
   
 ---  
   

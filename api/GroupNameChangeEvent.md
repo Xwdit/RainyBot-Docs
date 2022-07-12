@@ -4,23 +4,23 @@
   
 ## 方法 
   
-- GroupNameChangeEvent **init_meta([Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html) dic)**  
+- [GroupNameChangeEvent](GroupNameChangeEvent.md) **init_meta([Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html) dic)**  
   
 ---  
   
-- String **get_origin_name()**  
+- [String](https://docs.godotengine.org/en/latest/classes/class_string.html) **get_origin_name()**  
   
 ---  
   
-- String **get_current_name()**  
+- [String](https://docs.godotengine.org/en/latest/classes/class_string.html) **get_current_name()**  
   
 ---  
   
-- GroupMember **get_operator()**  
+- [GroupMember](GroupMember.md) **get_operator()**  
   
 ---  
   
-- Group **get_group()**  
+- [Group](Group.md) **get_group()**  
   
 ---  
   

@@ -6,11 +6,11 @@
   
 ## 方法 
   
-- Dictionary **get_metadata()**  
+- [Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html) **get_metadata()**  
   
 ---  
   
-- void **set_metadata([Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html) dic)**  
+- [void](https://docs.godotengine.org/en/latest/classes/class_void.html) **set_metadata([Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html) dic)**  
   
 ---  
   

@@ -6,11 +6,11 @@
   
 ## 方法 
   
-- int **get_client_id()**  
+- [int](https://docs.godotengine.org/en/latest/classes/class_int.html) **get_client_id()**  
   
 ---  
   
-- String **get_client_platform()**  
+- [String](https://docs.godotengine.org/en/latest/classes/class_string.html) **get_client_platform()**  
   
 ---  
   

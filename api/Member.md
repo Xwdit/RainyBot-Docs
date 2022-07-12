@@ -27,7 +27,7 @@ enum **Role**
   
 ## 方法 
   
-- Member **init([int](https://docs.godotengine.org/en/latest/classes/class_int.html) member_id, [int](https://docs.godotengine.org/en/latest/classes/class_int.html) role)**  
+- [Member](Member.md) **init([int](https://docs.godotengine.org/en/latest/classes/class_int.html) member_id, [int](https://docs.godotengine.org/en/latest/classes/class_int.html) role)**  
   
 手动构造一个Member类的实例，用于主动进行与个体成员的交互时使用   
   
@@ -35,25 +35,25 @@ enum **Role**
   
 ---  
   
-- Member **init_meta([Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html) dic, [int](https://docs.godotengine.org/en/latest/classes/class_int.html) role)**  
+- [Member](Member.md) **init_meta([Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html) dic, [int](https://docs.godotengine.org/en/latest/classes/class_int.html) role)**  
   
 通过机器人协议后端的元数据字典构造一个Member类的实例，仅当你知道自己在做什么时才使用  
   
 ---  
   
-- Dictionary **get_metadata()**  
+- [Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html) **get_metadata()**  
   
 获取实例中的元数据字典，仅当你知道自己在做什么时才使用  
   
 ---  
   
-- void **set_metadata([Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html) dic)**  
+- [void](https://docs.godotengine.org/en/latest/classes/class_void.html) **set_metadata([Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html) dic)**  
   
 使用指定字典覆盖实例中的元数据字典，仅当你知道自己在做什么时才使用  
   
 ---  
   
-- int **get_role()**  
+- [int](https://docs.godotengine.org/en/latest/classes/class_int.html) **get_role()**  
   
 获取个体成员实例的类型，将返回一个对应Role枚举的整数值   
   
@@ -61,43 +61,43 @@ enum **Role**
   
 ---  
   
-- void **set_role([int](https://docs.godotengine.org/en/latest/classes/class_int.html) role)**  
+- [void](https://docs.godotengine.org/en/latest/classes/class_void.html) **set_role([int](https://docs.godotengine.org/en/latest/classes/class_int.html) role)**  
   
 设置个体成员实例的类型  
   
 ---  
   
-- bool **is_role([int](https://docs.godotengine.org/en/latest/classes/class_int.html) role)**  
+- [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html) **is_role([int](https://docs.godotengine.org/en/latest/classes/class_int.html) role)**  
   
 判断个体成员实例是否为某类型  
   
 ---  
   
-- int **get_id()**  
+- [int](https://docs.godotengine.org/en/latest/classes/class_int.html) **get_id()**  
   
 获取个体成员实例的ID  
   
 ---  
   
-- String **get_name()**  
+- [String](https://docs.godotengine.org/en/latest/classes/class_string.html) **get_name()**  
   
 获取个体成员实例的名称(昵称)，若为手动构造的实例，将始终返回空字符串  
   
 ---  
   
-- String **get_remark()**  
+- [String](https://docs.godotengine.org/en/latest/classes/class_string.html) **get_remark()**  
   
 获取Bot对个体成员实例的备注，若为手动构造的实例，将始终返回空字符串  
   
 ---  
   
-- String **get_avatar_url()**  
+- [String](https://docs.godotengine.org/en/latest/classes/class_string.html) **get_avatar_url()**  
   
 获取个体成员实例对应账号的头像的图像链接，通常为jpg格式  
   
 ---  
   
-- MemberProfile **get_profile([float](https://docs.godotengine.org/en/latest/classes/class_float.html) timeout)**  
+- [MemberProfile](MemberProfile.md) **get_profile([float](https://docs.godotengine.org/en/latest/classes/class_float.html) timeout)**  
   
 获取个体成员实例相关资料的MemberProfile实例，需要配合await关键字使用   
   
@@ -105,7 +105,7 @@ enum **Role**
   
 ---  
   
-- BotRequestResult **send_message([Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html) msg, [int](https://docs.godotengine.org/en/latest/classes/class_int.html) quote_msgid, [float](https://docs.godotengine.org/en/latest/classes/class_float.html) timeout)**  
+- [BotRequestResult](BotRequestResult.md) **send_message([Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html) msg, [int](https://docs.godotengine.org/en/latest/classes/class_int.html) quote_msgid, [float](https://docs.godotengine.org/en/latest/classes/class_float.html) timeout)**  
   
 向个体成员实例发送消息，同时可指定一个需要引用回复的消息ID   
   
@@ -121,7 +121,7 @@ enum **Role**
   
 ---  
   
-- BotRequestResult **send_nudge([float](https://docs.godotengine.org/en/latest/classes/class_float.html) timeout)**  
+- [BotRequestResult](BotRequestResult.md) **send_nudge([float](https://docs.godotengine.org/en/latest/classes/class_float.html) timeout)**  
   
 向个体成员实例发送一个戳一戳消息   
   
@@ -131,7 +131,7 @@ enum **Role**
   
 ---  
   
-- BotRequestResult **delete_friend([float](https://docs.godotengine.org/en/latest/classes/class_float.html) timeout)**  
+- [BotRequestResult](BotRequestResult.md) **delete_friend([float](https://docs.godotengine.org/en/latest/classes/class_float.html) timeout)**  
   
 解除与个体成员实例的好友/单向好友关系   
   

@@ -4,23 +4,23 @@
   
 ## 方法 
   
-- GroupAnnounceChangeEvent **init_meta([Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html) dic)**  
+- [GroupAnnounceChangeEvent](GroupAnnounceChangeEvent.md) **init_meta([Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html) dic)**  
   
 ---  
   
-- String **get_origin_announce()**  
+- [String](https://docs.godotengine.org/en/latest/classes/class_string.html) **get_origin_announce()**  
   
 ---  
   
-- String **get_current_announce()**  
+- [String](https://docs.godotengine.org/en/latest/classes/class_string.html) **get_current_announce()**  
   
 ---  
   
-- GroupMember **get_operator()**  
+- [GroupMember](GroupMember.md) **get_operator()**  
   
 ---  
   
-- Group **get_group()**  
+- [Group](Group.md) **get_group()**  
   
 ---  
   

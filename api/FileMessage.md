@@ -4,23 +4,23 @@
   
 ## 方法 
   
-- FileMessage **init_meta([Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html) dic)**  
+- [FileMessage](FileMessage.md) **init_meta([Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html) dic)**  
   
 ---  
   
-- String **get_file_id()**  
+- [String](https://docs.godotengine.org/en/latest/classes/class_string.html) **get_file_id()**  
   
 ---  
   
-- String **get_file_name()**  
+- [String](https://docs.godotengine.org/en/latest/classes/class_string.html) **get_file_name()**  
   
 ---  
   
-- int **get_file_size()**  
+- [int](https://docs.godotengine.org/en/latest/classes/class_int.html) **get_file_size()**  
   
 ---  
   
-- String **get_as_text()**  
+- [String](https://docs.godotengine.org/en/latest/classes/class_string.html) **get_as_text()**  
   
 ---  
   

@@ -4,23 +4,23 @@
   
 ## 方法 
   
-- MemberPermChangeEvent **init_meta([Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html) dic)**  
+- [MemberPermChangeEvent](MemberPermChangeEvent.md) **init_meta([Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html) dic)**  
   
 ---  
   
-- GroupMember **get_member()**  
+- [GroupMember](GroupMember.md) **get_member()**  
   
 ---  
   
-- Group **get_group()**  
+- [Group](Group.md) **get_group()**  
   
 ---  
   
-- int **get_origin_perm()**  
+- [int](https://docs.godotengine.org/en/latest/classes/class_int.html) **get_origin_perm()**  
   
 ---  
   
-- int **get_current_perm()**  
+- [int](https://docs.godotengine.org/en/latest/classes/class_int.html) **get_current_perm()**  
   
 ---  
   

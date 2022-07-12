@@ -4,27 +4,27 @@
   
 ## 方法 
   
-- MemberHonorChangeEvent **init_meta([Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html) dic)**  
+- [MemberHonorChangeEvent](MemberHonorChangeEvent.md) **init_meta([Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html) dic)**  
   
 ---  
   
-- GroupMember **get_member()**  
+- [GroupMember](GroupMember.md) **get_member()**  
   
 ---  
   
-- Group **get_group()**  
+- [Group](Group.md) **get_group()**  
   
 ---  
   
-- String **get_honor_name()**  
+- [String](https://docs.godotengine.org/en/latest/classes/class_string.html) **get_honor_name()**  
   
 ---  
   
-- int **get_action_type()**  
+- [int](https://docs.godotengine.org/en/latest/classes/class_int.html) **get_action_type()**  
   
 ---  
   
-- bool **is_action_type([int](https://docs.godotengine.org/en/latest/classes/class_int.html) action)**  
+- [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html) **is_action_type([int](https://docs.godotengine.org/en/latest/classes/class_int.html) action)**  
   
 ---  
   

@@ -6,23 +6,23 @@
   
 ## 方法 
   
-- int **get_event_id()**  
+- [int](https://docs.godotengine.org/en/latest/classes/class_int.html) **get_event_id()**  
   
 ---  
   
-- int **get_sender_id()**  
+- [int](https://docs.godotengine.org/en/latest/classes/class_int.html) **get_sender_id()**  
   
 ---  
   
-- String **get_sender_name()**  
+- [String](https://docs.godotengine.org/en/latest/classes/class_string.html) **get_sender_name()**  
   
 ---  
   
-- int **get_group_id()**  
+- [int](https://docs.godotengine.org/en/latest/classes/class_int.html) **get_group_id()**  
   
 ---  
   
-- String **get_request_message()**  
+- [String](https://docs.godotengine.org/en/latest/classes/class_string.html) **get_request_message()**  
   
 ---  
   

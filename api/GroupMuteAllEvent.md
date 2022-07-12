@@ -4,23 +4,23 @@
   
 ## 方法 
   
-- GroupMuteAllEvent **init_meta([Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html) dic)**  
+- [GroupMuteAllEvent](GroupMuteAllEvent.md) **init_meta([Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html) dic)**  
   
 ---  
   
-- bool **get_origin_state()**  
+- [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html) **get_origin_state()**  
   
 ---  
   
-- bool **get_current_state()**  
+- [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html) **get_current_state()**  
   
 ---  
   
-- GroupMember **get_operator()**  
+- [GroupMember](GroupMember.md) **get_operator()**  
   
 ---  
   
-- Group **get_group()**  
+- [Group](Group.md) **get_group()**  
   
 ---  
   

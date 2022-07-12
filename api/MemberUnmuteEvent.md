@@ -4,19 +4,19 @@
   
 ## 方法 
   
-- MemberUnmuteEvent **init_meta([Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html) dic)**  
+- [MemberUnmuteEvent](MemberUnmuteEvent.md) **init_meta([Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html) dic)**  
   
 ---  
   
-- GroupMember **get_member()**  
+- [GroupMember](GroupMember.md) **get_member()**  
   
 ---  
   
-- GroupMember **get_operator()**  
+- [GroupMember](GroupMember.md) **get_operator()**  
   
 ---  
   
-- Group **get_group()**  
+- [Group](Group.md) **get_group()**  
   
 ---  
   

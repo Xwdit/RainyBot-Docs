@@ -4,23 +4,23 @@
   
 ## 方法 
   
-- JsonMessage **init([String](https://docs.godotengine.org/en/latest/classes/class_string.html) text)**  
+- [JsonMessage](JsonMessage.md) **init([String](https://docs.godotengine.org/en/latest/classes/class_string.html) text)**  
   
 ---  
   
-- JsonMessage **init_meta([Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html) dic)**  
+- [JsonMessage](JsonMessage.md) **init_meta([Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html) dic)**  
   
 ---  
   
-- String **get_json_text()**  
+- [String](https://docs.godotengine.org/en/latest/classes/class_string.html) **get_json_text()**  
   
 ---  
   
-- void **set_json_text([String](https://docs.godotengine.org/en/latest/classes/class_string.html) text)**  
+- [void](https://docs.godotengine.org/en/latest/classes/class_void.html) **set_json_text([String](https://docs.godotengine.org/en/latest/classes/class_string.html) text)**  
   
 ---  
   
-- String **get_as_text()**  
+- [String](https://docs.godotengine.org/en/latest/classes/class_string.html) **get_as_text()**  
   
 ---  
   

@@ -4,19 +4,19 @@
   
 ## 方法 
   
-- SourceMessage **init_meta([Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html) dic)**  
+- [SourceMessage](SourceMessage.md) **init_meta([Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html) dic)**  
   
 ---  
   
-- int **get_message_id()**  
+- [int](https://docs.godotengine.org/en/latest/classes/class_int.html) **get_message_id()**  
   
 ---  
   
-- int **get_timestamp()**  
+- [int](https://docs.godotengine.org/en/latest/classes/class_int.html) **get_timestamp()**  
   
 ---  
   
-- String **get_as_text()**  
+- [String](https://docs.godotengine.org/en/latest/classes/class_string.html) **get_as_text()**  
   
 ---  
   

@@ -4,7 +4,7 @@
   
 ## 方法 
   
-- OtherClientOfflineEvent **init_meta([Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html) dic)**  
+- [OtherClientOfflineEvent](OtherClientOfflineEvent.md) **init_meta([Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html) dic)**  
   
 ---  
   

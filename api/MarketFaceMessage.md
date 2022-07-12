@@ -4,19 +4,19 @@
   
 ## 方法 
   
-- MarketFaceMessage **init_meta([Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html) dic)**  
+- [MarketFaceMessage](MarketFaceMessage.md) **init_meta([Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html) dic)**  
   
 ---  
   
-- int **get_face_id()**  
+- [int](https://docs.godotengine.org/en/latest/classes/class_int.html) **get_face_id()**  
   
 ---  
   
-- String **get_face_name()**  
+- [String](https://docs.godotengine.org/en/latest/classes/class_string.html) **get_face_name()**  
   
 ---  
   
-- String **get_as_text()**  
+- [String](https://docs.godotengine.org/en/latest/classes/class_string.html) **get_as_text()**  
   
 ---  
   

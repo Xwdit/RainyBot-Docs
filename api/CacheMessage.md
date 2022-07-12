@@ -11,31 +11,31 @@ RainyBot的缓存消息类，通常代表一个对应实例，用于储存从机
   
 ## 方法 
   
-- CacheMessage **init_meta([Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html) dic)**  
+- [CacheMessage](CacheMessage.md) **init_meta([Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html) dic)**  
   
 通过机器人协议后端的元数据字典构造一个CacheMessage类的实例，仅当你知道自己在做什么时才使用  
   
 ---  
   
-- Dictionary **get_metadata()**  
+- [Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html) **get_metadata()**  
   
 获取实例中的元数据字典，仅当你知道自己在做什么时才使用  
   
 ---  
   
-- void **set_metadata([Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html) dic)**  
+- [void](https://docs.godotengine.org/en/latest/classes/class_void.html) **set_metadata([Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html) dic)**  
   
 使用指定字典覆盖实例中的元数据字典，仅当你知道自己在做什么时才使用  
   
 ---  
   
-- MessageChain **get_message_chain()**  
+- [MessageChain](MessageChain.md) **get_message_chain()**  
   
 获取缓存消息实例中储存的消息对应的消息链  
   
 ---  
   
-- RoleAPI **get_sender()**  
+- [RoleAPI](RoleAPI.md) **get_sender()**  
   
 获取缓存消息实例中储存的消息对应的发送者实例   
   

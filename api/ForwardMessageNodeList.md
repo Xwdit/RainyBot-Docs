@@ -4,39 +4,39 @@
   
 ## 方法 
   
-- ForwardMessageNodeList **init([Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html) msg_node)**  
+- [ForwardMessageNodeList](ForwardMessageNodeList.md) **init([Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html) msg_node)**  
   
 ---  
   
-- ForwardMessageNodeList **init_meta([Array](https://docs.godotengine.org/en/latest/classes/class_array.html) arr)**  
+- [ForwardMessageNodeList](ForwardMessageNodeList.md) **init_meta([Array](https://docs.godotengine.org/en/latest/classes/class_array.html) arr)**  
   
 ---  
   
-- Array **get_metadata()**  
+- [Array](https://docs.godotengine.org/en/latest/classes/class_array.html) **get_metadata()**  
   
 ---  
   
-- void **set_metadata([Array](https://docs.godotengine.org/en/latest/classes/class_array.html) arr)**  
+- [void](https://docs.godotengine.org/en/latest/classes/class_void.html) **set_metadata([Array](https://docs.godotengine.org/en/latest/classes/class_array.html) arr)**  
   
 ---  
   
-- ForwardMessageNode **get_from_index([int](https://docs.godotengine.org/en/latest/classes/class_int.html) index)**  
+- [ForwardMessageNode](ForwardMessageNode.md) **get_from_index([int](https://docs.godotengine.org/en/latest/classes/class_int.html) index)**  
   
 ---  
   
-- int **get_size()**  
+- [int](https://docs.godotengine.org/en/latest/classes/class_int.html) **get_size()**  
   
 ---  
   
-- ForwardMessageNodeList **append([Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html) msg_node)**  
+- [ForwardMessageNodeList](ForwardMessageNodeList.md) **append([Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html) msg_node)**  
   
 ---  
   
-- ForwardMessageNode **get_from_message_id([int](https://docs.godotengine.org/en/latest/classes/class_int.html) message_id)**  
+- [ForwardMessageNode](ForwardMessageNode.md) **get_from_message_id([int](https://docs.godotengine.org/en/latest/classes/class_int.html) message_id)**  
   
 ---  
   
-- ForwardMessageNode **get_from_sender_id([int](https://docs.godotengine.org/en/latest/classes/class_int.html) sender_id)**  
+- [ForwardMessageNode](ForwardMessageNode.md) **get_from_sender_id([int](https://docs.godotengine.org/en/latest/classes/class_int.html) sender_id)**  
   
 ---  
   

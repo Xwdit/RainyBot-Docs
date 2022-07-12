@@ -4,11 +4,11 @@
   
 ## 方法 
   
-- OtherClientOnlineEvent **init_meta([Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html) dic)**  
+- [OtherClientOnlineEvent](OtherClientOnlineEvent.md) **init_meta([Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html) dic)**  
   
 ---  
   
-- int **get_kind_id()**  
+- [int](https://docs.godotengine.org/en/latest/classes/class_int.html) **get_kind_id()**  
   
 ---  
   

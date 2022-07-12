@@ -8,7 +8,7 @@ RainyBot的Bot自身事件类，协议后端机器人账号自身发生的各类
   
 ## 方法 
   
-- int **get_id()**  
+- [int](https://docs.godotengine.org/en/latest/classes/class_int.html) **get_id()**  
   
 获取发生事件的机器人ID,通常为当前使用的机器人ID  
   
