@@ -95,7 +95,7 @@ RainyBot的个体成员类，通常代表一个对应实例，实现了用于与
   
 ---  
   
-- **get_profile(float timeout=inf_neg)**  
+- **get_profile(float timeout=-INF)**  
   
 获取个体成员实例相关资料的MemberProfile实例，需要配合await关键字使用   
   
@@ -103,7 +103,7 @@ RainyBot的个体成员类，通常代表一个对应实例，实现了用于与
   
 ---  
   
-- **send_message(Variant msg, int quote_msgid=-1, float timeout=inf_neg)**  
+- **send_message(Variant msg, int quote_msgid=-1, float timeout=-INF)**  
   
 向个体成员实例发送消息，同时可指定一个需要引用回复的消息ID   
   
@@ -119,7 +119,7 @@ RainyBot的个体成员类，通常代表一个对应实例，实现了用于与
   
 ---  
   
-- **send_nudge(float timeout=inf_neg)**  
+- **send_nudge(float timeout=-INF)**  
   
 向个体成员实例发送一个戳一戳消息   
   
@@ -129,7 +129,7 @@ RainyBot的个体成员类，通常代表一个对应实例，实现了用于与
   
 ---  
   
-- **delete_friend(float timeout=inf_neg)**  
+- **delete_friend(float timeout=-INF)**  
   
 解除与个体成员实例的好友/单向好友关系   
   

@@ -121,7 +121,7 @@ RainyBot的消息链类，通常代表一个对应实例，为多个不同类型
   
 ---  
   
-- **set_essence(float timeout=inf_neg)**  
+- **set_essence(float timeout=-INF)**  
   
 将消息链实例对应的消息设为群精华消息，机器人需要为消息对应群聊的管理员或群主   
   
@@ -133,7 +133,7 @@ RainyBot的消息链类，通常代表一个对应实例，为多个不同类型
   
 ---  
   
-- **recall(float timeout=inf_neg)**  
+- **recall(float timeout=-INF)**  
   
 将消息链实例对应的消息撤回，多数情况下需要为发送时间两分钟以内的消息   
   

@@ -121,7 +121,7 @@ RainyBot的群成员类，通常代表一个对应实例，实现了用于与群
   
 ---  
   
-- **get_profile(float timeout=inf_neg)**  
+- **get_profile(float timeout=-INF)**  
   
 获取记录了群成员实例相关资料的MemberProfile实例，需要配合await关键字使用   
   
@@ -129,7 +129,7 @@ RainyBot的群成员类，通常代表一个对应实例，实现了用于与群
   
 ---  
   
-- **change_name(String new_name, float timeout=inf_neg)**  
+- **change_name(String new_name, float timeout=-INF)**  
   
 更改群成员实例在其对应群聊中的名称(群昵称)   
   
@@ -139,7 +139,7 @@ RainyBot的群成员类，通常代表一个对应实例，实现了用于与群
   
 ---  
   
-- **change_special_title(String new_title, float timeout=inf_neg)**  
+- **change_special_title(String new_title, float timeout=-INF)**  
   
 更改群成员实例在其对应群聊中的特别称号(群荣誉)   
   
@@ -149,7 +149,7 @@ RainyBot的群成员类，通常代表一个对应实例，实现了用于与群
   
 ---  
   
-- **toggle_admin(bool enabled, float timeout=inf_neg)**  
+- **toggle_admin(bool enabled, float timeout=-INF)**  
   
 开关群成员实例在其对应群聊中的管理员权限，机器人需要为群主才可执行   
   
@@ -159,7 +159,7 @@ RainyBot的群成员类，通常代表一个对应实例，实现了用于与群
   
 ---  
   
-- **kick(String message="", float timeout=inf_neg)**  
+- **kick(String message="", float timeout=-INF)**  
   
 将群成员实例移出其所在的对应群聊，机器人需要为管理员或群主才可执行   
   
@@ -171,7 +171,7 @@ RainyBot的群成员类，通常代表一个对应实例，实现了用于与群
   
 ---  
   
-- **mute(int time=1800, float timeout=inf_neg)**  
+- **mute(int time=1800, float timeout=-INF)**  
   
 将群成员实例在其所在的群聊中禁言指定的秒数，机器人需要为管理员或群主才可执行   
   
@@ -183,7 +183,7 @@ RainyBot的群成员类，通常代表一个对应实例，实现了用于与群
   
 ---  
   
-- **unmute(float timeout=inf_neg)**  
+- **unmute(float timeout=-INF)**  
   
 将群成员实例在其所在的群聊中解除禁言，机器人需要为管理员或群主才可执行   
   
@@ -193,7 +193,7 @@ RainyBot的群成员类，通常代表一个对应实例，实现了用于与群
   
 ---  
   
-- **send_message(Variant msg, int quote_msgid=-1, float timeout=inf_neg)**  
+- **send_message(Variant msg, int quote_msgid=-1, float timeout=-INF)**  
   
 通过群临时会话，向群成员实例私聊发送消息，同时可指定一个需要引用回复的消息ID   
   
@@ -209,7 +209,7 @@ RainyBot的群成员类，通常代表一个对应实例，实现了用于与群
   
 ---  
   
-- **send_nudge(float timeout=inf_neg)**  
+- **send_nudge(float timeout=-INF)**  
   
 通过群临时会话，向群成员实例私聊发送一个戳一戳消息   
   

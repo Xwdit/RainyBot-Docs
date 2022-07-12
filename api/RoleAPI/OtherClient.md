@@ -47,7 +47,7 @@ RainyBot的其它客户端类，通常代表一个对应实例，实现了用于
   
 ---  
   
-- **send_message(Variant msg, int quote_msgid=-1, float timeout=inf_neg)**  
+- **send_message(Variant msg, int quote_msgid=-1, float timeout=-INF)**  
   
 向其它客户端发送消息,第二个参数为需要引用回复的消息id(可选)   
   
@@ -63,7 +63,7 @@ RainyBot的其它客户端类，通常代表一个对应实例，实现了用于
   
 ---  
   
-- **send_nudge(float timeout=inf_neg)**  
+- **send_nudge(float timeout=-INF)**  
   
 向其它客户端发送一个戳一戳消息，   
   

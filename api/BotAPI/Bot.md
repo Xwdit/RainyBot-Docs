@@ -42,7 +42,7 @@ RainyBot的Bot类，负责处理与当前使用的机器人后端账号相关的
   
 ---  
   
-- **get_friend_list(float timeout=inf_neg)**  
+- **get_friend_list(float timeout=-INF)**  
   
 获取当前机器人账号的好友列表，需要与await关键词配合使用   
   
@@ -50,7 +50,7 @@ RainyBot的Bot类，负责处理与当前使用的机器人后端账号相关的
   
 ---  
   
-- **get_group_list(float timeout=inf_neg)**  
+- **get_group_list(float timeout=-INF)**  
   
 获取当前机器人账号的群组列表，需要与await关键词配合使用   
   
@@ -58,7 +58,7 @@ RainyBot的Bot类，负责处理与当前使用的机器人后端账号相关的
   
 ---  
   
-- **get_profile(float timeout=inf_neg)**  
+- **get_profile(float timeout=-INF)**  
   
 获取当前机器人账号的资料卡，需要与await关键词配合使用   
   
@@ -66,7 +66,7 @@ RainyBot的Bot类，负责处理与当前使用的机器人后端账号相关的
   
 ---  
   
-- **get_cache_message(int msg_id, float timeout=inf_neg)**  
+- **get_cache_message(int msg_id, float timeout=-INF)**  
   
 从当前机器人账号的历史消息缓存中获取指定id的缓存消息，需要与await关键词配合使用   
   

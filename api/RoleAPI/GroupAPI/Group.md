@@ -63,7 +63,7 @@ RainyBot的群组类，通常代表一个对应实例，实现了用于与群组
   
 ---  
   
-- **get_member(int member_id, float timeout=inf_neg)**  
+- **get_member(int member_id, float timeout=-INF)**  
   
 获取群聊实例中指定成员ID的GroupMember实例，需要配合await关键字使用   
   
@@ -71,7 +71,7 @@ RainyBot的群组类，通常代表一个对应实例，实现了用于与群组
   
 ---  
   
-- **get_member_list(float timeout=inf_neg)**  
+- **get_member_list(float timeout=-INF)**  
   
 获取群聊实例中所有成员列表的GroupMemberList实例，需要配合await关键字使用   
   
@@ -79,7 +79,7 @@ RainyBot的群组类，通常代表一个对应实例，实现了用于与群组
   
 ---  
   
-- **get_member_profile(int member_id, float timeout=inf_neg)**  
+- **get_member_profile(int member_id, float timeout=-INF)**  
   
 获取群聊实例中指定成员ID相关资料的MemberProfile实例，需要配合await关键字使用   
   
@@ -87,7 +87,7 @@ RainyBot的群组类，通常代表一个对应实例，实现了用于与群组
   
 ---  
   
-- **toggle_mute_all(bool enabled, float timeout=inf_neg)**  
+- **toggle_mute_all(bool enabled, float timeout=-INF)**  
   
 用于切换群聊实例的全员禁言状态，所需的参数为是否启用全员禁言   
   
@@ -97,7 +97,7 @@ RainyBot的群组类，通常代表一个对应实例，实现了用于与群组
   
 ---  
   
-- **get_group_config(float timeout=inf_neg)**  
+- **get_group_config(float timeout=-INF)**  
   
 用于获取与群聊实例的各类配置相关的GroupConfig实例，需要配合await关键字使用   
   
@@ -105,7 +105,7 @@ RainyBot的群组类，通常代表一个对应实例，实现了用于与群组
   
 ---  
   
-- **set_group_config(GroupConfig config, float timeout=inf_neg)**  
+- **set_group_config(GroupConfig config, float timeout=-INF)**  
   
 用于将群聊实例的各类配置替换为指定的GroupConfig实例中的配置   
   
@@ -115,7 +115,7 @@ RainyBot的群组类，通常代表一个对应实例，实现了用于与群组
   
 ---  
   
-- **send_message(Variant msg, int quote_msgid=-1, float timeout=inf_neg)**  
+- **send_message(Variant msg, int quote_msgid=-1, float timeout=-INF)**  
   
 用于向群聊实例发送消息，同时可指定一个需要引用回复的消息ID   
   
@@ -131,7 +131,7 @@ RainyBot的群组类，通常代表一个对应实例，实现了用于与群组
   
 ---  
   
-- **send_nudge(int member_id, float timeout=inf_neg)**  
+- **send_nudge(int member_id, float timeout=-INF)**  
   
 用于在群聊实例中向指定的成员ID发送一个戳一戳消息   
   
@@ -141,7 +141,7 @@ RainyBot的群组类，通常代表一个对应实例，实现了用于与群组
   
 ---  
   
-- **publish_announce(GroupAnnounce announce, float timeout=inf_neg)**  
+- **publish_announce(GroupAnnounce announce, float timeout=-INF)**  
   
 用于在群聊实例中发布一个指定的群公告实例，群公告实例的相关用法请参见[GroupAnnounce]类文档   
   
@@ -151,7 +151,7 @@ RainyBot的群组类，通常代表一个对应实例，实现了用于与群组
   
 ---  
   
-- **delete_announce(int announce_id, float timeout=inf_neg)**  
+- **delete_announce(int announce_id, float timeout=-INF)**  
   
 用于在群聊实例中删除一个指定ID的群公告   
   
@@ -161,7 +161,7 @@ RainyBot的群组类，通常代表一个对应实例，实现了用于与群组
   
 ---  
   
-- **get_announce_list(int page_num=0, int per_page_size=10, float timeout=inf_neg)**  
+- **get_announce_list(int page_num=0, int per_page_size=10, float timeout=-INF)**  
   
 用于获取在群聊实例中的群公告的列表，可指定页码，以及每页将包含的群公告的数量，将返回一个[GroupAnnounceInfoList]类的实例   
   
@@ -171,7 +171,7 @@ RainyBot的群组类，通常代表一个对应实例，实现了用于与群组
   
 ---  
   
-- **quit(float timeout=inf_neg)**  
+- **quit(float timeout=-INF)**  
   
 用于让机器人主动退出群聊实例所对应的群聊   
   

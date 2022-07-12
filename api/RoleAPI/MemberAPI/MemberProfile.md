@@ -32,7 +32,7 @@ RainyBot的个体成员资料类，通常代表一个对应实例，储存了某
   
 ## 方法 
   
-- **init_user(int user_id, float timeout=inf_neg)**  
+- **init_user(int user_id, float timeout=-INF)**  
   
 获取指定ID用户的资料数据并将其构造为一个MemberProfile类的实例，需要配合await关键字使用   
   

@@ -16,7 +16,7 @@
   
 ---  
   
-- **reply(Variant msg, bool quote=false, bool at=false, float timeout=inf_neg)**  
+- **reply(Variant msg, bool quote=false, bool at=false, float timeout=-INF)**  
   
 ---  
   

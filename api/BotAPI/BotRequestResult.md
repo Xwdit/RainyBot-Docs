@@ -122,7 +122,7 @@ RainyBot的协议后端请求结果类，记录了向协议后端发送的某次
   
 ---  
   
-- **recall(float timeout=inf_neg)**  
+- **recall(float timeout=-INF)**  
   
 撤回请求结果中消息ID对应的消息   
   

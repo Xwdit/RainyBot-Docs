@@ -22,7 +22,7 @@
   
 ---  
   
-- **respond(int respond_type, String msg="", float timeout=inf_neg)**  
+- **respond(int respond_type, String msg="", float timeout=-INF)**  
   
 ---  
   

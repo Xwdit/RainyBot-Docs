@@ -182,6 +182,7 @@ func _save_doc_markdown(path:String,doc_dic:Dictionary):
 			md_text += "  \n"
 	md_text = md_text.replacen("[br]","  \n")
 	md_text = md_text.replacen(", )",")")
+	md_text = md_text.replacen("=inf_neg","=-INF")
 	md_text = md_text.replacen("[code]","`").replacen("[/code]","`")
 	file.open(path+doc_dic.name+".md",File.WRITE)
 	file.store_line(md_text)
