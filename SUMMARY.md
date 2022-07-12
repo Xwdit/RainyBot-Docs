@@ -1,6 +1,7 @@
 # Table of contents
 
 * [主页](README.md)
+* [安装与运行](an-zhuang-yu-yun-hang.md)
 * [RainyBot API](api/README.md)
   * [类: ActionEvent](api/ActionEvent.md)
   * [类: AppMessage](api/AppMessage.md)
