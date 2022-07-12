@@ -1,3 +1,7 @@
+---
+description: 欢迎来到RainyBot官方文档！
+---
+
 # 主页
 
 ### 欢迎使用RainyBot！
