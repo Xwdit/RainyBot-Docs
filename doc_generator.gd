@@ -34,6 +34,9 @@ func build_docs(path:String,target_path:String,type:int,keep_dir_struct:bool=tru
 				_save_doc_json(_path,doc_dic[doc])
 			DocType.MARKDOWN:
 				_save_doc_markdown(_path,doc_dic[doc],doc_dic)
+	if type == DocType.MARKDOWN:
+		save_doc_markdown_catalog(target_path,doc_dic)
+		
 
 
 func _build_docs(path:String,target_path:String,doc_dic:Dictionary)->void:
@@ -210,3 +213,41 @@ func _save_doc_markdown(path:String,doc_dic:Dictionary,dics:Dictionary):
 	file.open(path+doc_dic.name+".md",File.WRITE)
 	file.store_line(md_text)
 	file.close()
+
+
+func save_doc_markdown_catalog(path:String,dics:Dictionary):
+	var text:Array = ["# RainyBot API目录  \n  \n"]
+	_save_doc_markdown_catalog(dics,text)
+	var file:File = File.new()
+	file.open(path+"README.md",File.WRITE)
+	text[0] = text[0].replacen("[br][br]","，")
+	file.store_line(text[0])
+	file.close()
+	
+
+func _save_doc_markdown_catalog(dics:Dictionary,cata_text:Array,cname:String="",layer:int=0):
+	if cname == "":
+		var keys:Array = dics.keys()
+		keys.sort()
+		for d in keys:
+			if dics[d].has("name") and !dics[dics[d].inherits].has("name"):
+				if dics[d].brief_description != "":
+					cata_text[0] += "* **[%s](%s.md)** - %s  \n" % [dics[d].name,dics[d].name,dics[d].brief_description]
+					cata_text[0] += "  \n"
+				else:
+					cata_text[0] += "* **[%s](%s.md)** - (文档待补充)  \n" % [dics[d].name,dics[d].name]
+					cata_text[0] += "  \n"
+				for c in dics[d].childs:
+					_save_doc_markdown_catalog(dics,cata_text,c,layer+1)
+	else:
+		var d:String = cname
+		for i in range(layer):
+			cata_text[0] += "  "
+		if dics[d].brief_description != "":
+			cata_text[0] += "* **[%s](%s.md)** - %s  \n" % [dics[d].name,dics[d].name,dics[d].brief_description]
+			cata_text[0] += "  \n"
+		else:
+			cata_text[0] += "* **[%s](%s.md)** - (文档待补充)  \n" % [dics[d].name,dics[d].name]
+			cata_text[0] += "  \n"
+		for c in dics[d].childs:
+			_save_doc_markdown_catalog(dics,cata_text,c,layer+1)

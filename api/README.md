@@ -1,0 +1,199 @@
+# RainyBot API目录  
+  
+* **[Plugin](Plugin.md)** - RainyBot的插件类，代表一个实例，用于在插件中实现各类相关功能  
+  
+* **[RainyBotAPI](RainyBotAPI.md)** - RainyBot所有API的父类，所有可供插件使用的API都将直接或间接继承此类 ，您可以点击此链接来查看与插件自身相关的API文档: [Plugin]  
+  
+  * **[BotAPI](BotAPI.md)** - 协议后端API类，直接或间接继承此类的类通常包含各类与协议后端直接相关的功能  
+  
+    * **[Bot](Bot.md)** - RainyBot的Bot类，负责处理与当前使用的机器人后端账号相关的各类功能  
+  
+    * **[BotRequestResult](BotRequestResult.md)** - RainyBot的协议后端请求结果类，记录了向协议后端发送的某次请求/命令的结果数据  
+  
+  * **[CoreAPI](CoreAPI.md)** - 这是RainyBotAPI的核心类，此类及其子类通常负责各类与协议后端无关，但与RainyBot核心功能直接相关的内容  
+  
+    * **[Console](Console.md)** - RainyBot控制台类，包含了各类与控制台输出直接相关的功能  
+  
+    * **[GifImage](GifImage.md)** - RainyBot动态图像类，可用于构造并生成一个Gif图像及相关数据，并将其用于储存或发送  
+  
+    * **[HttpRequestResult](HttpRequestResult.md)** - RainyBot的Http请求结果类，可从其中快速获取某次Http请求的结果数据  
+  
+    * **[Utils](Utils.md)** - RainyBot的实用工具类，其中提供了各种类型的便捷功能  
+  
+  * **[EventAPI](EventAPI.md)** - (文档待补充)  
+  
+    * **[Event](Event.md)** - (文档待补充)  
+  
+      * **[ActionEvent](ActionEvent.md)** - RainyBot动作事件类，与聊天动作有关的各类事件通常直接或间接继承此类  
+  
+        * **[NudgeEvent](NudgeEvent.md)** - RainyBot的戳一戳事件类，记录了聊天中的一个戳一戳事件的相关数据  
+  
+      * **[BotEvent](BotEvent.md)** - RainyBot的Bot自身事件类，协议后端机器人账号自身发生的各类事件通常直接或间接继承此类  
+  
+        * **[BotOfflineEvent](BotOfflineEvent.md)** - RainyBot的机器人账号离线事件类，其实例记录了一次机器人账号离线事件的相关数据  
+  
+        * **[BotOnlineEvent](BotOnlineEvent.md)** - RainyBot的机器人账号登录成功事件类，其实例记录了一次机器人账号登录成功事件的相关数据  
+  
+        * **[BotReloginEvent](BotReloginEvent.md)** - RainyBot的机器人账号主动重新登录事件类，其实例记录了一次机器人账号主动重新登录事件的相关数据  
+  
+      * **[FriendEvent](FriendEvent.md)** - RainyBot好友事件类，与好友相关的事件通常直接或间接继承此类  
+  
+        * **[FriendInputStatusChangeEvent](FriendInputStatusChangeEvent.md)** - RainyBot的好友输入状态变更事件类，记录了某次好友输入状态变更事件的相关数据  
+  
+        * **[FriendNickChangeEvent](FriendNickChangeEvent.md)** - RainyBot的好友昵称变更事件类，记录了某次好友昵称变更事件的相关数据  
+  
+        * **[FriendRecallEvent](FriendRecallEvent.md)** - RainyBot的好友消息撤回事件类，记录了某次好友消息撤回事件的相关数据  
+  
+      * **[GroupEvent](GroupEvent.md)** - (文档待补充)  
+  
+        * **[GroupAllowAnonyChatEvent](GroupAllowAnonyChatEvent.md)** - (文档待补充)  
+  
+        * **[GroupAllowConfessTalkEvent](GroupAllowConfessTalkEvent.md)** - (文档待补充)  
+  
+        * **[GroupAllowInviteEvent](GroupAllowInviteEvent.md)** - (文档待补充)  
+  
+        * **[GroupAnnounceChangeEvent](GroupAnnounceChangeEvent.md)** - (文档待补充)  
+  
+        * **[GroupBotEvent](GroupBotEvent.md)** - RainyBot的Bot自身群组事件类，与Bot自身相关的群组事件通常直接或间接继承此类  
+  
+          * **[BotJoinGroupEvent](BotJoinGroupEvent.md)** - RainyBot的Bot自身加入群组事件，记录了Bot加入某个群组的事件的相关数据  
+  
+          * **[BotLeaveGroupEvent](BotLeaveGroupEvent.md)** - RainyBot的Bot自身退出群组事件类，记录了Bot退出某个群组相关事件的数据  
+  
+          * **[BotMuteEvent](BotMuteEvent.md)** - RainyBot的Bot自身在群组中被禁言事件类，其实例记录了与一次Bot自身在群组中被禁言事件相关的数据  
+  
+          * **[BotPermChangeEvent](BotPermChangeEvent.md)** - RainyBot的Bot自身在群组中被更改权限事件类，其实例记录了与一次Bot自身在群组中被更改权限事件相关的数据  
+  
+          * **[BotUnmuteEvent](BotUnmuteEvent.md)** - (文档待补充)  
+  
+        * **[GroupMemberEvent](GroupMemberEvent.md)** - (文档待补充)  
+  
+          * **[MemberHonorChangeEvent](MemberHonorChangeEvent.md)** - (文档待补充)  
+  
+          * **[MemberJoinEvent](MemberJoinEvent.md)** - (文档待补充)  
+  
+          * **[MemberLeaveEvent](MemberLeaveEvent.md)** - (文档待补充)  
+  
+          * **[MemberMuteEvent](MemberMuteEvent.md)** - (文档待补充)  
+  
+          * **[MemberNameChangeEvent](MemberNameChangeEvent.md)** - (文档待补充)  
+  
+          * **[MemberPermChangeEvent](MemberPermChangeEvent.md)** - (文档待补充)  
+  
+          * **[MemberTitleChangeEvent](MemberTitleChangeEvent.md)** - (文档待补充)  
+  
+          * **[MemberUnmuteEvent](MemberUnmuteEvent.md)** - (文档待补充)  
+  
+        * **[GroupMuteAllEvent](GroupMuteAllEvent.md)** - (文档待补充)  
+  
+        * **[GroupNameChangeEvent](GroupNameChangeEvent.md)** - (文档待补充)  
+  
+        * **[GroupRecallEvent](GroupRecallEvent.md)** - (文档待补充)  
+  
+      * **[MessageEvent](MessageEvent.md)** - (文档待补充)  
+  
+        * **[FriendMessageEvent](FriendMessageEvent.md)** - (文档待补充)  
+  
+        * **[GroupMessageEvent](GroupMessageEvent.md)** - (文档待补充)  
+  
+        * **[OtherClientMessageEvent](OtherClientMessageEvent.md)** - (文档待补充)  
+  
+        * **[StrangerMessageEvent](StrangerMessageEvent.md)** - (文档待补充)  
+  
+        * **[TempMessageEvent](TempMessageEvent.md)** - (文档待补充)  
+  
+      * **[OtherClientEvent](OtherClientEvent.md)** - (文档待补充)  
+  
+        * **[OtherClientOfflineEvent](OtherClientOfflineEvent.md)** - (文档待补充)  
+  
+        * **[OtherClientOnlineEvent](OtherClientOnlineEvent.md)** - (文档待补充)  
+  
+      * **[RequestEvent](RequestEvent.md)** - (文档待补充)  
+  
+        * **[GroupInviteRequestEvent](GroupInviteRequestEvent.md)** - (文档待补充)  
+  
+        * **[MemberJoinRequestEvent](MemberJoinRequestEvent.md)** - (文档待补充)  
+  
+        * **[NewFriendRequestEvent](NewFriendRequestEvent.md)** - (文档待补充)  
+  
+  * **[MessageAPI](MessageAPI.md)** - RainyBot的消息API类，所有的消息相关API将直接或间接继承此类  
+  
+    * **[CacheMessage](CacheMessage.md)** - RainyBot的缓存消息类，通常代表一个对应实例，用于储存从机器人后端缓存中读取的消息的相关信息  
+  
+    * **[Message](Message.md)** - RainyBot的消息类，不具备任何功能，仅作为所有消息类型的直接或间接父类  
+  
+      * **[AppMessage](AppMessage.md)** - RainyBot的App消息类，通常代表一个对应实例，此类消息常见于某些特殊App调用聊天软件进行分享的场景  
+  
+      * **[AtAllMessage](AtAllMessage.md)** - RainyBot的At全体成员消息类，通常代表一个对应实例，此类消息仅适用于群聊  
+  
+      * **[AtMessage](AtMessage.md)** - RainyBot的At消息类，通常代表一个对应实例，此类消息仅适用于群聊  
+  
+      * **[BotCodeMessage](BotCodeMessage.md)** - RainyBot的BotCode消息类，通常代表一个对应实例，可用于快捷发送一段包含多种类型的消息  
+  
+      * **[DiceMessage](DiceMessage.md)** - (文档待补充)  
+  
+      * **[FaceMessage](FaceMessage.md)** - (文档待补充)  
+  
+      * **[FileMessage](FileMessage.md)** - (文档待补充)  
+  
+      * **[FlashImageMessage](FlashImageMessage.md)** - (文档待补充)  
+  
+      * **[ForwardMessage](ForwardMessage.md)** - (文档待补充)  
+  
+      * **[ImageMessage](ImageMessage.md)** - (文档待补充)  
+  
+      * **[JsonMessage](JsonMessage.md)** - (文档待补充)  
+  
+      * **[MarketFaceMessage](MarketFaceMessage.md)** - (文档待补充)  
+  
+      * **[MusicShareMessage](MusicShareMessage.md)** - (文档待补充)  
+  
+      * **[PokeMessage](PokeMessage.md)** - (文档待补充)  
+  
+      * **[QuoteMessage](QuoteMessage.md)** - (文档待补充)  
+  
+      * **[SourceMessage](SourceMessage.md)** - (文档待补充)  
+  
+      * **[TextMessage](TextMessage.md)** - (文档待补充)  
+  
+      * **[VoiceMessage](VoiceMessage.md)** - (文档待补充)  
+  
+      * **[XmlMessage](XmlMessage.md)** - (文档待补充)  
+  
+    * **[MessageChain](MessageChain.md)** - RainyBot的消息链类，通常代表一个对应实例，为多个不同类型的消息类实例依序拼接而成的单条消息  
+  
+    * **[ForwardMessageNode](ForwardMessageNode.md)** - (文档待补充)  
+  
+    * **[ForwardMessageNodeList](ForwardMessageNodeList.md)** - (文档待补充)  
+  
+  * **[RoleAPI](RoleAPI.md)** - RainyBot的角色API类，所有的角色相关API将直接或间接继承此类  
+  
+    * **[GroupAPI](GroupAPI.md)** - RainyBot的群组API类，所有的群组相关API将直接或间接继承此类  
+  
+      * **[Group](Group.md)** - RainyBot的群组类，通常代表一个对应实例，实现了用于与群组进行交互的各类功能  
+  
+      * **[GroupAnnounce](GroupAnnounce.md)** - RainyBot的群公告类，其实例记录了一个将被用于发送的群公告的相关信息  
+  
+      * **[GroupAnnounceInfo](GroupAnnounceInfo.md)** - RainyBot的群公告信息类，其实例记录了一个已发送的群公告的相关信息  
+  
+      * **[GroupAnnounceInfoList](GroupAnnounceInfoList.md)** - RainyBot的群公告信息列表类，储存了从某个群组中获取的群公告的列表  
+  
+      * **[GroupConfig](GroupConfig.md)** - RainyBot的群组配置类，通常代表一个对应实例，储存了与群组各类配置有关的信息  
+  
+      * **[GroupList](GroupList.md)** - RainyBot的群组列表类，通常代表一个对应实例，储存了机器人所在的群组的列表  
+  
+      * **[GroupMember](GroupMember.md)** - RainyBot的群成员类，通常代表一个对应实例，实现了用于与群组成员进行交互的各类功能  
+  
+      * **[GroupMemberList](GroupMemberList.md)** - RainyBot的群成员列表类，通常代表一个对应实例，储存了某个群组中所有群成员的列表  
+  
+    * **[MemberAPI](MemberAPI.md)** - RainyBot的个体成员API类，所有的个体成员相关API将直接或间接继承此类  
+  
+      * **[Member](Member.md)** - RainyBot的个体成员类，通常代表一个对应实例，实现了用于与好友或单向好友(陌生人)进行交互的各类功能  
+  
+      * **[MemberList](MemberList.md)** - RainyBot的个体成员列表类，通常代表一个对应实例，储存了机器人所有个体成员(通常为好友)的列表  
+  
+      * **[MemberProfile](MemberProfile.md)** - RainyBot的个体成员资料类，通常代表一个对应实例，储存了某个个体成员的相关资料  
+  
+    * **[OtherClient](OtherClient.md)** - RainyBot的其它客户端类，通常代表一个对应实例，实现了用于与其他客户端进行交互的各类功能  
+  
+
