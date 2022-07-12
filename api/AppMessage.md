@@ -29,7 +29,7 @@ RainyBot的App消息类，通常代表一个对应实例，此类消息常见于
   
 ---  
   
-- [void](https://docs.godotengine.org/en/latest/classes/class_void.html) **set_app_text([String](https://docs.godotengine.org/en/latest/classes/class_string.html) text)**  
+- void **set_app_text([String](https://docs.godotengine.org/en/latest/classes/class_string.html) text)**  
   
 更改实例中储存的App消息代码文本  
   

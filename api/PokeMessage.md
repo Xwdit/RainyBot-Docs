@@ -16,7 +16,7 @@
   
 ---  
   
-- [void](https://docs.godotengine.org/en/latest/classes/class_void.html) **set_poke_type([int](https://docs.godotengine.org/en/latest/classes/class_int.html) type)**  
+- void **set_poke_type([int](https://docs.godotengine.org/en/latest/classes/class_int.html) type)**  
   
 ---  
   

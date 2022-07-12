@@ -28,7 +28,7 @@
   
 ---  
   
-- [void](https://docs.godotengine.org/en/latest/classes/class_void.html) **set_voice_id([String](https://docs.godotengine.org/en/latest/classes/class_string.html) voice_id)**  
+- void **set_voice_id([String](https://docs.godotengine.org/en/latest/classes/class_string.html) voice_id)**  
   
 ---  
   
@@ -36,7 +36,7 @@
   
 ---  
   
-- [void](https://docs.godotengine.org/en/latest/classes/class_void.html) **set_voice_url([String](https://docs.godotengine.org/en/latest/classes/class_string.html) voice_url)**  
+- void **set_voice_url([String](https://docs.godotengine.org/en/latest/classes/class_string.html) voice_url)**  
   
 ---  
   
@@ -44,7 +44,7 @@
   
 ---  
   
-- [void](https://docs.godotengine.org/en/latest/classes/class_void.html) **set_voice_path([String](https://docs.godotengine.org/en/latest/classes/class_string.html) voice_path)**  
+- void **set_voice_path([String](https://docs.godotengine.org/en/latest/classes/class_string.html) voice_path)**  
   
 ---  
   
@@ -52,7 +52,7 @@
   
 ---  
   
-- [void](https://docs.godotengine.org/en/latest/classes/class_void.html) **set_voice_base64([String](https://docs.godotengine.org/en/latest/classes/class_string.html) voice_base64)**  
+- void **set_voice_base64([String](https://docs.godotengine.org/en/latest/classes/class_string.html) voice_base64)**  
   
 ---  
   

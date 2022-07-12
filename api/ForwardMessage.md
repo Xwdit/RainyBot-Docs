@@ -16,7 +16,7 @@
   
 ---  
   
-- [void](https://docs.godotengine.org/en/latest/classes/class_void.html) **set_node_list([ForwardMessageNodeList](ForwardMessageNodeList.md) node_list)**  
+- void **set_node_list([ForwardMessageNodeList](ForwardMessageNodeList.md) node_list)**  
   
 ---  
   

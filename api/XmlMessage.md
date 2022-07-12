@@ -16,7 +16,7 @@
   
 ---  
   
-- [void](https://docs.godotengine.org/en/latest/classes/class_void.html) **set_xml_text([String](https://docs.godotengine.org/en/latest/classes/class_string.html) text)**  
+- void **set_xml_text([String](https://docs.godotengine.org/en/latest/classes/class_string.html) text)**  
   
 ---  
   

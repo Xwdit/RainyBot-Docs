@@ -36,7 +36,7 @@
   
 ---  
   
-- [void](https://docs.godotengine.org/en/latest/classes/class_void.html) **set_image_id([String](https://docs.godotengine.org/en/latest/classes/class_string.html) image_id)**  
+- void **set_image_id([String](https://docs.godotengine.org/en/latest/classes/class_string.html) image_id)**  
   
 ---  
   
@@ -44,7 +44,7 @@
   
 ---  
   
-- [void](https://docs.godotengine.org/en/latest/classes/class_void.html) **set_image_url([String](https://docs.godotengine.org/en/latest/classes/class_string.html) image_url)**  
+- void **set_image_url([String](https://docs.godotengine.org/en/latest/classes/class_string.html) image_url)**  
   
 ---  
   
@@ -52,7 +52,7 @@
   
 ---  
   
-- [void](https://docs.godotengine.org/en/latest/classes/class_void.html) **set_image_path([String](https://docs.godotengine.org/en/latest/classes/class_string.html) image_path)**  
+- void **set_image_path([String](https://docs.godotengine.org/en/latest/classes/class_string.html) image_path)**  
   
 ---  
   
@@ -60,7 +60,7 @@
   
 ---  
   
-- [void](https://docs.godotengine.org/en/latest/classes/class_void.html) **set_image_base64([String](https://docs.godotengine.org/en/latest/classes/class_string.html) image_base64)**  
+- void **set_image_base64([String](https://docs.godotengine.org/en/latest/classes/class_string.html) image_base64)**  
   
 ---  
   

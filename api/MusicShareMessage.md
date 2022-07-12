@@ -16,7 +16,7 @@
   
 ---  
   
-- [void](https://docs.godotengine.org/en/latest/classes/class_void.html) **set_share_kind([String](https://docs.godotengine.org/en/latest/classes/class_string.html) text)**  
+- void **set_share_kind([String](https://docs.godotengine.org/en/latest/classes/class_string.html) text)**  
   
 ---  
   
@@ -24,7 +24,7 @@
   
 ---  
   
-- [void](https://docs.godotengine.org/en/latest/classes/class_void.html) **set_share_title([String](https://docs.godotengine.org/en/latest/classes/class_string.html) text)**  
+- void **set_share_title([String](https://docs.godotengine.org/en/latest/classes/class_string.html) text)**  
   
 ---  
   
@@ -32,7 +32,7 @@
   
 ---  
   
-- [void](https://docs.godotengine.org/en/latest/classes/class_void.html) **set_share_summary([String](https://docs.godotengine.org/en/latest/classes/class_string.html) text)**  
+- void **set_share_summary([String](https://docs.godotengine.org/en/latest/classes/class_string.html) text)**  
   
 ---  
   
@@ -40,7 +40,7 @@
   
 ---  
   
-- [void](https://docs.godotengine.org/en/latest/classes/class_void.html) **set_share_jump_url([String](https://docs.godotengine.org/en/latest/classes/class_string.html) text)**  
+- void **set_share_jump_url([String](https://docs.godotengine.org/en/latest/classes/class_string.html) text)**  
   
 ---  
   
@@ -48,7 +48,7 @@
   
 ---  
   
-- [void](https://docs.godotengine.org/en/latest/classes/class_void.html) **set_share_picture_url([String](https://docs.godotengine.org/en/latest/classes/class_string.html) text)**  
+- void **set_share_picture_url([String](https://docs.godotengine.org/en/latest/classes/class_string.html) text)**  
   
 ---  
   
@@ -56,7 +56,7 @@
   
 ---  
   
-- [void](https://docs.godotengine.org/en/latest/classes/class_void.html) **set_share_music_url([String](https://docs.godotengine.org/en/latest/classes/class_string.html) text)**  
+- void **set_share_music_url([String](https://docs.godotengine.org/en/latest/classes/class_string.html) text)**  
   
 ---  
   
@@ -64,7 +64,7 @@
   
 ---  
   
-- [void](https://docs.godotengine.org/en/latest/classes/class_void.html) **set_share_brief([String](https://docs.godotengine.org/en/latest/classes/class_string.html) text)**  
+- void **set_share_brief([String](https://docs.godotengine.org/en/latest/classes/class_string.html) text)**  
   
 ---  
   

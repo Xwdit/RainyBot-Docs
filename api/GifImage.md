@@ -62,7 +62,7 @@ RainyBot动态图像类，可用于构造并生成一个Gif图像及相关数据
   
 ---  
   
-- [void](https://docs.godotengine.org/en/latest/classes/class_void.html) **clear_frames()**  
+- void **clear_frames()**  
   
 清除此Gif图像实例中的所有帧  
   

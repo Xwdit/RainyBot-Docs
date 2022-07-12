@@ -29,7 +29,7 @@ RainyBot的BotCode消息类，通常代表一个对应实例，可用于快捷�
   
 ---  
   
-- [void](https://docs.godotengine.org/en/latest/classes/class_void.html) **set_code_text([String](https://docs.godotengine.org/en/latest/classes/class_string.html) text)**  
+- void **set_code_text([String](https://docs.godotengine.org/en/latest/classes/class_string.html) text)**  
   
 更改实例中储存的BotCode文本  
   

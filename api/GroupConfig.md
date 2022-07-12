@@ -23,7 +23,7 @@ RainyBot的群组配置类，通常代表一个对应实例，储存了与群组
   
 ---  
   
-- [void](https://docs.godotengine.org/en/latest/classes/class_void.html) **set_metadata([Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html) dic)**  
+- void **set_metadata([Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html) dic)**  
   
 使用指定字典覆盖实例中的元数据字典，仅当你知道自己在做什么时才使用  
   
@@ -65,37 +65,37 @@ RainyBot的群组配置类，通常代表一个对应实例，储存了与群组
   
 ---  
   
-- [void](https://docs.godotengine.org/en/latest/classes/class_void.html) **set_name([String](https://docs.godotengine.org/en/latest/classes/class_string.html) name)**  
+- void **set_name([String](https://docs.godotengine.org/en/latest/classes/class_string.html) name)**  
   
 更改群组配置实例中储存的群名称  
   
 ---  
   
-- [void](https://docs.godotengine.org/en/latest/classes/class_void.html) **set_announcement([String](https://docs.godotengine.org/en/latest/classes/class_string.html) text)**  
+- void **set_announcement([String](https://docs.godotengine.org/en/latest/classes/class_string.html) text)**  
   
 更改群组配置实例中储存的入群公告  
   
 ---  
   
-- [void](https://docs.godotengine.org/en/latest/classes/class_void.html) **set_confess_talk([bool](https://docs.godotengine.org/en/latest/classes/class_bool.html) enabled)**  
+- void **set_confess_talk([bool](https://docs.godotengine.org/en/latest/classes/class_bool.html) enabled)**  
   
 更改群组配置实例中储存的坦白说启用状态  
   
 ---  
   
-- [void](https://docs.godotengine.org/en/latest/classes/class_void.html) **set_allow_member_invite([bool](https://docs.godotengine.org/en/latest/classes/class_bool.html) enabled)**  
+- void **set_allow_member_invite([bool](https://docs.godotengine.org/en/latest/classes/class_bool.html) enabled)**  
   
 更改群组配置实例中储存的允许邀请入群启用状态  
   
 ---  
   
-- [void](https://docs.godotengine.org/en/latest/classes/class_void.html) **set_auto_approve([bool](https://docs.godotengine.org/en/latest/classes/class_bool.html) enabled)**  
+- void **set_auto_approve([bool](https://docs.godotengine.org/en/latest/classes/class_bool.html) enabled)**  
   
 更改群组配置实例中储存的自动入群审批启用状态  
   
 ---  
   
-- [void](https://docs.godotengine.org/en/latest/classes/class_void.html) **set_anonymous_chat([bool](https://docs.godotengine.org/en/latest/classes/class_bool.html) enabled)**  
+- void **set_anonymous_chat([bool](https://docs.godotengine.org/en/latest/classes/class_bool.html) enabled)**  
   
 更改群组配置实例中储存的匿名聊天启用状态  
   

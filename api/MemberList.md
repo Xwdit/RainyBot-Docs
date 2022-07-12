@@ -23,7 +23,7 @@ RainyBot的个体成员列表类，通常代表一个对应实例，储存了机
   
 ---  
   
-- [void](https://docs.godotengine.org/en/latest/classes/class_void.html) **set_metadata([Array](https://docs.godotengine.org/en/latest/classes/class_array.html) arr)**  
+- void **set_metadata([Array](https://docs.godotengine.org/en/latest/classes/class_array.html) arr)**  
   
 使用指定数组覆盖实例中的元数据数组，仅当你知道自己在做什么时才使用  
   

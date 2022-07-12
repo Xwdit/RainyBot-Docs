@@ -47,7 +47,7 @@ enum **Role**
   
 ---  
   
-- [void](https://docs.godotengine.org/en/latest/classes/class_void.html) **set_metadata([Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html) dic)**  
+- void **set_metadata([Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html) dic)**  
   
 使用指定字典覆盖实例中的元数据字典，仅当你知道自己在做什么时才使用  
   
@@ -61,7 +61,7 @@ enum **Role**
   
 ---  
   
-- [void](https://docs.godotengine.org/en/latest/classes/class_void.html) **set_role([int](https://docs.godotengine.org/en/latest/classes/class_int.html) role)**  
+- void **set_role([int](https://docs.godotengine.org/en/latest/classes/class_int.html) role)**  
   
 设置个体成员实例的类型  
   

@@ -16,7 +16,7 @@
   
 ---  
   
-- [void](https://docs.godotengine.org/en/latest/classes/class_void.html) **set_dice_value([int](https://docs.godotengine.org/en/latest/classes/class_int.html) value)**  
+- void **set_dice_value([int](https://docs.godotengine.org/en/latest/classes/class_int.html) value)**  
   
 ---  
   

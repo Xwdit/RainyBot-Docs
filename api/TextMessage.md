@@ -16,7 +16,7 @@
   
 ---  
   
-- [void](https://docs.godotengine.org/en/latest/classes/class_void.html) **set_message_text([String](https://docs.godotengine.org/en/latest/classes/class_string.html) text)**  
+- void **set_message_text([String](https://docs.godotengine.org/en/latest/classes/class_string.html) text)**  
   
 ---  
   

@@ -16,7 +16,7 @@
   
 ---  
   
-- [void](https://docs.godotengine.org/en/latest/classes/class_void.html) **set_face_id([int](https://docs.godotengine.org/en/latest/classes/class_int.html) face_id)**  
+- void **set_face_id([int](https://docs.godotengine.org/en/latest/classes/class_int.html) face_id)**  
   
 ---  
   
@@ -24,7 +24,7 @@
   
 ---  
   
-- [void](https://docs.godotengine.org/en/latest/classes/class_void.html) **set_face_name([String](https://docs.godotengine.org/en/latest/classes/class_string.html) face_name)**  
+- void **set_face_name([String](https://docs.godotengine.org/en/latest/classes/class_string.html) face_name)**  
   
 ---  
   

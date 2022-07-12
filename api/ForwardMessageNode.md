@@ -16,7 +16,7 @@
   
 ---  
   
-- [void](https://docs.godotengine.org/en/latest/classes/class_void.html) **set_metadata([Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html) dic)**  
+- void **set_metadata([Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html) dic)**  
   
 ---  
   
@@ -24,7 +24,7 @@
   
 ---  
   
-- [void](https://docs.godotengine.org/en/latest/classes/class_void.html) **set_sender_id([int](https://docs.godotengine.org/en/latest/classes/class_int.html) id)**  
+- void **set_sender_id([int](https://docs.godotengine.org/en/latest/classes/class_int.html) id)**  
   
 ---  
   
@@ -32,7 +32,7 @@
   
 ---  
   
-- [void](https://docs.godotengine.org/en/latest/classes/class_void.html) **set_time([int](https://docs.godotengine.org/en/latest/classes/class_int.html) time)**  
+- void **set_time([int](https://docs.godotengine.org/en/latest/classes/class_int.html) time)**  
   
 ---  
   
@@ -40,7 +40,7 @@
   
 ---  
   
-- [void](https://docs.godotengine.org/en/latest/classes/class_void.html) **set_sender_name([int](https://docs.godotengine.org/en/latest/classes/class_int.html) name)**  
+- void **set_sender_name([int](https://docs.godotengine.org/en/latest/classes/class_int.html) name)**  
   
 ---  
   
@@ -48,7 +48,7 @@
   
 ---  
   
-- [void](https://docs.godotengine.org/en/latest/classes/class_void.html) **set_message_chain([MessageChain](MessageChain.md) msg_chain)**  
+- void **set_message_chain([MessageChain](MessageChain.md) msg_chain)**  
   
 ---  
   
@@ -56,7 +56,7 @@
   
 ---  
   
-- [void](https://docs.godotengine.org/en/latest/classes/class_void.html) **set_message_id([int](https://docs.godotengine.org/en/latest/classes/class_int.html) id)**  
+- void **set_message_id([int](https://docs.godotengine.org/en/latest/classes/class_int.html) id)**  
   
 ---  
   

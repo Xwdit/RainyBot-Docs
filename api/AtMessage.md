@@ -31,7 +31,7 @@ RainyBot的At消息类，通常代表一个对应实例，此类消息仅适用�
   
 ---  
   
-- [void](https://docs.godotengine.org/en/latest/classes/class_void.html) **set_target_id([int](https://docs.godotengine.org/en/latest/classes/class_int.html) target_id)**  
+- void **set_target_id([int](https://docs.godotengine.org/en/latest/classes/class_int.html) target_id)**  
   
 更改实例中储存的想要At的群组成员的ID  
   

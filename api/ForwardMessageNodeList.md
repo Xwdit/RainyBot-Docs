@@ -16,7 +16,7 @@
   
 ---  
   
-- [void](https://docs.godotengine.org/en/latest/classes/class_void.html) **set_metadata([Array](https://docs.godotengine.org/en/latest/classes/class_array.html) arr)**  
+- void **set_metadata([Array](https://docs.godotengine.org/en/latest/classes/class_array.html) arr)**  
   
 ---  
   

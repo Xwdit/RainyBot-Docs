@@ -57,7 +57,7 @@ enum **BlockMode**
   
 ## 方法 
   
-- [void](https://docs.godotengine.org/en/latest/classes/class_void.html) **_on_init()**  
+- void **_on_init()**  
   
 在插件中覆盖此虚函数，以便定义将在此插件的文件每次被读取时执行的操作   
   
@@ -69,7 +69,7 @@ enum **BlockMode**
   
 ---  
   
-- [void](https://docs.godotengine.org/en/latest/classes/class_void.html) **_on_connect()**  
+- void **_on_connect()**  
   
 在插件中覆盖此虚函数，以便定义RainyBot在与协议后端建立连接后插件将执行的操作   
   
@@ -77,7 +77,7 @@ enum **BlockMode**
   
 ---  
   
-- [void](https://docs.godotengine.org/en/latest/classes/class_void.html) **_on_load()**  
+- void **_on_load()**  
   
 在插件中覆盖此虚函数，以便定义插件在被加载完毕后执行的操作   
   
@@ -85,7 +85,7 @@ enum **BlockMode**
   
 ---  
   
-- [void](https://docs.godotengine.org/en/latest/classes/class_void.html) **_on_ready()**  
+- void **_on_ready()**  
   
 在插件中覆盖此虚函数，以便定义插件在所有其他插件加载完毕后执行的操作   
   
@@ -95,7 +95,7 @@ enum **BlockMode**
   
 ---  
   
-- [void](https://docs.godotengine.org/en/latest/classes/class_void.html) **_on_process()**  
+- void **_on_process()**  
   
 在插件中覆盖此虚函数，以便定义插件运行中的每一秒将执行的操作   
   
@@ -103,7 +103,7 @@ enum **BlockMode**
   
 ---  
   
-- [void](https://docs.godotengine.org/en/latest/classes/class_void.html) **_on_error()**  
+- void **_on_error()**  
   
 在插件中覆盖此虚函数，以便定义在RainyBot检测到运行时错误后将执行的操作   
   
@@ -113,7 +113,7 @@ enum **BlockMode**
   
 ---  
   
-- [void](https://docs.godotengine.org/en/latest/classes/class_void.html) **_on_disconnect()**  
+- void **_on_disconnect()**  
   
 在插件中覆盖此虚函数，以便定义RainyBot在与协议后端断开建立连接后插件将执行的操作   
   
@@ -121,7 +121,7 @@ enum **BlockMode**
   
 ---  
   
-- [void](https://docs.godotengine.org/en/latest/classes/class_void.html) **_on_unload()**  
+- void **_on_unload()**  
   
 在插件中覆盖此虚函数，以便定义插件在即将被卸载时执行的操作   
   
@@ -131,7 +131,7 @@ enum **BlockMode**
   
 ---  
   
-- [void](https://docs.godotengine.org/en/latest/classes/class_void.html) **set_plugin_info([String](https://docs.godotengine.org/en/latest/classes/class_string.html) p_id, [String](https://docs.godotengine.org/en/latest/classes/class_string.html) p_name, [String](https://docs.godotengine.org/en/latest/classes/class_string.html) p_author, [String](https://docs.godotengine.org/en/latest/classes/class_string.html) p_version, [String](https://docs.godotengine.org/en/latest/classes/class_string.html) p_description, [Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html) p_dependency)**  
+- void **set_plugin_info([String](https://docs.godotengine.org/en/latest/classes/class_string.html) p_id, [String](https://docs.godotengine.org/en/latest/classes/class_string.html) p_name, [String](https://docs.godotengine.org/en/latest/classes/class_string.html) p_author, [String](https://docs.godotengine.org/en/latest/classes/class_string.html) p_version, [String](https://docs.godotengine.org/en/latest/classes/class_string.html) p_description, [Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html) p_dependency)**  
   
 用于设定插件的相关信息，需要在[method _on_init]虚函数中执行以便RainyBot正确加载您的插件   
   
@@ -253,7 +253,7 @@ enum **BlockMode**
   
 ---  
   
-- [void](https://docs.godotengine.org/en/latest/classes/class_void.html) **register_event([Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html) event, [Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html) function, [int](https://docs.godotengine.org/en/latest/classes/class_int.html) priority, [int](https://docs.godotengine.org/en/latest/classes/class_int.html) block_mode)**  
+- void **register_event([Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html) event, [Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html) function, [int](https://docs.godotengine.org/en/latest/classes/class_int.html) priority, [int](https://docs.godotengine.org/en/latest/classes/class_int.html) block_mode)**  
   
 用于注册一个或多个事件并将其绑定到一个或多个函数，事件发生时将触发绑定的函数并传入事件实例   
   
@@ -279,7 +279,7 @@ enum **BlockMode**
   
 ---  
   
-- [void](https://docs.godotengine.org/en/latest/classes/class_void.html) **unregister_event([Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html) event)**  
+- void **unregister_event([Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html) event)**  
   
 用于取消注册一个或多个事件，取消注册后插件将不再对此事件做出响应   
   
@@ -287,7 +287,7 @@ enum **BlockMode**
   
 ---  
   
-- [void](https://docs.godotengine.org/en/latest/classes/class_void.html) **register_console_command([Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html) command, [Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html) function, [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html) need_arguments, [Array](https://docs.godotengine.org/en/latest/classes/class_array.html) usages, [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html) need_connect)**  
+- void **register_console_command([Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html) command, [Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html) function, [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html) need_arguments, [Array](https://docs.godotengine.org/en/latest/classes/class_array.html) usages, [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html) need_connect)**  
   
 用于注册一个控制台命令并将其绑定到指定函数，命令被执行时将触发此函数，并传入对应的命令名与参数数组   
   
@@ -316,7 +316,7 @@ enum **BlockMode**
   
 ---  
   
-- [void](https://docs.godotengine.org/en/latest/classes/class_void.html) **unregister_console_command([Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html) command)**  
+- void **unregister_console_command([Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html) command)**  
   
 用于取消注册一个控制台命令，命令被取消注册后将无法在控制台被执行，且不会在帮助菜单中显示   
   
@@ -324,7 +324,7 @@ enum **BlockMode**
   
 ---  
   
-- [void](https://docs.godotengine.org/en/latest/classes/class_void.html) **register_keyword([Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html) keyword, [Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html) function, [Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html) var_dic, [int](https://docs.godotengine.org/en/latest/classes/class_int.html) match_mode, [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html) block)**  
+- void **register_keyword([Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html) keyword, [Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html) function, [Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html) var_dic, [int](https://docs.godotengine.org/en/latest/classes/class_int.html) match_mode, [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html) block)**  
   
 用于注册一个或多个关键词并将其绑定到某个函数，关键词匹配时将触发绑定的函数并传入相关数据   
   
@@ -360,7 +360,7 @@ enum **BlockMode**
   
 ---  
   
-- [void](https://docs.godotengine.org/en/latest/classes/class_void.html) **unregister_keyword([Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html) keyword)**  
+- void **unregister_keyword([Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html) keyword)**  
   
 用于取消注册一个关键词，关键词被取消注册后将不会被用于匹配   
   
@@ -564,7 +564,7 @@ enum **BlockMode**
   
 ---  
   
-- [void](https://docs.godotengine.org/en/latest/classes/class_void.html) **unload_plugin()**  
+- void **unload_plugin()**  
   
 调用此函数后，插件将会尝试卸载自身   
   

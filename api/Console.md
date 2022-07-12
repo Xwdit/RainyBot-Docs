@@ -6,31 +6,31 @@ RainyBot控制台类，包含了各类与控制台输出直接相关的功能
   
 ## 方法 
   
-- [void](https://docs.godotengine.org/en/latest/classes/class_void.html) **print_text([Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html) text)**  
+- void **print_text([Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html) text)**  
   
 在控制台中打印一个普通文本，可以传入任意类型值，将自动尝试转换为字符串  
   
 ---  
   
-- [void](https://docs.godotengine.org/en/latest/classes/class_void.html) **print_error([Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html) text)**  
+- void **print_error([Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html) text)**  
   
 在控制台中打印一个错误文本，可以传入任意类型值，将自动尝试转换为字符串  
   
 ---  
   
-- [void](https://docs.godotengine.org/en/latest/classes/class_void.html) **print_warning([Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html) text)**  
+- void **print_warning([Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html) text)**  
   
 在控制台中打印一个警告文本，可以传入任意类型值，将自动尝试转换为字符串  
   
 ---  
   
-- [void](https://docs.godotengine.org/en/latest/classes/class_void.html) **print_success([Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html) text)**  
+- void **print_success([Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html) text)**  
   
 在控制台中打印一个成功文本，可以传入任意类型值，将自动尝试转换为字符串  
   
 ---  
   
-- [void](https://docs.godotengine.org/en/latest/classes/class_void.html) **save_log()**  
+- void **save_log()**  
   
 将控制台的内容立刻保存为以当前日期与时间命名的日志文件  
   

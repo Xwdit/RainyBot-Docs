@@ -212,10 +212,13 @@ func _save_doc_markdown(path:String,doc_dic:Dictionary,dics:Dictionary):
 		md_text += "## 方法 \n"
 		md_text += "  \n"
 		for m in doc_dic.methods:
-			var r_link:String = DOC_LINK % m.return_type.to_lower()
-			if dics.has(m.return_type) and dics[m.return_type].has("name"):
-				r_link = m.return_type+".md"
-			md_text += "- [%s](%s) **%s(" % [m.return_type,r_link,m.name]
+			if m.return_type.to_lower() != "void":
+				var r_link:String = DOC_LINK % m.return_type.to_lower()
+				if dics.has(m.return_type) and dics[m.return_type].has("name"):
+					r_link = m.return_type+".md"
+				md_text += "- [%s](%s) **%s(" % [m.return_type,r_link,m.name]
+			else:
+				md_text += "- %s **%s(" % [m.return_type,m.name]
 			if !m.arguments.is_empty():
 				for a in m.arguments:
 					var a_link:String = DOC_LINK % a.type.to_lower()
