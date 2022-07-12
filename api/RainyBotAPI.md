@@ -1,6 +1,6 @@
 # 类: RainyBotAPI  
   
-**继承自:** [RefCounted](RefCounted.md)  
+**继承自:** [RefCounted](https://docs.godotengine.org/en/latest/classes/class_refcounted.html)  
   
 **子类:** [BotAPI](BotAPI.md), [CoreAPI](CoreAPI.md), [EventAPI](EventAPI.md), [MessageAPI](MessageAPI.md), [RoleAPI](RoleAPI.md)  
   
