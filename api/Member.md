@@ -9,23 +9,25 @@ RainyBot的个体成员类，通常代表一个对应实例，实现了用于与
 这是RainyBot的个体成员类，通常代表一个对应实例，实现了用于与好友或单向好友(陌生人)进行交互的各类功能   
 绝大部分与好友/单向好友(陌生人)直接相关的操作都可以通过此类来进行  
   
-## 常量/枚举  
+## 枚举  
   
-- **Role.FRIEND** = **0**  
+**Role**  
   
+这是代表了个体成员类型的枚举，在进行类型判断相关操作时可在转为整数后用于对比   
+  
+如"get_role() == Member.Role.FRIEND"可判断个体成员是否为好友  
+  
+- **FRIEND**  
 代表个体成员的类型为好友  
   
----  
-  
-- **Role.STRANGER** = **1**  
-  
+- **STRANGER**  
 代表个体成员的类型为单向好友(陌生人)  
   
 ---  
   
 ## 方法 
   
-- Member **init([int](https://docs.godotengine.org/en/latest/classes/class_int.html) member_id, [int](https://docs.godotengine.org/en/latest/classes/class_int.html) role=0)**  
+- Member **init([int](https://docs.godotengine.org/en/latest/classes/class_int.html) member_id, [int](https://docs.godotengine.org/en/latest/classes/class_int.html) role)**  
   
 手动构造一个Member类的实例，用于主动进行与个体成员的交互时使用   
   
@@ -33,7 +35,7 @@ RainyBot的个体成员类，通常代表一个对应实例，实现了用于与
   
 ---  
   
-- Member **init_meta([Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html) dic, [int](https://docs.godotengine.org/en/latest/classes/class_int.html) role=0)**  
+- Member **init_meta([Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html) dic, [int](https://docs.godotengine.org/en/latest/classes/class_int.html) role)**  
   
 通过机器人协议后端的元数据字典构造一个Member类的实例，仅当你知道自己在做什么时才使用  
   
@@ -95,7 +97,7 @@ RainyBot的个体成员类，通常代表一个对应实例，实现了用于与
   
 ---  
   
-- MemberProfile **get_profile([float](https://docs.godotengine.org/en/latest/classes/class_float.html) timeout=-INF)**  
+- MemberProfile **get_profile([float](https://docs.godotengine.org/en/latest/classes/class_float.html) timeout)**  
   
 获取个体成员实例相关资料的MemberProfile实例，需要配合await关键字使用   
   
@@ -103,7 +105,7 @@ RainyBot的个体成员类，通常代表一个对应实例，实现了用于与
   
 ---  
   
-- BotRequestResult **send_message([Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html) msg, [int](https://docs.godotengine.org/en/latest/classes/class_int.html) quote_msgid=-1, [float](https://docs.godotengine.org/en/latest/classes/class_float.html) timeout=-INF)**  
+- BotRequestResult **send_message([Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html) msg, [int](https://docs.godotengine.org/en/latest/classes/class_int.html) quote_msgid, [float](https://docs.godotengine.org/en/latest/classes/class_float.html) timeout)**  
   
 向个体成员实例发送消息，同时可指定一个需要引用回复的消息ID   
   
@@ -119,7 +121,7 @@ RainyBot的个体成员类，通常代表一个对应实例，实现了用于与
   
 ---  
   
-- BotRequestResult **send_nudge([float](https://docs.godotengine.org/en/latest/classes/class_float.html) timeout=-INF)**  
+- BotRequestResult **send_nudge([float](https://docs.godotengine.org/en/latest/classes/class_float.html) timeout)**  
   
 向个体成员实例发送一个戳一戳消息   
   
@@ -129,7 +131,7 @@ RainyBot的个体成员类，通常代表一个对应实例，实现了用于与
   
 ---  
   
-- BotRequestResult **delete_friend([float](https://docs.godotengine.org/en/latest/classes/class_float.html) timeout=-INF)**  
+- BotRequestResult **delete_friend([float](https://docs.godotengine.org/en/latest/classes/class_float.html) timeout)**  
   
 解除与个体成员实例的好友/单向好友关系   
   

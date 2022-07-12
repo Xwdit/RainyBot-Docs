@@ -6,6 +6,16 @@
 	"tutorials": [
 
 	],
+	"enums": [
+		{
+			"name": "MatchMode",
+			"description": "关键词的匹配模式枚举，决定了触发某关键词判定的条件"
+		},
+		{
+			"name": "BlockMode",
+			"description": "事件在处理时被标记为停止传递后的阻断模式枚举，决定了该事件将如何被阻断传递"
+		}
+	],
 	"constants": [
 		{
 			"name": "BEGIN",
@@ -330,13 +340,11 @@
 				},
 				{
 					"name": "priority",
-					"type": "int",
-					"default_value": "0"
+					"type": "int"
 				},
 				{
 					"name": "block_mode",
-					"type": "int",
-					"default_value": "3"
+					"type": "int"
 				}
 			]
 		},
@@ -370,13 +378,11 @@
 				},
 				{
 					"name": "usages",
-					"type": "Array",
-					"default_value": "false"
+					"type": "Array"
 				},
 				{
 					"name": "need_connect",
-					"type": "bool",
-					"default_value": "false"
+					"type": "bool"
 				}
 			]
 		},
@@ -410,13 +416,11 @@
 				},
 				{
 					"name": "match_mode",
-					"type": "int",
-					"default_value": "0"
+					"type": "int"
 				},
 				{
 					"name": "block",
-					"type": "bool",
-					"default_value": "true"
+					"type": "bool"
 				}
 			]
 		},
@@ -502,8 +506,7 @@
 				},
 				{
 					"name": "save_file",
-					"type": "bool",
-					"default_value": "true"
+					"type": "bool"
 				}
 			]
 		},
@@ -526,8 +529,7 @@
 				},
 				{
 					"name": "save_file",
-					"type": "bool",
-					"default_value": "true"
+					"type": "bool"
 				}
 			]
 		},
@@ -550,8 +552,7 @@
 				},
 				{
 					"name": "save_file",
-					"type": "bool",
-					"default_value": "true"
+					"type": "bool"
 				}
 			]
 		},
@@ -574,8 +575,7 @@
 				},
 				{
 					"name": "save_file",
-					"type": "bool",
-					"default_value": "true"
+					"type": "bool"
 				}
 			]
 		},
@@ -632,8 +632,7 @@
 				},
 				{
 					"name": "save_file",
-					"type": "bool",
-					"default_value": "true"
+					"type": "bool"
 				}
 			]
 		},
@@ -648,8 +647,7 @@
 				},
 				{
 					"name": "save_file",
-					"type": "bool",
-					"default_value": "true"
+					"type": "bool"
 				}
 			]
 		},
@@ -660,8 +658,7 @@
 			"arguments": [
 				{
 					"name": "save_file",
-					"type": "bool",
-					"default_value": "true"
+					"type": "bool"
 				}
 			]
 		},
@@ -718,8 +715,7 @@
 				},
 				{
 					"name": "save_file",
-					"type": "bool",
-					"default_value": "true"
+					"type": "bool"
 				}
 			]
 		},
@@ -734,8 +730,7 @@
 				},
 				{
 					"name": "save_file",
-					"type": "bool",
-					"default_value": "true"
+					"type": "bool"
 				}
 			]
 		},
@@ -746,8 +741,7 @@
 			"arguments": [
 				{
 					"name": "save_file",
-					"type": "bool",
-					"default_value": "true"
+					"type": "bool"
 				}
 			]
 		},
@@ -770,8 +764,7 @@
 				},
 				{
 					"name": "for_capture",
-					"type": "bool",
-					"default_value": "false"
+					"type": "bool"
 				}
 			]
 		},
@@ -790,13 +783,11 @@
 				},
 				{
 					"name": "stretch_size",
-					"type": "Vector2i",
-					"default_value": "Vector2i(0, 0)"
+					"type": "Vector2i"
 				},
 				{
 					"name": "transparent",
-					"type": "bool",
-					"default_value": "false"
+					"type": "bool"
 				}
 			]
 		},
@@ -811,23 +802,19 @@
 				},
 				{
 					"name": "sender_id",
-					"type": "int",
-					"default_value": "-1"
+					"type": "int"
 				},
 				{
 					"name": "group_id",
-					"type": "int",
-					"default_value": "-1"
+					"type": "int"
 				},
 				{
 					"name": "timeout",
-					"type": "float",
-					"default_value": "20.0"
+					"type": "float"
 				},
 				{
 					"name": "block",
-					"type": "bool",
-					"default_value": "true"
+					"type": "bool"
 				}
 			]
 		},
@@ -842,23 +829,19 @@
 				},
 				{
 					"name": "match_sender",
-					"type": "bool",
-					"default_value": "true"
+					"type": "bool"
 				},
 				{
 					"name": "match_group",
-					"type": "bool",
-					"default_value": "true"
+					"type": "bool"
 				},
 				{
 					"name": "timeout",
-					"type": "float",
-					"default_value": "20.0"
+					"type": "float"
 				},
 				{
 					"name": "block",
-					"type": "bool",
-					"default_value": "true"
+					"type": "bool"
 				}
 			]
 		},
@@ -873,8 +856,7 @@
 				},
 				{
 					"name": "timeout",
-					"type": "float",
-					"default_value": "20.0"
+					"type": "float"
 				}
 			]
 		},
@@ -889,8 +871,7 @@
 				},
 				{
 					"name": "response",
-					"type": "Variant",
-					"default_value": "true"
+					"type": "Variant"
 				}
 			]
 		}

@@ -6,6 +6,12 @@
 	"tutorials": [
 
 	],
+	"enums": [
+		{
+			"name": "ReasonType",
+			"description": "Bot退出群组的原因类型枚举"
+		}
+	],
 	"constants": [
 		{
 			"name": "ACTIVE",

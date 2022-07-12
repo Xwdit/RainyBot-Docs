@@ -6,6 +6,9 @@
 	"tutorials": [
 
 	],
+	"enums": [
+
+	],
 	"constants": [
 
 	],
@@ -100,8 +103,7 @@
 				},
 				{
 					"name": "timeout",
-					"type": "float",
-					"default_value": "inf_neg"
+					"type": "float"
 				}
 			]
 		},
@@ -112,8 +114,7 @@
 			"arguments": [
 				{
 					"name": "timeout",
-					"type": "float",
-					"default_value": "inf_neg"
+					"type": "float"
 				}
 			]
 		},
@@ -128,8 +129,7 @@
 				},
 				{
 					"name": "timeout",
-					"type": "float",
-					"default_value": "inf_neg"
+					"type": "float"
 				}
 			]
 		},
@@ -144,8 +144,7 @@
 				},
 				{
 					"name": "timeout",
-					"type": "float",
-					"default_value": "inf_neg"
+					"type": "float"
 				}
 			]
 		},
@@ -156,8 +155,7 @@
 			"arguments": [
 				{
 					"name": "timeout",
-					"type": "float",
-					"default_value": "inf_neg"
+					"type": "float"
 				}
 			]
 		},
@@ -172,8 +170,7 @@
 				},
 				{
 					"name": "timeout",
-					"type": "float",
-					"default_value": "inf_neg"
+					"type": "float"
 				}
 			]
 		},
@@ -188,13 +185,11 @@
 				},
 				{
 					"name": "quote_msgid",
-					"type": "int",
-					"default_value": "-1"
+					"type": "int"
 				},
 				{
 					"name": "timeout",
-					"type": "float",
-					"default_value": "inf_neg"
+					"type": "float"
 				}
 			]
 		},
@@ -209,8 +204,7 @@
 				},
 				{
 					"name": "timeout",
-					"type": "float",
-					"default_value": "inf_neg"
+					"type": "float"
 				}
 			]
 		},
@@ -225,8 +219,7 @@
 				},
 				{
 					"name": "timeout",
-					"type": "float",
-					"default_value": "inf_neg"
+					"type": "float"
 				}
 			]
 		},
@@ -241,8 +234,7 @@
 				},
 				{
 					"name": "timeout",
-					"type": "float",
-					"default_value": "inf_neg"
+					"type": "float"
 				}
 			]
 		},
@@ -253,18 +245,15 @@
 			"arguments": [
 				{
 					"name": "page_num",
-					"type": "int",
-					"default_value": "0"
+					"type": "int"
 				},
 				{
 					"name": "per_page_size",
-					"type": "int",
-					"default_value": "10"
+					"type": "int"
 				},
 				{
 					"name": "timeout",
-					"type": "float",
-					"default_value": "inf_neg"
+					"type": "float"
 				}
 			]
 		},
@@ -275,8 +264,7 @@
 			"arguments": [
 				{
 					"name": "timeout",
-					"type": "float",
-					"default_value": "inf_neg"
+					"type": "float"
 				}
 			]
 		}

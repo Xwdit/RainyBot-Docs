@@ -6,6 +6,9 @@
 	"tutorials": [
 
 	],
+	"enums": [
+
+	],
 	"constants": [
 		{
 			"name": "ACCEPT",
@@ -55,13 +58,11 @@
 				},
 				{
 					"name": "msg",
-					"type": "String",
-					"default_value": "\"\""
+					"type": "String"
 				},
 				{
 					"name": "timeout",
-					"type": "float",
-					"default_value": "inf_neg"
+					"type": "float"
 				}
 			]
 		}

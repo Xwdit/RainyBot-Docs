@@ -6,6 +6,9 @@
 	"tutorials": [
 
 	],
+	"enums": [
+
+	],
 	"constants": [
 
 	],
@@ -81,13 +84,11 @@
 				},
 				{
 					"name": "quote_msgid",
-					"type": "int",
-					"default_value": "-1"
+					"type": "int"
 				},
 				{
 					"name": "timeout",
-					"type": "float",
-					"default_value": "inf_neg"
+					"type": "float"
 				}
 			]
 		},
@@ -98,8 +99,7 @@
 			"arguments": [
 				{
 					"name": "timeout",
-					"type": "float",
-					"default_value": "inf_neg"
+					"type": "float"
 				}
 			]
 		}

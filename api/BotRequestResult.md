@@ -4,70 +4,43 @@
   
 RainyBot的协议后端请求结果类，记录了向协议后端发送的某次请求/命令的结果数据  
   
-## 常量/枚举  
+## 枚举  
   
-- **StatusCode.SUCCESS** = **0**  
+**StatusCode**  
   
+请求结果的状态码，可用于对比判断请求结果的当前状态  
+  
+- **SUCCESS**  
 请求成功  
   
----  
-  
-- **StatusCode.WRONG_VERIFY_KEY** = **1**  
-  
+- **WRONG_VERIFY_KEY**  
 验证密钥错误  
   
----  
-  
-- **StatusCode.BOT_NOT_EXIST** = **2**  
-  
+- **BOT_NOT_EXIST**  
 请求的Bot不存在  
   
----  
-  
-- **StatusCode.SESSION_INVALID** = **3**  
-  
+- **SESSION_INVALID**  
 会话无效  
   
----  
-  
-- **StatusCode.SESSION_NOT_ACTIVE** = **4**  
-  
+- **SESSION_NOT_ACTIVE**  
 会话未活跃  
   
----  
-  
-- **StatusCode.TARGET_NOT_EXIST** = **5**  
-  
+- **TARGET_NOT_EXIST**  
 目标不存在  
   
----  
-  
-- **StatusCode.FILE_NOT_EXIST** = **6**  
-  
+- **FILE_NOT_EXIST**  
 文件不存在  
   
----  
-  
-- **StatusCode.NO_PERMISSION** = **10**  
-  
+- **NO_PERMISSION**  
 没有权限  
   
----  
-  
-- **StatusCode.BOT_MUTED** = **20**  
-  
+- **BOT_MUTED**  
 机器人被禁言  
   
----  
-  
-- **StatusCode.MESSAGE_TOO_LONG** = **30**  
-  
+- **MESSAGE_TOO_LONG**  
 消息长度超限  
   
----  
-  
-- **StatusCode.WRONG_USAGE** = **400**  
-  
+- **WRONG_USAGE**  
 命令用法有误  
   
 ---  
@@ -122,7 +95,7 @@ RainyBot的协议后端请求结果类，记录了向协议后端发送的某次
   
 ---  
   
-- BotRequestResult **recall([float](https://docs.godotengine.org/en/latest/classes/class_float.html) timeout=-INF)**  
+- BotRequestResult **recall([float](https://docs.godotengine.org/en/latest/classes/class_float.html) timeout)**  
   
 撤回请求结果中消息ID对应的消息   
   

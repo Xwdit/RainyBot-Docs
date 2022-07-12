@@ -6,6 +6,9 @@
 	"tutorials": [
 
 	],
+	"enums": [
+
+	],
 	"constants": [
 
 	],
@@ -71,8 +74,7 @@
 			"arguments": [
 				{
 					"name": "timeout",
-					"type": "float",
-					"default_value": "inf_neg"
+					"type": "float"
 				}
 			]
 		},
@@ -83,8 +85,7 @@
 			"arguments": [
 				{
 					"name": "timeout",
-					"type": "float",
-					"default_value": "inf_neg"
+					"type": "float"
 				}
 			]
 		},
@@ -95,8 +96,7 @@
 			"arguments": [
 				{
 					"name": "timeout",
-					"type": "float",
-					"default_value": "inf_neg"
+					"type": "float"
 				}
 			]
 		},
@@ -111,8 +111,7 @@
 				},
 				{
 					"name": "timeout",
-					"type": "float",
-					"default_value": "inf_neg"
+					"type": "float"
 				}
 			]
 		}

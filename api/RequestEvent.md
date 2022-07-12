@@ -4,20 +4,6 @@
   
 **子类:** [GroupInviteRequestEvent](GroupInviteRequestEvent.md), [MemberJoinRequestEvent](MemberJoinRequestEvent.md), [NewFriendRequestEvent](NewFriendRequestEvent.md)  
   
-## 常量/枚举  
-  
-- **Type.NEW_FRIEND** = **0**  
-  
----  
-  
-- **Type.MEMBER_JOIN** = **1**  
-  
----  
-  
-- **Type.GROUP_INVITE** = **2**  
-  
----  
-  
 ## 方法 
   
 - int **get_event_id()**  

@@ -145,20 +145,43 @@ func _save_doc_markdown(path:String,doc_dic:Dictionary,dics:Dictionary):
 				md_text += "  \n"
 			md_text += "---  \n"
 			md_text += "  \n"
-	if !doc_dic.constants.is_empty():
-		md_text += "## 常量/枚举  \n"
+	if !doc_dic.enums.is_empty():
+		md_text += "## 枚举  \n"
 		md_text += "  \n"
-		for v in doc_dic.constants:
-			if v.enumeration != "":
-				md_text += "- **%s.%s** = **%s**  \n" % [v.enumeration,v.name,v.value]
-			else:
-				md_text += "- **%s** = **%s**  \n" % [v.name,v.value]
+		for e in doc_dic.enums:
+			md_text += "**%s**  \n" % [e.name]
 			md_text += "  \n"
-			if v.description != "":
-				md_text += "%s  \n" % v.description
+			if e.description != "":
+				md_text += "%s  \n" % e.description
 				md_text += "  \n"
+			for c in doc_dic.constants:
+				if c.enumeration == e.name:
+					md_text += "- **%s**  \n" % [c.name]
+					if c.description != "":
+						md_text += "%s  \n" % c.description
+						md_text += "  \n"
 			md_text += "---  \n"
 			md_text += "  \n"
+	if !doc_dic.constants.is_empty():
+		var found:bool = false
+		for v in doc_dic.constants:
+			if v.enumeration == "":
+				found = true
+				break
+		if found:
+			md_text += "## 常量  \n"
+			md_text += "  \n"
+			for v in doc_dic.constants:
+				if v.enumeration != "":
+					continue
+				else:
+					md_text += "- **%s** = **%s**  \n" % [v.name,v.value]
+				md_text += "  \n"
+				if v.description != "":
+					md_text += "%s  \n" % v.description
+					md_text += "  \n"
+				md_text += "---  \n"
+				md_text += "  \n"
 	if !doc_dic.variables.is_empty():
 		md_text += "## 属性  \n"
 		md_text += "  \n"

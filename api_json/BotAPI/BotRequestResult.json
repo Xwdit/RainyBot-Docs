@@ -6,6 +6,12 @@
 	"tutorials": [
 
 	],
+	"enums": [
+		{
+			"name": "StatusCode",
+			"description": "请求结果的状态码，可用于对比判断请求结果的当前状态"
+		}
+	],
 	"constants": [
 		{
 			"name": "SUCCESS",
@@ -161,8 +167,7 @@
 			"arguments": [
 				{
 					"name": "timeout",
-					"type": "float",
-					"default_value": "inf_neg"
+					"type": "float"
 				}
 			]
 		}

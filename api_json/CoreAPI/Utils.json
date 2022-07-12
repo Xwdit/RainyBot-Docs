@@ -6,6 +6,9 @@
 	"tutorials": [
 
 	],
+	"enums": [
+
+	],
 	"constants": [
 
 	],
@@ -46,8 +49,7 @@
 				},
 				{
 					"name": "timeout",
-					"type": "int",
-					"default_value": "20"
+					"type": "int"
 				}
 			]
 		},
@@ -66,13 +68,11 @@
 				},
 				{
 					"name": "headers",
-					"type": "PackedStringArray",
-					"default_value": "\"\""
+					"type": "PackedStringArray"
 				},
 				{
 					"name": "timeout",
-					"type": "int",
-					"default_value": "20"
+					"type": "int"
 				}
 			]
 		},
@@ -87,13 +87,11 @@
 				},
 				{
 					"name": "type_hint",
-					"type": "String",
-					"default_value": "\"\""
+					"type": "String"
 				},
 				{
 					"name": "use_sub_threads",
-					"type": "bool",
-					"default_value": "false"
+					"type": "bool"
 				}
 			]
 		}

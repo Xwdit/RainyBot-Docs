@@ -9,22 +9,21 @@ RainyBot的群成员类，通常代表一个对应实例，实现了用于与群
 这是RainyBot的群成员类，通常代表一个对应实例，实现了用于与群组成员进行交互的各类功能   
 绝大部分与群组中某位成员相关的操作都可以通过此类来进行  
   
-## 常量/枚举  
+## 枚举  
   
-- **Permission.MEMBER** = **0**  
+**Permission**  
   
+这是代表了群成员权限的枚举，在进行权限相关操作时可在转为整数后用于对比   
+  
+如"get_permission() == GroupMember.Permission.ADMINISTRATOR"可判断群成员是否为管理员  
+  
+- **MEMBER**  
 代表权限为群聊中的普通成员  
   
----  
-  
-- **Permission.ADMINISTRATOR** = **1**  
-  
+- **ADMINISTRATOR**  
 代表权限为群聊中的管理员  
   
----  
-  
-- **Permission.OWNER** = **2**  
-  
+- **OWNER**  
 代表权限为群聊中的群主  
   
 ---  
@@ -121,7 +120,7 @@ RainyBot的群成员类，通常代表一个对应实例，实现了用于与群
   
 ---  
   
-- MemberProfile **get_profile([float](https://docs.godotengine.org/en/latest/classes/class_float.html) timeout=-INF)**  
+- MemberProfile **get_profile([float](https://docs.godotengine.org/en/latest/classes/class_float.html) timeout)**  
   
 获取记录了群成员实例相关资料的MemberProfile实例，需要配合await关键字使用   
   
@@ -129,7 +128,7 @@ RainyBot的群成员类，通常代表一个对应实例，实现了用于与群
   
 ---  
   
-- BotRequestResult **change_name([String](https://docs.godotengine.org/en/latest/classes/class_string.html) new_name, [float](https://docs.godotengine.org/en/latest/classes/class_float.html) timeout=-INF)**  
+- BotRequestResult **change_name([String](https://docs.godotengine.org/en/latest/classes/class_string.html) new_name, [float](https://docs.godotengine.org/en/latest/classes/class_float.html) timeout)**  
   
 更改群成员实例在其对应群聊中的名称(群昵称)   
   
@@ -139,7 +138,7 @@ RainyBot的群成员类，通常代表一个对应实例，实现了用于与群
   
 ---  
   
-- BotRequestResult **change_special_title([String](https://docs.godotengine.org/en/latest/classes/class_string.html) new_title, [float](https://docs.godotengine.org/en/latest/classes/class_float.html) timeout=-INF)**  
+- BotRequestResult **change_special_title([String](https://docs.godotengine.org/en/latest/classes/class_string.html) new_title, [float](https://docs.godotengine.org/en/latest/classes/class_float.html) timeout)**  
   
 更改群成员实例在其对应群聊中的特别称号(群荣誉)   
   
@@ -149,7 +148,7 @@ RainyBot的群成员类，通常代表一个对应实例，实现了用于与群
   
 ---  
   
-- BotRequestResult **toggle_admin([bool](https://docs.godotengine.org/en/latest/classes/class_bool.html) enabled, [float](https://docs.godotengine.org/en/latest/classes/class_float.html) timeout=-INF)**  
+- BotRequestResult **toggle_admin([bool](https://docs.godotengine.org/en/latest/classes/class_bool.html) enabled, [float](https://docs.godotengine.org/en/latest/classes/class_float.html) timeout)**  
   
 开关群成员实例在其对应群聊中的管理员权限，机器人需要为群主才可执行   
   
@@ -159,7 +158,7 @@ RainyBot的群成员类，通常代表一个对应实例，实现了用于与群
   
 ---  
   
-- BotRequestResult **kick([String](https://docs.godotengine.org/en/latest/classes/class_string.html) message="", [float](https://docs.godotengine.org/en/latest/classes/class_float.html) timeout=-INF)**  
+- BotRequestResult **kick([String](https://docs.godotengine.org/en/latest/classes/class_string.html) message, [float](https://docs.godotengine.org/en/latest/classes/class_float.html) timeout)**  
   
 将群成员实例移出其所在的对应群聊，机器人需要为管理员或群主才可执行   
   
@@ -171,7 +170,7 @@ RainyBot的群成员类，通常代表一个对应实例，实现了用于与群
   
 ---  
   
-- BotRequestResult **mute([int](https://docs.godotengine.org/en/latest/classes/class_int.html) time=1800, [float](https://docs.godotengine.org/en/latest/classes/class_float.html) timeout=-INF)**  
+- BotRequestResult **mute([int](https://docs.godotengine.org/en/latest/classes/class_int.html) time, [float](https://docs.godotengine.org/en/latest/classes/class_float.html) timeout)**  
   
 将群成员实例在其所在的群聊中禁言指定的秒数，机器人需要为管理员或群主才可执行   
   
@@ -183,7 +182,7 @@ RainyBot的群成员类，通常代表一个对应实例，实现了用于与群
   
 ---  
   
-- BotRequestResult **unmute([float](https://docs.godotengine.org/en/latest/classes/class_float.html) timeout=-INF)**  
+- BotRequestResult **unmute([float](https://docs.godotengine.org/en/latest/classes/class_float.html) timeout)**  
   
 将群成员实例在其所在的群聊中解除禁言，机器人需要为管理员或群主才可执行   
   
@@ -193,7 +192,7 @@ RainyBot的群成员类，通常代表一个对应实例，实现了用于与群
   
 ---  
   
-- BotRequestResult **send_message([Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html) msg, [int](https://docs.godotengine.org/en/latest/classes/class_int.html) quote_msgid=-1, [float](https://docs.godotengine.org/en/latest/classes/class_float.html) timeout=-INF)**  
+- BotRequestResult **send_message([Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html) msg, [int](https://docs.godotengine.org/en/latest/classes/class_int.html) quote_msgid, [float](https://docs.godotengine.org/en/latest/classes/class_float.html) timeout)**  
   
 通过群临时会话，向群成员实例私聊发送消息，同时可指定一个需要引用回复的消息ID   
   
@@ -209,7 +208,7 @@ RainyBot的群成员类，通常代表一个对应实例，实现了用于与群
   
 ---  
   
-- BotRequestResult **send_nudge([float](https://docs.godotengine.org/en/latest/classes/class_float.html) timeout=-INF)**  
+- BotRequestResult **send_nudge([float](https://docs.godotengine.org/en/latest/classes/class_float.html) timeout)**  
   
 通过群临时会话，向群成员实例私聊发送一个戳一戳消息   
   

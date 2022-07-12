@@ -6,6 +6,12 @@
 	"tutorials": [
 
 	],
+	"enums": [
+		{
+			"name": "Permission",
+			"description": "这是代表了群成员权限的枚举，在进行权限相关操作时可在转为整数后用于对比 [br][br]如\"get_permission() == GroupMember.Permission.ADMINISTRATOR\"可判断群成员是否为管理员"
+		}
+	],
 	"constants": [
 		{
 			"name": "MEMBER",
@@ -168,8 +174,7 @@
 			"arguments": [
 				{
 					"name": "timeout",
-					"type": "float",
-					"default_value": "inf_neg"
+					"type": "float"
 				}
 			]
 		},
@@ -184,8 +189,7 @@
 				},
 				{
 					"name": "timeout",
-					"type": "float",
-					"default_value": "inf_neg"
+					"type": "float"
 				}
 			]
 		},
@@ -200,8 +204,7 @@
 				},
 				{
 					"name": "timeout",
-					"type": "float",
-					"default_value": "inf_neg"
+					"type": "float"
 				}
 			]
 		},
@@ -216,8 +219,7 @@
 				},
 				{
 					"name": "timeout",
-					"type": "float",
-					"default_value": "inf_neg"
+					"type": "float"
 				}
 			]
 		},
@@ -228,13 +230,11 @@
 			"arguments": [
 				{
 					"name": "message",
-					"type": "String",
-					"default_value": "\"\""
+					"type": "String"
 				},
 				{
 					"name": "timeout",
-					"type": "float",
-					"default_value": "inf_neg"
+					"type": "float"
 				}
 			]
 		},
@@ -245,13 +245,11 @@
 			"arguments": [
 				{
 					"name": "time",
-					"type": "int",
-					"default_value": "1800"
+					"type": "int"
 				},
 				{
 					"name": "timeout",
-					"type": "float",
-					"default_value": "inf_neg"
+					"type": "float"
 				}
 			]
 		},
@@ -262,8 +260,7 @@
 			"arguments": [
 				{
 					"name": "timeout",
-					"type": "float",
-					"default_value": "inf_neg"
+					"type": "float"
 				}
 			]
 		},
@@ -278,13 +275,11 @@
 				},
 				{
 					"name": "quote_msgid",
-					"type": "int",
-					"default_value": "-1"
+					"type": "int"
 				},
 				{
 					"name": "timeout",
-					"type": "float",
-					"default_value": "inf_neg"
+					"type": "float"
 				}
 			]
 		},
@@ -295,8 +290,7 @@
 			"arguments": [
 				{
 					"name": "timeout",
-					"type": "float",
-					"default_value": "inf_neg"
+					"type": "float"
 				}
 			]
 		}

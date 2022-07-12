@@ -6,6 +6,9 @@
 	"tutorials": [
 
 	],
+	"enums": [
+
+	],
 	"constants": [
 
 	],
@@ -27,23 +30,19 @@
 				},
 				{
 					"name": "sender_id",
-					"type": "int",
-					"default_value": "-1"
+					"type": "int"
 				},
 				{
 					"name": "time",
-					"type": "int",
-					"default_value": "0"
+					"type": "int"
 				},
 				{
 					"name": "sender_name",
-					"type": "String",
-					"default_value": "\"\""
+					"type": "String"
 				},
 				{
 					"name": "message_chain",
-					"type": "MessageChain",
-					"default_value": "null"
+					"type": "MessageChain"
 				}
 			]
 		},

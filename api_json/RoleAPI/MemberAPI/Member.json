@@ -6,6 +6,12 @@
 	"tutorials": [
 
 	],
+	"enums": [
+		{
+			"name": "Role",
+			"description": "这是代表了个体成员类型的枚举，在进行类型判断相关操作时可在转为整数后用于对比 [br][br]如\"get_role() == Member.Role.FRIEND\"可判断个体成员是否为好友"
+		}
+	],
 	"constants": [
 		{
 			"name": "FRIEND",
@@ -38,8 +44,7 @@
 				},
 				{
 					"name": "role",
-					"type": "int",
-					"default_value": "0"
+					"type": "int"
 				}
 			]
 		},
@@ -54,8 +59,7 @@
 				},
 				{
 					"name": "role",
-					"type": "int",
-					"default_value": "0"
+					"type": "int"
 				}
 			]
 		},
@@ -147,8 +151,7 @@
 			"arguments": [
 				{
 					"name": "timeout",
-					"type": "float",
-					"default_value": "inf_neg"
+					"type": "float"
 				}
 			]
 		},
@@ -163,13 +166,11 @@
 				},
 				{
 					"name": "quote_msgid",
-					"type": "int",
-					"default_value": "-1"
+					"type": "int"
 				},
 				{
 					"name": "timeout",
-					"type": "float",
-					"default_value": "inf_neg"
+					"type": "float"
 				}
 			]
 		},
@@ -180,8 +181,7 @@
 			"arguments": [
 				{
 					"name": "timeout",
-					"type": "float",
-					"default_value": "inf_neg"
+					"type": "float"
 				}
 			]
 		},
@@ -192,8 +192,7 @@
 			"arguments": [
 				{
 					"name": "timeout",
-					"type": "float",
-					"default_value": "inf_neg"
+					"type": "float"
 				}
 			]
 		}

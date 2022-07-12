@@ -6,6 +6,12 @@
 	"tutorials": [
 
 	],
+	"enums": [
+		{
+			"name": "ReasonType",
+			"description": "机器人账号的离线原因类型的枚举"
+		}
+	],
 	"constants": [
 		{
 			"name": "ACTIVE",

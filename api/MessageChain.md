@@ -71,7 +71,7 @@ RainyBot的消息链类，通常代表一个对应实例，为多个不同类型
   
 ---  
   
-- Array **get_message_array([Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html) types, [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html) exclude=false, [int](https://docs.godotengine.org/en/latest/classes/class_int.html) max_size=-1)**  
+- Array **get_message_array([Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html) types, [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html) exclude, [int](https://docs.godotengine.org/en/latest/classes/class_int.html) max_size)**  
   
 根据指定的条件，来从消息链实例中获取由符合条件的消息类实例组成的数组   
   
@@ -85,7 +85,7 @@ RainyBot的消息链类，通常代表一个对应实例，为多个不同类型
   
 ---  
   
-- String **get_message_text([Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html) types, [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html) exclude=false)**  
+- String **get_message_text([Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html) types, [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html) exclude)**  
   
 根据指定的条件，来从消息链实例中获取由符合条件的消息类实例转换并拼接而成的单个字符串   
   
@@ -121,7 +121,7 @@ RainyBot的消息链类，通常代表一个对应实例，为多个不同类型
   
 ---  
   
-- BotRequestResult **set_essence([float](https://docs.godotengine.org/en/latest/classes/class_float.html) timeout=-INF)**  
+- BotRequestResult **set_essence([float](https://docs.godotengine.org/en/latest/classes/class_float.html) timeout)**  
   
 将消息链实例对应的消息设为群精华消息，机器人需要为消息对应群聊的管理员或群主   
   
@@ -133,7 +133,7 @@ RainyBot的消息链类，通常代表一个对应实例，为多个不同类型
   
 ---  
   
-- BotRequestResult **recall([float](https://docs.godotengine.org/en/latest/classes/class_float.html) timeout=-INF)**  
+- BotRequestResult **recall([float](https://docs.godotengine.org/en/latest/classes/class_float.html) timeout)**  
   
 将消息链实例对应的消息撤回，多数情况下需要为发送时间两分钟以内的消息   
   

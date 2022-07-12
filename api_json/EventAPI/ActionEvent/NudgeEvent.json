@@ -6,6 +6,12 @@
 	"tutorials": [
 
 	],
+	"enums": [
+		{
+			"name": "SubjectType",
+			"description": "戳一戳事件发生的上下文位置类型，可以是好友聊天或群聊"
+		}
+	],
 	"constants": [
 		{
 			"name": "FRIEND",

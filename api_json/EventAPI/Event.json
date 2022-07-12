@@ -15,6 +15,9 @@
 	"tutorials": [
 
 	],
+	"enums": [
+
+	],
 	"constants": [
 		{
 			"name": "ACTION",

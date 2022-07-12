@@ -17,6 +17,9 @@
 	"tutorials": [
 
 	],
+	"enums": [
+
+	],
 	"constants": [
 		{
 			"name": "BOT_JOIN",

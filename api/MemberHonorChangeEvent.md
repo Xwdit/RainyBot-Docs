@@ -2,16 +2,6 @@
   
 **继承自:** [GroupMemberEvent](GroupMemberEvent.md)  
   
-## 常量/枚举  
-  
-- **ActionType.ACHIEVE** = **0**  
-  
----  
-  
-- **ActionType.LOST** = **1**  
-  
----  
-  
 ## 方法 
   
 - MemberHonorChangeEvent **init_meta([Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html) dic)**  

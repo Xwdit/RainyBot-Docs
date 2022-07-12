@@ -6,6 +6,9 @@
 	"tutorials": [
 
 	],
+	"enums": [
+
+	],
 	"constants": [
 
 	],
@@ -54,18 +57,15 @@
 				},
 				{
 					"name": "quote",
-					"type": "bool",
-					"default_value": "false"
+					"type": "bool"
 				},
 				{
 					"name": "at",
-					"type": "bool",
-					"default_value": "false"
+					"type": "bool"
 				},
 				{
 					"name": "timeout",
-					"type": "float",
-					"default_value": "inf_neg"
+					"type": "float"
 				}
 			]
 		}

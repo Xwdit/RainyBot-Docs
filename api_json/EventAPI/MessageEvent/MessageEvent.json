@@ -13,6 +13,9 @@
 	"tutorials": [
 
 	],
+	"enums": [
+
+	],
 	"constants": [
 		{
 			"name": "FRIEND",
@@ -71,13 +74,11 @@
 				},
 				{
 					"name": "exclude",
-					"type": "bool",
-					"default_value": "false"
+					"type": "bool"
 				},
 				{
 					"name": "max_size",
-					"type": "int",
-					"default_value": "-1"
+					"type": "int"
 				}
 			]
 		},
@@ -92,8 +93,7 @@
 				},
 				{
 					"name": "exclude",
-					"type": "bool",
-					"default_value": "false"
+					"type": "bool"
 				}
 			]
 		},
@@ -132,13 +132,11 @@
 				},
 				{
 					"name": "quote",
-					"type": "bool",
-					"default_value": "false"
+					"type": "bool"
 				},
 				{
 					"name": "at",
-					"type": "bool",
-					"default_value": "false"
+					"type": "bool"
 				}
 			]
 		}
