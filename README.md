@@ -30,6 +30,7 @@
 ## RainyBot-API
 
 本储存库为RainyBot机器人框架的API开发文档，记录了各类可用于插件开发中的交互接口
+[点此直达API文档目录](https://github.com/Xwdit/RainyBot-API/tree/main/api#rainybot-api%E7%9B%AE%E5%BD%95)
 
 
 ## 开始使用
