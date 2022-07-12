@@ -2,7 +2,7 @@
 
 * [主页](README.md)
   * [安装与运行](docs/install.md)
-  * [开始使用](readme/kai-shi-shi-yong.md)
+  * [开始使用](docs/start.md)
   * [RainyBot API](docs/api/README.md)
     * [类: ActionEvent](docs/api/ActionEvent.md)
     * [类: AppMessage](docs/api/AppMessage.md)
