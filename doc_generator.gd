@@ -34,7 +34,7 @@ func build_docs(path:String,target_path:String,type:int,keep_dir_struct:bool=tru
 				_save_doc_json(_path,doc_dic[doc])
 			DocType.MARKDOWN:
 				_save_doc_markdown(_path,doc_dic[doc],doc_dic)
-	if type == DocType.MARKDOWN:
+	if !keep_dir_struct and type == DocType.MARKDOWN:
 		save_doc_markdown_catalog(target_path,doc_dic)
 		
 
