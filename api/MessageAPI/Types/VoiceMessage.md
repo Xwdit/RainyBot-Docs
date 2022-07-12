@@ -2,7 +2,7 @@
   
 **继承自:** Message  
   
-# 方法 
+## 方法 
   
 - **init_id(String voice_id)**  
   

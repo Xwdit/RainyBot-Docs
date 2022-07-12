@@ -4,7 +4,7 @@
   
 RainyBot控制台类，包含了各类与控制台输出直接相关的功能  
   
-# 方法 
+## 方法 
   
 - **print_text(Variant text)**  
   

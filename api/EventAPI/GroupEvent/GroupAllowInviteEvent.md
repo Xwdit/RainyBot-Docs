@@ -2,7 +2,7 @@
   
 **继承自:** GroupEvent  
   
-# 方法 
+## 方法 
   
 - **init_meta(Dictionary dic)**  
   

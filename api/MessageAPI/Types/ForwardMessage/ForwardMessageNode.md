@@ -2,7 +2,7 @@
   
 **继承自:** MessageAPI  
   
-# 方法 
+## 方法 
   
 - **init(int message_id, int sender_id=-1, int time=0, String sender_name="", MessageChain message_chain=null)**  
   

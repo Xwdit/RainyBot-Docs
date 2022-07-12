@@ -4,7 +4,7 @@
   
 RainyBot的Bot自身在群组中被禁言事件类，其实例记录了与一次Bot自身在群组中被禁言事件相关的数据  
   
-# 方法 
+## 方法 
   
 - **init_meta(Dictionary dic)**  
   

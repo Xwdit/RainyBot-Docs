@@ -4,7 +4,7 @@
   
 RainyBot的戳一戳事件类，记录了聊天中的一个戳一戳事件的相关数据  
   
-# 常量/枚举  
+## 常量/枚举  
   
 - **SubjectType.FRIEND** = **0**  
   
@@ -18,7 +18,7 @@ RainyBot的戳一戳事件类，记录了聊天中的一个戳一戳事件的相
   
 ---  
   
-# 方法 
+## 方法 
   
 - **init_meta(Dictionary dic)**  
   

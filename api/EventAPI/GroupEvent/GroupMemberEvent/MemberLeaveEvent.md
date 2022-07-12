@@ -2,7 +2,7 @@
   
 **继承自:** GroupMemberEvent  
   
-# 常量/枚举  
+## 常量/枚举  
   
 - **ReasonType.QUIT** = **0**  
   
@@ -12,7 +12,7 @@
   
 ---  
   
-# 方法 
+## 方法 
   
 - **init_meta(Dictionary dic, int reason_type)**  
   

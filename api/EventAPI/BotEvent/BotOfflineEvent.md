@@ -4,7 +4,7 @@
   
 RainyBot的机器人账号离线事件类，其实例记录了一次机器人账号离线事件的相关数据  
   
-# 常量/枚举  
+## 常量/枚举  
   
 - **ReasonType.ACTIVE** = **0**  
   
@@ -24,7 +24,7 @@ RainyBot的机器人账号离线事件类，其实例记录了一次机器人账
   
 ---  
   
-# 方法 
+## 方法 
   
 - **init_meta(Dictionary dic, int reason_type)**  
   

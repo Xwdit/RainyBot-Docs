@@ -4,7 +4,7 @@
   
 RainyBot的Bot自身退出群组事件类，记录了Bot退出某个群组相关事件的数据  
   
-# 常量/枚举  
+## 常量/枚举  
   
 - **ReasonType.ACTIVE** = **0**  
   
@@ -18,7 +18,7 @@ Bot被踢出群组
   
 ---  
   
-# 方法 
+## 方法 
   
 - **init_meta(Dictionary dic, int reason_type)**  
   

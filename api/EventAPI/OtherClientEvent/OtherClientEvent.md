@@ -4,7 +4,7 @@
   
 **子类:** ["OtherClientOfflineEvent", "OtherClientOnlineEvent"]  
   
-# 常量/枚举  
+## 常量/枚举  
   
 - **Type.ONLINE** = **0**  
   
@@ -14,7 +14,7 @@
   
 ---  
   
-# 方法 
+## 方法 
   
 - **get_client_id()**  
   

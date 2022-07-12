@@ -97,18 +97,18 @@ func _save_doc_markdown(path:String,doc_dic:Dictionary):
 		md_text += "%s  \n" % doc_dic.brief_description
 		md_text += "  \n"
 	if doc_dic.description != "":
-		md_text += "# 描述  \n"
+		md_text += "## 描述  \n"
 		md_text += "  \n"
 		md_text += "%s  \n" % doc_dic.description
 		md_text += "  \n"
 	if !doc_dic.tutorials.is_empty():
-		md_text += "# 教程  \n"
+		md_text += "## 教程  \n"
 		md_text += "  \n"
 		for t in doc_dic.tutorials:
 			md_text += "- [%s](%s)  \n" % [t.title,t.link]
 			md_text += "  \n"
 	if !doc_dic.signals.is_empty():
-		md_text += "# 信号 \n"
+		md_text += "## 信号 \n"
 		md_text += "  \n"
 		for s in doc_dic.signals:
 			md_text += "- **%s(" % [s.name]
@@ -126,7 +126,7 @@ func _save_doc_markdown(path:String,doc_dic:Dictionary):
 			md_text += "---  \n"
 			md_text += "  \n"
 	if !doc_dic.constants.is_empty():
-		md_text += "# 常量/枚举  \n"
+		md_text += "## 常量/枚举  \n"
 		md_text += "  \n"
 		for v in doc_dic.constants:
 			if v.enumeration != "":
@@ -140,7 +140,7 @@ func _save_doc_markdown(path:String,doc_dic:Dictionary):
 			md_text += "---  \n"
 			md_text += "  \n"
 	if !doc_dic.variables.is_empty():
-		md_text += "# 属性  \n"
+		md_text += "## 属性  \n"
 		md_text += "  \n"
 		for v in doc_dic.variables:
 			if v.enumeration != "":
@@ -163,7 +163,7 @@ func _save_doc_markdown(path:String,doc_dic:Dictionary):
 			md_text += "---  \n"
 			md_text += "  \n"
 	if !doc_dic.methods.is_empty():
-		md_text += "# 方法 \n"
+		md_text += "## 方法 \n"
 		md_text += "  \n"
 		for m in doc_dic.methods:
 			md_text += "- **%s(" % [m.name]

@@ -4,7 +4,7 @@
   
 **子类:** ["FriendMessageEvent", "GroupMessageEvent", "OtherClientMessageEvent", "StrangerMessageEvent", "TempMessageEvent"]  
   
-# 常量/枚举  
+## 常量/枚举  
   
 - **Type.FRIEND** = **0**  
   
@@ -26,7 +26,7 @@
   
 ---  
   
-# 方法 
+## 方法 
   
 - **get_message_chain()**  
   

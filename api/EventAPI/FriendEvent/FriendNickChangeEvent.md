@@ -4,7 +4,7 @@
   
 RainyBot的好友昵称变更事件类，记录了某次好友昵称变更事件的相关数据  
   
-# 方法 
+## 方法 
   
 - **init_meta(Dictionary dic)**  
   

@@ -4,7 +4,7 @@
   
 **子类:** ["ActionEvent", "BotEvent", "FriendEvent", "GroupEvent", "MessageEvent", "OtherClientEvent", "RequestEvent"]  
   
-# 常量/枚举  
+## 常量/枚举  
   
 - **Category.ACTION** = **0**  
   
@@ -34,7 +34,7 @@
   
 ---  
   
-# 方法 
+## 方法 
   
 - **get_metadata()**  
   

@@ -4,7 +4,7 @@
   
 RainyBot的好友消息撤回事件类，记录了某次好友消息撤回事件的相关数据  
   
-# 方法 
+## 方法 
   
 - **init_meta(Dictionary dic)**  
   

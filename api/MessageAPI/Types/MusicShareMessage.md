@@ -2,7 +2,7 @@
   
 **继承自:** Message  
   
-# 方法 
+## 方法 
   
 - **init(String kind, String title, String summary, String jump_url, String picture_url, String music_url, String brief)**  
   

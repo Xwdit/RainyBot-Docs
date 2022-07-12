@@ -4,7 +4,7 @@
   
 RainyBot的实用工具类，其中提供了各种类型的便捷功能  
   
-# 方法 
+## 方法 
   
 - **get_formated_time()**  
   

@@ -4,7 +4,7 @@
   
 **子类:** ["GroupAllowAnonyChatEvent", "GroupAllowConfessTalkEvent", "GroupAllowInviteEvent", "GroupAnnounceChangeEvent", "GroupBotEvent", "GroupMemberEvent", "GroupMuteAllEvent", "GroupNameChangeEvent", "GroupRecallEvent"]  
   
-# 常量/枚举  
+## 常量/枚举  
   
 - **Type.BOT_JOIN** = **0**  
   

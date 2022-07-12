@@ -2,7 +2,7 @@
   
 **继承自:** MessageAPI  
   
-# 方法 
+## 方法 
   
 - **init(Variant msg_node)**  
   
