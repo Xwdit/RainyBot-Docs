@@ -1,7 +1,7 @@
 # Table of contents
 
 * [主页](README.md)
-* [RainyBot API目录](api/README.md)
+* [RainyBot API](api/README.md)
   * [类: ActionEvent](api/ActionEvent.md)
   * [类: AppMessage](api/AppMessage.md)
   * [类: AtAllMessage](api/AtAllMessage.md)
