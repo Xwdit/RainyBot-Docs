@@ -1,0 +1,184 @@
+{
+	"name": "FlashImageMessage",
+	"inherits": "Message",
+	"brief_description": "",
+	"description": "",
+	"tutorials": [
+
+	],
+	"constants": [
+
+	],
+	"signals": [
+
+	],
+	"variables": [
+
+	],
+	"methods": [
+		{
+			"name": "init",
+			"return_type": "FlashImageMessage",
+			"description": "",
+			"arguments": [
+				{
+					"name": "image",
+					"type": "Image"
+				}
+			]
+		},
+		{
+			"name": "init_gif",
+			"return_type": "FlashImageMessage",
+			"description": "",
+			"arguments": [
+				{
+					"name": "gif_image",
+					"type": "GifImage"
+				}
+			]
+		},
+		{
+			"name": "init_id",
+			"return_type": "FlashImageMessage",
+			"description": "",
+			"arguments": [
+				{
+					"name": "image_id",
+					"type": "String"
+				}
+			]
+		},
+		{
+			"name": "init_url",
+			"return_type": "FlashImageMessage",
+			"description": "",
+			"arguments": [
+				{
+					"name": "image_url",
+					"type": "String"
+				}
+			]
+		},
+		{
+			"name": "init_path",
+			"return_type": "FlashImageMessage",
+			"description": "",
+			"arguments": [
+				{
+					"name": "image_path",
+					"type": "String"
+				}
+			]
+		},
+		{
+			"name": "init_base64",
+			"return_type": "FlashImageMessage",
+			"description": "",
+			"arguments": [
+				{
+					"name": "image_base64",
+					"type": "String"
+				}
+			]
+		},
+		{
+			"name": "init_meta",
+			"return_type": "FlashImageMessage",
+			"description": "",
+			"arguments": [
+				{
+					"name": "dic",
+					"type": "Dictionary"
+				}
+			]
+		},
+		{
+			"name": "get_image_id",
+			"return_type": "String",
+			"description": "",
+			"arguments": [
+
+			]
+		},
+		{
+			"name": "set_image_id",
+			"return_type": "void",
+			"description": "",
+			"arguments": [
+				{
+					"name": "image_id",
+					"type": "String"
+				}
+			]
+		},
+		{
+			"name": "get_image_url",
+			"return_type": "String",
+			"description": "",
+			"arguments": [
+
+			]
+		},
+		{
+			"name": "set_image_url",
+			"return_type": "void",
+			"description": "",
+			"arguments": [
+				{
+					"name": "image_url",
+					"type": "String"
+				}
+			]
+		},
+		{
+			"name": "get_image_path",
+			"return_type": "String",
+			"description": "",
+			"arguments": [
+
+			]
+		},
+		{
+			"name": "set_image_path",
+			"return_type": "void",
+			"description": "",
+			"arguments": [
+				{
+					"name": "image_path",
+					"type": "String"
+				}
+			]
+		},
+		{
+			"name": "get_image_base64",
+			"return_type": "String",
+			"description": "",
+			"arguments": [
+
+			]
+		},
+		{
+			"name": "set_image_base64",
+			"return_type": "void",
+			"description": "",
+			"arguments": [
+				{
+					"name": "image_base64",
+					"type": "String"
+				}
+			]
+		},
+		{
+			"name": "get_as_text",
+			"return_type": "String",
+			"description": "",
+			"arguments": [
+
+			]
+		}
+	],
+	"childs": [
+
+	]
+}

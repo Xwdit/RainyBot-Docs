@@ -1,0 +1,34 @@
+{
+	"name": "OtherClientOfflineEvent",
+	"inherits": "OtherClientEvent",
+	"brief_description": "",
+	"description": "",
+	"tutorials": [
+
+	],
+	"constants": [
+
+	],
+	"signals": [
+
+	],
+	"variables": [
+
+	],
+	"methods": [
+		{
+			"name": "init_meta",
+			"return_type": "OtherClientOfflineEvent",
+			"description": "",
+			"arguments": [
+				{
+					"name": "dic",
+					"type": "Dictionary"
+				}
+			]
+		}
+	],
+	"childs": [
+
+	]
+}

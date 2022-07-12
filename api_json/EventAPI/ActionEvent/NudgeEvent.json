@@ -1,0 +1,104 @@
+{
+	"name": "NudgeEvent",
+	"inherits": "ActionEvent",
+	"brief_description": "RainyBot的戳一戳事件类，记录了聊天中的一个戳一戳事件的相关数据",
+	"description": "",
+	"tutorials": [
+
+	],
+	"constants": [
+		{
+			"name": "FRIEND",
+			"value": "0",
+			"enumeration": "SubjectType",
+			"description": "事件发生在好友聊天中"
+		},
+		{
+			"name": "GROUP",
+			"value": "1",
+			"enumeration": "SubjectType",
+			"description": "事件发生在群组聊天中"
+		}
+	],
+	"signals": [
+
+	],
+	"variables": [
+
+	],
+	"methods": [
+		{
+			"name": "init_meta",
+			"return_type": "NudgeEvent",
+			"description": "通过机器人协议后端的元数据字典构造一个此类的实例，仅当你知道自己在做什么时才使用",
+			"arguments": [
+				{
+					"name": "dic",
+					"type": "Dictionary"
+				}
+			]
+		},
+		{
+			"name": "get_sender_id",
+			"return_type": "int",
+			"description": "获取戳一戳事件的发送者ID",
+			"arguments": [
+
+			]
+		},
+		{
+			"name": "get_subject_id",
+			"return_type": "int",
+			"description": "获取戳一戳事件发生的上下文ID，例如在群聊中时应为群号",
+			"arguments": [
+
+			]
+		},
+		{
+			"name": "get_target_id",
+			"return_type": "int",
+			"description": "获取戳一戳事件的接收者(目标)的ID",
+			"arguments": [
+
+			]
+		},
+		{
+			"name": "get_subject_type",
+			"return_type": "int",
+			"description": "获取戳一戳事件发生的上下文位置类型，可用类型请参见上方的SubjectType枚举",
+			"arguments": [
+
+			]
+		},
+		{
+			"name": "is_subject_type",
+			"return_type": "bool",
+			"description": "用于判断戳一戳事件是否发生在指定的上下文位置类型",
+			"arguments": [
+				{
+					"name": "type",
+					"type": "int"
+				}
+			]
+		},
+		{
+			"name": "get_action_text",
+			"return_type": "String",
+			"description": "获取戳一戳事件的动作文本",
+			"arguments": [
+
+			]
+		},
+		{
+			"name": "get_suffix_text",
+			"return_type": "String",
+			"description": "获取戳一戳事件的后缀文本",
+			"arguments": [
+
+			]
+		}
+	],
+	"childs": [
+
+	]
+}

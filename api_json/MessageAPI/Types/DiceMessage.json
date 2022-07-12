@@ -1,0 +1,72 @@
+{
+	"name": "DiceMessage",
+	"inherits": "Message",
+	"brief_description": "",
+	"description": "",
+	"tutorials": [
+
+	],
+	"constants": [
+
+	],
+	"signals": [
+
+	],
+	"variables": [
+
+	],
+	"methods": [
+		{
+			"name": "init",
+			"return_type": "DiceMessage",
+			"description": "",
+			"arguments": [
+				{
+					"name": "value",
+					"type": "int"
+				}
+			]
+		},
+		{
+			"name": "init_meta",
+			"return_type": "DiceMessage",
+			"description": "",
+			"arguments": [
+				{
+					"name": "dic",
+					"type": "Dictionary"
+				}
+			]
+		},
+		{
+			"name": "get_dice_value",
+			"return_type": "int",
+			"description": "",
+			"arguments": [
+
+			]
+		},
+		{
+			"name": "set_dice_value",
+			"return_type": "void",
+			"description": "",
+			"arguments": [
+				{
+					"name": "value",
+					"type": "int"
+				}
+			]
+		},
+		{
+			"name": "get_as_text",
+			"return_type": "String",
+			"description": "",
+			"arguments": [
+
+			]
+		}
+	],
+	"childs": [
+
+	]
+}

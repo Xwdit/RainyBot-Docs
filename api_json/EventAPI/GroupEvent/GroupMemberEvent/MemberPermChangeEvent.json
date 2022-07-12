@@ -1,0 +1,66 @@
+{
+	"name": "MemberPermChangeEvent",
+	"inherits": "GroupMemberEvent",
+	"brief_description": "",
+	"description": "",
+	"tutorials": [
+
+	],
+	"constants": [
+
+	],
+	"signals": [
+
+	],
+	"variables": [
+
+	],
+	"methods": [
+		{
+			"name": "init_meta",
+			"return_type": "MemberPermChangeEvent",
+			"description": "",
+			"arguments": [
+				{
+					"name": "dic",
+					"type": "Dictionary"
+				}
+			]
+		},
+		{
+			"name": "get_member",
+			"return_type": "GroupMember",
+			"description": "",
+			"arguments": [
+
+			]
+		},
+		{
+			"name": "get_group",
+			"return_type": "Group",
+			"description": "",
+			"arguments": [
+
+			]
+		},
+		{
+			"name": "get_origin_perm",
+			"return_type": "int",
+			"description": "",
+			"arguments": [
+
+			]
+		},
+		{
+			"name": "get_current_perm",
+			"return_type": "int",
+			"description": "",
+			"arguments": [
+
+			]
+		}
+	],
+	"childs": [
+
+	]
+}

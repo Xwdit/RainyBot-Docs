@@ -1,0 +1,82 @@
+{
+	"name": "QuoteMessage",
+	"inherits": "Message",
+	"brief_description": "",
+	"description": "",
+	"tutorials": [
+
+	],
+	"constants": [
+
+	],
+	"signals": [
+
+	],
+	"variables": [
+
+	],
+	"methods": [
+		{
+			"name": "init_meta",
+			"return_type": "QuoteMessage",
+			"description": "",
+			"arguments": [
+				{
+					"name": "dic",
+					"type": "Dictionary"
+				}
+			]
+		},
+		{
+			"name": "get_message_id",
+			"return_type": "int",
+			"description": "",
+			"arguments": [
+
+			]
+		},
+		{
+			"name": "get_group_id",
+			"return_type": "int",
+			"description": "",
+			"arguments": [
+
+			]
+		},
+		{
+			"name": "get_sender_id",
+			"return_type": "int",
+			"description": "",
+			"arguments": [
+
+			]
+		},
+		{
+			"name": "get_target_id",
+			"return_type": "int",
+			"description": "",
+			"arguments": [
+
+			]
+		},
+		{
+			"name": "get_message_chain",
+			"return_type": "MessageChain",
+			"description": "",
+			"arguments": [
+
+			]
+		},
+		{
+			"name": "get_as_text",
+			"return_type": "String",
+			"description": "",
+			"arguments": [
+
+			]
+		}
+	],
+	"childs": [
+
+	]
+}

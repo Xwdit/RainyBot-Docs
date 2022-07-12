@@ -1,0 +1,68 @@
+{
+	"name": "StrangerMessageEvent",
+	"inherits": "MessageEvent",
+	"brief_description": "",
+	"description": "",
+	"tutorials": [
+
+	],
+	"constants": [
+
+	],
+	"signals": [
+
+	],
+	"variables": [
+
+	],
+	"methods": [
+		{
+			"name": "init_meta",
+			"return_type": "StrangerMessageEvent",
+			"description": "",
+			"arguments": [
+				{
+					"name": "dic",
+					"type": "Dictionary"
+				}
+			]
+		},
+		{
+			"name": "get_sender",
+			"return_type": "Member",
+			"description": "",
+			"arguments": [
+
+			]
+		},
+		{
+			"name": "reply",
+			"return_type": "BotRequestResult",
+			"description": "",
+			"arguments": [
+				{
+					"name": "msg",
+					"type": "Variant"
+				},
+				{
+					"name": "quote",
+					"type": "bool",
+					"default_value": "false"
+				},
+				{
+					"name": "at",
+					"type": "bool",
+					"default_value": "false"
+				},
+				{
+					"name": "timeout",
+					"type": "float",
+					"default_value": "inf_neg"
+				}
+			]
+		}
+	],
+	"childs": [
+
+	]
+}

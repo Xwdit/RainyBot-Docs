@@ -1,0 +1,24 @@
+{
+	"childs": [
+		"Event"
+	],
+	"name": "EventAPI",
+	"inherits": "RainyBotAPI",
+	"brief_description": "",
+	"description": "",
+	"tutorials": [
+
+	],
+	"constants": [
+
+	],
+	"signals": [
+
+	],
+	"variables": [
+
+	],
+	"methods": [
+
+	]
+}

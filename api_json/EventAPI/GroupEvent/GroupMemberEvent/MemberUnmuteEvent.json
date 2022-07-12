@@ -1,0 +1,58 @@
+{
+	"name": "MemberUnmuteEvent",
+	"inherits": "GroupMemberEvent",
+	"brief_description": "",
+	"description": "",
+	"tutorials": [
+
+	],
+	"constants": [
+
+	],
+	"signals": [
+
+	],
+	"variables": [
+
+	],
+	"methods": [
+		{
+			"name": "init_meta",
+			"return_type": "MemberUnmuteEvent",
+			"description": "",
+			"arguments": [
+				{
+					"name": "dic",
+					"type": "Dictionary"
+				}
+			]
+		},
+		{
+			"name": "get_member",
+			"return_type": "GroupMember",
+			"description": "",
+			"arguments": [
+
+			]
+		},
+		{
+			"name": "get_operator",
+			"return_type": "GroupMember",
+			"description": "",
+			"arguments": [
+
+			]
+		},
+		{
+			"name": "get_group",
+			"return_type": "Group",
+			"description": "",
+			"arguments": [
+
+			]
+		}
+	],
+	"childs": [
+
+	]
+}

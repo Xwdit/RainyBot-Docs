@@ -1,0 +1,64 @@
+{
+	"name": "ForwardMessage",
+	"inherits": "Message",
+	"brief_description": "",
+	"description": "",
+	"tutorials": [
+
+	],
+	"constants": [
+
+	],
+	"signals": [
+
+	],
+	"variables": [
+
+	],
+	"methods": [
+		{
+			"name": "init",
+			"return_type": "ForwardMessage",
+			"description": "",
+			"arguments": [
+				{
+					"name": "node_list",
+					"type": "ForwardMessageNodeList"
+				}
+			]
+		},
+		{
+			"name": "init_meta",
+			"return_type": "ForwardMessage",
+			"description": "",
+			"arguments": [
+				{
+					"name": "dic",
+					"type": "Dictionary"
+				}
+			]
+		},
+		{
+			"name": "get_node_list",
+			"return_type": "ForwardMessageNodeList",
+			"description": "",
+			"arguments": [
+
+			]
+		},
+		{
+			"name": "set_node_list",
+			"return_type": "void",
+			"description": "",
+			"arguments": [
+				{
+					"name": "node_list",
+					"type": "ForwardMessageNodeList"
+				}
+			]
+		}
+	],
+	"childs": [
+
+	]
+}

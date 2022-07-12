@@ -1,0 +1,72 @@
+{
+	"name": "TextMessage",
+	"inherits": "Message",
+	"brief_description": "",
+	"description": "",
+	"tutorials": [
+
+	],
+	"constants": [
+
+	],
+	"signals": [
+
+	],
+	"variables": [
+
+	],
+	"methods": [
+		{
+			"name": "init",
+			"return_type": "TextMessage",
+			"description": "",
+			"arguments": [
+				{
+					"name": "text",
+					"type": "String"
+				}
+			]
+		},
+		{
+			"name": "init_meta",
+			"return_type": "TextMessage",
+			"description": "",
+			"arguments": [
+				{
+					"name": "dic",
+					"type": "Dictionary"
+				}
+			]
+		},
+		{
+			"name": "get_message_text",
+			"return_type": "String",
+			"description": "",
+			"arguments": [
+
+			]
+		},
+		{
+			"name": "set_message_text",
+			"return_type": "void",
+			"description": "",
+			"arguments": [
+				{
+					"name": "text",
+					"type": "String"
+				}
+			]
+		},
+		{
+			"name": "get_as_text",
+			"return_type": "String",
+			"description": "",
+			"arguments": [
+
+			]
+		}
+	],
+	"childs": [
+
+	]
+}

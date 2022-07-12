@@ -1,0 +1,28 @@
+{
+	"childs": [
+		"BotJoinGroupEvent",
+		"BotLeaveGroupEvent",
+		"BotMuteEvent",
+		"BotPermChangeEvent",
+		"BotUnmuteEvent"
+	],
+	"name": "GroupBotEvent",
+	"inherits": "GroupEvent",
+	"brief_description": "RainyBot的Bot自身群组事件类，与Bot自身相关的群组事件通常直接或间接继承此类",
+	"description": "",
+	"tutorials": [
+
+	],
+	"constants": [
+
+	],
+	"signals": [
+
+	],
+	"variables": [
+
+	],
+	"methods": [
+
+	]
+}

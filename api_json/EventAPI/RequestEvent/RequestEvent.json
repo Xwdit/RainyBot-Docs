@@ -1,0 +1,82 @@
+{
+	"childs": [
+		"GroupInviteRequestEvent",
+		"MemberJoinRequestEvent",
+		"NewFriendRequestEvent"
+	],
+	"name": "RequestEvent",
+	"inherits": "Event",
+	"brief_description": "",
+	"description": "",
+	"tutorials": [
+
+	],
+	"constants": [
+		{
+			"name": "NEW_FRIEND",
+			"value": "0",
+			"enumeration": "Type",
+			"description": ""
+		},
+		{
+			"name": "MEMBER_JOIN",
+			"value": "1",
+			"enumeration": "Type",
+			"description": ""
+		},
+		{
+			"name": "GROUP_INVITE",
+			"value": "2",
+			"enumeration": "Type",
+			"description": ""
+		}
+	],
+	"signals": [
+
+	],
+	"variables": [
+
+	],
+	"methods": [
+		{
+			"name": "get_event_id",
+			"return_type": "int",
+			"description": "",
+			"arguments": [
+
+			]
+		},
+		{
+			"name": "get_sender_id",
+			"return_type": "int",
+			"description": "",
+			"arguments": [
+
+			]
+		},
+		{
+			"name": "get_sender_name",
+			"return_type": "String",
+			"description": "",
+			"arguments": [
+
+			]
+		},
+		{
+			"name": "get_group_id",
+			"return_type": "int",
+			"description": "",
+			"arguments": [
+
+			]
+		},
+		{
+			"name": "get_request_message",
+			"return_type": "String",
+			"description": "",
+			"arguments": [
+
+			]
+		}
+	]
+}

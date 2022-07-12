@@ -1,0 +1,92 @@
+{
+	"name": "MemberLeaveEvent",
+	"inherits": "GroupMemberEvent",
+	"brief_description": "",
+	"description": "",
+	"tutorials": [
+
+	],
+	"constants": [
+		{
+			"name": "QUIT",
+			"value": "0",
+			"enumeration": "ReasonType",
+			"description": ""
+		},
+		{
+			"name": "KICK",
+			"value": "1",
+			"enumeration": "ReasonType",
+			"description": ""
+		}
+	],
+	"signals": [
+
+	],
+	"variables": [
+
+	],
+	"methods": [
+		{
+			"name": "init_meta",
+			"return_type": "MemberLeaveEvent",
+			"description": "",
+			"arguments": [
+				{
+					"name": "dic",
+					"type": "Dictionary"
+				},
+				{
+					"name": "reason_type",
+					"type": "int"
+				}
+			]
+		},
+		{
+			"name": "get_member",
+			"return_type": "GroupMember",
+			"description": "",
+			"arguments": [
+
+			]
+		},
+		{
+			"name": "get_operator",
+			"return_type": "GroupMember",
+			"description": "",
+			"arguments": [
+
+			]
+		},
+		{
+			"name": "get_group",
+			"return_type": "Group",
+			"description": "",
+			"arguments": [
+
+			]
+		},
+		{
+			"name": "get_reason_type",
+			"return_type": "int",
+			"description": "",
+			"arguments": [
+
+			]
+		},
+		{
+			"name": "is_reason_type",
+			"return_type": "bool",
+			"description": "",
+			"arguments": [
+				{
+					"name": "reason",
+					"type": "int"
+				}
+			]
+		}
+	],
+	"childs": [
+
+	]
+}

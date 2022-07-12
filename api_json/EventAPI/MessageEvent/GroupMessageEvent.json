@@ -1,0 +1,108 @@
+{
+	"name": "GroupMessageEvent",
+	"inherits": "MessageEvent",
+	"brief_description": "",
+	"description": "",
+	"tutorials": [
+
+	],
+	"constants": [
+
+	],
+	"signals": [
+
+	],
+	"variables": [
+
+	],
+	"methods": [
+		{
+			"name": "init_meta",
+			"return_type": "GroupMessageEvent",
+			"description": "",
+			"arguments": [
+				{
+					"name": "dic",
+					"type": "Dictionary"
+				}
+			]
+		},
+		{
+			"name": "get_sender",
+			"return_type": "GroupMember",
+			"description": "",
+			"arguments": [
+
+			]
+		},
+		{
+			"name": "get_group",
+			"return_type": "Group",
+			"description": "",
+			"arguments": [
+
+			]
+		},
+		{
+			"name": "get_group_id",
+			"return_type": "int",
+			"description": "",
+			"arguments": [
+
+			]
+		},
+		{
+			"name": "reply",
+			"return_type": "BotRequestResult",
+			"description": "",
+			"arguments": [
+				{
+					"name": "msg",
+					"type": "Variant"
+				},
+				{
+					"name": "quote",
+					"type": "bool",
+					"default_value": "false"
+				},
+				{
+					"name": "at",
+					"type": "bool",
+					"default_value": "false"
+				},
+				{
+					"name": "timeout",
+					"type": "float",
+					"default_value": "inf_neg"
+				}
+			]
+		},
+		{
+			"name": "recall",
+			"return_type": "BotRequestResult",
+			"description": "",
+			"arguments": [
+
+			]
+		},
+		{
+			"name": "set_essence",
+			"return_type": "BotRequestResult",
+			"description": "",
+			"arguments": [
+
+			]
+		},
+		{
+			"name": "is_at_bot",
+			"return_type": "bool",
+			"description": "",
+			"arguments": [
+
+			]
+		}
+	],
+	"childs": [
+
+	]
+}

@@ -1,0 +1,146 @@
+{
+	"childs": [
+		"FriendMessageEvent",
+		"GroupMessageEvent",
+		"OtherClientMessageEvent",
+		"StrangerMessageEvent",
+		"TempMessageEvent"
+	],
+	"name": "MessageEvent",
+	"inherits": "Event",
+	"brief_description": "",
+	"description": "",
+	"tutorials": [
+
+	],
+	"constants": [
+		{
+			"name": "FRIEND",
+			"value": "0",
+			"enumeration": "Type",
+			"description": ""
+		},
+		{
+			"name": "GROUP",
+			"value": "1",
+			"enumeration": "Type",
+			"description": ""
+		},
+		{
+			"name": "TEMP",
+			"value": "2",
+			"enumeration": "Type",
+			"description": ""
+		},
+		{
+			"name": "STRANGER",
+			"value": "3",
+			"enumeration": "Type",
+			"description": ""
+		},
+		{
+			"name": "OTHER_CLIENT",
+			"value": "4",
+			"enumeration": "Type",
+			"description": ""
+		}
+	],
+	"signals": [
+
+	],
+	"variables": [
+
+	],
+	"methods": [
+		{
+			"name": "get_message_chain",
+			"return_type": "MessageChain",
+			"description": "",
+			"arguments": [
+
+			]
+		},
+		{
+			"name": "get_message_array",
+			"return_type": "Array",
+			"description": "",
+			"arguments": [
+				{
+					"name": "types",
+					"type": "Variant"
+				},
+				{
+					"name": "exclude",
+					"type": "bool",
+					"default_value": "false"
+				},
+				{
+					"name": "max_size",
+					"type": "int",
+					"default_value": "-1"
+				}
+			]
+		},
+		{
+			"name": "get_message_text",
+			"return_type": "String",
+			"description": "",
+			"arguments": [
+				{
+					"name": "types",
+					"type": "Variant"
+				},
+				{
+					"name": "exclude",
+					"type": "bool",
+					"default_value": "false"
+				}
+			]
+		},
+		{
+			"name": "get_message_id",
+			"return_type": "int",
+			"description": "",
+			"arguments": [
+
+			]
+		},
+		{
+			"name": "get_message_timestamp",
+			"return_type": "int",
+			"description": "",
+			"arguments": [
+
+			]
+		},
+		{
+			"name": "get_sender_id",
+			"return_type": "int",
+			"description": "",
+			"arguments": [
+
+			]
+		},
+		{
+			"name": "reply",
+			"return_type": "BotRequestResult",
+			"description": "",
+			"arguments": [
+				{
+					"name": "msg",
+					"type": "Variant"
+				},
+				{
+					"name": "quote",
+					"type": "bool",
+					"default_value": "false"
+				},
+				{
+					"name": "at",
+					"type": "bool",
+					"default_value": "false"
+				}
+			]
+		}
+	]
+}

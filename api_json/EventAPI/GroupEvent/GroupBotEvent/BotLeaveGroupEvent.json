@@ -1,0 +1,84 @@
+{
+	"name": "BotLeaveGroupEvent",
+	"inherits": "GroupBotEvent",
+	"brief_description": "RainyBot的Bot自身退出群组事件类，记录了Bot退出某个群组相关事件的数据",
+	"description": "",
+	"tutorials": [
+
+	],
+	"constants": [
+		{
+			"name": "ACTIVE",
+			"value": "0",
+			"enumeration": "ReasonType",
+			"description": "Bot主动退出群组"
+		},
+		{
+			"name": "KICK",
+			"value": "1",
+			"enumeration": "ReasonType",
+			"description": "Bot被踢出群组"
+		}
+	],
+	"signals": [
+
+	],
+	"variables": [
+
+	],
+	"methods": [
+		{
+			"name": "init_meta",
+			"return_type": "BotLeaveGroupEvent",
+			"description": "通过机器人协议后端的元数据字典构造一个此类的实例，仅当你知道自己在做什么时才使用",
+			"arguments": [
+				{
+					"name": "dic",
+					"type": "Dictionary"
+				},
+				{
+					"name": "reason_type",
+					"type": "int"
+				}
+			]
+		},
+		{
+			"name": "get_operator",
+			"return_type": "Member",
+			"description": "获取造成此事件的成员实例，可能是Bot自身，对应群的管理员，或对应群的群主",
+			"arguments": [
+
+			]
+		},
+		{
+			"name": "get_group",
+			"return_type": "Group",
+			"description": "获取此事件对应的群组的实例",
+			"arguments": [
+
+			]
+		},
+		{
+			"name": "get_reason_type",
+			"return_type": "int",
+			"description": "获取Bot退出群组的原因的类型，可用类型请参见此类的ReasonType枚举",
+			"arguments": [
+
+			]
+		},
+		{
+			"name": "is_reason_type",
+			"return_type": "bool",
+			"description": "用于判断Bot退出群组的原因是否为指定的类型，可用类型请参见此类的ReasonType枚举",
+			"arguments": [
+				{
+					"name": "reason",
+					"type": "int"
+				}
+			]
+		}
+	],
+	"childs": [
+
+	]
+}

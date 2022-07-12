@@ -1,0 +1,235 @@
+{
+	"name": "GroupAnnounce",
+	"inherits": "GroupAPI",
+	"brief_description": "RainyBot的群公告类，其实例记录了一个将被用于发送的群公告的相关信息",
+	"description": "这是RainyBot的群公告类，其实例记录了一个将被用于发送的群公告的相关信息 [br]此类实例通常需要被手动构造，以用于向某个特定群组中发送一条群公告",
+	"tutorials": [
+
+	],
+	"constants": [
+
+	],
+	"signals": [
+
+	],
+	"variables": [
+
+	],
+	"methods": [
+		{
+			"name": "init",
+			"return_type": "GroupAnnounce",
+			"description": "基于指定的内容文本构造一个群公告实例，您可以稍后通过实例中的其它函数来设置此公告的更多属性",
+			"arguments": [
+				{
+					"name": "content",
+					"type": "String"
+				}
+			]
+		},
+		{
+			"name": "init_meta",
+			"return_type": "GroupAnnounce",
+			"description": "通过机器人协议后端的元数据字典构造一个此类的实例，仅当你知道自己在做什么时才使用",
+			"arguments": [
+				{
+					"name": "dic",
+					"type": "Dictionary"
+				}
+			]
+		},
+		{
+			"name": "get_metadata",
+			"return_type": "Dictionary",
+			"description": "获取实例中的元数据字典，仅当你知道自己在做什么时才使用",
+			"arguments": [
+
+			]
+		},
+		{
+			"name": "set_metadata",
+			"return_type": "void",
+			"description": "使用指定字典覆盖实例中的元数据字典，仅当你知道自己在做什么时才使用",
+			"arguments": [
+				{
+					"name": "dic",
+					"type": "Dictionary"
+				}
+			]
+		},
+		{
+			"name": "set_content",
+			"return_type": "void",
+			"description": "设置公告实例中的公告内容文本，此项为此实例可被正常发送的必要条件，因此不可为空",
+			"arguments": [
+				{
+					"name": "text",
+					"type": "String"
+				}
+			]
+		},
+		{
+			"name": "get_content",
+			"return_type": "String",
+			"description": "获取公告实例中的公告内容文本",
+			"arguments": [
+
+			]
+		},
+		{
+			"name": "set_send_to_new_member",
+			"return_type": "void",
+			"description": "设置此公告实例是否向新成员展示",
+			"arguments": [
+				{
+					"name": "enabled",
+					"type": "bool"
+				}
+			]
+		},
+		{
+			"name": "is_send_to_new_member",
+			"return_type": "bool",
+			"description": "获取此公告实例是否向新成员展示",
+			"arguments": [
+
+			]
+		},
+		{
+			"name": "set_pinned",
+			"return_type": "void",
+			"description": "设置此公告实例是否在公告列表中置顶",
+			"arguments": [
+				{
+					"name": "enabled",
+					"type": "bool"
+				}
+			]
+		},
+		{
+			"name": "is_pinned",
+			"return_type": "bool",
+			"description": "获取此公告实例是否在公告列表中置顶",
+			"arguments": [
+
+			]
+		},
+		{
+			"name": "set_show_edit_card",
+			"return_type": "void",
+			"description": "设置此公告实例是否显示引导群员修改名片的选项",
+			"arguments": [
+				{
+					"name": "enabled",
+					"type": "bool"
+				}
+			]
+		},
+		{
+			"name": "is_show_edit_card",
+			"return_type": "bool",
+			"description": "获取此公告实例是否显示引导群员修改名片的选项",
+			"arguments": [
+
+			]
+		},
+		{
+			"name": "set_show_popup",
+			"return_type": "void",
+			"description": "设置此公告实例是否使用弹窗来展示",
+			"arguments": [
+				{
+					"name": "enabled",
+					"type": "bool"
+				}
+			]
+		},
+		{
+			"name": "is_show_popup",
+			"return_type": "bool",
+			"description": "获取此公告实例是否使用弹窗来展示",
+			"arguments": [
+
+			]
+		},
+		{
+			"name": "set_require_confirm",
+			"return_type": "void",
+			"description": "设置此公告实例是否需要群成员进行确认",
+			"arguments": [
+				{
+					"name": "enabled",
+					"type": "bool"
+				}
+			]
+		},
+		{
+			"name": "is_require_confirm",
+			"return_type": "bool",
+			"description": "获取此公告实例是否需要群成员进行确认",
+			"arguments": [
+
+			]
+		},
+		{
+			"name": "set_image_url",
+			"return_type": "void",
+			"description": "设置此公告实例将包含的图像的url链接",
+			"arguments": [
+				{
+					"name": "img_url",
+					"type": "String"
+				}
+			]
+		},
+		{
+			"name": "get_image_url",
+			"return_type": "String",
+			"description": "获取此公告实例将包含的图像的url链接",
+			"arguments": [
+
+			]
+		},
+		{
+			"name": "set_image_path",
+			"return_type": "void",
+			"description": "设置此公告实例将包含的图像的本地绝对路径",
+			"arguments": [
+				{
+					"name": "img_path",
+					"type": "String"
+				}
+			]
+		},
+		{
+			"name": "get_image_path",
+			"return_type": "String",
+			"description": "获取此公告实例将包含的图像的本地绝对路径",
+			"arguments": [
+
+			]
+		},
+		{
+			"name": "set_image_base64",
+			"return_type": "void",
+			"description": "设置此公告实例将包含的图像的Base64编码",
+			"arguments": [
+				{
+					"name": "img_base64",
+					"type": "String"
+				}
+			]
+		},
+		{
+			"name": "get_image_base64",
+			"return_type": "String",
+			"description": "获取此公告实例将包含的图像的Base64编码",
+			"arguments": [
+
+			]
+		}
+	],
+	"childs": [
+
+	]
+}

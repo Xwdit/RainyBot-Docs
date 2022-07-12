@@ -15,4 +15,4 @@ func get_client_id()->int:
 	
 	
 func get_client_platform()->String:
-	return 0
+	return ""

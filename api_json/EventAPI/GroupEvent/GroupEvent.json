@@ -1,0 +1,151 @@
+{
+	"childs": [
+		"GroupAllowAnonyChatEvent",
+		"GroupAllowConfessTalkEvent",
+		"GroupAllowInviteEvent",
+		"GroupAnnounceChangeEvent",
+		"GroupBotEvent",
+		"GroupMemberEvent",
+		"GroupMuteAllEvent",
+		"GroupNameChangeEvent",
+		"GroupRecallEvent"
+	],
+	"name": "GroupEvent",
+	"inherits": "Event",
+	"brief_description": "",
+	"description": "",
+	"tutorials": [
+
+	],
+	"constants": [
+		{
+			"name": "BOT_JOIN",
+			"value": "0",
+			"enumeration": "Type",
+			"description": ""
+		},
+		{
+			"name": "BOT_LEAVE",
+			"value": "1",
+			"enumeration": "Type",
+			"description": ""
+		},
+		{
+			"name": "BOT_MUTE",
+			"value": "2",
+			"enumeration": "Type",
+			"description": ""
+		},
+		{
+			"name": "BOT_UNMUTE",
+			"value": "3",
+			"enumeration": "Type",
+			"description": ""
+		},
+		{
+			"name": "BOT_PERM_CHANGE",
+			"value": "4",
+			"enumeration": "Type",
+			"description": ""
+		},
+		{
+			"name": "MEMBER_HONOR_CHANGE",
+			"value": "5",
+			"enumeration": "Type",
+			"description": ""
+		},
+		{
+			"name": "MEMBER_NAME_CHANGE",
+			"value": "6",
+			"enumeration": "Type",
+			"description": ""
+		},
+		{
+			"name": "MEMBER_PERM_CHANGE",
+			"value": "7",
+			"enumeration": "Type",
+			"description": ""
+		},
+		{
+			"name": "MEMBER_TITLE_CHANGE",
+			"value": "8",
+			"enumeration": "Type",
+			"description": ""
+		},
+		{
+			"name": "MEMBER_JOIN",
+			"value": "9",
+			"enumeration": "Type",
+			"description": ""
+		},
+		{
+			"name": "MEMBER_LEAVE",
+			"value": "10",
+			"enumeration": "Type",
+			"description": ""
+		},
+		{
+			"name": "MEMBER_MUTE",
+			"value": "11",
+			"enumeration": "Type",
+			"description": ""
+		},
+		{
+			"name": "MEMBER_UNMUTE",
+			"value": "12",
+			"enumeration": "Type",
+			"description": ""
+		},
+		{
+			"name": "ALLOW_ANONY_CHAT",
+			"value": "13",
+			"enumeration": "Type",
+			"description": ""
+		},
+		{
+			"name": "ALLOW_CONFESS_TALK",
+			"value": "14",
+			"enumeration": "Type",
+			"description": ""
+		},
+		{
+			"name": "ALLOW_INVITE",
+			"value": "15",
+			"enumeration": "Type",
+			"description": ""
+		},
+		{
+			"name": "ANNOUNCE_CHANGE",
+			"value": "16",
+			"enumeration": "Type",
+			"description": ""
+		},
+		{
+			"name": "NAME_CHANGE",
+			"value": "17",
+			"enumeration": "Type",
+			"description": ""
+		},
+		{
+			"name": "MUTE_ALL",
+			"value": "18",
+			"enumeration": "Type",
+			"description": ""
+		},
+		{
+			"name": "RECALL",
+			"value": "19",
+			"enumeration": "Type",
+			"description": ""
+		}
+	],
+	"signals": [
+
+	],
+	"variables": [
+
+	],
+	"methods": [
+
+	]
+}

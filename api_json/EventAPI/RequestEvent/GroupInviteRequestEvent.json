@@ -1,0 +1,74 @@
+{
+	"name": "GroupInviteRequestEvent",
+	"inherits": "RequestEvent",
+	"brief_description": "",
+	"description": "",
+	"tutorials": [
+
+	],
+	"constants": [
+		{
+			"name": "ACCEPT",
+			"value": "0",
+			"enumeration": "RespondType",
+			"description": ""
+		},
+		{
+			"name": "REFUSE",
+			"value": "1",
+			"enumeration": "RespondType",
+			"description": ""
+		}
+	],
+	"signals": [
+
+	],
+	"variables": [
+
+	],
+	"methods": [
+		{
+			"name": "init_meta",
+			"return_type": "GroupInviteRequestEvent",
+			"description": "",
+			"arguments": [
+				{
+					"name": "dic",
+					"type": "Dictionary"
+				}
+			]
+		},
+		{
+			"name": "get_group_name",
+			"return_type": "String",
+			"description": "",
+			"arguments": [
+
+			]
+		},
+		{
+			"name": "respond",
+			"return_type": "BotRequestResult",
+			"description": "",
+			"arguments": [
+				{
+					"name": "respond_type",
+					"type": "int"
+				},
+				{
+					"name": "msg",
+					"type": "String",
+					"default_value": "\"\""
+				},
+				{
+					"name": "timeout",
+					"type": "float",
+					"default_value": "inf_neg"
+				}
+			]
+		}
+	],
+	"childs": [
+
+	]
+}
