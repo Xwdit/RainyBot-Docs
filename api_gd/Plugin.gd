@@ -4,7 +4,6 @@ extends Node #继承Node类，用于RainyBot内部处理与加载，请勿进行
 ## RainyBot的插件类，代表一个实例，用于在插件中实现各类相关功能
 ##
 ## 这是RainyBot的插件类，代表一个插件实例，用于在插件中实现各类相关功能。所有插件应当继承此类，以便在RainyBot中正确加载与运行。
-## [br][br]您可以点击此链接来查看可供插件使用的所有API文档: [RainyBotAPI]
 ##
 
 class_name Plugin #定义类名为Plugin，请勿进行改动

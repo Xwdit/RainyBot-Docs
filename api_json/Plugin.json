@@ -2,7 +2,7 @@
 	"name": "Plugin",
 	"inherits": "Node",
 	"brief_description": "RainyBot的插件类，代表一个实例，用于在插件中实现各类相关功能",
-	"description": "这是RainyBot的插件类，代表一个插件实例，用于在插件中实现各类相关功能。所有插件应当继承此类，以便在RainyBot中正确加载与运行。 [br][br]您可以点击此链接来查看可供插件使用的所有API文档: [RainyBotAPI]",
+	"description": "这是RainyBot的插件类，代表一个插件实例，用于在插件中实现各类相关功能。所有插件应当继承此类，以便在RainyBot中正确加载与运行。",
 	"tutorials": [
 
 	],

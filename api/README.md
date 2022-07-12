@@ -2,7 +2,7 @@
   
 * **[Plugin](Plugin.md)** - RainyBot的插件类，代表一个实例，用于在插件中实现各类相关功能  
   
-* **[RainyBotAPI](RainyBotAPI.md)** - RainyBot所有API的父类，所有可供插件使用的API都将直接或间接继承此类 ，您可以点击此链接来查看与插件自身相关的API文档: [Plugin]  
+* **[RainyBotAPI](RainyBotAPI.md)** - RainyBot所有API的父类，所有可供插件使用的API都将直接或间接继承此类  
   
   * **[BotAPI](BotAPI.md)** - 协议后端API类，直接或间接继承此类的类通常包含各类与协议后端直接相关的功能  
   
