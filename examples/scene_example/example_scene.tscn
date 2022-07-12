@@ -16,4 +16,4 @@ theme_override_font_sizes/font_size = 30
 text = "text"
 horizontal_alignment = 1
 vertical_alignment = 1
-script = ExtResource( "1_iesyf" )
+script = ExtResource("1_iesyf")
