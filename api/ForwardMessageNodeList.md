@@ -1,6 +1,6 @@
 # 类: ForwardMessageNodeList  
   
-**继承自:** [MessageAPI](https://docs.godotengine.org/en/latest/classes/class_messageapi.html)  
+**继承自:** [MessageAPI](MessageAPI.md)  
   
 ## 方法 
   

@@ -1,6 +1,6 @@
 # 类: OtherClient  
   
-**继承自:** [RoleAPI](https://docs.godotengine.org/en/latest/classes/class_roleapi.html)  
+**继承自:** [RoleAPI](RoleAPI.md)  
   
 RainyBot的其它客户端类，通常代表一个对应实例，实现了用于与其他客户端进行交互的各类功能  
   

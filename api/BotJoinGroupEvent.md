@@ -1,6 +1,6 @@
 # 类: BotJoinGroupEvent  
   
-**继承自:** [GroupBotEvent](https://docs.godotengine.org/en/latest/classes/class_groupbotevent.html)  
+**继承自:** [GroupBotEvent](GroupBotEvent.md)  
   
 RainyBot的Bot自身加入群组事件，记录了Bot加入某个群组的事件的相关数据  
   

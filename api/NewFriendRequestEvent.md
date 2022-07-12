@@ -1,6 +1,6 @@
 # 类: NewFriendRequestEvent  
   
-**继承自:** [RequestEvent](https://docs.godotengine.org/en/latest/classes/class_requestevent.html)  
+**继承自:** [RequestEvent](RequestEvent.md)  
   
 ## 常量/枚举  
   

@@ -1,6 +1,6 @@
 # 类: BotLeaveGroupEvent  
   
-**继承自:** [GroupBotEvent](https://docs.godotengine.org/en/latest/classes/class_groupbotevent.html)  
+**继承自:** [GroupBotEvent](GroupBotEvent.md)  
   
 RainyBot的Bot自身退出群组事件类，记录了Bot退出某个群组相关事件的数据  
   

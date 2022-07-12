@@ -1,6 +1,6 @@
 # 类: FriendInputStatusChangeEvent  
   
-**继承自:** [FriendEvent](https://docs.godotengine.org/en/latest/classes/class_friendevent.html)  
+**继承自:** [FriendEvent](FriendEvent.md)  
   
 RainyBot的好友输入状态变更事件类，记录了某次好友输入状态变更事件的相关数据  
   

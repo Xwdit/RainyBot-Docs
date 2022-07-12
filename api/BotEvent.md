@@ -1,8 +1,8 @@
 # 类: BotEvent  
   
-**继承自:** [Event](https://docs.godotengine.org/en/latest/classes/class_event.html)  
+**继承自:** [Event](Event.md)  
   
-**子类:** [BotOfflineEvent](https://docs.godotengine.org/en/latest/classes/class_botofflineevent.html), [BotOnlineEvent](https://docs.godotengine.org/en/latest/classes/class_botonlineevent.html), [BotReloginEvent](https://docs.godotengine.org/en/latest/classes/class_botreloginevent.html)  
+**子类:** [BotOfflineEvent](BotOfflineEvent.md), [BotOnlineEvent](BotOnlineEvent.md), [BotReloginEvent](BotReloginEvent.md)  
   
 RainyBot的Bot自身事件类，协议后端机器人账号自身发生的各类事件通常直接或间接继承此类  
   

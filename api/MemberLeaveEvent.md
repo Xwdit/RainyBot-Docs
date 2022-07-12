@@ -1,6 +1,6 @@
 # 类: MemberLeaveEvent  
   
-**继承自:** [GroupMemberEvent](https://docs.godotengine.org/en/latest/classes/class_groupmemberevent.html)  
+**继承自:** [GroupMemberEvent](GroupMemberEvent.md)  
   
 ## 常量/枚举  
   

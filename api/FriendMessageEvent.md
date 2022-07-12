@@ -1,6 +1,6 @@
 # 类: FriendMessageEvent  
   
-**继承自:** [MessageEvent](https://docs.godotengine.org/en/latest/classes/class_messageevent.html)  
+**继承自:** [MessageEvent](MessageEvent.md)  
   
 ## 方法 
   

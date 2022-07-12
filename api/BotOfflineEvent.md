@@ -1,6 +1,6 @@
 # 类: BotOfflineEvent  
   
-**继承自:** [BotEvent](https://docs.godotengine.org/en/latest/classes/class_botevent.html)  
+**继承自:** [BotEvent](BotEvent.md)  
   
 RainyBot的机器人账号离线事件类，其实例记录了一次机器人账号离线事件的相关数据  
   

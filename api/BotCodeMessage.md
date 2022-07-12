@@ -1,6 +1,6 @@
 # 类: BotCodeMessage  
   
-**继承自:** [Message](https://docs.godotengine.org/en/latest/classes/class_message.html)  
+**继承自:** [Message](Message.md)  
   
 RainyBot的BotCode消息类，通常代表一个对应实例，可用于快捷发送一段包含多种类型的消息  
   

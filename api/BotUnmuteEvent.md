@@ -1,6 +1,6 @@
 # 类: BotUnmuteEvent  
   
-**继承自:** [GroupBotEvent](https://docs.godotengine.org/en/latest/classes/class_groupbotevent.html)  
+**继承自:** [GroupBotEvent](GroupBotEvent.md)  
   
 ## 方法 
   

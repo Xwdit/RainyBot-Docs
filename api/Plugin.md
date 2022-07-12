@@ -1,6 +1,6 @@
 # 类: Plugin  
   
-**继承自:** [Node](https://docs.godotengine.org/en/latest/classes/class_node.html)  
+**继承自:** [Node](Node.md)  
   
 RainyBot的插件类，代表一个实例，用于在插件中实现各类相关功能  
   
@@ -391,7 +391,7 @@ RainyBot的插件类，代表一个实例，用于在插件中实现各类相关
   
 ---  
   
-- bool **trigger_keyword([Event](https://docs.godotengine.org/en/latest/classes/class_event.html) event)**  
+- bool **trigger_keyword([Event](Event.md) event)**  
   
 根据传入的消息事件来提取文本并从中匹配关键词   
   
@@ -610,7 +610,7 @@ RainyBot的插件类，代表一个实例，用于在插件中实现各类相关
   
 ---  
   
-- Image **get_scene_image([Node](https://docs.godotengine.org/en/latest/classes/class_node.html) scene, [Vector2i](https://docs.godotengine.org/en/latest/classes/class_vector2i.html) size, [Vector2i](https://docs.godotengine.org/en/latest/classes/class_vector2i.html) stretch_size=Vector2i(0, 0), [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html) transparent=false)**  
+- Image **get_scene_image([Node](Node.md) scene, [Vector2i](https://docs.godotengine.org/en/latest/classes/class_vector2i.html) size, [Vector2i](https://docs.godotengine.org/en/latest/classes/class_vector2i.html) stretch_size=Vector2i(0, 0), [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html) transparent=false)**  
   
 将指定场景实例中的当前内容获取为[Image]类图像的实例，需要配合await关键字来使用此函数   
   
@@ -641,7 +641,7 @@ RainyBot的插件类，代表一个实例，用于在插件中实现各类相关
   
 ---  
   
-- Variant **wait_context([MessageEvent](https://docs.godotengine.org/en/latest/classes/class_messageevent.html) event, [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html) match_sender=true, [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html) match_group=true, [float](https://docs.godotengine.org/en/latest/classes/class_float.html) timeout=20.0, [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html) block=true)**  
+- Variant **wait_context([MessageEvent](MessageEvent.md) event, [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html) match_sender=true, [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html) match_group=true, [float](https://docs.godotengine.org/en/latest/classes/class_float.html) timeout=20.0, [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html) block=true)**  
   
 通过await调用后，将等待另外一个与指定消息事件相匹配的消息事件   
   

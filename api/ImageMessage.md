@@ -1,6 +1,6 @@
 # 类: ImageMessage  
   
-**继承自:** [Message](https://docs.godotengine.org/en/latest/classes/class_message.html)  
+**继承自:** [Message](Message.md)  
   
 ## 方法 
   
@@ -8,7 +8,7 @@
   
 ---  
   
-- ImageMessage **init_gif([GifImage](https://docs.godotengine.org/en/latest/classes/class_gifimage.html) gif_image)**  
+- ImageMessage **init_gif([GifImage](GifImage.md) gif_image)**  
   
 ---  
   

@@ -1,6 +1,6 @@
 # 类: GroupMemberList  
   
-**继承自:** [GroupAPI](https://docs.godotengine.org/en/latest/classes/class_groupapi.html)  
+**继承自:** [GroupAPI](GroupAPI.md)  
   
 RainyBot的群成员列表类，通常代表一个对应实例，储存了某个群组中所有群成员的列表  
   

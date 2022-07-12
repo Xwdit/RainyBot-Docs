@@ -1,6 +1,6 @@
 # 类: NudgeEvent  
   
-**继承自:** [ActionEvent](https://docs.godotengine.org/en/latest/classes/class_actionevent.html)  
+**继承自:** [ActionEvent](ActionEvent.md)  
   
 RainyBot的戳一戳事件类，记录了聊天中的一个戳一戳事件的相关数据  
   

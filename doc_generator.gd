@@ -33,7 +33,7 @@ func build_docs(path:String,target_path:String,type:int,keep_dir_struct:bool=tru
 			DocType.JSON:
 				_save_doc_json(_path,doc_dic[doc])
 			DocType.MARKDOWN:
-				_save_doc_markdown(_path,doc_dic[doc])
+				_save_doc_markdown(_path,doc_dic[doc],doc_dic)
 
 
 func _build_docs(path:String,target_path:String,doc_dic:Dictionary)->void:
@@ -86,13 +86,13 @@ func _save_doc_json(path:String,doc_dic:Dictionary):
 	file.close()
 		
 		
-func _save_doc_markdown(path:String,doc_dic:Dictionary):
+func _save_doc_markdown(path:String,doc_dic:Dictionary,dics:Dictionary):
 	var file:File = File.new()
 	var md_text:String
 	md_text += "# 类: %s  \n" % doc_dic.name
 	md_text += "  \n"
 	var i_link:String = (doc_dic.inherits+".md")
-	if !doc_dic.has(doc_dic.inherits):
+	if !dics.has(doc_dic.inherits):
 		i_link = DOC_LINK % doc_dic.inherits.to_lower()
 	md_text += "**继承自:** [%s](%s)  \n" % [doc_dic.inherits,i_link]
 	md_text += "  \n"
@@ -100,7 +100,7 @@ func _save_doc_markdown(path:String,doc_dic:Dictionary):
 		var c_text:String = ""
 		for i in range(doc_dic.childs.size()):
 			var c_link:String = (doc_dic.childs[i]+".md")
-			if !doc_dic.has(doc_dic.childs[i]):
+			if !dics.has(doc_dic.childs[i]):
 				c_link = DOC_LINK % doc_dic.childs[i].to_lower()
 			c_text += "[%s](%s)" % [doc_dic.childs[i],c_link]
 			if i < doc_dic.childs.size()-1:
@@ -129,7 +129,7 @@ func _save_doc_markdown(path:String,doc_dic:Dictionary):
 			if !s.arguments.is_empty():
 				for a in s.arguments:
 					var a_link:String = (a.type+".md")
-					if !doc_dic.has(a.type):
+					if !dics.has(a.type):
 						a_link = DOC_LINK % a.type.to_lower()
 					if a.has("default_value"):
 						md_text += "[%s](%s) %s=%s, " % [a.type,a_link,a.name,a.default_value]
@@ -161,7 +161,7 @@ func _save_doc_markdown(path:String,doc_dic:Dictionary):
 		md_text += "  \n"
 		for v in doc_dic.variables:
 			var v_link:String = (v.type+".md")
-			if !doc_dic.has(v.type):
+			if !dics.has(v.type):
 				v_link = DOC_LINK % v.type.to_lower()
 			if v.enumeration != "":
 				md_text += "- [%s](%s) **%s.%s**  \n" % [v.type,v_link,v.enumeration,v.name]
@@ -190,7 +190,7 @@ func _save_doc_markdown(path:String,doc_dic:Dictionary):
 			if !m.arguments.is_empty():
 				for a in m.arguments:
 					var a_link:String = (a.type+".md")
-					if !doc_dic.has(a.type):
+					if !dics.has(a.type):
 						a_link = DOC_LINK % a.type.to_lower()
 					if a.has("default_value"):
 						md_text += "[%s](%s) %s=%s, " % [a.type,a_link,a.name,a.default_value]

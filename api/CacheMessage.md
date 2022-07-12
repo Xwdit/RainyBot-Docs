@@ -1,6 +1,6 @@
 # 类: CacheMessage  
   
-**继承自:** [MessageAPI](https://docs.godotengine.org/en/latest/classes/class_messageapi.html)  
+**继承自:** [MessageAPI](MessageAPI.md)  
   
 RainyBot的缓存消息类，通常代表一个对应实例，用于储存从机器人后端缓存中读取的消息的相关信息  
   

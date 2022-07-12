@@ -1,6 +1,6 @@
 # 类: GroupAnnounceInfoList  
   
-**继承自:** [GroupAPI](https://docs.godotengine.org/en/latest/classes/class_groupapi.html)  
+**继承自:** [GroupAPI](GroupAPI.md)  
   
 RainyBot的群公告信息列表类，储存了从某个群组中获取的群公告的列表  
   

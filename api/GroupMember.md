@@ -1,6 +1,6 @@
 # 类: GroupMember  
   
-**继承自:** [GroupAPI](https://docs.godotengine.org/en/latest/classes/class_groupapi.html)  
+**继承自:** [GroupAPI](GroupAPI.md)  
   
 RainyBot的群成员类，通常代表一个对应实例，实现了用于与群组成员进行交互的各类功能  
   

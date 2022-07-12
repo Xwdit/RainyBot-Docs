@@ -1,6 +1,6 @@
 # 类: BotMuteEvent  
   
-**继承自:** [GroupBotEvent](https://docs.godotengine.org/en/latest/classes/class_groupbotevent.html)  
+**继承自:** [GroupBotEvent](GroupBotEvent.md)  
   
 RainyBot的Bot自身在群组中被禁言事件类，其实例记录了与一次Bot自身在群组中被禁言事件相关的数据  
   

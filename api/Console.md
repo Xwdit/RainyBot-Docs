@@ -1,6 +1,6 @@
 # 类: Console  
   
-**继承自:** [CoreAPI](https://docs.godotengine.org/en/latest/classes/class_coreapi.html)  
+**继承自:** [CoreAPI](CoreAPI.md)  
   
 RainyBot控制台类，包含了各类与控制台输出直接相关的功能  
   

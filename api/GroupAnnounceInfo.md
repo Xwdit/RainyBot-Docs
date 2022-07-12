@@ -1,6 +1,6 @@
 # 类: GroupAnnounceInfo  
   
-**继承自:** [GroupAPI](https://docs.godotengine.org/en/latest/classes/class_groupapi.html)  
+**继承自:** [GroupAPI](GroupAPI.md)  
   
 RainyBot的群公告信息类，其实例记录了一个已发送的群公告的相关信息  
   

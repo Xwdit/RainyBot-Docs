@@ -1,6 +1,6 @@
 # 类: AtAllMessage  
   
-**继承自:** [Message](https://docs.godotengine.org/en/latest/classes/class_message.html)  
+**继承自:** [Message](Message.md)  
   
 RainyBot的At全体成员消息类，通常代表一个对应实例，此类消息仅适用于群聊  
   

@@ -1,8 +1,8 @@
 # 类: GroupEvent  
   
-**继承自:** [Event](https://docs.godotengine.org/en/latest/classes/class_event.html)  
+**继承自:** [Event](Event.md)  
   
-**子类:** [GroupAllowAnonyChatEvent](https://docs.godotengine.org/en/latest/classes/class_groupallowanonychatevent.html), [GroupAllowConfessTalkEvent](https://docs.godotengine.org/en/latest/classes/class_groupallowconfesstalkevent.html), [GroupAllowInviteEvent](https://docs.godotengine.org/en/latest/classes/class_groupallowinviteevent.html), [GroupAnnounceChangeEvent](https://docs.godotengine.org/en/latest/classes/class_groupannouncechangeevent.html), [GroupBotEvent](https://docs.godotengine.org/en/latest/classes/class_groupbotevent.html), [GroupMemberEvent](https://docs.godotengine.org/en/latest/classes/class_groupmemberevent.html), [GroupMuteAllEvent](https://docs.godotengine.org/en/latest/classes/class_groupmuteallevent.html), [GroupNameChangeEvent](https://docs.godotengine.org/en/latest/classes/class_groupnamechangeevent.html), [GroupRecallEvent](https://docs.godotengine.org/en/latest/classes/class_grouprecallevent.html)  
+**子类:** [GroupAllowAnonyChatEvent](GroupAllowAnonyChatEvent.md), [GroupAllowConfessTalkEvent](GroupAllowConfessTalkEvent.md), [GroupAllowInviteEvent](GroupAllowInviteEvent.md), [GroupAnnounceChangeEvent](GroupAnnounceChangeEvent.md), [GroupBotEvent](GroupBotEvent.md), [GroupMemberEvent](GroupMemberEvent.md), [GroupMuteAllEvent](GroupMuteAllEvent.md), [GroupNameChangeEvent](GroupNameChangeEvent.md), [GroupRecallEvent](GroupRecallEvent.md)  
   
 ## 常量/枚举  
   

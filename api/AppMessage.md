@@ -1,6 +1,6 @@
 # 类: AppMessage  
   
-**继承自:** [Message](https://docs.godotengine.org/en/latest/classes/class_message.html)  
+**继承自:** [Message](Message.md)  
   
 RainyBot的App消息类，通常代表一个对应实例，此类消息常见于某些特殊App调用聊天软件进行分享的场景  
   

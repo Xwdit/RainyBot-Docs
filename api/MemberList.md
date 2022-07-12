@@ -1,6 +1,6 @@
 # 类: MemberList  
   
-**继承自:** [MemberAPI](https://docs.godotengine.org/en/latest/classes/class_memberapi.html)  
+**继承自:** [MemberAPI](MemberAPI.md)  
   
 RainyBot的个体成员列表类，通常代表一个对应实例，储存了机器人所有个体成员(通常为好友)的列表  
   

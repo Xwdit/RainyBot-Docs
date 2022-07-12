@@ -1,8 +1,8 @@
 # 类: OtherClientEvent  
   
-**继承自:** [Event](https://docs.godotengine.org/en/latest/classes/class_event.html)  
+**继承自:** [Event](Event.md)  
   
-**子类:** [OtherClientOfflineEvent](https://docs.godotengine.org/en/latest/classes/class_otherclientofflineevent.html), [OtherClientOnlineEvent](https://docs.godotengine.org/en/latest/classes/class_otherclientonlineevent.html)  
+**子类:** [OtherClientOfflineEvent](OtherClientOfflineEvent.md), [OtherClientOnlineEvent](OtherClientOnlineEvent.md)  
   
 ## 常量/枚举  
   

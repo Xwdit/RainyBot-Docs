@@ -1,8 +1,8 @@
 # 类: MessageAPI  
   
-**继承自:** [RainyBotAPI](https://docs.godotengine.org/en/latest/classes/class_rainybotapi.html)  
+**继承自:** [RainyBotAPI](RainyBotAPI.md)  
   
-**子类:** [CacheMessage](https://docs.godotengine.org/en/latest/classes/class_cachemessage.html), [Message](https://docs.godotengine.org/en/latest/classes/class_message.html), [MessageChain](https://docs.godotengine.org/en/latest/classes/class_messagechain.html), [ForwardMessageNode](https://docs.godotengine.org/en/latest/classes/class_forwardmessagenode.html), [ForwardMessageNodeList](https://docs.godotengine.org/en/latest/classes/class_forwardmessagenodelist.html)  
+**子类:** [CacheMessage](CacheMessage.md), [Message](Message.md), [MessageChain](MessageChain.md), [ForwardMessageNode](ForwardMessageNode.md), [ForwardMessageNodeList](ForwardMessageNodeList.md)  
   
 RainyBot的消息API类，所有的消息相关API将直接或间接继承此类  
   

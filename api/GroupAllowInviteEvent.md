@@ -1,6 +1,6 @@
 # 类: GroupAllowInviteEvent  
   
-**继承自:** [GroupEvent](https://docs.godotengine.org/en/latest/classes/class_groupevent.html)  
+**继承自:** [GroupEvent](GroupEvent.md)  
   
 ## 方法 
   

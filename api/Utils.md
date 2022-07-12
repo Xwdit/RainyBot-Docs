@@ -1,6 +1,6 @@
 # 类: Utils  
   
-**继承自:** [CoreAPI](https://docs.godotengine.org/en/latest/classes/class_coreapi.html)  
+**继承自:** [CoreAPI](CoreAPI.md)  
   
 RainyBot的实用工具类，其中提供了各种类型的便捷功能  
   

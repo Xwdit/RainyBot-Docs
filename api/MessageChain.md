@@ -1,6 +1,6 @@
 # 类: MessageChain  
   
-**继承自:** [MessageAPI](https://docs.godotengine.org/en/latest/classes/class_messageapi.html)  
+**继承自:** [MessageAPI](MessageAPI.md)  
   
 RainyBot的消息链类，通常代表一个对应实例，为多个不同类型的消息类实例依序拼接而成的单条消息  
   

@@ -1,6 +1,6 @@
 # 类: BotRequestResult  
   
-**继承自:** [BotAPI](https://docs.godotengine.org/en/latest/classes/class_botapi.html)  
+**继承自:** [BotAPI](BotAPI.md)  
   
 RainyBot的协议后端请求结果类，记录了向协议后端发送的某次请求/命令的结果数据  
   

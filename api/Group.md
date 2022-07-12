@@ -1,6 +1,6 @@
 # 类: Group  
   
-**继承自:** [GroupAPI](https://docs.godotengine.org/en/latest/classes/class_groupapi.html)  
+**继承自:** [GroupAPI](GroupAPI.md)  
   
 RainyBot的群组类，通常代表一个对应实例，实现了用于与群组进行交互的各类功能  
   
@@ -105,7 +105,7 @@ RainyBot的群组类，通常代表一个对应实例，实现了用于与群组
   
 ---  
   
-- BotRequestResult **set_group_config([GroupConfig](https://docs.godotengine.org/en/latest/classes/class_groupconfig.html) config, [float](https://docs.godotengine.org/en/latest/classes/class_float.html) timeout=-INF)**  
+- BotRequestResult **set_group_config([GroupConfig](GroupConfig.md) config, [float](https://docs.godotengine.org/en/latest/classes/class_float.html) timeout=-INF)**  
   
 用于将群聊实例的各类配置替换为指定的GroupConfig实例中的配置   
   
@@ -141,7 +141,7 @@ RainyBot的群组类，通常代表一个对应实例，实现了用于与群组
   
 ---  
   
-- GroupAnnounceInfoList **publish_announce([GroupAnnounce](https://docs.godotengine.org/en/latest/classes/class_groupannounce.html) announce, [float](https://docs.godotengine.org/en/latest/classes/class_float.html) timeout=-INF)**  
+- GroupAnnounceInfoList **publish_announce([GroupAnnounce](GroupAnnounce.md) announce, [float](https://docs.godotengine.org/en/latest/classes/class_float.html) timeout=-INF)**  
   
 用于在群聊实例中发布一个指定的群公告实例，群公告实例的相关用法请参见[GroupAnnounce]类文档   
   

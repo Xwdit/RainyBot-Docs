@@ -1,6 +1,6 @@
 # 类: FriendRecallEvent  
   
-**继承自:** [FriendEvent](https://docs.godotengine.org/en/latest/classes/class_friendevent.html)  
+**继承自:** [FriendEvent](FriendEvent.md)  
   
 RainyBot的好友消息撤回事件类，记录了某次好友消息撤回事件的相关数据  
   

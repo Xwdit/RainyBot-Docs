@@ -1,8 +1,8 @@
 # 类: RequestEvent  
   
-**继承自:** [Event](https://docs.godotengine.org/en/latest/classes/class_event.html)  
+**继承自:** [Event](Event.md)  
   
-**子类:** [GroupInviteRequestEvent](https://docs.godotengine.org/en/latest/classes/class_groupinviterequestevent.html), [MemberJoinRequestEvent](https://docs.godotengine.org/en/latest/classes/class_memberjoinrequestevent.html), [NewFriendRequestEvent](https://docs.godotengine.org/en/latest/classes/class_newfriendrequestevent.html)  
+**子类:** [GroupInviteRequestEvent](GroupInviteRequestEvent.md), [MemberJoinRequestEvent](MemberJoinRequestEvent.md), [NewFriendRequestEvent](NewFriendRequestEvent.md)  
   
 ## 常量/枚举  
   

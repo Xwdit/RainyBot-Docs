@@ -1,6 +1,6 @@
 # 类: Member  
   
-**继承自:** [MemberAPI](https://docs.godotengine.org/en/latest/classes/class_memberapi.html)  
+**继承自:** [MemberAPI](MemberAPI.md)  
   
 RainyBot的个体成员类，通常代表一个对应实例，实现了用于与好友或单向好友(陌生人)进行交互的各类功能  
   

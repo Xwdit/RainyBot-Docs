@@ -1,10 +1,10 @@
 # 类: ForwardMessageNode  
   
-**继承自:** [MessageAPI](https://docs.godotengine.org/en/latest/classes/class_messageapi.html)  
+**继承自:** [MessageAPI](MessageAPI.md)  
   
 ## 方法 
   
-- ForwardMessageNode **init([int](https://docs.godotengine.org/en/latest/classes/class_int.html) message_id, [int](https://docs.godotengine.org/en/latest/classes/class_int.html) sender_id=-1, [int](https://docs.godotengine.org/en/latest/classes/class_int.html) time=0, [String](https://docs.godotengine.org/en/latest/classes/class_string.html) sender_name="", [MessageChain](https://docs.godotengine.org/en/latest/classes/class_messagechain.html) message_chain=null)**  
+- ForwardMessageNode **init([int](https://docs.godotengine.org/en/latest/classes/class_int.html) message_id, [int](https://docs.godotengine.org/en/latest/classes/class_int.html) sender_id=-1, [int](https://docs.godotengine.org/en/latest/classes/class_int.html) time=0, [String](https://docs.godotengine.org/en/latest/classes/class_string.html) sender_name="", [MessageChain](MessageChain.md) message_chain=null)**  
   
 ---  
   
@@ -48,7 +48,7 @@
   
 ---  
   
-- void **set_message_chain([MessageChain](https://docs.godotengine.org/en/latest/classes/class_messagechain.html) msg_chain)**  
+- void **set_message_chain([MessageChain](MessageChain.md) msg_chain)**  
   
 ---  
   

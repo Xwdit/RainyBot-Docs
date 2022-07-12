@@ -1,6 +1,6 @@
 # 类: MemberProfile  
   
-**继承自:** [MemberAPI](https://docs.godotengine.org/en/latest/classes/class_memberapi.html)  
+**继承自:** [MemberAPI](MemberAPI.md)  
   
 RainyBot的个体成员资料类，通常代表一个对应实例，储存了某个个体成员的相关资料  
   

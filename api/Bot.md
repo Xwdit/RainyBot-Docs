@@ -1,6 +1,6 @@
 # 类: Bot  
   
-**继承自:** [BotAPI](https://docs.godotengine.org/en/latest/classes/class_botapi.html)  
+**继承自:** [BotAPI](BotAPI.md)  
   
 RainyBot的Bot类，负责处理与当前使用的机器人后端账号相关的各类功能  
   

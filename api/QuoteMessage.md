@@ -1,6 +1,6 @@
 # 类: QuoteMessage  
   
-**继承自:** [Message](https://docs.godotengine.org/en/latest/classes/class_message.html)  
+**继承自:** [Message](Message.md)  
   
 ## 方法 
   

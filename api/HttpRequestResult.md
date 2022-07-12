@@ -1,6 +1,6 @@
 # 类: HttpRequestResult  
   
-**继承自:** [CoreAPI](https://docs.godotengine.org/en/latest/classes/class_coreapi.html)  
+**继承自:** [CoreAPI](CoreAPI.md)  
   
 RainyBot的Http请求结果类，可从其中快速获取某次Http请求的结果数据  
   

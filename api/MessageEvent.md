@@ -1,8 +1,8 @@
 # 类: MessageEvent  
   
-**继承自:** [Event](https://docs.godotengine.org/en/latest/classes/class_event.html)  
+**继承自:** [Event](Event.md)  
   
-**子类:** [FriendMessageEvent](https://docs.godotengine.org/en/latest/classes/class_friendmessageevent.html), [GroupMessageEvent](https://docs.godotengine.org/en/latest/classes/class_groupmessageevent.html), [OtherClientMessageEvent](https://docs.godotengine.org/en/latest/classes/class_otherclientmessageevent.html), [StrangerMessageEvent](https://docs.godotengine.org/en/latest/classes/class_strangermessageevent.html), [TempMessageEvent](https://docs.godotengine.org/en/latest/classes/class_tempmessageevent.html)  
+**子类:** [FriendMessageEvent](FriendMessageEvent.md), [GroupMessageEvent](GroupMessageEvent.md), [OtherClientMessageEvent](OtherClientMessageEvent.md), [StrangerMessageEvent](StrangerMessageEvent.md), [TempMessageEvent](TempMessageEvent.md)  
   
 ## 常量/枚举  
   

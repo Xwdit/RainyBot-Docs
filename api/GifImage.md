@@ -1,6 +1,6 @@
 # 类: GifImage  
   
-**继承自:** [CoreAPI](https://docs.godotengine.org/en/latest/classes/class_coreapi.html)  
+**继承自:** [CoreAPI](CoreAPI.md)  
   
 RainyBot动态图像类，可用于构造并生成一个Gif图像及相关数据，并将其用于储存或发送  
   

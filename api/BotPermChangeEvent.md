@@ -1,6 +1,6 @@
 # 类: BotPermChangeEvent  
   
-**继承自:** [GroupBotEvent](https://docs.godotengine.org/en/latest/classes/class_groupbotevent.html)  
+**继承自:** [GroupBotEvent](GroupBotEvent.md)  
   
 RainyBot的Bot自身在群组中被更改权限事件类，其实例记录了与一次Bot自身在群组中被更改权限事件相关的数据  
   

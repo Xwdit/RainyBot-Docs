@@ -1,8 +1,8 @@
 # 类: GroupAPI  
   
-**继承自:** [RoleAPI](https://docs.godotengine.org/en/latest/classes/class_roleapi.html)  
+**继承自:** [RoleAPI](RoleAPI.md)  
   
-**子类:** [Group](https://docs.godotengine.org/en/latest/classes/class_group.html), [GroupAnnounce](https://docs.godotengine.org/en/latest/classes/class_groupannounce.html), [GroupAnnounceInfo](https://docs.godotengine.org/en/latest/classes/class_groupannounceinfo.html), [GroupAnnounceInfoList](https://docs.godotengine.org/en/latest/classes/class_groupannounceinfolist.html), [GroupConfig](https://docs.godotengine.org/en/latest/classes/class_groupconfig.html), [GroupList](https://docs.godotengine.org/en/latest/classes/class_grouplist.html), [GroupMember](https://docs.godotengine.org/en/latest/classes/class_groupmember.html), [GroupMemberList](https://docs.godotengine.org/en/latest/classes/class_groupmemberlist.html)  
+**子类:** [Group](Group.md), [GroupAnnounce](GroupAnnounce.md), [GroupAnnounceInfo](GroupAnnounceInfo.md), [GroupAnnounceInfoList](GroupAnnounceInfoList.md), [GroupConfig](GroupConfig.md), [GroupList](GroupList.md), [GroupMember](GroupMember.md), [GroupMemberList](GroupMemberList.md)  
   
 RainyBot的群组API类，所有的群组相关API将直接或间接继承此类  
   

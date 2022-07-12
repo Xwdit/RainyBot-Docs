@@ -1,6 +1,6 @@
 # 类: GroupConfig  
   
-**继承自:** [GroupAPI](https://docs.godotengine.org/en/latest/classes/class_groupapi.html)  
+**继承自:** [GroupAPI](GroupAPI.md)  
   
 RainyBot的群组配置类，通常代表一个对应实例，储存了与群组各类配置有关的信息  
   

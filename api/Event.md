@@ -1,8 +1,8 @@
 # 类: Event  
   
-**继承自:** [EventAPI](https://docs.godotengine.org/en/latest/classes/class_eventapi.html)  
+**继承自:** [EventAPI](EventAPI.md)  
   
-**子类:** [ActionEvent](https://docs.godotengine.org/en/latest/classes/class_actionevent.html), [BotEvent](https://docs.godotengine.org/en/latest/classes/class_botevent.html), [FriendEvent](https://docs.godotengine.org/en/latest/classes/class_friendevent.html), [GroupEvent](https://docs.godotengine.org/en/latest/classes/class_groupevent.html), [MessageEvent](https://docs.godotengine.org/en/latest/classes/class_messageevent.html), [OtherClientEvent](https://docs.godotengine.org/en/latest/classes/class_otherclientevent.html), [RequestEvent](https://docs.godotengine.org/en/latest/classes/class_requestevent.html)  
+**子类:** [ActionEvent](ActionEvent.md), [BotEvent](BotEvent.md), [FriendEvent](FriendEvent.md), [GroupEvent](GroupEvent.md), [MessageEvent](MessageEvent.md), [OtherClientEvent](OtherClientEvent.md), [RequestEvent](RequestEvent.md)  
   
 ## 常量/枚举  
   
