@@ -7,12 +7,15 @@ enum DocType{
 }
 
 
+const DOC_LINK:String = "https://docs.godotengine.org/en/latest/classes/class_%s.html"
+
+
 func _ready():
 	build_docs("res://api_gd/","res://api_json/",DocType.JSON)
-	build_docs("res://api_gd/","res://api/",DocType.MARKDOWN)
+	build_docs("res://api_gd/","res://api/",DocType.MARKDOWN,false)
 
 
-func build_docs(path:String,target_path:String,type:int)->void:
+func build_docs(path:String,target_path:String,type:int,keep_dir_struct:bool=true)->void:
 	var doc_dic:Dictionary = {}
 	_build_docs(path,target_path,doc_dic)
 	for doc in doc_dic:
@@ -22,7 +25,7 @@ func build_docs(path:String,target_path:String,type:int)->void:
 			
 		var dir:Directory = Directory.new()
 		var file:File = File.new()
-		var _path:String = dic["path"]
+		var _path:String = dic["path"] if keep_dir_struct else target_path
 		dic.erase("path")
 		if !dir.dir_exists(_path):
 			dir.make_dir_recursive(_path)
@@ -88,12 +91,18 @@ func _save_doc_markdown(path:String,doc_dic:Dictionary):
 	var md_text:String
 	md_text += "# 类: %s  \n" % doc_dic.name
 	md_text += "  \n"
-	md_text += "**继承自:** %s  \n" % doc_dic.inherits
+	var i_link:String = (doc_dic.inherits+".md")
+	if !doc_dic.has(doc_dic.inherits):
+		i_link = DOC_LINK % doc_dic.inherits.to_lower()
+	md_text += "**继承自:** [%s](%s)  \n" % [doc_dic.inherits,i_link]
 	md_text += "  \n"
 	if !doc_dic.childs.is_empty():
 		var c_text:String = ""
 		for i in range(doc_dic.childs.size()):
-			c_text += doc_dic.childs[i]
+			var c_link:String = (doc_dic.childs[i]+".md")
+			if !doc_dic.has(doc_dic.childs[i]):
+				c_link = DOC_LINK % doc_dic.childs[i].to_lower()
+			c_text += "[%s](%s)" % [doc_dic.childs[i],c_link]
 			if i < doc_dic.childs.size()-1:
 				c_text += ", "
 		md_text += "**子类:** %s  \n" % c_text
@@ -119,10 +128,13 @@ func _save_doc_markdown(path:String,doc_dic:Dictionary):
 			md_text += "- **%s(" % [s.name]
 			if !s.arguments.is_empty():
 				for a in s.arguments:
+					var a_link:String = (a.type+".md")
+					if !doc_dic.has(a.type):
+						a_link = DOC_LINK % a.type.to_lower()
 					if a.has("default_value"):
-						md_text += "%s %s=%s, " % [a.type,a.name,a.default_value]
+						md_text += "[%s](%s) %s=%s, " % [a.type,a_link,a.name,a.default_value]
 					else:
-						md_text += "%s %s, " % [a.type,a.name]
+						md_text += "[%s](%s) %s, " % [a.type,a_link,a.name]
 			md_text += ")**  \n"
 			md_text += "  \n"
 			if s.description != "":
@@ -148,10 +160,13 @@ func _save_doc_markdown(path:String,doc_dic:Dictionary):
 		md_text += "## 属性  \n"
 		md_text += "  \n"
 		for v in doc_dic.variables:
+			var v_link:String = (v.type+".md")
+			if !doc_dic.has(v.type):
+				v_link = DOC_LINK % v.type.to_lower()
 			if v.enumeration != "":
-				md_text += "- %s **%s.%s**  \n" % [v.type,v.enumeration,v.name]
+				md_text += "- [%s](%s) **%s.%s**  \n" % [v.type,v_link,v.enumeration,v.name]
 			else:
-				md_text += "- %s **%s**  \n" % [v.type,v.name]
+				md_text += "- [%s](%s) **%s**  \n" % [v.type,v_link,v.name]
 			md_text += "  \n"
 			if v.has("default_value"):
 				md_text += "*默认值:* %s  \n" % v.default_value
@@ -174,10 +189,13 @@ func _save_doc_markdown(path:String,doc_dic:Dictionary):
 			md_text += "- %s **%s(" % [m.return_type,m.name]
 			if !m.arguments.is_empty():
 				for a in m.arguments:
+					var a_link:String = (a.type+".md")
+					if !doc_dic.has(a.type):
+						a_link = DOC_LINK % a.type.to_lower()
 					if a.has("default_value"):
-						md_text += "%s %s=%s, " % [a.type,a.name,a.default_value]
+						md_text += "[%s](%s) %s=%s, " % [a.type,a_link,a.name,a.default_value]
 					else:
-						md_text += "%s %s, " % [a.type,a.name]
+						md_text += "[%s](%s) %s, " % [a.type,a_link,a.name]
 			md_text += ")**  \n"
 			md_text += "  \n"
 			if m.description != "":
