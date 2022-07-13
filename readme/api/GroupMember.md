@@ -18,20 +18,20 @@ enum **Permission**
   
 如"get_permission() == GroupMember.Permission.ADMINISTRATOR"可判断群成员是否为管理员  
   
-**MEMBER** = 0  
+- **MEMBER** = 0  
 代表权限为群聊中的普通成员  
   
-**ADMINISTRATOR** = 1  
+- **ADMINISTRATOR** = 1  
 代表权限为群聊中的管理员  
   
-**OWNER** = 2  
+- **OWNER** = 2  
 代表权限为群聊中的群主  
   
 ---  
   
 ## 方法 
   
-[GroupMember](GroupMember.md) **init([int](https://docs.godotengine.org/en/latest/classes/class_int.html) group_id, [int](https://docs.godotengine.org/en/latest/classes/class_int.html) member_id)**  
+- [GroupMember](GroupMember.md) **init([int](https://docs.godotengine.org/en/latest/classes/class_int.html) group_id, [int](https://docs.godotengine.org/en/latest/classes/class_int.html) member_id)**  
   
 手动构造一个GroupMember类的实例，用于主动进行与群成员的交互时使用   
   
@@ -39,43 +39,43 @@ enum **Permission**
   
 ---  
   
-[GroupMember](GroupMember.md) **init_meta([Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html) dic)**  
+- [GroupMember](GroupMember.md) **init_meta([Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html) dic)**  
   
 通过机器人协议后端的元数据字典构造一个GroupMember类的实例，仅当你知道自己在做什么时才使用  
   
 ---  
   
-[Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html) **get_metadata()**  
+- [Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html) **get_metadata()**  
   
 获取实例中的元数据字典，仅当你知道自己在做什么时才使用  
   
 ---  
   
-void **set_metadata([Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html) dic)**  
+- void **set_metadata([Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html) dic)**  
   
 使用指定字典覆盖实例中的元数据字典，仅当你知道自己在做什么时才使用  
   
 ---  
   
-[int](https://docs.godotengine.org/en/latest/classes/class_int.html) **get_id()**  
+- [int](https://docs.godotengine.org/en/latest/classes/class_int.html) **get_id()**  
   
 获取群成员实例的ID  
   
 ---  
   
-[String](https://docs.godotengine.org/en/latest/classes/class_string.html) **get_name()**  
+- [String](https://docs.godotengine.org/en/latest/classes/class_string.html) **get_name()**  
   
 获取群成员实例在群聊中的名称(群昵称)，若为手动构造的实例，将始终返回空字符串  
   
 ---  
   
-[String](https://docs.godotengine.org/en/latest/classes/class_string.html) **get_special_title()**  
+- [String](https://docs.godotengine.org/en/latest/classes/class_string.html) **get_special_title()**  
   
 获取群成员实例在群聊中的特别称号(群荣誉)，若为手动构造的实例，将始终返回空字符串  
   
 ---  
   
-[int](https://docs.godotengine.org/en/latest/classes/class_int.html) **get_permission()**  
+- [int](https://docs.godotengine.org/en/latest/classes/class_int.html) **get_permission()**  
   
 获取群成员实例在群聊中的权限，将返回一个对应Permission枚举的整数值   
   
@@ -83,37 +83,37 @@ void **set_metadata([Dictionary](https://docs.godotengine.org/en/latest/classes/
   
 ---  
   
-[String](https://docs.godotengine.org/en/latest/classes/class_string.html) **get_avatar_url()**  
+- [String](https://docs.godotengine.org/en/latest/classes/class_string.html) **get_avatar_url()**  
   
 获取群成员实例对应账号的头像的图像链接，通常为jpg格式  
   
 ---  
   
-[bool](https://docs.godotengine.org/en/latest/classes/class_bool.html) **is_permission([int](https://docs.godotengine.org/en/latest/classes/class_int.html) perm)**  
+- [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html) **is_permission([int](https://docs.godotengine.org/en/latest/classes/class_int.html) perm)**  
   
 判断群成员实例的类型是否为指定的类型  
   
 ---  
   
-[int](https://docs.godotengine.org/en/latest/classes/class_int.html) **get_join_timestamp()**  
+- [int](https://docs.godotengine.org/en/latest/classes/class_int.html) **get_join_timestamp()**  
   
 获取群成员实例加入其所在群聊的时间戳，若为手动构造的实例，将始终返回0  
   
 ---  
   
-[int](https://docs.godotengine.org/en/latest/classes/class_int.html) **get_last_speak_timestamp()**  
+- [int](https://docs.godotengine.org/en/latest/classes/class_int.html) **get_last_speak_timestamp()**  
   
 获取群成员实例在对应群聊中上次发言的时间戳，若为手动构造的实例，将始终返回0  
   
 ---  
   
-[int](https://docs.godotengine.org/en/latest/classes/class_int.html) **get_mute_time_remaining()**  
+- [int](https://docs.godotengine.org/en/latest/classes/class_int.html) **get_mute_time_remaining()**  
   
 获取群成员实例在对应群聊中剩余的禁言时间(秒)，若为手动构造的实例，将始终返回0  
   
 ---  
   
-[Group](Group.md) **get_group()**  
+- [Group](Group.md) **get_group()**  
   
 获取群成员实例所在群聊的Group实例，   
   
@@ -121,7 +121,7 @@ void **set_metadata([Dictionary](https://docs.godotengine.org/en/latest/classes/
   
 ---  
   
-[MemberProfile](MemberProfile.md) **get_profile([float](https://docs.godotengine.org/en/latest/classes/class_float.html) timeout)**  
+- [MemberProfile](MemberProfile.md) **get_profile([float](https://docs.godotengine.org/en/latest/classes/class_float.html) timeout)**  
   
 获取记录了群成员实例相关资料的MemberProfile实例，需要配合await关键字使用   
   
@@ -129,7 +129,7 @@ void **set_metadata([Dictionary](https://docs.godotengine.org/en/latest/classes/
   
 ---  
   
-[BotRequestResult](BotRequestResult.md) **change_name([String](https://docs.godotengine.org/en/latest/classes/class_string.html) new_name, [float](https://docs.godotengine.org/en/latest/classes/class_float.html) timeout)**  
+- [BotRequestResult](BotRequestResult.md) **change_name([String](https://docs.godotengine.org/en/latest/classes/class_string.html) new_name, [float](https://docs.godotengine.org/en/latest/classes/class_float.html) timeout)**  
   
 更改群成员实例在其对应群聊中的名称(群昵称)   
   
@@ -139,7 +139,7 @@ void **set_metadata([Dictionary](https://docs.godotengine.org/en/latest/classes/
   
 ---  
   
-[BotRequestResult](BotRequestResult.md) **change_special_title([String](https://docs.godotengine.org/en/latest/classes/class_string.html) new_title, [float](https://docs.godotengine.org/en/latest/classes/class_float.html) timeout)**  
+- [BotRequestResult](BotRequestResult.md) **change_special_title([String](https://docs.godotengine.org/en/latest/classes/class_string.html) new_title, [float](https://docs.godotengine.org/en/latest/classes/class_float.html) timeout)**  
   
 更改群成员实例在其对应群聊中的特别称号(群荣誉)   
   
@@ -149,7 +149,7 @@ void **set_metadata([Dictionary](https://docs.godotengine.org/en/latest/classes/
   
 ---  
   
-[BotRequestResult](BotRequestResult.md) **toggle_admin([bool](https://docs.godotengine.org/en/latest/classes/class_bool.html) enabled, [float](https://docs.godotengine.org/en/latest/classes/class_float.html) timeout)**  
+- [BotRequestResult](BotRequestResult.md) **toggle_admin([bool](https://docs.godotengine.org/en/latest/classes/class_bool.html) enabled, [float](https://docs.godotengine.org/en/latest/classes/class_float.html) timeout)**  
   
 开关群成员实例在其对应群聊中的管理员权限，机器人需要为群主才可执行   
   
@@ -159,7 +159,7 @@ void **set_metadata([Dictionary](https://docs.godotengine.org/en/latest/classes/
   
 ---  
   
-[BotRequestResult](BotRequestResult.md) **kick([String](https://docs.godotengine.org/en/latest/classes/class_string.html) message, [float](https://docs.godotengine.org/en/latest/classes/class_float.html) timeout)**  
+- [BotRequestResult](BotRequestResult.md) **kick([String](https://docs.godotengine.org/en/latest/classes/class_string.html) message, [float](https://docs.godotengine.org/en/latest/classes/class_float.html) timeout)**  
   
 将群成员实例移出其所在的对应群聊，机器人需要为管理员或群主才可执行   
   
@@ -171,7 +171,7 @@ void **set_metadata([Dictionary](https://docs.godotengine.org/en/latest/classes/
   
 ---  
   
-[BotRequestResult](BotRequestResult.md) **mute([int](https://docs.godotengine.org/en/latest/classes/class_int.html) time, [float](https://docs.godotengine.org/en/latest/classes/class_float.html) timeout)**  
+- [BotRequestResult](BotRequestResult.md) **mute([int](https://docs.godotengine.org/en/latest/classes/class_int.html) time, [float](https://docs.godotengine.org/en/latest/classes/class_float.html) timeout)**  
   
 将群成员实例在其所在的群聊中禁言指定的秒数，机器人需要为管理员或群主才可执行   
   
@@ -183,7 +183,7 @@ void **set_metadata([Dictionary](https://docs.godotengine.org/en/latest/classes/
   
 ---  
   
-[BotRequestResult](BotRequestResult.md) **unmute([float](https://docs.godotengine.org/en/latest/classes/class_float.html) timeout)**  
+- [BotRequestResult](BotRequestResult.md) **unmute([float](https://docs.godotengine.org/en/latest/classes/class_float.html) timeout)**  
   
 将群成员实例在其所在的群聊中解除禁言，机器人需要为管理员或群主才可执行   
   
@@ -193,7 +193,7 @@ void **set_metadata([Dictionary](https://docs.godotengine.org/en/latest/classes/
   
 ---  
   
-[BotRequestResult](BotRequestResult.md) **send_message([Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html) msg, [int](https://docs.godotengine.org/en/latest/classes/class_int.html) quote_msgid, [float](https://docs.godotengine.org/en/latest/classes/class_float.html) timeout)**  
+- [BotRequestResult](BotRequestResult.md) **send_message([Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html) msg, [int](https://docs.godotengine.org/en/latest/classes/class_int.html) quote_msgid, [float](https://docs.godotengine.org/en/latest/classes/class_float.html) timeout)**  
   
 通过群临时会话，向群成员实例私聊发送消息，同时可指定一个需要引用回复的消息ID   
   
@@ -209,7 +209,7 @@ void **set_metadata([Dictionary](https://docs.godotengine.org/en/latest/classes/
   
 ---  
   
-[BotRequestResult](BotRequestResult.md) **send_nudge([float](https://docs.godotengine.org/en/latest/classes/class_float.html) timeout)**  
+- [BotRequestResult](BotRequestResult.md) **send_nudge([float](https://docs.godotengine.org/en/latest/classes/class_float.html) timeout)**  
   
 通过群临时会话，向群成员实例私聊发送一个戳一戳消息   
   

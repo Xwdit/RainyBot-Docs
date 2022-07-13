@@ -128,7 +128,7 @@ func _save_doc_markdown(path:String,doc_dic:Dictionary,dics:Dictionary):
 		md_text += "## 信号 \n"
 		md_text += "  \n"
 		for s in doc_dic.signals:
-			md_text += "**%s(" % [s.name]
+			md_text += "- **%s(" % [s.name]
 			if !s.arguments.is_empty():
 				for a in s.arguments:
 					var a_link:String = DOC_LINK % a.type.to_lower()
@@ -156,7 +156,7 @@ func _save_doc_markdown(path:String,doc_dic:Dictionary,dics:Dictionary):
 				md_text += "  \n"
 			for c in doc_dic.constants:
 				if c.enumeration == e.name:
-					md_text += "**%s** = %s  \n" % [c.name,c.value]
+					md_text += "- **%s** = %s  \n" % [c.name,c.value]
 					if c.description != "":
 						md_text += "%s  \n" % c.description
 						md_text += "  \n"
@@ -175,7 +175,7 @@ func _save_doc_markdown(path:String,doc_dic:Dictionary,dics:Dictionary):
 				if v.enumeration != "":
 					continue
 				else:
-					md_text += "**%s** = **%s**  \n" % [v.name,v.value]
+					md_text += "- **%s** = **%s**  \n" % [v.name,v.value]
 				md_text += "  \n"
 				if v.description != "":
 					md_text += "%s  \n" % v.description
@@ -190,9 +190,9 @@ func _save_doc_markdown(path:String,doc_dic:Dictionary,dics:Dictionary):
 			if dics.has(v.type) and dics[v.type].has("name"):
 				v_link = v.type+".md"
 			if v.enumeration != "":
-				md_text += "[%s](%s) **%s.%s**  \n" % [v.type,v_link,v.enumeration,v.name]
+				md_text += "- [%s](%s) **%s.%s**  \n" % [v.type,v_link,v.enumeration,v.name]
 			else:
-				md_text += "[%s](%s) **%s**  \n" % [v.type,v_link,v.name]
+				md_text += "- [%s](%s) **%s**  \n" % [v.type,v_link,v.name]
 			md_text += "  \n"
 			if v.has("default_value"):
 				md_text += "*默认值:* %s  \n" % v.default_value
@@ -216,9 +216,9 @@ func _save_doc_markdown(path:String,doc_dic:Dictionary,dics:Dictionary):
 				var r_link:String = DOC_LINK % m.return_type.to_lower()
 				if dics.has(m.return_type) and dics[m.return_type].has("name"):
 					r_link = m.return_type+".md"
-				md_text += "[%s](%s) **%s(" % [m.return_type,r_link,m.name]
+				md_text += "- [%s](%s) **%s(" % [m.return_type,r_link,m.name]
 			else:
-				md_text += "%s **%s(" % [m.return_type,m.name]
+				md_text += "- %s **%s(" % [m.return_type,m.name]
 			if !m.arguments.is_empty():
 				for a in m.arguments:
 					var a_link:String = DOC_LINK % a.type.to_lower()

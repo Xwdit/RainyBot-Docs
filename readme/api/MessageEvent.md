@@ -9,13 +9,13 @@ RainyBot的消息事件类，与消息直接相关的各类事件通常直接或
   
 ## 方法 
   
-[MessageChain](MessageChain.md) **get_message_chain()**  
+- [MessageChain](MessageChain.md) **get_message_chain()**  
   
 获取消息事件所对应的消息内容的消息链实例  
   
 ---  
   
-[Array](https://docs.godotengine.org/en/latest/classes/class_array.html) **get_message_array([Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html) types, [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html) exclude, [int](https://docs.godotengine.org/en/latest/classes/class_int.html) max_size)**  
+- [Array](https://docs.godotengine.org/en/latest/classes/class_array.html) **get_message_array([Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html) types, [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html) exclude, [int](https://docs.godotengine.org/en/latest/classes/class_int.html) max_size)**  
   
 根据指定的条件，来从消息事件包含的消息链实例中获取由符合条件的消息类实例组成的数组   
   
@@ -29,7 +29,7 @@ RainyBot的消息事件类，与消息直接相关的各类事件通常直接或
   
 ---  
   
-[String](https://docs.godotengine.org/en/latest/classes/class_string.html) **get_message_text([Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html) types, [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html) exclude)**  
+- [String](https://docs.godotengine.org/en/latest/classes/class_string.html) **get_message_text([Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html) types, [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html) exclude)**  
   
 根据指定的条件，来从消息事件包含的消息链实例中获取由符合条件的消息类实例转换并拼接而成的单个字符串   
   
@@ -43,25 +43,25 @@ RainyBot的消息事件类，与消息直接相关的各类事件通常直接或
   
 ---  
   
-[int](https://docs.godotengine.org/en/latest/classes/class_int.html) **get_message_id()**  
+- [int](https://docs.godotengine.org/en/latest/classes/class_int.html) **get_message_id()**  
   
 获取消息事件所对应的消息的ID  
   
 ---  
   
-[int](https://docs.godotengine.org/en/latest/classes/class_int.html) **get_message_timestamp()**  
+- [int](https://docs.godotengine.org/en/latest/classes/class_int.html) **get_message_timestamp()**  
   
 获取消息事件所对应的消息的发送时间戳  
   
 ---  
   
-[int](https://docs.godotengine.org/en/latest/classes/class_int.html) **get_sender_id()**  
+- [int](https://docs.godotengine.org/en/latest/classes/class_int.html) **get_sender_id()**  
   
 获取消息事件所对应的消息的发送者ID  
   
 ---  
   
-[BotRequestResult](BotRequestResult.md) **reply([Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html) msg, [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html) quote, [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html) at, [float](https://docs.godotengine.org/en/latest/classes/class_float.html) timeout)**  
+- [BotRequestResult](BotRequestResult.md) **reply([Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html) msg, [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html) quote, [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html) at, [float](https://docs.godotengine.org/en/latest/classes/class_float.html) timeout)**  
   
 用于回应某个消息事件，同时可指定是否需要引用回复原消息，以及是否需要AT原发送者(仅在群消息事件有效)   
   
