@@ -24,9 +24,9 @@ description: 此页面记录了可供插件使用的各类RainyBot API
   
     * **[Utils](Utils.md)** - RainyBot的实用工具类，其中提供了各种类型的便捷功能  
   
-  * **[EventAPI](EventAPI.md)** - (文档待补充)  
+  * **[EventAPI](EventAPI.md)** - RainyBot的事件API类，所有的事件相关API将直接或间接继承此类  
   
-    * **[Event](Event.md)** - (文档待补充)  
+    * **[Event](Event.md)** - RainyBot的事件类，各种事件类型将直接或间接继承此类  
   
       * **[ActionEvent](ActionEvent.md)** - RainyBot动作事件类，与聊天动作有关的各类事件通常直接或间接继承此类  
   
@@ -94,31 +94,31 @@ description: 此页面记录了可供插件使用的各类RainyBot API
   
         * **[GroupRecallEvent](GroupRecallEvent.md)** - RainyBot的群组消息撤回类，其实例记录了与一次群组消息撤回事件相关的数据  
   
-      * **[MessageEvent](MessageEvent.md)** - (文档待补充)  
+      * **[MessageEvent](MessageEvent.md)** - RainyBot的消息事件类，与消息直接相关的各类事件通常直接或间接继承此类  
   
-        * **[FriendMessageEvent](FriendMessageEvent.md)** - (文档待补充)  
+        * **[FriendMessageEvent](FriendMessageEvent.md)** - RainyBot的好友消息事件类，其实例记录了与一次好友消息事件相关的数据  
   
-        * **[GroupMessageEvent](GroupMessageEvent.md)** - (文档待补充)  
+        * **[GroupMessageEvent](GroupMessageEvent.md)** - RainyBot的群组消息事件类，其实例记录了与一次群组消息事件相关的数据  
   
-        * **[OtherClientMessageEvent](OtherClientMessageEvent.md)** - (文档待补充)  
+        * **[OtherClientMessageEvent](OtherClientMessageEvent.md)** - RainyBot的其它客户端消息事件类，其实例记录了与一次其它客户端消息事件相关的数据  
   
-        * **[StrangerMessageEvent](StrangerMessageEvent.md)** - (文档待补充)  
+        * **[StrangerMessageEvent](StrangerMessageEvent.md)** - RainyBot的单向好友消息事件类，其实例记录了与一次单向好友消息事件相关的数据  
   
-        * **[TempMessageEvent](TempMessageEvent.md)** - (文档待补充)  
+        * **[TempMessageEvent](TempMessageEvent.md)** - RainyBot的群临时消息事件类，其实例记录了与一次群临时消息事件相关的数据  
   
-      * **[OtherClientEvent](OtherClientEvent.md)** - (文档待补充)  
+      * **[OtherClientEvent](OtherClientEvent.md)** - RainyBot的其它客户端事件类，与其它客户端直接相关的各类事件通常直接或间接继承此类  
   
-        * **[OtherClientOfflineEvent](OtherClientOfflineEvent.md)** - (文档待补充)  
+        * **[OtherClientOfflineEvent](OtherClientOfflineEvent.md)** - RainyBot的其它客户端离线事件类，其实例记录了与一次其它客户端离线事件相关的数据  
   
-        * **[OtherClientOnlineEvent](OtherClientOnlineEvent.md)** - (文档待补充)  
+        * **[OtherClientOnlineEvent](OtherClientOnlineEvent.md)** - RainyBot的其它客户端上线事件类，其实例记录了与一次其它客户端上线事件相关的数据  
   
-      * **[RequestEvent](RequestEvent.md)** - (文档待补充)  
+      * **[RequestEvent](RequestEvent.md)** - RainyBot的请求事件类，与各类请求直接相关的各类事件通常直接或间接继承此类  
   
-        * **[GroupInviteRequestEvent](GroupInviteRequestEvent.md)** - (文档待补充)  
+        * **[GroupInviteRequestEvent](GroupInviteRequestEvent.md)** - RainyBot的邀请入群请求事件类，其实例记录了与一次邀请入群请求事件相关的数据  
   
-        * **[MemberJoinRequestEvent](MemberJoinRequestEvent.md)** - (文档待补充)  
+        * **[MemberJoinRequestEvent](MemberJoinRequestEvent.md)** - RainyBot的新成员入群请求事件类，其实例记录了与一次新成员入群请求事件相关的数据  
   
-        * **[NewFriendRequestEvent](NewFriendRequestEvent.md)** - (文档待补充)  
+        * **[NewFriendRequestEvent](NewFriendRequestEvent.md)** - RainyBot的添加好友请求事件类，其实例记录了与一次添加好友请求事件相关的数据  
   
   * **[MessageAPI](MessageAPI.md)** - RainyBot的消息API类，所有的消息相关API将直接或间接继承此类  
   

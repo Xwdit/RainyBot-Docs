@@ -3,13 +3,30 @@
   
 **继承自:** [RequestEvent](RequestEvent.md)  
   
+RainyBot的添加好友请求事件类，其实例记录了与一次添加好友请求事件相关的数据  
+  
+## 枚举  
+  
+enum **RespondType**  
+  
+可用于回应请求的回应类型  
+  
+- **ACCEPT** = 0  
+接受好友添加请求  
+  
+- **REFUSE** = 1  
+拒绝好友添加请求  
+  
+- **REFUSE_BLACKLIST** = 2  
+拒绝好友添加请求并加入黑名单  
+  
+---  
+  
 ## 方法 
   
 - [NewFriendRequestEvent](NewFriendRequestEvent.md) **init_meta([Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html) dic)**  
   
----  
-  
-- [BotRequestResult](BotRequestResult.md) **respond([int](https://docs.godotengine.org/en/latest/classes/class_int.html) respond_type, [String](https://docs.godotengine.org/en/latest/classes/class_string.html) msg, [float](https://docs.godotengine.org/en/latest/classes/class_float.html) timeout)**  
+通过机器人协议后端的元数据字典构造一个此类的实例，仅当你知道自己在做什么时才使用  
   
 ---  
   

@@ -3,17 +3,19 @@
   
 **继承自:** [MessageEvent](MessageEvent.md)  
   
+RainyBot的单向好友消息事件类，其实例记录了与一次单向好友消息事件相关的数据  
+  
 ## 方法 
   
 - [StrangerMessageEvent](StrangerMessageEvent.md) **init_meta([Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html) dic)**  
+  
+通过机器人协议后端的元数据字典构造一个此类的实例，仅当你知道自己在做什么时才使用  
   
 ---  
   
 - [Member](Member.md) **get_sender()**  
   
----  
-  
-- [BotRequestResult](BotRequestResult.md) **reply([Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html) msg, [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html) quote, [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html) at, [float](https://docs.godotengine.org/en/latest/classes/class_float.html) timeout)**  
+获取消息事件对应的发送者的单向好友成员实例  
   
 ---  
   
