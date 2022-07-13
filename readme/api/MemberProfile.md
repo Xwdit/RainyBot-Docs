@@ -32,7 +32,7 @@ enum **Sex**
   
 ## 方法 
   
-- [MemberProfile](MemberProfile.md) **init_user (** [int](https://docs.godotengine.org/en/latest/classes/class_int.html) user_id, [float](https://docs.godotengine.org/en/latest/classes/class_float.html) timeout **)**  
+- [MemberProfile](MemberProfile.md) **init_user (** [int](https://docs.godotengine.org/en/latest/classes/class_int.html) user_id, [float](https://docs.godotengine.org/en/latest/classes/class_float.html) timeout=-INF **)**  
   
 获取指定ID用户的资料数据并将其构造为一个MemberProfile类的实例，需要配合await关键字使用   
   

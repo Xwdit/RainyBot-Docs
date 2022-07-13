@@ -96,7 +96,7 @@ enum **StatusCode**
   
 ---  
   
-- [BotRequestResult](BotRequestResult.md) **recall (** [float](https://docs.godotengine.org/en/latest/classes/class_float.html) timeout **)**  
+- [BotRequestResult](BotRequestResult.md) **recall (** [float](https://docs.godotengine.org/en/latest/classes/class_float.html) timeout=-INF **)**  
   
 撤回请求结果中消息ID对应的消息   
   

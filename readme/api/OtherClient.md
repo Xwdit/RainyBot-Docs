@@ -48,7 +48,7 @@ RainyBot的其它客户端类，通常代表一个对应实例，实现了用于
   
 ---  
   
-- [BotRequestResult](BotRequestResult.md) **send_message (** [Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html) msg, [int](https://docs.godotengine.org/en/latest/classes/class_int.html) quote_msgid, [float](https://docs.godotengine.org/en/latest/classes/class_float.html) timeout **)**  
+- [BotRequestResult](BotRequestResult.md) **send_message (** [Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html) msg, [int](https://docs.godotengine.org/en/latest/classes/class_int.html) quote_msgid=-1, [float](https://docs.godotengine.org/en/latest/classes/class_float.html) timeout=-INF **)**  
   
 向其它客户端发送消息,第二个参数为需要引用回复的消息id(可选)   
   
@@ -64,7 +64,7 @@ RainyBot的其它客户端类，通常代表一个对应实例，实现了用于
   
 ---  
   
-- [BotRequestResult](BotRequestResult.md) **send_nudge (** [float](https://docs.godotengine.org/en/latest/classes/class_float.html) timeout **)**  
+- [BotRequestResult](BotRequestResult.md) **send_nudge (** [float](https://docs.godotengine.org/en/latest/classes/class_float.html) timeout=-INF **)**  
   
 向其它客户端发送一个戳一戳消息，   
   

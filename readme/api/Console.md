@@ -37,7 +37,7 @@ RainyBot控制台类，包含了各类与控制台输出直接相关的功能
   
 ---  
   
-- [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html) **popup_notification (** [String](https://docs.godotengine.org/en/latest/classes/class_string.html) text, [String](https://docs.godotengine.org/en/latest/classes/class_string.html) title **)**  
+- [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html) **popup_notification (** [String](https://docs.godotengine.org/en/latest/classes/class_string.html) text, [String](https://docs.godotengine.org/en/latest/classes/class_string.html) title="提示" **)**  
   
 在控制台弹出一个具有指定文本的提示框，并且可以指定一个可选的自定义窗口标题   
   
@@ -45,7 +45,7 @@ RainyBot控制台类，包含了各类与控制台输出直接相关的功能
   
 ---  
   
-- [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html) **popup_confirm (** [String](https://docs.godotengine.org/en/latest/classes/class_string.html) text, [String](https://docs.godotengine.org/en/latest/classes/class_string.html) title **)**  
+- [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html) **popup_confirm (** [String](https://docs.godotengine.org/en/latest/classes/class_string.html) text, [String](https://docs.godotengine.org/en/latest/classes/class_string.html) title="请确认" **)**  
   
 在控制台弹出一个具有指定文本的确认框，并且可以指定一个可选的自定义窗口标题   
   

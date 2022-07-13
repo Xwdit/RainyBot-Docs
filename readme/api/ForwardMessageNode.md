@@ -7,7 +7,7 @@
   
 ## 方法 
   
-- [ForwardMessageNode](ForwardMessageNode.md) **init (** [int](https://docs.godotengine.org/en/latest/classes/class_int.html) message_id, [int](https://docs.godotengine.org/en/latest/classes/class_int.html) sender_id, [int](https://docs.godotengine.org/en/latest/classes/class_int.html) time, [String](https://docs.godotengine.org/en/latest/classes/class_string.html) sender_name, [MessageChain](MessageChain.md) message_chain **)**  
+- [ForwardMessageNode](ForwardMessageNode.md) **init (** [int](https://docs.godotengine.org/en/latest/classes/class_int.html) message_id, [int](https://docs.godotengine.org/en/latest/classes/class_int.html) sender_id=-1, [int](https://docs.godotengine.org/en/latest/classes/class_int.html) time=0, [String](https://docs.godotengine.org/en/latest/classes/class_string.html) sender_name="", [MessageChain](MessageChain.md) message_chain=null **)**  
   
 基于指定的参数来手动构造一个ForwardMessageNode类的实例   
   
