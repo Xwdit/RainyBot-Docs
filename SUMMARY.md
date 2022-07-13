@@ -1,10 +1,10 @@
 # Table of contents
 
-* [主页](README.md)
-  * [安装与运行](readme/install.md)
-  * [开始使用](readme/start.md)
-  * [插件开发](readme/plugin_dev.md)
-  * [RainyBot API](readme/api/README.md)
+* [🏠 主页](README.md)
+  * [⚙ 安装与运行](readme/install.md)
+  * [🪄 开始使用](readme/start.md)
+  * [🔮 插件开发](readme/plugin\_dev.md)
+  * [📦 RainyBot API](readme/api/README.md)
     * [类: ActionEvent](readme/api/ActionEvent.md)
     * [类: AppMessage](readme/api/AppMessage.md)
     * [类: AtAllMessage](readme/api/AtAllMessage.md)

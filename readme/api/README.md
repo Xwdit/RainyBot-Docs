@@ -2,7 +2,7 @@
 description: 此页面记录了可供插件使用的各类RainyBot API
 ---
 
-# RainyBot API
+# 📦 RainyBot API
 
 * [**Plugin**](Plugin.md) - RainyBot的插件类，代表一个实例，用于在插件中实现各类相关功能
 * [**RainyBotAPI**](RainyBotAPI.md) - RainyBot所有API的父类，所有可供插件使用的API都将直接或间接继承此类
