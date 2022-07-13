@@ -1,5 +1,5 @@
 #RainyBot请求管理示例插件
-#更多帮助文档，示例插件及API请访问 https://github.com/Xwdit/RainyBot-API 进行查阅
+#更多帮助文档，示例插件及API请访问 https://docs.rainybot.dev 进行查阅
 
 
 extends Plugin #默认继承插件类，请勿随意改动
