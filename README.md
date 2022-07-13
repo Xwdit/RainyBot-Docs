@@ -72,7 +72,7 @@ RainyBot精心设计了一系列的便于使用的抽象API，并在底层将各
 
 ### 项目许可
 
-项目基于AGPL-3.0许可进行开源，具体内容请参见LICENSE文件
+项目基于AGPL-3.0许可进行开源，具体内容请参见[LICENSE文件](https://github.com/Xwdit/RainyBot-Core/blob/main/LICENSE)
 
 ### 联系信息
 
