@@ -80,7 +80,7 @@ RainyBot内置了一个功能完善的插件编辑器，拥有基本的`语法�
 
 ### 尝试示例插件
 
-一时半会找不到想要用的插件，或者想要测试RainyBot是否正常运行？您可以[在此处下载](https://github.com/Xwdit/RainyBot-Docs/tree/main/examples)示例插件，按照上方所述方法进行安装即可。
+一时半会找不到想要用的插件，或者想要测试RainyBot是否正常运行？您可以[在此处下载](https://github.com/Xwdit/RainyBot-Docs/tree/main/examples)示例插件，按照上述方法进行安装即可。
 
 ### 使用控制台指令
 
