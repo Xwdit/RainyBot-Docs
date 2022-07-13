@@ -11,20 +11,20 @@ enum **RespondType**
   
 可用于回应请求的回应类型  
   
-- **ACCEPT** = 0  
+**ACCEPT** = 0  
 接受好友添加请求  
   
-- **REFUSE** = 1  
+**REFUSE** = 1  
 拒绝好友添加请求  
   
-- **REFUSE_BLACKLIST** = 2  
+**REFUSE_BLACKLIST** = 2  
 拒绝好友添加请求并加入黑名单  
   
 ---  
   
 ## 方法 
   
-- [NewFriendRequestEvent](NewFriendRequestEvent.md) **init_meta([Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html) dic)**  
+[NewFriendRequestEvent](NewFriendRequestEvent.md) **init_meta([Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html) dic)**  
   
 通过机器人协议后端的元数据字典构造一个此类的实例，仅当你知道自己在做什么时才使用  
   

@@ -9,13 +9,13 @@ RainyBot的其它客户端事件类，与其它客户端直接相关的各类事
   
 ## 方法 
   
-- [int](https://docs.godotengine.org/en/latest/classes/class_int.html) **get_client_id()**  
+[int](https://docs.godotengine.org/en/latest/classes/class_int.html) **get_client_id()**  
   
 获取事件对应的其它客户端的ID  
   
 ---  
   
-- [String](https://docs.godotengine.org/en/latest/classes/class_string.html) **get_client_platform()**  
+[String](https://docs.godotengine.org/en/latest/classes/class_string.html) **get_client_platform()**  
   
 获取事件对应的其它客户端的平台名称  
   

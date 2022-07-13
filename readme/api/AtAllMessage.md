@@ -12,19 +12,19 @@ RainyBot的At全体成员消息类，通常代表一个对应实例，此类消�
   
 ## 方法 
   
-- [AtAllMessage](AtAllMessage.md) **init()**  
+[AtAllMessage](AtAllMessage.md) **init()**  
   
 手动构造一个AtAllMessage类的实例，以便在消息中At全体成员  
   
 ---  
   
-- [AtAllMessage](AtAllMessage.md) **init_meta([Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html) dic)**  
+[AtAllMessage](AtAllMessage.md) **init_meta([Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html) dic)**  
   
 通过机器人协议后端的元数据字典构造一个AtAllMessage类的实例，仅当你知道自己在做什么时才使用  
   
 ---  
   
-- [String](https://docs.godotengine.org/en/latest/classes/class_string.html) **get_as_text()**  
+[String](https://docs.godotengine.org/en/latest/classes/class_string.html) **get_as_text()**  
   
 将此实例获取为字符串的形式  
   

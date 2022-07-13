@@ -9,37 +9,37 @@ RainyBot的请求事件类，与各类请求直接相关的各类事件通常直
   
 ## 方法 
   
-- [int](https://docs.godotengine.org/en/latest/classes/class_int.html) **get_event_id()**  
+[int](https://docs.godotengine.org/en/latest/classes/class_int.html) **get_event_id()**  
   
 获取请求事件的对应ID  
   
 ---  
   
-- [int](https://docs.godotengine.org/en/latest/classes/class_int.html) **get_sender_id()**  
+[int](https://docs.godotengine.org/en/latest/classes/class_int.html) **get_sender_id()**  
   
 获取请求事件对应的发送者的ID  
   
 ---  
   
-- [String](https://docs.godotengine.org/en/latest/classes/class_string.html) **get_sender_name()**  
+[String](https://docs.godotengine.org/en/latest/classes/class_string.html) **get_sender_name()**  
   
 获取请求事件对应的发送者的名称  
   
 ---  
   
-- [int](https://docs.godotengine.org/en/latest/classes/class_int.html) **get_group_id()**  
+[int](https://docs.godotengine.org/en/latest/classes/class_int.html) **get_group_id()**  
   
 获取请求事件相关的群组的ID(对于非群组请求，并且请求发送者不来自某群组时将返回0)  
   
 ---  
   
-- [String](https://docs.godotengine.org/en/latest/classes/class_string.html) **get_request_message()**  
+[String](https://docs.godotengine.org/en/latest/classes/class_string.html) **get_request_message()**  
   
 获取请求事件相关的申请消息的文本  
   
 ---  
   
-- [BotRequestResult](BotRequestResult.md) **respond([int](https://docs.godotengine.org/en/latest/classes/class_int.html) respond_type, [String](https://docs.godotengine.org/en/latest/classes/class_string.html) msg, [float](https://docs.godotengine.org/en/latest/classes/class_float.html) timeout)**  
+[BotRequestResult](BotRequestResult.md) **respond([int](https://docs.godotengine.org/en/latest/classes/class_int.html) respond_type, [String](https://docs.godotengine.org/en/latest/classes/class_string.html) msg, [float](https://docs.godotengine.org/en/latest/classes/class_float.html) timeout)**  
   
 用于响应当前的请求事件，可用的响应类型请参照每个具体的请求事件类型中的RespondType枚举   
   
