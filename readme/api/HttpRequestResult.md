@@ -105,7 +105,7 @@ RainyBot的Http请求结果类，可从其中快速获取某次Http请求的结�
   
 ---  
   
-- [int](https://docs.godotengine.org/en/latest/classes/class_int.html) **save_to_file(**[String](https://docs.godotengine.org/en/latest/classes/class_string.html) path**)**  
+- [int](https://docs.godotengine.org/en/latest/classes/class_int.html) **save_to_file(** [String](https://docs.godotengine.org/en/latest/classes/class_string.html) path **)**  
   
 尝试将此请求的结果的二进制数据保存到指定路径的文件  
   

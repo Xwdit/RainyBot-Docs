@@ -7,7 +7,7 @@ RainyBot的群组消息事件类，其实例记录了与一次群组消息事件
   
 ## 方法 
   
-- [GroupMessageEvent](GroupMessageEvent.md) **init_meta(**[Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html) dic**)**  
+- [GroupMessageEvent](GroupMessageEvent.md) **init_meta(** [Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html) dic **)**  
   
 通过机器人协议后端的元数据字典构造一个此类的实例，仅当你知道自己在做什么时才使用  
   

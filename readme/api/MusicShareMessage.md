@@ -7,7 +7,7 @@ RainyBot的音乐分享消息类，其实例记录了与一个音乐分享消息
   
 ## 方法 
   
-- [MusicShareMessage](MusicShareMessage.md) **init(**[String](https://docs.godotengine.org/en/latest/classes/class_string.html) kind, [String](https://docs.godotengine.org/en/latest/classes/class_string.html) title, [String](https://docs.godotengine.org/en/latest/classes/class_string.html) summary, [String](https://docs.godotengine.org/en/latest/classes/class_string.html) jump_url, [String](https://docs.godotengine.org/en/latest/classes/class_string.html) picture_url, [String](https://docs.godotengine.org/en/latest/classes/class_string.html) music_url, [String](https://docs.godotengine.org/en/latest/classes/class_string.html) brief**)**  
+- [MusicShareMessage](MusicShareMessage.md) **init(** [String](https://docs.godotengine.org/en/latest/classes/class_string.html) kind, [String](https://docs.godotengine.org/en/latest/classes/class_string.html) title, [String](https://docs.godotengine.org/en/latest/classes/class_string.html) summary, [String](https://docs.godotengine.org/en/latest/classes/class_string.html) jump_url, [String](https://docs.godotengine.org/en/latest/classes/class_string.html) picture_url, [String](https://docs.godotengine.org/en/latest/classes/class_string.html) music_url, [String](https://docs.godotengine.org/en/latest/classes/class_string.html) brief **)**  
   
 基于指定的参数来手动构造一个MusicShareMessage类的实例   
   
@@ -15,7 +15,7 @@ RainyBot的音乐分享消息类，其实例记录了与一个音乐分享消息
   
 ---  
   
-- [MusicShareMessage](MusicShareMessage.md) **init_meta(**[Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html) dic**)**  
+- [MusicShareMessage](MusicShareMessage.md) **init_meta(** [Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html) dic **)**  
   
 通过机器人协议后端的元数据字典构造一个此类的实例，仅当你知道自己在做什么时才使用  
   
@@ -27,7 +27,7 @@ RainyBot的音乐分享消息类，其实例记录了与一个音乐分享消息
   
 ---  
   
-- void **set_share_kind(**[String](https://docs.godotengine.org/en/latest/classes/class_string.html) text**)**  
+- void **set_share_kind(** [String](https://docs.godotengine.org/en/latest/classes/class_string.html) text **)**  
   
 设置此实例对应的分享类型  
   
@@ -39,7 +39,7 @@ RainyBot的音乐分享消息类，其实例记录了与一个音乐分享消息
   
 ---  
   
-- void **set_share_title(**[String](https://docs.godotengine.org/en/latest/classes/class_string.html) text**)**  
+- void **set_share_title(** [String](https://docs.godotengine.org/en/latest/classes/class_string.html) text **)**  
   
 设置此实例对应的分享标题  
   
@@ -51,7 +51,7 @@ RainyBot的音乐分享消息类，其实例记录了与一个音乐分享消息
   
 ---  
   
-- void **set_share_summary(**[String](https://docs.godotengine.org/en/latest/classes/class_string.html) text**)**  
+- void **set_share_summary(** [String](https://docs.godotengine.org/en/latest/classes/class_string.html) text **)**  
   
 设置此实例对应的分享概括  
   
@@ -63,7 +63,7 @@ RainyBot的音乐分享消息类，其实例记录了与一个音乐分享消息
   
 ---  
   
-- void **set_share_jump_url(**[String](https://docs.godotengine.org/en/latest/classes/class_string.html) text**)**  
+- void **set_share_jump_url(** [String](https://docs.godotengine.org/en/latest/classes/class_string.html) text **)**  
   
 设置此实例对应的分享跳转链接  
   
@@ -75,7 +75,7 @@ RainyBot的音乐分享消息类，其实例记录了与一个音乐分享消息
   
 ---  
   
-- void **set_share_picture_url(**[String](https://docs.godotengine.org/en/latest/classes/class_string.html) text**)**  
+- void **set_share_picture_url(** [String](https://docs.godotengine.org/en/latest/classes/class_string.html) text **)**  
   
 设置此实例对应的分享封面图像链接  
   
@@ -87,7 +87,7 @@ RainyBot的音乐分享消息类，其实例记录了与一个音乐分享消息
   
 ---  
   
-- void **set_share_music_url(**[String](https://docs.godotengine.org/en/latest/classes/class_string.html) text**)**  
+- void **set_share_music_url(** [String](https://docs.godotengine.org/en/latest/classes/class_string.html) text **)**  
   
 设置此实例对应的分享音乐文件链接  
   
@@ -99,7 +99,7 @@ RainyBot的音乐分享消息类，其实例记录了与一个音乐分享消息
   
 ---  
   
-- void **set_share_brief(**[String](https://docs.godotengine.org/en/latest/classes/class_string.html) text**)**  
+- void **set_share_brief(** [String](https://docs.godotengine.org/en/latest/classes/class_string.html) text **)**  
   
 设置此实例对应的分享简介  
   

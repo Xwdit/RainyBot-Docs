@@ -43,7 +43,7 @@ RainyBot的Bot类，负责处理与当前使用的机器人后端账号相关的
   
 ---  
   
-- [MemberList](MemberList.md) **get_friend_list(**[float](https://docs.godotengine.org/en/latest/classes/class_float.html) timeout**)**  
+- [MemberList](MemberList.md) **get_friend_list(** [float](https://docs.godotengine.org/en/latest/classes/class_float.html) timeout **)**  
   
 获取当前机器人账号的好友列表，需要与await关键词配合使用   
   
@@ -51,7 +51,7 @@ RainyBot的Bot类，负责处理与当前使用的机器人后端账号相关的
   
 ---  
   
-- [GroupList](GroupList.md) **get_group_list(**[float](https://docs.godotengine.org/en/latest/classes/class_float.html) timeout**)**  
+- [GroupList](GroupList.md) **get_group_list(** [float](https://docs.godotengine.org/en/latest/classes/class_float.html) timeout **)**  
   
 获取当前机器人账号的群组列表，需要与await关键词配合使用   
   
@@ -59,7 +59,7 @@ RainyBot的Bot类，负责处理与当前使用的机器人后端账号相关的
   
 ---  
   
-- [MemberProfile](MemberProfile.md) **get_profile(**[float](https://docs.godotengine.org/en/latest/classes/class_float.html) timeout**)**  
+- [MemberProfile](MemberProfile.md) **get_profile(** [float](https://docs.godotengine.org/en/latest/classes/class_float.html) timeout **)**  
   
 获取当前机器人账号的资料卡，需要与await关键词配合使用   
   
@@ -67,7 +67,7 @@ RainyBot的Bot类，负责处理与当前使用的机器人后端账号相关的
   
 ---  
   
-- [CacheMessage](CacheMessage.md) **get_cache_message(**[int](https://docs.godotengine.org/en/latest/classes/class_int.html) msg_id, [float](https://docs.godotengine.org/en/latest/classes/class_float.html) timeout**)**  
+- [CacheMessage](CacheMessage.md) **get_cache_message(** [int](https://docs.godotengine.org/en/latest/classes/class_int.html) msg_id, [float](https://docs.godotengine.org/en/latest/classes/class_float.html) timeout **)**  
   
 从当前机器人账号的历史消息缓存中获取指定id的缓存消息，需要与await关键词配合使用   
   

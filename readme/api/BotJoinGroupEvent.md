@@ -7,7 +7,7 @@ RainyBot的Bot自身加入群组事件，记录了Bot加入某个群组的事件
   
 ## 方法 
   
-- [BotJoinGroupEvent](BotJoinGroupEvent.md) **init_meta(**[Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html) dic**)**  
+- [BotJoinGroupEvent](BotJoinGroupEvent.md) **init_meta(** [Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html) dic **)**  
   
 通过机器人协议后端的元数据字典构造一个此类的实例，仅当你知道自己在做什么时才使用  
   

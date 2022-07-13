@@ -32,7 +32,7 @@ enum **Sex**
   
 ## 方法 
   
-- [MemberProfile](MemberProfile.md) **init_user(**[int](https://docs.godotengine.org/en/latest/classes/class_int.html) user_id, [float](https://docs.godotengine.org/en/latest/classes/class_float.html) timeout**)**  
+- [MemberProfile](MemberProfile.md) **init_user(** [int](https://docs.godotengine.org/en/latest/classes/class_int.html) user_id, [float](https://docs.godotengine.org/en/latest/classes/class_float.html) timeout **)**  
   
 获取指定ID用户的资料数据并将其构造为一个MemberProfile类的实例，需要配合await关键字使用   
   
@@ -40,7 +40,7 @@ enum **Sex**
   
 ---  
   
-- [MemberProfile](MemberProfile.md) **init_meta(**[Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html) dic**)**  
+- [MemberProfile](MemberProfile.md) **init_meta(** [Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html) dic **)**  
   
 通过机器人协议后端的元数据字典构造一个MemberProfile类的实例，仅当你知道自己在做什么时才使用  
   
@@ -52,7 +52,7 @@ enum **Sex**
   
 ---  
   
-- void **set_metadata(**[Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html) dic**)**  
+- void **set_metadata(** [Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html) dic **)**  
   
 使用指定字典覆盖实例中的元数据字典，仅当你知道自己在做什么时才使用  
   
@@ -94,7 +94,7 @@ enum **Sex**
   
 ---  
   
-- [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html) **is_sex(**[int](https://docs.godotengine.org/en/latest/classes/class_int.html) sex**)**  
+- [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html) **is_sex(** [int](https://docs.godotengine.org/en/latest/classes/class_int.html) sex **)**  
   
 判断资料中的性别是不是指定类型的性别  
   

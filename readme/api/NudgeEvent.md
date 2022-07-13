@@ -21,7 +21,7 @@ enum **SubjectType**
   
 ## 方法 
   
-- [NudgeEvent](NudgeEvent.md) **init_meta(**[Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html) dic**)**  
+- [NudgeEvent](NudgeEvent.md) **init_meta(** [Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html) dic **)**  
   
 通过机器人协议后端的元数据字典构造一个此类的实例，仅当你知道自己在做什么时才使用  
   
@@ -51,7 +51,7 @@ enum **SubjectType**
   
 ---  
   
-- [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html) **is_subject_type(**[int](https://docs.godotengine.org/en/latest/classes/class_int.html) type**)**  
+- [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html) **is_subject_type(** [int](https://docs.godotengine.org/en/latest/classes/class_int.html) type **)**  
   
 用于判断戳一戳事件是否发生在指定的上下文位置类型  
   
