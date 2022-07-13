@@ -19,7 +19,7 @@
 > 事件的类型:
 >
 > * 此处可传入单个事件类型名，或一个包含了任意数量事件类型名的数组以批量注册事件
-> * 传入的事件需要直接或间接继承\[Event]类，如[GroupMessageEvent](../api/%E7%BE%A4%E6%B6%88%E6%81%AF%E4%BA%8B%E4%BB%B6/)
+> * 传入的事件需要直接或间接继承[Event](../api/Event.md)类，如[GroupMessageEvent](../api/GroupMessageEvent.md)
 >
 > 事件绑定的函数名:
 >
