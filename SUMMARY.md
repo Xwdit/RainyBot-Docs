@@ -4,7 +4,7 @@
   * [⚙ 安装与运行](readme/install.md)
   * [🪄 开始使用](readme/start.md)
   * [🔮 插件开发](readme/plugin\_dev/README.md)
-    * [事件注册与处理](readme/plugin\_dev/shi-jian-zhu-ce-yu-chu-li.md)
+    * [事件注册与处理](readme/plugin\_dev/event.md)
   * [🚀 更新日志](readme/updates.md)
   * [📦 RainyBot API](readme/api/README.md)
     * [类: ActionEvent](readme/api/ActionEvent.md)
