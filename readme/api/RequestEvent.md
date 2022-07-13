@@ -39,7 +39,7 @@ RainyBot的请求事件类，与各类请求直接相关的各类事件通常直
   
 ---  
   
-- [BotRequestResult](BotRequestResult.md) **respond([int](https://docs.godotengine.org/en/latest/classes/class_int.html) respond_type, [String](https://docs.godotengine.org/en/latest/classes/class_string.html) msg, [float](https://docs.godotengine.org/en/latest/classes/class_float.html) timeout)**  
+- [BotRequestResult](BotRequestResult.md) **respond(**[int](https://docs.godotengine.org/en/latest/classes/class_int.html) respond_type, [String](https://docs.godotengine.org/en/latest/classes/class_string.html) msg, [float](https://docs.godotengine.org/en/latest/classes/class_float.html) timeout**)**  
   
 用于响应当前的请求事件，可用的响应类型请参照每个具体的请求事件类型中的RespondType枚举   
   

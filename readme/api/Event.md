@@ -15,7 +15,7 @@ RainyBot的事件类，各种事件类型将直接或间接继承此类
   
 ---  
   
-- void **set_metadata([Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html) dic)**  
+- void **set_metadata(**[Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html) dic**)**  
   
 使用指定字典覆盖实例中的元数据字典，仅当你知道自己在做什么时才使用  
   
