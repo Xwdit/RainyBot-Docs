@@ -134,41 +134,41 @@ description: 此页面记录了可供插件使用的各类RainyBot API
   
       * **[BotCodeMessage](BotCodeMessage.md)** - RainyBot的BotCode消息类，通常代表一个对应实例，可用于快捷发送一段包含多种类型的消息  
   
-      * **[DiceMessage](DiceMessage.md)** - (文档待补充)  
+      * **[DiceMessage](DiceMessage.md)** - RainyBot的骰子消息类，其实例记录了与一个骰子消息相关的各类数据  
   
-      * **[FaceMessage](FaceMessage.md)** - (文档待补充)  
+      * **[FaceMessage](FaceMessage.md)** - RainyBot的表情消息类，其实例记录了与一个表情消息相关的各类数据  
   
-      * **[FileMessage](FileMessage.md)** - (文档待补充)  
+      * **[FileMessage](FileMessage.md)** - RainyBot的文件消息类，其实例记录了与一个文件消息相关的各类数据  
   
-      * **[FlashImageMessage](FlashImageMessage.md)** - (文档待补充)  
+      * **[FlashImageMessage](FlashImageMessage.md)** - RainyBot的闪图消息类，其实例记录了与一个闪图消息相关的各类数据  
   
-      * **[ForwardMessage](ForwardMessage.md)** - (文档待补充)  
+      * **[ForwardMessage](ForwardMessage.md)** - RainyBot的转发消息类，其实例记录了与一个转发消息相关的各类数据  
   
-      * **[ImageMessage](ImageMessage.md)** - (文档待补充)  
+      * **[ImageMessage](ImageMessage.md)** - RainyBot的图像消息类，其实例记录了与一个图像消息相关的各类数据  
   
-      * **[JsonMessage](JsonMessage.md)** - (文档待补充)  
+      * **[JsonMessage](JsonMessage.md)** - RainyBot的Json消息类，其实例记录了与一个Json消息相关的各类数据  
   
-      * **[MarketFaceMessage](MarketFaceMessage.md)** - (文档待补充)  
+      * **[MarketFaceMessage](MarketFaceMessage.md)** - RainyBot的商城表情消息类，其实例记录了与一个商城表情消息相关的各类数据  
   
-      * **[MusicShareMessage](MusicShareMessage.md)** - (文档待补充)  
+      * **[MusicShareMessage](MusicShareMessage.md)** - RainyBot的音乐分享消息类，其实例记录了与一个音乐分享消息相关的各类数据  
   
-      * **[PokeMessage](PokeMessage.md)** - (文档待补充)  
+      * **[PokeMessage](PokeMessage.md)** - RainyBot的戳一戳消息类，其实例记录了与一个戳一戳消息相关的各类数据  
   
-      * **[QuoteMessage](QuoteMessage.md)** - (文档待补充)  
+      * **[QuoteMessage](QuoteMessage.md)** - RainyBot的引用回复消息类，其实例记录了与一个引用回复消息相关的各类数据  
   
-      * **[SourceMessage](SourceMessage.md)** - (文档待补充)  
+      * **[SourceMessage](SourceMessage.md)** - RainyBot的消息链源消息类，其实例记录了某个接收到的消息链的消息ID，发送时间等数据  
   
-      * **[TextMessage](TextMessage.md)** - (文档待补充)  
+      * **[TextMessage](TextMessage.md)** - RainyBot的文本消息类，其实例记录了与一个文本消息相关的各类数据  
   
-      * **[VoiceMessage](VoiceMessage.md)** - (文档待补充)  
+      * **[VoiceMessage](VoiceMessage.md)** - RainyBot的语音消息类，其实例记录了与一个语音消息相关的各类数据  
   
-      * **[XmlMessage](XmlMessage.md)** - (文档待补充)  
+      * **[XmlMessage](XmlMessage.md)** - RainyBot的Xml消息类，其实例记录了与一个Xml消息相关的各类数据  
   
     * **[MessageChain](MessageChain.md)** - RainyBot的消息链类，通常代表一个对应实例，为多个不同类型的消息类实例依序拼接而成的单条消息  
   
-    * **[ForwardMessageNode](ForwardMessageNode.md)** - (文档待补充)  
+    * **[ForwardMessageNode](ForwardMessageNode.md)** - 这是RainyBot的单条转发消息类，其实例储存了一系列合并转发消息中的单条消息的相关数据  
   
-    * **[ForwardMessageNodeList](ForwardMessageNodeList.md)** - (文档待补充)  
+    * **[ForwardMessageNodeList](ForwardMessageNodeList.md)** - RainyBot的转发消息列表类，通常代表一个对应实例，储存了某条合并转发消息中的所有单条转发消息  
   
   * **[RoleAPI](RoleAPI.md)** - RainyBot的角色API类，所有的角色相关API将直接或间接继承此类  
   
