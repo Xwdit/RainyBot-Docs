@@ -1,24 +1,30 @@
-extends Message
+extends Message #继承Message类，用于RainyBot内部处理与加载，请勿进行改动
 
 
+## RainyBot的文件消息类，其实例记录了与一个文件消息相关的各类数据
 class_name FileMessage
 
 
+## 通过机器人协议后端的元数据字典构造一个此类的实例，仅当你知道自己在做什么时才使用
 static func init_meta(dic:Dictionary)->FileMessage:
 	return null
 
 
+## 获取此消息实例对应的文件的ID
 func get_file_id()->String:
 	return ""
 
 
+## 获取此消息实例对应的文件的名称
 func get_file_name()->String:
 	return ""
 
 
+## 获取此消息实例对应的文件的大小
 func get_file_size()->int:
 	return 0
 
 
+## 将此实例获取为字符串的形式
 func get_as_text()->String:
 	return "[文件"+get_file_name()+"]"
