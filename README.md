@@ -70,6 +70,10 @@ RainyBot精心设计了一系列的便于使用的抽象API，并在底层将各
 * [Godot类参考API](https://docs.godotengine.org/en/latest/classes/index.html)
 * [Mirai-Api-Http文档](https://github.com/project-mirai/mirai-api-http/blob/master/docs/api/API.md)
 
+### 项目许可
+
+项目基于AGPL-3.0许可进行开源，具体内容请参见LICENSE文件
+
 ### 联系信息
 
 交流QQ群: 429787496
