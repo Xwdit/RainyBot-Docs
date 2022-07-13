@@ -37,4 +37,20 @@ RainyBot控制台类，包含了各类与控制台输出直接相关的功能
   
 ---  
   
+- [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html) **popup_notification([String](https://docs.godotengine.org/en/latest/classes/class_string.html) text, [String](https://docs.godotengine.org/en/latest/classes/class_string.html) title)**  
+  
+在控制台弹出一个具有指定文本的提示框，并且可以指定一个可选的自定义窗口标题   
+  
+配合await关键词使用可以在提示框的确认按钮被点击时返回true，直接关闭时返回false  
+  
+---  
+  
+- [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html) **popup_confirm([String](https://docs.godotengine.org/en/latest/classes/class_string.html) text, [String](https://docs.godotengine.org/en/latest/classes/class_string.html) title)**  
+  
+在控制台弹出一个具有指定文本的确认框，并且可以指定一个可选的自定义窗口标题   
+  
+配合await关键词使用可以在确认框的确认按钮被点击时返回true，点击取消或直接关闭时返回false  
+  
+---  
+  
 

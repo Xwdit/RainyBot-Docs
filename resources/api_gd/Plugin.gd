@@ -314,6 +314,18 @@ func set_plugin_config(key,value,save_file:bool=true)->int:
 	return OK
 
 
+## 用于在已加载的配置中将指定key还原回默认值，需要先初始化配置文件才能使用此函数
+## [br][br]最后一项可选的参数用于指定是否在还原的同时将更改立刻保存到配置文件中	
+func reset_plugin_config(key,save_file:bool=true)->int:
+	return OK
+
+
+## 用于在已加载的配置中将所有内容还原回默认值，需要先初始化配置文件才能使用此函数
+## [br][br]最后一项可选参数用于指定是否在还原的同时将更改立即保存到配置文件中
+func reset_all_plugin_data(save_file:bool=true)->int:
+	return OK
+
+
 ## 用于直接获取已加载的配置的字典，便于以字典的形式对其进行操作，需要先初始化配置文件才能使用此函数
 func get_plugin_config_metadata()->Dictionary:
 	return {}

@@ -419,6 +419,22 @@ enum **BlockMode**
   
 ---  
   
+- [int](https://docs.godotengine.org/en/latest/classes/class_int.html) **reset_plugin_config([Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html) key, [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html) save_file)**  
+  
+用于在已加载的配置中将指定key还原回默认值，需要先初始化配置文件才能使用此函数   
+  
+最后一项可选的参数用于指定是否在还原的同时将更改立刻保存到配置文件中  
+  
+---  
+  
+- [int](https://docs.godotengine.org/en/latest/classes/class_int.html) **reset_all_plugin_data([bool](https://docs.godotengine.org/en/latest/classes/class_bool.html) save_file)**  
+  
+用于在已加载的配置中将所有内容还原回默认值，需要先初始化配置文件才能使用此函数   
+  
+最后一项可选参数用于指定是否在还原的同时将更改立即保存到配置文件中  
+  
+---  
+  
 - [Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html) **get_plugin_config_metadata()**  
   
 用于直接获取已加载的配置的字典，便于以字典的形式对其进行操作，需要先初始化配置文件才能使用此函数  
