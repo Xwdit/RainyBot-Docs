@@ -58,7 +58,7 @@ enum **BlockMode**
   
 ## 方法 
   
-- void **_on_init()**  
+- void **_on_init ( )**  
   
 在插件中覆盖此虚函数，以便定义将在此插件的文件每次被读取时执行的操作   
   
@@ -70,7 +70,7 @@ enum **BlockMode**
   
 ---  
   
-- void **_on_connect()**  
+- void **_on_connect ( )**  
   
 在插件中覆盖此虚函数，以便定义RainyBot在与协议后端建立连接后插件将执行的操作   
   
@@ -78,7 +78,7 @@ enum **BlockMode**
   
 ---  
   
-- void **_on_load()**  
+- void **_on_load ( )**  
   
 在插件中覆盖此虚函数，以便定义插件在被加载完毕后执行的操作   
   
@@ -86,7 +86,7 @@ enum **BlockMode**
   
 ---  
   
-- void **_on_ready()**  
+- void **_on_ready ( )**  
   
 在插件中覆盖此虚函数，以便定义插件在所有其他插件加载完毕后执行的操作   
   
@@ -96,7 +96,7 @@ enum **BlockMode**
   
 ---  
   
-- void **_on_process()**  
+- void **_on_process ( )**  
   
 在插件中覆盖此虚函数，以便定义插件运行中的每一秒将执行的操作   
   
@@ -104,7 +104,7 @@ enum **BlockMode**
   
 ---  
   
-- void **_on_error()**  
+- void **_on_error ( )**  
   
 在插件中覆盖此虚函数，以便定义在RainyBot检测到运行时错误后将执行的操作   
   
@@ -114,7 +114,7 @@ enum **BlockMode**
   
 ---  
   
-- void **_on_disconnect()**  
+- void **_on_disconnect ( )**  
   
 在插件中覆盖此虚函数，以便定义RainyBot在与协议后端断开建立连接后插件将执行的操作   
   
@@ -122,7 +122,7 @@ enum **BlockMode**
   
 ---  
   
-- void **_on_unload()**  
+- void **_on_unload ( )**  
   
 在插件中覆盖此虚函数，以便定义插件在即将被卸载时执行的操作   
   
@@ -132,7 +132,7 @@ enum **BlockMode**
   
 ---  
   
-- void **set_plugin_info(** [String](https://docs.godotengine.org/en/latest/classes/class_string.html) p_id, [String](https://docs.godotengine.org/en/latest/classes/class_string.html) p_name, [String](https://docs.godotengine.org/en/latest/classes/class_string.html) p_author, [String](https://docs.godotengine.org/en/latest/classes/class_string.html) p_version, [String](https://docs.godotengine.org/en/latest/classes/class_string.html) p_description, [Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html) p_dependency **)**  
+- void **set_plugin_info (** [String](https://docs.godotengine.org/en/latest/classes/class_string.html) p_id, [String](https://docs.godotengine.org/en/latest/classes/class_string.html) p_name, [String](https://docs.godotengine.org/en/latest/classes/class_string.html) p_author, [String](https://docs.godotengine.org/en/latest/classes/class_string.html) p_version, [String](https://docs.godotengine.org/en/latest/classes/class_string.html) p_description, [Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html) p_dependency **)**  
   
 用于设定插件的相关信息，需要在[method _on_init]虚函数中执行以便RainyBot正确加载您的插件   
   
@@ -144,7 +144,7 @@ enum **BlockMode**
   
 ---  
   
-- [Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html) **get_plugin_info()**  
+- [Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html) **get_plugin_info ( )**  
   
 用于获取插件的相关信息，将返回一个包含插件信息的字典   
   
@@ -152,37 +152,37 @@ enum **BlockMode**
   
 ---  
   
-- [String](https://docs.godotengine.org/en/latest/classes/class_string.html) **get_plugin_filename()**  
+- [String](https://docs.godotengine.org/en/latest/classes/class_string.html) **get_plugin_filename ( )**  
   
 用于获取插件对应的文件名，将返回插件文件的名称 (如`ChatBot.gd`)  
   
 ---  
   
-- [String](https://docs.godotengine.org/en/latest/classes/class_string.html) **get_plugin_filepath()**  
+- [String](https://docs.godotengine.org/en/latest/classes/class_string.html) **get_plugin_filepath ( )**  
   
 用于获取插件对应的文件路径，将返回插件文件的绝对路径 (如 `D://RainyBot/plugins/ChatBot.gd`)  
   
 ---  
   
-- [String](https://docs.godotengine.org/en/latest/classes/class_string.html) **get_plugin_path()**  
+- [String](https://docs.godotengine.org/en/latest/classes/class_string.html) **get_plugin_path ( )**  
   
 用于获取RainyBot的插件文件夹的路径，将返回插件文件夹的绝对路径 (如 `D://RainyBot/plugins/`)  
   
 ---  
   
-- [int](https://docs.godotengine.org/en/latest/classes/class_int.html) **get_plugin_runtime()**  
+- [int](https://docs.godotengine.org/en/latest/classes/class_int.html) **get_plugin_runtime ( )**  
   
 用于获取插件的已运行时间，默认情况下为插件成功加载以来经过的秒数  
   
 ---  
   
-- [int](https://docs.godotengine.org/en/latest/classes/class_int.html) **get_global_runtime()**  
+- [int](https://docs.godotengine.org/en/latest/classes/class_int.html) **get_global_runtime ( )**  
   
 用于获取RainyBot全局的已运行时间，默认情况下为RainyBot成功启动以来经过的秒数  
   
 ---  
   
-- [Plugin](Plugin.md) **get_plugin_instance(** [String](https://docs.godotengine.org/en/latest/classes/class_string.html) plugin_id **)**  
+- [Plugin](Plugin.md) **get_plugin_instance (** [String](https://docs.godotengine.org/en/latest/classes/class_string.html) plugin_id **)**  
   
 用于获取其他插件的实例引用，可用于插件之间的联动与数据互通等   
   
@@ -190,61 +190,61 @@ enum **BlockMode**
   
 ---  
   
-- [String](https://docs.godotengine.org/en/latest/classes/class_string.html) **get_data_path()**  
+- [String](https://docs.godotengine.org/en/latest/classes/class_string.html) **get_data_path ( )**  
   
 用于获取RainyBot的数据文件夹的路径，将返回数据文件夹的绝对路径 (如 `D://RainyBot/data/`)  
   
 ---  
   
-- [String](https://docs.godotengine.org/en/latest/classes/class_string.html) **get_data_filepath()**  
+- [String](https://docs.godotengine.org/en/latest/classes/class_string.html) **get_data_filepath ( )**  
   
 用于获取该插件对应的数据库文件的路径，即插件对应的.rdb格式文件的绝对路径  
   
 ---  
   
-- [String](https://docs.godotengine.org/en/latest/classes/class_string.html) **get_config_path()**  
+- [String](https://docs.godotengine.org/en/latest/classes/class_string.html) **get_config_path ( )**  
   
 用于获取RainyBot的配置文件夹的路径，将返回配置文件夹的绝对路径 (如 `D://RainyBot/config/`)  
   
 ---  
   
-- [String](https://docs.godotengine.org/en/latest/classes/class_string.html) **get_config_filepath()**  
+- [String](https://docs.godotengine.org/en/latest/classes/class_string.html) **get_config_filepath ( )**  
   
 用于获取该插件对应的配置文件的路径，即插件对应的.json格式文件的绝对路径  
   
 ---  
   
-- [String](https://docs.godotengine.org/en/latest/classes/class_string.html) **get_cache_path()**  
+- [String](https://docs.godotengine.org/en/latest/classes/class_string.html) **get_cache_path ( )**  
   
 用于获取RainyBot的缓存文件夹的路径，将返回缓存文件夹的绝对路径 (如 D://RainyBot/cache)  
   
 ---  
   
-- [String](https://docs.godotengine.org/en/latest/classes/class_string.html) **get_cache_filepath()**  
+- [String](https://docs.godotengine.org/en/latest/classes/class_string.html) **get_cache_filepath ( )**  
   
 用于获取该插件对应的缓存数据库文件的路径，即插件对应的.rca格式文件的绝对路径  
   
 ---  
   
-- [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html) **is_config_loaded()**  
+- [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html) **is_config_loaded ( )**  
   
 用于检查插件对应的配置文件内容是否已被加载  
   
 ---  
   
-- [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html) **is_data_loaded()**  
+- [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html) **is_data_loaded ( )**  
   
 用于检查插件对应的数据库文件内容是否已被加载  
   
 ---  
   
-- [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html) **is_cache_loaded()**  
+- [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html) **is_cache_loaded ( )**  
   
 用于检查插件对应的缓存数据库文件内容是否已被加载  
   
 ---  
   
-- [PackedStringArray](https://docs.godotengine.org/en/latest/classes/class_packedstringarray.html) **get_last_errors()**  
+- [PackedStringArray](https://docs.godotengine.org/en/latest/classes/class_packedstringarray.html) **get_last_errors ( )**  
   
 用于获取最近一次检测到的所有RainyBot运行时错误，将返回一个包含了这些错误的字符串数组   
   
@@ -254,7 +254,7 @@ enum **BlockMode**
   
 ---  
   
-- void **register_event(** [Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html) event, [Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html) function, [int](https://docs.godotengine.org/en/latest/classes/class_int.html) priority, [int](https://docs.godotengine.org/en/latest/classes/class_int.html) block_mode **)**  
+- void **register_event (** [Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html) event, [Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html) function, [int](https://docs.godotengine.org/en/latest/classes/class_int.html) priority, [int](https://docs.godotengine.org/en/latest/classes/class_int.html) block_mode **)**  
   
 用于注册一个或多个事件并将其绑定到一个或多个函数，事件发生时将触发绑定的函数并传入事件实例   
   
@@ -280,7 +280,7 @@ enum **BlockMode**
   
 ---  
   
-- void **unregister_event(** [Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html) event **)**  
+- void **unregister_event (** [Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html) event **)**  
   
 用于取消注册一个或多个事件，取消注册后插件将不再对此事件做出响应   
   
@@ -288,7 +288,7 @@ enum **BlockMode**
   
 ---  
   
-- void **register_console_command(** [Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html) command, [Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html) function, [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html) need_arguments, [Array](https://docs.godotengine.org/en/latest/classes/class_array.html) usages, [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html) need_connect **)**  
+- void **register_console_command (** [Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html) command, [Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html) function, [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html) need_arguments, [Array](https://docs.godotengine.org/en/latest/classes/class_array.html) usages, [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html) need_connect **)**  
   
 用于注册一个控制台命令并将其绑定到指定函数，命令被执行时将触发此函数，并传入对应的命令名与参数数组   
   
@@ -317,7 +317,7 @@ enum **BlockMode**
   
 ---  
   
-- void **unregister_console_command(** [Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html) command **)**  
+- void **unregister_console_command (** [Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html) command **)**  
   
 用于取消注册一个控制台命令，命令被取消注册后将无法在控制台被执行，且不会在帮助菜单中显示   
   
@@ -325,7 +325,7 @@ enum **BlockMode**
   
 ---  
   
-- void **register_keyword(** [Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html) keyword, [Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html) function, [Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html) var_dic, [int](https://docs.godotengine.org/en/latest/classes/class_int.html) match_mode, [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html) block **)**  
+- void **register_keyword (** [Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html) keyword, [Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html) function, [Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html) var_dic, [int](https://docs.godotengine.org/en/latest/classes/class_int.html) match_mode, [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html) block **)**  
   
 用于注册一个或多个关键词并将其绑定到某个函数，关键词匹配时将触发绑定的函数并传入相关数据   
   
@@ -361,7 +361,7 @@ enum **BlockMode**
   
 ---  
   
-- void **unregister_keyword(** [Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html) keyword **)**  
+- void **unregister_keyword (** [Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html) keyword **)**  
   
 用于取消注册一个关键词，关键词被取消注册后将不会被用于匹配   
   
@@ -369,7 +369,7 @@ enum **BlockMode**
   
 ---  
   
-- [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html) **trigger_keyword(** [Event](Event.md) event **)**  
+- [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html) **trigger_keyword (** [Event](Event.md) event **)**  
   
 根据传入的消息事件来提取文本并从中匹配关键词   
   
@@ -377,7 +377,7 @@ enum **BlockMode**
   
 ---  
   
-- [int](https://docs.godotengine.org/en/latest/classes/class_int.html) **init_plugin_config(** [Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html) default_config, [Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html) config_description **)**  
+- [int](https://docs.godotengine.org/en/latest/classes/class_int.html) **init_plugin_config (** [Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html) default_config, [Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html) config_description **)**  
   
 用于初始化插件的配置文件，并将其加载到内存中，以便在后续对其内容进行操作   
   
@@ -393,25 +393,25 @@ enum **BlockMode**
   
 ---  
   
-- [int](https://docs.godotengine.org/en/latest/classes/class_int.html) **save_plugin_config()**  
+- [int](https://docs.godotengine.org/en/latest/classes/class_int.html) **save_plugin_config ( )**  
   
 用于将内存中的配置保存到配置文件中，需要先初始化配置文件才能使用此函数  
   
 ---  
   
-- [Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html) **get_plugin_config(** [Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html) key **)**  
+- [Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html) **get_plugin_config (** [Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html) key **)**  
   
 用于从已加载的配置中获取指定key对应的内容，需要先初始化配置文件才能使用此函数  
   
 ---  
   
-- [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html) **has_plugin_config(** [Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html) key **)**  
+- [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html) **has_plugin_config (** [Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html) key **)**  
   
 用于从已加载的配置中检查指定key是否存在，需要先初始化配置文件才能使用此函数  
   
 ---  
   
-- [int](https://docs.godotengine.org/en/latest/classes/class_int.html) **set_plugin_config(** [Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html) key, [Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html) value, [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html) save_file **)**  
+- [int](https://docs.godotengine.org/en/latest/classes/class_int.html) **set_plugin_config (** [Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html) key, [Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html) value, [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html) save_file **)**  
   
 用于在已加载的配置中设定指定key的对应内容，需要先初始化配置文件才能使用此函数   
   
@@ -419,7 +419,7 @@ enum **BlockMode**
   
 ---  
   
-- [int](https://docs.godotengine.org/en/latest/classes/class_int.html) **reset_plugin_config(** [Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html) key, [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html) save_file **)**  
+- [int](https://docs.godotengine.org/en/latest/classes/class_int.html) **reset_plugin_config (** [Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html) key, [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html) save_file **)**  
   
 用于在已加载的配置中将指定key还原回默认值，需要先初始化配置文件才能使用此函数   
   
@@ -427,7 +427,7 @@ enum **BlockMode**
   
 ---  
   
-- [int](https://docs.godotengine.org/en/latest/classes/class_int.html) **reset_all_plugin_data(** [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html) save_file **)**  
+- [int](https://docs.godotengine.org/en/latest/classes/class_int.html) **reset_all_plugin_data (** [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html) save_file **)**  
   
 用于在已加载的配置中将所有内容还原回默认值，需要先初始化配置文件才能使用此函数   
   
@@ -435,13 +435,13 @@ enum **BlockMode**
   
 ---  
   
-- [Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html) **get_plugin_config_metadata()**  
+- [Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html) **get_plugin_config_metadata ( )**  
   
 用于直接获取已加载的配置的字典，便于以字典的形式对其进行操作，需要先初始化配置文件才能使用此函数  
   
 ---  
   
-- [int](https://docs.godotengine.org/en/latest/classes/class_int.html) **set_plugin_config_metadata(** [Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html) dic, [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html) save_file **)**  
+- [int](https://docs.godotengine.org/en/latest/classes/class_int.html) **set_plugin_config_metadata (** [Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html) dic, [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html) save_file **)**  
   
 用于直接替换已加载的配置的字典为指定的字典，便于以字典的形式对其进行操作，需要先初始化配置文件才能使用此函数   
   
@@ -449,13 +449,13 @@ enum **BlockMode**
   
 ---  
   
-- [Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html) **get_plugin_data_metadata()**  
+- [Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html) **get_plugin_data_metadata ( )**  
   
 用于直接获取已加载的数据库的字典，便于以字典的形式对其进行操作，需要先初始化数据库文件才能使用此函数  
   
 ---  
   
-- [int](https://docs.godotengine.org/en/latest/classes/class_int.html) **set_plugin_data_metadata(** [Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html) dic, [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html) save_file **)**  
+- [int](https://docs.godotengine.org/en/latest/classes/class_int.html) **set_plugin_data_metadata (** [Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html) dic, [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html) save_file **)**  
   
 用于直接替换已加载的数据库的字典为指定的字典，便于以字典的形式对其进行操作，需要先初始化数据库文件才能使用此函数   
   
@@ -463,13 +463,13 @@ enum **BlockMode**
   
 ---  
   
-- [Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html) **get_plugin_cache_metadata()**  
+- [Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html) **get_plugin_cache_metadata ( )**  
   
 用于直接获取已加载的缓存数据库的字典，便于以字典的形式对其进行操作，需要先初始化缓存数据库文件才能使用此函数  
   
 ---  
   
-- [int](https://docs.godotengine.org/en/latest/classes/class_int.html) **set_plugin_cache_metadata(** [Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html) dic, [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html) save_file **)**  
+- [int](https://docs.godotengine.org/en/latest/classes/class_int.html) **set_plugin_cache_metadata (** [Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html) dic, [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html) save_file **)**  
   
 用于直接替换已加载的缓存数据库的字典为指定的字典，便于以字典的形式对其进行操作，需要先初始化缓存数据库文件才能使用此函数   
   
@@ -477,7 +477,7 @@ enum **BlockMode**
   
 ---  
   
-- [int](https://docs.godotengine.org/en/latest/classes/class_int.html) **init_plugin_data()**  
+- [int](https://docs.godotengine.org/en/latest/classes/class_int.html) **init_plugin_data ( )**  
   
 用于初始化插件的数据库文件，并将其加载到内存中，以便在后续对其内容进行操作   
   
@@ -487,25 +487,25 @@ enum **BlockMode**
   
 ---  
   
-- [int](https://docs.godotengine.org/en/latest/classes/class_int.html) **save_plugin_data()**  
+- [int](https://docs.godotengine.org/en/latest/classes/class_int.html) **save_plugin_data ( )**  
   
 用于将内存中的数据保存到数据库文件中，需要先初始化数据库文件才能使用此函数  
   
 ---  
   
-- [Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html) **get_plugin_data(** [Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html) key **)**  
+- [Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html) **get_plugin_data (** [Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html) key **)**  
   
 用于从已加载的数据库中获取指定key对应的内容，需要先初始化数据库文件才能使用此函数  
   
 ---  
   
-- [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html) **has_plugin_data(** [Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html) key **)**  
+- [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html) **has_plugin_data (** [Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html) key **)**  
   
 用于从已加载的数据库中检查指定key是否存在，需要先初始化数据库文件才能使用此函数  
   
 ---  
   
-- [int](https://docs.godotengine.org/en/latest/classes/class_int.html) **set_plugin_data(** [Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html) key, [Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html) value, [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html) save_file **)**  
+- [int](https://docs.godotengine.org/en/latest/classes/class_int.html) **set_plugin_data (** [Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html) key, [Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html) value, [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html) save_file **)**  
   
 用于在已加载的数据库中设定指定key的对应内容，需要先初始化数据库文件才能使用此函数   
   
@@ -513,7 +513,7 @@ enum **BlockMode**
   
 ---  
   
-- [int](https://docs.godotengine.org/en/latest/classes/class_int.html) **remove_plugin_data(** [Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html) key, [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html) save_file **)**  
+- [int](https://docs.godotengine.org/en/latest/classes/class_int.html) **remove_plugin_data (** [Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html) key, [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html) save_file **)**  
   
 用于在已加载的数据库中删除指定key及其对应内容，需要先初始化数据库文件才能使用此函数   
   
@@ -521,7 +521,7 @@ enum **BlockMode**
   
 ---  
   
-- [int](https://docs.godotengine.org/en/latest/classes/class_int.html) **clear_plugin_data(** [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html) save_file **)**  
+- [int](https://docs.godotengine.org/en/latest/classes/class_int.html) **clear_plugin_data (** [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html) save_file **)**  
   
 用于在已加载的数据库中清空所有内容，需要先初始化数据库文件才能使用此函数   
   
@@ -529,7 +529,7 @@ enum **BlockMode**
   
 ---  
   
-- [int](https://docs.godotengine.org/en/latest/classes/class_int.html) **init_plugin_cache()**  
+- [int](https://docs.godotengine.org/en/latest/classes/class_int.html) **init_plugin_cache ( )**  
   
 用于初始化插件的缓存数据库文件，并将其加载到内存中，以便在后续对其内容进行操作   
   
@@ -539,25 +539,25 @@ enum **BlockMode**
   
 ---  
   
-- [int](https://docs.godotengine.org/en/latest/classes/class_int.html) **save_plugin_cache()**  
+- [int](https://docs.godotengine.org/en/latest/classes/class_int.html) **save_plugin_cache ( )**  
   
 用于将内存中的数据保存到缓存数据库文件中，需要先初始化缓存数据库文件才能使用此函数  
   
 ---  
   
-- [Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html) **get_plugin_cache(** [Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html) key **)**  
+- [Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html) **get_plugin_cache (** [Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html) key **)**  
   
 用于从已加载的缓存数据库中获取指定key对应的内容，需要先初始化缓存数据库文件才能使用此函数  
   
 ---  
   
-- [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html) **has_plugin_cache(** [Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html) key **)**  
+- [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html) **has_plugin_cache (** [Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html) key **)**  
   
 用于从已加载的缓存数据库中检查指定key是否存在，需要先初始化缓存数据库文件才能使用此函数  
   
 ---  
   
-- [int](https://docs.godotengine.org/en/latest/classes/class_int.html) **set_plugin_cache(** [Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html) key, [Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html) value, [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html) save_file **)**  
+- [int](https://docs.godotengine.org/en/latest/classes/class_int.html) **set_plugin_cache (** [Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html) key, [Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html) value, [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html) save_file **)**  
   
 用于在已加载的缓存数据库中设定指定key的对应内容，需要先初始化缓存数据库文件才能使用此函数   
   
@@ -565,7 +565,7 @@ enum **BlockMode**
   
 ---  
   
-- [int](https://docs.godotengine.org/en/latest/classes/class_int.html) **remove_plugin_cache(** [Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html) key, [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html) save_file **)**  
+- [int](https://docs.godotengine.org/en/latest/classes/class_int.html) **remove_plugin_cache (** [Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html) key, [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html) save_file **)**  
   
 用于在已加载的缓存数据库中删除指定key及其对应内容，需要先初始化缓存数据库文件才能使用此函数   
   
@@ -573,7 +573,7 @@ enum **BlockMode**
   
 ---  
   
-- [int](https://docs.godotengine.org/en/latest/classes/class_int.html) **clear_plugin_cache(** [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html) save_file **)**  
+- [int](https://docs.godotengine.org/en/latest/classes/class_int.html) **clear_plugin_cache (** [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html) save_file **)**  
   
 用于在已加载的缓存数据库中清空所有内容，需要先初始化缓存数据库文件才能使用此函数   
   
@@ -581,7 +581,7 @@ enum **BlockMode**
   
 ---  
   
-- void **unload_plugin()**  
+- void **unload_plugin ( )**  
   
 调用此函数后，插件将会尝试卸载自身   
   
@@ -589,7 +589,7 @@ enum **BlockMode**
   
 ---  
   
-- [Node](https://docs.godotengine.org/en/latest/classes/class_node.html) **load_scene(** [String](https://docs.godotengine.org/en/latest/classes/class_string.html) path, [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html) for_capture **)**  
+- [Node](https://docs.godotengine.org/en/latest/classes/class_node.html) **load_scene (** [String](https://docs.godotengine.org/en/latest/classes/class_string.html) path, [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html) for_capture **)**  
   
 加载一个场景文件，并根据第二个参数将其准备为用于图像捕捉或用于其他用途(如自定义GUI)，需要配合await关键字来使用此函数   
   
@@ -604,7 +604,7 @@ enum **BlockMode**
   
 ---  
   
-- [Image](https://docs.godotengine.org/en/latest/classes/class_image.html) **get_scene_image(** [Node](https://docs.godotengine.org/en/latest/classes/class_node.html) scene, [Vector2i](https://docs.godotengine.org/en/latest/classes/class_vector2i.html) size, [Vector2i](https://docs.godotengine.org/en/latest/classes/class_vector2i.html) stretch_size, [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html) transparent **)**  
+- [Image](https://docs.godotengine.org/en/latest/classes/class_image.html) **get_scene_image (** [Node](https://docs.godotengine.org/en/latest/classes/class_node.html) scene, [Vector2i](https://docs.godotengine.org/en/latest/classes/class_vector2i.html) size, [Vector2i](https://docs.godotengine.org/en/latest/classes/class_vector2i.html) stretch_size, [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html) transparent **)**  
   
 将指定场景实例中的当前内容获取为[Image]类图像的实例，需要配合await关键字来使用此函数   
   
@@ -618,7 +618,7 @@ enum **BlockMode**
   
 ---  
   
-- [Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html) **wait_context_custom(** [GDScript](https://docs.godotengine.org/en/latest/classes/class_gdscript.html) event_type, [int](https://docs.godotengine.org/en/latest/classes/class_int.html) sender_id, [int](https://docs.godotengine.org/en/latest/classes/class_int.html) group_id, [float](https://docs.godotengine.org/en/latest/classes/class_float.html) timeout, [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html) block **)**  
+- [Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html) **wait_context_custom (** [GDScript](https://docs.godotengine.org/en/latest/classes/class_gdscript.html) event_type, [int](https://docs.godotengine.org/en/latest/classes/class_int.html) sender_id, [int](https://docs.godotengine.org/en/latest/classes/class_int.html) group_id, [float](https://docs.godotengine.org/en/latest/classes/class_float.html) timeout, [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html) block **)**  
   
 通过await调用后，将等待一个满足指定发送者id，指定群组id的指定类型的消息事件   
   
@@ -635,7 +635,7 @@ enum **BlockMode**
   
 ---  
   
-- [Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html) **wait_context(** [MessageEvent](MessageEvent.md) event, [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html) match_sender, [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html) match_group, [float](https://docs.godotengine.org/en/latest/classes/class_float.html) timeout, [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html) block **)**  
+- [Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html) **wait_context (** [MessageEvent](MessageEvent.md) event, [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html) match_sender, [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html) match_group, [float](https://docs.godotengine.org/en/latest/classes/class_float.html) timeout, [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html) block **)**  
   
 通过await调用后，将等待另外一个与指定消息事件相匹配的消息事件   
   
@@ -652,7 +652,7 @@ enum **BlockMode**
   
 ---  
   
-- [Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html) **wait_context_id(** [String](https://docs.godotengine.org/en/latest/classes/class_string.html) context_id, [float](https://docs.godotengine.org/en/latest/classes/class_float.html) timeout **)**  
+- [Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html) **wait_context_id (** [String](https://docs.godotengine.org/en/latest/classes/class_string.html) context_id, [float](https://docs.godotengine.org/en/latest/classes/class_float.html) timeout **)**  
   
 通过await调用后，将等待指定id的响应，并在收到响应后返回响应的内容   
   
@@ -666,7 +666,7 @@ enum **BlockMode**
   
 ---  
   
-- [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html) **respond_context(** [Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html) context, [Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html) response **)**  
+- [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html) **respond_context (** [Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html) context, [Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html) response **)**  
   
 用于响应正在进行中的上下文等待   
   

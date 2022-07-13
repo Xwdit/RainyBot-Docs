@@ -12,7 +12,7 @@ RainyBot的转发消息列表类，通常代表一个对应实例，储存了某
   
 ## 方法 
   
-- [ForwardMessageNodeList](ForwardMessageNodeList.md) **init(** [Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html) msg_node **)**  
+- [ForwardMessageNodeList](ForwardMessageNodeList.md) **init (** [Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html) msg_node **)**  
   
 手动构造一个ForwardMessageNodeList类的实例，以便将多个单条转发消息进行合并转发   
   
@@ -22,25 +22,25 @@ RainyBot的转发消息列表类，通常代表一个对应实例，储存了某
   
 ---  
   
-- [ForwardMessageNodeList](ForwardMessageNodeList.md) **init_meta(** [Array](https://docs.godotengine.org/en/latest/classes/class_array.html) arr **)**  
+- [ForwardMessageNodeList](ForwardMessageNodeList.md) **init_meta (** [Array](https://docs.godotengine.org/en/latest/classes/class_array.html) arr **)**  
   
 通过机器人协议后端的元数据数组构造一个此类的实例，仅当你知道自己在做什么时才使用  
   
 ---  
   
-- [Array](https://docs.godotengine.org/en/latest/classes/class_array.html) **get_metadata()**  
+- [Array](https://docs.godotengine.org/en/latest/classes/class_array.html) **get_metadata ( )**  
   
 获取实例中的元数据数组，仅当你知道自己在做什么时才使用  
   
 ---  
   
-- void **set_metadata(** [Array](https://docs.godotengine.org/en/latest/classes/class_array.html) arr **)**  
+- void **set_metadata (** [Array](https://docs.godotengine.org/en/latest/classes/class_array.html) arr **)**  
   
 使用指定数组覆盖实例中的元数据数组，仅当你知道自己在做什么时才使用  
   
 ---  
   
-- [ForwardMessageNode](ForwardMessageNode.md) **get_from_index(** [int](https://docs.godotengine.org/en/latest/classes/class_int.html) index **)**  
+- [ForwardMessageNode](ForwardMessageNode.md) **get_from_index (** [int](https://docs.godotengine.org/en/latest/classes/class_int.html) index **)**  
   
 根据指定的序号来从此实例中获取对应的ForwardMessageNode实例   
   
@@ -48,13 +48,13 @@ RainyBot的转发消息列表类，通常代表一个对应实例，储存了某
   
 ---  
   
-- [int](https://docs.godotengine.org/en/latest/classes/class_int.html) **get_size()**  
+- [int](https://docs.godotengine.org/en/latest/classes/class_int.html) **get_size ( )**  
   
 获取转发消息列表中单条转发消息的总数  
   
 ---  
   
-- [ForwardMessageNodeList](ForwardMessageNodeList.md) **append(** [Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html) msg_node **)**  
+- [ForwardMessageNodeList](ForwardMessageNodeList.md) **append (** [Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html) msg_node **)**  
   
 将参数中的内容添加到此消息链实例中，并返回此消息链实例自身，以便于进行连续操作   
   
@@ -64,13 +64,13 @@ RainyBot的转发消息列表类，通常代表一个对应实例，储存了某
   
 ---  
   
-- [ForwardMessageNode](ForwardMessageNode.md) **get_from_message_id(** [int](https://docs.godotengine.org/en/latest/classes/class_int.html) message_id **)**  
+- [ForwardMessageNode](ForwardMessageNode.md) **get_from_message_id (** [int](https://docs.godotengine.org/en/latest/classes/class_int.html) message_id **)**  
   
 基于指定的消息ID来查找并返回第一个找到的单条转发消息实例  
   
 ---  
   
-- [ForwardMessageNode](ForwardMessageNode.md) **get_from_sender_id(** [int](https://docs.godotengine.org/en/latest/classes/class_int.html) sender_id **)**  
+- [ForwardMessageNode](ForwardMessageNode.md) **get_from_sender_id (** [int](https://docs.godotengine.org/en/latest/classes/class_int.html) sender_id **)**  
   
 基于指定的发送者ID来查找并返回第一个找到的单条转发消息实例  
   

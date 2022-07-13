@@ -24,19 +24,19 @@ enum **ReasonType**
   
 ## 方法 
   
-- [BotOfflineEvent](BotOfflineEvent.md) **init_meta(** [Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html) dic, [int](https://docs.godotengine.org/en/latest/classes/class_int.html) reason_type **)**  
+- [BotOfflineEvent](BotOfflineEvent.md) **init_meta (** [Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html) dic, [int](https://docs.godotengine.org/en/latest/classes/class_int.html) reason_type **)**  
   
 通过机器人协议后端的元数据字典构造一个此类的实例，仅当你知道自己在做什么时才使用  
   
 ---  
   
-- [int](https://docs.godotengine.org/en/latest/classes/class_int.html) **get_reason_type()**  
+- [int](https://docs.godotengine.org/en/latest/classes/class_int.html) **get_reason_type ( )**  
   
 获取机器人离线事件的原因类型，可用类型请参见此类的ReasonType枚举  
   
 ---  
   
-- [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html) **is_reason_type(** [int](https://docs.godotengine.org/en/latest/classes/class_int.html) reason **)**  
+- [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html) **is_reason_type (** [int](https://docs.godotengine.org/en/latest/classes/class_int.html) reason **)**  
   
 判定机器人离线事件是否是指定类型的原因，可用类型请参见此类的ReasonType枚举  
   

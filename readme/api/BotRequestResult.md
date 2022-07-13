@@ -48,55 +48,55 @@ enum **StatusCode**
   
 ## 方法 
   
-- [BotRequestResult](BotRequestResult.md) **init_meta(** [Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html) dic **)**  
+- [BotRequestResult](BotRequestResult.md) **init_meta (** [Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html) dic **)**  
   
 通过机器人协议后端的元数据数组构造一个BotRequestResult类的实例，仅当你知道自己在做什么时才使用  
   
 ---  
   
-- [Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html) **get_metadata()**  
+- [Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html) **get_metadata ( )**  
   
 获取实例中的元数据字典，仅当你知道自己在做什么时才使用  
   
 ---  
   
-- void **set_metadata(** [Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html) dic **)**  
+- void **set_metadata (** [Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html) dic **)**  
   
 使用指定字典覆盖实例中的元数据字典，仅当你知道自己在做什么时才使用  
   
 ---  
   
-- [int](https://docs.godotengine.org/en/latest/classes/class_int.html) **get_status_code()**  
+- [int](https://docs.godotengine.org/en/latest/classes/class_int.html) **get_status_code ( )**  
   
 返回请求结果的状态码  
   
 ---  
   
-- [String](https://docs.godotengine.org/en/latest/classes/class_string.html) **get_status_msg()**  
+- [String](https://docs.godotengine.org/en/latest/classes/class_string.html) **get_status_msg ( )**  
   
 返回请求结果的状态信息文本  
   
 ---  
   
-- [int](https://docs.godotengine.org/en/latest/classes/class_int.html) **get_message_id()**  
+- [int](https://docs.godotengine.org/en/latest/classes/class_int.html) **get_message_id ( )**  
   
 返回请求结果对应的消息ID  
   
 ---  
   
-- [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html) **is_success()**  
+- [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html) **is_success ( )**  
   
 返回请求结果是否为成功  
   
 ---  
   
-- [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html) **is_status(** [int](https://docs.godotengine.org/en/latest/classes/class_int.html) code **)**  
+- [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html) **is_status (** [int](https://docs.godotengine.org/en/latest/classes/class_int.html) code **)**  
   
 判断请求结果是否为指定的结果  
   
 ---  
   
-- [BotRequestResult](BotRequestResult.md) **recall(** [float](https://docs.godotengine.org/en/latest/classes/class_float.html) timeout **)**  
+- [BotRequestResult](BotRequestResult.md) **recall (** [float](https://docs.godotengine.org/en/latest/classes/class_float.html) timeout **)**  
   
 撤回请求结果中消息ID对应的消息   
   

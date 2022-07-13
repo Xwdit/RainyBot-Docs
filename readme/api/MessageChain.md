@@ -13,7 +13,7 @@ RainyBot的消息链类，通常代表一个对应实例，为多个不同类型
   
 ## 方法 
   
-- [MessageChain](MessageChain.md) **init(** [Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html) msg **)**  
+- [MessageChain](MessageChain.md) **init (** [Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html) msg **)**  
   
 手动构造一个MessageChain类的实例，以便将多种消息合并为单条消息发送   
   
@@ -26,25 +26,25 @@ RainyBot的消息链类，通常代表一个对应实例，为多个不同类型
   
 ---  
   
-- [MessageChain](MessageChain.md) **init_meta(** [Array](https://docs.godotengine.org/en/latest/classes/class_array.html) arr **)**  
+- [MessageChain](MessageChain.md) **init_meta (** [Array](https://docs.godotengine.org/en/latest/classes/class_array.html) arr **)**  
   
 通过机器人协议后端的元数据数组构造一个MessageChain类的实例，仅当你知道自己在做什么时才使用  
   
 ---  
   
-- [Array](https://docs.godotengine.org/en/latest/classes/class_array.html) **get_metadata()**  
+- [Array](https://docs.godotengine.org/en/latest/classes/class_array.html) **get_metadata ( )**  
   
 获取实例中的元数据数组，仅当你知道自己在做什么时才使用  
   
 ---  
   
-- void **set_metadata(** [Array](https://docs.godotengine.org/en/latest/classes/class_array.html) arr **)**  
+- void **set_metadata (** [Array](https://docs.godotengine.org/en/latest/classes/class_array.html) arr **)**  
   
 使用指定数组覆盖实例中的元数据数组，仅当你知道自己在做什么时才使用  
   
 ---  
   
-- [MessageChain](MessageChain.md) **append(** [Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html) msg **)**  
+- [MessageChain](MessageChain.md) **append (** [Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html) msg **)**  
   
 将参数中的内容添加到此消息链实例中，并返回此消息链实例自身，以便于进行连续操作   
   
@@ -58,13 +58,13 @@ RainyBot的消息链类，通常代表一个对应实例，为多个不同类型
   
 ---  
   
-- [int](https://docs.godotengine.org/en/latest/classes/class_int.html) **get_size()**  
+- [int](https://docs.godotengine.org/en/latest/classes/class_int.html) **get_size ( )**  
   
 获取消息链实例中的消息实例的总数  
   
 ---  
   
-- [Message](Message.md) **get_message(** [int](https://docs.godotengine.org/en/latest/classes/class_int.html) index **)**  
+- [Message](Message.md) **get_message (** [int](https://docs.godotengine.org/en/latest/classes/class_int.html) index **)**  
   
 根据指定的序号来从消息链实例中获取对应的Message子类实例   
   
@@ -72,7 +72,7 @@ RainyBot的消息链类，通常代表一个对应实例，为多个不同类型
   
 ---  
   
-- [Array](https://docs.godotengine.org/en/latest/classes/class_array.html) **get_message_array(** [Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html) types, [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html) exclude, [int](https://docs.godotengine.org/en/latest/classes/class_int.html) max_size **)**  
+- [Array](https://docs.godotengine.org/en/latest/classes/class_array.html) **get_message_array (** [Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html) types, [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html) exclude, [int](https://docs.godotengine.org/en/latest/classes/class_int.html) max_size **)**  
   
 根据指定的条件，来从消息链实例中获取由符合条件的消息类实例组成的数组   
   
@@ -86,7 +86,7 @@ RainyBot的消息链类，通常代表一个对应实例，为多个不同类型
   
 ---  
   
-- [String](https://docs.godotengine.org/en/latest/classes/class_string.html) **get_message_text(** [Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html) types, [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html) exclude **)**  
+- [String](https://docs.godotengine.org/en/latest/classes/class_string.html) **get_message_text (** [Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html) types, [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html) exclude **)**  
   
 根据指定的条件，来从消息链实例中获取由符合条件的消息类实例转换并拼接而成的单个字符串   
   
@@ -100,19 +100,19 @@ RainyBot的消息链类，通常代表一个对应实例，为多个不同类型
   
 ---  
   
-- [int](https://docs.godotengine.org/en/latest/classes/class_int.html) **get_message_id()**  
+- [int](https://docs.godotengine.org/en/latest/classes/class_int.html) **get_message_id ( )**  
   
 获取消息链实例的消息ID，若为手动且不基于ID构造的消息链实例，则始终返回0  
   
 ---  
   
-- [int](https://docs.godotengine.org/en/latest/classes/class_int.html) **get_message_timestamp()**  
+- [int](https://docs.godotengine.org/en/latest/classes/class_int.html) **get_message_timestamp ( )**  
   
 获取消息链实例的发送时间戳，若为手动构造的消息链实例，则始终返回0  
   
 ---  
   
-- [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html) **has_message_type(** [Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html) type **)**  
+- [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html) **has_message_type (** [Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html) type **)**  
   
 判断消息链实例中是否存在指定类型的消息类实例   
   
@@ -122,7 +122,7 @@ RainyBot的消息链类，通常代表一个对应实例，为多个不同类型
   
 ---  
   
-- [BotRequestResult](BotRequestResult.md) **set_essence(** [float](https://docs.godotengine.org/en/latest/classes/class_float.html) timeout **)**  
+- [BotRequestResult](BotRequestResult.md) **set_essence (** [float](https://docs.godotengine.org/en/latest/classes/class_float.html) timeout **)**  
   
 将消息链实例对应的消息设为群精华消息，机器人需要为消息对应群聊的管理员或群主   
   
@@ -134,7 +134,7 @@ RainyBot的消息链类，通常代表一个对应实例，为多个不同类型
   
 ---  
   
-- [BotRequestResult](BotRequestResult.md) **recall(** [float](https://docs.godotengine.org/en/latest/classes/class_float.html) timeout **)**  
+- [BotRequestResult](BotRequestResult.md) **recall (** [float](https://docs.godotengine.org/en/latest/classes/class_float.html) timeout **)**  
   
 将消息链实例对应的消息撤回，多数情况下需要为发送时间两分钟以内的消息   
   
@@ -148,7 +148,7 @@ RainyBot的消息链类，通常代表一个对应实例，为多个不同类型
   
 ---  
   
-- [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html) **is_at_bot()**  
+- [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html) **is_at_bot ( )**  
   
 用于快捷判断消息链实例中是否包含目标为机器人的AT类消息实例  
   

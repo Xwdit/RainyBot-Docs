@@ -7,25 +7,25 @@ RainyBot的新成员入群类，其实例记录了与一次新成员入群事件
   
 ## 方法 
   
-- [MemberJoinEvent](MemberJoinEvent.md) **init_meta(** [Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html) dic **)**  
+- [MemberJoinEvent](MemberJoinEvent.md) **init_meta (** [Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html) dic **)**  
   
 通过机器人协议后端的元数据字典构造一个此类的实例，仅当你知道自己在做什么时才使用  
   
 ---  
   
-- [GroupMember](GroupMember.md) **get_member()**  
+- [GroupMember](GroupMember.md) **get_member ( )**  
   
 获取此事件对应的群成员实例  
   
 ---  
   
-- [GroupMember](GroupMember.md) **get_invitor()**  
+- [GroupMember](GroupMember.md) **get_invitor ( )**  
   
 获取邀请新成员入群的群成员的实例  
   
 ---  
   
-- [Group](Group.md) **get_group()**  
+- [Group](Group.md) **get_group ( )**  
   
 获取此事件所发生的群组实例  
   
