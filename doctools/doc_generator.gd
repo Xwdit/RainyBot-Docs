@@ -245,7 +245,7 @@ func _save_doc_markdown(path:String,doc_dic:Dictionary,dics:Dictionary):
 
 
 func save_doc_markdown_catalog(path:String,dics:Dictionary):
-	var text:Array = ["# RainyBot API目录  \n  \n"]
+	var text:Array = ["---  \ndescription: 此页面记录了可供插件使用的各类RainyBot API  \n---  \n  \n# 📦 RainyBot API  \n  \n"]
 	_save_doc_markdown_catalog(dics,text)
 	var file:File = File.new()
 	file.open(path+"README.md",File.WRITE)
