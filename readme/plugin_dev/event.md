@@ -10,7 +10,7 @@
 
 `register_event()`函数的用法十分简单，先让我们简单的看一下API中是如何介绍的：
 
-> * void **register\_event (** [Variant](https://docs.godotengine.org/en/latest/classes/class\_variant.html) event, [Variant](https://docs.godotengine.org/en/latest/classes/class\_variant.html) function, [int](https://docs.godotengine.org/en/latest/classes/class\_int.html) priority, [int](https://docs.godotengine.org/en/latest/classes/class\_int.html) block\_mode **)**
+> * void **register\_event (** [Variant](https://docs.godotengine.org/en/latest/classes/class\_variant.html) event, [Variant](https://docs.godotengine.org/en/latest/classes/class\_variant.html) function, [int](https://docs.godotengine.org/en/latest/classes/class\_int.html) priority=0, [int](https://docs.godotengine.org/en/latest/classes/class\_int.html) block\_mode=3 **)**
 >
 > 用于注册一个或多个事件并将其绑定到一个或多个函数，事件发生时将触发绑定的函数并传入事件实例
 >
@@ -19,7 +19,7 @@
 > 事件的类型:
 >
 > * 此处可传入单个事件类型名，或一个包含了任意数量事件类型名的数组以批量注册事件
-> * 传入的事件需要直接或间接继承[Event](../api/Event.md)类，如[GroupMessageEvent](../api/GroupMessageEvent.md)
+> * 传入的事件需要直接或间接继承\[Event]类，如[GroupMessageEvent](../api/%E7%BE%A4%E6%B6%88%E6%81%AF%E4%BA%8B%E4%BB%B6/)
 >
 > 事件绑定的函数名:
 >
@@ -40,8 +40,8 @@
 
 * 首先，在第一个参数中，我们需要指定要注册哪个/哪些事件。如果您只需注册单个事件，则只需直接填入事件的名称即可，如`FriendMessageEvent`。如果您要同时注册多个事件，则需填入一个包含了不同事件名称的数组，如`[FriendMessageEvent, GroupMessageEvent]`将会同时注册好友消息与群消息事件。
 * 在第二个参数中，我们需要指定事件要绑定到哪个/哪些函数。在插件接收到第一个参数指定的任一事件时，将会调用/依次调用此处指定的函数。与前面一样，如果您只需绑定到单个函数，只需直接填入函数名即可。若您要同时绑定到多个函数，则需填入一个包含了不同函数名的数组，数组内的顺序将决定插件接收到事件时函数被执行的顺序
-* 第三个参数是一个整数，将决定此插件注册的此事件在全局的优先级。在多个插件同时注册了同一个事件的情况下，事件发生时，优先级数值越高的插件将会越早接收到这个事件。对于优先级相同的插件，将按照注册事件时的时间先后顺序来依次接收事件。
-* 第四个参数，决定了当接收到事件后，事件所绑定到的函数返回`true`时将执行的操作。事件所绑定到的函数如果返回`true`，则RainyBot将尝试按照该参数指定的模式来阻止这个事件的向后传递。当前可用的阻止模式如下：
+* \[可选，默认为`0`] 第三个参数是一个整数，将决定此插件注册的此事件在全局的优先级。在多个插件同时注册了同一个事件的情况下，事件发生时，优先级数值越高的插件将会越早接收到这个事件。对于优先级相同的插件，将按照注册事件时的时间先后顺序来依次接收事件。
+* \[可选，默认为`BlockMode.ALL`] 第四个参数，决定了当接收到事件后，事件所绑定到的函数返回`true`时将执行的操作。事件所绑定到的函数如果返回`true`，则RainyBot将尝试按照该参数指定的模式来阻止这个事件的向后传递。当前可用的阻止模式如下：
 
 > enum **BlockMode**
 >
