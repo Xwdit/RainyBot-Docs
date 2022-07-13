@@ -48,15 +48,15 @@ description: 此页面记录了可供插件使用的各类RainyBot API
   
         * **[FriendRecallEvent](FriendRecallEvent.md)** - RainyBot的好友消息撤回事件类，记录了某次好友消息撤回事件的相关数据  
   
-      * **[GroupEvent](GroupEvent.md)** - (文档待补充)  
+      * **[GroupEvent](GroupEvent.md)** - RainyBot的群组事件类，与群组直接相关的各类事件通常直接或间接继承此类  
   
-        * **[GroupAllowAnonyChatEvent](GroupAllowAnonyChatEvent.md)** - (文档待补充)  
+        * **[GroupAllowAnonyChatEvent](GroupAllowAnonyChatEvent.md)** - RainyBot的群组匿名聊天允许状态变更类，其实例记录了与一次群组匿名聊天允许状态变更事件相关的数据  
   
-        * **[GroupAllowConfessTalkEvent](GroupAllowConfessTalkEvent.md)** - (文档待补充)  
+        * **[GroupAllowConfessTalkEvent](GroupAllowConfessTalkEvent.md)** - RainyBot的群组坦白说允许状态变更类，其实例记录了与一次群组坦白说允许状态变更事件相关的数据  
   
-        * **[GroupAllowInviteEvent](GroupAllowInviteEvent.md)** - (文档待补充)  
+        * **[GroupAllowInviteEvent](GroupAllowInviteEvent.md)** - RainyBot的群组邀请入群允许状态变更类，其实例记录了与一次群组邀请入群允许状态变更事件相关的数据  
   
-        * **[GroupAnnounceChangeEvent](GroupAnnounceChangeEvent.md)** - (文档待补充)  
+        * **[GroupAnnounceChangeEvent](GroupAnnounceChangeEvent.md)** - RainyBot的群组公告变更类，其实例记录了与一次群组公告变更事件相关的数据  
   
         * **[GroupBotEvent](GroupBotEvent.md)** - RainyBot的Bot自身群组事件类，与Bot自身相关的群组事件通常直接或间接继承此类  
   
@@ -68,31 +68,31 @@ description: 此页面记录了可供插件使用的各类RainyBot API
   
           * **[BotPermChangeEvent](BotPermChangeEvent.md)** - RainyBot的Bot自身在群组中被更改权限事件类，其实例记录了与一次Bot自身在群组中被更改权限事件相关的数据  
   
-          * **[BotUnmuteEvent](BotUnmuteEvent.md)** - (文档待补充)  
+          * **[BotUnmuteEvent](BotUnmuteEvent.md)** - RainyBot的Bot自身在群组中被解除禁言事件类，其实例记录了与一次Bot自身在群组中被解除禁言事件相关的数据  
   
-        * **[GroupMemberEvent](GroupMemberEvent.md)** - (文档待补充)  
+        * **[GroupMemberEvent](GroupMemberEvent.md)** - RainyBot的群组成员事件类，与群成员相关的群组事件通常直接或间接继承此类  
   
-          * **[MemberHonorChangeEvent](MemberHonorChangeEvent.md)** - (文档待补充)  
+          * **[MemberHonorChangeEvent](MemberHonorChangeEvent.md)** - RainyBot的群成员荣誉变更类，其实例记录了与一次群成员荣誉变更事件相关的数据  
   
-          * **[MemberJoinEvent](MemberJoinEvent.md)** - (文档待补充)  
+          * **[MemberJoinEvent](MemberJoinEvent.md)** - RainyBot的新成员入群类，其实例记录了与一次新成员入群事件相关的数据  
   
-          * **[MemberLeaveEvent](MemberLeaveEvent.md)** - (文档待补充)  
+          * **[MemberLeaveEvent](MemberLeaveEvent.md)** - RainyBot的群成员退群类，其实例记录了与一次群成员退群事件相关的数据  
   
-          * **[MemberMuteEvent](MemberMuteEvent.md)** - (文档待补充)  
+          * **[MemberMuteEvent](MemberMuteEvent.md)** - RainyBot的群成员被禁言类，其实例记录了与一次群成员被禁言事件相关的数据  
   
-          * **[MemberNameChangeEvent](MemberNameChangeEvent.md)** - (文档待补充)  
+          * **[MemberNameChangeEvent](MemberNameChangeEvent.md)** - RainyBot的群成员昵称变更类，其实例记录了与一次群成员昵称变更事件相关的数据  
   
-          * **[MemberPermChangeEvent](MemberPermChangeEvent.md)** - (文档待补充)  
+          * **[MemberPermChangeEvent](MemberPermChangeEvent.md)** - RainyBot的群成员权限变更类，其实例记录了与一次群成员权限变更事件相关的数据  
   
-          * **[MemberTitleChangeEvent](MemberTitleChangeEvent.md)** - (文档待补充)  
+          * **[MemberTitleChangeEvent](MemberTitleChangeEvent.md)** - RainyBot的群成员头衔变更类，其实例记录了与一次群成员头衔变更事件相关的数据  
   
-          * **[MemberUnmuteEvent](MemberUnmuteEvent.md)** - (文档待补充)  
+          * **[MemberUnmuteEvent](MemberUnmuteEvent.md)** - RainyBot的群成员被解除禁言类，其实例记录了与一次群成员被解除禁言事件相关的数据  
   
-        * **[GroupMuteAllEvent](GroupMuteAllEvent.md)** - (文档待补充)  
+        * **[GroupMuteAllEvent](GroupMuteAllEvent.md)** - RainyBot的群组全员禁言状态变更类，其实例记录了与一次群组全员禁言状态变更事件相关的数据  
   
-        * **[GroupNameChangeEvent](GroupNameChangeEvent.md)** - (文档待补充)  
+        * **[GroupNameChangeEvent](GroupNameChangeEvent.md)** - RainyBot的群组名称变更类，其实例记录了与一次群组名称变更事件相关的数据  
   
-        * **[GroupRecallEvent](GroupRecallEvent.md)** - (文档待补充)  
+        * **[GroupRecallEvent](GroupRecallEvent.md)** - RainyBot的群组消息撤回类，其实例记录了与一次群组消息撤回事件相关的数据  
   
       * **[MessageEvent](MessageEvent.md)** - (文档待补充)  
   
