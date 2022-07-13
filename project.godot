@@ -607,7 +607,7 @@ run/main_scene="res://doctools/doc_generator.tscn"
 config/use_custom_user_dir=true
 config/custom_user_dir_name="rainybot-docs"
 config/features=PackedStringArray("4.0")
-config/icon="res://logo.png"
+config/icon="res://resources/logo.png"
 
 [editor]
 
