@@ -132,7 +132,7 @@ enum **BlockMode**
   
 ---  
   
-- void **set_plugin_info (** [String](https://docs.godotengine.org/en/latest/classes/class_string.html) p_id, [String](https://docs.godotengine.org/en/latest/classes/class_string.html) p_name, [String](https://docs.godotengine.org/en/latest/classes/class_string.html) p_author, [String](https://docs.godotengine.org/en/latest/classes/class_string.html) p_version, [String](https://docs.godotengine.org/en/latest/classes/class_string.html) p_description, [Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html) p_dependency **)**  
+- void **set_plugin_info (** [String](https://docs.godotengine.org/en/latest/classes/class_string.html) p_id, [String](https://docs.godotengine.org/en/latest/classes/class_string.html) p_name, [String](https://docs.godotengine.org/en/latest/classes/class_string.html) p_author, [String](https://docs.godotengine.org/en/latest/classes/class_string.html) p_version, [String](https://docs.godotengine.org/en/latest/classes/class_string.html) p_description, [Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html) p_dependency=[] **)**  
   
 用于设定插件的相关信息，需要在[method _on_init]虚函数中执行以便RainyBot正确加载您的插件   
   
@@ -286,7 +286,7 @@ enum **BlockMode**
   
 ---  
   
-- void **register_console_command (** [Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html) command, [Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html) function, [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html) need_arguments, [Array](https://docs.godotengine.org/en/latest/classes/class_array.html) usages=false, [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html) need_connect=false **)**  
+- void **register_console_command (** [Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html) command, [Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html) function, [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html) need_arguments=false, [Array](https://docs.godotengine.org/en/latest/classes/class_array.html) usages=[], [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html) need_connect=false **)**  
   
 用于注册一个控制台命令并将其绑定到指定函数，命令被执行时将触发此函数，并传入对应的命令名与参数数组   
   
@@ -321,7 +321,7 @@ enum **BlockMode**
   
 ---  
   
-- void **register_keyword (** [Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html) keyword, [Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html) function, [Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html) var_dic, [int](https://docs.godotengine.org/en/latest/classes/class_int.html) match_mode=0, [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html) block=true **)**  
+- void **register_keyword (** [Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html) keyword, [Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html) function, [Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html) var_dic={}, [int](https://docs.godotengine.org/en/latest/classes/class_int.html) match_mode=0, [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html) block=true **)**  
   
 用于注册一个或多个关键词并将其绑定到某个函数，关键词匹配时将触发绑定的函数并传入相关数据   
   
@@ -371,7 +371,7 @@ enum **BlockMode**
   
 ---  
   
-- [int](https://docs.godotengine.org/en/latest/classes/class_int.html) **init_plugin_config (** [Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html) default_config, [Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html) config_description **)**  
+- [int](https://docs.godotengine.org/en/latest/classes/class_int.html) **init_plugin_config (** [Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html) default_config, [Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html) config_description={} **)**  
   
 用于初始化插件的配置文件，并将其加载到内存中，以便在后续对其内容进行操作   
   
