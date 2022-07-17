@@ -4,6 +4,13 @@ description: 了解一下各个版本的变化吧~
 
 # 🚀 更新日志
 
+### [v2.0-Stable](https://github.com/Xwdit/RainyBot-Core/releases/tag/v2.0-stable)
+
+* 新增自动增量热更新功能，可自动对比新版本与当前版本的文件差异，并自动下载及热更新差异部分
+* 新增组件自修复功能，可在RainyBot程序组件出错或受损时自动查错并还原回初始状态
+* Console类中新增了临时关闭系统消息输出的API，可用于避免短时间的大量消息占据过多的控制台空间(不影响由插件调用Console类输出的消息)
+* 提升了RainyBot中多个组件的稳定性，修复了各类问题
+
 ### [v2.0-RC-9](https://github.com/Xwdit/RainyBot-Core/releases/tag/v2.0-rc-9)
 
 * 插件管理器中新增注册列表查询与数据功能，现在您可以快速查看插件注册的所有事件/关键词/控制台命令，还可以方便的管理插件的各项数据库项目/缓存项目/配置项目
