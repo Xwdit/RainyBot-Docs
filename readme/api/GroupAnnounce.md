@@ -12,13 +12,13 @@ RainyBot的群公告类，其实例记录了一个将被用于发送的群公告
   
 ## 方法 
   
-- [GroupAnnounce](GroupAnnounce.md) **init (** [String](https://docs.godotengine.org/en/latest/classes/class_string.html) content **)**  
+- static [GroupAnnounce](GroupAnnounce.md) **init (** [String](https://docs.godotengine.org/en/latest/classes/class_string.html) content **)**  
   
 基于指定的内容文本构造一个群公告实例，您可以稍后通过实例中的其它函数来设置此公告的更多属性  
   
 ---  
   
-- [GroupAnnounce](GroupAnnounce.md) **init_meta (** [Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html) dic **)**  
+- static [GroupAnnounce](GroupAnnounce.md) **init_meta (** [Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html) dic **)**  
   
 通过机器人协议后端的元数据字典构造一个此类的实例，仅当你知道自己在做什么时才使用  
   

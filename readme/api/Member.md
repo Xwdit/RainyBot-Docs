@@ -28,7 +28,7 @@ enum **Role**
   
 ## 方法 
   
-- [Member](Member.md) **init (** [int](https://docs.godotengine.org/en/latest/classes/class_int.html) member_id, [int](https://docs.godotengine.org/en/latest/classes/class_int.html) role=0 **)**  
+- static [Member](Member.md) **init (** [int](https://docs.godotengine.org/en/latest/classes/class_int.html) member_id, [int](https://docs.godotengine.org/en/latest/classes/class_int.html) role=0 **)**  
   
 手动构造一个Member类的实例，用于主动进行与个体成员的交互时使用   
   
@@ -36,7 +36,7 @@ enum **Role**
   
 ---  
   
-- [Member](Member.md) **init_meta (** [Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html) dic, [int](https://docs.godotengine.org/en/latest/classes/class_int.html) role=0 **)**  
+- static [Member](Member.md) **init_meta (** [Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html) dic, [int](https://docs.godotengine.org/en/latest/classes/class_int.html) role=0 **)**  
   
 通过机器人协议后端的元数据字典构造一个Member类的实例，仅当你知道自己在做什么时才使用  
   

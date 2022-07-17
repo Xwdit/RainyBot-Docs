@@ -12,7 +12,7 @@ RainyBot的群公告信息列表类，储存了从某个群组中获取的群公
   
 ## 方法 
   
-- [GroupAnnounceInfoList](GroupAnnounceInfoList.md) **init_meta (** [Array](https://docs.godotengine.org/en/latest/classes/class_array.html) arr **)**  
+- static [GroupAnnounceInfoList](GroupAnnounceInfoList.md) **init_meta (** [Array](https://docs.godotengine.org/en/latest/classes/class_array.html) arr **)**  
   
 通过机器人协议后端的元数据数组构造一个此类的实例，仅当你知道自己在做什么时才使用  
   

@@ -15,7 +15,7 @@ RainyBot动态图像类，可用于构造并生成一个Gif图像及相关数据
   
 ## 方法 
   
-- [GifImage](GifImage.md) **init (** [Vector2](https://docs.godotengine.org/en/latest/classes/class_vector2.html) img_size **)**  
+- static [GifImage](GifImage.md) **init (** [Vector2](https://docs.godotengine.org/en/latest/classes/class_vector2.html) img_size **)**  
   
 基于指定的图像大小来构造一个GifImage类图像的实例  
   

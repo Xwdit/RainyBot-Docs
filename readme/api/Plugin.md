@@ -164,7 +164,7 @@ enum **BlockMode**
   
 ---  
   
-- [String](https://docs.godotengine.org/en/latest/classes/class_string.html) **get_plugin_path ( )**  
+- static [String](https://docs.godotengine.org/en/latest/classes/class_string.html) **get_plugin_path ( )**  
   
 用于获取RainyBot的插件文件夹的路径，将返回插件文件夹的绝对路径 (如 `D://RainyBot/plugins/`)  
   
@@ -176,13 +176,13 @@ enum **BlockMode**
   
 ---  
   
-- [int](https://docs.godotengine.org/en/latest/classes/class_int.html) **get_global_runtime ( )**  
+- static [int](https://docs.godotengine.org/en/latest/classes/class_int.html) **get_global_runtime ( )**  
   
 用于获取RainyBot全局的已运行时间，默认情况下为RainyBot成功启动以来经过的秒数  
   
 ---  
   
-- [Plugin](Plugin.md) **get_plugin_instance (** [String](https://docs.godotengine.org/en/latest/classes/class_string.html) plugin_id **)**  
+- static [Plugin](Plugin.md) **get_plugin_instance (** [String](https://docs.godotengine.org/en/latest/classes/class_string.html) plugin_id **)**  
   
 用于获取其他插件的实例引用，可用于插件之间的联动与数据互通等   
   
@@ -190,7 +190,7 @@ enum **BlockMode**
   
 ---  
   
-- [String](https://docs.godotengine.org/en/latest/classes/class_string.html) **get_data_path ( )**  
+- static [String](https://docs.godotengine.org/en/latest/classes/class_string.html) **get_data_path ( )**  
   
 用于获取RainyBot的数据文件夹的路径，将返回数据文件夹的绝对路径 (如 `D://RainyBot/data/`)  
   
@@ -202,7 +202,7 @@ enum **BlockMode**
   
 ---  
   
-- [String](https://docs.godotengine.org/en/latest/classes/class_string.html) **get_config_path ( )**  
+- static [String](https://docs.godotengine.org/en/latest/classes/class_string.html) **get_config_path ( )**  
   
 用于获取RainyBot的配置文件夹的路径，将返回配置文件夹的绝对路径 (如 `D://RainyBot/config/`)  
   
@@ -214,7 +214,7 @@ enum **BlockMode**
   
 ---  
   
-- [String](https://docs.godotengine.org/en/latest/classes/class_string.html) **get_cache_path ( )**  
+- static [String](https://docs.godotengine.org/en/latest/classes/class_string.html) **get_cache_path ( )**  
   
 用于获取RainyBot的缓存文件夹的路径，将返回缓存文件夹的绝对路径 (如 D://RainyBot/cache)  
   
@@ -244,7 +244,7 @@ enum **BlockMode**
   
 ---  
   
-- [PackedStringArray](https://docs.godotengine.org/en/latest/classes/class_packedstringarray.html) **get_last_errors ( )**  
+- static [PackedStringArray](https://docs.godotengine.org/en/latest/classes/class_packedstringarray.html) **get_last_errors ( )**  
   
 用于获取最近一次检测到的所有RainyBot运行时错误，将返回一个包含了这些错误的字符串数组   
   

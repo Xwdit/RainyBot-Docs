@@ -13,7 +13,7 @@ RainyBot的消息链类，通常代表一个对应实例，为多个不同类型
   
 ## 方法 
   
-- [MessageChain](MessageChain.md) **init (** [Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html) msg **)**  
+- static [MessageChain](MessageChain.md) **init (** [Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html) msg **)**  
   
 手动构造一个MessageChain类的实例，以便将多种消息合并为单条消息发送   
   
@@ -26,7 +26,7 @@ RainyBot的消息链类，通常代表一个对应实例，为多个不同类型
   
 ---  
   
-- [MessageChain](MessageChain.md) **init_meta (** [Array](https://docs.godotengine.org/en/latest/classes/class_array.html) arr **)**  
+- static [MessageChain](MessageChain.md) **init_meta (** [Array](https://docs.godotengine.org/en/latest/classes/class_array.html) arr **)**  
   
 通过机器人协议后端的元数据数组构造一个MessageChain类的实例，仅当你知道自己在做什么时才使用  
   

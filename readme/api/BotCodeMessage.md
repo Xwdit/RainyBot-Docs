@@ -12,13 +12,13 @@ RainyBot的BotCode消息类，通常代表一个对应实例，可用于快捷�
   
 ## 方法 
   
-- [BotCodeMessage](BotCodeMessage.md) **init (** [String](https://docs.godotengine.org/en/latest/classes/class_string.html) text **)**  
+- static [BotCodeMessage](BotCodeMessage.md) **init (** [String](https://docs.godotengine.org/en/latest/classes/class_string.html) text **)**  
   
 基于包含BotCode的文本来构造BotCodeMessage的实例，以便快捷发送复杂消息  
   
 ---  
   
-- [BotCodeMessage](BotCodeMessage.md) **init_meta (** [Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html) dic **)**  
+- static [BotCodeMessage](BotCodeMessage.md) **init_meta (** [Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html) dic **)**  
   
 通过机器人协议后端的元数据字典构造一个BotCodeMessage类的实例，仅当你知道自己在做什么时才使用  
   

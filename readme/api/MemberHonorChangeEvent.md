@@ -21,7 +21,7 @@ enum **ActionType**
   
 ## 方法 
   
-- [MemberHonorChangeEvent](MemberHonorChangeEvent.md) **init_meta (** [Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html) dic **)**  
+- static [MemberHonorChangeEvent](MemberHonorChangeEvent.md) **init_meta (** [Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html) dic **)**  
   
 通过机器人协议后端的元数据字典构造一个此类的实例，仅当你知道自己在做什么时才使用  
   

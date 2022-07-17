@@ -12,7 +12,7 @@ RainyBot的转发消息列表类，通常代表一个对应实例，储存了某
   
 ## 方法 
   
-- [ForwardMessageNodeList](ForwardMessageNodeList.md) **init (** [Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html) msg_node **)**  
+- static [ForwardMessageNodeList](ForwardMessageNodeList.md) **init (** [Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html) msg_node **)**  
   
 手动构造一个ForwardMessageNodeList类的实例，以便将多个单条转发消息进行合并转发   
   
@@ -22,7 +22,7 @@ RainyBot的转发消息列表类，通常代表一个对应实例，储存了某
   
 ---  
   
-- [ForwardMessageNodeList](ForwardMessageNodeList.md) **init_meta (** [Array](https://docs.godotengine.org/en/latest/classes/class_array.html) arr **)**  
+- static [ForwardMessageNodeList](ForwardMessageNodeList.md) **init_meta (** [Array](https://docs.godotengine.org/en/latest/classes/class_array.html) arr **)**  
   
 通过机器人协议后端的元数据数组构造一个此类的实例，仅当你知道自己在做什么时才使用  
   

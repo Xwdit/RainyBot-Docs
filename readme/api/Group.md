@@ -12,7 +12,7 @@ RainyBot的群组类，通常代表一个对应实例，实现了用于与群组
   
 ## 方法 
   
-- [Group](Group.md) **init (** [int](https://docs.godotengine.org/en/latest/classes/class_int.html) group_id **)**  
+- static [Group](Group.md) **init (** [int](https://docs.godotengine.org/en/latest/classes/class_int.html) group_id **)**  
   
 手动构造一个Group类的实例，用于主动进行与群组的交互时使用   
   
@@ -20,7 +20,7 @@ RainyBot的群组类，通常代表一个对应实例，实现了用于与群组
   
 ---  
   
-- [Group](Group.md) **init_meta (** [Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html) dic **)**  
+- static [Group](Group.md) **init_meta (** [Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html) dic **)**  
   
 通过机器人协议后端的元数据字典构造一个Group类的实例，仅当你知道自己在做什么时才使用  
   

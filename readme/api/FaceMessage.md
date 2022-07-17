@@ -7,13 +7,13 @@ RainyBot的表情消息类，其实例记录了与一个表情消息相关的各
   
 ## 方法 
   
-- [FaceMessage](FaceMessage.md) **init (** [Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html) face **)**  
+- static [FaceMessage](FaceMessage.md) **init (** [Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html) face **)**  
   
 用于手动构造一个表情消息实例；若传入的参数为整数，则基于表情ID进行构造；若为字符串，则基于表情名称进行构造  
   
 ---  
   
-- [FaceMessage](FaceMessage.md) **init_meta (** [Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html) dic **)**  
+- static [FaceMessage](FaceMessage.md) **init_meta (** [Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html) dic **)**  
   
 通过机器人协议后端的元数据字典构造一个此类的实例，仅当你知道自己在做什么时才使用  
   

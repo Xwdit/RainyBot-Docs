@@ -12,13 +12,13 @@ RainyBot的其它客户端类，通常代表一个对应实例，实现了用于
   
 ## 方法 
   
-- [OtherClient](OtherClient.md) **init ( )**  
+- static [OtherClient](OtherClient.md) **init ( )**  
   
 手动构造一个OtherClient类的实例，用于主动进行与其他客户端的交互时使用  
   
 ---  
   
-- [OtherClient](OtherClient.md) **init_meta (** [Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html) dic **)**  
+- static [OtherClient](OtherClient.md) **init_meta (** [Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html) dic **)**  
   
 通过机器人协议后端的元数据字典构造一个OtherClient类的实例，仅当你知道自己在做什么时才使用  
   
