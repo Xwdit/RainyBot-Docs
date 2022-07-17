@@ -40,3 +40,8 @@ static func popup_notification(text:String,title:String="提示")->bool:
 ## [br][br]配合await关键词使用可以在确认框的确认按钮被点击时返回true，点击取消或直接关闭时返回false
 static func popup_confirm(text:String,title:String="请确认")->bool:
 	return false
+
+
+## 临时禁用控制台中的系统消息输出，不影响插件通过[code]Console.print_[/code]系列函数进行的输出
+static func disable_sysout(disabled:bool)->void:
+	return

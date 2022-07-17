@@ -53,4 +53,10 @@ RainyBot控制台类，包含了各类与控制台输出直接相关的功能
   
 ---  
   
+- static void **disable_sysout (** [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html) disabled **)**  
+  
+临时禁用控制台中的系统消息输出，不影响插件通过`Console.print_`系列函数进行的输出  
+  
+---  
+  
 
