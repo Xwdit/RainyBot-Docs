@@ -1,7 +1,6 @@
 # Table of contents
 
-* [🏠 主页](README.md)
-* [📖 文档主页](<README (1).md>)
+* [📖 文档主页](README.md)
   * [⚙ 安装与运行](readme/install.md)
   * [🪄 开始使用](readme/start.md)
   * [🔮 插件开发](readme/plugin\_dev/README.md)
