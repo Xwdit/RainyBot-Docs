@@ -10,7 +10,7 @@ description: 插件开发，从入门到创世
 
 让我们实现一个简单却有里程碑般意义的功能-让机器人回应你的问候语 "你好"
 
-* &#x20;在主菜单中选择 `插件->插件管理器`来打开插件管理器，在新建插件输入框中输入`hello_world`并点击`新建插件`按钮来创建新插件
+* 在主菜单中选择 `插件->插件管理器`来打开插件管理器，在新建插件输入框中输入`hello_world`并点击`新建插件`按钮来创建新插件
 
 ![创建新插件](../../.gitbook/assets/hello\_world\_create.png)
 
@@ -49,6 +49,6 @@ description: 插件开发，从入门到创世
 
 ### 从现有插件中学习
 
-我们为RainyBot准备了一些[常见领域的示例插件](https://github.com/Xwdit/RainyBot-Docs/tree/main/examples)，并且为每行代码都进行了详细的注释。您可以尝试结合[RainyBot API](https://docs.rainybot.dev/readme/api)阅读并理解它们，还可以尝试自己动手来修改/增加它们的功能。正所谓实践是最好的老师，相信您一定可以从示例插件中学习到更多RainyBot的开发与使用技巧\~
+我们为RainyBot准备了一些[常见领域的示例插件](https://github.com/Xwdit/RainyBot-Docs/tree/main/examples)，并且为每行代码都进行了详细的注释。您可以尝试结合[RainyBot API](../api/)阅读并理解它们，还可以尝试自己动手来修改/增加它们的功能。正所谓实践是最好的老师，相信您一定可以从示例插件中学习到更多RainyBot的开发与使用技巧\~
 
 如果您遇到任何问题，请大胆的到[社区群聊](https://qm.qq.com/cgi-bin/qm/qr?k=1nKmcY2qdc-q2Q8BYkn1MyhHrfc3oZ58\&jump\_from=webapi)，[交流论坛](https://godoter.cn/t/rainybot)等地进行提问，RainyBot社区的许多热心的小伙伴会帮助您解答您的疑问\~ 并且在这些地方，您还可以找到其他用户发布的插件，虽然注释通常不如示例插件那样完善，但也可以让您学习到一些示例插件中暂未涵盖的知识点
