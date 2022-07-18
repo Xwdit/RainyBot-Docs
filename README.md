@@ -13,7 +13,7 @@ description: 欢迎来到RainyBot官方文档！
 {% hint style="info" %}
 提示
 
-此处的概览不包含与使用RainyBot相关的内容，因此您可以简单浏览此页后直接跳转到[安装与运行](broken-reference)部分来了解如何开始使用
+此处的概览不包含与使用RainyBot相关的内容，因此您可以简单浏览此页后直接跳转到[安装与运行](readme/install.md)部分来了解如何开始使用
 {% endhint %}
 
 RainyBot是一个跨平台的机器人开发框架，基于 [Godot Engine 4.0](https://godotengine.org/) 进行开发。 本项目成立的目的，是为了建立一个低门槛，简单易用的机器人开发框架。 通过提供大量精心设计，智能且极简的交互API与预置功能，结合[GDScript脚本语言](https://docs.godotengine.org/en/latest/tutorials/scripting/gdscript/gdscript\_basics.html)的简便语法， 来尽可能地提升开发效率且降低开发难度，且让更多开发经验不足，乃至无经验的用户也能够轻松开发属于自己的各类社交平台机器人应用。
