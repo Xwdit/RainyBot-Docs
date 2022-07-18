@@ -1,9 +1,0 @@
-# 类: BotAPI
-
-[(返回目录)](./)
-
-**继承自:** [RainyBotAPI](rainybotapi.md)
-
-**子类:** [Bot](bot.md), [BotRequestResult](botrequestresult.md)
-
-协议后端API类，直接或间接继承此类的类通常包含各类与协议后端直接相关的功能
