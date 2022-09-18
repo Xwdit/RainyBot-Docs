@@ -19,7 +19,9 @@ description: 了解一下各个版本的变化吧~
 
 * 紧急修复图像消息无效，无法发送图像的问题
 
-### [v2.1-Stable](https://github.com/Xwdit/RainyBot-Core/releases/tag/v2.1-stable)
+### [v2.1-Stable](https://github.com/Xwdit/RainyBot-Core/releases/tag/v2.1-stable)&#x20;
+
+#### (此版本引入了兼容性变更，请点击链接来检查GitHub中的详细更新日志)
 
 * 新增热更新与热修复的下载源切换功能，GitHub为默认下载源，但可切换至Gitee国内源
 * 机器人自身退群事件`BotLeaveGroupEvent`中新增因群解散而退群的事件类型
