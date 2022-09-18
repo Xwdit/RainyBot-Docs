@@ -1,6 +1,0 @@
-[gd_scene load_steps=2 format=3 uid="uid://cug33cllerfoy"]
-
-[ext_resource type="Script" path="res://doctools/doc_generator.gd" id="1_5xjfo"]
-
-[node name="DocGenerator" type="Node"]
-script = ExtResource("1_5xjfo")

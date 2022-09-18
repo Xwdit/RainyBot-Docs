@@ -1,30 +1,33 @@
-# 类: NewFriendRequestEvent
+# 类: NewFriendRequestEvent  
+[(返回目录)](README.md)  
+  
+**继承自:** [RequestEvent](RequestEvent.md)  
+  
+RainyBot的添加好友请求事件类，其实例记录了与一次添加好友请求事件相关的数据  
+  
+## 枚举  
+  
+enum **RespondType**  
+  
+可用于回应请求的回应类型  
+  
+- **ACCEPT** = 0  
+接受好友添加请求  
+  
+- **REFUSE** = 1  
+拒绝好友添加请求  
+  
+- **REFUSE_BLACKLIST** = 2  
+拒绝好友添加请求并加入黑名单  
+  
+---  
+  
+## 方法 
+  
+- static [NewFriendRequestEvent](NewFriendRequestEvent.md) **init_meta (** [Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html) dic= **)**  
+  
+通过机器人协议后端的元数据字典构造一个此类的实例，仅当你知道自己在做什么时才使用  
+  
+---  
+  
 
-[(返回目录)](./)
-
-**继承自:** [RequestEvent](RequestEvent.md)
-
-RainyBot的添加好友请求事件类，其实例记录了与一次添加好友请求事件相关的数据
-
-## 枚举
-
-enum **RespondType**
-
-可用于回应请求的回应类型
-
-* **ACCEPT** = 0\
-  接受好友添加请求
-* **REFUSE** = 1\
-  拒绝好友添加请求
-* **REFUSE\_BLACKLIST** = 2\
-  拒绝好友添加请求并加入黑名单
-
-***
-
-## 方法
-
-* static [NewFriendRequestEvent](NewFriendRequestEvent.md) **init\_meta (** [Dictionary](https://docs.godotengine.org/en/latest/classes/class\_dictionary.html) dic **)**
-
-通过机器人协议后端的元数据字典构造一个此类的实例，仅当你知道自己在做什么时才使用
-
-***

@@ -11,7 +11,7 @@ const DOC_LINK:String = "https://docs.godotengine.org/en/latest/classes/class_%s
 
 
 func _ready():
-	build_docs("res://resources/api_gd/","res://readme/api/",DocType.MARKDOWN,false)
+	build_docs("res://resources/api_gd/","res://docs/api/",DocType.MARKDOWN,false)
 
 
 func build_docs(path:String,target_path:String,type:int,keep_dir_struct:bool=true)->void:

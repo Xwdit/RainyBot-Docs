@@ -603,7 +603,7 @@ _global_script_class_icons={
 [application]
 
 config/name="RainyBot-Docs"
-run/main_scene="res://doctools/doc_generator.tscn"
+run/main_scene="res://resources/doctools/doc_generator.tscn"
 config/use_custom_user_dir=true
 config/custom_user_dir_name="rainybot-docs"
 config/features=PackedStringArray("4.0")

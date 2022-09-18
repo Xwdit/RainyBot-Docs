@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://dt6whnxd15e6e"]
 
-[ext_resource type="Script" path="res://plugins/scene_example/example_scene.gd" id="1_iesyf"]
+[ext_resource type="Script" path="res://plugins/scene_example/example_scene.gd" id="1_058vt"]
 
 [node name="ExampleScene" type="Label"]
 anchors_preset = 8
@@ -17,4 +17,4 @@ theme_override_font_sizes/font_size = 30
 text = "text"
 horizontal_alignment = 1
 vertical_alignment = 1
-script = ExtResource("1_iesyf")
+script = ExtResource("1_058vt")
