@@ -4,6 +4,36 @@ description: 了解一下各个版本的变化吧~
 
 # 🚀 更新日志
 
+### [v2.1.3-Stable](https://github.com/Xwdit/RainyBot-Core/releases/tag/v2.1.3-stable)
+
+* 适配最新的Mirai相关组件，修复闪图发送问题
+* 所基于的Godot版本更新至v4.0-beta1
+* 所基于的Mirai版本更新至2.12.3, 所基于的Mirai-API-HTTP版本更新至2.6.2
+* 提升了RainyBot中多个组件的稳定性，修复了各类细节问题
+
+### [v2.1.2-Stable](https://github.com/Xwdit/RainyBot-Core/releases/tag/v2.1.2-Stable) (仅热更新，无发行包)
+
+* 支持异步执行热更新请求，大幅提升热更新下载速度
+
+### [v2.1.1-Stable](https://github.com/Xwdit/RainyBot-Core/releases/tag/v2.1.1-Stable) (仅热更新，无发行包)
+
+* 紧急修复图像消息无效，无法发送图像的问题
+
+### [v2.1-Stable](https://github.com/Xwdit/RainyBot-Core/releases/tag/v2.1-stable)
+
+* 新增热更新与热修复的下载源切换功能，GitHub为默认下载源，但可切换至Gitee国内源
+* 机器人自身退群事件`BotLeaveGroupEvent`中新增因群解散而退群的事件类型
+* `ImageMessage`类及`FlashImageMessage`类中新增获取接收的图像的文件大小，图像宽高，图像类型，以及图像是否为Emoji的方法
+* `Member`类中新增获取指定时间段的漫游消息的方法
+* 新增RainyBot控制台配置文件
+* 修复插件列表更新时插件管理器GUI不更新的问题
+* 修复插件管理器还原插件配置相关的问题
+* 提升热更新与热修复功能的稳定性，修正因文件行尾不同导致判断失败的问题，修复更新与修复的进度显示
+* 更新过时的API链接以及内置编辑器所需的类文档
+* 所基于的Godot版本更新至v4.0-alpha14
+* 所基于的Mirai版本更新至2.13.0-M1, 所基于的Mirai-API-HTTP版本更新至2.6.1
+* 提升了RainyBot中多个组件的稳定性，修复了各类细节问题
+
 ### [v2.0-Stable](https://github.com/Xwdit/RainyBot-Core/releases/tag/v2.0-stable)
 
 * 新增自动增量热更新功能，可自动对比新版本与当前版本的文件差异，并自动下载及热更新差异部分
