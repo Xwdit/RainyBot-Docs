@@ -18,7 +18,7 @@ RainyBot的其它客户端类，通常代表一个对应实例，实现了用于
   
 ---  
   
-- static [OtherClient](OtherClient.md) **init_meta (** [Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html) dic= **)**  
+- static [OtherClient](OtherClient.md) **init_meta (** [Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html) dic **)**  
   
 通过机器人协议后端的元数据字典构造一个OtherClient类的实例，仅当你知道自己在做什么时才使用  
   
@@ -30,7 +30,7 @@ RainyBot的其它客户端类，通常代表一个对应实例，实现了用于
   
 ---  
   
--  void **set_metadata (** [Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html) dic= **)**  
+-  void **set_metadata (** [Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html) dic **)**  
   
 使用指定字典覆盖实例中的元数据字典，仅当你知道自己在做什么时才使用  
   
@@ -48,7 +48,7 @@ RainyBot的其它客户端类，通常代表一个对应实例，实现了用于
   
 ---  
   
--  [BotRequestResult](BotRequestResult.md) **send_message (** [Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html) msg=, [int](https://docs.godotengine.org/en/latest/classes/class_int.html) quote_msgid=-1, [float](https://docs.godotengine.org/en/latest/classes/class_float.html) timeout=-INF **)**  
+-  [BotRequestResult](BotRequestResult.md) **send_message (** [Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html) msg, [int](https://docs.godotengine.org/en/latest/classes/class_int.html) quote_msgid=-1, [float](https://docs.godotengine.org/en/latest/classes/class_float.html) timeout=-INF **)**  
   
 向其它客户端发送消息,第二个参数为需要引用回复的消息id(可选)   
   
@@ -74,7 +74,7 @@ RainyBot的其它客户端类，通常代表一个对应实例，实现了用于
   
 ---  
   
--  [BotRequestResult](BotRequestResult.md) **recall_message (** [int](https://docs.godotengine.org/en/latest/classes/class_int.html) msg_id=, [float](https://docs.godotengine.org/en/latest/classes/class_float.html) timeout=-INF **)**  
+-  [BotRequestResult](BotRequestResult.md) **recall_message (** [int](https://docs.godotengine.org/en/latest/classes/class_int.html) msg_id, [float](https://docs.godotengine.org/en/latest/classes/class_float.html) timeout=-INF **)**  
   
 用于在其它客户端实例中将指定ID的消息撤回，仅可撤回机器人发送的消息   
   
@@ -84,7 +84,7 @@ RainyBot的其它客户端类，通常代表一个对应实例，实现了用于
   
 ---  
   
--  [CacheMessage](CacheMessage.md) **get_cache_message (** [int](https://docs.godotengine.org/en/latest/classes/class_int.html) msg_id=, [float](https://docs.godotengine.org/en/latest/classes/class_float.html) timeout=-INF **)**  
+-  [CacheMessage](CacheMessage.md) **get_cache_message (** [int](https://docs.godotengine.org/en/latest/classes/class_int.html) msg_id, [float](https://docs.godotengine.org/en/latest/classes/class_float.html) timeout=-INF **)**  
   
 用于在其它客户端实例中获取指定ID的本地缓存消息，将返回一个[CacheMessage]类的实例   
   

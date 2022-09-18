@@ -13,7 +13,7 @@ RainyBot的消息链类，通常代表一个对应实例，为多个不同类型
   
 ## 方法 
   
-- static [MessageChain](MessageChain.md) **init (** [Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html) msg= **)**  
+- static [MessageChain](MessageChain.md) **init (** [Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html) msg **)**  
   
 手动构造一个MessageChain类的实例，以便将多种消息合并为单条消息发送   
   
@@ -26,7 +26,7 @@ RainyBot的消息链类，通常代表一个对应实例，为多个不同类型
   
 ---  
   
-- static [MessageChain](MessageChain.md) **init_meta (** [Array](https://docs.godotengine.org/en/latest/classes/class_array.html) arr= **)**  
+- static [MessageChain](MessageChain.md) **init_meta (** [Array](https://docs.godotengine.org/en/latest/classes/class_array.html) arr **)**  
   
 通过机器人协议后端的元数据数组构造一个MessageChain类的实例，仅当你知道自己在做什么时才使用  
   
@@ -38,13 +38,13 @@ RainyBot的消息链类，通常代表一个对应实例，为多个不同类型
   
 ---  
   
--  void **set_metadata (** [Array](https://docs.godotengine.org/en/latest/classes/class_array.html) arr= **)**  
+-  void **set_metadata (** [Array](https://docs.godotengine.org/en/latest/classes/class_array.html) arr **)**  
   
 使用指定数组覆盖实例中的元数据数组，仅当你知道自己在做什么时才使用  
   
 ---  
   
--  [MessageChain](MessageChain.md) **append (** [Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html) msg= **)**  
+-  [MessageChain](MessageChain.md) **append (** [Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html) msg **)**  
   
 将参数中的内容添加到此消息链实例中，并返回此消息链实例自身，以便于进行连续操作   
   
@@ -64,7 +64,7 @@ RainyBot的消息链类，通常代表一个对应实例，为多个不同类型
   
 ---  
   
--  [Message](Message.md) **get_message (** [int](https://docs.godotengine.org/en/latest/classes/class_int.html) index= **)**  
+-  [Message](Message.md) **get_message (** [int](https://docs.godotengine.org/en/latest/classes/class_int.html) index **)**  
   
 根据指定的序号来从消息链实例中获取对应的Message子类实例   
   
@@ -112,7 +112,7 @@ RainyBot的消息链类，通常代表一个对应实例，为多个不同类型
   
 ---  
   
--  [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html) **has_message_type (** [Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html) type= **)**  
+-  [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html) **has_message_type (** [Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html) type **)**  
   
 判断消息链实例中是否存在指定类型的消息类实例   
   

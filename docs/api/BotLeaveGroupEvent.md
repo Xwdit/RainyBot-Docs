@@ -24,7 +24,7 @@ Bot因群解散退出群组
   
 ## 方法 
   
-- static [BotLeaveGroupEvent](BotLeaveGroupEvent.md) **init_meta (** [Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html) dic=, [int](https://docs.godotengine.org/en/latest/classes/class_int.html) reason_type= **)**  
+- static [BotLeaveGroupEvent](BotLeaveGroupEvent.md) **init_meta (** [Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html) dic, [int](https://docs.godotengine.org/en/latest/classes/class_int.html) reason_type **)**  
   
 通过机器人协议后端的元数据字典构造一个此类的实例，仅当你知道自己在做什么时才使用  
   
@@ -48,7 +48,7 @@ Bot因群解散退出群组
   
 ---  
   
--  [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html) **is_reason_type (** [int](https://docs.godotengine.org/en/latest/classes/class_int.html) reason= **)**  
+-  [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html) **is_reason_type (** [int](https://docs.godotengine.org/en/latest/classes/class_int.html) reason **)**  
   
 用于判断Bot退出群组的原因是否为指定的类型，可用类型请参见此类的ReasonType枚举  
   

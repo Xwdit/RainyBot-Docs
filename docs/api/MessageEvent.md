@@ -61,7 +61,7 @@ RainyBot的消息事件类，与消息直接相关的各类事件通常直接或
   
 ---  
   
--  [BotRequestResult](BotRequestResult.md) **reply (** [Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html) msg=, [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html) quote=false, [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html) at=false, [float](https://docs.godotengine.org/en/latest/classes/class_float.html) timeout=-INF **)**  
+-  [BotRequestResult](BotRequestResult.md) **reply (** [Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html) msg, [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html) quote=false, [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html) at=false, [float](https://docs.godotengine.org/en/latest/classes/class_float.html) timeout=-INF **)**  
   
 用于回应某个消息事件，同时可指定是否需要引用回复原消息，以及是否需要AT原发送者(仅在群消息事件有效)   
   

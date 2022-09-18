@@ -31,7 +31,7 @@ enum **Permission**
   
 ## 方法 
   
-- static [GroupMember](GroupMember.md) **init (** [int](https://docs.godotengine.org/en/latest/classes/class_int.html) group_id=, [int](https://docs.godotengine.org/en/latest/classes/class_int.html) member_id= **)**  
+- static [GroupMember](GroupMember.md) **init (** [int](https://docs.godotengine.org/en/latest/classes/class_int.html) group_id, [int](https://docs.godotengine.org/en/latest/classes/class_int.html) member_id **)**  
   
 手动构造一个GroupMember类的实例，用于主动进行与群成员的交互时使用   
   
@@ -39,7 +39,7 @@ enum **Permission**
   
 ---  
   
-- static [GroupMember](GroupMember.md) **init_meta (** [Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html) dic= **)**  
+- static [GroupMember](GroupMember.md) **init_meta (** [Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html) dic **)**  
   
 通过机器人协议后端的元数据字典构造一个GroupMember类的实例，仅当你知道自己在做什么时才使用  
   
@@ -51,7 +51,7 @@ enum **Permission**
   
 ---  
   
--  void **set_metadata (** [Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html) dic= **)**  
+-  void **set_metadata (** [Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html) dic **)**  
   
 使用指定字典覆盖实例中的元数据字典，仅当你知道自己在做什么时才使用  
   
@@ -89,7 +89,7 @@ enum **Permission**
   
 ---  
   
--  [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html) **is_permission (** [int](https://docs.godotengine.org/en/latest/classes/class_int.html) perm= **)**  
+-  [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html) **is_permission (** [int](https://docs.godotengine.org/en/latest/classes/class_int.html) perm **)**  
   
 判断群成员实例的类型是否为指定的类型  
   
@@ -129,7 +129,7 @@ enum **Permission**
   
 ---  
   
--  [BotRequestResult](BotRequestResult.md) **change_name (** [String](https://docs.godotengine.org/en/latest/classes/class_string.html) new_name=, [float](https://docs.godotengine.org/en/latest/classes/class_float.html) timeout=-INF **)**  
+-  [BotRequestResult](BotRequestResult.md) **change_name (** [String](https://docs.godotengine.org/en/latest/classes/class_string.html) new_name, [float](https://docs.godotengine.org/en/latest/classes/class_float.html) timeout=-INF **)**  
   
 更改群成员实例在其对应群聊中的名称(群昵称)   
   
@@ -139,7 +139,7 @@ enum **Permission**
   
 ---  
   
--  [BotRequestResult](BotRequestResult.md) **change_special_title (** [String](https://docs.godotengine.org/en/latest/classes/class_string.html) new_title=, [float](https://docs.godotengine.org/en/latest/classes/class_float.html) timeout=-INF **)**  
+-  [BotRequestResult](BotRequestResult.md) **change_special_title (** [String](https://docs.godotengine.org/en/latest/classes/class_string.html) new_title, [float](https://docs.godotengine.org/en/latest/classes/class_float.html) timeout=-INF **)**  
   
 更改群成员实例在其对应群聊中的特别称号(群荣誉)   
   
@@ -149,7 +149,7 @@ enum **Permission**
   
 ---  
   
--  [BotRequestResult](BotRequestResult.md) **toggle_admin (** [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html) enabled=, [float](https://docs.godotengine.org/en/latest/classes/class_float.html) timeout=-INF **)**  
+-  [BotRequestResult](BotRequestResult.md) **toggle_admin (** [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html) enabled, [float](https://docs.godotengine.org/en/latest/classes/class_float.html) timeout=-INF **)**  
   
 开关群成员实例在其对应群聊中的管理员权限，机器人需要为群主才可执行   
   
@@ -193,7 +193,7 @@ enum **Permission**
   
 ---  
   
--  [BotRequestResult](BotRequestResult.md) **send_message (** [Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html) msg=, [int](https://docs.godotengine.org/en/latest/classes/class_int.html) quote_msgid=-1, [float](https://docs.godotengine.org/en/latest/classes/class_float.html) timeout=-INF **)**  
+-  [BotRequestResult](BotRequestResult.md) **send_message (** [Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html) msg, [int](https://docs.godotengine.org/en/latest/classes/class_int.html) quote_msgid=-1, [float](https://docs.godotengine.org/en/latest/classes/class_float.html) timeout=-INF **)**  
   
 通过群临时会话，向群成员实例私聊发送消息，同时可指定一个需要引用回复的消息ID   
   
@@ -219,7 +219,7 @@ enum **Permission**
   
 ---  
   
--  [BotRequestResult](BotRequestResult.md) **recall_message (** [int](https://docs.godotengine.org/en/latest/classes/class_int.html) msg_id=, [float](https://docs.godotengine.org/en/latest/classes/class_float.html) timeout=-INF **)**  
+-  [BotRequestResult](BotRequestResult.md) **recall_message (** [int](https://docs.godotengine.org/en/latest/classes/class_int.html) msg_id, [float](https://docs.godotengine.org/en/latest/classes/class_float.html) timeout=-INF **)**  
   
 用于在群成员实例中将指定ID的消息撤回，仅可撤回机器人发送的消息   
   
@@ -229,7 +229,7 @@ enum **Permission**
   
 ---  
   
--  [CacheMessage](CacheMessage.md) **get_cache_message (** [int](https://docs.godotengine.org/en/latest/classes/class_int.html) msg_id=, [float](https://docs.godotengine.org/en/latest/classes/class_float.html) timeout=-INF **)**  
+-  [CacheMessage](CacheMessage.md) **get_cache_message (** [int](https://docs.godotengine.org/en/latest/classes/class_int.html) msg_id, [float](https://docs.godotengine.org/en/latest/classes/class_float.html) timeout=-INF **)**  
   
 用于在群成员实例中获取指定ID的本地缓存消息，将返回一个[CacheMessage]类的实例   
   

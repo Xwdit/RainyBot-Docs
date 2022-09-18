@@ -21,7 +21,7 @@ enum **ActionType**
   
 ## 方法 
   
-- static [MemberHonorChangeEvent](MemberHonorChangeEvent.md) **init_meta (** [Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html) dic= **)**  
+- static [MemberHonorChangeEvent](MemberHonorChangeEvent.md) **init_meta (** [Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html) dic **)**  
   
 通过机器人协议后端的元数据字典构造一个此类的实例，仅当你知道自己在做什么时才使用  
   
@@ -51,7 +51,7 @@ enum **ActionType**
   
 ---  
   
--  [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html) **is_action_type (** [int](https://docs.godotengine.org/en/latest/classes/class_int.html) action= **)**  
+-  [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html) **is_action_type (** [int](https://docs.godotengine.org/en/latest/classes/class_int.html) action **)**  
   
 用于判断本次事件是否为指定的变更类型  
   

@@ -12,13 +12,13 @@ RainyBot的群公告类，其实例记录了一个将被用于发送的群公告
   
 ## 方法 
   
-- static [GroupAnnounce](GroupAnnounce.md) **init (** [String](https://docs.godotengine.org/en/latest/classes/class_string.html) content= **)**  
+- static [GroupAnnounce](GroupAnnounce.md) **init (** [String](https://docs.godotengine.org/en/latest/classes/class_string.html) content **)**  
   
 基于指定的内容文本构造一个群公告实例，您可以稍后通过实例中的其它函数来设置此公告的更多属性  
   
 ---  
   
-- static [GroupAnnounce](GroupAnnounce.md) **init_meta (** [Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html) dic= **)**  
+- static [GroupAnnounce](GroupAnnounce.md) **init_meta (** [Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html) dic **)**  
   
 通过机器人协议后端的元数据字典构造一个此类的实例，仅当你知道自己在做什么时才使用  
   
@@ -30,13 +30,13 @@ RainyBot的群公告类，其实例记录了一个将被用于发送的群公告
   
 ---  
   
--  void **set_metadata (** [Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html) dic= **)**  
+-  void **set_metadata (** [Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html) dic **)**  
   
 使用指定字典覆盖实例中的元数据字典，仅当你知道自己在做什么时才使用  
   
 ---  
   
--  void **set_content (** [String](https://docs.godotengine.org/en/latest/classes/class_string.html) text= **)**  
+-  void **set_content (** [String](https://docs.godotengine.org/en/latest/classes/class_string.html) text **)**  
   
 设置公告实例中的公告内容文本，此项为此实例可被正常发送的必要条件，因此不可为空  
   
@@ -48,7 +48,7 @@ RainyBot的群公告类，其实例记录了一个将被用于发送的群公告
   
 ---  
   
--  void **set_send_to_new_member (** [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html) enabled= **)**  
+-  void **set_send_to_new_member (** [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html) enabled **)**  
   
 设置此公告实例是否向新成员展示  
   
@@ -60,7 +60,7 @@ RainyBot的群公告类，其实例记录了一个将被用于发送的群公告
   
 ---  
   
--  void **set_pinned (** [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html) enabled= **)**  
+-  void **set_pinned (** [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html) enabled **)**  
   
 设置此公告实例是否在公告列表中置顶  
   
@@ -72,7 +72,7 @@ RainyBot的群公告类，其实例记录了一个将被用于发送的群公告
   
 ---  
   
--  void **set_show_edit_card (** [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html) enabled= **)**  
+-  void **set_show_edit_card (** [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html) enabled **)**  
   
 设置此公告实例是否显示引导群员修改名片的选项  
   
@@ -84,7 +84,7 @@ RainyBot的群公告类，其实例记录了一个将被用于发送的群公告
   
 ---  
   
--  void **set_show_popup (** [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html) enabled= **)**  
+-  void **set_show_popup (** [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html) enabled **)**  
   
 设置此公告实例是否使用弹窗来展示  
   
@@ -96,7 +96,7 @@ RainyBot的群公告类，其实例记录了一个将被用于发送的群公告
   
 ---  
   
--  void **set_require_confirm (** [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html) enabled= **)**  
+-  void **set_require_confirm (** [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html) enabled **)**  
   
 设置此公告实例是否需要群成员进行确认  
   
@@ -108,7 +108,7 @@ RainyBot的群公告类，其实例记录了一个将被用于发送的群公告
   
 ---  
   
--  void **set_image_url (** [String](https://docs.godotengine.org/en/latest/classes/class_string.html) img_url= **)**  
+-  void **set_image_url (** [String](https://docs.godotengine.org/en/latest/classes/class_string.html) img_url **)**  
   
 设置此公告实例将包含的图像的url链接  
   
@@ -120,7 +120,7 @@ RainyBot的群公告类，其实例记录了一个将被用于发送的群公告
   
 ---  
   
--  void **set_image_path (** [String](https://docs.godotengine.org/en/latest/classes/class_string.html) img_path= **)**  
+-  void **set_image_path (** [String](https://docs.godotengine.org/en/latest/classes/class_string.html) img_path **)**  
   
 设置此公告实例将包含的图像的本地绝对路径  
   
@@ -132,7 +132,7 @@ RainyBot的群公告类，其实例记录了一个将被用于发送的群公告
   
 ---  
   
--  void **set_image_base64 (** [String](https://docs.godotengine.org/en/latest/classes/class_string.html) img_base64= **)**  
+-  void **set_image_base64 (** [String](https://docs.godotengine.org/en/latest/classes/class_string.html) img_base64 **)**  
   
 设置此公告实例将包含的图像的Base64编码  
   

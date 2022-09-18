@@ -12,7 +12,7 @@ RainyBot的群组列表类，通常代表一个对应实例，储存了机器人
   
 ## 方法 
   
-- static [GroupList](GroupList.md) **init_meta (** [Array](https://docs.godotengine.org/en/latest/classes/class_array.html) arr= **)**  
+- static [GroupList](GroupList.md) **init_meta (** [Array](https://docs.godotengine.org/en/latest/classes/class_array.html) arr **)**  
   
 通过机器人协议后端的元数据数组构造一个GroupList类的实例，仅当你知道自己在做什么时才使用  
   
@@ -24,13 +24,13 @@ RainyBot的群组列表类，通常代表一个对应实例，储存了机器人
   
 ---  
   
--  void **set_metadata (** [Array](https://docs.godotengine.org/en/latest/classes/class_array.html) arr= **)**  
+-  void **set_metadata (** [Array](https://docs.godotengine.org/en/latest/classes/class_array.html) arr **)**  
   
 使用指定数组覆盖实例中的元数据数组，仅当你知道自己在做什么时才使用  
   
 ---  
   
--  [Group](Group.md) **get_from_index (** [int](https://docs.godotengine.org/en/latest/classes/class_int.html) index= **)**  
+-  [Group](Group.md) **get_from_index (** [int](https://docs.godotengine.org/en/latest/classes/class_int.html) index **)**  
   
 根据指定的序号来从群列表实例中获取对应的Group实例   
   
@@ -38,7 +38,7 @@ RainyBot的群组列表类，通常代表一个对应实例，储存了机器人
   
 ---  
   
--  [Group](Group.md) **get_from_id (** [int](https://docs.godotengine.org/en/latest/classes/class_int.html) group_id= **)**  
+-  [Group](Group.md) **get_from_id (** [int](https://docs.godotengine.org/en/latest/classes/class_int.html) group_id **)**  
   
 根据指定的群ID(群号)来从群列表实例中获取对应的Group实例   
   
@@ -52,7 +52,7 @@ RainyBot的群组列表类，通常代表一个对应实例，储存了机器人
   
 ---  
   
--  [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html) **has_group (** [int](https://docs.godotengine.org/en/latest/classes/class_int.html) group_id= **)**  
+-  [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html) **has_group (** [int](https://docs.godotengine.org/en/latest/classes/class_int.html) group_id **)**  
   
 判断群列表实例中是否存在指定群ID(群号)的群组实例  
   

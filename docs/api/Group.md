@@ -12,7 +12,7 @@ RainyBot的群组类，通常代表一个对应实例，实现了用于与群组
   
 ## 方法 
   
-- static [Group](Group.md) **init (** [int](https://docs.godotengine.org/en/latest/classes/class_int.html) group_id= **)**  
+- static [Group](Group.md) **init (** [int](https://docs.godotengine.org/en/latest/classes/class_int.html) group_id **)**  
   
 手动构造一个Group类的实例，用于主动进行与群组的交互时使用   
   
@@ -20,7 +20,7 @@ RainyBot的群组类，通常代表一个对应实例，实现了用于与群组
   
 ---  
   
-- static [Group](Group.md) **init_meta (** [Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html) dic= **)**  
+- static [Group](Group.md) **init_meta (** [Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html) dic **)**  
   
 通过机器人协议后端的元数据字典构造一个Group类的实例，仅当你知道自己在做什么时才使用  
   
@@ -32,7 +32,7 @@ RainyBot的群组类，通常代表一个对应实例，实现了用于与群组
   
 ---  
   
--  void **set_metadata (** [Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html) dic= **)**  
+-  void **set_metadata (** [Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html) dic **)**  
   
 使用指定字典覆盖实例中的元数据字典，仅当你知道自己在做什么时才使用  
   
@@ -64,7 +64,7 @@ RainyBot的群组类，通常代表一个对应实例，实现了用于与群组
   
 ---  
   
--  [GroupMember](GroupMember.md) **get_member (** [int](https://docs.godotengine.org/en/latest/classes/class_int.html) member_id=, [float](https://docs.godotengine.org/en/latest/classes/class_float.html) timeout=-INF **)**  
+-  [GroupMember](GroupMember.md) **get_member (** [int](https://docs.godotengine.org/en/latest/classes/class_int.html) member_id, [float](https://docs.godotengine.org/en/latest/classes/class_float.html) timeout=-INF **)**  
   
 获取群聊实例中指定成员ID的GroupMember实例，需要配合await关键字使用   
   
@@ -80,7 +80,7 @@ RainyBot的群组类，通常代表一个对应实例，实现了用于与群组
   
 ---  
   
--  [MemberProfile](MemberProfile.md) **get_member_profile (** [int](https://docs.godotengine.org/en/latest/classes/class_int.html) member_id=, [float](https://docs.godotengine.org/en/latest/classes/class_float.html) timeout=-INF **)**  
+-  [MemberProfile](MemberProfile.md) **get_member_profile (** [int](https://docs.godotengine.org/en/latest/classes/class_int.html) member_id, [float](https://docs.godotengine.org/en/latest/classes/class_float.html) timeout=-INF **)**  
   
 获取群聊实例中指定成员ID相关资料的MemberProfile实例，需要配合await关键字使用   
   
@@ -88,7 +88,7 @@ RainyBot的群组类，通常代表一个对应实例，实现了用于与群组
   
 ---  
   
--  [BotRequestResult](BotRequestResult.md) **toggle_mute_all (** [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html) enabled=, [float](https://docs.godotengine.org/en/latest/classes/class_float.html) timeout=-INF **)**  
+-  [BotRequestResult](BotRequestResult.md) **toggle_mute_all (** [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html) enabled, [float](https://docs.godotengine.org/en/latest/classes/class_float.html) timeout=-INF **)**  
   
 用于切换群聊实例的全员禁言状态，所需的参数为是否启用全员禁言   
   
@@ -106,7 +106,7 @@ RainyBot的群组类，通常代表一个对应实例，实现了用于与群组
   
 ---  
   
--  [BotRequestResult](BotRequestResult.md) **set_group_config (** [GroupConfig](GroupConfig.md) config=, [float](https://docs.godotengine.org/en/latest/classes/class_float.html) timeout=-INF **)**  
+-  [BotRequestResult](BotRequestResult.md) **set_group_config (** [GroupConfig](GroupConfig.md) config, [float](https://docs.godotengine.org/en/latest/classes/class_float.html) timeout=-INF **)**  
   
 用于将群聊实例的各类配置替换为指定的GroupConfig实例中的配置   
   
@@ -116,7 +116,7 @@ RainyBot的群组类，通常代表一个对应实例，实现了用于与群组
   
 ---  
   
--  [BotRequestResult](BotRequestResult.md) **send_message (** [Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html) msg=, [int](https://docs.godotengine.org/en/latest/classes/class_int.html) quote_msgid=-1, [float](https://docs.godotengine.org/en/latest/classes/class_float.html) timeout=-INF **)**  
+-  [BotRequestResult](BotRequestResult.md) **send_message (** [Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html) msg, [int](https://docs.godotengine.org/en/latest/classes/class_int.html) quote_msgid=-1, [float](https://docs.godotengine.org/en/latest/classes/class_float.html) timeout=-INF **)**  
   
 用于向群聊实例发送消息，同时可指定一个需要引用回复的消息ID   
   
@@ -132,7 +132,7 @@ RainyBot的群组类，通常代表一个对应实例，实现了用于与群组
   
 ---  
   
--  [BotRequestResult](BotRequestResult.md) **send_nudge (** [int](https://docs.godotengine.org/en/latest/classes/class_int.html) member_id=, [float](https://docs.godotengine.org/en/latest/classes/class_float.html) timeout=-INF **)**  
+-  [BotRequestResult](BotRequestResult.md) **send_nudge (** [int](https://docs.godotengine.org/en/latest/classes/class_int.html) member_id, [float](https://docs.godotengine.org/en/latest/classes/class_float.html) timeout=-INF **)**  
   
 用于在群聊实例中向指定的成员ID发送一个戳一戳消息   
   
@@ -142,7 +142,7 @@ RainyBot的群组类，通常代表一个对应实例，实现了用于与群组
   
 ---  
   
--  [GroupAnnounceInfoList](GroupAnnounceInfoList.md) **publish_announce (** [GroupAnnounce](GroupAnnounce.md) announce=, [float](https://docs.godotengine.org/en/latest/classes/class_float.html) timeout=-INF **)**  
+-  [GroupAnnounceInfoList](GroupAnnounceInfoList.md) **publish_announce (** [GroupAnnounce](GroupAnnounce.md) announce, [float](https://docs.godotengine.org/en/latest/classes/class_float.html) timeout=-INF **)**  
   
 用于在群聊实例中发布一个指定的群公告实例，群公告实例的相关用法请参见[GroupAnnounce]类文档   
   
@@ -152,7 +152,7 @@ RainyBot的群组类，通常代表一个对应实例，实现了用于与群组
   
 ---  
   
--  [BotRequestResult](BotRequestResult.md) **delete_announce (** [int](https://docs.godotengine.org/en/latest/classes/class_int.html) announce_id=, [float](https://docs.godotengine.org/en/latest/classes/class_float.html) timeout=-INF **)**  
+-  [BotRequestResult](BotRequestResult.md) **delete_announce (** [int](https://docs.godotengine.org/en/latest/classes/class_int.html) announce_id, [float](https://docs.godotengine.org/en/latest/classes/class_float.html) timeout=-INF **)**  
   
 用于在群聊实例中删除一个指定ID的群公告   
   
@@ -182,7 +182,7 @@ RainyBot的群组类，通常代表一个对应实例，实现了用于与群组
   
 ---  
   
--  [BotRequestResult](BotRequestResult.md) **set_essence_message (** [int](https://docs.godotengine.org/en/latest/classes/class_int.html) msg_id=, [float](https://docs.godotengine.org/en/latest/classes/class_float.html) timeout=-INF **)**  
+-  [BotRequestResult](BotRequestResult.md) **set_essence_message (** [int](https://docs.godotengine.org/en/latest/classes/class_int.html) msg_id, [float](https://docs.godotengine.org/en/latest/classes/class_float.html) timeout=-INF **)**  
   
 用于在群聊实例中将指定ID的消息设置为精华消息   
   
@@ -192,7 +192,7 @@ RainyBot的群组类，通常代表一个对应实例，实现了用于与群组
   
 ---  
   
--  [BotRequestResult](BotRequestResult.md) **recall_message (** [int](https://docs.godotengine.org/en/latest/classes/class_int.html) msg_id=, [float](https://docs.godotengine.org/en/latest/classes/class_float.html) timeout=-INF **)**  
+-  [BotRequestResult](BotRequestResult.md) **recall_message (** [int](https://docs.godotengine.org/en/latest/classes/class_int.html) msg_id, [float](https://docs.godotengine.org/en/latest/classes/class_float.html) timeout=-INF **)**  
   
 用于在群聊实例中将指定ID的消息撤回，机器人需要为管理员或群主才可撤回他人消息   
   
@@ -202,7 +202,7 @@ RainyBot的群组类，通常代表一个对应实例，实现了用于与群组
   
 ---  
   
--  [CacheMessage](CacheMessage.md) **get_cache_message (** [int](https://docs.godotengine.org/en/latest/classes/class_int.html) msg_id=, [float](https://docs.godotengine.org/en/latest/classes/class_float.html) timeout=-INF **)**  
+-  [CacheMessage](CacheMessage.md) **get_cache_message (** [int](https://docs.godotengine.org/en/latest/classes/class_int.html) msg_id, [float](https://docs.godotengine.org/en/latest/classes/class_float.html) timeout=-INF **)**  
   
 用于在群聊实例中获取指定ID的本地缓存消息，将返回一个[CacheMessage]类的实例   
   

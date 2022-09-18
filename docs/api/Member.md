@@ -28,7 +28,7 @@ enum **Role**
   
 ## 方法 
   
-- static [Member](Member.md) **init (** [int](https://docs.godotengine.org/en/latest/classes/class_int.html) member_id=, [int](https://docs.godotengine.org/en/latest/classes/class_int.html) role=0 **)**  
+- static [Member](Member.md) **init (** [int](https://docs.godotengine.org/en/latest/classes/class_int.html) member_id, [int](https://docs.godotengine.org/en/latest/classes/class_int.html) role=0 **)**  
   
 手动构造一个Member类的实例，用于主动进行与个体成员的交互时使用   
   
@@ -36,7 +36,7 @@ enum **Role**
   
 ---  
   
-- static [Member](Member.md) **init_meta (** [Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html) dic=, [int](https://docs.godotengine.org/en/latest/classes/class_int.html) role=0 **)**  
+- static [Member](Member.md) **init_meta (** [Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html) dic, [int](https://docs.godotengine.org/en/latest/classes/class_int.html) role=0 **)**  
   
 通过机器人协议后端的元数据字典构造一个Member类的实例，仅当你知道自己在做什么时才使用  
   
@@ -48,7 +48,7 @@ enum **Role**
   
 ---  
   
--  void **set_metadata (** [Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html) dic= **)**  
+-  void **set_metadata (** [Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html) dic **)**  
   
 使用指定字典覆盖实例中的元数据字典，仅当你知道自己在做什么时才使用  
   
@@ -62,13 +62,13 @@ enum **Role**
   
 ---  
   
--  void **set_role (** [int](https://docs.godotengine.org/en/latest/classes/class_int.html) role= **)**  
+-  void **set_role (** [int](https://docs.godotengine.org/en/latest/classes/class_int.html) role **)**  
   
 设置个体成员实例的类型  
   
 ---  
   
--  [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html) **is_role (** [int](https://docs.godotengine.org/en/latest/classes/class_int.html) role= **)**  
+-  [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html) **is_role (** [int](https://docs.godotengine.org/en/latest/classes/class_int.html) role **)**  
   
 判断个体成员实例是否为某类型  
   
@@ -106,7 +106,7 @@ enum **Role**
   
 ---  
   
--  [BotRequestResult](BotRequestResult.md) **send_message (** [Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html) msg=, [int](https://docs.godotengine.org/en/latest/classes/class_int.html) quote_msgid=-1, [float](https://docs.godotengine.org/en/latest/classes/class_float.html) timeout=-INF **)**  
+-  [BotRequestResult](BotRequestResult.md) **send_message (** [Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html) msg, [int](https://docs.godotengine.org/en/latest/classes/class_int.html) quote_msgid=-1, [float](https://docs.godotengine.org/en/latest/classes/class_float.html) timeout=-INF **)**  
   
 向个体成员实例发送消息，同时可指定一个需要引用回复的消息ID   
   
@@ -156,7 +156,7 @@ enum **Role**
   
 ---  
   
--  [BotRequestResult](BotRequestResult.md) **recall_message (** [int](https://docs.godotengine.org/en/latest/classes/class_int.html) msg_id=, [float](https://docs.godotengine.org/en/latest/classes/class_float.html) timeout=-INF **)**  
+-  [BotRequestResult](BotRequestResult.md) **recall_message (** [int](https://docs.godotengine.org/en/latest/classes/class_int.html) msg_id, [float](https://docs.godotengine.org/en/latest/classes/class_float.html) timeout=-INF **)**  
   
 用于在个体成员实例中将指定ID的消息撤回，仅可撤回机器人发送的消息   
   
@@ -166,7 +166,7 @@ enum **Role**
   
 ---  
   
--  [CacheMessage](CacheMessage.md) **get_cache_message (** [int](https://docs.godotengine.org/en/latest/classes/class_int.html) msg_id=, [float](https://docs.godotengine.org/en/latest/classes/class_float.html) timeout=-INF **)**  
+-  [CacheMessage](CacheMessage.md) **get_cache_message (** [int](https://docs.godotengine.org/en/latest/classes/class_int.html) msg_id, [float](https://docs.godotengine.org/en/latest/classes/class_float.html) timeout=-INF **)**  
   
 用于在个体成员实例中获取指定ID的本地缓存消息，将返回一个[CacheMessage]类的实例   
   

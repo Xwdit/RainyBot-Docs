@@ -134,7 +134,7 @@ func _save_doc_markdown(path:String,doc_dic:Dictionary,dics:Dictionary):
 					var a_link:String = DOC_LINK % a.type.to_lower()
 					if dics.has(a.type) and dics[a.type].has("name"):
 						a_link = a.type+".md"
-					if a.has("default_value"):
+					if a.default_value != "":
 						md_text += "[%s](%s) %s=%s, " % [a.type,a_link,a.name,a.default_value]
 					else:
 						md_text += "[%s](%s) %s, " % [a.type,a_link,a.name]
@@ -194,7 +194,7 @@ func _save_doc_markdown(path:String,doc_dic:Dictionary,dics:Dictionary):
 			else:
 				md_text += "- [%s](%s) **%s**  \n" % [v.type,v_link,v.name]
 			md_text += "  \n"
-			if v.has("default_value"):
+			if v.default_value != "":
 				md_text += "*默认值:* %s  \n" % v.default_value
 				md_text += "  \n"
 			if v.has("setter"):
@@ -227,7 +227,7 @@ func _save_doc_markdown(path:String,doc_dic:Dictionary,dics:Dictionary):
 					var a_link:String = DOC_LINK % a.type.to_lower()
 					if dics.has(a.type) and dics[a.type].has("name"):
 						a_link = a.type+".md"
-					if a.has("default_value"):
+					if a.default_value != "":
 						md_text += "[%s](%s) %s=%s, " % [a.type,a_link,a.name,a.default_value]
 					else:
 						md_text += "[%s](%s) %s, " % [a.type,a_link,a.name]

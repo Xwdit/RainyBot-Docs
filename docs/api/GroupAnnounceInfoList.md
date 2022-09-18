@@ -12,7 +12,7 @@ RainyBot的群公告信息列表类，储存了从某个群组中获取的群公
   
 ## 方法 
   
-- static [GroupAnnounceInfoList](GroupAnnounceInfoList.md) **init_meta (** [Array](https://docs.godotengine.org/en/latest/classes/class_array.html) arr= **)**  
+- static [GroupAnnounceInfoList](GroupAnnounceInfoList.md) **init_meta (** [Array](https://docs.godotengine.org/en/latest/classes/class_array.html) arr **)**  
   
 通过机器人协议后端的元数据数组构造一个此类的实例，仅当你知道自己在做什么时才使用  
   
@@ -24,13 +24,13 @@ RainyBot的群公告信息列表类，储存了从某个群组中获取的群公
   
 ---  
   
--  void **set_metadata (** [Array](https://docs.godotengine.org/en/latest/classes/class_array.html) arr= **)**  
+-  void **set_metadata (** [Array](https://docs.godotengine.org/en/latest/classes/class_array.html) arr **)**  
   
 使用指定字典覆盖实例中的元数据数组，仅当你知道自己在做什么时才使用  
   
 ---  
   
--  [GroupAnnounceInfo](GroupAnnounceInfo.md) **get_from_index (** [int](https://docs.godotengine.org/en/latest/classes/class_int.html) index= **)**  
+-  [GroupAnnounceInfo](GroupAnnounceInfo.md) **get_from_index (** [int](https://docs.godotengine.org/en/latest/classes/class_int.html) index **)**  
   
 根据指定的序号来从群公告信息列表实例中获取对应的[GroupAnnounceInfo]实例   
   
@@ -38,7 +38,7 @@ RainyBot的群公告信息列表类，储存了从某个群组中获取的群公
   
 ---  
   
--  [GroupAnnounceInfo](GroupAnnounceInfo.md) **get_from_id (** [int](https://docs.godotengine.org/en/latest/classes/class_int.html) announce_id= **)**  
+-  [GroupAnnounceInfo](GroupAnnounceInfo.md) **get_from_id (** [int](https://docs.godotengine.org/en/latest/classes/class_int.html) announce_id **)**  
   
 根据指定的群公告ID来从群公告信息列表实例中获取对应的[GroupAnnounceInfo]实例   
   
@@ -46,7 +46,7 @@ RainyBot的群公告信息列表类，储存了从某个群组中获取的群公
   
 ---  
   
--  [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html) **has_announce (** [int](https://docs.godotengine.org/en/latest/classes/class_int.html) announce_id= **)**  
+-  [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html) **has_announce (** [int](https://docs.godotengine.org/en/latest/classes/class_int.html) announce_id **)**  
   
 判断群公告信息列表实例中是否存在指定ID的群公告信息实例  
   

@@ -7,7 +7,7 @@ RainyBot的群组名称变更类，其实例记录了与一次群组名称变更
   
 ## 方法 
   
-- static [GroupNameChangeEvent](GroupNameChangeEvent.md) **init_meta (** [Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html) dic= **)**  
+- static [GroupNameChangeEvent](GroupNameChangeEvent.md) **init_meta (** [Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html) dic **)**  
   
 通过机器人协议后端的元数据字典构造一个此类的实例，仅当你知道自己在做什么时才使用  
   

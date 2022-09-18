@@ -12,13 +12,13 @@ RainyBot的App消息类，通常代表一个对应实例，此类消息常见于
   
 ## 方法 
   
-- static [AppMessage](AppMessage.md) **init (** [String](https://docs.godotengine.org/en/latest/classes/class_string.html) text= **)**  
+- static [AppMessage](AppMessage.md) **init (** [String](https://docs.godotengine.org/en/latest/classes/class_string.html) text **)**  
   
 基于指定的App消息代码文本来手动构造一个AppMessage类的实例  
   
 ---  
   
-- static [AppMessage](AppMessage.md) **init_meta (** [Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html) dic= **)**  
+- static [AppMessage](AppMessage.md) **init_meta (** [Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html) dic **)**  
   
 通过机器人协议后端的元数据字典构造一个AppMessage类的实例，仅当你知道自己在做什么时才使用  
   
@@ -30,7 +30,7 @@ RainyBot的App消息类，通常代表一个对应实例，此类消息常见于
   
 ---  
   
--  void **set_app_text (** [String](https://docs.godotengine.org/en/latest/classes/class_string.html) text= **)**  
+-  void **set_app_text (** [String](https://docs.godotengine.org/en/latest/classes/class_string.html) text **)**  
   
 更改实例中储存的App消息代码文本  
   

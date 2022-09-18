@@ -7,7 +7,7 @@
   
 ## 方法 
   
-- static [ForwardMessageNode](ForwardMessageNode.md) **init (** [int](https://docs.godotengine.org/en/latest/classes/class_int.html) message_id=, [int](https://docs.godotengine.org/en/latest/classes/class_int.html) sender_id=-1, [int](https://docs.godotengine.org/en/latest/classes/class_int.html) time=0, [String](https://docs.godotengine.org/en/latest/classes/class_string.html) sender_name="", [MessageChain](MessageChain.md) message_chain=null **)**  
+- static [ForwardMessageNode](ForwardMessageNode.md) **init (** [int](https://docs.godotengine.org/en/latest/classes/class_int.html) message_id, [int](https://docs.godotengine.org/en/latest/classes/class_int.html) sender_id=-1, [int](https://docs.godotengine.org/en/latest/classes/class_int.html) time=0, [String](https://docs.godotengine.org/en/latest/classes/class_string.html) sender_name="", [MessageChain](MessageChain.md) message_chain=null **)**  
   
 基于指定的参数来手动构造一个ForwardMessageNode类的实例   
   
@@ -15,7 +15,7 @@
   
 ---  
   
-- static [ForwardMessageNode](ForwardMessageNode.md) **init_meta (** [Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html) dic= **)**  
+- static [ForwardMessageNode](ForwardMessageNode.md) **init_meta (** [Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html) dic **)**  
   
 通过机器人协议后端的元数据字典构造一个此类的实例，仅当你知道自己在做什么时才使用  
   
@@ -27,7 +27,7 @@
   
 ---  
   
--  void **set_metadata (** [Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html) dic= **)**  
+-  void **set_metadata (** [Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html) dic **)**  
   
 使用指定字典覆盖实例中的元数据字典，仅当你知道自己在做什么时才使用  
   
@@ -39,7 +39,7 @@
   
 ---  
   
--  void **set_sender_id (** [int](https://docs.godotengine.org/en/latest/classes/class_int.html) id= **)**  
+-  void **set_sender_id (** [int](https://docs.godotengine.org/en/latest/classes/class_int.html) id **)**  
   
 设置此实例对应的消息的发送者的ID  
   
@@ -51,7 +51,7 @@
   
 ---  
   
--  void **set_timestamp (** [int](https://docs.godotengine.org/en/latest/classes/class_int.html) time= **)**  
+-  void **set_timestamp (** [int](https://docs.godotengine.org/en/latest/classes/class_int.html) time **)**  
   
 设置此实例对应的消息的发送时间戳  
   
@@ -63,7 +63,7 @@
   
 ---  
   
--  void **set_sender_name (** [int](https://docs.godotengine.org/en/latest/classes/class_int.html) name= **)**  
+-  void **set_sender_name (** [int](https://docs.godotengine.org/en/latest/classes/class_int.html) name **)**  
   
 设置此实例对应的消息的发送者的名称  
   
@@ -75,7 +75,7 @@
   
 ---  
   
--  void **set_message_chain (** [MessageChain](MessageChain.md) msg_chain= **)**  
+-  void **set_message_chain (** [MessageChain](MessageChain.md) msg_chain **)**  
   
 设置此实例对应的消息的消息链实例  
   
@@ -87,7 +87,7 @@
   
 ---  
   
--  void **set_message_id (** [int](https://docs.godotengine.org/en/latest/classes/class_int.html) id= **)**  
+-  void **set_message_id (** [int](https://docs.godotengine.org/en/latest/classes/class_int.html) id **)**  
   
 设置此实例对应的消息的ID  
   

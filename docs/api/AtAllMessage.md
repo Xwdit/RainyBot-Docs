@@ -18,7 +18,7 @@ RainyBot的At全体成员消息类，通常代表一个对应实例，此类消�
   
 ---  
   
-- static [AtAllMessage](AtAllMessage.md) **init_meta (** [Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html) dic= **)**  
+- static [AtAllMessage](AtAllMessage.md) **init_meta (** [Dictionary](https://docs.godotengine.org/en/latest/classes/class_dictionary.html) dic **)**  
   
 通过机器人协议后端的元数据字典构造一个AtAllMessage类的实例，仅当你知道自己在做什么时才使用  
   
