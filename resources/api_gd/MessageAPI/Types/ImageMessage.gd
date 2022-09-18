@@ -80,6 +80,31 @@ func set_image_base64(image_base64:String)->void:
 	return
 
 
+## 获取此实例对应的图像的高度
+func get_image_height()->int:
+	return 0
+	
+
+## 获取此实例对应的图像的宽度	
+func get_image_width()->int:
+	return 0
+	
+
+## 获取此实例对应的图像的文件大小
+func get_image_size()->float:
+	return 0.0
+
+
+## 获取此实例对应的图像的类型文本
+func get_image_type()->String:
+	return ""
+
+
+## 判断此实例对应的图像是否为表情
+func is_emoji()->bool:
+	return false
+
+
 ## 将此实例获取为字符串的形式
 func get_as_text()->String:
 	return "[图片:"+get_image_id()+"]"

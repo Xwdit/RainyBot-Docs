@@ -146,3 +146,24 @@ func get_announce_list(page_num:int=0,per_page_size:int=10,timeout:float=-INF)->
 func quit(timeout:float=-INF)->BotRequestResult:
 	await self.script_changed #用于触发编辑器的错误检查，防止调用此函数时遗漏await关键字
 	return null
+
+
+## 用于在群聊实例中将指定ID的消息设置为精华消息
+## [br][br]配合await关键字可返回一个BotRequestResult类的实例，便于判断执行状态
+## [br][br]可以通过指定timeout参数来自定义获取请求结果的超时时间，若不指定则默认将使用配置文件中设置的超时时间
+func set_essence_message(msg_id:int,timeout:float=-INF)->BotRequestResult:
+	return null
+
+
+## 用于在群聊实例中将指定ID的消息撤回，机器人需要为管理员或群主才可撤回他人消息
+## [br][br]配合await关键字可返回一个BotRequestResult类的实例，便于判断执行状态
+## [br][br]可以通过指定timeout参数来自定义获取请求结果的超时时间，若不指定则默认将使用配置文件中设置的超时时间
+func recall_message(msg_id:int,timeout:float=-INF)->BotRequestResult:
+	return null
+
+
+## 用于在群聊实例中获取指定ID的本地缓存消息，将返回一个[CacheMessage]类的实例
+## [br][br]此函数必须配合await关键字进行使用，否则将会发生错误，且无法获取相关的信息
+## [br][br]可以通过指定timeout参数来自定义获取请求结果的超时时间，若不指定则默认将使用配置文件中设置的超时时间
+func get_cache_message(msg_id:int,timeout:float=-INF)->CacheMessage:
+	return null

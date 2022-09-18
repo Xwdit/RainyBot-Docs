@@ -8,7 +8,8 @@ class_name BotLeaveGroupEvent
 ## Bot退出群组的原因类型枚举
 enum ReasonType{
 	ACTIVE, ## Bot主动退出群组
-	KICK ## Bot被踢出群组
+	KICK, ## Bot被踢出群组
+	DISBAND ## Bot因群解散退出群组
 }
 
 

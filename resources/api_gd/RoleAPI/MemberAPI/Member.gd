@@ -111,3 +111,27 @@ func send_nudge(timeout:float=-INF)->BotRequestResult:
 func delete_friend(timeout:float=-INF)->BotRequestResult:
 	await self.script_changed #用于触发编辑器的错误检查，防止调用此函数时遗漏await关键字
 	return null
+
+
+## 用于在个体成员实例中获取指定时间段的漫游消息，将返回包含符合条件的漫游消息的[MessageChain]实例
+## [br][br]所需的参数由上到下分别为:
+## [br]- 漫游消息的开始时间戳(可选，若为默认值则将尝试获取自最早的漫游消息)
+## [br]- 漫游消息的截止时间戳(可选，若为默认值则将尝试获取至最近的漫游消息)
+## [br][br]此函数必须配合await关键字进行使用，否则将会发生错误，且无法获取相关的信息
+## [br][br]可以通过指定timeout参数来自定义获取请求结果的超时时间，若不指定则默认将使用配置文件中设置的超时时间
+func get_roaming_messages(start_time:int=0,end_time:int=9223372036854775807,timeout:float=-INF)->MessageChain:
+	return null
+
+
+## 用于在个体成员实例中将指定ID的消息撤回，仅可撤回机器人发送的消息
+## [br][br]配合await关键字可返回一个BotRequestResult类的实例，便于判断执行状态
+## [br][br]可以通过指定timeout参数来自定义获取请求结果的超时时间，若不指定则默认将使用配置文件中设置的超时时间
+func recall_message(msg_id:int,timeout:float=-INF)->BotRequestResult:
+	return null
+
+
+## 用于在个体成员实例中获取指定ID的本地缓存消息，将返回一个[CacheMessage]类的实例
+## [br][br]此函数必须配合await关键字进行使用，否则将会发生错误，且无法获取相关的信息
+## [br][br]可以通过指定timeout参数来自定义获取请求结果的超时时间，若不指定则默认将使用配置文件中设置的超时时间
+func get_cache_message(msg_id:int,timeout:float=-INF)->CacheMessage:
+	return null

@@ -316,7 +316,7 @@ func reset_plugin_config(key,save_file:bool=true)->int:
 
 ## 用于在已加载的配置中将所有内容还原回默认值，需要先初始化配置文件才能使用此函数
 ## [br][br]最后一项可选参数用于指定是否在还原的同时将更改立即保存到配置文件中
-func reset_all_plugin_data(save_file:bool=true)->int:
+func reset_all_plugin_config(save_file:bool=true)->int:
 	return OK
 
 
