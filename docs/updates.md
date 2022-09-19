@@ -4,10 +4,11 @@ description: 了解一下各个版本的变化吧~
 
 # 🚀 更新日志
 
-### [v2.1.4-Stable](https://github.com/Xwdit/RainyBot-Core/releases/tag/v2.1.4-stable)
+### [v2.1.4-Stable](https://github.com/Xwdit/RainyBot-Core/releases/tag/v2.1.4-stable-fix)
 
 * 重新设计了界面主题与布局，带来了更加现代化与简约的观感
 * 修复了插件编辑器的保存/注释快捷键
+* 修复了导致自动更新文件移除失败的问题
 * 改进了主菜单及部分界面模块中的外部链接布局
 * 提升了RainyBot中多个组件的稳定性，修复了各类细节问题
 
