@@ -4,6 +4,17 @@ description: 了解一下各个版本的变化吧~
 
 # 🚀 更新日志
 
+### [v2.1.5-Stable](https://github.com/Xwdit/RainyBot-Core/releases/tag/v2.1.5)
+
+* Http Get请求现支持自定义请求的Header，新增支持Http Put请求，并增加了相关API
+* 默认关闭Http请求的允许gzip压缩以避免在4.0-Beta2中出错，若更新后出现任何Http请求问题请到Issue处反馈
+* 通过物理帧来处理各类计时与网络轮询，以避免低显示帧率下的处理速度降低
+* 禁用低处理器模式以保证最大处理速度
+* 支持在控制台配置文件中禁用自动更新检查
+* 控制台新增右键菜单，可快速选择与复制控制台文本内容
+* 完善Mirai适配器的配置说明，新增支持MacOS/Ipad协议
+* 更新所基于的Godot版本到4.0-beta2，并对其进行各项适配
+
 ### [v2.1.4-Stable](https://github.com/Xwdit/RainyBot-Core/releases/tag/v2.1.4-stable-fix)
 
 * 重新设计了界面主题与布局，带来了更加现代化与简约的观感
