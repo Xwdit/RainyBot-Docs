@@ -19,17 +19,25 @@ RainyBot的实用工具类，其中提供了各种类型的便捷功能
   
 ---  
   
-- static [HttpRequestResult](HttpRequestResult.md) **send_http_get_request (** [String](https://docs.godotengine.org/en/latest/classes/class_string.html) url, [int](https://docs.godotengine.org/en/latest/classes/class_int.html) timeout=20 **)**  
+- static [HttpRequestResult](HttpRequestResult.md) **send_http_get_request (** [String](https://docs.godotengine.org/en/latest/classes/class_string.html) url, [PackedStringArray](https://docs.godotengine.org/en/latest/classes/class_packedstringarray.html) headers, [int](https://docs.godotengine.org/en/latest/classes/class_int.html) timeout=20 **)**  
   
 通过await调用时，将发送一个Http Get请求到指定的URL，并在收到结果或超时后返回一个HttpRequestResult   
   
-需要的参数从左到右分别为 请求URL,超时时间(可选，默认为20秒)  
+需要的参数从左到右分别为 请求URL,请求headers(可选，默认为空数组),超时时间(可选，默认为20秒)  
   
 ---  
   
 - static [HttpRequestResult](HttpRequestResult.md) **send_http_post_request (** [String](https://docs.godotengine.org/en/latest/classes/class_string.html) url, [String](https://docs.godotengine.org/en/latest/classes/class_string.html) request_data, [PackedStringArray](https://docs.godotengine.org/en/latest/classes/class_packedstringarray.html) headers="", [int](https://docs.godotengine.org/en/latest/classes/class_int.html) timeout=20 **)**  
   
 通过await调用时，将发送一个Http Post请求到指定的URL，并在收到结果或超时后返回一个HttpRequestResult   
+  
+需要的参数从左到右分别为 请求URL，请求内容，请求headers(可选，默认为空数组)，超时时间(可选，默认为20秒)  
+  
+---  
+  
+- static [HttpRequestResult](HttpRequestResult.md) **send_http_put_request (** [String](https://docs.godotengine.org/en/latest/classes/class_string.html) url, [String](https://docs.godotengine.org/en/latest/classes/class_string.html) request_data, [PackedStringArray](https://docs.godotengine.org/en/latest/classes/class_packedstringarray.html) headers="", [int](https://docs.godotengine.org/en/latest/classes/class_int.html) timeout=20 **)**  
+  
+通过await调用时，将发送一个Http Put请求到指定的URL，并在收到结果或超时后返回一个HttpRequestResult   
   
 需要的参数从左到右分别为 请求URL，请求内容，请求headers(可选，默认为空数组)，超时时间(可选，默认为20秒)  
   

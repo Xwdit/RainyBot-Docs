@@ -16,14 +16,20 @@ static func get_beautifuler_num(num:float)->String:
 
 
 ## 通过await调用时，将发送一个Http Get请求到指定的URL，并在收到结果或超时后返回一个HttpRequestResult
-## [br][br]需要的参数从左到右分别为 请求URL,超时时间(可选，默认为20秒)
-static func send_http_get_request(url:String,timeout:int=20)->HttpRequestResult:
+## [br][br]需要的参数从左到右分别为 请求URL,请求headers(可选，默认为空数组),超时时间(可选，默认为20秒)
+static func send_http_get_request(url:String,headers:PackedStringArray=PackedStringArray([]),timeout:int=20)->HttpRequestResult:
 	return null
 
 
 ## 通过await调用时，将发送一个Http Post请求到指定的URL，并在收到结果或超时后返回一个HttpRequestResult
 ## [br][br]需要的参数从左到右分别为 请求URL，请求内容，请求headers(可选，默认为空数组)，超时时间(可选，默认为20秒)
 static func send_http_post_request(url:String,request_data:String="",headers:PackedStringArray=PackedStringArray([]),timeout:int=20)->HttpRequestResult:
+	return null
+
+
+## 通过await调用时，将发送一个Http Put请求到指定的URL，并在收到结果或超时后返回一个HttpRequestResult
+## [br][br]需要的参数从左到右分别为 请求URL，请求内容，请求headers(可选，默认为空数组)，超时时间(可选，默认为20秒)
+static func send_http_put_request(url:String,request_data:String="",headers:PackedStringArray=PackedStringArray([]),timeout:int=20)->HttpRequestResult:
 	return null
 
 

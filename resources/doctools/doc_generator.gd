@@ -22,12 +22,10 @@ func build_docs(path:String,target_path:String,type:int,keep_dir_struct:bool=tru
 		if !dic.has("path"):
 			continue
 			
-		var dir:Directory = Directory.new()
-		var file:File = File.new()
 		var _path:String = dic["path"] if keep_dir_struct else target_path
 		dic.erase("path")
-		if !dir.dir_exists(_path):
-			dir.make_dir_recursive(_path)
+		if !DirAccess.dir_exists_absolute(_path):
+			DirAccess.make_dir_recursive_absolute(_path)
 		match type:
 			DocType.JSON:
 				_save_doc_json(_path,doc_dic[doc])
@@ -37,12 +35,10 @@ func build_docs(path:String,target_path:String,type:int,keep_dir_struct:bool=tru
 		save_doc_markdown_catalog(target_path,doc_dic)
 		
 
-
 func _build_docs(path:String,target_path:String,doc_dic:Dictionary)->void:
-	var dir:Directory = Directory.new()
-	var error:int = dir.open(path)
-	if error!=OK:
-		print(error_string(error))
+	var dir:DirAccess = DirAccess.open(path)
+	if !dir:
+		print(error_string(DirAccess.get_open_error()))
 		return
 		
 	dir.list_dir_begin()
@@ -81,15 +77,12 @@ func _build_script_dic(script:GDScript,target_path:String,dic:Dictionary):
 		
 		
 func _save_doc_json(path:String,doc_dic:Dictionary):
-	var file:File = File.new()
-	var json:JSON = JSON.new()
-	file.open(path+doc_dic.name+".json",File.WRITE)
-	file.store_line(json.stringify(doc_dic,"\t",false))
-	file.close()
+	var file = FileAccess.open(path+doc_dic.name+".json",FileAccess.WRITE)
+	file.store_line(JSON.stringify(doc_dic,"\t",false))
+	file = null
 		
 		
 func _save_doc_markdown(path:String,doc_dic:Dictionary,dics:Dictionary):
-	var file:File = File.new()
 	var md_text:String
 	md_text += "# 类: %s  \n" % doc_dic.name
 	md_text += "[(返回目录)](README.md)  \n"
@@ -242,19 +235,18 @@ func _save_doc_markdown(path:String,doc_dic:Dictionary,dics:Dictionary):
 	md_text = md_text.replacen(",  **)"," **)").replacen("(**  **)","( )")
 	md_text = md_text.replacen("=inf_neg","=-INF")
 	md_text = md_text.replacen("[code]","`").replacen("[/code]","`")
-	file.open(path+doc_dic.name+".md",File.WRITE)
+	var file = FileAccess.open(path+doc_dic.name+".md",FileAccess.WRITE)
 	file.store_line(md_text)
-	file.close()
+	file = null
 
 
 func save_doc_markdown_catalog(path:String,dics:Dictionary):
 	var text:Array = ["---\ndescription: 此页面记录了可供插件使用的各类RainyBot API\n---\n\n# 📦 RainyBot API\n\n"]
 	_save_doc_markdown_catalog(dics,text)
-	var file:File = File.new()
-	file.open(path+"README.md",File.WRITE)
+	var file = FileAccess.open(path+"README.md",FileAccess.WRITE)
 	text[0] = text[0].replacen("[br][br]","，")
 	file.store_line(text[0])
-	file.close()
+	file = null
 	
 
 func _save_doc_markdown_catalog(dics:Dictionary,cata_text:Array,cname:String="",layer:int=0):
