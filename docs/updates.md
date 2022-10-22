@@ -4,6 +4,18 @@ description: 了解一下各个版本的变化吧~
 
 # 🚀 更新日志
 
+### [v2.1.6-Stable](https://github.com/Xwdit/RainyBot-Core/releases/tag/v2.1.6-stable)
+
+* 新增了将任意格式音频文件自动转码为语音消息的功能；您可以在控制台配置文件中指定`ffmpeg`与`silk-encoder(可选,可提升语音音质,但会降低转码速度)`的可执行文件路径，随后即可通过`Utils.convert_to_voice(音频文件绝对路径)`函数来将指定音频自动转换为可直接发送的VoiceMessage实例
+* 新增通过Http post/put请求发送字节数组(即二进制数据)的支持，现可进行文件上传等复杂请求
+* 默认为Http请求使用多线程处理来提升性能，但因为当前Godot4.0-beta3版本中存在的一个错误，可能会导致部分使用gzip压缩的请求结果出现异常，若更新后出现任何Http请求问题，可以将请求函数的最后一个参数设置为false来禁用gzip解压缩，若依然存在问题请到Issue处反馈
+* 优化了图像文件缓存的可靠性与稳定性，在缓存的随机文件名中加入当前时间以避免重复，并且降低每次随机的重复性
+* 修复了此前版本中运行时错误检测无效的问题，改善了插件编辑器错误检测的效率
+* 修复了自定义合并转发消息节点无效的问题
+* 修复了发送Http Post/Put请求时自动转换数组/字典为json无效的问题
+* 替换了发行包中默认的swiftshader cpu渲染器版本，提升使用cpu渲染时的启动速度
+* 更新所基于的Godot版本到4.0-beta3，并对其进行各项适配
+
 ### [v2.1.5-Stable](https://github.com/Xwdit/RainyBot-Core/releases/tag/v2.1.5)
 
 * Http Get请求现支持自定义请求的Header，新增支持Http Put请求，并增加了相关API
