@@ -13,9 +13,9 @@ RainyBot的Http请求结果类，可从其中快速获取某次Http请求的结�
   
 ---  
   
--  [String](https://docs.godotengine.org/en/latest/classes/class_string.html) **get_request_data ( )**  
+-  [Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html) **get_request_data ( )**  
   
-获取此请求的请求数据字符串  
+获取此请求的请求数据(字符串/字节数组)  
   
 ---  
   

@@ -10,8 +10,8 @@ func get_request_url()->String:
 	return ""
 	
 
-## 获取此请求的请求数据字符串
-func get_request_data()->String:
+## 获取此请求的请求数据(字符串/字节数组)
+func get_request_data():
 	return ""
 	
 

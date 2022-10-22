@@ -7,11 +7,17 @@
   
 ## 方法 
   
-- static [ForwardMessageNode](ForwardMessageNode.md) **init (** [int](https://docs.godotengine.org/en/latest/classes/class_int.html) message_id, [int](https://docs.godotengine.org/en/latest/classes/class_int.html) sender_id=-1, [int](https://docs.godotengine.org/en/latest/classes/class_int.html) time=0, [String](https://docs.godotengine.org/en/latest/classes/class_string.html) sender_name="", [MessageChain](MessageChain.md) message_chain=null **)**  
+- static [ForwardMessageNode](ForwardMessageNode.md) **init (** [int](https://docs.godotengine.org/en/latest/classes/class_int.html) sender_id=-1, [int](https://docs.godotengine.org/en/latest/classes/class_int.html) time=0, [String](https://docs.godotengine.org/en/latest/classes/class_string.html) sender_name="", [MessageChain](MessageChain.md) message_chain=null **)**  
   
-基于指定的参数来手动构造一个ForwardMessageNode类的实例   
+基于指定的参数来手动构造一个自定义的ForwardMessageNode类的实例   
   
-需要的参数从左到右分别为: 被转发的消息ID，被转发的消息的发送者ID,被转发的消息的发送时间戳，被转发的消息的发送者名称，被转发的消息的消息链  
+需要的参数从左到右分别为: 被转发的消息的发送者ID,被转发的消息的发送时间戳，被转发的消息的发送者名称，被转发的消息的内容消息链  
+  
+---  
+  
+- static [ForwardMessageNode](ForwardMessageNode.md) **init_id (** [int](https://docs.godotengine.org/en/latest/classes/class_int.html) message_id **)**  
+  
+基于指定的已存在的消息ID来手动构造一个ForwardMessageNode类的实例  
   
 ---  
   

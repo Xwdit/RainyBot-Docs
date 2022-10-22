@@ -5,9 +5,14 @@ extends MessageAPI #继承MessageAPI类，用于RainyBot内部处理与加载，
 class_name ForwardMessageNode
 
 
-## 基于指定的参数来手动构造一个ForwardMessageNode类的实例
-## [br][br]需要的参数从左到右分别为: 被转发的消息ID，被转发的消息的发送者ID,被转发的消息的发送时间戳，被转发的消息的发送者名称，被转发的消息的消息链
-static func init(message_id:int,sender_id:int=-1,time:int=0,sender_name:String="",message_chain:MessageChain=null)->ForwardMessageNode:
+## 基于指定的参数来手动构造一个自定义的ForwardMessageNode类的实例
+## [br][br]需要的参数从左到右分别为: 被转发的消息的发送者ID,被转发的消息的发送时间戳，被转发的消息的发送者名称，被转发的消息的内容消息链
+static func init(sender_id:int=-1,time:int=0,sender_name:String="",message_chain:MessageChain=null)->ForwardMessageNode:
+	return null
+
+
+## 基于指定的已存在的消息ID来手动构造一个ForwardMessageNode类的实例
+static func init_id(message_id:int)->ForwardMessageNode:
 	return null
 
 
