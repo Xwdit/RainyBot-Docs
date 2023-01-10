@@ -76,7 +76,7 @@ RainyBot精心设计了一系列的便于使用的抽象API，并在底层将各
 
 ### 联系信息
 
-交流QQ群: 429787496
+交流QQ群: 881409193
 
 Xwdit - xwditfr@gmail.com
 
