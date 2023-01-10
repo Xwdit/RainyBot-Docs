@@ -1,32 +1,32 @@
-类: MemberPermChangeEvent
+[font_size=30][color=#70bafa]类:[/color] MemberPermChangeEvent[/font_size]
 
-继承自: GroupMemberEvent
+[color=#70bafa]继承自:[/color] GroupMemberEvent
  
-RainyBot的群成员权限变更类，其实例记录了与一次群成员权限变更事件相关的数据
+[b]RainyBot的群成员权限变更类，其实例记录了与一次群成员权限变更事件相关的数据[/b]
 
-方法:
+[font_size=30][color=#70bafa]方法:[/color][/font_size]
 
-	static MemberPermChangeEvent init_meta ( Dictionary dic )
+	● [color=gray]static[/color] [color=#70bafa]MemberPermChangeEvent[/color] init_meta [color=gray]([/color] [color=#70bafa]Dictionary[/color] dic [color=gray])[/color]
 
 	通过机器人协议后端的元数据字典构造一个此类的实例，仅当你知道自己在做什么时才使用
 
 
-	GroupMember get_member ( )
+	● [color=#70bafa]GroupMember[/color] get_member [color=gray]([/color]  [color=gray])[/color]
 
 	获取此事件对应的群成员实例
 
 
-	Group get_group ( )
+	● [color=#70bafa]Group[/color] get_group [color=gray]([/color]  [color=gray])[/color]
 
 	获取此事件所发生的群组实例
 
 
-	int get_origin_perm ( )
+	● [color=#70bafa]int[/color] get_origin_perm [color=gray]([/color]  [color=gray])[/color]
 
 	获取变更前的群权限，可用权限请参考GroupMember中的Permission枚举
 
 
-	int get_current_perm ( )
+	● [color=#70bafa]int[/color] get_current_perm [color=gray]([/color]  [color=gray])[/color]
 
 	获取变更后的当前群权限，可用权限请参考GroupMember中的Permission枚举
 

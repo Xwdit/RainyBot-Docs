@@ -1,50 +1,50 @@
-类: MemberHonorChangeEvent
+[font_size=30][color=#70bafa]类:[/color] MemberHonorChangeEvent[/font_size]
 
-继承自: GroupMemberEvent
+[color=#70bafa]继承自:[/color] GroupMemberEvent
  
-RainyBot的群成员荣誉变更类，其实例记录了与一次群成员荣誉变更事件相关的数据
+[b]RainyBot的群成员荣誉变更类，其实例记录了与一次群成员荣誉变更事件相关的数据[/b]
 
-枚举:
+[font_size=30][color=#70bafa]枚举:[/color][/font_size]
 
-	enum ActionType
+	[color=#70bafa]enum[/color] ActionType
 
 	群荣誉更改的操作类型
 
-		ACHIEVE = 0
-		群成员获得了新的群荣誉
+		● ACHIEVE [color=gray]= 0[/color]
+		[color=gray]群成员获得了新的群荣誉[/color]
 
-		LOST = 1
-		群成员失去了一个群荣誉
+		● LOST [color=gray]= 1[/color]
+		[color=gray]群成员失去了一个群荣誉[/color]
 
 
-方法:
+[font_size=30][color=#70bafa]方法:[/color][/font_size]
 
-	static MemberHonorChangeEvent init_meta ( Dictionary dic )
+	● [color=gray]static[/color] [color=#70bafa]MemberHonorChangeEvent[/color] init_meta [color=gray]([/color] [color=#70bafa]Dictionary[/color] dic [color=gray])[/color]
 
 	通过机器人协议后端的元数据字典构造一个此类的实例，仅当你知道自己在做什么时才使用
 
 
-	GroupMember get_member ( )
+	● [color=#70bafa]GroupMember[/color] get_member [color=gray]([/color]  [color=gray])[/color]
 
 	获取此事件对应的群成员实例
 
 
-	Group get_group ( )
+	● [color=#70bafa]Group[/color] get_group [color=gray]([/color]  [color=gray])[/color]
 
 	获取此事件所发生的群组实例
 
 
-	String get_honor_name ( )
+	● [color=#70bafa]String[/color] get_honor_name [color=gray]([/color]  [color=gray])[/color]
 
 	获取被变更的群荣誉的名称
 
 
-	int get_action_type ( )
+	● [color=#70bafa]int[/color] get_action_type [color=gray]([/color]  [color=gray])[/color]
 
 	获取本次事件的变更类型，详见上方的ActionType枚举
 
 
-	bool is_action_type ( int action )
+	● [color=#70bafa]bool[/color] is_action_type [color=gray]([/color] [color=#70bafa]int[/color] action [color=gray])[/color]
 
 	用于判断本次事件是否为指定的变更类型
 

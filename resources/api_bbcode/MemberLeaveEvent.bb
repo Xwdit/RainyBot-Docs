@@ -1,50 +1,50 @@
-类: MemberLeaveEvent
+[font_size=30][color=#70bafa]类:[/color] MemberLeaveEvent[/font_size]
 
-继承自: GroupMemberEvent
+[color=#70bafa]继承自:[/color] GroupMemberEvent
  
-RainyBot的群成员退群类，其实例记录了与一次群成员退群事件相关的数据
+[b]RainyBot的群成员退群类，其实例记录了与一次群成员退群事件相关的数据[/b]
 
-枚举:
+[font_size=30][color=#70bafa]枚举:[/color][/font_size]
 
-	enum ReasonType
+	[color=#70bafa]enum[/color] ReasonType
 
 	群成员退群的原因
 
-		QUIT = 0
-		群成员自行主动退群
+		● QUIT [color=gray]= 0[/color]
+		[color=gray]群成员自行主动退群[/color]
 
-		KICK = 1
-		群成员被管理员/群主踢出群聊
+		● KICK [color=gray]= 1[/color]
+		[color=gray]群成员被管理员/群主踢出群聊[/color]
 
 
-方法:
+[font_size=30][color=#70bafa]方法:[/color][/font_size]
 
-	static MemberLeaveEvent init_meta ( Dictionary dic, int reason_type )
+	● [color=gray]static[/color] [color=#70bafa]MemberLeaveEvent[/color] init_meta [color=gray]([/color] [color=#70bafa]Dictionary[/color] dic, [color=#70bafa]int[/color] reason_type [color=gray])[/color]
 
 	通过机器人协议后端的元数据字典构造一个此类的实例，仅当你知道自己在做什么时才使用
 
 
-	GroupMember get_member ( )
+	● [color=#70bafa]GroupMember[/color] get_member [color=gray]([/color]  [color=gray])[/color]
 
 	获取此事件对应的群成员实例
 
 
-	GroupMember get_operator ( )
+	● [color=#70bafa]GroupMember[/color] get_operator [color=gray]([/color]  [color=gray])[/color]
 
 	获取导致此事件的操作者的成员实例，可能是事件对应群组的管理员或群主，也可能是群成员自身
 
 
-	Group get_group ( )
+	● [color=#70bafa]Group[/color] get_group [color=gray]([/color]  [color=gray])[/color]
 
 	获取此事件所发生的群组实例
 
 
-	int get_reason_type ( )
+	● [color=#70bafa]int[/color] get_reason_type [color=gray]([/color]  [color=gray])[/color]
 
 	获取此事件发生的原因类型，详见上方的ReasonType枚举
 
 
-	bool is_reason_type ( int reason )
+	● [color=#70bafa]bool[/color] is_reason_type [color=gray]([/color] [color=#70bafa]int[/color] reason [color=gray])[/color]
 
 	判断此事件的发生是否为指定的原因类型
 

@@ -1,32 +1,32 @@
-类: GroupAnnounceChangeEvent
+[font_size=30][color=#70bafa]类:[/color] GroupAnnounceChangeEvent[/font_size]
 
-继承自: GroupEvent
+[color=#70bafa]继承自:[/color] GroupEvent
  
-RainyBot的群组公告变更类，其实例记录了与一次群组公告变更事件相关的数据
+[b]RainyBot的群组公告变更类，其实例记录了与一次群组公告变更事件相关的数据[/b]
 
-方法:
+[font_size=30][color=#70bafa]方法:[/color][/font_size]
 
-	static GroupAnnounceChangeEvent init_meta ( Dictionary dic )
+	● [color=gray]static[/color] [color=#70bafa]GroupAnnounceChangeEvent[/color] init_meta [color=gray]([/color] [color=#70bafa]Dictionary[/color] dic [color=gray])[/color]
 
 	通过机器人协议后端的元数据字典构造一个此类的实例，仅当你知道自己在做什么时才使用
 
 
-	String get_origin_announce ( )
+	● [color=#70bafa]String[/color] get_origin_announce [color=gray]([/color]  [color=gray])[/color]
 
 	获取变更前的群公告文本
 
 
-	String get_current_announce ( )
+	● [color=#70bafa]String[/color] get_current_announce [color=gray]([/color]  [color=gray])[/color]
 
 	获取变更后当前的群公告文本
 
 
-	GroupMember get_operator ( )
+	● [color=#70bafa]GroupMember[/color] get_operator [color=gray]([/color]  [color=gray])[/color]
 
 	获取导致此事件的操作者的成员实例，可能是事件对应群组的管理员或群主
 
 
-	Group get_group ( )
+	● [color=#70bafa]Group[/color] get_group [color=gray]([/color]  [color=gray])[/color]
 
 	获取此事件实例所对应的群组实例
 

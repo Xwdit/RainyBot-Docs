@@ -1,30 +1,30 @@
-类: GroupInviteRequestEvent
+[font_size=30][color=#70bafa]类:[/color] GroupInviteRequestEvent[/font_size]
 
-继承自: RequestEvent
+[color=#70bafa]继承自:[/color] RequestEvent
  
-RainyBot的邀请入群请求事件类，其实例记录了与一次邀请入群请求事件相关的数据
+[b]RainyBot的邀请入群请求事件类，其实例记录了与一次邀请入群请求事件相关的数据[/b]
 
-枚举:
+[font_size=30][color=#70bafa]枚举:[/color][/font_size]
 
-	enum RespondType
+	[color=#70bafa]enum[/color] RespondType
 
 	可用于回应请求的回应类型
 
-		ACCEPT = 0
-		接受入群邀请
+		● ACCEPT [color=gray]= 0[/color]
+		[color=gray]接受入群邀请[/color]
 
-		REFUSE = 1
-		拒绝入群邀请
+		● REFUSE [color=gray]= 1[/color]
+		[color=gray]拒绝入群邀请[/color]
 
 
-方法:
+[font_size=30][color=#70bafa]方法:[/color][/font_size]
 
-	static GroupInviteRequestEvent init_meta ( Dictionary dic )
+	● [color=gray]static[/color] [color=#70bafa]GroupInviteRequestEvent[/color] init_meta [color=gray]([/color] [color=#70bafa]Dictionary[/color] dic [color=gray])[/color]
 
 	通过机器人协议后端的元数据字典构造一个此类的实例，仅当你知道自己在做什么时才使用
 
 
-	String get_group_name ( )
+	● [color=#70bafa]String[/color] get_group_name [color=gray]([/color]  [color=gray])[/color]
 
 	获取事件对应的被邀请加入的群的名称
 

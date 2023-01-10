@@ -250,9 +250,9 @@ func _save_doc_markdown(path:String,doc_dic:Dictionary,dics:Dictionary):
 	
 func _save_doc_bbcode(path:String,doc_dic:Dictionary,dics:Dictionary):
 	var md_text:String
-	md_text += "类: %s\n" % doc_dic.name
+	md_text += "[font_size=30][color=#70bafa]类:[/color] %s[/font_size]\n" % doc_dic.name
 	md_text += "\n"
-	md_text += "继承自: %s\n" % [doc_dic.inherits]
+	md_text += "[color=#70bafa]继承自:[/color] %s\n" % [doc_dic.inherits]
 	md_text += " \n"
 	if !doc_dic.childs.is_empty():
 		var c_text:String = ""
@@ -260,27 +260,27 @@ func _save_doc_bbcode(path:String,doc_dic:Dictionary,dics:Dictionary):
 			c_text += "%s" % [doc_dic.childs[i]]
 			if i < doc_dic.childs.size()-1:
 				c_text += ", "
-		md_text += "子类: %s\n" % c_text
+		md_text += "[color=#70bafa]子类:[/color] %s\n" % c_text
 		md_text += "\n"
 	if doc_dic.brief_description != "":
-		md_text += "%s\n" % doc_dic.brief_description
+		md_text += "[b]%s[/b]\n" % doc_dic.brief_description
 		md_text += "\n"
 	if doc_dic.description != "":
-		md_text += "描述:\n"
+		md_text += "[font_size=30][color=#70bafa]描述:[/color][/font_size]\n"
 		md_text += "\n"
 		md_text += "%s\n" % doc_dic.description
 		md_text += "\n"
 	if !doc_dic.tutorials.is_empty():
-		md_text += "教程:\n"
+		md_text += "[font_size=30][color=#70bafa]教程:[/color][/font_size]\n"
 		md_text += "\n"
 		for t in doc_dic.tutorials:
 			md_text += "- %s (%s)\n" % [t.title,t.link]
 			md_text += "\n"
 	if !doc_dic.signals.is_empty():
-		md_text += "信号:\n"
+		md_text += "[font_size=30][color=#70bafa]信号:[/color][/font_size]\n"
 		md_text += "\n"
 		for s in doc_dic.signals:
-			md_text += "	%s ( " % [s.name]
+			md_text += "	● "+char(0xFFFF)+"%s ( " % [s.name]
 			if !s.arguments.is_empty():
 				for a in s.arguments:
 					if a.default_value != "":
@@ -294,19 +294,19 @@ func _save_doc_bbcode(path:String,doc_dic:Dictionary,dics:Dictionary):
 				md_text += "\n"
 			md_text += "\n"
 	if !doc_dic.enums.is_empty():
-		md_text += "枚举:\n"
+		md_text += "[font_size=30][color=#70bafa]枚举:[/color][/font_size]\n"
 		md_text += "\n"
 		for e in doc_dic.enums:
-			md_text += "	enum %s\n" % [e.name]
+			md_text += "	[color=#70bafa]enum[/color] "+char(0xFFFF)+"%s\n" % [e.name]
 			md_text += "\n"
 			if e.description != "":
 				md_text += "	%s\n" % e.description.replacen("[br]","\n	")
 				md_text += "\n"
 			for c in doc_dic.constants:
 				if c.enumeration == e.name:
-					md_text += "		%s = %s\n" % [c.name,c.value]
+					md_text += "		● %s [color=gray]= %s[/color]\n" % [c.name,c.value]
 					if c.description != "":
-						md_text += "		%s\n" % c.description.replacen("[br]","\n		")
+						md_text += "		[color=gray]%s[/color]\n" % c.description.replacen("[br]","\n		")
 						md_text += "\n"
 			md_text += "\n"
 	if !doc_dic.constants.is_empty():
@@ -316,26 +316,26 @@ func _save_doc_bbcode(path:String,doc_dic:Dictionary,dics:Dictionary):
 				found = true
 				break
 		if found:
-			md_text += "常量:\n"
+			md_text += "[font_size=30][color=#70bafa]常量:[/color][/font_size]\n"
 			md_text += "\n"
 			for v in doc_dic.constants:
 				if v.enumeration != "":
 					continue
 				else:
-					md_text += "	%s = %s\n" % [v.name,v.value]
+					md_text += "	● "+char(0xFFFF)+"%s = %s\n" % [v.name,v.value]
 				md_text += "\n"
 				if v.description != "":
 					md_text += "	%s\n" % v.description.replacen("[br]","\n	")
 					md_text += "\n"
 				md_text += "\n"
 	if !doc_dic.variables.is_empty():
-		md_text += "属性:\n"
+		md_text += "[font_size=30][color=#70bafa]属性:[/color][/font_size]\n"
 		md_text += "\n"
 		for v in doc_dic.variables:
 			if v.enumeration != "":
-				md_text += "	%s %s.%s\n" % [v.type,v.enumeration,v.name]
+				md_text += "	● %s "+char(0xFFFF)+"%s.%s\n" % [v.type,v.enumeration,v.name]
 			else:
-				md_text += "	%s %s\n" % [v.type,v.name]
+				md_text += "	● %s "+char(0xFFFF)+"%s\n" % [v.type,v.name]
 			md_text += "\n"
 			if v.default_value != "":
 				md_text += "	默认值: %s\n" % v.default_value
@@ -351,16 +351,16 @@ func _save_doc_bbcode(path:String,doc_dic:Dictionary,dics:Dictionary):
 				md_text += "\n"
 			md_text += "\n"
 	if !doc_dic.methods.is_empty():
-		md_text += "方法:\n"
+		md_text += "[font_size=30][color=#70bafa]方法:[/color][/font_size]\n"
 		md_text += "\n"
 		for m in doc_dic.methods:
-			md_text += "	"
+			md_text += "	● "
 			if m.has("qualifiers") and !m.qualifiers.is_empty():
-				md_text += m.qualifiers + " "
+				md_text += "[color=gray]"+ m.qualifiers + "[/color] "
 			if m.return_type.to_lower() != "void":
-				md_text += "%s %s ( " % [m.return_type,m.name]
+				md_text += "[color=#70bafa]%s[/color] "+char(0xFFFF)+"%s [color=gray]([/color] " % [m.return_type,m.name]
 			else:
-				md_text += "%s %s ( " % [m.return_type,m.name]
+				md_text += "[color=gray]%s[/color] "+char(0xFFFF)+"%s [color=gray]([/color] " % [m.return_type,m.name]
 			if !m.arguments.is_empty():
 				for a in m.arguments:
 					if a.default_value != "":
@@ -368,16 +368,16 @@ func _save_doc_bbcode(path:String,doc_dic:Dictionary,dics:Dictionary):
 							a.default_value = "[]"
 						elif a.type.findn("Dictionary") != -1 and a.default_value == "null":
 							a.default_value = "{}"
-						md_text += "%s %s=%s, " % [a.type,a.name,a.default_value]
+						md_text += "[color=#70bafa]%s[/color] %s[color=gray] = %s[/color], " % [a.type,a.name,a.default_value]
 					else:
-						md_text += "%s %s, " % [a.type,a.name]
-			md_text += " )\n"
+						md_text += "[color=#70bafa]%s[/color] %s, " % [a.type,a.name]
+			md_text += " [color=gray])[/color]\n"
 			md_text += "\n"
 			if m.description != "":
 				md_text += "	%s\n" % m.description.replacen("[br]","\n	")
 				md_text += "\n"
 			md_text += "\n"
-	md_text = md_text.replacen(",  )"," )").replacen("(  )","( )")
+	md_text = md_text.replacen(",  [color=gray])"," [color=gray])").replacen(",  )"," )").replacen("(  )","( )")
 	md_text = md_text.replacen("=inf_neg","=-INF")
 	var file = FileAccess.open(path+doc_dic.name+".bb",FileAccess.WRITE)
 	file.store_line(md_text)

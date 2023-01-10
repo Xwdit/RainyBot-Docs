@@ -1,32 +1,32 @@
-类: FriendRecallEvent
+[font_size=30][color=#70bafa]类:[/color] FriendRecallEvent[/font_size]
 
-继承自: FriendEvent
+[color=#70bafa]继承自:[/color] FriendEvent
  
-RainyBot的好友消息撤回事件类，记录了某次好友消息撤回事件的相关数据
+[b]RainyBot的好友消息撤回事件类，记录了某次好友消息撤回事件的相关数据[/b]
 
-方法:
+[font_size=30][color=#70bafa]方法:[/color][/font_size]
 
-	static FriendRecallEvent init_meta ( Dictionary dic )
+	● [color=gray]static[/color] [color=#70bafa]FriendRecallEvent[/color] init_meta [color=gray]([/color] [color=#70bafa]Dictionary[/color] dic [color=gray])[/color]
 
 	通过机器人协议后端的元数据字典构造一个此类的实例，仅当你知道自己在做什么时才使用
 
 
-	int get_sender_id ( )
+	● [color=#70bafa]int[/color] get_sender_id [color=gray]([/color]  [color=gray])[/color]
 
 	获取事件原消息发送者的ID
 
 
-	int get_message_id ( )
+	● [color=#70bafa]int[/color] get_message_id [color=gray]([/color]  [color=gray])[/color]
 
 	获取事件对应的原消息的ID
 
 
-	int get_message_time ( )
+	● [color=#70bafa]int[/color] get_message_time [color=gray]([/color]  [color=gray])[/color]
 
 	获取事件对应的原消息的发送时间
 
 
-	int get_operator_id ( )
+	● [color=#70bafa]int[/color] get_operator_id [color=gray]([/color]  [color=gray])[/color]
 
 	获取造成此事件的成员的ID(通常为此事件对应的好友的ID或Bot自身的ID)
 

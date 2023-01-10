@@ -1,50 +1,50 @@
-类: GroupAnnounceInfoList
+[font_size=30][color=#70bafa]类:[/color] GroupAnnounceInfoList[/font_size]
 
-继承自: GroupAPI
+[color=#70bafa]继承自:[/color] GroupAPI
  
-RainyBot的群公告信息列表类，储存了从某个群组中获取的群公告的列表
+[b]RainyBot的群公告信息列表类，储存了从某个群组中获取的群公告的列表[/b]
 
-描述:
+[font_size=30][color=#70bafa]描述:[/color][/font_size]
 
 这是RainyBot的群公告信息列表类，储存了从某个群组中获取的群公告的列表 [br]你可以像数组/字典一样直接使用for x in x的语法来循环列表中的所有公告信息(将返回[GroupAnnounceInfo]类实例)
 
-方法:
+[font_size=30][color=#70bafa]方法:[/color][/font_size]
 
-	static GroupAnnounceInfoList init_meta ( Array arr )
+	● [color=gray]static[/color] [color=#70bafa]GroupAnnounceInfoList[/color] init_meta [color=gray]([/color] [color=#70bafa]Array[/color] arr [color=gray])[/color]
 
 	通过机器人协议后端的元数据数组构造一个此类的实例，仅当你知道自己在做什么时才使用
 
 
-	Array get_metadata ( )
+	● [color=#70bafa]Array[/color] get_metadata [color=gray]([/color]  [color=gray])[/color]
 
 	获取实例中的元数据数组，仅当你知道自己在做什么时才使用
 
 
-	void set_metadata ( Array arr )
+	● [color=gray]void[/color] set_metadata [color=gray]([/color] [color=#70bafa]Array[/color] arr [color=gray])[/color]
 
 	使用指定字典覆盖实例中的元数据数组，仅当你知道自己在做什么时才使用
 
 
-	GroupAnnounceInfo get_from_index ( int index )
+	● [color=#70bafa]GroupAnnounceInfo[/color] get_from_index [color=gray]([/color] [color=#70bafa]int[/color] index [color=gray])[/color]
 
 	根据指定的序号来从群公告信息列表实例中获取对应的[GroupAnnounceInfo]实例 
 	
 	若序号不存在则返回null
 
 
-	GroupAnnounceInfo get_from_id ( int announce_id )
+	● [color=#70bafa]GroupAnnounceInfo[/color] get_from_id [color=gray]([/color] [color=#70bafa]int[/color] announce_id [color=gray])[/color]
 
 	根据指定的群公告ID来从群公告信息列表实例中获取对应的[GroupAnnounceInfo]实例 
 	
 	若群公告ID不存在则返回null
 
 
-	bool has_announce ( int announce_id )
+	● [color=#70bafa]bool[/color] has_announce [color=gray]([/color] [color=#70bafa]int[/color] announce_id [color=gray])[/color]
 
 	判断群公告信息列表实例中是否存在指定ID的群公告信息实例
 
 
-	int get_size ( )
+	● [color=#70bafa]int[/color] get_size [color=gray]([/color]  [color=gray])[/color]
 
 	获取群公告信息列表实例中的群公告信息实例的总数
 

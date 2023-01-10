@@ -1,27 +1,27 @@
-类: MarketFaceMessage
+[font_size=30][color=#70bafa]类:[/color] MarketFaceMessage[/font_size]
 
-继承自: Message
+[color=#70bafa]继承自:[/color] Message
  
-RainyBot的商城表情消息类，其实例记录了与一个商城表情消息相关的各类数据
+[b]RainyBot的商城表情消息类，其实例记录了与一个商城表情消息相关的各类数据[/b]
 
-方法:
+[font_size=30][color=#70bafa]方法:[/color][/font_size]
 
-	static MarketFaceMessage init_meta ( Dictionary dic )
+	● [color=gray]static[/color] [color=#70bafa]MarketFaceMessage[/color] init_meta [color=gray]([/color] [color=#70bafa]Dictionary[/color] dic [color=gray])[/color]
 
 	通过机器人协议后端的元数据字典构造一个此类的实例，仅当你知道自己在做什么时才使用
 
 
-	int get_face_id ( )
+	● [color=#70bafa]int[/color] get_face_id [color=gray]([/color]  [color=gray])[/color]
 
 	获取实例对应的商城表情的ID
 
 
-	String get_face_name ( )
+	● [color=#70bafa]String[/color] get_face_name [color=gray]([/color]  [color=gray])[/color]
 
 	获取实例对应的商城表情的名称
 
 
-	String get_as_text ( )
+	● [color=#70bafa]String[/color] get_as_text [color=gray]([/color]  [color=gray])[/color]
 
 	将此实例获取为字符串的形式
 

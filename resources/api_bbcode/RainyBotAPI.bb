@@ -1,9 +1,9 @@
-类: RainyBotAPI
+[font_size=30][color=#70bafa]类:[/color] RainyBotAPI[/font_size]
 
-继承自: RefCounted
+[color=#70bafa]继承自:[/color] RefCounted
  
-子类: BotAPI, CoreAPI, EventAPI, MessageAPI, RoleAPI
+[color=#70bafa]子类:[/color] BotAPI, CoreAPI, EventAPI, MessageAPI, RoleAPI
 
-RainyBot所有API的父类，所有可供插件使用的API都将直接或间接继承此类
+[b]RainyBot所有API的父类，所有可供插件使用的API都将直接或间接继承此类[/b]
 
 

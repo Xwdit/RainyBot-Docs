@@ -1,32 +1,32 @@
-类: DiceMessage
+[font_size=30][color=#70bafa]类:[/color] DiceMessage[/font_size]
 
-继承自: Message
+[color=#70bafa]继承自:[/color] Message
  
-RainyBot的骰子消息类，其实例记录了与一个骰子消息相关的各类数据
+[b]RainyBot的骰子消息类，其实例记录了与一个骰子消息相关的各类数据[/b]
 
-方法:
+[font_size=30][color=#70bafa]方法:[/color][/font_size]
 
-	static DiceMessage init ( int value )
+	● [color=gray]static[/color] [color=#70bafa]DiceMessage[/color] init [color=gray]([/color] [color=#70bafa]int[/color] value [color=gray])[/color]
 
 	通过指定一个骰子点数来手动构造一个骰子消息类实例
 
 
-	static DiceMessage init_meta ( Dictionary dic )
+	● [color=gray]static[/color] [color=#70bafa]DiceMessage[/color] init_meta [color=gray]([/color] [color=#70bafa]Dictionary[/color] dic [color=gray])[/color]
 
 	通过机器人协议后端的元数据字典构造一个此类的实例，仅当你知道自己在做什么时才使用
 
 
-	int get_dice_value ( )
+	● [color=#70bafa]int[/color] get_dice_value [color=gray]([/color]  [color=gray])[/color]
 
 	获取此消息实例对应的骰子的点数
 
 
-	void set_dice_value ( int value )
+	● [color=gray]void[/color] set_dice_value [color=gray]([/color] [color=#70bafa]int[/color] value [color=gray])[/color]
 
 	设置此消息实例对应的骰子的点数
 
 
-	String get_as_text ( )
+	● [color=#70bafa]String[/color] get_as_text [color=gray]([/color]  [color=gray])[/color]
 
 	将此实例获取为字符串的形式
 

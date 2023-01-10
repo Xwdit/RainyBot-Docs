@@ -1,94 +1,94 @@
-类: MusicShareMessage
+[font_size=30][color=#70bafa]类:[/color] MusicShareMessage[/font_size]
 
-继承自: Message
+[color=#70bafa]继承自:[/color] Message
  
-RainyBot的音乐分享消息类，其实例记录了与一个音乐分享消息相关的各类数据
+[b]RainyBot的音乐分享消息类，其实例记录了与一个音乐分享消息相关的各类数据[/b]
 
-方法:
+[font_size=30][color=#70bafa]方法:[/color][/font_size]
 
-	static MusicShareMessage init ( String kind, String title, String summary, String jump_url, String picture_url, String music_url, String brief )
+	● [color=gray]static[/color] [color=#70bafa]MusicShareMessage[/color] init [color=gray]([/color] [color=#70bafa]String[/color] kind, [color=#70bafa]String[/color] title, [color=#70bafa]String[/color] summary, [color=#70bafa]String[/color] jump_url, [color=#70bafa]String[/color] picture_url, [color=#70bafa]String[/color] music_url, [color=#70bafa]String[/color] brief [color=gray])[/color]
 
 	基于指定的参数来手动构造一个MusicShareMessage类的实例 
 	
 	需要的参数从左到右分别为: 类型，标题，概括，跳转链接，封面图像链接，音乐文件链接，简介
 
 
-	static MusicShareMessage init_meta ( Dictionary dic )
+	● [color=gray]static[/color] [color=#70bafa]MusicShareMessage[/color] init_meta [color=gray]([/color] [color=#70bafa]Dictionary[/color] dic [color=gray])[/color]
 
 	通过机器人协议后端的元数据字典构造一个此类的实例，仅当你知道自己在做什么时才使用
 
 
-	String get_share_kind ( )
+	● [color=#70bafa]String[/color] get_share_kind [color=gray]([/color]  [color=gray])[/color]
 
 	获取此实例对应的分享类型
 
 
-	void set_share_kind ( String text )
+	● [color=gray]void[/color] set_share_kind [color=gray]([/color] [color=#70bafa]String[/color] text [color=gray])[/color]
 
 	设置此实例对应的分享类型
 
 
-	String get_share_title ( )
+	● [color=#70bafa]String[/color] get_share_title [color=gray]([/color]  [color=gray])[/color]
 
 	获取此实例对应的分享标题
 
 
-	void set_share_title ( String text )
+	● [color=gray]void[/color] set_share_title [color=gray]([/color] [color=#70bafa]String[/color] text [color=gray])[/color]
 
 	设置此实例对应的分享标题
 
 
-	String get_share_summary ( )
+	● [color=#70bafa]String[/color] get_share_summary [color=gray]([/color]  [color=gray])[/color]
 
 	获取此实例对应的分享概括
 
 
-	void set_share_summary ( String text )
+	● [color=gray]void[/color] set_share_summary [color=gray]([/color] [color=#70bafa]String[/color] text [color=gray])[/color]
 
 	设置此实例对应的分享概括
 
 
-	String get_share_jump_url ( )
+	● [color=#70bafa]String[/color] get_share_jump_url [color=gray]([/color]  [color=gray])[/color]
 
 	获取此实例对应的分享跳转链接
 
 
-	void set_share_jump_url ( String text )
+	● [color=gray]void[/color] set_share_jump_url [color=gray]([/color] [color=#70bafa]String[/color] text [color=gray])[/color]
 
 	设置此实例对应的分享跳转链接
 
 
-	String get_share_picture_url ( )
+	● [color=#70bafa]String[/color] get_share_picture_url [color=gray]([/color]  [color=gray])[/color]
 
 	获取此实例对应的分享封面图像链接
 
 
-	void set_share_picture_url ( String text )
+	● [color=gray]void[/color] set_share_picture_url [color=gray]([/color] [color=#70bafa]String[/color] text [color=gray])[/color]
 
 	设置此实例对应的分享封面图像链接
 
 
-	String get_share_music_url ( )
+	● [color=#70bafa]String[/color] get_share_music_url [color=gray]([/color]  [color=gray])[/color]
 
 	获取此实例对应的分享音乐文件链接
 
 
-	void set_share_music_url ( String text )
+	● [color=gray]void[/color] set_share_music_url [color=gray]([/color] [color=#70bafa]String[/color] text [color=gray])[/color]
 
 	设置此实例对应的分享音乐文件链接
 
 
-	String get_share_brief ( )
+	● [color=#70bafa]String[/color] get_share_brief [color=gray]([/color]  [color=gray])[/color]
 
 	获取此实例对应的分享简介
 
 
-	void set_share_brief ( String text )
+	● [color=gray]void[/color] set_share_brief [color=gray]([/color] [color=#70bafa]String[/color] text [color=gray])[/color]
 
 	设置此实例对应的分享简介
 
 
-	String get_as_text ( )
+	● [color=#70bafa]String[/color] get_as_text [color=gray]([/color]  [color=gray])[/color]
 
 	将此实例获取为字符串的形式
 

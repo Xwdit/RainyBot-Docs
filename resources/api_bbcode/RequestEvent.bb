@@ -1,39 +1,39 @@
-类: RequestEvent
+[font_size=30][color=#70bafa]类:[/color] RequestEvent[/font_size]
 
-继承自: Event
+[color=#70bafa]继承自:[/color] Event
  
-子类: GroupInviteRequestEvent, MemberJoinRequestEvent, NewFriendRequestEvent
+[color=#70bafa]子类:[/color] GroupInviteRequestEvent, MemberJoinRequestEvent, NewFriendRequestEvent
 
-RainyBot的请求事件类，与各类请求直接相关的各类事件通常直接或间接继承此类
+[b]RainyBot的请求事件类，与各类请求直接相关的各类事件通常直接或间接继承此类[/b]
 
-方法:
+[font_size=30][color=#70bafa]方法:[/color][/font_size]
 
-	int get_event_id ( )
+	● [color=#70bafa]int[/color] get_event_id [color=gray]([/color]  [color=gray])[/color]
 
 	获取请求事件的对应ID
 
 
-	int get_sender_id ( )
+	● [color=#70bafa]int[/color] get_sender_id [color=gray]([/color]  [color=gray])[/color]
 
 	获取请求事件对应的发送者的ID
 
 
-	String get_sender_name ( )
+	● [color=#70bafa]String[/color] get_sender_name [color=gray]([/color]  [color=gray])[/color]
 
 	获取请求事件对应的发送者的名称
 
 
-	int get_group_id ( )
+	● [color=#70bafa]int[/color] get_group_id [color=gray]([/color]  [color=gray])[/color]
 
 	获取请求事件相关的群组的ID(对于非群组请求，并且请求发送者不来自某群组时将返回0)
 
 
-	String get_request_message ( )
+	● [color=#70bafa]String[/color] get_request_message [color=gray]([/color]  [color=gray])[/color]
 
 	获取请求事件相关的申请消息的文本
 
 
-	BotRequestResult respond ( int respond_type, String msg="", float timeout=-INF )
+	● [color=#70bafa]BotRequestResult[/color] respond [color=gray]([/color] [color=#70bafa]int[/color] respond_type, [color=#70bafa]String[/color] msg[color=gray] = ""[/color], [color=#70bafa]float[/color] timeout[color=gray] = inf_neg[/color] [color=gray])[/color]
 
 	用于响应当前的请求事件，可用的响应类型请参照每个具体的请求事件类型中的RespondType枚举 
 	

@@ -1,50 +1,50 @@
-类: Utils
+[font_size=30][color=#70bafa]类:[/color] Utils[/font_size]
 
-继承自: CoreAPI
+[color=#70bafa]继承自:[/color] CoreAPI
  
-RainyBot的实用工具类，其中提供了各种类型的便捷功能
+[b]RainyBot的实用工具类，其中提供了各种类型的便捷功能[/b]
 
-方法:
+[font_size=30][color=#70bafa]方法:[/color][/font_size]
 
-	static String get_formated_time ( )
+	● [color=gray]static[/color] [color=#70bafa]String[/color] get_formated_time [color=gray]([/color]  [color=gray])[/color]
 
 	获取以HH:mm:ss为格式的当前时间文本
 
 
-	static String get_formated_num ( float num )
+	● [color=gray]static[/color] [color=#70bafa]String[/color] get_formated_num [color=gray]([/color] [color=#70bafa]float[/color] num [color=gray])[/color]
 
 	返回传入数字的字符串，并在传入的数字小于10时在字符串前方加入一个"0"
 
 
-	static HttpRequestResult send_http_get_request ( String url, PackedStringArray headers=[], int timeout=20, bool accept_gzip=true )
+	● [color=gray]static[/color] [color=#70bafa]HttpRequestResult[/color] send_http_get_request [color=gray]([/color] [color=#70bafa]String[/color] url, [color=#70bafa]PackedStringArray[/color] headers[color=gray] = [][/color], [color=#70bafa]int[/color] timeout[color=gray] = 20[/color], [color=#70bafa]bool[/color] accept_gzip[color=gray] = true[/color] [color=gray])[/color]
 
 	通过await调用时，将发送一个Http Get请求到指定的URL，并在收到结果或超时后返回一个HttpRequestResult 
 	
 	需要的参数从左到右分别为 请求URL,请求headers(可选，默认为空数组),超时时间(可选，默认为20秒),是否允许gzip压缩(可选，默认为true)
 
 
-	static HttpRequestResult send_http_post_request ( String url, String request_data="", PackedStringArray headers=[], int timeout=20, bool accept_gzip=true )
+	● [color=gray]static[/color] [color=#70bafa]HttpRequestResult[/color] send_http_post_request [color=gray]([/color] [color=#70bafa]String[/color] url, [color=#70bafa]String[/color] request_data[color=gray] = ""[/color], [color=#70bafa]PackedStringArray[/color] headers[color=gray] = [][/color], [color=#70bafa]int[/color] timeout[color=gray] = 20[/color], [color=#70bafa]bool[/color] accept_gzip[color=gray] = true[/color] [color=gray])[/color]
 
 	通过await调用时，将发送一个Http Post请求到指定的URL，并在收到结果或超时后返回一个HttpRequestResult 
 	
 	需要的参数从左到右分别为 请求URL，请求内容(可为字典/数组/字符串/字节数组)，请求headers(可选，默认为空数组)，超时时间(可选，默认为20秒),是否允许gzip压缩(可选，默认为true)
 
 
-	static HttpRequestResult send_http_put_request ( String url, String request_data="", PackedStringArray headers=[], int timeout=20, bool accept_gzip=true )
+	● [color=gray]static[/color] [color=#70bafa]HttpRequestResult[/color] send_http_put_request [color=gray]([/color] [color=#70bafa]String[/color] url, [color=#70bafa]String[/color] request_data[color=gray] = ""[/color], [color=#70bafa]PackedStringArray[/color] headers[color=gray] = [][/color], [color=#70bafa]int[/color] timeout[color=gray] = 20[/color], [color=#70bafa]bool[/color] accept_gzip[color=gray] = true[/color] [color=gray])[/color]
 
 	通过await调用时，将发送一个Http Put请求到指定的URL，并在收到结果或超时后返回一个HttpRequestResult 
 	
 	需要的参数从左到右分别为 请求URL，请求内容(可为字典/数组/字符串/字节数组)，请求headers(可选，默认为空数组)，超时时间(可选，默认为20秒),是否允许gzip压缩(可选，默认为true)
 
 
-	static Resource load_threaded ( String path, String type_hint="", bool use_sub_threads=false )
+	● [color=gray]static[/color] [color=#70bafa]Resource[/color] load_threaded [color=gray]([/color] [color=#70bafa]String[/color] path, [color=#70bafa]String[/color] type_hint[color=gray] = ""[/color], [color=#70bafa]bool[/color] use_sub_threads[color=gray] = false[/color] [color=gray])[/color]
 
 	通过await调用时，将尝试异步加载指定路径的资源，等待其加载完毕/出错，并返回加载完毕的资源或null 
 	
 	需要的参数从左到右分别为 资源路径，资源类型提示(可选，为空时将自动判断类型)，是否使用子线程(可选，启用时将加快加载速度，但可能会影响主线程的性能)
 
 
-	static VoiceMessage convert_to_voice ( String path )
+	● [color=gray]static[/color] [color=#70bafa]VoiceMessage[/color] convert_to_voice [color=gray]([/color] [color=#70bafa]String[/color] path [color=gray])[/color]
 
 	通过await调用时，将尝试将指定路径的音频转换为可直接发送的VoiceMessage实例，等待其转换完毕/出错，并返回转换完毕的实例或null 
 	

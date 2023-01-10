@@ -1,19 +1,19 @@
-类: Event
+[font_size=30][color=#70bafa]类:[/color] Event[/font_size]
 
-继承自: EventAPI
+[color=#70bafa]继承自:[/color] EventAPI
  
-子类: ActionEvent, BotEvent, FriendEvent, GroupEvent, MessageEvent, OtherClientEvent, RequestEvent
+[color=#70bafa]子类:[/color] ActionEvent, BotEvent, FriendEvent, GroupEvent, MessageEvent, OtherClientEvent, RequestEvent
 
-RainyBot的事件类，各种事件类型将直接或间接继承此类
+[b]RainyBot的事件类，各种事件类型将直接或间接继承此类[/b]
 
-方法:
+[font_size=30][color=#70bafa]方法:[/color][/font_size]
 
-	Dictionary get_metadata ( )
+	● [color=#70bafa]Dictionary[/color] get_metadata [color=gray]([/color]  [color=gray])[/color]
 
 	获取实例中的元数据字典，仅当你知道自己在做什么时才使用
 
 
-	void set_metadata ( Dictionary dic )
+	● [color=gray]void[/color] set_metadata [color=gray]([/color] [color=#70bafa]Dictionary[/color] dic [color=gray])[/color]
 
 	使用指定字典覆盖实例中的元数据字典，仅当你知道自己在做什么时才使用
 

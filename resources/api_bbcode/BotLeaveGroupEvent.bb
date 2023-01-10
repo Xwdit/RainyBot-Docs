@@ -1,48 +1,48 @@
-类: BotLeaveGroupEvent
+[font_size=30][color=#70bafa]类:[/color] BotLeaveGroupEvent[/font_size]
 
-继承自: GroupBotEvent
+[color=#70bafa]继承自:[/color] GroupBotEvent
  
-RainyBot的Bot自身退出群组事件类，记录了Bot退出某个群组相关事件的数据
+[b]RainyBot的Bot自身退出群组事件类，记录了Bot退出某个群组相关事件的数据[/b]
 
-枚举:
+[font_size=30][color=#70bafa]枚举:[/color][/font_size]
 
-	enum ReasonType
+	[color=#70bafa]enum[/color] ReasonType
 
 	Bot退出群组的原因类型枚举
 
-		ACTIVE = 0
-		Bot主动退出群组
+		● ACTIVE [color=gray]= 0[/color]
+		[color=gray]Bot主动退出群组[/color]
 
-		KICK = 1
-		Bot被踢出群组
+		● KICK [color=gray]= 1[/color]
+		[color=gray]Bot被踢出群组[/color]
 
-		DISBAND = 2
-		Bot因群解散退出群组
+		● DISBAND [color=gray]= 2[/color]
+		[color=gray]Bot因群解散退出群组[/color]
 
 
-方法:
+[font_size=30][color=#70bafa]方法:[/color][/font_size]
 
-	static BotLeaveGroupEvent init_meta ( Dictionary dic, int reason_type )
+	● [color=gray]static[/color] [color=#70bafa]BotLeaveGroupEvent[/color] init_meta [color=gray]([/color] [color=#70bafa]Dictionary[/color] dic, [color=#70bafa]int[/color] reason_type [color=gray])[/color]
 
 	通过机器人协议后端的元数据字典构造一个此类的实例，仅当你知道自己在做什么时才使用
 
 
-	Member get_operator ( )
+	● [color=#70bafa]Member[/color] get_operator [color=gray]([/color]  [color=gray])[/color]
 
 	获取造成此事件的成员实例，可能是Bot自身，对应群的管理员，或对应群的群主
 
 
-	Group get_group ( )
+	● [color=#70bafa]Group[/color] get_group [color=gray]([/color]  [color=gray])[/color]
 
 	获取此事件对应的群组的实例
 
 
-	int get_reason_type ( )
+	● [color=#70bafa]int[/color] get_reason_type [color=gray]([/color]  [color=gray])[/color]
 
 	获取Bot退出群组的原因的类型，可用类型请参见此类的ReasonType枚举
 
 
-	bool is_reason_type ( int reason )
+	● [color=#70bafa]bool[/color] is_reason_type [color=gray]([/color] [color=#70bafa]int[/color] reason [color=gray])[/color]
 
 	用于判断Bot退出群组的原因是否为指定的类型，可用类型请参见此类的ReasonType枚举
 

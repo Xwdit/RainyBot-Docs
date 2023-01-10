@@ -1,27 +1,27 @@
-类: MemberJoinEvent
+[font_size=30][color=#70bafa]类:[/color] MemberJoinEvent[/font_size]
 
-继承自: GroupMemberEvent
+[color=#70bafa]继承自:[/color] GroupMemberEvent
  
-RainyBot的新成员入群类，其实例记录了与一次新成员入群事件相关的数据
+[b]RainyBot的新成员入群类，其实例记录了与一次新成员入群事件相关的数据[/b]
 
-方法:
+[font_size=30][color=#70bafa]方法:[/color][/font_size]
 
-	static MemberJoinEvent init_meta ( Dictionary dic )
+	● [color=gray]static[/color] [color=#70bafa]MemberJoinEvent[/color] init_meta [color=gray]([/color] [color=#70bafa]Dictionary[/color] dic [color=gray])[/color]
 
 	通过机器人协议后端的元数据字典构造一个此类的实例，仅当你知道自己在做什么时才使用
 
 
-	GroupMember get_member ( )
+	● [color=#70bafa]GroupMember[/color] get_member [color=gray]([/color]  [color=gray])[/color]
 
 	获取此事件对应的群成员实例
 
 
-	GroupMember get_invitor ( )
+	● [color=#70bafa]GroupMember[/color] get_invitor [color=gray]([/color]  [color=gray])[/color]
 
 	获取邀请新成员入群的群成员的实例
 
 
-	Group get_group ( )
+	● [color=#70bafa]Group[/color] get_group [color=gray]([/color]  [color=gray])[/color]
 
 	获取此事件所发生的群组实例
 

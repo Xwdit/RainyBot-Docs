@@ -1,38 +1,38 @@
-类: BotOfflineEvent
+[font_size=30][color=#70bafa]类:[/color] BotOfflineEvent[/font_size]
 
-继承自: BotEvent
+[color=#70bafa]继承自:[/color] BotEvent
  
-RainyBot的机器人账号离线事件类，其实例记录了一次机器人账号离线事件的相关数据
+[b]RainyBot的机器人账号离线事件类，其实例记录了一次机器人账号离线事件的相关数据[/b]
 
-枚举:
+[font_size=30][color=#70bafa]枚举:[/color][/font_size]
 
-	enum ReasonType
+	[color=#70bafa]enum[/color] ReasonType
 
 	机器人账号的离线原因类型的枚举
 
-		ACTIVE = 0
-		机器人账号主动离线
+		● ACTIVE [color=gray]= 0[/color]
+		[color=gray]机器人账号主动离线[/color]
 
-		FORCE = 1
-		机器人账号被挤下线(如其他客户端登录等情况)
+		● FORCE [color=gray]= 1[/color]
+		[color=gray]机器人账号被挤下线(如其他客户端登录等情况)[/color]
 
-		DROPPED = 2
-		机器人账号意外掉线(网络原因或服务器原因等)
+		● DROPPED [color=gray]= 2[/color]
+		[color=gray]机器人账号意外掉线(网络原因或服务器原因等)[/color]
 
 
-方法:
+[font_size=30][color=#70bafa]方法:[/color][/font_size]
 
-	static BotOfflineEvent init_meta ( Dictionary dic, int reason_type )
+	● [color=gray]static[/color] [color=#70bafa]BotOfflineEvent[/color] init_meta [color=gray]([/color] [color=#70bafa]Dictionary[/color] dic, [color=#70bafa]int[/color] reason_type [color=gray])[/color]
 
 	通过机器人协议后端的元数据字典构造一个此类的实例，仅当你知道自己在做什么时才使用
 
 
-	int get_reason_type ( )
+	● [color=#70bafa]int[/color] get_reason_type [color=gray]([/color]  [color=gray])[/color]
 
 	获取机器人离线事件的原因类型，可用类型请参见此类的ReasonType枚举
 
 
-	bool is_reason_type ( int reason )
+	● [color=#70bafa]bool[/color] is_reason_type [color=gray]([/color] [color=#70bafa]int[/color] reason [color=gray])[/color]
 
 	判定机器人离线事件是否是指定类型的原因，可用类型请参见此类的ReasonType枚举
 

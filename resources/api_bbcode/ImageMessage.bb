@@ -1,112 +1,112 @@
-类: ImageMessage
+[font_size=30][color=#70bafa]类:[/color] ImageMessage[/font_size]
 
-继承自: Message
+[color=#70bafa]继承自:[/color] Message
  
-RainyBot的图像消息类，其实例记录了与一个图像消息相关的各类数据
+[b]RainyBot的图像消息类，其实例记录了与一个图像消息相关的各类数据[/b]
 
-方法:
+[font_size=30][color=#70bafa]方法:[/color][/font_size]
 
-	static ImageMessage init ( Image image )
+	● [color=gray]static[/color] [color=#70bafa]ImageMessage[/color] init [color=gray]([/color] [color=#70bafa]Image[/color] image [color=gray])[/color]
 
 	基于图像实例缓存并手动构造一个ImageMessage类的实例
 
 
-	static ImageMessage init_gif ( GifImage gif_image )
+	● [color=gray]static[/color] [color=#70bafa]ImageMessage[/color] init_gif [color=gray]([/color] [color=#70bafa]GifImage[/color] gif_image [color=gray])[/color]
 
 	基于Gif动图实例缓存并手动构造一个ImageMessage类的实例
 
 
-	static ImageMessage init_id ( String image_id )
+	● [color=gray]static[/color] [color=#70bafa]ImageMessage[/color] init_id [color=gray]([/color] [color=#70bafa]String[/color] image_id [color=gray])[/color]
 
 	基于指定的图像ID来手动构造一个ImageMessage类的实例
 
 
-	static ImageMessage init_url ( String image_url )
+	● [color=gray]static[/color] [color=#70bafa]ImageMessage[/color] init_url [color=gray]([/color] [color=#70bafa]String[/color] image_url [color=gray])[/color]
 
 	基于指定的URL地址来手动构造一个ImageMessage类的实例
 
 
-	static ImageMessage init_path ( String image_path )
+	● [color=gray]static[/color] [color=#70bafa]ImageMessage[/color] init_path [color=gray]([/color] [color=#70bafa]String[/color] image_path [color=gray])[/color]
 
 	基于指定的本地文件路径来手动构造一个ImageMessage类的实例
 
 
-	static ImageMessage init_base64 ( String image_base64 )
+	● [color=gray]static[/color] [color=#70bafa]ImageMessage[/color] init_base64 [color=gray]([/color] [color=#70bafa]String[/color] image_base64 [color=gray])[/color]
 
 	基于指定的BASE64编码来手动构造一个ImageMessage类的实例
 
 
-	static ImageMessage init_meta ( Dictionary dic )
+	● [color=gray]static[/color] [color=#70bafa]ImageMessage[/color] init_meta [color=gray]([/color] [color=#70bafa]Dictionary[/color] dic [color=gray])[/color]
 
 	通过机器人协议后端的元数据字典构造一个此类的实例，仅当你知道自己在做什么时才使用
 
 
-	String get_image_id ( )
+	● [color=#70bafa]String[/color] get_image_id [color=gray]([/color]  [color=gray])[/color]
 
 	获取此实例对应的图像的ID
 
 
-	void set_image_id ( String image_id )
+	● [color=gray]void[/color] set_image_id [color=gray]([/color] [color=#70bafa]String[/color] image_id [color=gray])[/color]
 
 	设置此实例对应的图像的ID
 
 
-	String get_image_url ( )
+	● [color=#70bafa]String[/color] get_image_url [color=gray]([/color]  [color=gray])[/color]
 
 	获取此实例对应的图像的URL链接
 
 
-	void set_image_url ( String image_url )
+	● [color=gray]void[/color] set_image_url [color=gray]([/color] [color=#70bafa]String[/color] image_url [color=gray])[/color]
 
 	设置此实例对应的图像的URL链接
 
 
-	String get_image_path ( )
+	● [color=#70bafa]String[/color] get_image_path [color=gray]([/color]  [color=gray])[/color]
 
 	获取此实例对应的图像的本地路径
 
 
-	void set_image_path ( String image_path )
+	● [color=gray]void[/color] set_image_path [color=gray]([/color] [color=#70bafa]String[/color] image_path [color=gray])[/color]
 
 	设置此实例对应的图像的本地路径
 
 
-	String get_image_base64 ( )
+	● [color=#70bafa]String[/color] get_image_base64 [color=gray]([/color]  [color=gray])[/color]
 
 	获取此实例对应的图像的Base64编码
 
 
-	void set_image_base64 ( String image_base64 )
+	● [color=gray]void[/color] set_image_base64 [color=gray]([/color] [color=#70bafa]String[/color] image_base64 [color=gray])[/color]
 
 	设置此实例对应的图像的Base64编码
 
 
-	int get_image_height ( )
+	● [color=#70bafa]int[/color] get_image_height [color=gray]([/color]  [color=gray])[/color]
 
 	获取此实例对应的图像的高度
 
 
-	int get_image_width ( )
+	● [color=#70bafa]int[/color] get_image_width [color=gray]([/color]  [color=gray])[/color]
 
 	获取此实例对应的图像的宽度
 
 
-	float get_image_size ( )
+	● [color=#70bafa]float[/color] get_image_size [color=gray]([/color]  [color=gray])[/color]
 
 	获取此实例对应的图像的文件大小
 
 
-	String get_image_type ( )
+	● [color=#70bafa]String[/color] get_image_type [color=gray]([/color]  [color=gray])[/color]
 
 	获取此实例对应的图像的类型文本
 
 
-	bool is_emoji ( )
+	● [color=#70bafa]bool[/color] is_emoji [color=gray]([/color]  [color=gray])[/color]
 
 	判断此实例对应的图像是否为表情
 
 
-	String get_as_text ( )
+	● [color=#70bafa]String[/color] get_as_text [color=gray]([/color]  [color=gray])[/color]
 
 	将此实例获取为字符串的形式
 
