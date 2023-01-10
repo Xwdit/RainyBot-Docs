@@ -290,7 +290,7 @@ func _save_doc_bbcode(path:String,doc_dic:Dictionary,dics:Dictionary):
 			md_text += " )\n"
 			md_text += "\n"
 			if s.description != "":
-				md_text += "	%s\n" % s.description
+				md_text += "	%s\n" % s.description.replacen("[br]","\n	")
 				md_text += "\n"
 			md_text += "\n"
 	if !doc_dic.enums.is_empty():
@@ -300,13 +300,13 @@ func _save_doc_bbcode(path:String,doc_dic:Dictionary,dics:Dictionary):
 			md_text += "	enum %s\n" % [e.name]
 			md_text += "\n"
 			if e.description != "":
-				md_text += "	%s\n" % e.description
+				md_text += "	%s\n" % e.description.replacen("[br]","\n	")
 				md_text += "\n"
 			for c in doc_dic.constants:
 				if c.enumeration == e.name:
 					md_text += "		%s = %s\n" % [c.name,c.value]
 					if c.description != "":
-						md_text += "		%s\n" % c.description
+						md_text += "		%s\n" % c.description.replacen("[br]","\n		")
 						md_text += "\n"
 			md_text += "\n"
 	if !doc_dic.constants.is_empty():
@@ -325,7 +325,7 @@ func _save_doc_bbcode(path:String,doc_dic:Dictionary,dics:Dictionary):
 					md_text += "	%s = %s\n" % [v.name,v.value]
 				md_text += "\n"
 				if v.description != "":
-					md_text += "	%s\n" % v.description
+					md_text += "	%s\n" % v.description.replacen("[br]","\n	")
 					md_text += "\n"
 				md_text += "\n"
 	if !doc_dic.variables.is_empty():
@@ -347,7 +347,7 @@ func _save_doc_bbcode(path:String,doc_dic:Dictionary,dics:Dictionary):
 				md_text += "	Getter: %s\n" % v.setter
 				md_text += "\n"
 			if v.description != "":
-				md_text += "	%s\n" % v.description
+				md_text += "	%s\n" % v.description.replacen("[br]","\n	")
 				md_text += "\n"
 			md_text += "\n"
 	if !doc_dic.methods.is_empty():
@@ -374,10 +374,9 @@ func _save_doc_bbcode(path:String,doc_dic:Dictionary,dics:Dictionary):
 			md_text += " )\n"
 			md_text += "\n"
 			if m.description != "":
-				md_text += "	%s\n" % m.description
+				md_text += "	%s\n" % m.description.replacen("[br]","\n	")
 				md_text += "\n"
 			md_text += "\n"
-	md_text = md_text.replacen("[br]","\n	")
 	md_text = md_text.replacen(",  )"," )").replacen("(  )","( )")
 	md_text = md_text.replacen("=inf_neg","=-INF")
 	var file = FileAccess.open(path+doc_dic.name+".bb",FileAccess.WRITE)
