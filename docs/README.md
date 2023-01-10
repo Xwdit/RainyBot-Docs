@@ -80,8 +80,6 @@ RainyBot精心设计了一系列的便于使用的抽象API，并在底层将各
 
 Xwdit - xwditfr@gmail.com
 
-项目官网: [https://rainybot.dev](https://rainy.love/rainybot)
-
 项目社区: [https://godoter.cn/t/rainybot](https://godoter.cn/t/rainybot)
 
 项目开源地址: [https://github.com/Xwdit/RainyBot-Core](https://github.com/Xwdit/RainyBot-Core)
