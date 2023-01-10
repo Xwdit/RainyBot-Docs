@@ -19,7 +19,7 @@ RainyBot的实用工具类，其中提供了各种类型的便捷功能
   
 ---  
   
-- static [HttpRequestResult](HttpRequestResult.md) **send_http_get_request (** [String](https://docs.godotengine.org/en/latest/classes/class_string.html) url, [PackedStringArray](https://docs.godotengine.org/en/latest/classes/class_packedstringarray.html) headers, [int](https://docs.godotengine.org/en/latest/classes/class_int.html) timeout=20, [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html) accept_gzip=true **)**  
+- static [HttpRequestResult](HttpRequestResult.md) **send_http_get_request (** [String](https://docs.godotengine.org/en/latest/classes/class_string.html) url, [PackedStringArray](https://docs.godotengine.org/en/latest/classes/class_packedstringarray.html) headers=[], [int](https://docs.godotengine.org/en/latest/classes/class_int.html) timeout=20, [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html) accept_gzip=true **)**  
   
 通过await调用时，将发送一个Http Get请求到指定的URL，并在收到结果或超时后返回一个HttpRequestResult   
   
@@ -27,7 +27,7 @@ RainyBot的实用工具类，其中提供了各种类型的便捷功能
   
 ---  
   
-- static [HttpRequestResult](HttpRequestResult.md) **send_http_post_request (** [String](https://docs.godotengine.org/en/latest/classes/class_string.html) url, [String](https://docs.godotengine.org/en/latest/classes/class_string.html) request_data, [PackedStringArray](https://docs.godotengine.org/en/latest/classes/class_packedstringarray.html) headers="", [int](https://docs.godotengine.org/en/latest/classes/class_int.html) timeout=20, [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html) accept_gzip=true **)**  
+- static [HttpRequestResult](HttpRequestResult.md) **send_http_post_request (** [String](https://docs.godotengine.org/en/latest/classes/class_string.html) url, [String](https://docs.godotengine.org/en/latest/classes/class_string.html) request_data="", [PackedStringArray](https://docs.godotengine.org/en/latest/classes/class_packedstringarray.html) headers=[], [int](https://docs.godotengine.org/en/latest/classes/class_int.html) timeout=20, [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html) accept_gzip=true **)**  
   
 通过await调用时，将发送一个Http Post请求到指定的URL，并在收到结果或超时后返回一个HttpRequestResult   
   
@@ -35,7 +35,7 @@ RainyBot的实用工具类，其中提供了各种类型的便捷功能
   
 ---  
   
-- static [HttpRequestResult](HttpRequestResult.md) **send_http_put_request (** [String](https://docs.godotengine.org/en/latest/classes/class_string.html) url, [String](https://docs.godotengine.org/en/latest/classes/class_string.html) request_data, [PackedStringArray](https://docs.godotengine.org/en/latest/classes/class_packedstringarray.html) headers="", [int](https://docs.godotengine.org/en/latest/classes/class_int.html) timeout=20, [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html) accept_gzip=true **)**  
+- static [HttpRequestResult](HttpRequestResult.md) **send_http_put_request (** [String](https://docs.godotengine.org/en/latest/classes/class_string.html) url, [String](https://docs.godotengine.org/en/latest/classes/class_string.html) request_data="", [PackedStringArray](https://docs.godotengine.org/en/latest/classes/class_packedstringarray.html) headers=[], [int](https://docs.godotengine.org/en/latest/classes/class_int.html) timeout=20, [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html) accept_gzip=true **)**  
   
 通过await调用时，将发送一个Http Put请求到指定的URL，并在收到结果或超时后返回一个HttpRequestResult   
   

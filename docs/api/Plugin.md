@@ -132,7 +132,7 @@ enum **BlockMode**
   
 ---  
   
--  void **set_plugin_info (** [String](https://docs.godotengine.org/en/latest/classes/class_string.html) p_id, [String](https://docs.godotengine.org/en/latest/classes/class_string.html) p_name, [String](https://docs.godotengine.org/en/latest/classes/class_string.html) p_author, [String](https://docs.godotengine.org/en/latest/classes/class_string.html) p_version, [String](https://docs.godotengine.org/en/latest/classes/class_string.html) p_description, [Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html) p_dependency=[] **)**  
+-  void **set_plugin_info (** [String](https://docs.godotengine.org/en/latest/classes/class_string.html) p_id, [String](https://docs.godotengine.org/en/latest/classes/class_string.html) p_name, [String](https://docs.godotengine.org/en/latest/classes/class_string.html) p_author, [String](https://docs.godotengine.org/en/latest/classes/class_string.html) p_version, [String](https://docs.godotengine.org/en/latest/classes/class_string.html) p_description, [Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html) p_dependency=null **)**  
   
 用于设定插件的相关信息，需要在[method _on_init]虚函数中执行以便RainyBot正确加载您的插件   
   

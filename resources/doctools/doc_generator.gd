@@ -221,6 +221,10 @@ func _save_doc_markdown(path:String,doc_dic:Dictionary,dics:Dictionary):
 					if dics.has(a.type) and dics[a.type].has("name"):
 						a_link = a.type+".md"
 					if a.default_value != "":
+						if a.type.findn("Array") != -1 and a.default_value == "null":
+							a.default_value = "[]"
+						elif a.type.findn("Dictionary") != -1 and a.default_value == "null":
+							a.default_value = "{}"
 						md_text += "[%s](%s) %s=%s, " % [a.type,a_link,a.name,a.default_value]
 					else:
 						md_text += "[%s](%s) %s, " % [a.type,a_link,a.name]

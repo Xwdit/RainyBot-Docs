@@ -15,7 +15,7 @@ RainyBot的消息事件类，与消息直接相关的各类事件通常直接或
   
 ---  
   
--  [Array](https://docs.godotengine.org/en/latest/classes/class_array.html) **get_message_array (** [Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html) types=[], [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html) exclude=false, [int](https://docs.godotengine.org/en/latest/classes/class_int.html) max_size=-1 **)**  
+-  [Array](https://docs.godotengine.org/en/latest/classes/class_array.html) **get_message_array (** [Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html) types=null, [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html) exclude=false, [int](https://docs.godotengine.org/en/latest/classes/class_int.html) max_size=-1 **)**  
   
 根据指定的条件，来从消息事件包含的消息链实例中获取由符合条件的消息类实例组成的数组   
   
@@ -29,7 +29,7 @@ RainyBot的消息事件类，与消息直接相关的各类事件通常直接或
   
 ---  
   
--  [String](https://docs.godotengine.org/en/latest/classes/class_string.html) **get_message_text (** [Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html) types=[], [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html) exclude=false **)**  
+-  [String](https://docs.godotengine.org/en/latest/classes/class_string.html) **get_message_text (** [Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html) types=null, [bool](https://docs.godotengine.org/en/latest/classes/class_bool.html) exclude=false **)**  
   
 根据指定的条件，来从消息事件包含的消息链实例中获取由符合条件的消息类实例转换并拼接而成的单个字符串   
   
