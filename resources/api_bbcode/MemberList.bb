@@ -10,41 +10,41 @@
 
 [font_size=30][color=#70bafa]方法:[/color][/font_size]
 
-	● [color=gray]static[/color] [color=#70bafa]MemberList[/color] init_meta [color=gray]([/color] [color=#70bafa]Array[/color] arr [color=gray])[/color]
+	● [color=gray]static[/color] [color=#70bafa]MemberList[/color] ￿init_meta [color=gray]([/color] [color=#70bafa]Array[/color] arr [color=gray])[/color]
 
 	通过机器人协议后端的元数据数组构造一个MemberList类的实例，仅当你知道自己在做什么时才使用
 
 
-	● [color=#70bafa]Array[/color] get_metadata [color=gray]([/color]  [color=gray])[/color]
+	● [color=#70bafa]Array[/color] ￿get_metadata [color=gray]([/color]  [color=gray])[/color]
 
 	获取实例中的元数据数组，仅当你知道自己在做什么时才使用
 
 
-	● [color=gray]void[/color] set_metadata [color=gray]([/color] [color=#70bafa]Array[/color] arr [color=gray])[/color]
+	● [color=gray]void[/color] ￿set_metadata [color=gray]([/color] [color=#70bafa]Array[/color] arr [color=gray])[/color]
 
 	使用指定数组覆盖实例中的元数据数组，仅当你知道自己在做什么时才使用
 
 
-	● [color=#70bafa]Member[/color] get_from_index [color=gray]([/color] [color=#70bafa]int[/color] index [color=gray])[/color]
+	● [color=#70bafa]Member[/color] ￿get_from_index [color=gray]([/color] [color=#70bafa]int[/color] index [color=gray])[/color]
 
 	根据指定的序号来从个体成员列表实例中获取对应的Member实例 
 	
 	若序号不存在则返回null
 
 
-	● [color=#70bafa]Member[/color] get_from_id [color=gray]([/color] [color=#70bafa]int[/color] member_id [color=gray])[/color]
+	● [color=#70bafa]Member[/color] ￿get_from_id [color=gray]([/color] [color=#70bafa]int[/color] member_id [color=gray])[/color]
 
 	根据指定的个体成员ID来从个体成员列表实例中获取对应的Member实例 
 	
 	若个体成员ID不存在则返回null
 
 
-	● [color=#70bafa]int[/color] get_size [color=gray]([/color]  [color=gray])[/color]
+	● [color=#70bafa]int[/color] ￿get_size [color=gray]([/color]  [color=gray])[/color]
 
 	获取个体成员列表实例中的个体成员实例的总数
 
 
-	● [color=#70bafa]bool[/color] has_member [color=gray]([/color] [color=#70bafa]int[/color] member_id [color=gray])[/color]
+	● [color=#70bafa]bool[/color] ￿has_member [color=gray]([/color] [color=#70bafa]int[/color] member_id [color=gray])[/color]
 
 	判断个体成员列表实例中是否存在指定ID的个体成员实例
 

@@ -6,17 +6,17 @@
 
 [font_size=30][color=#70bafa]方法:[/color][/font_size]
 
-	● [color=gray]static[/color] [color=#70bafa]BotJoinGroupEvent[/color] init_meta [color=gray]([/color] [color=#70bafa]Dictionary[/color] dic [color=gray])[/color]
+	● [color=gray]static[/color] [color=#70bafa]BotJoinGroupEvent[/color] ￿init_meta [color=gray]([/color] [color=#70bafa]Dictionary[/color] dic [color=gray])[/color]
 
 	通过机器人协议后端的元数据字典构造一个此类的实例，仅当你知道自己在做什么时才使用
 
 
-	● [color=#70bafa]Member[/color] get_invitor [color=gray]([/color]  [color=gray])[/color]
+	● [color=#70bafa]Member[/color] ￿get_invitor [color=gray]([/color]  [color=gray])[/color]
 
 	获取邀请机器人加入群聊的邀请者的成员实例
 
 
-	● [color=#70bafa]Group[/color] get_group [color=gray]([/color]  [color=gray])[/color]
+	● [color=#70bafa]Group[/color] ￿get_group [color=gray]([/color]  [color=gray])[/color]
 
 	获取此事件对应的	机器人所加入的群聊的实例
 

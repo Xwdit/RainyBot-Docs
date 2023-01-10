@@ -333,9 +333,9 @@ func _save_doc_bbcode(path:String,doc_dic:Dictionary,dics:Dictionary):
 		md_text += "\n"
 		for v in doc_dic.variables:
 			if v.enumeration != "":
-				md_text += "	● %s "+char(0xFFFF)+"%s.%s\n" % [v.type,v.enumeration,v.name]
+				md_text += ("	● %s "+char(0xFFFF)+"%s.%s\n") % [v.type,v.enumeration,v.name]
 			else:
-				md_text += "	● %s "+char(0xFFFF)+"%s\n" % [v.type,v.name]
+				md_text += ("	● %s "+char(0xFFFF)+"%s\n") % [v.type,v.name]
 			md_text += "\n"
 			if v.default_value != "":
 				md_text += "	默认值: %s\n" % v.default_value
@@ -358,9 +358,9 @@ func _save_doc_bbcode(path:String,doc_dic:Dictionary,dics:Dictionary):
 			if m.has("qualifiers") and !m.qualifiers.is_empty():
 				md_text += "[color=gray]"+ m.qualifiers + "[/color] "
 			if m.return_type.to_lower() != "void":
-				md_text += "[color=#70bafa]%s[/color] "+char(0xFFFF)+"%s [color=gray]([/color] " % [m.return_type,m.name]
+				md_text += ("[color=#70bafa]%s[/color] "+char(0xFFFF)+"%s [color=gray]([/color] ") % [m.return_type,m.name]
 			else:
-				md_text += "[color=gray]%s[/color] "+char(0xFFFF)+"%s [color=gray]([/color] " % [m.return_type,m.name]
+				md_text += ("[color=gray]%s[/color] "+char(0xFFFF)+"%s [color=gray]([/color] ") % [m.return_type,m.name]
 			if !m.arguments.is_empty():
 				for a in m.arguments:
 					if a.default_value != "":

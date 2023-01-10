@@ -10,7 +10,7 @@
 
 [font_size=30][color=#70bafa]方法:[/color][/font_size]
 
-	● [color=gray]static[/color] [color=#70bafa]MessageChain[/color] init [color=gray]([/color] [color=#70bafa]Variant[/color] msg [color=gray])[/color]
+	● [color=gray]static[/color] [color=#70bafa]MessageChain[/color] ￿init [color=gray]([/color] [color=#70bafa]Variant[/color] msg [color=gray])[/color]
 
 	手动构造一个MessageChain类的实例，以便将多种消息合并为单条消息发送 
 	
@@ -22,22 +22,22 @@
 	- 已知的消息ID(以便对此ID关联的消息进行如撤回一类的操作)
 
 
-	● [color=gray]static[/color] [color=#70bafa]MessageChain[/color] init_meta [color=gray]([/color] [color=#70bafa]Array[/color] arr [color=gray])[/color]
+	● [color=gray]static[/color] [color=#70bafa]MessageChain[/color] ￿init_meta [color=gray]([/color] [color=#70bafa]Array[/color] arr [color=gray])[/color]
 
 	通过机器人协议后端的元数据数组构造一个MessageChain类的实例，仅当你知道自己在做什么时才使用
 
 
-	● [color=#70bafa]Array[/color] get_metadata [color=gray]([/color]  [color=gray])[/color]
+	● [color=#70bafa]Array[/color] ￿get_metadata [color=gray]([/color]  [color=gray])[/color]
 
 	获取实例中的元数据数组，仅当你知道自己在做什么时才使用
 
 
-	● [color=gray]void[/color] set_metadata [color=gray]([/color] [color=#70bafa]Array[/color] arr [color=gray])[/color]
+	● [color=gray]void[/color] ￿set_metadata [color=gray]([/color] [color=#70bafa]Array[/color] arr [color=gray])[/color]
 
 	使用指定数组覆盖实例中的元数据数组，仅当你知道自己在做什么时才使用
 
 
-	● [color=#70bafa]MessageChain[/color] append [color=gray]([/color] [color=#70bafa]Variant[/color] msg [color=gray])[/color]
+	● [color=#70bafa]MessageChain[/color] ￿append [color=gray]([/color] [color=#70bafa]Variant[/color] msg [color=gray])[/color]
 
 	将参数中的内容添加到此消息链实例中，并返回此消息链实例自身，以便于进行连续操作 
 	
@@ -50,19 +50,19 @@
 	- 包含以上三种类型实例的数组(将按照上方规则将数组中的实例依次添加至此消息链)
 
 
-	● [color=#70bafa]int[/color] get_size [color=gray]([/color]  [color=gray])[/color]
+	● [color=#70bafa]int[/color] ￿get_size [color=gray]([/color]  [color=gray])[/color]
 
 	获取消息链实例中的消息实例的总数
 
 
-	● [color=#70bafa]Message[/color] get_message [color=gray]([/color] [color=#70bafa]int[/color] index [color=gray])[/color]
+	● [color=#70bafa]Message[/color] ￿get_message [color=gray]([/color] [color=#70bafa]int[/color] index [color=gray])[/color]
 
 	根据指定的序号来从消息链实例中获取对应的Message子类实例 
 	
 	若序号不存在则返回null
 
 
-	● [color=#70bafa]Array[/color] get_message_array [color=gray]([/color] [color=#70bafa]Variant[/color] types[color=gray] = null[/color], [color=#70bafa]bool[/color] exclude[color=gray] = false[/color], [color=#70bafa]int[/color] max_size[color=gray] = -1[/color] [color=gray])[/color]
+	● [color=#70bafa]Array[/color] ￿get_message_array [color=gray]([/color] [color=#70bafa]Variant[/color] types[color=gray] = null[/color], [color=#70bafa]bool[/color] exclude[color=gray] = false[/color], [color=#70bafa]int[/color] max_size[color=gray] = -1[/color] [color=gray])[/color]
 
 	根据指定的条件，来从消息链实例中获取由符合条件的消息类实例组成的数组 
 	
@@ -75,7 +75,7 @@
 	获取的消息数量的上限(若不为-1，则获取到的消息实例总数到达上限后将直接返回对应数组)
 
 
-	● [color=#70bafa]String[/color] get_message_text [color=gray]([/color] [color=#70bafa]Variant[/color] types[color=gray] = null[/color], [color=#70bafa]bool[/color] exclude[color=gray] = false[/color] [color=gray])[/color]
+	● [color=#70bafa]String[/color] ￿get_message_text [color=gray]([/color] [color=#70bafa]Variant[/color] types[color=gray] = null[/color], [color=#70bafa]bool[/color] exclude[color=gray] = false[/color] [color=gray])[/color]
 
 	根据指定的条件，来从消息链实例中获取由符合条件的消息类实例转换并拼接而成的单个字符串 
 	
@@ -88,17 +88,17 @@
 	是否为排除模式(若为true，则将获取除上个参数的列表以外的所有消息类实例)
 
 
-	● [color=#70bafa]int[/color] get_message_id [color=gray]([/color]  [color=gray])[/color]
+	● [color=#70bafa]int[/color] ￿get_message_id [color=gray]([/color]  [color=gray])[/color]
 
 	获取消息链实例的消息ID，若为手动且不基于ID构造的消息链实例，则始终返回0
 
 
-	● [color=#70bafa]int[/color] get_message_timestamp [color=gray]([/color]  [color=gray])[/color]
+	● [color=#70bafa]int[/color] ￿get_message_timestamp [color=gray]([/color]  [color=gray])[/color]
 
 	获取消息链实例的发送时间戳，若为手动构造的消息链实例，则始终返回0
 
 
-	● [color=#70bafa]bool[/color] has_message_type [color=gray]([/color] [color=#70bafa]Variant[/color] type [color=gray])[/color]
+	● [color=#70bafa]bool[/color] ￿has_message_type [color=gray]([/color] [color=#70bafa]Variant[/color] type [color=gray])[/color]
 
 	判断消息链实例中是否存在指定类型的消息类实例 
 	
@@ -107,7 +107,7 @@
 	若传入参数为数组，则仅当消息链中拥有数组中所有类型时才返回true
 
 
-	● [color=#70bafa]bool[/color] is_at_bot [color=gray]([/color]  [color=gray])[/color]
+	● [color=#70bafa]bool[/color] ￿is_at_bot [color=gray]([/color]  [color=gray])[/color]
 
 	用于快捷判断消息链实例中是否包含目标为机器人的AT类消息实例
 

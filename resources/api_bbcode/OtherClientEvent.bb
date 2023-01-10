@@ -8,12 +8,12 @@
 
 [font_size=30][color=#70bafa]方法:[/color][/font_size]
 
-	● [color=#70bafa]int[/color] get_client_id [color=gray]([/color]  [color=gray])[/color]
+	● [color=#70bafa]int[/color] ￿get_client_id [color=gray]([/color]  [color=gray])[/color]
 
 	获取事件对应的其它客户端的ID
 
 
-	● [color=#70bafa]String[/color] get_client_platform [color=gray]([/color]  [color=gray])[/color]
+	● [color=#70bafa]String[/color] ￿get_client_platform [color=gray]([/color]  [color=gray])[/color]
 
 	获取事件对应的其它客户端的平台名称
 

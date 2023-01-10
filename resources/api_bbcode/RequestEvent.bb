@@ -8,32 +8,32 @@
 
 [font_size=30][color=#70bafa]方法:[/color][/font_size]
 
-	● [color=#70bafa]int[/color] get_event_id [color=gray]([/color]  [color=gray])[/color]
+	● [color=#70bafa]int[/color] ￿get_event_id [color=gray]([/color]  [color=gray])[/color]
 
 	获取请求事件的对应ID
 
 
-	● [color=#70bafa]int[/color] get_sender_id [color=gray]([/color]  [color=gray])[/color]
+	● [color=#70bafa]int[/color] ￿get_sender_id [color=gray]([/color]  [color=gray])[/color]
 
 	获取请求事件对应的发送者的ID
 
 
-	● [color=#70bafa]String[/color] get_sender_name [color=gray]([/color]  [color=gray])[/color]
+	● [color=#70bafa]String[/color] ￿get_sender_name [color=gray]([/color]  [color=gray])[/color]
 
 	获取请求事件对应的发送者的名称
 
 
-	● [color=#70bafa]int[/color] get_group_id [color=gray]([/color]  [color=gray])[/color]
+	● [color=#70bafa]int[/color] ￿get_group_id [color=gray]([/color]  [color=gray])[/color]
 
 	获取请求事件相关的群组的ID(对于非群组请求，并且请求发送者不来自某群组时将返回0)
 
 
-	● [color=#70bafa]String[/color] get_request_message [color=gray]([/color]  [color=gray])[/color]
+	● [color=#70bafa]String[/color] ￿get_request_message [color=gray]([/color]  [color=gray])[/color]
 
 	获取请求事件相关的申请消息的文本
 
 
-	● [color=#70bafa]BotRequestResult[/color] respond [color=gray]([/color] [color=#70bafa]int[/color] respond_type, [color=#70bafa]String[/color] msg[color=gray] = ""[/color], [color=#70bafa]float[/color] timeout[color=gray] = inf_neg[/color] [color=gray])[/color]
+	● [color=#70bafa]BotRequestResult[/color] ￿respond [color=gray]([/color] [color=#70bafa]int[/color] respond_type, [color=#70bafa]String[/color] msg[color=gray] = ""[/color], [color=#70bafa]float[/color] timeout[color=gray] = inf_neg[/color] [color=gray])[/color]
 
 	用于响应当前的请求事件，可用的响应类型请参照每个具体的请求事件类型中的RespondType枚举 
 	

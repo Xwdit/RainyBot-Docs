@@ -6,7 +6,7 @@
 
 [font_size=30][color=#70bafa]枚举:[/color][/font_size]
 
-	[color=#70bafa]enum[/color] RespondType
+	[color=#70bafa]enum[/color] ￿RespondType
 
 	可用于回应请求的回应类型
 
@@ -22,7 +22,7 @@
 
 [font_size=30][color=#70bafa]方法:[/color][/font_size]
 
-	● [color=gray]static[/color] [color=#70bafa]NewFriendRequestEvent[/color] init_meta [color=gray]([/color] [color=#70bafa]Dictionary[/color] dic [color=gray])[/color]
+	● [color=gray]static[/color] [color=#70bafa]NewFriendRequestEvent[/color] ￿init_meta [color=gray]([/color] [color=#70bafa]Dictionary[/color] dic [color=gray])[/color]
 
 	通过机器人协议后端的元数据字典构造一个此类的实例，仅当你知道自己在做什么时才使用
 

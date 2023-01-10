@@ -6,7 +6,7 @@
 
 [font_size=30][color=#70bafa]枚举:[/color][/font_size]
 
-	[color=#70bafa]enum[/color] StatusCode
+	[color=#70bafa]enum[/color] ￿StatusCode
 
 	请求结果的状态码，可用于对比判断请求结果的当前状态
 
@@ -46,42 +46,42 @@
 
 [font_size=30][color=#70bafa]方法:[/color][/font_size]
 
-	● [color=gray]static[/color] [color=#70bafa]BotRequestResult[/color] init_meta [color=gray]([/color] [color=#70bafa]Dictionary[/color] dic [color=gray])[/color]
+	● [color=gray]static[/color] [color=#70bafa]BotRequestResult[/color] ￿init_meta [color=gray]([/color] [color=#70bafa]Dictionary[/color] dic [color=gray])[/color]
 
 	通过机器人协议后端的元数据数组构造一个BotRequestResult类的实例，仅当你知道自己在做什么时才使用
 
 
-	● [color=#70bafa]Dictionary[/color] get_metadata [color=gray]([/color]  [color=gray])[/color]
+	● [color=#70bafa]Dictionary[/color] ￿get_metadata [color=gray]([/color]  [color=gray])[/color]
 
 	获取实例中的元数据字典，仅当你知道自己在做什么时才使用
 
 
-	● [color=gray]void[/color] set_metadata [color=gray]([/color] [color=#70bafa]Dictionary[/color] dic [color=gray])[/color]
+	● [color=gray]void[/color] ￿set_metadata [color=gray]([/color] [color=#70bafa]Dictionary[/color] dic [color=gray])[/color]
 
 	使用指定字典覆盖实例中的元数据字典，仅当你知道自己在做什么时才使用
 
 
-	● [color=#70bafa]int[/color] get_status_code [color=gray]([/color]  [color=gray])[/color]
+	● [color=#70bafa]int[/color] ￿get_status_code [color=gray]([/color]  [color=gray])[/color]
 
 	返回请求结果的状态码
 
 
-	● [color=#70bafa]String[/color] get_status_msg [color=gray]([/color]  [color=gray])[/color]
+	● [color=#70bafa]String[/color] ￿get_status_msg [color=gray]([/color]  [color=gray])[/color]
 
 	返回请求结果的状态信息文本
 
 
-	● [color=#70bafa]int[/color] get_message_id [color=gray]([/color]  [color=gray])[/color]
+	● [color=#70bafa]int[/color] ￿get_message_id [color=gray]([/color]  [color=gray])[/color]
 
 	返回请求结果对应的消息ID
 
 
-	● [color=#70bafa]bool[/color] is_success [color=gray]([/color]  [color=gray])[/color]
+	● [color=#70bafa]bool[/color] ￿is_success [color=gray]([/color]  [color=gray])[/color]
 
 	返回请求结果是否为成功
 
 
-	● [color=#70bafa]bool[/color] is_status [color=gray]([/color] [color=#70bafa]int[/color] code [color=gray])[/color]
+	● [color=#70bafa]bool[/color] ￿is_status [color=gray]([/color] [color=#70bafa]int[/color] code [color=gray])[/color]
 
 	判断请求结果是否为指定的结果
 
