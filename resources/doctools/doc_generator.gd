@@ -358,11 +358,14 @@ func _save_doc_bbcode(path:String,doc_dic:Dictionary,dics:Dictionary):
 		for m in doc_dic.methods:
 			md_text += "	● "
 			if m.has("qualifiers") and !m.qualifiers.is_empty():
-				md_text += "[color=gray]"+ m.qualifiers + "[/color] "
+				if m.qualifiers == "static":
+					md_text += "[color=gray][hint=此方法调用时无需构造实例，可通过类名直接调用]"+ m.qualifiers + "[/hint][/color] "
+				else:
+					md_text += "[color=gray]"+ m.qualifiers + "[/color] "
 			if m.return_type.to_lower() != "void":
 				md_text += ("[color=#70bafa]%s[/color] "+char(0xFFFF)+"%s"+char(0xFFFF)+" [color=gray]([/color] ") % [get_type_url_bbcode(m.return_type,dics),m.name]
 			else:
-				md_text += ("[color=gray][hint=此函数无返回值]%s[/hint][/color] "+char(0xFFFF)+"%s"+char(0xFFFF)+" [color=gray]([/color] ") % [m.return_type,m.name]
+				md_text += ("[color=gray][hint=此方法无返回值]%s[/hint][/color] "+char(0xFFFF)+"%s"+char(0xFFFF)+" [color=gray]([/color] ") % [m.return_type,m.name]
 			if !m.arguments.is_empty():
 				for a in m.arguments:
 					if a.default_value != "":
