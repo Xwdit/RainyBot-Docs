@@ -294,7 +294,7 @@ func _save_doc_bbcode(path:String,doc_dic:Dictionary,dics:Dictionary):
 			if s.description != "":
 				md_text += "	%s\n" % s.description.replacen("[br]","\n	")
 				md_text += "\n"
-			md_text += "\n\n"
+			md_text += "\n"
 	if !doc_dic.enums.is_empty():
 		md_text += "[font_size=25][color=#70bafa][b]枚举[/b][/color][/font_size]\n"
 		md_text += "\n"
@@ -311,7 +311,6 @@ func _save_doc_bbcode(path:String,doc_dic:Dictionary,dics:Dictionary):
 						md_text += "		[color=gray]%s[/color]\n" % c.description.replacen("[br]","\n		")
 						md_text += "\n"
 			md_text += "\n"
-		md_text += "\n"
 	if !doc_dic.constants.is_empty():
 		var found:bool = false
 		for v in doc_dic.constants:
@@ -331,7 +330,6 @@ func _save_doc_bbcode(path:String,doc_dic:Dictionary,dics:Dictionary):
 					md_text += "	%s\n" % v.description.replacen("[br]","\n	")
 					md_text += "\n"
 				md_text += "\n"
-			md_text += "\n"
 	if !doc_dic.variables.is_empty():
 		md_text += "[font_size=25][color=#70bafa][b]属性[/b][/color][/font_size]\n"
 		md_text += "\n"
@@ -354,7 +352,6 @@ func _save_doc_bbcode(path:String,doc_dic:Dictionary,dics:Dictionary):
 				md_text += "	%s\n" % v.description.replacen("[br]","\n	")
 				md_text += "\n"
 			md_text += "\n"
-		md_text += "\n"
 	if !doc_dic.methods.is_empty():
 		md_text += "[font_size=25][color=#70bafa][b]方法[/b][/color][/font_size]\n"
 		md_text += "\n"
@@ -383,7 +380,7 @@ func _save_doc_bbcode(path:String,doc_dic:Dictionary,dics:Dictionary):
 				md_text += "\n"
 			md_text += "\n"
 	md_text = md_text.replacen(",  [color=gray])"," [color=gray])").replacen(",  )"," )").replacen("(  )","( )").replacen("([/color]  [color=gray])","([/color] [color=gray])")
-	md_text = md_text.replacen("=inf_neg","=-INF")
+	md_text = md_text.replacen("=inf_neg","=-INF").strip_edges() + "\n\n"
 	var file = FileAccess.open(path+doc_dic.name+".bb",FileAccess.WRITE)
 	file.store_line(md_text)
 	file = null
