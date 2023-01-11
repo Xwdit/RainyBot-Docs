@@ -12,41 +12,41 @@
 
 [font_size=25][color=#70bafa][b]方法[/b][/color][/font_size]
 
-	● [color=gray]static[/color] [color=#70bafa]GroupList[/color] ￿init_meta [color=gray]([/color] [color=#70bafa]Array[/color] arr [color=gray])[/color]
+	● [color=gray]static[/color] [color=#70bafa]GroupList[/color] ￿init_meta￿ [color=gray]([/color] [color=#70bafa]Array[/color] arr [color=gray])[/color]
 
 	通过机器人协议后端的元数据数组构造一个GroupList类的实例，仅当你知道自己在做什么时才使用
 
 
-	● [color=#70bafa]Array[/color] ￿get_metadata [color=gray]([/color] [color=gray])[/color]
+	● [color=#70bafa]Array[/color] ￿get_metadata￿ [color=gray]([/color] [color=gray])[/color]
 
 	获取实例中的元数据数组，仅当你知道自己在做什么时才使用
 
 
-	● [color=gray]void[/color] ￿set_metadata [color=gray]([/color] [color=#70bafa]Array[/color] arr [color=gray])[/color]
+	● [color=gray]void[/color] ￿set_metadata￿ [color=gray]([/color] [color=#70bafa]Array[/color] arr [color=gray])[/color]
 
 	使用指定数组覆盖实例中的元数据数组，仅当你知道自己在做什么时才使用
 
 
-	● [color=#70bafa]Group[/color] ￿get_from_index [color=gray]([/color] [color=#70bafa]int[/color] index [color=gray])[/color]
+	● [color=#70bafa]Group[/color] ￿get_from_index￿ [color=gray]([/color] [color=#70bafa]int[/color] index [color=gray])[/color]
 
 	根据指定的序号来从群列表实例中获取对应的Group实例 
 	
 	若序号不存在则返回null
 
 
-	● [color=#70bafa]Group[/color] ￿get_from_id [color=gray]([/color] [color=#70bafa]int[/color] group_id [color=gray])[/color]
+	● [color=#70bafa]Group[/color] ￿get_from_id￿ [color=gray]([/color] [color=#70bafa]int[/color] group_id [color=gray])[/color]
 
 	根据指定的群ID(群号)来从群列表实例中获取对应的Group实例 
 	
 	若群ID不存在则返回null
 
 
-	● [color=#70bafa]int[/color] ￿get_size [color=gray]([/color] [color=gray])[/color]
+	● [color=#70bafa]int[/color] ￿get_size￿ [color=gray]([/color] [color=gray])[/color]
 
 	获取群列表实例中的群实例的总数
 
 
-	● [color=#70bafa]bool[/color] ￿has_group [color=gray]([/color] [color=#70bafa]int[/color] group_id [color=gray])[/color]
+	● [color=#70bafa]bool[/color] ￿has_group￿ [color=gray]([/color] [color=#70bafa]int[/color] group_id [color=gray])[/color]
 
 	判断群列表实例中是否存在指定群ID(群号)的群组实例
 

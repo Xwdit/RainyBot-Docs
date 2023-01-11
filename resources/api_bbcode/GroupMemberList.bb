@@ -12,41 +12,41 @@
 
 [font_size=25][color=#70bafa][b]方法[/b][/color][/font_size]
 
-	● [color=gray]static[/color] [color=#70bafa]GroupMemberList[/color] ￿init_meta [color=gray]([/color] [color=#70bafa]Array[/color] arr [color=gray])[/color]
+	● [color=gray]static[/color] [color=#70bafa]GroupMemberList[/color] ￿init_meta￿ [color=gray]([/color] [color=#70bafa]Array[/color] arr [color=gray])[/color]
 
 	通过机器人协议后端的元数据数组构造一个GroupMemberList类的实例，仅当你知道自己在做什么时才使用
 
 
-	● [color=#70bafa]Array[/color] ￿get_metadata [color=gray]([/color] [color=gray])[/color]
+	● [color=#70bafa]Array[/color] ￿get_metadata￿ [color=gray]([/color] [color=gray])[/color]
 
 	获取实例中的元数据数组，仅当你知道自己在做什么时才使用
 
 
-	● [color=gray]void[/color] ￿set_metadata [color=gray]([/color] [color=#70bafa]Array[/color] arr [color=gray])[/color]
+	● [color=gray]void[/color] ￿set_metadata￿ [color=gray]([/color] [color=#70bafa]Array[/color] arr [color=gray])[/color]
 
 	使用指定数组覆盖实例中的元数据数组，仅当你知道自己在做什么时才使用
 
 
-	● [color=#70bafa]GroupMember[/color] ￿get_from_index [color=gray]([/color] [color=#70bafa]int[/color] index [color=gray])[/color]
+	● [color=#70bafa]GroupMember[/color] ￿get_from_index￿ [color=gray]([/color] [color=#70bafa]int[/color] index [color=gray])[/color]
 
 	根据指定的序号来从群成员列表实例中获取对应的GroupMember实例 
 	
 	若序号不存在则返回null
 
 
-	● [color=#70bafa]GroupMember[/color] ￿get_from_id [color=gray]([/color] [color=#70bafa]int[/color] member_id [color=gray])[/color]
+	● [color=#70bafa]GroupMember[/color] ￿get_from_id￿ [color=gray]([/color] [color=#70bafa]int[/color] member_id [color=gray])[/color]
 
 	根据指定的群成员ID来从群成员列表实例中获取对应的GroupMember实例 
 	
 	若群成员ID不存在则返回null
 
 
-	● [color=#70bafa]bool[/color] ￿has_member [color=gray]([/color] [color=#70bafa]int[/color] member_id [color=gray])[/color]
+	● [color=#70bafa]bool[/color] ￿has_member￿ [color=gray]([/color] [color=#70bafa]int[/color] member_id [color=gray])[/color]
 
 	判断群成员列表实例中是否存在指定ID的群成员实例
 
 
-	● [color=#70bafa]int[/color] ￿get_size [color=gray]([/color] [color=gray])[/color]
+	● [color=#70bafa]int[/color] ￿get_size￿ [color=gray]([/color] [color=gray])[/color]
 
 	获取群成员列表实例中的群成员实例的总数
 

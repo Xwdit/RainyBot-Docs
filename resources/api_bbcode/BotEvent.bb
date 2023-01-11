@@ -8,7 +8,7 @@
 
 [font_size=25][color=#70bafa][b]方法[/b][/color][/font_size]
 
-	● [color=#70bafa]int[/color] ￿get_id [color=gray]([/color] [color=gray])[/color]
+	● [color=#70bafa]int[/color] ￿get_id￿ [color=gray]([/color] [color=gray])[/color]
 
 	获取发生事件的机器人ID,通常为当前使用的机器人ID
 

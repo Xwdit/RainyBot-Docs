@@ -8,12 +8,12 @@
 
 [font_size=25][color=#70bafa][b]方法[/b][/color][/font_size]
 
-	● [color=#70bafa]Dictionary[/color] ￿get_metadata [color=gray]([/color] [color=gray])[/color]
+	● [color=#70bafa]Dictionary[/color] ￿get_metadata￿ [color=gray]([/color] [color=gray])[/color]
 
 	获取实例中的元数据字典，仅当你知道自己在做什么时才使用
 
 
-	● [color=gray]void[/color] ￿set_metadata [color=gray]([/color] [color=#70bafa]Dictionary[/color] dic [color=gray])[/color]
+	● [color=gray]void[/color] ￿set_metadata￿ [color=gray]([/color] [color=#70bafa]Dictionary[/color] dic [color=gray])[/color]
 
 	使用指定字典覆盖实例中的元数据字典，仅当你知道自己在做什么时才使用
 
