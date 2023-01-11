@@ -1,6 +1,6 @@
 [font_size=25][b][color=#70bafa]类:[/color] RoleAPI[/b][/font_size]
-[color=#70bafa]继承:[/color] RainyBotAPI
-[color=#70bafa]派生:[/color] GroupAPI, MemberAPI, OtherClient
+[color=#70bafa]继承:[/color] [url=api:RainyBotAPI]RainyBotAPI[/url]
+[color=#70bafa]派生:[/color] [url=api:GroupAPI]GroupAPI[/url], [url=api:MemberAPI]MemberAPI[/url], [url=api:OtherClient]OtherClient[/url]
 
 
 [b]RainyBot的角色API类，所有的角色相关API将直接或间接继承此类[/b]

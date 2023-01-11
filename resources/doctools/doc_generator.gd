@@ -254,11 +254,11 @@ func _save_doc_markdown(path:String,doc_dic:Dictionary,dics:Dictionary):
 func _save_doc_bbcode(path:String,doc_dic:Dictionary,dics:Dictionary):
 	var md_text:String
 	md_text += "[font_size=25][b][color=#70bafa]类:[/color] %s[/b][/font_size]\n" % doc_dic.name
-	md_text += "[color=#70bafa]继承:[/color] %s\n" % [doc_dic.inherits]
+	md_text += "[color=#70bafa]继承:[/color] %s\n" % [get_type_url_bbcode(doc_dic.inherits,dics)]
 	if !doc_dic.childs.is_empty():
 		var c_text:String = ""
 		for i in range(doc_dic.childs.size()):
-			c_text += "%s" % [doc_dic.childs[i]]
+			c_text += "%s" % [get_type_url_bbcode(doc_dic.childs[i],dics)]
 			if i < doc_dic.childs.size()-1:
 				c_text += ", "
 		md_text += "[color=#70bafa]派生:[/color] %s\n" % c_text
@@ -286,9 +286,9 @@ func _save_doc_bbcode(path:String,doc_dic:Dictionary,dics:Dictionary):
 			if !s.arguments.is_empty():
 				for a in s.arguments:
 					if a.default_value != "":
-						md_text += "%s %s=%s, " % [a.type,a.name,a.default_value]
+						md_text += "%s %s=%s, " % [get_type_url_bbcode(a.type,dics),a.name,a.default_value]
 					else:
-						md_text += "%s %s, " % [a.type,a.name]
+						md_text += "%s %s, " % [get_type_url_bbcode(a.type,dics),a.name]
 			md_text += " )\n"
 			md_text += "\n"
 			if s.description != "":
@@ -335,9 +335,9 @@ func _save_doc_bbcode(path:String,doc_dic:Dictionary,dics:Dictionary):
 		md_text += "\n"
 		for v in doc_dic.variables:
 			if v.enumeration != "":
-				md_text += ("	● %s "+char(0xFFFF)+"%s.%s"+char(0xFFFF)+"\n") % [v.type,v.enumeration,v.name]
+				md_text += ("	● %s "+char(0xFFFF)+"%s.%s"+char(0xFFFF)+"\n") % [get_type_url_bbcode(v.type,dics),v.enumeration,v.name]
 			else:
-				md_text += ("	● %s "+char(0xFFFF)+"%s"+char(0xFFFF)+"\n") % [v.type,v.name]
+				md_text += ("	● %s "+char(0xFFFF)+"%s"+char(0xFFFF)+"\n") % [get_type_url_bbcode(v.type,dics),v.name]
 			md_text += "\n"
 			if v.default_value != "":
 				md_text += "	默认值: %s\n" % v.default_value
@@ -360,9 +360,9 @@ func _save_doc_bbcode(path:String,doc_dic:Dictionary,dics:Dictionary):
 			if m.has("qualifiers") and !m.qualifiers.is_empty():
 				md_text += "[color=gray]"+ m.qualifiers + "[/color] "
 			if m.return_type.to_lower() != "void":
-				md_text += ("[color=#70bafa]%s[/color] "+char(0xFFFF)+"%s"+char(0xFFFF)+" [color=gray]([/color] ") % [m.return_type,m.name]
+				md_text += ("[color=#70bafa]%s[/color] "+char(0xFFFF)+"%s"+char(0xFFFF)+" [color=gray]([/color] ") % [get_type_url_bbcode(m.return_type,dics),m.name]
 			else:
-				md_text += ("[color=gray]%s[/color] "+char(0xFFFF)+"%s"+char(0xFFFF)+" [color=gray]([/color] ") % [m.return_type,m.name]
+				md_text += ("[color=gray][hint=此函数无返回值]%s[/hint][/color] "+char(0xFFFF)+"%s"+char(0xFFFF)+" [color=gray]([/color] ") % [m.return_type,m.name]
 			if !m.arguments.is_empty():
 				for a in m.arguments:
 					if a.default_value != "":
@@ -370,9 +370,9 @@ func _save_doc_bbcode(path:String,doc_dic:Dictionary,dics:Dictionary):
 							a.default_value = "[]"
 						elif a.type.findn("Dictionary") != -1 and a.default_value == "null":
 							a.default_value = "{}"
-						md_text += "[color=#70bafa]%s[/color] %s[color=gray] = %s[/color], " % [a.type,a.name,a.default_value]
+						md_text += "[color=#70bafa]%s[/color] %s[color=gray] = %s[/color], " % [get_type_url_bbcode(a.type,dics),a.name,a.default_value]
 					else:
-						md_text += "[color=#70bafa]%s[/color] %s, " % [a.type,a.name]
+						md_text += "[color=#70bafa]%s[/color] %s, " % [get_type_url_bbcode(a.type,dics),a.name]
 			md_text += " [color=gray])[/color]\n"
 			md_text += "\n"
 			if m.description != "":
@@ -384,6 +384,13 @@ func _save_doc_bbcode(path:String,doc_dic:Dictionary,dics:Dictionary):
 	var file = FileAccess.open(path+doc_dic.name+".bb",FileAccess.WRITE)
 	file.store_line(md_text)
 	file = null
+
+
+func get_type_url_bbcode(type:String,dics:Dictionary)->String:
+	var v_link:String = "[url=godot:%s]%s[/url]" % [type,type]
+	if dics.has(type) and dics[type].has("name"):
+		v_link = "[url=api:%s]%s[/url]" % [type,type]
+	return v_link
 
 
 func save_doc_markdown_catalog(path:String,dics:Dictionary):

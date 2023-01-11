@@ -1,6 +1,6 @@
 [font_size=25][b][color=#70bafa]类:[/color] GroupAPI[/b][/font_size]
-[color=#70bafa]继承:[/color] RoleAPI
-[color=#70bafa]派生:[/color] Group, GroupAnnounce, GroupAnnounceInfo, GroupAnnounceInfoList, GroupConfig, GroupList, GroupMember, GroupMemberList
+[color=#70bafa]继承:[/color] [url=api:RoleAPI]RoleAPI[/url]
+[color=#70bafa]派生:[/color] [url=api:Group]Group[/url], [url=api:GroupAnnounce]GroupAnnounce[/url], [url=api:GroupAnnounceInfo]GroupAnnounceInfo[/url], [url=api:GroupAnnounceInfoList]GroupAnnounceInfoList[/url], [url=api:GroupConfig]GroupConfig[/url], [url=api:GroupList]GroupList[/url], [url=api:GroupMember]GroupMember[/url], [url=api:GroupMemberList]GroupMemberList[/url]
 
 
 [b]RainyBot的群组API类，所有的群组相关API将直接或间接继承此类[/b]
