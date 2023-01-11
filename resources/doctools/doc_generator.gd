@@ -35,8 +35,11 @@ func build_docs(path:String,target_path:String,type:int,keep_dir_struct:bool=tru
 				_save_doc_markdown(_path,doc_dic[doc],doc_dic)
 			DocType.BBCODE:
 				_save_doc_bbcode(_path,doc_dic[doc],doc_dic)
-	if !keep_dir_struct and type == DocType.MARKDOWN:
-		save_doc_markdown_catalog(target_path,doc_dic)
+	if !keep_dir_struct:
+		if type == DocType.MARKDOWN:
+			save_doc_markdown_catalog(target_path,doc_dic)
+		else:
+			save_doc_text_catalog(target_path,doc_dic)
 		
 
 func _build_docs(path:String,target_path:String,doc_dic:Dictionary)->void:
@@ -421,3 +424,30 @@ func _save_doc_markdown_catalog(dics:Dictionary,cata_text:Array,cname:String="",
 			cata_text[0] += "  \n"
 		for c in dics[d].childs:
 			_save_doc_markdown_catalog(dics,cata_text,c,layer+1)
+			
+			
+func save_doc_text_catalog(path:String,dics:Dictionary):
+	var text:Array = [""]
+	_save_doc_text_catalog(dics,text)
+	var file = FileAccess.open(path+"CATALOG",FileAccess.WRITE)
+	text[0] = text[0].replacen("[br][br]","，")
+	file.store_line(text[0])
+	file = null
+	
+
+func _save_doc_text_catalog(dics:Dictionary,cata_text:Array,cname:String="",layer:int=0):
+	if cname == "":
+		var keys:Array = dics.keys()
+		keys.sort()
+		for d in keys:
+			if dics[d].has("name") and !dics[dics[d].inherits].has("name"):
+				cata_text[0] += "%s\n" % [dics[d].name]
+				for c in dics[d].childs:
+					_save_doc_text_catalog(dics,cata_text,c,layer+1)
+	else:
+		var d:String = cname
+		for i in range(layer):
+			cata_text[0] += "	"
+		cata_text[0] += "%s\n" % [dics[d].name]
+		for c in dics[d].childs:
+			_save_doc_text_catalog(dics,cata_text,c,layer+1)
