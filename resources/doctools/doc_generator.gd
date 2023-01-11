@@ -441,13 +441,19 @@ func _save_doc_text_catalog(dics:Dictionary,cata_text:Array,cname:String="",laye
 		keys.sort()
 		for d in keys:
 			if dics[d].has("name") and !dics[dics[d].inherits].has("name"):
-				cata_text[0] += "%s\n" % [dics[d].name]
+				if dics[d].brief_description != "":
+					cata_text[0] += "%s:%s\n" % [dics[d].name,dics[d].brief_description]
+				else:
+					cata_text[0] += "%s:%s\n" % [dics[d].name,dics[d].name]
 				for c in dics[d].childs:
 					_save_doc_text_catalog(dics,cata_text,c,layer+1)
 	else:
 		var d:String = cname
 		for i in range(layer):
 			cata_text[0] += "	"
-		cata_text[0] += "%s\n" % [dics[d].name]
+		if dics[d].brief_description != "":
+			cata_text[0] += "%s:%s\n" % [dics[d].name,dics[d].brief_description]
+		else:
+			cata_text[0] += "%s:%s\n" % [dics[d].name,dics[d].name]
 		for c in dics[d].childs:
 			_save_doc_text_catalog(dics,cata_text,c,layer+1)
