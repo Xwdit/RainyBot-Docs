@@ -7,7 +7,8 @@
 
 [font_size=25][color=#70bafa][b]描述[/b][/color][/font_size]
 
-这是RainyBot的群组类，通常代表一个对应实例，实现了用于与群组进行交互的各类功能 [br]绝大部分与群聊直接相关的操作都可以通过此类来进行
+这是RainyBot的群组类，通常代表一个对应实例，实现了用于与群组进行交互的各类功能 
+绝大部分与群聊直接相关的操作都可以通过此类来进行
 
 
 [font_size=25][color=#70bafa][b]方法[/b][/color][/font_size]

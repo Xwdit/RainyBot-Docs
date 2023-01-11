@@ -61,7 +61,7 @@
 
 	尝试自动判断此请求的结果的图像格式，解析并返回其图像实例，支持的图像格式为: [code]png,jpg,bmp,tga,webp[/code] 
 	
-	若图像的格式已知，建议使用[code]get_as_[格式]_image()[/code]系列函数以获得更好的性能 (如[method get_as_png_image]函数)
+	若图像的格式已知，建议使用[code]get_as_[格式]_image()[/code]系列函数以获得更好的性能 (如[get_as_png_image]函数)
 
 
 	● [color=#70bafa][url=godot:Image]Image[/url][/color] ￿get_as_png_image￿ [color=gray]([/color] [color=gray])[/color]

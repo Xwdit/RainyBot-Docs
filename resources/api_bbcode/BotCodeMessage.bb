@@ -7,7 +7,8 @@
 
 [font_size=25][color=#70bafa][b]描述[/b][/color][/font_size]
 
-这是RainyBot的BotCode消息类，通常代表一个对应实例，可用于快捷发送一段包含多种类型的消息 [br]此类实例通常不会出现在消息链中，而是用于主动构建此类实例以便快捷发送消息
+这是RainyBot的BotCode消息类，通常代表一个对应实例，可用于快捷发送一段包含多种类型的消息 
+此类实例通常不会出现在消息链中，而是用于主动构建此类实例以便快捷发送消息
 
 
 [font_size=25][color=#70bafa][b]方法[/b][/color][/font_size]

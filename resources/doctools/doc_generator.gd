@@ -245,7 +245,7 @@ func _save_doc_markdown(path:String,doc_dic:Dictionary,dics:Dictionary):
 	md_text = md_text.replacen("[br]","  \n")
 	md_text = md_text.replacen(",  **)"," **)").replacen("(**  **)","( )")
 	md_text = md_text.replacen("=inf_neg","=-INF")
-	md_text = md_text.replacen("[code]","`").replacen("[/code]","`")
+	md_text = md_text.replacen("[code]","`").replacen("[/code]","`").replacen("[member ","[").replacen("[method ","[")
 	var file = FileAccess.open(path+doc_dic.name+".md",FileAccess.WRITE)
 	file.store_line(md_text)
 	file = null
@@ -264,12 +264,12 @@ func _save_doc_bbcode(path:String,doc_dic:Dictionary,dics:Dictionary):
 		md_text += "[color=#70bafa]派生:[/color] %s\n" % c_text
 	md_text += "\n\n"
 	if doc_dic.brief_description != "":
-		md_text += "[b]%s[/b]\n" % doc_dic.brief_description
+		md_text += "[b]%s[/b]\n" % doc_dic.brief_description.replacen("[br]","\n")
 		md_text += "\n\n"
 	if doc_dic.description != "":
 		md_text += "[font_size=25][color=#70bafa][b]描述[/b][/color][/font_size]\n"
 		md_text += "\n"
-		md_text += "%s\n" % doc_dic.description
+		md_text += "%s\n" % doc_dic.description.replacen("[br]","\n")
 		md_text += "\n\n"
 	if !doc_dic.tutorials.is_empty():
 		md_text += "[font_size=25][color=#70bafa][b]教程[/b][/color][/font_size]\n"
@@ -380,6 +380,7 @@ func _save_doc_bbcode(path:String,doc_dic:Dictionary,dics:Dictionary):
 				md_text += "\n"
 			md_text += "\n"
 	md_text = md_text.replacen(",  [color=gray])"," [color=gray])").replacen(",  )"," )").replacen("(  )","( )").replacen("([/color]  [color=gray])","([/color] [color=gray])")
+	md_text = md_text.replacen("[member ","[").replacen("[method ","[")
 	md_text = md_text.replacen("=inf_neg","=-INF").strip_edges() + "\n\n"
 	var file = FileAccess.open(path+doc_dic.name+".bb",FileAccess.WRITE)
 	file.store_line(md_text)

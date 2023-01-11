@@ -7,7 +7,8 @@
 
 [font_size=25][color=#70bafa][b]描述[/b][/color][/font_size]
 
-这是RainyBot的At消息类，通常代表一个对应实例，此类消息仅适用于群聊 [br]此类实例代表在消息中At了某群组成员，你也可以主动构建此类实例以便进行此操作
+这是RainyBot的At消息类，通常代表一个对应实例，此类消息仅适用于群聊 
+此类实例代表在消息中At了某群组成员，你也可以主动构建此类实例以便进行此操作
 
 
 [font_size=25][color=#70bafa][b]方法[/b][/color][/font_size]

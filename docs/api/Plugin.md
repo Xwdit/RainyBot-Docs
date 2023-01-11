@@ -62,7 +62,7 @@ enum **BlockMode**
   
 在插件中覆盖此虚函数，以便定义将在此插件的文件每次被读取时执行的操作   
   
-必须在此处使用[method set_plugin_info]函数来设置插件信息，插件才能被正常识别与读取   
+必须在此处使用[set_plugin_info]函数来设置插件信息，插件才能被正常识别与读取   
   
 例如：`set_plugin_info("example","示例插件","author","1.0","这是插件的介绍")`   
   
@@ -110,7 +110,7 @@ enum **BlockMode**
   
 可在此处进行一些与错误处理相关的操作，例如向指定QQ发送通知等   
   
-您可以使用[method get_last_errors]函数来获取错误的详细内容  
+您可以使用[get_last_errors]函数来获取错误的详细内容  
   
 ---  
   
@@ -134,7 +134,7 @@ enum **BlockMode**
   
 -  void **set_plugin_info (** [String](https://docs.godotengine.org/en/latest/classes/class_string.html) p_id, [String](https://docs.godotengine.org/en/latest/classes/class_string.html) p_name, [String](https://docs.godotengine.org/en/latest/classes/class_string.html) p_author, [String](https://docs.godotengine.org/en/latest/classes/class_string.html) p_version, [String](https://docs.godotengine.org/en/latest/classes/class_string.html) p_description, [Variant](https://docs.godotengine.org/en/latest/classes/class_variant.html) p_dependency=null **)**  
   
-用于设定插件的相关信息，需要在[method _on_init]虚函数中执行以便RainyBot正确加载您的插件   
+用于设定插件的相关信息，需要在[_on_init]虚函数中执行以便RainyBot正确加载您的插件   
   
 需要的参数从左到右分别为插件ID(将强制转为小写，不可与其它已加载插件重复),插件名,插件作者,插件版本,插件描述,插件依赖(可选)   
   
@@ -325,7 +325,7 @@ enum **BlockMode**
   
 用于注册一个或多个关键词并将其绑定到某个函数，关键词匹配时将触发绑定的函数并传入相关数据   
   
-注册的关键词不会自动进行匹配，而是需要手动调用或者在注册事件时将需要检测关键词的消息事件手动绑定到"[method trigger_keyword]"函数即可   
+注册的关键词不会自动进行匹配，而是需要手动调用或者在注册事件时将需要检测关键词的消息事件手动绑定到"[trigger_keyword]"函数即可   
   
 注册需要的参数从左到右分别为:   
   
@@ -345,12 +345,12 @@ enum **BlockMode**
 - 后续您只需更改该字典中的"name"键对应的值，即可实时变更唤醒机器人的关键词    
   
 关键词的匹配模式   
-- 在某个消息事件触发"[method trigger_keyword]"函数后，将提取消息事件的文本并根据匹配模式进行匹配   
-- 只有满足匹配模式对应的条件的关键词才会触发绑定的函数，匹配模式的具体行为请参见上方的[member MatchMode]枚举    
+- 在某个消息事件触发"[trigger_keyword]"函数后，将提取消息事件的文本并根据匹配模式进行匹配   
+- 只有满足匹配模式对应的条件的关键词才会触发绑定的函数，匹配模式的具体行为请参见上方的[MatchMode]枚举    
   
 关键词匹配成功后阻断对应事件的传递 (可选,默认为true):   
-- 若此项为true,则在成功匹配关键词后，被对应事件调用的"[method trigger_keyword]"函数将返回true以尝试阻断事件的传递   
-- 若此项为false,但是关键词所触发的函数返回了true,那么被对应事件调用的"[method trigger_keyword]"函数也将返回true以尝试阻断事件的传递   
+- 若此项为true,则在成功匹配关键词后，被对应事件调用的"[trigger_keyword]"函数将返回true以尝试阻断事件的传递   
+- 若此项为false,但是关键词所触发的函数返回了true,那么被对应事件调用的"[trigger_keyword]"函数也将返回true以尝试阻断事件的传递   
 - 阻断的具体行为将由相关事件注册时设置的阻断模式决定  
   
 ---  
@@ -591,8 +591,8 @@ enum **BlockMode**
 例如，原项目中位于"`res://plugins`"的场景在加载时必须位于"`RainyBot根目录/plugins`"路径下   
   
 需要的参数从左到右分别为:   
-- 场景文件的路径，可以是相对路径(以`res://`开头)，也可以是绝对路径(如D:/RaintBot/plugins，可通过[method get_plugin_path]函数来获取插件目录的绝对路径)   
-- 是否将加载的场景准备为用于图像捕捉 (可选，默认为false，必须启用才可使用[method get_scene_image]函数来获取其中内容的图像，否则会直接将其添加为插件的子项以便用于其他用途(如自定义GUI))   
+- 场景文件的路径，可以是相对路径(以`res://`开头)，也可以是绝对路径(如D:/RaintBot/plugins，可通过[get_plugin_path]函数来获取插件目录的绝对路径)   
+- 是否将加载的场景准备为用于图像捕捉 (可选，默认为false，必须启用才可使用[get_scene_image]函数来获取其中内容的图像，否则会直接将其添加为插件的子项以便用于其他用途(如自定义GUI))   
   
 小贴士：出于性能原因，对已加载的场景或其附加脚本所做的的任何修改均无法通过重载插件来实时更新，因此在修改场景或其脚本后，请通过主菜单中的重新启动选项来快速重启RainyBot以便应用您所做的任何更改  
   
@@ -616,7 +616,7 @@ enum **BlockMode**
   
 通过await调用后，将等待一个满足指定发送者id，指定群组id的指定类型的消息事件   
   
-消息事件不会自动进行上下文匹配，而是需要手动调用或者在注册消息事件时将需要匹配上下文的消息事件手动绑定到"[method respond_context]"函数即可   
+消息事件不会自动进行上下文匹配，而是需要手动调用或者在注册消息事件时将需要匹配上下文的消息事件手动绑定到"[respond_context]"函数即可   
   
 接收到满足条件的事件后，该函数将返回该事件的引用，否则在达到指定的超时秒数后，将返回null   
   
@@ -633,7 +633,7 @@ enum **BlockMode**
   
 通过await调用后，将等待另外一个与指定消息事件相匹配的消息事件   
   
-消息事件不会自动进行上下文匹配，而是需要手动调用或者在注册消息事件时将需要进行匹配的消息事件手动绑定到"[method respond_context]"函数即可   
+消息事件不会自动进行上下文匹配，而是需要手动调用或者在注册消息事件时将需要进行匹配的消息事件手动绑定到"[respond_context]"函数即可   
   
 接收到满足条件的事件后，该函数将返回该事件的引用，否则在达到指定的超时秒数后，将返回null   
   
@@ -650,7 +650,7 @@ enum **BlockMode**
   
 通过await调用后，将等待指定id的响应，并在收到响应后返回响应的内容   
   
-要进行响应，需要在某处手动调用"[method respond_context]"函数并传入相同的ID   
+要进行响应，需要在某处手动调用"[respond_context]"函数并传入相同的ID   
   
 若未进行响应且在达到指定的超时秒数后，将返回null   
   

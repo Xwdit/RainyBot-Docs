@@ -7,7 +7,8 @@
 
 [font_size=25][color=#70bafa][b]描述[/b][/color][/font_size]
 
-这是RainyBot的App消息类，通常代表一个对应实例，此类消息常见于某些特殊App调用聊天软件进行分享的场景 [br]此类实例中储存了App消息的代码原文本，你也可以基于指定APP消息代码文本来构建一个此类实例
+这是RainyBot的App消息类，通常代表一个对应实例，此类消息常见于某些特殊App调用聊天软件进行分享的场景 
+此类实例中储存了App消息的代码原文本，你也可以基于指定APP消息代码文本来构建一个此类实例
 
 
 [font_size=25][color=#70bafa][b]方法[/b][/color][/font_size]

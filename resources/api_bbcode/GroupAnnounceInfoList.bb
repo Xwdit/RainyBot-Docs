@@ -7,7 +7,8 @@
 
 [font_size=25][color=#70bafa][b]描述[/b][/color][/font_size]
 
-这是RainyBot的群公告信息列表类，储存了从某个群组中获取的群公告的列表 [br]你可以像数组/字典一样直接使用for x in x的语法来循环列表中的所有公告信息(将返回[GroupAnnounceInfo]类实例)
+这是RainyBot的群公告信息列表类，储存了从某个群组中获取的群公告的列表 
+你可以像数组/字典一样直接使用for x in x的语法来循环列表中的所有公告信息(将返回[GroupAnnounceInfo]类实例)
 
 
 [font_size=25][color=#70bafa][b]方法[/b][/color][/font_size]

@@ -7,7 +7,8 @@
 
 [font_size=25][color=#70bafa][b]描述[/b][/color][/font_size]
 
-这是RainyBot的群成员列表类，通常代表一个对应实例，储存了某个群组中所有群成员的列表 [br]你可以像数组/字典一样直接使用for x in x的语法来循环列表中的所有群成员(将返回GroupMember类实例)
+这是RainyBot的群成员列表类，通常代表一个对应实例，储存了某个群组中所有群成员的列表 
+你可以像数组/字典一样直接使用for x in x的语法来循环列表中的所有群成员(将返回GroupMember类实例)
 
 
 [font_size=25][color=#70bafa][b]方法[/b][/color][/font_size]

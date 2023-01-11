@@ -71,7 +71,7 @@ RainyBot的Http请求结果类，可从其中快速获取某次Http请求的结�
   
 尝试自动判断此请求的结果的图像格式，解析并返回其图像实例，支持的图像格式为: `png,jpg,bmp,tga,webp`   
   
-若图像的格式已知，建议使用`get_as_[格式]_image()`系列函数以获得更好的性能 (如[method get_as_png_image]函数)  
+若图像的格式已知，建议使用`get_as_[格式]_image()`系列函数以获得更好的性能 (如[get_as_png_image]函数)  
   
 ---  
   
