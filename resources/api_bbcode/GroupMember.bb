@@ -1,14 +1,16 @@
-[font_size=30][color=#70bafa]类:[/color] GroupMember[/font_size]
+[font_size=25][b][color=#70bafa]类:[/color] GroupMember[/b][/font_size]
+[color=#70bafa]继承:[/color] GroupAPI
 
-[color=#70bafa]继承自:[/color] GroupAPI
- 
+
 [b]RainyBot的群成员类，通常代表一个对应实例，实现了用于与群组成员进行交互的各类功能[/b]
 
-[font_size=30][color=#70bafa]描述:[/color][/font_size]
+
+[font_size=25][color=#70bafa][b]描述[/b][/color][/font_size]
 
 这是RainyBot的群成员类，通常代表一个对应实例，实现了用于与群组成员进行交互的各类功能 [br]绝大部分与群组中某位成员相关的操作都可以通过此类来进行
 
-[font_size=30][color=#70bafa]枚举:[/color][/font_size]
+
+[font_size=25][color=#70bafa][b]枚举[/b][/color][/font_size]
 
 	[color=#70bafa]enum[/color] ￿Permission
 
@@ -26,7 +28,8 @@
 		[color=gray]代表权限为群聊中的群主[/color]
 
 
-[font_size=30][color=#70bafa]方法:[/color][/font_size]
+
+[font_size=25][color=#70bafa][b]方法[/b][/color][/font_size]
 
 	● [color=gray]static[/color] [color=#70bafa]GroupMember[/color] ￿init [color=gray]([/color] [color=#70bafa]int[/color] group_id, [color=#70bafa]int[/color] member_id [color=gray])[/color]
 
@@ -40,7 +43,7 @@
 	通过机器人协议后端的元数据字典构造一个GroupMember类的实例，仅当你知道自己在做什么时才使用
 
 
-	● [color=#70bafa]Dictionary[/color] ￿get_metadata [color=gray]([/color]  [color=gray])[/color]
+	● [color=#70bafa]Dictionary[/color] ￿get_metadata [color=gray]([/color] [color=gray])[/color]
 
 	获取实例中的元数据字典，仅当你知道自己在做什么时才使用
 
@@ -50,29 +53,29 @@
 	使用指定字典覆盖实例中的元数据字典，仅当你知道自己在做什么时才使用
 
 
-	● [color=#70bafa]int[/color] ￿get_id [color=gray]([/color]  [color=gray])[/color]
+	● [color=#70bafa]int[/color] ￿get_id [color=gray]([/color] [color=gray])[/color]
 
 	获取群成员实例的ID
 
 
-	● [color=#70bafa]String[/color] ￿get_name [color=gray]([/color]  [color=gray])[/color]
+	● [color=#70bafa]String[/color] ￿get_name [color=gray]([/color] [color=gray])[/color]
 
 	获取群成员实例在群聊中的名称(群昵称)，若为手动构造的实例，将始终返回空字符串
 
 
-	● [color=#70bafa]String[/color] ￿get_special_title [color=gray]([/color]  [color=gray])[/color]
+	● [color=#70bafa]String[/color] ￿get_special_title [color=gray]([/color] [color=gray])[/color]
 
 	获取群成员实例在群聊中的特别称号(群荣誉)，若为手动构造的实例，将始终返回空字符串
 
 
-	● [color=#70bafa]int[/color] ￿get_permission [color=gray]([/color]  [color=gray])[/color]
+	● [color=#70bafa]int[/color] ￿get_permission [color=gray]([/color] [color=gray])[/color]
 
 	获取群成员实例在群聊中的权限，将返回一个对应Permission枚举的整数值 
 	
 	若为手动构造的实例，将始终返回0
 
 
-	● [color=#70bafa]String[/color] ￿get_avatar_url [color=gray]([/color]  [color=gray])[/color]
+	● [color=#70bafa]String[/color] ￿get_avatar_url [color=gray]([/color] [color=gray])[/color]
 
 	获取群成员实例对应账号的头像的图像链接，通常为jpg格式
 
@@ -82,22 +85,22 @@
 	判断群成员实例的类型是否为指定的类型
 
 
-	● [color=#70bafa]int[/color] ￿get_join_timestamp [color=gray]([/color]  [color=gray])[/color]
+	● [color=#70bafa]int[/color] ￿get_join_timestamp [color=gray]([/color] [color=gray])[/color]
 
 	获取群成员实例加入其所在群聊的时间戳，若为手动构造的实例，将始终返回0
 
 
-	● [color=#70bafa]int[/color] ￿get_last_speak_timestamp [color=gray]([/color]  [color=gray])[/color]
+	● [color=#70bafa]int[/color] ￿get_last_speak_timestamp [color=gray]([/color] [color=gray])[/color]
 
 	获取群成员实例在对应群聊中上次发言的时间戳，若为手动构造的实例，将始终返回0
 
 
-	● [color=#70bafa]int[/color] ￿get_mute_time_remaining [color=gray]([/color]  [color=gray])[/color]
+	● [color=#70bafa]int[/color] ￿get_mute_time_remaining [color=gray]([/color] [color=gray])[/color]
 
 	获取群成员实例在对应群聊中剩余的禁言时间(秒)，若为手动构造的实例，将始终返回0
 
 
-	● [color=#70bafa]Group[/color] ￿get_group [color=gray]([/color]  [color=gray])[/color]
+	● [color=#70bafa]Group[/color] ￿get_group [color=gray]([/color] [color=gray])[/color]
 
 	获取群成员实例所在群聊的Group实例， 
 	

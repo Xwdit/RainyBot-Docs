@@ -1,34 +1,34 @@
-[font_size=30][color=#70bafa]类:[/color] RequestEvent[/font_size]
+[font_size=25][b][color=#70bafa]类:[/color] RequestEvent[/b][/font_size]
+[color=#70bafa]继承:[/color] Event
+[color=#70bafa]派生:[/color] GroupInviteRequestEvent, MemberJoinRequestEvent, NewFriendRequestEvent
 
-[color=#70bafa]继承自:[/color] Event
- 
-[color=#70bafa]子类:[/color] GroupInviteRequestEvent, MemberJoinRequestEvent, NewFriendRequestEvent
 
 [b]RainyBot的请求事件类，与各类请求直接相关的各类事件通常直接或间接继承此类[/b]
 
-[font_size=30][color=#70bafa]方法:[/color][/font_size]
 
-	● [color=#70bafa]int[/color] ￿get_event_id [color=gray]([/color]  [color=gray])[/color]
+[font_size=25][color=#70bafa][b]方法[/b][/color][/font_size]
+
+	● [color=#70bafa]int[/color] ￿get_event_id [color=gray]([/color] [color=gray])[/color]
 
 	获取请求事件的对应ID
 
 
-	● [color=#70bafa]int[/color] ￿get_sender_id [color=gray]([/color]  [color=gray])[/color]
+	● [color=#70bafa]int[/color] ￿get_sender_id [color=gray]([/color] [color=gray])[/color]
 
 	获取请求事件对应的发送者的ID
 
 
-	● [color=#70bafa]String[/color] ￿get_sender_name [color=gray]([/color]  [color=gray])[/color]
+	● [color=#70bafa]String[/color] ￿get_sender_name [color=gray]([/color] [color=gray])[/color]
 
 	获取请求事件对应的发送者的名称
 
 
-	● [color=#70bafa]int[/color] ￿get_group_id [color=gray]([/color]  [color=gray])[/color]
+	● [color=#70bafa]int[/color] ￿get_group_id [color=gray]([/color] [color=gray])[/color]
 
 	获取请求事件相关的群组的ID(对于非群组请求，并且请求发送者不来自某群组时将返回0)
 
 
-	● [color=#70bafa]String[/color] ￿get_request_message [color=gray]([/color]  [color=gray])[/color]
+	● [color=#70bafa]String[/color] ￿get_request_message [color=gray]([/color] [color=gray])[/color]
 
 	获取请求事件相关的申请消息的文本
 

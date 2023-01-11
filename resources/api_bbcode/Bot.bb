@@ -1,37 +1,38 @@
-[font_size=30][color=#70bafa]类:[/color] Bot[/font_size]
+[font_size=25][b][color=#70bafa]类:[/color] Bot[/b][/font_size]
+[color=#70bafa]继承:[/color] BotAPI
 
-[color=#70bafa]继承自:[/color] BotAPI
- 
+
 [b]RainyBot的Bot类，负责处理与当前使用的机器人后端账号相关的各类功能[/b]
 
-[font_size=30][color=#70bafa]方法:[/color][/font_size]
 
-	● [color=gray]static[/color] [color=#70bafa]int[/color] ￿get_id [color=gray]([/color]  [color=gray])[/color]
+[font_size=25][color=#70bafa][b]方法[/b][/color][/font_size]
+
+	● [color=gray]static[/color] [color=#70bafa]int[/color] ￿get_id [color=gray]([/color] [color=gray])[/color]
 
 	获取当前正在使用的机器人后端账号
 
 
-	● [color=gray]static[/color] [color=#70bafa]bool[/color] ￿is_bot_connected [color=gray]([/color]  [color=gray])[/color]
+	● [color=gray]static[/color] [color=#70bafa]bool[/color] ￿is_bot_connected [color=gray]([/color] [color=gray])[/color]
 
 	判断与机器人后端是否已建立连接
 
 
-	● [color=gray]static[/color] [color=#70bafa]int[/color] ￿get_sent_message_count [color=gray]([/color]  [color=gray])[/color]
+	● [color=gray]static[/color] [color=#70bafa]int[/color] ￿get_sent_message_count [color=gray]([/color] [color=gray])[/color]
 
 	获取已通过机器人后端发送的消息的数量
 
 
-	● [color=gray]static[/color] [color=#70bafa]int[/color] ￿get_group_message_count [color=gray]([/color]  [color=gray])[/color]
+	● [color=gray]static[/color] [color=#70bafa]int[/color] ￿get_group_message_count [color=gray]([/color] [color=gray])[/color]
 
 	获取已通过机器人后端接收到的群聊消息的数量
 
 
-	● [color=gray]static[/color] [color=#70bafa]int[/color] ￿get_private_message_count [color=gray]([/color]  [color=gray])[/color]
+	● [color=gray]static[/color] [color=#70bafa]int[/color] ￿get_private_message_count [color=gray]([/color] [color=gray])[/color]
 
 	获取已通过机器人后端接收到的私聊消息的数量
 
 
-	● [color=gray]static[/color] [color=#70bafa]String[/color] ￿get_avatar_url [color=gray]([/color]  [color=gray])[/color]
+	● [color=gray]static[/color] [color=#70bafa]String[/color] ￿get_avatar_url [color=gray]([/color] [color=gray])[/color]
 
 	获取机器人后端账号的头像的图像链接，通常为jpg格式
 

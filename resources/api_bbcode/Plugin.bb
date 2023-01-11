@@ -1,14 +1,16 @@
-[font_size=30][color=#70bafa]类:[/color] Plugin[/font_size]
+[font_size=25][b][color=#70bafa]类:[/color] Plugin[/b][/font_size]
+[color=#70bafa]继承:[/color] Node
 
-[color=#70bafa]继承自:[/color] Node
- 
+
 [b]RainyBot的插件类，代表一个实例，用于在插件中实现各类相关功能[/b]
 
-[font_size=30][color=#70bafa]描述:[/color][/font_size]
+
+[font_size=25][color=#70bafa][b]描述[/b][/color][/font_size]
 
 这是RainyBot的插件类，代表一个插件实例，用于在插件中实现各类相关功能。所有插件应当继承此类，以便在RainyBot中正确加载与运行。
 
-[font_size=30][color=#70bafa]枚举:[/color][/font_size]
+
+[font_size=25][color=#70bafa][b]枚举[/b][/color][/font_size]
 
 	[color=#70bafa]enum[/color] ￿MatchMode
 
@@ -53,9 +55,10 @@
 		[color=gray]当前函数处理完毕后，将完全阻断事件传递，事件后续函数及其他插件均不会收到事件[/color]
 
 
-[font_size=30][color=#70bafa]方法:[/color][/font_size]
 
-	● [color=gray]void[/color] ￿_on_init [color=gray]([/color]  [color=gray])[/color]
+[font_size=25][color=#70bafa][b]方法[/b][/color][/font_size]
+
+	● [color=gray]void[/color] ￿_on_init [color=gray]([/color] [color=gray])[/color]
 
 	在插件中覆盖此虚函数，以便定义将在此插件的文件每次被读取时执行的操作 
 	
@@ -66,21 +69,21 @@
 	可以在此处初始化和使用一些基本变量，但不建议执行其它代码，可能会导致出现未知问题
 
 
-	● [color=gray]void[/color] ￿_on_connect [color=gray]([/color]  [color=gray])[/color]
+	● [color=gray]void[/color] ￿_on_connect [color=gray]([/color] [color=gray])[/color]
 
 	在插件中覆盖此虚函数，以便定义RainyBot在与协议后端建立连接后插件将执行的操作 
 	
 	可以在此处进行一些与连接状态相关的操作，例如恢复连接后发送通知等
 
 
-	● [color=gray]void[/color] ￿_on_load [color=gray]([/color]  [color=gray])[/color]
+	● [color=gray]void[/color] ￿_on_load [color=gray]([/color] [color=gray])[/color]
 
 	在插件中覆盖此虚函数，以便定义插件在被加载完毕后执行的操作 
 	
 	可以在此处进行各类事件/关键词/命令的注册，以及配置/数据文件的初始化等
 
 
-	● [color=gray]void[/color] ￿_on_ready [color=gray]([/color]  [color=gray])[/color]
+	● [color=gray]void[/color] ￿_on_ready [color=gray]([/color] [color=gray])[/color]
 
 	在插件中覆盖此虚函数，以便定义插件在所有其他插件加载完毕后执行的操作 
 	
@@ -89,14 +92,14 @@
 	注意：如果此插件硬性依赖某插件，推荐在插件信息中注册所依赖的插件，以确保其在此插件之前被正确加载
 
 
-	● [color=gray]void[/color] ￿_on_process [color=gray]([/color]  [color=gray])[/color]
+	● [color=gray]void[/color] ￿_on_process [color=gray]([/color] [color=gray])[/color]
 
 	在插件中覆盖此虚函数，以便定义插件运行中的每一秒将执行的操作 
 	
 	可在此处进行一些计时，或时间判定相关的操作，例如整点报时等
 
 
-	● [color=gray]void[/color] ￿_on_error [color=gray]([/color]  [color=gray])[/color]
+	● [color=gray]void[/color] ￿_on_error [color=gray]([/color] [color=gray])[/color]
 
 	在插件中覆盖此虚函数，以便定义在RainyBot检测到运行时错误后将执行的操作 
 	
@@ -105,14 +108,14 @@
 	您可以使用[method get_last_errors]函数来获取错误的详细内容
 
 
-	● [color=gray]void[/color] ￿_on_disconnect [color=gray]([/color]  [color=gray])[/color]
+	● [color=gray]void[/color] ￿_on_disconnect [color=gray]([/color] [color=gray])[/color]
 
 	在插件中覆盖此虚函数，以便定义RainyBot在与协议后端断开建立连接后插件将执行的操作 
 	
 	可以在此处进行一些与连接状态相关的操作，例如断开连接后暂停某些任务的运行等
 
 
-	● [color=gray]void[/color] ￿_on_unload [color=gray]([/color]  [color=gray])[/color]
+	● [color=gray]void[/color] ￿_on_unload [color=gray]([/color] [color=gray])[/color]
 
 	在插件中覆盖此虚函数，以便定义插件在即将被卸载时执行的操作 
 	
@@ -132,34 +135,34 @@
 	设置了插件依赖后，可以保证所依赖的插件一定在此插件之前被加载
 
 
-	● [color=#70bafa]Dictionary[/color] ￿get_plugin_info [color=gray]([/color]  [color=gray])[/color]
+	● [color=#70bafa]Dictionary[/color] ￿get_plugin_info [color=gray]([/color] [color=gray])[/color]
 
 	用于获取插件的相关信息，将返回一个包含插件信息的字典 
 	
 	使用[code]id, name, author, version, description, dependency[/code]作为key即可从字典中获取对应信息
 
 
-	● [color=#70bafa]String[/color] ￿get_plugin_filename [color=gray]([/color]  [color=gray])[/color]
+	● [color=#70bafa]String[/color] ￿get_plugin_filename [color=gray]([/color] [color=gray])[/color]
 
 	用于获取插件对应的文件名，将返回插件文件的名称 (如[code]ChatBot.gd[/code])
 
 
-	● [color=#70bafa]String[/color] ￿get_plugin_filepath [color=gray]([/color]  [color=gray])[/color]
+	● [color=#70bafa]String[/color] ￿get_plugin_filepath [color=gray]([/color] [color=gray])[/color]
 
 	用于获取插件对应的文件路径，将返回插件文件的绝对路径 (如 [code]D://RainyBot/plugins/ChatBot.gd[/code])
 
 
-	● [color=gray]static[/color] [color=#70bafa]String[/color] ￿get_plugin_path [color=gray]([/color]  [color=gray])[/color]
+	● [color=gray]static[/color] [color=#70bafa]String[/color] ￿get_plugin_path [color=gray]([/color] [color=gray])[/color]
 
 	用于获取RainyBot的插件文件夹的路径，将返回插件文件夹的绝对路径 (如 [code]D://RainyBot/plugins/[/code])
 
 
-	● [color=#70bafa]int[/color] ￿get_plugin_runtime [color=gray]([/color]  [color=gray])[/color]
+	● [color=#70bafa]int[/color] ￿get_plugin_runtime [color=gray]([/color] [color=gray])[/color]
 
 	用于获取插件的已运行时间，默认情况下为插件成功加载以来经过的秒数
 
 
-	● [color=gray]static[/color] [color=#70bafa]int[/color] ￿get_global_runtime [color=gray]([/color]  [color=gray])[/color]
+	● [color=gray]static[/color] [color=#70bafa]int[/color] ￿get_global_runtime [color=gray]([/color] [color=gray])[/color]
 
 	用于获取RainyBot全局的已运行时间，默认情况下为RainyBot成功启动以来经过的秒数
 
@@ -171,52 +174,52 @@
 	需要传入其他插件的ID作为参数来获取其实例，若未找到插件则返回null
 
 
-	● [color=gray]static[/color] [color=#70bafa]String[/color] ￿get_data_path [color=gray]([/color]  [color=gray])[/color]
+	● [color=gray]static[/color] [color=#70bafa]String[/color] ￿get_data_path [color=gray]([/color] [color=gray])[/color]
 
 	用于获取RainyBot的数据文件夹的路径，将返回数据文件夹的绝对路径 (如 [code]D://RainyBot/data/[/code])
 
 
-	● [color=#70bafa]String[/color] ￿get_data_filepath [color=gray]([/color]  [color=gray])[/color]
+	● [color=#70bafa]String[/color] ￿get_data_filepath [color=gray]([/color] [color=gray])[/color]
 
 	用于获取该插件对应的数据库文件的路径，即插件对应的.rdb格式文件的绝对路径
 
 
-	● [color=gray]static[/color] [color=#70bafa]String[/color] ￿get_config_path [color=gray]([/color]  [color=gray])[/color]
+	● [color=gray]static[/color] [color=#70bafa]String[/color] ￿get_config_path [color=gray]([/color] [color=gray])[/color]
 
 	用于获取RainyBot的配置文件夹的路径，将返回配置文件夹的绝对路径 (如 [code]D://RainyBot/config/[/code])
 
 
-	● [color=#70bafa]String[/color] ￿get_config_filepath [color=gray]([/color]  [color=gray])[/color]
+	● [color=#70bafa]String[/color] ￿get_config_filepath [color=gray]([/color] [color=gray])[/color]
 
 	用于获取该插件对应的配置文件的路径，即插件对应的.json格式文件的绝对路径
 
 
-	● [color=gray]static[/color] [color=#70bafa]String[/color] ￿get_cache_path [color=gray]([/color]  [color=gray])[/color]
+	● [color=gray]static[/color] [color=#70bafa]String[/color] ￿get_cache_path [color=gray]([/color] [color=gray])[/color]
 
 	用于获取RainyBot的缓存文件夹的路径，将返回缓存文件夹的绝对路径 (如 D://RainyBot/cache)
 
 
-	● [color=#70bafa]String[/color] ￿get_cache_filepath [color=gray]([/color]  [color=gray])[/color]
+	● [color=#70bafa]String[/color] ￿get_cache_filepath [color=gray]([/color] [color=gray])[/color]
 
 	用于获取该插件对应的缓存数据库文件的路径，即插件对应的.rca格式文件的绝对路径
 
 
-	● [color=#70bafa]bool[/color] ￿is_config_loaded [color=gray]([/color]  [color=gray])[/color]
+	● [color=#70bafa]bool[/color] ￿is_config_loaded [color=gray]([/color] [color=gray])[/color]
 
 	用于检查插件对应的配置文件内容是否已被加载
 
 
-	● [color=#70bafa]bool[/color] ￿is_data_loaded [color=gray]([/color]  [color=gray])[/color]
+	● [color=#70bafa]bool[/color] ￿is_data_loaded [color=gray]([/color] [color=gray])[/color]
 
 	用于检查插件对应的数据库文件内容是否已被加载
 
 
-	● [color=#70bafa]bool[/color] ￿is_cache_loaded [color=gray]([/color]  [color=gray])[/color]
+	● [color=#70bafa]bool[/color] ￿is_cache_loaded [color=gray]([/color] [color=gray])[/color]
 
 	用于检查插件对应的缓存数据库文件内容是否已被加载
 
 
-	● [color=gray]static[/color] [color=#70bafa]PackedStringArray[/color] ￿get_last_errors [color=gray]([/color]  [color=gray])[/color]
+	● [color=gray]static[/color] [color=#70bafa]PackedStringArray[/color] ￿get_last_errors [color=gray]([/color] [color=gray])[/color]
 
 	用于获取最近一次检测到的所有RainyBot运行时错误，将返回一个包含了这些错误的字符串数组 
 	
@@ -350,7 +353,7 @@
 	[可选,默认为空字典]每个配置项的介绍(字典的key为配置项的名称,对应的值为此配置项的相关介绍,两者均为字符串)
 
 
-	● [color=#70bafa]int[/color] ￿save_plugin_config [color=gray]([/color]  [color=gray])[/color]
+	● [color=#70bafa]int[/color] ￿save_plugin_config [color=gray]([/color] [color=gray])[/color]
 
 	用于将内存中的配置保存到配置文件中，需要先初始化配置文件才能使用此函数
 
@@ -386,7 +389,7 @@
 	最后一项可选参数用于指定是否在还原的同时将更改立即保存到配置文件中
 
 
-	● [color=#70bafa]Dictionary[/color] ￿get_plugin_config_metadata [color=gray]([/color]  [color=gray])[/color]
+	● [color=#70bafa]Dictionary[/color] ￿get_plugin_config_metadata [color=gray]([/color] [color=gray])[/color]
 
 	用于直接获取已加载的配置的字典，便于以字典的形式对其进行操作，需要先初始化配置文件才能使用此函数
 
@@ -398,7 +401,7 @@
 	最后一项参数用于指定是否在设定的同时将更改立刻保存到配置文件中
 
 
-	● [color=#70bafa]Dictionary[/color] ￿get_plugin_data_metadata [color=gray]([/color]  [color=gray])[/color]
+	● [color=#70bafa]Dictionary[/color] ￿get_plugin_data_metadata [color=gray]([/color] [color=gray])[/color]
 
 	用于直接获取已加载的数据库的字典，便于以字典的形式对其进行操作，需要先初始化数据库文件才能使用此函数
 
@@ -410,7 +413,7 @@
 	最后一项可选参数用于指定是否在设定的同时立即将更改保存到数据库文件中
 
 
-	● [color=#70bafa]Dictionary[/color] ￿get_plugin_cache_metadata [color=gray]([/color]  [color=gray])[/color]
+	● [color=#70bafa]Dictionary[/color] ￿get_plugin_cache_metadata [color=gray]([/color] [color=gray])[/color]
 
 	用于直接获取已加载的缓存数据库的字典，便于以字典的形式对其进行操作，需要先初始化缓存数据库文件才能使用此函数
 
@@ -422,7 +425,7 @@
 	最后一项可选参数用于指定是否在设定的同时立即将更改保存到缓存数据库文件中
 
 
-	● [color=#70bafa]int[/color] ￿init_plugin_data [color=gray]([/color]  [color=gray])[/color]
+	● [color=#70bafa]int[/color] ￿init_plugin_data [color=gray]([/color] [color=gray])[/color]
 
 	用于初始化插件的数据库文件，并将其加载到内存中，以便在后续对其内容进行操作 
 	
@@ -431,7 +434,7 @@
 	执行此函数时，将会检测是否已存在此插件对应的数据库文件，否则将会新建一个空白的数据库文件(.rdb格式)
 
 
-	● [color=#70bafa]int[/color] ￿save_plugin_data [color=gray]([/color]  [color=gray])[/color]
+	● [color=#70bafa]int[/color] ￿save_plugin_data [color=gray]([/color] [color=gray])[/color]
 
 	用于将内存中的数据保存到数据库文件中，需要先初始化数据库文件才能使用此函数
 
@@ -467,7 +470,7 @@
 	最后一项可选参数用于指定是否在清空的同时将更改立即保存到数据库文件中
 
 
-	● [color=#70bafa]int[/color] ￿init_plugin_cache [color=gray]([/color]  [color=gray])[/color]
+	● [color=#70bafa]int[/color] ￿init_plugin_cache [color=gray]([/color] [color=gray])[/color]
 
 	用于初始化插件的缓存数据库文件，并将其加载到内存中，以便在后续对其内容进行操作 
 	
@@ -476,7 +479,7 @@
 	执行此函数时，将会检测是否已存在此插件对应的缓存数据库文件，否则将会新建一个空白的缓存数据库文件(.rca格式)
 
 
-	● [color=#70bafa]int[/color] ￿save_plugin_cache [color=gray]([/color]  [color=gray])[/color]
+	● [color=#70bafa]int[/color] ￿save_plugin_cache [color=gray]([/color] [color=gray])[/color]
 
 	用于将内存中的数据保存到缓存数据库文件中，需要先初始化缓存数据库文件才能使用此函数
 
@@ -512,7 +515,7 @@
 	最后一项可选参数用于指定是否在清空的同时将更改立即保存到缓存数据库文件中
 
 
-	● [color=gray]void[/color] ￿unload_plugin [color=gray]([/color]  [color=gray])[/color]
+	● [color=gray]void[/color] ￿unload_plugin [color=gray]([/color] [color=gray])[/color]
 
 	调用此函数后，插件将会尝试卸载自身 
 	

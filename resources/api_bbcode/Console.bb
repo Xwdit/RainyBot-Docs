@@ -1,10 +1,11 @@
-[font_size=30][color=#70bafa]类:[/color] Console[/font_size]
+[font_size=25][b][color=#70bafa]类:[/color] Console[/b][/font_size]
+[color=#70bafa]继承:[/color] CoreAPI
 
-[color=#70bafa]继承自:[/color] CoreAPI
- 
+
 [b]RainyBot控制台类，包含了各类与控制台输出直接相关的功能[/b]
 
-[font_size=30][color=#70bafa]方法:[/color][/font_size]
+
+[font_size=25][color=#70bafa][b]方法[/b][/color][/font_size]
 
 	● [color=gray]static[/color] [color=gray]void[/color] ￿print_text [color=gray]([/color] [color=#70bafa]Variant[/color] text [color=gray])[/color]
 
@@ -26,7 +27,7 @@
 	在控制台中打印一个成功文本，可以传入任意类型值，将自动尝试转换为字符串
 
 
-	● [color=gray]static[/color] [color=gray]void[/color] ￿save_log [color=gray]([/color]  [color=gray])[/color]
+	● [color=gray]static[/color] [color=gray]void[/color] ￿save_log [color=gray]([/color] [color=gray])[/color]
 
 	将控制台的内容立刻保存为以当前日期与时间命名的日志文件
 

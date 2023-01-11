@@ -1,16 +1,18 @@
-[font_size=30][color=#70bafa]类:[/color] OtherClient[/font_size]
+[font_size=25][b][color=#70bafa]类:[/color] OtherClient[/b][/font_size]
+[color=#70bafa]继承:[/color] RoleAPI
 
-[color=#70bafa]继承自:[/color] RoleAPI
- 
+
 [b]RainyBot的其它客户端类，通常代表一个对应实例，实现了用于与其他客户端进行交互的各类功能[/b]
 
-[font_size=30][color=#70bafa]描述:[/color][/font_size]
+
+[font_size=25][color=#70bafa][b]描述[/b][/color][/font_size]
 
 这是RainyBot的其它客户端类，通常代表一个对应实例，实现了用于与其他客户端进行交互的各类功能 [br]其他客户端的概念，指如当机器人后端使用手机协议登陆时，平板/PC/智能手表端此时即为其他客户端
 
-[font_size=30][color=#70bafa]方法:[/color][/font_size]
 
-	● [color=gray]static[/color] [color=#70bafa]OtherClient[/color] ￿init [color=gray]([/color]  [color=gray])[/color]
+[font_size=25][color=#70bafa][b]方法[/b][/color][/font_size]
+
+	● [color=gray]static[/color] [color=#70bafa]OtherClient[/color] ￿init [color=gray]([/color] [color=gray])[/color]
 
 	手动构造一个OtherClient类的实例，用于主动进行与其他客户端的交互时使用
 
@@ -20,7 +22,7 @@
 	通过机器人协议后端的元数据字典构造一个OtherClient类的实例，仅当你知道自己在做什么时才使用
 
 
-	● [color=#70bafa]Dictionary[/color] ￿get_metadata [color=gray]([/color]  [color=gray])[/color]
+	● [color=#70bafa]Dictionary[/color] ￿get_metadata [color=gray]([/color] [color=gray])[/color]
 
 	获取实例中的元数据字典，仅当你知道自己在做什么时才使用
 
@@ -30,12 +32,12 @@
 	使用指定字典覆盖实例中的元数据字典，仅当你知道自己在做什么时才使用
 
 
-	● [color=#70bafa]int[/color] ￿get_id [color=gray]([/color]  [color=gray])[/color]
+	● [color=#70bafa]int[/color] ￿get_id [color=gray]([/color] [color=gray])[/color]
 
 	获取实例中其他客户端的客户端id
 
 
-	● [color=#70bafa]String[/color] ￿get_platform [color=gray]([/color]  [color=gray])[/color]
+	● [color=#70bafa]String[/color] ￿get_platform [color=gray]([/color] [color=gray])[/color]
 
 	获取实例中其他客户端的平台名(如"Windows")
 

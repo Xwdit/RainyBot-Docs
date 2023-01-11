@@ -1,14 +1,14 @@
-[font_size=30][color=#70bafa]类:[/color] MessageEvent[/font_size]
+[font_size=25][b][color=#70bafa]类:[/color] MessageEvent[/b][/font_size]
+[color=#70bafa]继承:[/color] Event
+[color=#70bafa]派生:[/color] FriendMessageEvent, GroupMessageEvent, OtherClientMessageEvent, StrangerMessageEvent, TempMessageEvent
 
-[color=#70bafa]继承自:[/color] Event
- 
-[color=#70bafa]子类:[/color] FriendMessageEvent, GroupMessageEvent, OtherClientMessageEvent, StrangerMessageEvent, TempMessageEvent
 
 [b]RainyBot的消息事件类，与消息直接相关的各类事件通常直接或间接继承此类[/b]
 
-[font_size=30][color=#70bafa]方法:[/color][/font_size]
 
-	● [color=#70bafa]MessageChain[/color] ￿get_message_chain [color=gray]([/color]  [color=gray])[/color]
+[font_size=25][color=#70bafa][b]方法[/b][/color][/font_size]
+
+	● [color=#70bafa]MessageChain[/color] ￿get_message_chain [color=gray]([/color] [color=gray])[/color]
 
 	获取消息事件所对应的消息内容的消息链实例
 
@@ -39,17 +39,17 @@
 	是否为排除模式(若为true，则将获取除上个参数的列表以外的所有消息类实例)
 
 
-	● [color=#70bafa]int[/color] ￿get_message_id [color=gray]([/color]  [color=gray])[/color]
+	● [color=#70bafa]int[/color] ￿get_message_id [color=gray]([/color] [color=gray])[/color]
 
 	获取消息事件所对应的消息的ID
 
 
-	● [color=#70bafa]int[/color] ￿get_message_timestamp [color=gray]([/color]  [color=gray])[/color]
+	● [color=#70bafa]int[/color] ￿get_message_timestamp [color=gray]([/color] [color=gray])[/color]
 
 	获取消息事件所对应的消息的发送时间戳
 
 
-	● [color=#70bafa]int[/color] ￿get_sender_id [color=gray]([/color]  [color=gray])[/color]
+	● [color=#70bafa]int[/color] ￿get_sender_id [color=gray]([/color] [color=gray])[/color]
 
 	获取消息事件所对应的消息的发送者ID
 

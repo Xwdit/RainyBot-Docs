@@ -1,10 +1,11 @@
-[font_size=30][color=#70bafa]类:[/color] OtherClientOfflineEvent[/font_size]
+[font_size=25][b][color=#70bafa]类:[/color] OtherClientOfflineEvent[/b][/font_size]
+[color=#70bafa]继承:[/color] OtherClientEvent
 
-[color=#70bafa]继承自:[/color] OtherClientEvent
- 
+
 [b]RainyBot的其它客户端离线事件类，其实例记录了与一次其它客户端离线事件相关的数据[/b]
 
-[font_size=30][color=#70bafa]方法:[/color][/font_size]
+
+[font_size=25][color=#70bafa][b]方法[/b][/color][/font_size]
 
 	● [color=gray]static[/color] [color=#70bafa]OtherClientOfflineEvent[/color] ￿init_meta [color=gray]([/color] [color=#70bafa]Dictionary[/color] dic [color=gray])[/color]
 

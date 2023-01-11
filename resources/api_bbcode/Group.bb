@@ -1,14 +1,16 @@
-[font_size=30][color=#70bafa]类:[/color] Group[/font_size]
+[font_size=25][b][color=#70bafa]类:[/color] Group[/b][/font_size]
+[color=#70bafa]继承:[/color] GroupAPI
 
-[color=#70bafa]继承自:[/color] GroupAPI
- 
+
 [b]RainyBot的群组类，通常代表一个对应实例，实现了用于与群组进行交互的各类功能[/b]
 
-[font_size=30][color=#70bafa]描述:[/color][/font_size]
+
+[font_size=25][color=#70bafa][b]描述[/b][/color][/font_size]
 
 这是RainyBot的群组类，通常代表一个对应实例，实现了用于与群组进行交互的各类功能 [br]绝大部分与群聊直接相关的操作都可以通过此类来进行
 
-[font_size=30][color=#70bafa]方法:[/color][/font_size]
+
+[font_size=25][color=#70bafa][b]方法[/b][/color][/font_size]
 
 	● [color=gray]static[/color] [color=#70bafa]Group[/color] ￿init [color=gray]([/color] [color=#70bafa]int[/color] group_id [color=gray])[/color]
 
@@ -22,7 +24,7 @@
 	通过机器人协议后端的元数据字典构造一个Group类的实例，仅当你知道自己在做什么时才使用
 
 
-	● [color=#70bafa]Dictionary[/color] ￿get_metadata [color=gray]([/color]  [color=gray])[/color]
+	● [color=#70bafa]Dictionary[/color] ￿get_metadata [color=gray]([/color] [color=gray])[/color]
 
 	获取实例中的元数据字典，仅当你知道自己在做什么时才使用
 
@@ -32,24 +34,24 @@
 	使用指定字典覆盖实例中的元数据字典，仅当你知道自己在做什么时才使用
 
 
-	● [color=#70bafa]String[/color] ￿get_name [color=gray]([/color]  [color=gray])[/color]
+	● [color=#70bafa]String[/color] ￿get_name [color=gray]([/color] [color=gray])[/color]
 
 	获取群聊实例的名称(群名称)，若为手动构造的实例，将始终返回空字符串
 
 
-	● [color=#70bafa]int[/color] ￿get_id [color=gray]([/color]  [color=gray])[/color]
+	● [color=#70bafa]int[/color] ￿get_id [color=gray]([/color] [color=gray])[/color]
 
 	获取群聊实例的ID(群号)
 
 
-	● [color=#70bafa]int[/color] ￿get_bot_permission [color=gray]([/color]  [color=gray])[/color]
+	● [color=#70bafa]int[/color] ￿get_bot_permission [color=gray]([/color] [color=gray])[/color]
 
 	获取机器人在群聊实例中的权限，若为手动构造的实例，将始终返回0 
 	
 	权限列表请参见GroupMember类中的Permission枚举
 
 
-	● [color=#70bafa]String[/color] ￿get_avatar_url [color=gray]([/color]  [color=gray])[/color]
+	● [color=#70bafa]String[/color] ￿get_avatar_url [color=gray]([/color] [color=gray])[/color]
 
 	获取群聊实例对应的群头像的图像链接，通常为jpg格式
 

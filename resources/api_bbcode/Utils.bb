@@ -1,12 +1,13 @@
-[font_size=30][color=#70bafa]类:[/color] Utils[/font_size]
+[font_size=25][b][color=#70bafa]类:[/color] Utils[/b][/font_size]
+[color=#70bafa]继承:[/color] CoreAPI
 
-[color=#70bafa]继承自:[/color] CoreAPI
- 
+
 [b]RainyBot的实用工具类，其中提供了各种类型的便捷功能[/b]
 
-[font_size=30][color=#70bafa]方法:[/color][/font_size]
 
-	● [color=gray]static[/color] [color=#70bafa]String[/color] ￿get_formated_time [color=gray]([/color]  [color=gray])[/color]
+[font_size=25][color=#70bafa][b]方法[/b][/color][/font_size]
+
+	● [color=gray]static[/color] [color=#70bafa]String[/color] ￿get_formated_time [color=gray]([/color] [color=gray])[/color]
 
 	获取以HH:mm:ss为格式的当前时间文本
 

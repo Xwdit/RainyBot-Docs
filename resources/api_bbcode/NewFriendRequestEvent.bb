@@ -1,10 +1,11 @@
-[font_size=30][color=#70bafa]类:[/color] NewFriendRequestEvent[/font_size]
+[font_size=25][b][color=#70bafa]类:[/color] NewFriendRequestEvent[/b][/font_size]
+[color=#70bafa]继承:[/color] RequestEvent
 
-[color=#70bafa]继承自:[/color] RequestEvent
- 
+
 [b]RainyBot的添加好友请求事件类，其实例记录了与一次添加好友请求事件相关的数据[/b]
 
-[font_size=30][color=#70bafa]枚举:[/color][/font_size]
+
+[font_size=25][color=#70bafa][b]枚举[/b][/color][/font_size]
 
 	[color=#70bafa]enum[/color] ￿RespondType
 
@@ -20,7 +21,8 @@
 		[color=gray]拒绝好友添加请求并加入黑名单[/color]
 
 
-[font_size=30][color=#70bafa]方法:[/color][/font_size]
+
+[font_size=25][color=#70bafa][b]方法[/b][/color][/font_size]
 
 	● [color=gray]static[/color] [color=#70bafa]NewFriendRequestEvent[/color] ￿init_meta [color=gray]([/color] [color=#70bafa]Dictionary[/color] dic [color=gray])[/color]
 
