@@ -79,11 +79,6 @@ func save(path:String)->int:
 	return OK
 
 
-## 从此Gif图像实例生成并获取对应的gif图像数据，需要配合await关键字使用
-func get_data()->PackedByteArray:
-	return PackedByteArray([])
-
-
 ## 获取此Gif图像实例中的所有帧的预计生成时间，需要配合await关键字使用
 func get_generate_time()->float:
 	return 0.0

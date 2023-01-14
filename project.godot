@@ -612,3 +612,4 @@ config/icon="res://resources/logo.png"
 [editor]
 
 script/templates_search_path="res://templates"
+export/convert_text_resources_to_binary=true

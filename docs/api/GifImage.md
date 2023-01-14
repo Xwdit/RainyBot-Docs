@@ -99,12 +99,6 @@ RainyBot动态图像类，可用于构造并生成一个Gif图像及相关数据
   
 ---  
   
--  [PackedByteArray](https://docs.godotengine.org/en/latest/classes/class_packedbytearray.html) **get_data ( )**  
-  
-从此Gif图像实例生成并获取对应的gif图像数据，需要配合await关键字使用  
-  
----  
-  
 -  [float](https://docs.godotengine.org/en/latest/classes/class_float.html) **get_generate_time ( )**  
   
 获取此Gif图像实例中的所有帧的预计生成时间，需要配合await关键字使用  
