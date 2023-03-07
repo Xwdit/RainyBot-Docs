@@ -45,7 +45,7 @@ func gen_img(arg,event):
 	#此处在等待场景加载完成后，将其储存在scene变量中以便后续使用
 	var scene = await load_scene(get_plugin_path()+"scene_example/example_scene.tscn",true)
 	
-	scene.set_text(arg) #调用场景脚本中预先定义的函数，将加载的场景中的文本设置为接收的参数文本
+	scene.set_label_text(arg) #调用场景脚本中预先定义的函数，将加载的场景中的文本设置为接收的参数文本
 	
 	#将场景中的当前内容获取为Image图像实例，获取的图像的原始大小设置为512x512，等待其获取完成并储存至img变量
 	var img:Image = await get_scene_image(scene,Vector2i(512,512))
@@ -69,7 +69,7 @@ func gen_anim_img(arg:String,event:MessageEvent):
 	# 动态图像的大小越大，生成所需的时间越长，因此请注意控制大小
 	var anim_img = GifImage.init(Vector2(128,128))
 
-	scene.set_text(arg) #将加载的场景中的文本设置为接收的参数
+	scene.set_label_text(arg) #将加载的场景中的文本设置为接收的参数
 	
 	for i in range(20): #循环20次，以便往动态图实例中添加20帧
 		

@@ -2,7 +2,7 @@ extends Label
 
 
 # 提供给插件用于修改场景显示的文本内容
-func set_text(new_text:String):
+func set_label_text(new_text:String):
 	text = new_text
 
 
