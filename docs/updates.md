@@ -4,6 +4,15 @@ description: 了解一下各个版本的变化吧~
 
 # 🚀 更新日志
 
+### [v2.2.2-Stable](https://github.com/Xwdit/RainyBot-Core/releases/tag/v2.2.2-stable)
+
+* 修复了插件编辑器在某些条件下可能报错的问题
+* 在Mirai后端实施协议版本补丁，改善了无法登录QQ账号的问题
+* 通过Mirai后端的登陆验证拓展插件适配了更多登录验证方式
+* 更新Mirai后端版本至2.14.0，更新Mirai-API-HTTP版本至2.9.1
+* 更新了发行包中默认的swiftshader cpu渲染器版本，提升使用cpu渲染时的启动速度
+* 更新所基于的自定义分支Godot版本到4.0.3-RC，并对其进行各项适配
+
 ### [v2.2.1-Stable](https://github.com/Xwdit/RainyBot-Core/releases/tag/v2.2.1-stable)
 
 ### **文档查看器:**
